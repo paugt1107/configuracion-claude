@@ -1,0 +1,39 @@
+name: radar-tendencias
+# Radar diario de Shorts virales (múltiplo sobre la mediana del canal). Requiere el secreto YOUTUBE_API_KEY.
+on:
+  schedule:
+    - cron: "17 6 * * *"   # 07:17 hora de Madrid (invierno)
+  workflow_dispatch:
+    inputs:
+      consulta:
+        description: "Búsqueda"
+        default: "GTA 6"
+permissions:
+  contents: write
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sin clave, no hay radar
+        if: env.YOUTUBE_API_KEY == ''
+        run: echo "Añade el secreto YOUTUBE_API_KEY en Settings > Secrets and variables > Actions" && exit 0
+      - uses: actions/setup-python@v5
+        if: env.YOUTUBE_API_KEY != ''
+        with:
+          python-version: "3.12"
+      - if: env.YOUTUBE_API_KEY != ''
+        run: |
+          pip install -r requirements.txt
+          python -m clipfactory radar "${{ github.event.inputs.consulta || 'GTA 6' }}" --dias 3 --region ES
+          python -m clipfactory radar "GTA VI" --dias 3 --region MX
+      - name: Guardar informe en el repo
+        if: env.YOUTUBE_API_KEY != ''
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add canal-youtube/data/trends canal-youtube/data/alertas.md
+          git diff --cached --quiet || git commit -m "Radar de tendencias $(date -u +%F)"
+          git push

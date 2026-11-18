@@ -1,0 +1,25 @@
+# Registro de fuentes. NADA se descarga ni renderiza si no está aquí y es válido.
+# Ver canal-youtube/politica-fuentes.md. Valida con: python3 -m clipfactory fuentes
+# tipo: propia | oficial | permiso | cc-by   (cualquier otro se rechaza)
+fuentes:
+  - id: ejemplo-propia
+    tipo: propia
+    archivo: media/ejemplo-propia.mp4      # tu grabación de PS5/Xbox (Share/Captura) copiada aquí
+    creador: "@tucanal"
+    notas: "Ejemplo. Sustituir por tus capturas reales cuando salga el juego."
+
+  - id: gta6-trailer-2
+    tipo: oficial
+    url: "PEGAR-URL-DEL-TRAILER-2-DESDE-youtube.com/@RockstarGames"   # cópiala del canal oficial antes de descargar
+    creador: "Rockstar Games"
+    credito: "Tráiler oficial: Rockstar Games"
+    notas: "Máx. 15 s por clip, siempre con análisis propio. Silenciar la música con licencia si da reclamación."
+
+  # Plantilla para clips de otros creadores (descomentar SOLO con permiso real):
+  # - id: creador-x-2026-11-20
+  #   tipo: permiso
+  #   url: "https://www.youtube.com/watch?v=..."
+  #   creador: "@creadorx"
+  #   credito: "Clip: @creadorx"
+  #   permiso: "canal-youtube/fuentes/permisos/creadorx-2026-11-20.png"   # captura/email/enlace a la campaña de clipping
+  #   max_fragmento_s: 45

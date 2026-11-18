@@ -1,0 +1,6 @@
+# Opcionales según el paso
+edge-tts>=7.0            # voz en off gratis (python -m clipfactory voz)
+faster-whisper>=1.0      # transcripción local con palabras (transcribir)
+yt-dlp>=2025.1.1         # descarga de fuentes REGISTRADAS (descargar)
+google-api-python-client>=2.100  # subida opcional a YouTube (subir)
+google-auth-oauthlib>=1.2
