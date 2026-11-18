@@ -34,7 +34,7 @@ Las 2 primeras semanas tras el lanzamiento: nada de giros de historia en título
 Según informaciones de 2026 (Dexerto), YouTube permite anuncios con violencia gráfica de juego si no aparece en los primeros segundos (se citan 8-15 s) y no es una recopilación hecha para impactar. Regla interna: **los primeros 10 s sin violencia gráfica**; nada de "matanzas de NPC".
 
 ## Si llega una reclamación
-1. No discutir en caliente. 2. Si es válida: retirar o recortar el tramo. 3. Anotar la lección en `data/aprendizajes.md`. 4. Disputar solo si la fuente es `propia` u `oficial` con comentario claro y la reclamación es errónea.
+1. No discutir en caliente. 2. Si es válida: retirar o recortar el tramo. 3. Anotar la lección en `datos/aprendizajes.md`. 4. Disputar solo si la fuente es `propia` u `oficial` con comentario claro y la reclamación es errónea.
 
 ## Directos y vídeos de otros creadores (DjMaRiiO, streamers…)
 Se pueden ver para investigar (el radar los vigila), pero sus imágenes, frames y clips NO se usan sin permiso escrito. Ni capturas de pantalla de sus directos.

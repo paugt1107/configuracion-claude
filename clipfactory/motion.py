@@ -4,8 +4,9 @@ Sirve para Shorts originales (cuenta atrás, horarios, datos) donde no hay gamep
 dibujada con PIL (brillo neón) que ffmpeg anima con zoom lento y entrada con fundido; después se concatenan y se
 queman los subtítulos palabra a palabra.
 
-Uso (desde Python): build(escenas, palabras, salida). Ver canal-youtube/jobs/s001_motion.py
+Uso (desde Python): build(escenas, palabras, salida). Ver canal-youtube/clips/s001_motion.py
 """
+
 from __future__ import annotations
 
 import subprocess
@@ -46,13 +47,15 @@ def _glow_text(img, xy, text, size, color, anchor="mm", spread=22, stroke=0):
     ImageDraw.Draw(layer).text(xy, text, font=_font(size), fill=color, anchor=anchor)
     blur = layer.filter(ImageFilter.GaussianBlur(spread))
     img.paste(Image.composite(blur, img, blur.convert("L").point(lambda v: min(255, v * 2))), (0, 0))
-    ImageDraw.Draw(img).text(xy, text, font=_font(size), fill=WHITE if color != WHITE else WHITE, anchor=anchor,
-                             stroke_width=stroke, stroke_fill=color)
+    ImageDraw.Draw(img).text(
+        xy, text, font=_font(size), fill=WHITE if color != WHITE else WHITE, anchor=anchor, stroke_width=stroke, stroke_fill=color
+    )
     ImageDraw.Draw(img).text(xy, text, font=_font(size), fill=color, anchor=anchor)
 
 
 def _fit(d, text, size, maxw):
     """Reduce el tamaño o parte el texto en 2 líneas para que quepa en maxw px."""
+
     def width(txt, sz):
         return max(d.textlength(line, font=_font(sz)) for line in txt.split("\n"))
 
@@ -89,6 +92,7 @@ def _label(img, xy, text, size, color=WHITE, anchor="mm", box=True, maxw=900):
 # ---------- Banderas dibujadas (simplificadas, sin escudos) ----------
 def _star(draw, cx, cy, r, fill, outline=None, ow=0):
     import math
+
     pts = []
     for i in range(10):
         ang = -math.pi / 2 + i * math.pi / 5
@@ -120,12 +124,18 @@ def flag(code: str, w: int = 480) -> Image.Image:
         d.rectangle([0, 0, W2, H2], fill=(116, 172, 223))
         d.rectangle([0, H2 // 3, W2, H2 * 2 // 3], fill=(255, 255, 255))
         import math
+
         cx, cy, r = W2 // 2, H2 // 2, H2 // 10
         for i in range(16):
             a = i * math.pi / 8
-            d.polygon([(cx + (r * 1.0) * math.cos(a - .09), cy + (r * 1.0) * math.sin(a - .09)),
-                       (cx + (r * 1.75) * math.cos(a), cy + (r * 1.75) * math.sin(a)),
-                       (cx + (r * 1.0) * math.cos(a + .09), cy + (r * 1.0) * math.sin(a + .09))], fill=(246, 180, 14))
+            d.polygon(
+                [
+                    (cx + (r * 1.0) * math.cos(a - 0.09), cy + (r * 1.0) * math.sin(a - 0.09)),
+                    (cx + (r * 1.75) * math.cos(a), cy + (r * 1.75) * math.sin(a)),
+                    (cx + (r * 1.0) * math.cos(a + 0.09), cy + (r * 1.0) * math.sin(a + 0.09)),
+                ],
+                fill=(246, 180, 14),
+            )
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(246, 180, 14))
     elif code == "nz":
         d.rectangle([0, 0, W2, H2], fill=(0, 36, 125))
@@ -153,7 +163,9 @@ def flag(code: str, w: int = 480) -> Image.Image:
 def _paste_flag(img, code, cx, cy, w):
     fl = flag(code, w)
     sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    ImageDraw.Draw(sh).rounded_rectangle([cx - w // 2 - 8, cy - fl.height // 2 - 8, cx + w // 2 + 8, cy + fl.height // 2 + 8], 18, fill=(255, 255, 255, 40))
+    ImageDraw.Draw(sh).rounded_rectangle(
+        [cx - w // 2 - 8, cy - fl.height // 2 - 8, cx + w // 2 + 8, cy + fl.height // 2 + 8], 18, fill=(255, 255, 255, 40)
+    )
     base = Image.alpha_composite(img.convert("RGBA"), sh.filter(ImageFilter.GaussianBlur(14)))
     base.alpha_composite(fl, (cx - fl.width // 2, cy - fl.height // 2))
     img.paste(base.convert("RGB"))
@@ -282,11 +294,31 @@ def card(spec: dict) -> Image.Image:
 
 def _clip(png: Path, dur: float, out: Path, i: int):
     n = max(1, int(dur * 30))
-    zoom = ("zoompan=z='if(lt(on,7),1.14-0.02*on,1+0.05*(on-7)/%d)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=%d:s=%dx%d:fps=30"
-            % (n, n, W, H))
-    subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-loop", "1", "-i", str(png), "-vf",
-                    f"scale=2160:3840,{zoom},noise=alls=5:allf=t,fade=t=in:st=0:d=0.14:color=white,format=yuv420p", "-t", f"{dur}", "-c:v", "libx264",
-                    "-preset", "veryfast", "-crf", "19", str(out)], check=True)
+    zoom = f"zoompan=z='if(lt(on,7),1.14-0.02*on,1+0.05*(on-7)/{n})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps=30"
+    subprocess.run(
+        [
+            media.require("ffmpeg"),
+            "-y",
+            "-loglevel",
+            "error",
+            "-loop",
+            "1",
+            "-i",
+            str(png),
+            "-vf",
+            f"scale=2160:3840,{zoom},noise=alls=5:allf=t,fade=t=in:st=0:d=0.14:color=white,format=yuv420p",
+            "-t",
+            f"{dur}",
+            "-c:v",
+            "libx264",
+            "-preset",
+            "veryfast",
+            "-crf",
+            "19",
+            str(out),
+        ],
+        check=True,
+    )
 
 
 def estimate_words(text: str, total_s: float, lead: float = 0.2) -> list[dict]:
@@ -313,18 +345,46 @@ def build(scenes: list[dict], words: list[dict], out: str | Path, audio: str | N
             lst.append(f"file '{clip}'")
         (tmp / "list.txt").write_text("\n".join(lst), encoding="utf-8")
         base = tmp / "base.mp4"
-        subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(tmp / "list.txt"),
-                        "-c", "copy", str(base)], check=True)
+        subprocess.run(
+            [
+                media.require("ffmpeg"),
+                "-y",
+                "-loglevel",
+                "error",
+                "-f",
+                "concat",
+                "-safe",
+                "0",
+                "-i",
+                str(tmp / "list.txt"),
+                "-c",
+                "copy",
+                str(base),
+            ],
+            check=True,
+        )
         ass = tmp / "subs.ass"
         ass.write_text(captions.build_ass(words), encoding="utf-8")
         esc = str(ass).replace(":", r"\:")
         cmd = [media.require("ffmpeg"), "-y", "-loglevel", "error", "-i", str(base)]
         if audio:
             cmd += ["-i", audio]
-        cmd += ["-vf", f"subtitles='{esc}'", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart"]
+        cmd += [
+            "-vf",
+            f"subtitles='{esc}'",
+            "-c:v",
+            "libx264",
+            "-preset",
+            "veryfast",
+            "-crf",
+            "20",
+            "-pix_fmt",
+            "yuv420p",
+            "-movflags",
+            "+faststart",
+        ]
         # voz: quita graves de ambiente, reduce ruido de fondo y normaliza a -14 LUFS (estándar de Shorts/TikTok)
         af = [] if premixed else ["-af", "highpass=f=80,afftdn=nf=-25,loudnorm=I=-14:TP=-1.5:LRA=11"]
-        cmd += ([*af, "-c:a", "aac", "-b:a", "192k",
-                 "-ar", "48000", "-shortest"] if audio else ["-an"]) + [str(out)]
+        cmd += ([*af, "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest"] if audio else ["-an"]) + [str(out)]
         subprocess.run(cmd, check=True)
     return out

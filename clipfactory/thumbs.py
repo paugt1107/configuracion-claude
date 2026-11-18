@@ -1,4 +1,5 @@
 """Portadas (1080x1920) para Shorts/TikTok: 3 variantes por vídeo. Máx. 3 palabras grandes, que NO repitan el título."""
+
 from __future__ import annotations
 
 from pathlib import Path

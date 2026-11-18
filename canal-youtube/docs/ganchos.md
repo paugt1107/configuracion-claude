@@ -1,5 +1,5 @@
 # Banco de ganchos GTA VI (español)
-Regla de oro: **un gancho es una promesa**. Solo se usa si el vídeo la cumple y el dato está verificado (`investigacion/gta-vi-base.md` o captura propia). Rellena los [corchetes] con hechos reales.
+Regla de oro: **un gancho es una promesa**. Solo se usa si el vídeo la cumple y el dato está verificado (`canal-youtube/investigacion/gta-vi-base.md` o captura propia). Rellena los [corchetes] con hechos reales.
 Puntuación: `python3 -m clipfactory.hookscore_es "gancho"` (heurística en español; ≥55 = VALE, ≥72 = FUERTE). `yt-script/hookscore.py` es solo para inglés: en español da notas engañosas (comprobado 18-nov-2026).
 Patrón que más puntúa: **tú + qué pierdes + dato concreto + hueco de curiosidad**, en 6-14 palabras.
 

@@ -4,6 +4,7 @@ Capas: fondo desenfocado o recorte centrado → vídeo → gancho (primeros segu
 subtítulos palabra a palabra → audio (voz propia con el original atenuado por ducking) → -14 LUFS.
 Antes de renderizar valida la política de la fuente (sources.check_segment).
 """
+
 from __future__ import annotations
 
 import subprocess
@@ -112,8 +113,10 @@ def build_command(job: dict, src: sources.Source, workdir: Path) -> list[str]:
     src_audio = media.has_audio(in_path) and not job.get("silenciar_original", False)
     vol = float(job.get("volumen_original", 0.25 if voice else 1.0))
     if voice and src_audio:
-        af.append(f"[0:a]volume={vol}[orig];[1:a]asplit=2[vo][key];[orig][key]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=300[duck];"
-                  f"[duck][vo]amix=inputs=2:duration=longest:normalize=0[mix];[mix]loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
+        af.append(
+            f"[0:a]volume={vol}[orig];[1:a]asplit=2[vo][key];[orig][key]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=300[duck];"
+            f"[duck][vo]amix=inputs=2:duration=longest:normalize=0[mix];[mix]loudnorm=I=-14:TP=-1.5:LRA=11[aout]"
+        )
     elif voice:
         af.append("[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
     elif src_audio:
@@ -125,8 +128,19 @@ def build_command(job: dict, src: sources.Source, workdir: Path) -> list[str]:
     cmd += ["-filter_complex", ";".join(vf + af), "-map", "[vout]"]
     if af:
         cmd += ["-map", "[aout]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
-    cmd += ["-t", f"{dur}", "-c:v", "libx264", "-preset", job.get("preset", "veryfast"), "-crf", str(job.get("crf", 20)),
-            "-movflags", "+faststart", str(job["salida"])]
+    cmd += [
+        "-t",
+        f"{dur}",
+        "-c:v",
+        "libx264",
+        "-preset",
+        job.get("preset", "veryfast"),
+        "-crf",
+        str(job.get("crf", 20)),
+        "-movflags",
+        "+faststart",
+        str(job["salida"]),
+    ]
     return cmd
 
 

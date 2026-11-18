@@ -9,6 +9,7 @@
     tono        Solo para tests sin red (pitidos).
 - Postproducción: filtro de graves, presencia, compresor, de-esser y -14 LUFS.
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -27,9 +28,9 @@ EDGE_STYLE = {"gancho": ("+14%", "+3Hz"), "narracion": ("+9%", "+0Hz"), "cierre"
 OPENAI_VOICE = os.environ.get("OPENAI_TTS_VOICE", "ash")
 OPENAI_INSTR = {
     "gancho": "Eres el narrador de un canal de curiosidades de videojuegos en YouTube Shorts. Español de España, claro. "
-              "Arranca con mucha energía y sorpresa, como contando un secreto que engancha. Ritmo rápido, sin sonar gritón.",
+    "Arranca con mucha energía y sorpresa, como contando un secreto que engancha. Ritmo rápido, sin sonar gritón.",
     "narracion": "Narrador de curiosidades de videojuegos en Shorts. Español de España claro, ritmo ágil, entusiasta y cercano; "
-                 "enfatiza nombres propios, horas y números. Pausas cortas.",
+    "enfatiza nombres propios, horas y números. Pausas cortas.",
     "cierre": "Cierra con intriga y una ligera sonrisa en la voz, dejando la pregunta en el aire.",
 }
 ELEVEN_VOICE = os.environ.get("ELEVENLABS_VOICE_ID", "pNInz6obpgDQGcFmaJgB")  # cámbiala por una voz española de la Voice Library
@@ -55,6 +56,7 @@ def styles_for(n: int) -> list[str]:
 # ---------------- proveedores: devuelven palabras con tiempos o None ----------------
 async def _edge(text, style, out):
     import edge_tts
+
     rate, pitch = EDGE_STYLE[style]
     try:
         comm = edge_tts.Communicate(text, voice=EDGE_VOICE, rate=rate, pitch=pitch, boundary="WordBoundary")
@@ -72,10 +74,21 @@ async def _edge(text, style, out):
 
 
 def _openai(text, style, out):
-    body = json.dumps({"model": os.environ.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts"), "voice": OPENAI_VOICE, "input": text,
-                       "instructions": OPENAI_INSTR[style], "response_format": "mp3"}).encode()
-    req = urllib.request.Request("https://api.openai.com/v1/audio/speech", data=body, method="POST",
-                                 headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"})
+    body = json.dumps(
+        {
+            "model": os.environ.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts"),
+            "voice": OPENAI_VOICE,
+            "input": text,
+            "instructions": OPENAI_INSTR[style],
+            "response_format": "mp3",
+        }
+    ).encode()
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/audio/speech",
+        data=body,
+        method="POST",
+        headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"},
+    )
     with urllib.request.urlopen(req, timeout=120) as r:
         Path(out).write_bytes(r.read())
     return None
@@ -83,16 +96,25 @@ def _openai(text, style, out):
 
 def _eleven(text, style, out):
     stab, sty = ELEVEN_SETTINGS[style]
-    body = json.dumps({"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_multilingual_v2"),
-                       "voice_settings": {"stability": stab, "similarity_boost": 0.8, "style": sty, "use_speaker_boost": True}}).encode()
-    req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVEN_VOICE}/with-timestamps?output_format=mp3_44100_128",
-                                 data=body, method="POST", headers={"xi-api-key": os.environ["ELEVENLABS_API_KEY"], "Content-Type": "application/json"})
+    body = json.dumps(
+        {
+            "text": text,
+            "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_multilingual_v2"),
+            "voice_settings": {"stability": stab, "similarity_boost": 0.8, "style": sty, "use_speaker_boost": True},
+        }
+    ).encode()
+    req = urllib.request.Request(
+        f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVEN_VOICE}/with-timestamps?output_format=mp3_44100_128",
+        data=body,
+        method="POST",
+        headers={"xi-api-key": os.environ["ELEVENLABS_API_KEY"], "Content-Type": "application/json"},
+    )
     with urllib.request.urlopen(req, timeout=120) as r:
         data = json.loads(r.read())
     Path(out).write_bytes(base64.b64decode(data["audio_base64"]))
     al = data.get("alignment") or {}
     chars, st, en = al.get("characters", []), al.get("character_start_times_seconds", []), al.get("character_end_times_seconds", [])
-    words, cur, cs = [], "", None
+    words, cur, cs, pe = [], "", None, 0.0
     for c, s, e in zip(chars, st, en):
         if c.isspace():
             if cur:
@@ -107,8 +129,22 @@ def _eleven(text, style, out):
 
 def _tono(text, style, out):
     dur = max(0.6, len(text.split()) * 0.33)
-    subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-f", "lavfi", "-i", f"sine=frequency=220:duration={dur}",
-                    "-af", "volume=0.3", str(out)], check=True)
+    subprocess.run(
+        [
+            media.require("ffmpeg"),
+            "-y",
+            "-loglevel",
+            "error",
+            "-f",
+            "lavfi",
+            "-i",
+            f"sine=frequency=220:duration={dur}",
+            "-af",
+            "volume=0.3",
+            str(out),
+        ],
+        check=True,
+    )
     return None
 
 
@@ -119,9 +155,32 @@ def synth_line(provider, text, style, out):
 
 
 # ---------------- producción completa ----------------
-def produce(lines: list[str], out_dir: str | Path, provider: str = "auto", lead: float = 0.15) -> dict:
+def provider_chain(provider: str = "auto") -> list[str]:
+    """Orden de intento: el elegido y, si falla (cuota agotada, red, clave mala), los siguientes disponibles."""
+    first = pick_provider(provider)
+    if first == "tono":
+        return ["tono"]
+    rest = [p for p in ("elevenlabs", "openai", "edge") if p != first and (p == "edge" or os.environ.get(KEYS[p]))]
+    return [first, *rest]
+
+
+KEYS = {"elevenlabs": "ELEVENLABS_API_KEY", "openai": "OPENAI_API_KEY"}
+
+
+def produce(lines: list[str], out_dir: str | Path, provider: str = "auto", lead: float = 0.15, log=print) -> dict:
+    """Locución completa con respaldo automático de proveedor. Toda la pieza usa UNA sola voz (sin mezclar)."""
+    errors = []
+    for prov in provider_chain(provider):
+        try:
+            return _produce(lines, out_dir, prov, lead)
+        except Exception as e:  # noqa: BLE001 - se informa y se pasa al siguiente proveedor
+            errors.append(f"{prov}: {e}")
+            log(f"[voz] {prov} falló ({e}); probando el siguiente proveedor")
+    raise RuntimeError("Ningún proveedor de voz funcionó: " + " | ".join(errors))
+
+
+def _produce(lines: list[str], out_dir: str | Path, provider: str, lead: float) -> dict:
     """Devuelve {"audio": wav postproducido, "words": [...], "lines": [{"text","start","end"}], "provider": str}."""
-    provider = pick_provider(provider)
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     styles = styles_for(len(lines))
@@ -129,8 +188,22 @@ def produce(lines: list[str], out_dir: str | Path, provider: str = "auto", lead:
     with tempfile.TemporaryDirectory(prefix="voz-") as tmp:
         tmp = Path(tmp)
         sil = tmp / "lead.wav"
-        subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono",
-                        "-t", str(lead), str(sil)], check=True)
+        subprocess.run(
+            [
+                media.require("ffmpeg"),
+                "-y",
+                "-loglevel",
+                "error",
+                "-f",
+                "lavfi",
+                "-i",
+                "anullsrc=r=48000:cl=mono",
+                "-t",
+                str(lead),
+                str(sil),
+            ],
+            check=True,
+        )
         parts.append(sil)
         for i, (text, style) in enumerate(zip(lines, styles)):
             raw = tmp / f"l{i:02d}.mp3"
@@ -138,9 +211,25 @@ def produce(lines: list[str], out_dir: str | Path, provider: str = "auto", lead:
             wav = tmp / f"l{i:02d}.wav"
             gap = GAP[style]
             # recorta silencios del principio/fin de cada frase y añade la pausa deseada
-            subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-i", str(raw), "-af",
-                            "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                            f"apad=pad_dur={gap}", "-ar", "48000", "-ac", "1", str(wav)], check=True)
+            subprocess.run(
+                [
+                    media.require("ffmpeg"),
+                    "-y",
+                    "-loglevel",
+                    "error",
+                    "-i",
+                    str(raw),
+                    "-af",
+                    "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+                    f"apad=pad_dur={gap}",
+                    "-ar",
+                    "48000",
+                    "-ac",
+                    "1",
+                    str(wav),
+                ],
+                check=True,
+            )
             dur = media.duration(str(wav))
             speech = dur - gap
             if not ws:
@@ -156,15 +245,29 @@ def produce(lines: list[str], out_dir: str | Path, provider: str = "auto", lead:
         lst = tmp / "list.txt"
         lst.write_text("\n".join(f"file '{p}'" for p in parts), encoding="utf-8")
         raw_all = tmp / "voz.wav"
-        subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(raw_all)], check=True)
+        subprocess.run(
+            [media.require("ffmpeg"), "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(raw_all)],
+            check=True,
+        )
         final = out_dir / "voz.wav"
-        subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-i", str(raw_all), "-af", POST, "-ar", "48000", str(final)], check=True)
+        subprocess.run(
+            [media.require("ffmpeg"), "-y", "-loglevel", "error", "-i", str(raw_all), "-af", POST, "-ar", "48000", str(final)], check=True
+        )
     (out_dir / "voz.words.json").write_text(json.dumps({"words": words_all}, ensure_ascii=False, indent=1), encoding="utf-8")
-    (out_dir / "voz.lines.json").write_text(json.dumps({"provider": provider, "lines": spans}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (out_dir / "voz.lines.json").write_text(
+        json.dumps({"provider": provider, "lines": spans}, ensure_ascii=False, indent=1), encoding="utf-8"
+    )
     return {"audio": str(final), "words": words_all, "lines": spans, "provider": provider}
 
 
-SAMPLE_VOICES = ["es-ES-AlvaroNeural", "es-ES-ElviraNeural", "es-ES-XimenaNeural", "es-MX-JorgeNeural", "es-MX-DaliaNeural", "es-US-AlonsoNeural"]
+SAMPLE_VOICES = [
+    "es-ES-AlvaroNeural",
+    "es-ES-ElviraNeural",
+    "es-ES-XimenaNeural",
+    "es-MX-JorgeNeural",
+    "es-MX-DaliaNeural",
+    "es-US-AlonsoNeural",
+]
 
 
 def samples(text: str, out_dir: str | Path) -> list[Path]:

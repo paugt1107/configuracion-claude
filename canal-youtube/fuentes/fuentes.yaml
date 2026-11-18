@@ -1,5 +1,5 @@
 # Registro de fuentes. NADA se descarga ni renderiza si no está aquí y es válido.
-# Ver canal-youtube/politica-fuentes.md. Valida con: python3 -m clipfactory fuentes
+# Ver canal-youtube/docs/politica-fuentes.md. Valida con: python3 -m clipfactory fuentes
 # tipo: propia | oficial | permiso | cc-by   (cualquier otro se rechaza)
 fuentes:
   - id: ejemplo-propia

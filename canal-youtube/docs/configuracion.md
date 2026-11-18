@@ -1,6 +1,6 @@
 # Configuración del canal (editable)
 - Formato principal: YouTube Shorts, vertical 9:16, 30-45 s (máx. 60 s salvo que la historia lo pida)
-- Nicho FIJADO: GTA VI en español — cómo se hizo, misiones, curiosidades de personajes, detalles ocultos, vida real vs juego (ver estrategia-gta.md). `tendencias` elige ángulo y formato, no el nicho
+- Nicho FIJADO: GTA VI en español — cómo se hizo, misiones, curiosidades de personajes, detalles ocultos, vida real vs juego (ver estrategia.md). `tendencias` elige ángulo y formato, no el nicho
 - Idioma del canal: español
 - Cadencia: 1 Short al día (cambiar aquí). Calidad > cantidad; nada de contenido repetitivo en masa
 - Alarma de viral: Short con >= 10x las vistas de la mediana de su nicho (últimos 30 Shorts comparables)
@@ -16,8 +16,8 @@
 - Re-gancho cada 5-8 s; primer fotograma legible sin sonido; subtítulos palabra a palabra; música CC0 con ducking, -14 LUFS
 - Anti contenido masivo: cada vídeo aporta algo propio verificable; ritmo sostenible; nunca clones del mismo formato en serie
 - IA: marcar contenido sintético realista con la etiqueta de cada plataforma; verificar política oficial antes de monetizar
-- Personajes y paleta: ver `personajes.md` (director-arte)
+- Personajes y paleta: ver `docs/identidad-visual.md` (director-arte)
 - Clipping: solo fuentes registradas y válidas (politica-fuentes.md); oficial ≤15 s, permiso ≤45 s; comentario propio ≥50 % si la fuente no es propia; crédito visible
 - Primeros 10 s sin violencia gráfica (anuncios); sin spoilers de historia las 2 primeras semanas; radio del juego apagada al grabar
 - Ganchos en español: `python3 -m clipfactory.hookscore_es` ≥55 para producir
-- Herramientas: `python3 -m clipfactory -h` (render, voz, candidatos, radar, subir). Manual: MANUAL.md
+- Herramientas: `python3 -m clipfactory -h` (render, voz, candidatos, radar, subir). Manual: docs/manual.md

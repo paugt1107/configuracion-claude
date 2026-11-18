@@ -3,6 +3,7 @@
 Detecta los silencios con ffmpeg (silencedetect) y reparte las palabras del texto por el tiempo de habla real,
 respetando las pausas. Precisión típica: décimas de segundo, suficiente para subtítulos palabra a palabra.
 """
+
 from __future__ import annotations
 
 import re
@@ -13,9 +14,21 @@ from . import media
 
 def speech_ranges(audio: str, noise_db: float = -35.0, min_silence: float = 0.22) -> list[tuple[float, float]]:
     total = media.duration(audio)
-    r = subprocess.run([media.require("ffmpeg"), "-hide_banner", "-i", audio, "-af",
-                        f"silencedetect=noise={noise_db}dB:d={min_silence}", "-f", "null", "-"],
-                       capture_output=True, text=True)
+    r = subprocess.run(
+        [
+            media.require("ffmpeg"),
+            "-hide_banner",
+            "-i",
+            audio,
+            "-af",
+            f"silencedetect=noise={noise_db}dB:d={min_silence}",
+            "-f",
+            "null",
+            "-",
+        ],
+        capture_output=True,
+        text=True,
+    )
     starts = [float(x) for x in re.findall(r"silence_start: (-?[\d.]+)", r.stderr)]
     ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", r.stderr)]
     ranges, cur = [], 0.0

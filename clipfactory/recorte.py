@@ -3,6 +3,7 @@
 Uso previsto en GitHub Actions (descarga el modelo la primera vez). Solo imágenes OFICIALES (p. ej. descargas de la
 web de Rockstar) o capturas propias, siempre con crédito. Ver politica-fuentes.md.
 """
+
 from __future__ import annotations
 
 import urllib.request
@@ -11,9 +12,12 @@ from pathlib import Path
 import yaml
 from PIL import Image
 
+from . import rutas
+
 
 def cutout(src: str | Path, dst: str | Path) -> Path:
     from rembg import remove  # pip install "rembg[cpu]"
+
     im = Image.open(src).convert("RGBA")
     out = remove(im)
     bbox = out.split()[3].point(lambda v: 255 if v > 20 else 0).getbbox()
@@ -25,7 +29,7 @@ def cutout(src: str | Path, dst: str | Path) -> Path:
     return dst
 
 
-def fetch_official(cfg_path: str | Path = "canal-youtube/fuentes/imagenes.yaml", out_dir: str | Path = "media/oficial") -> list[Path]:
+def fetch_official(cfg_path: str | Path = rutas.CONFIG_IMAGENES, out_dir: str | Path = rutas.OFICIAL) -> list[Path]:
     """Descarga las imágenes listadas (url + nombre + credito). Solo fuentes oficiales o con permiso."""
     cfg = yaml.safe_load(Path(cfg_path).read_text(encoding="utf-8")) or {}
     out_dir = Path(out_dir)
@@ -42,7 +46,7 @@ def fetch_official(cfg_path: str | Path = "canal-youtube/fuentes/imagenes.yaml",
     return got
 
 
-def process_all(src_dir: str | Path = "media/oficial", dst_dir: str | Path = "media/recortes") -> list[Path]:
+def process_all(src_dir: str | Path = rutas.OFICIAL, dst_dir: str | Path = rutas.RECORTES) -> list[Path]:
     done = []
     for p in sorted(Path(src_dir).glob("*")):
         if p.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:

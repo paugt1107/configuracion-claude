@@ -1,4 +1,4 @@
-# voice.md — BORRADOR v0 (hipótesis; corregir con 3 vídeos/textos reales del usuario)
+# voz-del-canal.md — BORRADOR v0 (hipótesis; corregir con 3 vídeos/textos reales del usuario)
 Estado: escrito por Claude a partir de la estrategia del canal; NO es aún tu voz real. En cuanto me pases 3 vídeos o textos tuyos, lo reescribo.
 
 ## A quién le hablo

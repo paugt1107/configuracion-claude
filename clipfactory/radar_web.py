@@ -3,8 +3,9 @@
 Fuentes (canal-youtube/fuentes/radar.yaml): Google News RSS por búsqueda, canales de YouTube por RSS (solo títulos),
 subreddits por RSS, y búsqueda de YouTube Data API si hay YOUTUBE_API_KEY.
 SOLO recopila títulos y enlaces para investigar. NO descarga vídeos ni imágenes de nadie (ver politica-fuentes.md).
-Salida: canal-youtube/data/radar/AAAA-MM-DD.md (acumulado del día) y ultimo.md (novedades de la última pasada).
+Salida: canal-youtube/datos/radar/AAAA-MM-DD.md (acumulado del día) y ultimo.md (novedades de la última pasada).
 """
+
 from __future__ import annotations
 
 import datetime as dt
@@ -18,8 +19,10 @@ from pathlib import Path
 
 import yaml
 
+from . import rutas
+
 UA = "Mozilla/5.0 (radar-gta; uso personal de investigacion)"
-OUT = Path("canal-youtube/data/radar")
+OUT = rutas.RADAR
 CATEGORIES = [
     ("misión", r"misi[oó]n|mission|golpe|heist|atraco"),
     ("personaje", r"lucia|jason|cal hampton|boobie|dre'?quan|real dimez|raul bautista|brian heder|personaje|character"),
@@ -43,14 +46,24 @@ def parse_feed(data: bytes, source: str) -> list[dict]:
     ns = {"a": "http://www.w3.org/2005/Atom"}
     items = []
     for it in root.iter("item"):
-        items.append({"title": (it.findtext("title") or "").strip(), "url": (it.findtext("link") or "").strip(),
-                      "date": (it.findtext("pubDate") or "").strip(), "source": source})
+        items.append(
+            {
+                "title": (it.findtext("title") or "").strip(),
+                "url": (it.findtext("link") or "").strip(),
+                "date": (it.findtext("pubDate") or "").strip(),
+                "source": source,
+            }
+        )
     for e in root.findall("a:entry", ns):
         link = e.find("a:link", ns)
-        items.append({"title": (e.findtext("a:title", default="", namespaces=ns)).strip(),
-                      "url": link.get("href", "") if link is not None else "",
-                      "date": e.findtext("a:published", default="", namespaces=ns) or e.findtext("a:updated", default="", namespaces=ns),
-                      "source": source})
+        items.append(
+            {
+                "title": (e.findtext("a:title", default="", namespaces=ns)).strip(),
+                "url": link.get("href", "") if link is not None else "",
+                "date": e.findtext("a:published", default="", namespaces=ns) or e.findtext("a:updated", default="", namespaces=ns),
+                "source": source,
+            }
+        )
     return [i for i in items if i["title"] and i["url"]]
 
 
@@ -119,8 +132,11 @@ def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = Non
     stamp = now.strftime("%H:%M")
     day = out_dir / f"{now:%Y-%m-%d}.md"
     if not day.exists():
-        day.write_text(f"# Radar GTA VI · {now:%d-%m-%Y} (hora de España)\nSolo títulos y enlaces para investigar: no descargar ni reutilizar material ajeno sin permiso.\n\n"
-                       "| Hora | Potencial | Categoría | Título | Fuente |\n|---|---|---|---|---|\n", encoding="utf-8")
+        day.write_text(
+            f"# Radar GTA VI · {now:%d-%m-%Y} (hora de España)\nSolo títulos y enlaces para investigar: no descargar ni reutilizar material ajeno sin permiso.\n\n"
+            "| Hora | Potencial | Categoría | Título | Fuente |\n|---|---|---|---|---|\n",
+            encoding="utf-8",
+        )
     with open(day, "a", encoding="utf-8") as fh:
         for i in new:
             title = i["title"].replace("|", "/")[:140]
@@ -128,13 +144,19 @@ def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = Non
     if not new:  # sin novedades: se conserva la lista anterior
         return new
     top = new[:15]
-    lines = [f"# Última pasada del radar: {now:%d-%m %H:%M}", f"{len(new)} novedades. Las 15 con más potencial para un '¿Sabías que…?':", ""]
-    lines += [f"- {'★' * min(i['potencial'], 5) or '·'} **{i['categoria']}** · [{i['title'][:120]}]({i['url']}) · {i['source']}" for i in top]
+    lines = [
+        f"# Última pasada del radar: {now:%d-%m %H:%M}",
+        f"{len(new)} novedades. Las 15 con más potencial para un '¿Sabías que…?':",
+        "",
+    ]
+    lines += [
+        f"- {'★' * min(i['potencial'], 5) or '·'} **{i['categoria']}** · [{i['title'][:120]}]({i['url']}) · {i['source']}" for i in top
+    ]
     (out_dir / "ultimo.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return new
 
 
-def run(cfg_path: str = "canal-youtube/fuentes/radar.yaml") -> int:
+def run(cfg_path: str | Path = rutas.CONFIG_RADAR) -> int:
     p = Path(cfg_path)
     cfg = yaml.safe_load(p.read_text(encoding="utf-8"))
     new = update(collect(cfg))

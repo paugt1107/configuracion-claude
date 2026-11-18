@@ -1,7 +1,7 @@
 import yaml
+from conftest import needs_ffmpeg
 
 from clipfactory import media, short_job, thumbs
-from conftest import needs_ffmpeg
 
 
 def test_title_checks():
@@ -18,9 +18,15 @@ def test_covers(tmp_path):
 @needs_ffmpeg
 def test_produce_from_yaml_offline(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
-    spec = {"id": "T1", "titulos": ["GTA 6: prueba"], "portada": {"texto": "PRUEBA", "kind": "dato", "grande": "1"},
-            "escenas": [{"texto": "¿Sabías que esto es una prueba?", "tarjeta": {"kind": "dato", "grande": "1"}},
-                        {"texto": "Y esto el cierre.", "tarjeta": {"kind": "lista", "items": ["a", "b"]}}]}
+    spec = {
+        "id": "T1",
+        "titulos": ["GTA 6: prueba"],
+        "portada": {"texto": "PRUEBA", "kind": "dato", "grande": "1"},
+        "escenas": [
+            {"texto": "¿Sabías que esto es una prueba?", "tarjeta": {"kind": "dato", "grande": "1"}},
+            {"texto": "Y esto el cierre.", "tarjeta": {"kind": "lista", "items": ["a", "b"]}},
+        ],
+    }
     (tmp_path / "g.yaml").write_text(yaml.safe_dump(spec, allow_unicode=True), encoding="utf-8")
     video = short_job.produce(tmp_path / "g.yaml", provider="tono", out_root=tmp_path / "entregas")
     assert media.video_size(str(video)) == (1080, 1920) and media.has_audio(str(video))

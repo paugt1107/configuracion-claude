@@ -1,0 +1,36 @@
+[project]
+name = "clipfactory"
+version = "0.2.0"
+description = "Fábrica de Shorts/TikToks de GTA VI en español: voz IA, vídeo vertical, portadas, radar y política de fuentes."
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0", "Pillow>=10.0"]
+
+[project.optional-dependencies]
+voz = ["edge-tts>=7.0"]                       # voz gratis; OpenAI/ElevenLabs van por API sin librería
+transcripcion = ["faster-whisper>=1.0"]
+descargas = ["yt-dlp>=2025.1.1"]
+youtube = ["google-api-python-client>=2.100", "google-auth-oauthlib>=1.2"]
+recortes = ["rembg[cpu]>=2.0"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+clipfactory = "clipfactory.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["clipfactory"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 140
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501", "E701", "E702", "E731", "E741", "B008", "B905", "SIM108"]  # E501: lo resuelve ruff format

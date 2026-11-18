@@ -10,15 +10,18 @@ def _words(text, start=0.0, step=0.4):
 
 
 def test_candidates_within_bounds_and_non_overlapping():
-    text = ("¿Por qué nadie habla de este detalle? " + "Mira la esquina del mapa y fíjate bien en lo que pasa. " * 6 +
-            "Y entonces seguimos con otra cosa sin importancia. " * 8)
+    text = (
+        "¿Por qué nadie habla de este detalle? "
+        + "Mira la esquina del mapa y fíjate bien en lo que pasa. " * 6
+        + "Y entonces seguimos con otra cosa sin importancia. " * 8
+    )
     words = _words(text)
     cands = segments.candidates(words, min_s=10, max_s=30, top=3)
     assert cands
     for c in cands:
         assert 10 <= c["duracion"] <= 30
     for i, a in enumerate(cands):
-        for b in cands[i + 1:]:
+        for b in cands[i + 1 :]:
             assert a["fin"] <= b["inicio"] or a["inicio"] >= b["fin"]
     assert "pregunta" in " ".join(cands[0]["motivos"]) or "gancho" in " ".join(cands[0]["motivos"])
 

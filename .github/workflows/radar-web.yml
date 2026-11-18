@@ -1,4 +1,4 @@
-name: radar-web
+name: Radar GTA (cada 30 min)
 # Trabajador 1: cada 30 min recopila noticias, vídeos y posts de GTA VI (solo títulos y enlaces). Sin coste ni tokens.
 on:
   schedule:
@@ -15,18 +15,23 @@ concurrency:
 jobs:
   radar:
     runs-on: ubuntu-latest
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -q pyyaml
+      - run: pip install -q -e .
       - run: python3 -c "from clipfactory import radar_web; radar_web.run()"
+      - name: Vídeos que superan 10x su canal (solo con YOUTUBE_API_KEY)
+        if: env.YOUTUBE_API_KEY != ''
+        run: python3 -m clipfactory radar "GTA 6" --dias 2 --region ES || true
       - name: Guardar
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add canal-youtube/data/radar canal-youtube/fuentes/radar.yaml
+          git add canal-youtube/datos canal-youtube/fuentes/radar.yaml
           git diff --cached --quiet && exit 0
           git commit -q -m "Radar web $(date -u +%H:%M) [skip ci]"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

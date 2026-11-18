@@ -1,4 +1,4 @@
-name: recortes
+name: Recortes de personajes
 # Descarga imágenes oficiales listadas en canal-youtube/fuentes/imagenes.yaml y/o recorta las de media/oficial/ (quita el fondo).
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -q pyyaml pillow "rembg[cpu]"
+      - run: pip install -q -e ".[recortes]"
       - run: |
           python3 -c "from clipfactory import recorte; print(recorte.fetch_official()); print(recorte.process_all())"
       - name: Guardar

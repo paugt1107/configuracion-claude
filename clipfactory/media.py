@@ -1,4 +1,5 @@
 """Utilidades ffprobe/ffmpeg."""
+
 from __future__ import annotations
 
 import json
@@ -16,7 +17,9 @@ def require(binary: str) -> str:
 def probe(path: str) -> dict:
     out = subprocess.run(
         [require("ffprobe"), "-v", "error", "-show_streams", "-show_format", "-of", "json", path],
-        capture_output=True, text=True, check=True,
+        capture_output=True,
+        text=True,
+        check=True,
     )
     return json.loads(out.stdout)
 

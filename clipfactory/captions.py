@@ -2,6 +2,7 @@
 
 Zona segura: se evita el 20 % superior y el 25 % inferior (UI de Shorts/TikTok).
 """
+
 from __future__ import annotations
 
 PUNCT_END = (".", "?", "!", "…", ":", ";")
@@ -70,7 +71,7 @@ def build_ass(
         for i, w in enumerate(chunk):
             start = w["start"]
             end = chunk[i + 1]["start"] if i + 1 < len(chunk) else max(w["end"], start + 0.05)
-            on = (f"{{\\c{active}\\fscx122\\fscy122\\t(0,110,\\fscx100\\fscy100)}}" if pop else f"{{\\c{active}}}")
+            on = f"{{\\c{active}\\fscx122\\fscy122\\t(0,110,\\fscx100\\fscy100)}}" if pop else f"{{\\c{active}}}"
             parts = [f"{on}{t}{{\\c{base}\\fscx100\\fscy100}}" if j == i else t for j, t in enumerate(texts)]
             events.append(f"Dialogue: 0,{_ass_time(start)},{_ass_time(end)},Cap,,0,0,0,,{' '.join(parts)}")
     return header + "\n".join(events) + "\n"

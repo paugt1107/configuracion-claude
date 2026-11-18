@@ -1,3 +1,0 @@
-# Núcleo (render, política, candidatos, radar)
-PyYAML>=6.0
-pytest>=7.0

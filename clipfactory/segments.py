@@ -4,18 +4,56 @@ Heurística (inspirada en los clippers open source revisados: cortes en límites
 momentos autónomos de 15-60 s). La herramienta PROPONE; el agente `editor` elige y el `guionista`
 escribe el gancho. No sustituye al criterio humano.
 """
+
 from __future__ import annotations
 
 import re
 
 HOOK_WORDS = {
     # español
-    "nadie", "nunca", "secreto", "oculto", "por qué", "cómo", "nadie sabe", "primera vez", "increíble",
-    "mira", "ojo", "atención", "error", "truco", "imposible", "real", "verdad", "mentira", "récord",
-    "el mejor", "el peor", "lo que", "no sabías", "fíjate", "cuidado",
+    "nadie",
+    "nunca",
+    "secreto",
+    "oculto",
+    "por qué",
+    "cómo",
+    "nadie sabe",
+    "primera vez",
+    "increíble",
+    "mira",
+    "ojo",
+    "atención",
+    "error",
+    "truco",
+    "imposible",
+    "real",
+    "verdad",
+    "mentira",
+    "récord",
+    "el mejor",
+    "el peor",
+    "lo que",
+    "no sabías",
+    "fíjate",
+    "cuidado",
     # inglés (fuentes en inglés)
-    "nobody", "never", "secret", "hidden", "why", "how", "first time", "insane", "look", "mistake", "trick",
-    "impossible", "real", "truth", "record", "best", "worst", "you didn't know",
+    "nobody",
+    "never",
+    "secret",
+    "hidden",
+    "why",
+    "how",
+    "first time",
+    "insane",
+    "look",
+    "mistake",
+    "trick",
+    "impossible",
+    "truth",
+    "record",
+    "best",
+    "worst",
+    "you didn't know",
 }
 WEAK_STARTS = {"y", "pero", "entonces", "pues", "o", "así", "and", "but", "so", "then", "or", "because", "porque"}
 END_PUNCT = (".", "?", "!", "…")
@@ -82,16 +120,18 @@ def candidates(words: list[dict], min_s: float = 20.0, max_s: float = 55.0, top:
             if dur > max_s:
                 break
             if dur >= min_s:
-                sc, why = score_window(sents[i:j + 1])
-                found.append({
-                    "inicio": round(max(0.0, start - 0.15), 2),
-                    "fin": round(end + 0.25, 2),
-                    "duracion": round(dur, 1),
-                    "puntuacion": round(sc, 2),
-                    "primera_frase": _text(sents[i]),
-                    "ultima_frase": _text(sents[j]),
-                    "motivos": why,
-                })
+                sc, why = score_window(sents[i : j + 1])
+                found.append(
+                    {
+                        "inicio": round(max(0.0, start - 0.15), 2),
+                        "fin": round(end + 0.25, 2),
+                        "duracion": round(dur, 1),
+                        "puntuacion": round(sc, 2),
+                        "primera_frase": _text(sents[i]),
+                        "ultima_frase": _text(sents[j]),
+                        "motivos": why,
+                    }
+                )
     found.sort(key=lambda c: (-c["puntuacion"], c["inicio"]))
     chosen: list[dict] = []
     for c in found:

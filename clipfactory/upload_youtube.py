@@ -5,6 +5,7 @@ Credenciales: client_secret.json de un proyecto de Google Cloud con YouTube Data
 (ruta en YT_CLIENT_SECRET). El token se guarda en YT_TOKEN_FILE (por defecto .yt_token.json, ignorado por git).
 No probado contra una cuenta real desde este repositorio: pruébalo primero con un vídeo privado.
 """
+
 from __future__ import annotations
 
 import os
@@ -33,18 +34,28 @@ def _service():
     return build("youtube", "v3", credentials=creds)
 
 
-def upload(video: str, title: str, description: str, tags: list[str] | None = None, privacy: str = "private",
-           publish_at: str | None = None, made_for_kids: bool = False, synthetic: bool = False) -> str:
+def upload(
+    video: str,
+    title: str,
+    description: str,
+    tags: list[str] | None = None,
+    privacy: str = "private",
+    publish_at: str | None = None,
+    made_for_kids: bool = False,
+    synthetic: bool = False,
+) -> str:
     from googleapiclient.http import MediaFileUpload  # type: ignore
 
     if privacy not in {"private", "unlisted", "public"}:
         raise ValueError("privacy debe ser private, unlisted o public")
-    status = {"privacyStatus": "private" if publish_at else privacy, "selfDeclaredMadeForKids": made_for_kids,
-              "containsSyntheticMedia": synthetic}
+    status = {
+        "privacyStatus": "private" if publish_at else privacy,
+        "selfDeclaredMadeForKids": made_for_kids,
+        "containsSyntheticMedia": synthetic,
+    }
     if publish_at:
         status["publishAt"] = publish_at  # RFC3339; requiere privacyStatus=private
-    body = {"snippet": {"title": title[:100], "description": description, "tags": tags or [], "categoryId": "20"},
-            "status": status}
+    body = {"snippet": {"title": title[:100], "description": description, "tags": tags or [], "categoryId": "20"}, "status": status}
     req = _service().videos().insert(part="snippet,status", body=body, media_body=MediaFileUpload(video, chunksize=-1, resumable=True))
     resp = None
     while resp is None:

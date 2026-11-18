@@ -1,4 +1,4 @@
-"""Registro de fuentes y política de uso (ver canal-youtube/politica-fuentes.md).
+"""Registro de fuentes y política de uso (ver canal-youtube/docs/politica-fuentes.md).
 
 Tipos permitidos:
   propia  - grabación propia (gameplay capturado por el canal). Sin límite de fragmento.
@@ -7,6 +7,7 @@ Tipos permitidos:
   cc-by   - licencia Creative Commons con atribución. Requiere crédito.
 Cualquier otro tipo (filtraciones, "sin permiso", resubidas) se rechaza.
 """
+
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -14,7 +15,9 @@ from pathlib import Path
 
 import yaml
 
-DEFAULT_REGISTRY = Path("canal-youtube/fuentes/fuentes.yaml")
+from . import rutas
+
+DEFAULT_REGISTRY = rutas.REGISTRO_FUENTES
 ALLOWED_TYPES = {"propia", "oficial", "permiso", "cc-by"}
 # Límites internos conservadores (no son ley; reducen riesgo de Content ID / contenido reutilizado).
 MAX_FRAGMENT_S = {"propia": None, "oficial": 15.0, "permiso": 45.0, "cc-by": 30.0}
@@ -99,6 +102,6 @@ def check_segment(src: Source, start: float, end: float, commentary_s: float = 0
         raise PolicyError(f"Fuente '{src.id}' ({src.tipo}): fragmento de {dur:.1f} s supera el máximo de {limit:.0f} s.")
     if src.needs_commentary and commentary_s < MIN_COMMENTARY_RATIO * dur:
         raise PolicyError(
-            f"Fuente '{src.id}' ({src.tipo}) exige comentario propio >= {int(MIN_COMMENTARY_RATIO*100)} % del clip "
-            f"({MIN_COMMENTARY_RATIO*dur:.1f} s); la voz dura {commentary_s:.1f} s."
+            f"Fuente '{src.id}' ({src.tipo}) exige comentario propio >= {int(MIN_COMMENTARY_RATIO * 100)} % del clip "
+            f"({MIN_COMMENTARY_RATIO * dur:.1f} s); la voz dura {commentary_s:.1f} s."
         )

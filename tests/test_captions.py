@@ -1,6 +1,9 @@
 from clipfactory import captions
 
-WORDS = [{"text": t, "start": i * 0.4, "end": i * 0.4 + 0.35} for i, t in enumerate("GTA VI sale mañana. Pero ojo con la hora".split())]
+WORDS = [
+    {"text": t, "start": i * 0.4, "end": i * 0.4 + 0.35}
+    for i, t in enumerate(["GTA", "VI", "sale", "mañana.", "Pero", "ojo", "con", "la", "hora"])
+]
 
 
 def test_chunks_respect_max_and_sentence_end():

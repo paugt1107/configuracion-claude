@@ -7,3 +7,5 @@ media/*.mov
 client_secret*.json
 .yt_token.json
 .env
+*.egg-info/
+build/

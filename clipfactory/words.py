@@ -1,4 +1,5 @@
 """Formato común de palabras con marca de tiempo: [{"text": str, "start": float, "end": float}, ...]."""
+
 from __future__ import annotations
 
 import json
@@ -43,7 +44,7 @@ def to_srt(words: list[dict], max_words: int = 7) -> str:
 
     lines, i = [], 1
     for k in range(0, len(words), max_words):
-        chunk = words[k:k + max_words]
+        chunk = words[k : k + max_words]
         lines.append(f"{i}\n{ts(chunk[0]['start'])} --> {ts(chunk[-1]['end'])}\n{' '.join(w['text'] for w in chunk)}\n")
         i += 1
     return "\n".join(lines)

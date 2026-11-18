@@ -1,34 +1,27 @@
-# Oficina virtual del canal — 13 agentes, 1 función cada uno, 0 solapes
+# canal-youtube · índice
 
-Regla anti-solape: cada skill tiene UN dueño y cada tarea UN agente. Si dos hacen lo mismo, se elimina uno.
-Comandos: `/short <tema>` (Short original) y `/clip <ID> <fuente>` (clipping con política de fuentes). Código: `clipfactory/` (ver MANUAL.md). Memoria compartida: `data/aprendizajes.md`. Voz del canal: `voice.md` (rellenar primero).
+| Quiero… | Abre |
+|---|---|
+| Entender cómo se produce un vídeo | `docs/manual.md` |
+| Ver el equipo (organigrama) | `docs/organigrama.html` |
+| Saber de qué va el canal y los formatos | `docs/estrategia.md` |
+| Saber qué material se puede usar | `docs/politica-fuentes.md` |
+| Ganchos que funcionan | `docs/ganchos.md` |
+| Tono de voz y estilo visual | `docs/voz-del-canal.md`, `docs/identidad-visual.md` |
+| Umbrales y reglas del canal | `docs/configuracion.md` |
+| Qué está pasando ahora con GTA VI | `datos/radar/ultimo.md` |
+| Qué vídeos hay y su estado | `datos/registro-videos.md` |
+| Lo aprendido | `datos/aprendizajes.md` |
+| Escribir un guion nuevo | `guiones/PLANTILLA.yaml` |
+| Datos verificados de GTA VI | `investigacion/gta-vi-base.md` |
 
-| Agente | Modelo | Única función | Skills (dueño exclusivo) | Entrega |
-|---|---|---|---|---|
-| tendencias | sonnet | Elegir nicho, alarma 10x, ideas | yt-viral, viral-short-form-ideas | data/tendencias.md, alertas.md |
-| estratega | sonnet | Plan semanal y auditoría (1 arreglo) | yt-plan, yt-audit | data/plan-semanal.md |
-| guionista | opus | Gancho + guion (y reescritura) | yt-script (hookscore), viral-youtube-shorts, viral-tiktok-content | guiones/ |
-| voz-audio | haiku | Locución IA frase a frase (sin grabar nada) | clipfactory voice | audio/, entregas/ |
-| sonido | haiku | Efectos, música sin derechos y mezcla -14 LUFS | clipfactory sfx | mezcla |
-| director-arte | sonnet | Personajes, paleta y fichas (identidad visual) | — (personajes.md) | personajes.md |
-| animacion | sonnet | Escenas 9:16 sin repetir | — | guiones/*-escenas.md |
-| packaging | sonnet | Título + miniatura/fotograma 1 | yt-package (title.py) | miniaturas/ |
-| editor | haiku | Clipping: momentos de fuentes autorizadas, job y render 9:16 | yt-edit, yt-chapters, yt-shorts + clipfactory | jobs/*.yaml, salida/*.mp4 |
-| documentalista | sonnet | Datos verificados de GTA VI (misiones, personajes, lugares) | — (base de conocimiento) | investigacion/gta-vi-base.md, investigacion/gta/ |
-| studio | haiku | Descripción, etiquetas, comentario fijado, hora | yt-seo | data/publicacion-*.md |
-| retencion | sonnet | Datos de retención/VVSA → aviso | yt-retention | data/retencion.md |
-| comunidad | sonnet | Comentarios y comentario fijado | yt-comment | respuestas listas |
+## Equipo (13 agentes, una función cada uno)
+| Departamento | Agentes |
+|---|---|
+| Estrategia e inteligencia | tendencias, estratega, documentalista |
+| Creativo | guionista, director-arte |
+| Producción | editor (clipper), voz-audio (locución IA), sonido, animacion |
+| Lanzamiento | packaging (títulos y portadas), studio (publicación) |
+| Crecimiento | retencion, comunidad |
 
-Skills de apoyo sin dueño-agente: `prompt-master` (optimiza prompts para Runway/Kling/Midjourney/ElevenLabs cuando se pida). Eliminado por solapar con yt-script: `viral-hooks`.
-Ciclo Short: tendencias → guionista → [aprobación] → voz-audio → animacion → packaging → studio → [aprobación] → (72 h) retencion → (reabre guionista). Largos: + editor.
-
-## Quién usa qué dato (flujo)
-tendencias→ideas | guionista→guion | voz-audio/animacion/packaging←guion | studio←título(packaging)+capítulos(editor) | retencion→aviso→guionista/packaging | comunidad→ideas→tendencias.
-
-## Base de conocimiento
-`investigacion/tecnicas-2026-11.md` (qué hacen los repos públicos, con nivel de evidencia), `personajes.md`, `voice.md` (borrador v0).
-
-## Límites honestos
-- Nadie sube a YouTube: tú subes. Las claves API (voz, vídeo) solo si decides usarlas; sin ellas todo queda listo para hacer a mano.
-- hookscore.py es una heurística, no un predictor; la puntuación de miniaturas es predicción hasta tener CTR real.
-- Todo se aprende de los datos reales: `retencion` y `aprendizajes.md` cierran el ciclo.
+Detalle de cada agente: `.claude/agents/<nombre>.md`. Comandos: `/short <tema>` (Short original) y `/clip <ID> <fuente>` (clip de tu grabación).

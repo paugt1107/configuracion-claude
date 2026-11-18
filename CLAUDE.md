@@ -7,7 +7,8 @@
 
 # Oficina del canal de YouTube
 Proyecto en `canal-youtube/`. Equipo = subagentes en `.claude/agents/`.
-Lee `canal-youtube/README.md` solo cuando trabajes en el canal.
-Nicho: GTA VI en español (Shorts + TikTok). Comandos: `/short <tema>` y `/clip <ID> <fuente>`. Código: `clipfactory/` (`python3 -m clipfactory -h`, tests con `python3 -m pytest -q`). Fuentes ajenas solo con permiso: `canal-youtube/politica-fuentes.md`. Equipo de 13 agentes con función única (ver `canal-youtube/README.md`): tendencias, estratega, guionista, voz-audio (locución IA), sonido, director-arte, animacion, packaging, editor (clipper), documentalista, studio, retencion, comunidad. Un skill = un dueño; no duplicar roles. Voz del canal: `canal-youtube/voice.md`.
-Config y umbrales: `canal-youtube/config.md`. Los agentes se comunican por archivos en `canal-youtube/data/`.
-Producción: guion = `canal-youtube/guiones/<ID>.yaml` (ver PLANTILLA.yaml). Push → GitHub Actions `produccion` genera voz IA (el usuario NUNCA graba), vídeo, 3 portadas y publicacion.md en `entregas/<ID>/` (log en `entregas/_logs/`). Radar cada 30 min: `canal-youtube/data/radar/ultimo.md`. Recortes de personajes: workflow `recortes` → `media/recortes/`.
+Índice: `canal-youtube/README.md` (léelo solo cuando trabajes en el canal). Docs en `canal-youtube/docs/`, datos en `canal-youtube/datos/`.
+Nicho: GTA VI en español (Shorts + TikTok). Comandos: `/short <tema>` y `/clip <ID> <fuente>`. Código: `clipfactory/` (`python3 -m clipfactory -h`, tests con `python3 -m pytest -q`). Fuentes ajenas solo con permiso: `canal-youtube/docs/politica-fuentes.md`. Equipo de 13 agentes con función única (ver `canal-youtube/README.md`): tendencias, estratega, guionista, voz-audio (locución IA), sonido, director-arte, animacion, packaging, editor (clipper), documentalista, studio, retencion, comunidad. Un skill = un dueño; no duplicar roles. Voz del canal: `canal-youtube/docs/voz-del-canal.md`.
+Config y umbrales: `canal-youtube/docs/configuracion.md`. Los agentes se comunican por archivos en `canal-youtube/datos/`.
+Producción: guion = `canal-youtube/guiones/<ID>.yaml` (ver PLANTILLA.yaml). Push → GitHub Actions `produccion` genera voz IA (el usuario NUNCA graba), vídeo, 3 portadas y publicacion.md en `entregas/<ID>/` (log en `entregas/_logs/`). Radar cada 30 min: `canal-youtube/datos/radar/ultimo.md`. Recortes de personajes: workflow `recortes` → `media/recortes/`.
+Código: rutas centralizadas en `clipfactory/rutas.py`; antes de commit `ruff check clipfactory tests && python -m pytest`.

@@ -34,7 +34,7 @@ Regla: máximo 2 al día; cada uno con aportación propia; si dos seguidos falla
 ## Miniaturas / fotograma 1 (packaging)
 - Shorts: el fotograma 1 es la miniatura. Personaje o lugar reconocible + 1 elemento señalado (círculo/flecha) + máx. 3 palabras que NO repitan el título.
 - Para el feed de TikTok: la portada se elige en la app; usar el mismo fotograma.
-- Identidad: borde/acentos naranja #FF7A1A y cian #19D3FF (ver personajes.md); siempre capturas propias o fotogramas oficiales con crédito; nunca logos ni arte promocional como fondo completo.
+- Identidad: borde/acentos naranja #FF7A1A y cian #19D3FF (ver identidad-visual.md); siempre capturas propias o fotogramas oficiales con crédito; nunca logos ni arte promocional como fondo completo.
 
 ## Publicación
 - YouTube Shorts: título ≤ 60 caracteres con "GTA 6" al principio (la gente busca "GTA 6" más que "GTA VI"), 2 primeras líneas de descripción útiles, crédito y fuentes, 3-5 hashtags.

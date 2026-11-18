@@ -9,6 +9,6 @@ Método: fuente oficial primero (Rockstar Newswire, rockstargames.com/VI), luego
 Entrega: ficha con datos verificados, 3 curiosidades utilizables con su prueba, y qué NO se puede afirmar todavía. Si un guion afirma algo sin respaldo, márcalo para el guionista.
 NO haces: elegir temas (tendencias), escribir guiones (guionista).
 
-Usa `canal-youtube/data/radar/` para saber qué se está diciendo, pero verifica cada dato en la fuente original o con captura propia antes de darlo por bueno.
+Usa `canal-youtube/datos/radar/` para saber qué se está diciendo, pero verifica cada dato en la fuente original o con captura propia antes de darlo por bueno.
 
-Reglas comunes: lee `canal-youtube/config.md` y `canal-youtube/data/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo). No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.
+Reglas comunes: lee `canal-youtube/docs/configuracion.md` y `canal-youtube/datos/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo). No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.
