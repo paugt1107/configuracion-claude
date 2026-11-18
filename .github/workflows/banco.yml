@@ -53,10 +53,11 @@ jobs:
           EOF
           chmod +x /tmp/guardar.sh
       - name: 1 · Descargar (oficiales + libres)
-        run: python3 -m clipfactory.banco descargar --max "$MAXIMO" 2>&1 | tee -a /tmp/banco-log.txt
+        run: set -o pipefail; python3 -m clipfactory.banco descargar --max "$MAXIMO" 2>&1 | tee -a /tmp/banco-log.txt
       - run: /tmp/guardar.sh "descarga"
+        if: always()
       - name: 2 · Etiquetar (CLIP) y sacar Lucía/Jason
-        run: python3 -m clipfactory.banco etiquetar 2>&1 | tee -a /tmp/banco-log.txt
+        run: set -o pipefail; python3 -m clipfactory.banco etiquetar 2>&1 | tee -a /tmp/banco-log.txt
       - name: 3 · Recortes de personajes
         run: python3 -c "from clipfactory import recorte; print(recorte.process_all())"
         continue-on-error: true

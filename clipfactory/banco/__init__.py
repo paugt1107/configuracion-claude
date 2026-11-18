@@ -129,6 +129,18 @@ def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
         subprocess.run(["node", str(Path(__file__).with_name("scrape.mjs")), str(lista), *paginas], check=False, timeout=1800)
         items = json.loads(lista.read_text()) if lista.exists() else []
     print(f"[banco] oficial: {len(items)} URLs candidatas")
+
+    # primero las que parecen capturas/artes grandes; las miniaturas y logos al final
+    def prioridad(it):
+        u = it["url"].lower()
+        return (
+            0 if re.search(r"screenshot|artwork|wallpaper|people|places|/vi/", u + it.get("pagina", "").lower()) else 1,
+            1 if re.search(r"thumb|small|_s\.|w=\d{2,3}\b|width=\d{2,3}\b|icon", u) else 0,
+        )
+
+    items.sort(key=prioridad)
+    for it in items[:8]:
+        print("[banco] ejemplo:", it["url"][:160])
     hashes = {v["hash"]: k for k, v in ind.items() if v.get("hash")}
     nuevas = 0
     vistos = set()
@@ -153,7 +165,7 @@ def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
         except Exception:
             continue
         h = _ahash(im)
-        dup = next((k for hh, k in hashes.items() if _cerca(h, hh)), None)
+        dup = next((k for hh, k in hashes.items() if k in ind and _cerca(h, hh)), None)
         if dup and ind[dup]["w"] >= im.width:
             continue
         iid = "of-" + hashlib.sha1(url.encode()).hexdigest()[:10]
@@ -164,6 +176,7 @@ def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
         if dup:  # misma imagen en peor calidad: se sustituye
             (BANCO / ind[dup]["archivo"]).unlink(missing_ok=True)
             ind.pop(dup)
+            hashes = {hh: k for hh, k in hashes.items() if k != dup}
         nombre = Path(url).stem
         ind[iid] = {
             "archivo": str(dst.relative_to(BANCO)),
@@ -180,6 +193,9 @@ def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
         }
         hashes[h] = iid
         nuevas += 1
+        if nuevas % 25 == 0:
+            guardar(ind)
+            print(f"[banco] oficial: {nuevas} guardadas…")
     print(f"[banco] oficial: {nuevas} nuevas")
     return nuevas
 
@@ -230,18 +246,18 @@ def etiquetar(ind: dict) -> int:
     proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
     keys = list(CLIP_ETIQUETAS)
     txt = proc(text=[CLIP_ETIQUETAS[k] for k in keys], return_tensors="pt", padding=True)
-    with torch.no_grad():
-        tf = model.get_text_features(**txt)
-        tf = tf / tf.norm(dim=-1, keepdim=True)
     hechos = 0
     for v in ind.values():
         if v.get("clip"):
             continue
         im = Image.open(BANCO / v["archivo"]).convert("RGB")
-        with torch.no_grad():
-            f = model.get_image_features(**proc(images=im, return_tensors="pt"))
-            f = f / f.norm(dim=-1, keepdim=True)
-            p = (100 * f @ tf.T).softmax(dim=-1)[0].tolist()
+        with torch.no_grad():  # forward completo: estable entre versiones de transformers
+            px = proc(images=im, return_tensors="pt")["pixel_values"]
+            p = (
+                model(input_ids=txt["input_ids"], attention_mask=txt["attention_mask"], pixel_values=px)
+                .logits_per_image.softmax(dim=-1)[0]
+                .tolist()
+            )
         top = sorted(zip(keys, p), key=lambda x: -x[1])
         auto = [k for k, s in top[:3] if s >= 0.12]
         v["clip"] = {k: round(s, 3) for k, s in top[:5]}
