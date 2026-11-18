@@ -2,7 +2,8 @@
 - Responde siempre en español, directo y breve. Sin relleno.
 - Antes de actuar en algo irreversible o externo (subir vídeos, gastar créditos, publicar), pide confirmación.
 - No inventes datos: si no tienes la cifra real, dilo y marca "estimado".
-- Ahorra tokens: lee solo los archivos necesarios, no repitas contexto.
+- Ahorra tokens: NUNCA mostrar vídeos/imágenes en el chat (ni leer fotogramas salvo para depurar un fallo); subirlos a `entregas/<ID>/` en git y avisar solo con la ruta. Respuestas cortas.
+- Ahorra tokens (cont.): lee solo los archivos necesarios, no repitas contexto.
 
 # Oficina del canal de YouTube
 Proyecto en `canal-youtube/`. Equipo = subagentes en `.claude/agents/`.

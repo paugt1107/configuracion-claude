@@ -45,3 +45,9 @@ A las 72 h: exporta la retención (Studio → vídeo → Analítica → Interacc
 ## Automático en GitHub
 - `tests` en cada push (render real con vídeo sintético).
 - `radar-tendencias` cada día a las 07:17 (si hay `YOUTUBE_API_KEY`): guarda `canal-youtube/data/trends/*.md` y añade alarmas ≥10x a `alertas.md`.
+
+## Grabar y subir tu voz (S001)
+1. Grabadora del móvil, sitio silencioso, móvil a un palmo de la boca. Lee `canal-youtube/audio/S001-narracion.txt` a ritmo natural y alegre (~45 s). Si te equivocas, repite la frase y sigue: se recorta después. Un solo archivo.
+2. Guárdalo como `S001-voz.m4a` (o .mp3/.wav).
+3. GitHub (web) → repositorio → carpeta `canal-youtube/audio` → Add file → Upload files → arrastra el archivo → Commit changes.
+4. Dime "subida". Yo hago `git pull`, sincronizo subtítulos y escenas con tu voz y dejo el vídeo en `entregas/S001/S001-final.mp4`.

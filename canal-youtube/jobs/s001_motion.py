@@ -26,9 +26,20 @@ SCENES = [
 ]
 TEXTO = Path("canal-youtube/audio/S001-narracion.txt").read_text(encoding="utf-8").replace("\n", " ")
 total = sum(s["dur"] for s in SCENES)
-if len(sys.argv) >= 3:
-    audio, words = sys.argv[1], json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))["words"]
+audio, words = None, None
+args = sys.argv[1:]
+if args:
+    audio = args[0]
+    from clipfactory import align, media
+    if len(args) > 1:
+        words = json.loads(Path(args[1]).read_text(encoding="utf-8"))["words"]
+    else:
+        words = align.align_words(TEXTO, audio)  # sincroniza el texto con tu voz sin red ni IA
+    k = (media.duration(audio) + 0.4) / total      # las escenas se estiran/encogen a la duración real de tu voz
+    for s in SCENES:
+        s["dur"] = round(s["dur"] * k, 3)
+    total = sum(s["dur"] for s in SCENES)
 else:
-    audio, words = None, motion.estimate_words(TEXTO, total)
-out = motion.build(SCENES, words, "salida/S001-animatic.mp4", audio)
-print(out, f"{total:.1f}s", "con voz" if audio else "SIN voz (subtítulos con tiempos estimados)")
+    words = motion.estimate_words(TEXTO, total)
+out = motion.build(SCENES, words, "salida/S001-animatic.mp4" if not audio else "entregas/S001/S001-final.mp4", audio)
+print(out, f"{total:.1f}s", "con tu voz" if audio else "SIN voz (subtítulos estimados)")

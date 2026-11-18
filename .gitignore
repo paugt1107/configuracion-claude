@@ -1,13 +1,9 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-media/
 salida/
-*.mp4
-*.mov
-*.mkv
-*.mp3
-*.wav
+media/*.mp4
+media/*.mov
 client_secret*.json
 .yt_token.json
 .env
