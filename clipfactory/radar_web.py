@@ -215,6 +215,13 @@ def parse_x(data: dict, q: str) -> list[dict]:
     return out
 
 
+HISTORIA = re.compile(
+    r"modo historia|story mode|historia|story|misi[oó]n|missions?|cap[ií]tulo|chapter|final\b|ending|walkthrough|gu[ií]a|"
+    r"duraci[oó]n|how long|horas|hours|campa[ñn]a|campaign|spoiler|personajes?|characters?|villano|villain|jefe final|boss",
+    re.I,
+)
+
+
 def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = None) -> list[dict]:
     """Deduplica contra lo ya visto, clasifica y escribe los informes. Devuelve las novedades."""
     now = now or dt.datetime.now(dt.timezone(dt.timedelta(hours=1)))
@@ -248,6 +255,20 @@ def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = Non
             fh.write(
                 f"| {stamp} | {'★' * min(i['potencial'], 5) or '·'} | {i['lang']} | {i['categoria']} | [{title}]({i['url']}) | {i['source']} |\n"
             )
+    # MODO HISTORIA: todo lo que hable de misiones, capítulos, final, duración… va a historia.md (acumulado)
+    hist = [i for i in new if HISTORIA.search(i["title"])]
+    if hist:
+        hp = out_dir / "historia.md"
+        if not hp.exists():
+            hp.write_text(
+                "# Radar · MODO HISTORIA de GTA VI (Valentín)\nTitulares sobre misiones, capítulos, final, duración y personajes. "
+                "⚠️ SPOILERS: no usarlos en título/portada/primeros 3 s hasta el 3-dic-2026. Resumen verificado: "
+                "`canal-youtube/investigacion/modo-historia.md`.\n\n| Fecha | Idioma | Título | Fuente |\n|---|---|---|---|\n",
+                encoding="utf-8",
+            )
+        with open(hp, "a", encoding="utf-8") as fh:
+            for i in hist:
+                fh.write(f"| {now:%d-%m %H:%M} | {i['lang']} | [{i['title'].replace('|', '/')[:140]}]({i['url']}) | {i['source']} |\n")
     if not new:  # sin novedades: se conserva la lista anterior
         return new
     top = new[:25]
