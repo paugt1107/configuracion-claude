@@ -2,84 +2,151 @@
  "lb-14d0f67386": {
   "archivo": "libres/lugares/gas-station-night-united-states-6.jpg",
   "categoria": "lugares",
+  "clip": {
+   "criminal": 0.0,
+   "desierto": 0.0,
+   "gasolinera": 0.998,
+   "monumento": 0.0,
+   "tienda": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Hopper-ish Gas Station (5037887485).jpg — Naotake Murayama from San Francisco, CA, USA — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Hopper-ish_Gas_Station_(5037887485).jpg",
+  "dibujo": "dibujos/gta/lb-14d0f67386.jpg",
   "etiquetas": [
    "gas",
+   "gasolinera",
    "lugares",
    "night",
    "station"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "gasolinera",
   "w": 1920
  },
  "lb-234aa8baea": {
   "archivo": "libres/lugares/convenience-store-night-ov1.jpg",
   "categoria": "lugares",
+  "clip": {
+   "coche": 0.002,
+   "gasolinera": 0.955,
+   "pareja": 0.001,
+   "tienda": 0.037,
+   "tormenta": 0.002
+  },
+  "clip_v": 3,
   "consulta": "Convenience store night",
   "credito": "heavy rain — kurotango Clip — CC BY-SA 2.0 — https://www.flickr.com/photos/54724404@N08/52379414317",
+  "dibujo": "dibujos/gta/lb-234aa8baea.jpg",
   "etiquetas": [
    "convenience",
+   "gasolinera",
    "lugares",
    "night",
    "store"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "gasolinera",
   "w": 1023
  },
  "lb-298f88fb8f": {
   "archivo": "libres/lugares/gas-station-night-united-states-5.jpg",
   "categoria": "lugares",
+  "clip": {
+   "camion": 0.0,
+   "club": 0.0,
+   "gasolinera": 0.999,
+   "puerto": 0.0,
+   "tienda": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Longitudinal view of Speedway station canopy at night, Montgomery, NY.jpg — Daniel Case — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Longitudinal_view_of_Speedway_station_canopy_at_night,_Montgomery,_NY.jpg",
+  "dibujo": "dibujos/gta/lb-298f88fb8f.jpg",
   "etiquetas": [
    "gas",
+   "gasolinera",
    "lugares",
    "night",
    "station"
   ],
   "fuente": "libre",
   "h": 1079,
+  "tema": "gasolinera",
   "w": 1920
  },
  "lb-4e33b15dfd": {
   "archivo": "libres/lugares/convenience-store-night-ov2.jpg",
   "categoria": "lugares",
+  "clip": {
+   "comida": 0.008,
+   "criminal": 0.016,
+   "gasolinera": 0.039,
+   "tecnologia": 0.011,
+   "tienda": 0.907
+  },
+  "clip_v": 3,
   "consulta": "Convenience store night",
   "credito": "7-Eleven, Kyoto — Japanexperterna.se — CC BY-SA 2.0 — https://www.flickr.com/photos/68532869@N08/14225546002",
+  "dibujo": "dibujos/gta/lb-4e33b15dfd.jpg",
   "etiquetas": [
    "convenience",
    "lugares",
    "night",
-   "store"
+   "store",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "tienda",
   "w": 1024
  },
  "lb-5a3201bcc3": {
   "archivo": "libres/lugares/convenience-store-night-ov6.jpg",
   "categoria": "lugares",
+  "clip": {
+   "cartel": 0.025,
+   "criminal": 0.031,
+   "deporte": 0.032,
+   "gasolinera": 0.148,
+   "tienda": 0.725
+  },
+  "clip_v": 3,
   "consulta": "Convenience store night",
   "credito": "Through The Window Late Night DTLA — Joey Z1 — CC BY 2.0 — https://www.flickr.com/photos/45958601@N02/30691845493",
+  "dibujo": "dibujos/gta/lb-5a3201bcc3.jpg",
   "etiquetas": [
    "convenience",
+   "gasolinera",
    "lugares",
    "night",
-   "store"
+   "store",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tienda",
   "w": 1024
  },
  "lb-5b5e869847": {
   "archivo": "libres/lugares/gas-station-night-united-states-ov2.jpg",
   "categoria": "lugares",
+  "clip": {
+   "accion": 0.195,
+   "criminal": 0.008,
+   "deporte": 0.741,
+   "fiesta": 0.031,
+   "personas": 0.006
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Protesters attempt to avoid tear gas on Mohammed Mahmoud Street — alisdare1 — CC BY-SA 2.0 — https://www.flickr.com/photos/59952459@N08/6821225189",
+  "dibujo": "dibujos/gta/lb-5b5e869847.jpg",
   "etiquetas": [
+   "accion",
+   "deporte",
    "gas",
    "lugares",
    "night",
@@ -87,141 +154,246 @@
   ],
   "fuente": "libre",
   "h": 681,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-607cf39867": {
   "archivo": "libres/lugares/gas-station-night-united-states-ov1.jpg",
   "categoria": "lugares",
+  "clip": {
+   "club": 0.001,
+   "gasolinera": 0.967,
+   "monumento": 0.0,
+   "puerto": 0.0,
+   "tienda": 0.03
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Home of Hemmings Motor News (Exterior, 1 of 2) — Tony Fischer Photography — CC BY 2.0 — https://www.flickr.com/photos/22714323@N06/3446121378",
+  "dibujo": "dibujos/gta/lb-607cf39867.jpg",
   "etiquetas": [
    "gas",
+   "gasolinera",
    "lugares",
    "night",
    "station"
   ],
   "fuente": "libre",
   "h": 688,
+  "tema": "gasolinera",
   "w": 1024
  },
  "lb-6640b974c3": {
   "archivo": "libres/lugares/gas-station-night-united-states-4.jpg",
   "categoria": "lugares",
+  "clip": {
+   "deportivo": 0.0,
+   "gasolinera": 0.965,
+   "monumento": 0.0,
+   "puerto": 0.0,
+   "tienda": 0.034
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Speedway gas station at night (51763042399).jpg — Chris Rycroft from Cambridge, Massachusetts, United States — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Speedway_gas_station_at_night_(51763042399).jpg",
+  "dibujo": "dibujos/gta/lb-6640b974c3.jpg",
   "etiquetas": [
    "gas",
+   "gasolinera",
    "lugares",
    "night",
    "station"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "gasolinera",
   "w": 1920
  },
  "lb-882138e050": {
   "archivo": "libres/lugares/gas-station-night-united-states-ov3.jpg",
   "categoria": "lugares",
+  "clip": {
+   "ciencia": 0.076,
+   "cohete": 0.026,
+   "espacio": 0.563,
+   "noche": 0.114,
+   "tecnologia": 0.073
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "City Lights of the United States 2012 — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/8247975848",
+  "dibujo": "dibujos/gta/lb-882138e050.jpg",
   "etiquetas": [
+   "espacio",
    "gas",
    "lugares",
    "night",
+   "noche",
    "station"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "espacio",
   "w": 1024
  },
  "lb-aa65d5070a": {
   "archivo": "libres/lugares/convenience-store-night-ov4.jpg",
   "categoria": "lugares",
+  "clip": {
+   "calle": 0.01,
+   "cartel": 0.047,
+   "gasolinera": 0.369,
+   "noche": 0.01,
+   "tienda": 0.525
+  },
+  "clip_v": 3,
   "consulta": "Convenience store night",
   "credito": "Brooklyn Street Scenes - Convenience Store — Steven Pisano — CC BY 2.0 — https://www.flickr.com/photos/45776673@N04/15938967319",
+  "dibujo": "dibujos/gta/lb-aa65d5070a.jpg",
   "etiquetas": [
    "convenience",
+   "gasolinera",
    "lugares",
    "night",
-   "store"
+   "store",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tienda",
   "w": 1023
  },
  "lb-ceea4616aa": {
   "archivo": "libres/lugares/convenience-store-night-ov3.jpg",
   "categoria": "lugares",
+  "clip": {
+   "cartel": 0.189,
+   "club": 0.055,
+   "gasolinera": 0.282,
+   "noche": 0.312,
+   "tienda": 0.081
+  },
+  "clip_v": 3,
   "consulta": "Convenience store night",
   "credito": "Dunn Milk — Matt Henry photos — CC BY 2.0 — https://www.flickr.com/photos/116417508@N06/33642291154",
+  "dibujo": "dibujos/gta/lb-ceea4616aa.jpg",
   "etiquetas": [
+   "cartel",
    "convenience",
+   "gasolinera",
    "lugares",
    "night",
+   "noche",
    "store"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "noche",
   "w": 1024
  },
  "lb-d1d141716e": {
   "archivo": "libres/lugares/convenience-store-night-ov5.jpg",
   "categoria": "lugares",
+  "clip": {
+   "cartel": 0.815,
+   "club": 0.005,
+   "comida": 0.007,
+   "gasolinera": 0.003,
+   "tienda": 0.157
+  },
+  "clip_v": 3,
   "consulta": "Convenience store night",
   "credito": "Village Foods — Kurayba — CC BY-SA 2.0 — https://www.flickr.com/photos/48503330@N08/5482315367",
+  "dibujo": "dibujos/gta/lb-d1d141716e.jpg",
   "etiquetas": [
+   "cartel",
    "convenience",
    "lugares",
    "night",
-   "store"
+   "store",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 764,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-df916c28e0": {
   "archivo": "libres/lugares/gas-station-night-united-states-3.jpg",
   "categoria": "lugares",
+  "clip": {
+   "camion": 0.0,
+   "criminal": 0.0,
+   "gasolinera": 0.998,
+   "noche": 0.0,
+   "tienda": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Shell gas station at night (52121715434).jpg — Chris Rycroft from Cambridge, Massachusetts, United States — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Shell_gas_station_at_night_(52121715434).jpg",
+  "dibujo": "dibujos/gta/lb-df916c28e0.jpg",
   "etiquetas": [
    "gas",
+   "gasolinera",
    "lugares",
    "night",
    "station"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "gasolinera",
   "w": 1920
  },
  "lb-f576a7f024": {
   "archivo": "libres/lugares/gas-station-night-united-states-1.jpg",
   "categoria": "lugares",
+  "clip": {
+   "accion": 0.003,
+   "camion": 0.011,
+   "criminal": 0.002,
+   "gasolinera": 0.971,
+   "pareja": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Gas Fueling Station - Minnesota, United States (37352678661).jpg — Tony Webster from Minneapolis, Minnesota, United States — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Gas_Fueling_Station_-_Minnesota,_United_States_(37352678661).jpg",
+  "dibujo": "dibujos/gta/lb-f576a7f024.jpg",
   "etiquetas": [
    "gas",
+   "gasolinera",
    "lugares",
    "night",
    "station"
   ],
   "fuente": "libre",
   "h": 1282,
+  "tema": "gasolinera",
   "w": 1920
  },
  "lb-fb9b002892": {
   "archivo": "libres/lugares/gas-station-night-united-states-2.jpg",
   "categoria": "lugares",
+  "clip": {
+   "cartel": 0.001,
+   "coche": 0.0,
+   "gasolinera": 0.997,
+   "noche": 0.0,
+   "tienda": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Gas station night United States",
   "credito": "Gas Station at Night (51118972527).jpg — Doug Davey from New Jersey, United States — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Gas_Station_at_Night_(51118972527).jpg",
+  "dibujo": "dibujos/gta/lb-fb9b002892.jpg",
   "etiquetas": [
    "gas",
+   "gasolinera",
    "lugares",
    "night",
    "station"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "gasolinera",
   "w": 1920
  }
 }

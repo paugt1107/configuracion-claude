@@ -2,625 +2,1121 @@
  "lb-03a1de10af": {
   "archivo": "libres/ambiente/neon-lights-night-city-1.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.044,
+   "cartel": 0.019,
+   "monumento": 0.024,
+   "movil": 0.018,
+   "noche": 0.779
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "Dotonbori, Osaka, at night, November 2016.jpg — Martin Falbisoner — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg",
+  "dibujo": "dibujos/gta/lb-03a1de10af.jpg",
   "etiquetas": [
    "ambiente",
    "lights",
    "neon",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 2349,
+  "tema": "noche",
   "w": 1920
  },
  "lb-072fd2d283": {
   "archivo": "libres/ambiente/palm-trees-neon-ov4.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "cartel": 0.473,
+   "club": 0.411,
+   "desierto": 0.014,
+   "gasolinera": 0.051,
+   "monumento": 0.017
+  },
+  "clip_v": 3,
   "consulta": "Palm trees neon",
   "credito": "neon palm — sun dazed — CC BY-SA 2.0 — https://www.flickr.com/photos/8411191@N07/3320083262",
+  "dibujo": "dibujos/gta/lb-072fd2d283.jpg",
   "etiquetas": [
    "ambiente",
+   "cartel",
+   "club",
    "neon",
    "palm",
    "trees"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-0e701a3bd2": {
   "archivo": "libres/ambiente/palm-trees-neon-ov5.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "ave": 0.161,
+   "cartel": 0.327,
+   "club": 0.3,
+   "desierto": 0.034,
+   "noche": 0.026
+  },
+  "clip_v": 3,
   "consulta": "Palm trees neon",
   "credito": "neon palm — eschipul — CC BY-SA 2.0 — https://www.flickr.com/photos/16638697@N00/455377902",
+  "dibujo": "dibujos/gta/lb-0e701a3bd2.jpg",
   "etiquetas": [
    "ambiente",
+   "ave",
+   "cartel",
+   "club",
    "neon",
    "palm",
    "trees"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-175e68af88": {
   "archivo": "libres/ambiente/rain-night-street-neon-ov3.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "cartel": 0.092,
+   "club": 0.016,
+   "deporte": 0.004,
+   "noche": 0.863,
+   "tormenta": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Rain night street neon",
   "credito": "Times Square in the Rain... — Diego3336 — CC BY 2.0 — https://www.flickr.com/photos/31018257@N00/284576308",
+  "dibujo": "dibujos/gta/lb-175e68af88.jpg",
   "etiquetas": [
    "ambiente",
    "night",
+   "noche",
    "rain",
    "street"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "noche",
   "w": 1024
  },
  "lb-179b65c629": {
   "archivo": "libres/ambiente/sports-car-night-city-ov5.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "accion": 0.118,
+   "calle": 0.065,
+   "carretera": 0.2,
+   "coche": 0.175,
+   "monumento": 0.07
+  },
+  "clip_v": 3,
   "consulta": "Sports car night city",
   "credito": "Follow that Blue Bus — Jocey K — CC BY-SA 2.0 — https://www.flickr.com/photos/48627921@N05/14535389443",
+  "dibujo": "dibujos/gta/lb-179b65c629.jpg",
   "etiquetas": [
+   "accion",
    "ambiente",
    "car",
+   "carretera",
+   "coche",
    "night",
    "sports"
   ],
   "fuente": "libre",
   "h": 750,
+  "tema": "carretera",
   "w": 1000
  },
  "lb-208d57e03e": {
   "archivo": "libres/ambiente/hurricane-florida-ov6.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "espacio": 0.002,
+   "mar": 0.002,
+   "pez": 0.001,
+   "retrato": 0.001,
+   "tormenta": 0.985
+  },
+  "clip_v": 3,
   "consulta": "Hurricane Florida",
   "credito": "Hurricane Irma 2017 09 08 — anttilipponen — CC BY 2.0 — https://www.flickr.com/photos/150411108@N06/36967049551",
+  "dibujo": "dibujos/gta/lb-208d57e03e.jpg",
   "etiquetas": [
    "ambiente",
    "florida",
-   "hurricane"
+   "hurricane",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 599,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-22354f4432": {
   "archivo": "libres/ambiente/hurricane-florida-ov3.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "agua": 0.08,
+   "barco": 0.081,
+   "carretera": 0.087,
+   "mar": 0.224,
+   "puerto": 0.375
+  },
+  "clip_v": 3,
   "consulta": "Hurricane Florida",
   "credito": "091617 DryTortugas NP — Eastern Incident Management Team — Dominio público 1.0 — https://www.flickr.com/photos/152181634@N06/36434399814",
+  "dibujo": "dibujos/gta/lb-22354f4432.jpg",
   "etiquetas": [
    "ambiente",
    "florida",
-   "hurricane"
+   "hurricane",
+   "mar",
+   "puerto"
   ],
   "fuente": "libre",
   "h": 756,
+  "tema": "puerto",
   "w": 1008
  },
  "lb-237a0a5f26": {
   "archivo": "libres/ambiente/sports-car-night-city-ov4.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "accion": 0.023,
+   "camion": 0.01,
+   "coche": 0.797,
+   "pareja": 0.115,
+   "policia": 0.017
+  },
+  "clip_v": 3,
   "consulta": "Sports car night city",
   "credito": "3AM Hong Kong taxi - Tsim Sha Tsui — Jacksoncam — CC BY 2.0 — https://www.flickr.com/photos/51017890@N07/4708020681",
+  "dibujo": "dibujos/gta/lb-237a0a5f26.jpg",
   "etiquetas": [
    "ambiente",
    "car",
+   "coche",
    "night",
+   "pareja",
    "sports"
   ],
   "fuente": "libre",
   "h": 667,
+  "tema": "coche",
   "w": 1000
  },
  "lb-2ee581fdb7": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov1.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "barco": 0.029,
+   "helicoptero": 0.017,
+   "monumento": 0.534,
+   "noche": 0.27,
+   "puerto": 0.026
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "The London Eye @ Xmas night — mostaque — CC BY 2.0 — https://www.flickr.com/photos/31626005@N04/4232936419",
+  "dibujo": "dibujos/gta/lb-2ee581fdb7.jpg",
   "etiquetas": [
    "ambiente",
    "lights",
+   "monumento",
    "neon",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 862,
+  "tema": "monumento",
   "w": 1024
  },
  "lb-3109b70bf5": {
   "archivo": "libres/ambiente/sports-car-night-city-ov1.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "club": 0.001,
+   "gasolinera": 0.967,
+   "monumento": 0.0,
+   "puerto": 0.0,
+   "tienda": 0.03
+  },
+  "clip_v": 3,
   "consulta": "Sports car night city",
   "credito": "Home of Hemmings Motor News (Exterior, 1 of 2) — Tony Fischer Photography — CC BY 2.0 — https://www.flickr.com/photos/22714323@N06/3446121378",
+  "dibujo": "dibujos/gta/lb-3109b70bf5.jpg",
   "etiquetas": [
    "ambiente",
    "car",
+   "gasolinera",
    "night",
    "sports"
   ],
   "fuente": "libre",
   "h": 688,
+  "tema": "gasolinera",
   "w": 1024
  },
  "lb-420fd39876": {
   "archivo": "libres/ambiente/hurricane-florida-ov5.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "ciencia": 0.407,
+   "cohete": 0.033,
+   "espacio": 0.039,
+   "movil": 0.056,
+   "tecnologia": 0.285
+  },
+  "clip_v": 3,
   "consulta": "Hurricane Florida",
   "credito": "GRIP Experiment 2010 — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4898977898",
+  "dibujo": "dibujos/gta/lb-420fd39876.jpg",
   "etiquetas": [
    "ambiente",
+   "ciencia",
    "florida",
-   "hurricane"
+   "hurricane",
+   "tecnologia"
   ],
   "fuente": "libre",
   "h": 797,
+  "tema": "ciencia",
   "w": 1024
  },
  "lb-4819d411eb": {
   "archivo": "libres/ambiente/sports-car-night-city-ov2.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.009,
+   "coche": 0.276,
+   "deportivo": 0.229,
+   "gasolinera": 0.007,
+   "pareja": 0.424
+  },
+  "clip_v": 3,
   "consulta": "Sports car night city",
   "credito": "VW at Old Phuket Festival, Thailand, 2-4 Feb 2017 — Phuketian.S — CC BY 2.0 — https://www.flickr.com/photos/124790945@N06/32636631596",
+  "dibujo": "dibujos/gta/lb-4819d411eb.jpg",
   "etiquetas": [
    "ambiente",
    "car",
+   "coche",
+   "deportivo",
    "night",
+   "pareja",
    "sports"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "pareja",
   "w": 1024
  },
  "lb-516ce66520": {
   "archivo": "libres/ambiente/palm-trees-neon-ov2.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.022,
+   "ciudad": 0.046,
+   "club": 0.098,
+   "monumento": 0.03,
+   "noche": 0.702
+  },
+  "clip_v": 3,
   "consulta": "Palm trees neon",
   "credito": "Palms Torquay — Torquay Palms — CC BY-SA 2.0 — https://www.flickr.com/photos/80140240@N04/15441203785",
+  "dibujo": "dibujos/gta/lb-516ce66520.jpg",
   "etiquetas": [
    "ambiente",
    "neon",
+   "noche",
    "palm",
    "trees"
   ],
   "fuente": "libre",
   "h": 473,
+  "tema": "noche",
   "w": 1023
  },
  "lb-54aeba0d2d": {
   "archivo": "libres/ambiente/palm-trees-neon-ov3.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.303,
+   "caiman": 0.12,
+   "cartel": 0.235,
+   "desierto": 0.033,
+   "musica": 0.045
+  },
+  "clip_v": 3,
   "consulta": "Palm trees neon",
   "credito": "Neon Palm — Howdy, I'm H. Michael Karshis — CC BY 2.0 — https://www.flickr.com/photos/48889115061@N01/1442602045",
+  "dibujo": "dibujos/gta/lb-54aeba0d2d.jpg",
   "etiquetas": [
    "ambiente",
+   "arte",
+   "caiman",
+   "cartel",
    "neon",
    "palm",
    "trees"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "arte",
   "w": 1024
  },
  "lb-56a9ce6363": {
   "archivo": "libres/ambiente/neon-lights-night-city-5.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.026,
+   "club": 0.04,
+   "moto": 0.185,
+   "noche": 0.215,
+   "policia": 0.374
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "DSC 6550 Motorcyclists wait at a city intersection at night as traffic lights glow and neon signs light the surrounding buildings.jpg — PattayaPatrol — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:DSC_6550_Motorcyclists_wait_at_a_city_intersection_at_night_as_traffic_lights_glow_and_neon_signs_light_the_surrounding_buildings.jpg",
+  "dibujo": "dibujos/gta/lb-56a9ce6363.jpg",
   "etiquetas": [
    "ambiente",
    "lights",
+   "moto",
    "neon",
-   "night"
+   "night",
+   "noche",
+   "policia"
   ],
   "fuente": "libre",
   "h": 1277,
+  "tema": "policia",
   "w": 1920
  },
  "lb-5d59254b0b": {
   "archivo": "libres/ambiente/sports-car-night-city-ov3.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "carretera": 0.06,
+   "estadio": 0.181,
+   "monumento": 0.258,
+   "puerto": 0.206,
+   "tienda": 0.048
+  },
+  "clip_v": 3,
   "consulta": "Sports car night city",
   "credito": "CenturyLink Field, Seattle, Washington — Ken Lund — CC BY-SA 2.0 — https://www.flickr.com/photos/75683070@N00/1274745912",
+  "dibujo": "dibujos/gta/lb-5d59254b0b.jpg",
   "etiquetas": [
    "ambiente",
    "car",
+   "estadio",
+   "monumento",
    "night",
+   "puerto",
    "sports"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "monumento",
   "w": 1024
  },
  "lb-60b57afc3b": {
   "archivo": "libres/ambiente/helicopter-city-night-ov6.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "avion": 0.01,
+   "cohete": 0.001,
+   "helicoptero": 0.004,
+   "militar": 0.977,
+   "tormenta": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Helicopter city night",
   "credito": "RAF Tornado GR4 in Afghanistan — Defence Images — CC BY-SA 2.0 — https://www.flickr.com/photos/48399297@N04/8670953317",
+  "dibujo": "dibujos/gta/lb-60b57afc3b.jpg",
   "etiquetas": [
    "ambiente",
    "city",
    "helicopter",
+   "militar",
    "night"
   ],
   "fuente": "libre",
   "h": 472,
+  "tema": "militar",
   "w": 1000
  },
  "lb-642d36f97c": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov5.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "cartel": 0.603,
+   "club": 0.371,
+   "movil": 0.0,
+   "noche": 0.022,
+   "tecnologia": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "Neon city lights — Henry Söderlund — CC BY 2.0 — https://www.flickr.com/photos/46563758@N04/15619498933",
+  "dibujo": "dibujos/gta/lb-642d36f97c.jpg",
   "etiquetas": [
    "ambiente",
+   "cartel",
+   "club",
    "lights",
    "neon",
    "night"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-64b1b7da94": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov4.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.221,
+   "cartel": 0.047,
+   "club": 0.063,
+   "noche": 0.573,
+   "tienda": 0.02
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "Times Square — fuzzcat — CC BY 2.0 — https://www.flickr.com/photos/11889819@N00/99674745",
+  "dibujo": "dibujos/gta/lb-64b1b7da94.jpg",
   "etiquetas": [
    "ambiente",
+   "calle",
    "lights",
    "neon",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "noche",
   "w": 1024
  },
  "lb-653fdb7d44": {
   "archivo": "libres/ambiente/palm-trees-neon-ov6.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "club": 0.167,
+   "movil": 0.026,
+   "musica": 0.181,
+   "personas": 0.165,
+   "policia": 0.245
+  },
+  "clip_v": 3,
   "consulta": "Palm trees neon",
   "credito": "Palm trees shadows — Ben Sutherland — CC BY 2.0 — https://www.flickr.com/photos/60179301@N00/3305533097",
+  "dibujo": "dibujos/gta/lb-653fdb7d44.jpg",
   "etiquetas": [
    "ambiente",
+   "club",
+   "musica",
    "neon",
    "palm",
+   "policia",
    "trees"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "policia",
   "w": 1024
  },
  "lb-6b600b42c3": {
   "archivo": "libres/ambiente/helicopter-city-night-ov3.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "ciudad": 0.796,
+   "club": 0.007,
+   "monumento": 0.004,
+   "noche": 0.164,
+   "puerto": 0.015
+  },
+  "clip_v": 3,
   "consulta": "Helicopter city night",
   "credito": "colourful toronto — 416style — CC BY 2.0 — https://www.flickr.com/photos/20532289@N00/33483719",
+  "dibujo": "dibujos/gta/lb-6b600b42c3.jpg",
   "etiquetas": [
    "ambiente",
    "city",
+   "ciudad",
    "helicopter",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "ciudad",
   "w": 1024
  },
  "lb-6faa6e6b09": {
   "archivo": "libres/ambiente/helicopter-city-night-ov1.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "ciencia": 0.0,
+   "ciudad": 0.001,
+   "club": 0.004,
+   "monumento": 0.0,
+   "noche": 0.993
+  },
+  "clip_v": 3,
   "consulta": "Helicopter city night",
   "credito": "Phoenix Arizona Downtown Night Aerial Photo from Helicopter — jerryfergusonphotography — CC BY 2.0 — https://www.flickr.com/photos/17445097@N03/14418477124",
+  "dibujo": "dibujos/gta/lb-6faa6e6b09.jpg",
   "etiquetas": [
    "ambiente",
    "city",
    "helicopter",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "noche",
   "w": 1024
  },
  "lb-71af0b2c7f": {
   "archivo": "libres/ambiente/helicopter-city-night-ov5.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "avion": 0.098,
+   "ciencia": 0.005,
+   "cohete": 0.002,
+   "helicoptero": 0.013,
+   "militar": 0.868
+  },
+  "clip_v": 3,
   "consulta": "Helicopter city night",
   "credito": "Lockheed AC-130A Spectre — ksr8s — CC BY-SA 2.0 — https://www.flickr.com/photos/54825391@N00/5570893763",
+  "dibujo": "dibujos/gta/lb-71af0b2c7f.jpg",
   "etiquetas": [
    "ambiente",
    "city",
    "helicopter",
+   "militar",
    "night"
   ],
   "fuente": "libre",
   "h": 680,
+  "tema": "militar",
   "w": 1024
  },
  "lb-73645ac5a8": {
   "archivo": "libres/ambiente/neon-lights-night-city-2.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "ciencia": 0.057,
+   "club": 0.026,
+   "comida": 0.607,
+   "fiesta": 0.097,
+   "puerto": 0.092
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "DFC 4572 Savoring the night - a quiet toast under neon lights in Pattaya.jpg — PattayaPatrol — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:DFC_4572_Savoring_the_night_-_a_quiet_toast_under_neon_lights_in_Pattaya.jpg",
+  "dibujo": "dibujos/gta/lb-73645ac5a8.jpg",
   "etiquetas": [
    "ambiente",
+   "comida",
    "lights",
    "neon",
    "night"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "comida",
   "w": 1920
  },
  "lb-7a678d33ca": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov3.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.143,
+   "club": 0.325,
+   "helicoptero": 0.046,
+   "monumento": 0.082,
+   "noche": 0.212
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "Jellight and city at night from Esplanade Park, Singapore — mattk1979 — CC BY-SA 2.0 — https://www.flickr.com/photos/24879135@N04/5288525920",
+  "dibujo": "dibujos/gta/lb-7a678d33ca.jpg",
   "etiquetas": [
    "ambiente",
+   "arte",
+   "club",
    "lights",
    "neon",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 769,
+  "tema": "club",
   "w": 1024
  },
  "lb-7abeebc7ce": {
   "archivo": "libres/ambiente/hurricane-florida-ov4.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "lucia": 0.009,
+   "mar": 0.013,
+   "personas": 0.008,
+   "pez": 0.008,
+   "tormenta": 0.931
+  },
+  "clip_v": 3,
   "consulta": "Hurricane Florida",
   "credito": "GOES-13 Sees New Tropical Storm Bonnie Raining on South Florida — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4820683377",
+  "dibujo": "dibujos/gta/lb-7abeebc7ce.jpg",
   "etiquetas": [
    "ambiente",
    "florida",
-   "hurricane"
+   "hurricane",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 726,
+  "tema": "tormenta",
   "w": 1023
  },
  "lb-92e0388e6b": {
   "archivo": "libres/ambiente/rain-night-street-neon-ov4.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.008,
+   "cartel": 0.062,
+   "club": 0.038,
+   "movil": 0.015,
+   "noche": 0.829
+  },
+  "clip_v": 3,
   "consulta": "Rain night street neon",
   "credito": "Times Square in the rain — ChrisGampat — CC BY 2.0 — https://www.flickr.com/photos/28581186@N02/3535562503",
+  "dibujo": "dibujos/gta/lb-92e0388e6b.jpg",
   "etiquetas": [
    "ambiente",
    "night",
+   "noche",
    "rain",
    "street"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "noche",
   "w": 1024
  },
  "lb-9624dbc534": {
   "archivo": "libres/ambiente/neon-lights-night-city-6.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.086,
+   "comida": 0.097,
+   "gasolinera": 0.041,
+   "noche": 0.251,
+   "tienda": 0.271
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "DFC 0508 Late-night street food vendor grilling skewers at a busy city curbside stall neon lights and motorcycles lining the bustling street.jpg — PattayaPatrol — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:DFC_0508_Late-night_street_food_vendor_grilling_skewers_at_a_busy_city_curbside_stall_neon_lights_and_motorcycles_lining_the_bustling_street.jpg",
+  "dibujo": "dibujos/gta/lb-9624dbc534.jpg",
   "etiquetas": [
    "ambiente",
    "lights",
    "neon",
-   "night"
+   "night",
+   "noche",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "tienda",
   "w": 1920
  },
  "lb-9854da1214": {
   "archivo": "libres/ambiente/palm-trees-neon-ov1.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "cartel": 0.668,
+   "espacio": 0.025,
+   "monumento": 0.13,
+   "puerto": 0.036,
+   "tienda": 0.021
+  },
+  "clip_v": 3,
   "consulta": "Palm trees neon",
   "credito": "Palm trees, neon signs, and 73 degrees outside - completely perfect. — twodolla — CC BY 2.0 — https://www.flickr.com/photos/76991932@N00/6783384928",
+  "dibujo": "dibujos/gta/lb-9854da1214.jpg",
   "etiquetas": [
    "ambiente",
+   "cartel",
+   "monumento",
    "neon",
    "palm",
    "trees"
   ],
   "fuente": "libre",
   "h": 680,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-a314457f9a": {
   "archivo": "libres/ambiente/helicopter-city-night-ov4.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "accion": 0.035,
+   "avion": 0.034,
+   "caiman": 0.009,
+   "helicoptero": 0.46,
+   "militar": 0.409
+  },
+  "clip_v": 3,
   "consulta": "Helicopter city night",
   "credito": "Patrolling the Rio Grande from the Air — Georgia National Guard — CC BY 2.0 — https://www.flickr.com/photos/40994485@N04/8242455642",
+  "dibujo": "dibujos/gta/lb-a314457f9a.jpg",
   "etiquetas": [
    "ambiente",
    "city",
    "helicopter",
+   "helicoptero",
+   "militar",
    "night"
   ],
   "fuente": "libre",
   "h": 732,
+  "tema": "helicoptero",
   "w": 1024
  },
  "lb-a3b3d00386": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov6.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.036,
+   "cartel": 0.012,
+   "club": 0.014,
+   "monumento": 0.01,
+   "noche": 0.894
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "Night Life @ Shinjuku, Tokyo — kevinpoh — CC BY 2.0 — https://www.flickr.com/photos/7679455@N03/4563388587",
+  "dibujo": "dibujos/gta/lb-a3b3d00386.jpg",
   "etiquetas": [
    "ambiente",
    "lights",
    "neon",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "noche",
   "w": 1024
  },
  "lb-ae3ac11582": {
   "archivo": "libres/ambiente/neon-lights-night-city-4.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "accion": 0.021,
+   "club": 0.003,
+   "coche": 0.004,
+   "noche": 0.02,
+   "policia": 0.944
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "A busy city street at night with cars and a parked taxi illuminated by neon signs and streetlights.jpg — Pattaya Patrol — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:A_busy_city_street_at_night_with_cars_and_a_parked_taxi_illuminated_by_neon_signs_and_streetlights.jpg",
+  "dibujo": "dibujos/gta/lb-ae3ac11582.jpg",
   "etiquetas": [
    "ambiente",
    "lights",
    "neon",
-   "night"
+   "night",
+   "policia"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "policia",
   "w": 1920
  },
  "lb-b13fb0b923": {
   "archivo": "libres/ambiente/helicopter-city-night-ov2.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "avion": 0.003,
+   "cohete": 0.003,
+   "helicoptero": 0.003,
+   "militar": 0.988,
+   "tormenta": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Helicopter city night",
   "credito": "RAF Tornado GR4 in Afghanistan — Defence Images — CC BY-SA 2.0 — https://www.flickr.com/photos/48399297@N04/8670953411",
+  "dibujo": "dibujos/gta/lb-b13fb0b923.jpg",
   "etiquetas": [
    "ambiente",
    "city",
    "helicopter",
+   "militar",
    "night"
   ],
   "fuente": "libre",
   "h": 613,
+  "tema": "militar",
   "w": 1000
  },
  "lb-b15704636f": {
   "archivo": "libres/ambiente/rain-night-street-neon-ov6.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.067,
+   "cartel": 0.06,
+   "club": 0.037,
+   "noche": 0.778,
+   "policia": 0.019
+  },
+  "clip_v": 3,
   "consulta": "Rain night street neon",
   "credito": "Brooklyn Street Scenes - Rainy Night, Food Truck — Steven Pisano — CC BY 2.0 — https://www.flickr.com/photos/45776673@N04/15568622684",
+  "dibujo": "dibujos/gta/lb-b15704636f.jpg",
   "etiquetas": [
    "ambiente",
    "night",
+   "noche",
    "rain",
    "street"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "noche",
   "w": 1024
  },
  "lb-be00d8f6bc": {
   "archivo": "libres/ambiente/hurricane-florida-ov1.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "accion": 0.001,
+   "espacio": 0.002,
+   "mar": 0.001,
+   "retrato": 0.002,
+   "tormenta": 0.986
+  },
+  "clip_v": 3,
   "consulta": "Hurricane Florida",
   "credito": "Hurricane Irma 2017 09 08 version 2 — anttilipponen — CC BY 2.0 — https://www.flickr.com/photos/150411108@N06/36949383822",
+  "dibujo": "dibujos/gta/lb-be00d8f6bc.jpg",
   "etiquetas": [
    "ambiente",
    "florida",
-   "hurricane"
+   "hurricane",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 568,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-c4531988a2": {
   "archivo": "libres/ambiente/hurricane-florida-ov2.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "accion": 0.002,
+   "helicoptero": 0.001,
+   "militar": 0.0,
+   "retrato": 0.001,
+   "tormenta": 0.994
+  },
+  "clip_v": 3,
   "consulta": "Hurricane Florida",
   "credito": "Hurricane Katrina August 28, 2005 — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4923512256",
+  "dibujo": "dibujos/gta/lb-c4531988a2.jpg",
   "etiquetas": [
    "ambiente",
    "florida",
-   "hurricane"
+   "hurricane",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 877,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-c9b570692d": {
   "archivo": "libres/ambiente/neon-lights-night-city-3.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.603,
+   "club": 0.042,
+   "gasolinera": 0.046,
+   "noche": 0.123,
+   "tienda": 0.11
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "DSC 8394 Quiet city street at night with colorful neon lights glowing from closed shops and potted plants lining the sidewalk.jpg — PattayaPatrol — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:DSC_8394_Quiet_city_street_at_night_with_colorful_neon_lights_glowing_from_closed_shops_and_potted_plants_lining_the_sidewalk.jpg",
+  "dibujo": "dibujos/gta/lb-c9b570692d.jpg",
   "etiquetas": [
    "ambiente",
+   "calle",
    "lights",
    "neon",
-   "night"
+   "night",
+   "noche",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "calle",
   "w": 1920
  },
  "lb-cbe93464cd": {
   "archivo": "libres/ambiente/rain-night-street-neon-ov1.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.01,
+   "cartel": 0.036,
+   "club": 0.183,
+   "fiesta": 0.012,
+   "noche": 0.725
+  },
+  "clip_v": 3,
   "consulta": "Rain night street neon",
   "credito": "[2005] West 42nd Street... — Diego3336 — CC BY 2.0 — https://www.flickr.com/photos/31018257@N00/127406228",
+  "dibujo": "dibujos/gta/lb-cbe93464cd.jpg",
   "etiquetas": [
    "ambiente",
+   "club",
    "night",
+   "noche",
    "rain",
    "street"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "noche",
   "w": 1024
  },
  "lb-df4a5bc308": {
   "archivo": "libres/ambiente/rain-night-street-neon-ov2.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.062,
+   "calle": 0.04,
+   "cartel": 0.293,
+   "monumento": 0.063,
+   "noche": 0.471
+  },
+  "clip_v": 3,
   "consulta": "Rain night street neon",
   "credito": "Little Brazil Street — Diego3336 — CC BY 2.0 — https://www.flickr.com/photos/31018257@N00/84398206",
+  "dibujo": "dibujos/gta/lb-df4a5bc308.jpg",
   "etiquetas": [
    "ambiente",
+   "cartel",
    "night",
+   "noche",
    "rain",
    "street"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "noche",
   "w": 1024
  },
  "lb-edfaed743a": {
   "archivo": "libres/ambiente/sports-car-night-city-ov6.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "arte": 0.012,
+   "coche": 0.745,
+   "deportivo": 0.047,
+   "moto": 0.011,
+   "pareja": 0.133
+  },
+  "clip_v": 3,
   "consulta": "Sports car night city",
   "credito": "VW at Old Phuket Festival, Thailand, 2-4 Feb 2017 IMG_3486bs-paint — Phuketian.S — CC BY 2.0 — https://www.flickr.com/photos/124790945@N06/34567904205",
+  "dibujo": "dibujos/gta/lb-edfaed743a.jpg",
   "etiquetas": [
    "ambiente",
    "car",
+   "coche",
    "night",
+   "pareja",
    "sports"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "coche",
   "w": 1024
  },
  "lb-f7b1ba86b9": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov2.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.016,
+   "club": 0.019,
+   "monumento": 0.063,
+   "movil": 0.018,
+   "noche": 0.799
+  },
+  "clip_v": 3,
   "consulta": "Neon lights night city",
   "credito": "The Scenery of Cybercity — OiMax — CC BY 2.0 — https://www.flickr.com/photos/72396314@N00/2165150601",
+  "dibujo": "dibujos/gta/lb-f7b1ba86b9.jpg",
   "etiquetas": [
    "ambiente",
    "lights",
    "neon",
-   "night"
+   "night",
+   "noche"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "noche",
   "w": 1024
  },
  "lb-fe2545dd3e": {
   "archivo": "libres/ambiente/rain-night-street-neon-ov5.jpg",
   "categoria": "ambiente",
+  "clip": {
+   "calle": 0.108,
+   "club": 0.148,
+   "monumento": 0.045,
+   "noche": 0.578,
+   "tienda": 0.044
+  },
+  "clip_v": 3,
   "consulta": "Rain night street neon",
   "credito": "Shinjuku in the Rain — michael-day — CC BY 2.0 — https://www.flickr.com/photos/63328822@N00/6969744906",
+  "dibujo": "dibujos/gta/lb-fe2545dd3e.jpg",
   "etiquetas": [
    "ambiente",
+   "calle",
+   "club",
    "night",
+   "noche",
    "rain",
    "street"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "noche",
   "w": 1024
  }
 }

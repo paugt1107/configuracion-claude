@@ -2,110 +2,203 @@
  "lb-0121eb67dc": {
   "archivo": "libres/florida/everglades-airboat-ov3.jpg",
   "categoria": "florida",
+  "clip": {
+   "barco": 0.073,
+   "caiman": 0.062,
+   "deporte": 0.585,
+   "fiesta": 0.024,
+   "personas": 0.133
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Everglades-airboat (cropped) — User:Cacophony — CC BY 2.5 — https://commons.wikimedia.org/w/index.php?curid=79528651",
+  "dibujo": "dibujos/gta/lb-0121eb67dc.jpg",
   "etiquetas": [
    "airboat",
+   "deporte",
    "everglades",
-   "florida"
+   "florida",
+   "personas"
   ],
   "fuente": "libre",
   "h": 274,
+  "tema": "deporte",
   "w": 1920
  },
  "lb-086f68ca61": {
   "archivo": "libres/florida/miami-skyline-night-ov2.jpg",
   "categoria": "florida",
+  "clip": {
+   "barco": 0.004,
+   "ciudad": 0.771,
+   "club": 0.013,
+   "noche": 0.184,
+   "puerto": 0.016
+  },
+  "clip_v": 3,
   "consulta": "Miami skyline night",
   "credito": "Miami skyline — ♣ Kay_Cee ♣ — CC BY-SA 2.0 — https://www.flickr.com/photos/33460076@N07/8262614985",
+  "dibujo": "dibujos/gta/lb-086f68ca61.jpg",
   "etiquetas": [
+   "ciudad",
    "florida",
    "miami",
    "night",
+   "noche",
    "skyline"
   ],
   "fuente": "libre",
   "h": 415,
+  "tema": "ciudad",
   "w": 1023
  },
  "lb-137d8492b6": {
   "archivo": "libres/florida/everglades-airboat-ov5.jpg",
   "categoria": "florida",
+  "clip": {
+   "agua": 0.266,
+   "barco": 0.019,
+   "caiman": 0.074,
+   "carretera": 0.015,
+   "pantano": 0.536
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Florida Everglades - Airboat ride with the family — carolisides — CC BY 2.0 — https://www.flickr.com/photos/49392061@N03/6922343566",
+  "dibujo": "dibujos/gta/lb-137d8492b6.jpg",
   "etiquetas": [
+   "agua",
    "airboat",
    "everglades",
-   "florida"
+   "florida",
+   "pantano"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "pantano",
   "w": 1024
  },
  "lb-15ad142a06": {
   "archivo": "libres/florida/ocean-drive-miami-beach-art-deco-neon-3.jpg",
   "categoria": "florida",
+  "clip": {
+   "calle": 0.031,
+   "club": 0.093,
+   "monumento": 0.274,
+   "puerto": 0.046,
+   "tienda": 0.381
+  },
+  "clip_v": 3,
   "consulta": "Ocean Drive Miami Beach Art Deco neon",
   "credito": "The Carlyle, Miami Beach, east view up, 2018-08-21.jpg — Photograph:  Radomianin — Public domain — https://commons.wikimedia.org/wiki/File:The_Carlyle,_Miami_Beach,_east_view_up,_2018-08-21.jpg",
+  "dibujo": "dibujos/gta/lb-15ad142a06.jpg",
   "etiquetas": [
    "drive",
    "florida",
    "miami",
-   "ocean"
+   "monumento",
+   "ocean",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 1297,
+  "tema": "tienda",
   "w": 1920
  },
  "lb-3394c544a1": {
   "archivo": "libres/florida/everglades-airboat-ov6.jpg",
   "categoria": "florida",
+  "clip": {
+   "cohete": 0.133,
+   "espacio": 0.186,
+   "helicoptero": 0.077,
+   "monumento": 0.048,
+   "moto": 0.268
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Florida Everglades - Airboat ride with the family — carolisides — CC BY 2.0 — https://www.flickr.com/photos/49392061@N03/7068457201",
+  "dibujo": "dibujos/gta/lb-3394c544a1.jpg",
   "etiquetas": [
    "airboat",
+   "cohete",
+   "espacio",
    "everglades",
-   "florida"
+   "florida",
+   "moto"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "moto",
   "w": 1024
  },
  "lb-35d0e586a1": {
   "archivo": "libres/florida/everglades-airboat-ov2.jpg",
   "categoria": "florida",
+  "clip": {
+   "desierto": 0.055,
+   "fiesta": 0.03,
+   "historia": 0.045,
+   "monumento": 0.035,
+   "personas": 0.704
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Everglades Airboat and Swamp Buggy tour — µµ — CC BY-SA 2.0 — https://www.flickr.com/photos/10860006@N03/16065826796",
+  "dibujo": "dibujos/gta/lb-35d0e586a1.jpg",
   "etiquetas": [
    "airboat",
    "everglades",
-   "florida"
+   "florida",
+   "personas"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "personas",
   "w": 1023
  },
  "lb-3923be6e09": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-ov4.jpg",
   "categoria": "florida",
+  "clip": {
+   "gasolinera": 0.038,
+   "monumento": 0.026,
+   "playa": 0.598,
+   "tienda": 0.028,
+   "tren": 0.026
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Northern Miami Beach — Phillip Pessar — CC BY 2.0 — https://www.flickr.com/photos/25955895@N03/5810139704",
+  "dibujo": "dibujos/gta/lb-3923be6e09.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa"
   ],
   "fuente": "libre",
   "h": 679,
+  "tema": "playa",
   "w": 1024
  },
  "lb-41fc488fe1": {
   "archivo": "libres/florida/ocean-drive-miami-beach-art-deco-neon-1.jpg",
   "categoria": "florida",
+  "clip": {
+   "cartel": 0.987,
+   "club": 0.007,
+   "noche": 0.003,
+   "tienda": 0.001,
+   "volcan": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Ocean Drive Miami Beach Art Deco neon",
   "credito": "Boulevard Hotel (Neon sign), Miami Beach.jpg — Photograph:  Radomianin — Public domain — https://commons.wikimedia.org/wiki/File:Boulevard_Hotel_(Neon_sign),_Miami_Beach.jpg",
+  "dibujo": "dibujos/gta/lb-41fc488fe1.jpg",
   "etiquetas": [
+   "cartel",
    "drive",
    "florida",
    "miami",
@@ -113,42 +206,78 @@
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "cartel",
   "w": 1920
  },
  "lb-4f0408380e": {
   "archivo": "libres/florida/everglades-airboat-3.jpg",
   "categoria": "florida",
+  "clip": {
+   "agua": 0.028,
+   "barco": 0.129,
+   "caiman": 0.646,
+   "pantano": 0.098,
+   "tren": 0.032
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Everglades Holiday Park Airboat.jpg — Garytroutt — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Everglades_Holiday_Park_Airboat.jpg",
+  "dibujo": "dibujos/gta/lb-4f0408380e.jpg",
   "etiquetas": [
    "airboat",
+   "barco",
+   "caiman",
    "everglades",
    "florida"
   ],
   "fuente": "libre",
   "h": 800,
+  "tema": "caiman",
   "w": 1200
  },
  "lb-59bfa7e9e2": {
   "archivo": "libres/florida/everglades-airboat-6.jpg",
   "categoria": "florida",
+  "clip": {
+   "agua": 0.069,
+   "caiman": 0.065,
+   "pantano": 0.459,
+   "puerto": 0.139,
+   "tienda": 0.047
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Airboat near Everglades City - panoramio.jpg — qwesy qwesy — CC BY 3.0 — https://commons.wikimedia.org/wiki/File:Airboat_near_Everglades_City_-_panoramio.jpg",
+  "dibujo": "dibujos/gta/lb-59bfa7e9e2.jpg",
   "etiquetas": [
    "airboat",
    "everglades",
-   "florida"
+   "florida",
+   "pantano",
+   "puerto"
   ],
   "fuente": "libre",
   "h": 1233,
+  "tema": "pantano",
   "w": 1920
  },
  "lb-5d4b332d41": {
   "archivo": "libres/florida/ocean-drive-miami-beach-art-deco-neon-2.jpg",
   "categoria": "florida",
+  "clip": {
+   "cartel": 0.304,
+   "club": 0.522,
+   "monumento": 0.065,
+   "noche": 0.017,
+   "tienda": 0.055
+  },
+  "clip_v": 3,
   "consulta": "Ocean Drive Miami Beach Art Deco neon",
   "credito": "The Carlyle (neon sign), Miami Beach, east view up, 2018-08-21.jpg — Photograph:  Radomianin — Public domain — https://commons.wikimedia.org/wiki/File:The_Carlyle_(neon_sign),_Miami_Beach,_east_view_up,_2018-08-21.jpg",
+  "dibujo": "dibujos/gta/lb-5d4b332d41.jpg",
   "etiquetas": [
+   "cartel",
+   "club",
    "drive",
    "florida",
    "miami",
@@ -156,330 +285,594 @@
   ],
   "fuente": "libre",
   "h": 1286,
+  "tema": "club",
   "w": 1920
  },
  "lb-60976aa4c4": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-1.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.043,
+   "casa": 0.031,
+   "mar": 0.024,
+   "monumento": 0.153,
+   "playa": 0.533
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Lifeguard stand, Miami Beach.jpg — Radomianin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lifeguard_stand,_Miami_Beach.jpg",
+  "dibujo": "dibujos/gta/lb-60976aa4c4.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "monumento",
+   "playa"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "playa",
   "w": 1920
  },
  "lb-62ba0be0cd": {
   "archivo": "libres/florida/everglades-airboat-ov1.jpg",
   "categoria": "florida",
+  "clip": {
+   "animal": 0.007,
+   "coche": 0.008,
+   "deporte": 0.897,
+   "moto": 0.01,
+   "pareja": 0.01
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "everglades airboat tours — Mussi Katz — CC0 1.0 — https://www.flickr.com/photos/52775988@N00/51562474926",
+  "dibujo": "dibujos/gta/lb-62ba0be0cd.jpg",
   "etiquetas": [
    "airboat",
+   "deporte",
    "everglades",
    "florida"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-6d15f03c29": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-ov6.jpg",
   "categoria": "florida",
+  "clip": {
+   "barco": 0.027,
+   "deporte": 0.041,
+   "helicoptero": 0.081,
+   "playa": 0.563,
+   "tormenta": 0.057
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Lifeguard Tower — Phillip Pessar — CC BY 2.0 — https://www.flickr.com/photos/25955895@N03/6804255876",
+  "dibujo": "dibujos/gta/lb-6d15f03c29.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "playa",
   "w": 1003
  },
  "lb-7319cb81f7": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-3.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.052,
+   "casa": 0.094,
+   "monumento": 0.04,
+   "playa": 0.616,
+   "tormenta": 0.03
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Miami Beach lifeguard tower at Midbeach Park.jpg — Dough4872 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Miami_Beach_lifeguard_tower_at_Midbeach_Park.jpg",
+  "dibujo": "dibujos/gta/lb-7319cb81f7.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "playa",
   "w": 1920
  },
  "lb-7f2c4223ea": {
   "archivo": "libres/florida/everglades-airboat-5.jpg",
   "categoria": "florida",
+  "clip": {
+   "caiman": 0.028,
+   "deporte": 0.241,
+   "musica": 0.029,
+   "pantano": 0.534,
+   "personas": 0.043
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Airboat in the Everglades - panoramio.jpg — qwesy qwesy — CC BY 3.0 — https://commons.wikimedia.org/wiki/File:Airboat_in_the_Everglades_-_panoramio.jpg",
+  "dibujo": "dibujos/gta/lb-7f2c4223ea.jpg",
   "etiquetas": [
    "airboat",
+   "deporte",
    "everglades",
-   "florida"
+   "florida",
+   "pantano"
   ],
   "fuente": "libre",
   "h": 1277,
+  "tema": "pantano",
   "w": 1920
  },
  "lb-85d0be93ef": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-6.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.109,
+   "mar": 0.032,
+   "militar": 0.073,
+   "monumento": 0.271,
+   "playa": 0.264
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Miami South Beach - Lifeguard Tower.jpg — Summerbrize — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Miami_South_Beach_-_Lifeguard_Tower.jpg",
+  "dibujo": "dibujos/gta/lb-85d0be93ef.jpg",
   "etiquetas": [
+   "arte",
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "monumento",
+   "playa"
   ],
   "fuente": "libre",
   "h": 2560,
+  "tema": "monumento",
   "w": 1920
  },
  "lb-89b468816d": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-ov5.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.257,
+   "carcel": 0.122,
+   "ciencia": 0.168,
+   "monumento": 0.111,
+   "movil": 0.058
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Explore Photos July 31, 2007 — Joe Shlabotnik — CC BY 2.0 — https://www.flickr.com/photos/40646519@N00/962947880",
+  "dibujo": "dibujos/gta/lb-89b468816d.jpg",
   "etiquetas": [
+   "arte",
    "beach",
+   "carcel",
+   "ciencia",
    "florida",
    "lifeguard",
    "miami"
   ],
   "fuente": "libre",
   "h": 485,
+  "tema": "arte",
   "w": 924
  },
  "lb-8cb12589dc": {
   "archivo": "libres/florida/miami-skyline-night-ov3.jpg",
   "categoria": "florida",
+  "clip": {
+   "carretera": 0.026,
+   "ciudad": 0.526,
+   "monumento": 0.017,
+   "noche": 0.258,
+   "puerto": 0.128
+  },
+  "clip_v": 3,
   "consulta": "Miami skyline night",
   "credito": "Nighttime skyline — grongar — CC BY 2.0 — https://www.flickr.com/photos/70757891@N00/8517718565",
+  "dibujo": "dibujos/gta/lb-8cb12589dc.jpg",
   "etiquetas": [
+   "ciudad",
    "florida",
    "miami",
    "night",
+   "noche",
+   "puerto",
    "skyline"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "ciudad",
   "w": 1024
  },
  "lb-9019cea0a5": {
   "archivo": "libres/florida/everglades-airboat-4.jpg",
   "categoria": "florida",
+  "clip": {
+   "agua": 0.022,
+   "caiman": 0.641,
+   "deporte": 0.101,
+   "pantano": 0.076,
+   "personas": 0.09
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Miami everglades airboat tourism.JPG — chensiyuan — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Miami_everglades_airboat_tourism.JPG",
+  "dibujo": "dibujos/gta/lb-9019cea0a5.jpg",
   "etiquetas": [
    "airboat",
+   "caiman",
+   "deporte",
    "everglades",
    "florida"
   ],
   "fuente": "libre",
   "h": 1275,
+  "tema": "caiman",
   "w": 1920
  },
  "lb-9e7f181190": {
   "archivo": "libres/florida/miami-skyline-night-ov1.jpg",
   "categoria": "florida",
+  "clip": {
+   "barco": 0.006,
+   "ciudad": 0.738,
+   "monumento": 0.017,
+   "noche": 0.179,
+   "puerto": 0.027
+  },
+  "clip_v": 3,
   "consulta": "Miami skyline night",
   "credito": "Skyline Lights of Miami — wyntuition — CC BY-SA 2.0 — https://www.flickr.com/photos/15926096@N00/2820233012",
+  "dibujo": "dibujos/gta/lb-9e7f181190.jpg",
   "etiquetas": [
+   "ciudad",
    "florida",
    "miami",
    "night",
+   "noche",
    "skyline"
   ],
   "fuente": "libre",
   "h": 681,
+  "tema": "ciudad",
   "w": 1024
  },
  "lb-a059744647": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-ov2.jpg",
   "categoria": "florida",
+  "clip": {
+   "barco": 0.052,
+   "cartel": 0.028,
+   "mar": 0.034,
+   "playa": 0.673,
+   "tren": 0.032
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Miami Beach Lifeguard Tower — edgarzunigajr — CC BY 2.0 — https://www.flickr.com/photos/133695922@N04/23270295952",
+  "dibujo": "dibujos/gta/lb-a059744647.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa"
   ],
   "fuente": "libre",
   "h": 479,
+  "tema": "playa",
   "w": 1024
  },
  "lb-a541a95520": {
   "archivo": "libres/florida/everglades-airboat-2.jpg",
   "categoria": "florida",
+  "clip": {
+   "barco": 0.113,
+   "caiman": 0.082,
+   "deporte": 0.542,
+   "fiesta": 0.041,
+   "personas": 0.09
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Everglades-airboat (cropped).jpg — User:Cacophony — CC BY 2.5 — https://commons.wikimedia.org/wiki/File:Everglades-airboat_(cropped).jpg",
+  "dibujo": "dibujos/gta/lb-a541a95520.jpg",
   "etiquetas": [
    "airboat",
+   "barco",
+   "deporte",
    "everglades",
    "florida"
   ],
   "fuente": "libre",
   "h": 274,
+  "tema": "deporte",
   "w": 1920
  },
  "lb-c1e0058850": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-2.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.077,
+   "barco": 0.096,
+   "camion": 0.265,
+   "playa": 0.238,
+   "tienda": 0.049
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Lifeguard tower, Miami Beach, FL.jpg — Ianaré Sévi — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Lifeguard_tower,_Miami_Beach,_FL.jpg",
+  "dibujo": "dibujos/gta/lb-c1e0058850.jpg",
   "etiquetas": [
    "beach",
+   "camion",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa"
   ],
   "fuente": "libre",
   "h": 2610,
+  "tema": "camion",
   "w": 1920
  },
  "lb-c2c46f926b": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-5.jpg",
   "categoria": "florida",
+  "clip": {
+   "barco": 0.043,
+   "historia": 0.009,
+   "playa": 0.675,
+   "puerto": 0.175,
+   "tienda": 0.023
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Miami Beach - lifeguard station.jpg — P. Hughes — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Miami_Beach_-_lifeguard_station.jpg",
+  "dibujo": "dibujos/gta/lb-c2c46f926b.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa",
+   "puerto"
   ],
   "fuente": "libre",
   "h": 1251,
+  "tema": "playa",
   "w": 1920
  },
  "lb-c6cafb4fff": {
   "archivo": "libres/florida/miami-skyline-night-ov5.jpg",
   "categoria": "florida",
+  "clip": {
+   "cartel": 0.358,
+   "club": 0.125,
+   "coche": 0.137,
+   "deportivo": 0.076,
+   "noche": 0.21
+  },
+  "clip_v": 3,
   "consulta": "Miami skyline night",
   "credito": "Classic Art Deco Stylin' — wyntuition — CC BY-SA 2.0 — https://www.flickr.com/photos/15926096@N00/2911773889",
+  "dibujo": "dibujos/gta/lb-c6cafb4fff.jpg",
   "etiquetas": [
+   "cartel",
+   "coche",
    "florida",
    "miami",
    "night",
+   "noche",
    "skyline"
   ],
   "fuente": "libre",
   "h": 681,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-c92ef45009": {
   "archivo": "libres/florida/everglades-airboat-ov4.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.027,
+   "ave": 0.691,
+   "caiman": 0.051,
+   "criminal": 0.089,
+   "moto": 0.021
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Florida Everglades - Airboat ride with the family — carolisides — CC BY 2.0 — https://www.flickr.com/photos/49392061@N03/6922381930",
+  "dibujo": "dibujos/gta/lb-c92ef45009.jpg",
   "etiquetas": [
    "airboat",
+   "ave",
    "everglades",
    "florida"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "ave",
   "w": 1024
  },
  "lb-cd641318a2": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-4.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.03,
+   "mar": 0.045,
+   "monumento": 0.102,
+   "playa": 0.529,
+   "tren": 0.027
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Lifeguard tower in Miami Beach - november 2022.jpg — Elbert Hampton — CC0 — https://commons.wikimedia.org/wiki/File:Lifeguard_tower_in_Miami_Beach_-_november_2022.jpg",
+  "dibujo": "dibujos/gta/lb-cd641318a2.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "monumento",
+   "playa"
   ],
   "fuente": "libre",
   "h": 864,
+  "tema": "playa",
   "w": 1920
  },
  "lb-d10f1d0044": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-ov1.jpg",
   "categoria": "florida",
+  "clip": {
+   "arte": 0.095,
+   "casa": 0.089,
+   "ciencia": 0.06,
+   "playa": 0.156,
+   "tecnologia": 0.066
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Miami Beach Lifeguard Towers Collage — Anthony Quintano — CC BY 2.0 — https://www.flickr.com/photos/22882274@N04/50105603831",
+  "dibujo": "dibujos/gta/lb-d10f1d0044.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa"
   ],
   "fuente": "libre",
   "h": 253,
+  "tema": "playa",
   "w": 1024
  },
  "lb-deac71e3b8": {
   "archivo": "libres/florida/miami-beach-lifeguard-tower-ov3.jpg",
   "categoria": "florida",
+  "clip": {
+   "comida": 0.041,
+   "deporte": 0.073,
+   "fiesta": 0.05,
+   "monumento": 0.046,
+   "playa": 0.374
+  },
+  "clip_v": 3,
   "consulta": "Miami Beach lifeguard tower",
   "credito": "Lifeguard Tower — Phillip Pessar — CC BY 2.0 — https://www.flickr.com/photos/25955895@N03/6950363697",
+  "dibujo": "dibujos/gta/lb-deac71e3b8.jpg",
   "etiquetas": [
    "beach",
    "florida",
    "lifeguard",
-   "miami"
+   "miami",
+   "playa"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "playa",
   "w": 956
  },
  "lb-e31b72a28c": {
   "archivo": "libres/florida/miami-skyline-night-ov6.jpg",
   "categoria": "florida",
+  "clip": {
+   "ciudad": 0.12,
+   "club": 0.103,
+   "monumento": 0.096,
+   "noche": 0.53,
+   "puerto": 0.091
+  },
+  "clip_v": 3,
   "consulta": "Miami skyline night",
   "credito": "Night Bridge — CityscapeGUY — CC BY 2.0 — https://www.flickr.com/photos/117317408@N03/13444724095",
+  "dibujo": "dibujos/gta/lb-e31b72a28c.jpg",
   "etiquetas": [
+   "ciudad",
+   "club",
    "florida",
    "miami",
    "night",
+   "noche",
    "skyline"
   ],
   "fuente": "libre",
   "h": 452,
+  "tema": "noche",
   "w": 1024
  },
  "lb-fc2554715a": {
   "archivo": "libres/florida/everglades-airboat-1.jpg",
   "categoria": "florida",
+  "clip": {
+   "atardecer": 0.176,
+   "barco": 0.118,
+   "caiman": 0.031,
+   "pantano": 0.269,
+   "tormenta": 0.279
+  },
+  "clip_v": 3,
   "consulta": "Everglades airboat",
   "credito": "Everglades-airboat-tours 960.png — Angelarbeasley — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Everglades-airboat-tours_960.png",
+  "dibujo": "dibujos/gta/lb-fc2554715a.jpg",
   "etiquetas": [
    "airboat",
+   "atardecer",
    "everglades",
-   "florida"
+   "florida",
+   "pantano",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 541,
+  "tema": "tormenta",
   "w": 960
  },
  "lb-fc97f5c82c": {
   "archivo": "libres/florida/miami-skyline-night-ov4.jpg",
   "categoria": "florida",
+  "clip": {
+   "ciudad": 0.851,
+   "club": 0.004,
+   "monumento": 0.003,
+   "noche": 0.126,
+   "puerto": 0.009
+  },
+  "clip_v": 3,
   "consulta": "Miami skyline night",
   "credito": "Miami Palmed Skyline — wyntuition — CC BY-SA 2.0 — https://www.flickr.com/photos/15926096@N00/2912624792",
+  "dibujo": "dibujos/gta/lb-fc97f5c82c.jpg",
   "etiquetas": [
+   "ciudad",
    "florida",
    "miami",
    "night",
+   "noche",
    "skyline"
   ],
   "fuente": "libre",
   "h": 681,
+  "tema": "ciudad",
   "w": 1024
  }
 }

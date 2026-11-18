@@ -5,17 +5,19 @@
   "archivo": "oficial/of-004221e549.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.069,
-   "comida": 0.133,
-   "fiesta": 0.247,
-   "gasolinera": 0.056,
-   "pareja": 0.237
+   "barco": 0.05,
+   "comida": 0.096,
+   "fiesta": 0.178,
+   "musica": 0.15,
+   "pareja": 0.171
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-004221e549.jpg",
   "etiquetas": [
    "comida",
    "fiesta",
+   "musica",
    "pareja",
    "vice-city"
   ],
@@ -33,14 +35,15 @@
   "archivo": "oficial/of-022356e404.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.969,
+   "arma": 0.929,
+   "ciencia": 0.013,
    "criminal": 0.014,
-   "dinero": 0.005,
-   "moto": 0.001,
-   "tormenta": 0.002
+   "espacio": 0.013,
+   "musica": 0.006
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-022356e404.jpg",
   "etiquetas": [
    "arma"
   ],
@@ -58,14 +61,15 @@
   "archivo": "oficial/of-028720e009.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.092,
-   "dinero": 0.016,
-   "helicoptero": 0.021,
-   "jason": 0.756,
-   "perro": 0.022
+   "arma": 0.085,
+   "helicoptero": 0.02,
+   "jason": 0.704,
+   "perro": 0.021,
+   "retrato": 0.032
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-028720e009.jpg",
   "etiquetas": [
    "jason",
    "personaje"
@@ -84,14 +88,15 @@
   "archivo": "oficial/of-033c5cd7c4.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.025,
-   "club": 0.194,
-   "fiesta": 0.098,
-   "jason": 0.391,
-   "noche": 0.127
+   "arma": 0.024,
+   "club": 0.188,
+   "fiesta": 0.095,
+   "jason": 0.38,
+   "noche": 0.123
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-033c5cd7c4.jpg",
   "etiquetas": [
    "club",
    "jason",
@@ -112,14 +117,15 @@
   "archivo": "oficial/of-054cd33bce.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.785,
+   "accion": 0.766,
    "arma": 0.011,
    "coche": 0.012,
-   "moto": 0.006,
-   "pareja": 0.178
+   "deporte": 0.022,
+   "pareja": 0.174
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-054cd33bce.jpg",
   "etiquetas": [
    "accion",
    "jason",
@@ -140,22 +146,25 @@
   "archivo": "oficial/of-0554e22083.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.073,
-   "arma": 0.062,
-   "avion": 0.086,
-   "helicoptero": 0.294,
-   "pez": 0.093
+   "ciencia": 0.133,
+   "espacio": 0.046,
+   "helicoptero": 0.123,
+   "militar": 0.235,
+   "musica": 0.056
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-0554e22083.jpg",
   "etiquetas": [
-   "helicoptero"
+   "ciencia",
+   "helicoptero",
+   "militar"
   ],
   "fuente": "oficial",
   "h": 1920,
   "hash": "1111100000000000110110000000000011111000000000001111100000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "helicoptero",
+  "tema": "militar",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard0.11lnxwt4mejxh.png",
   "w": 1920
  },
@@ -165,18 +174,20 @@
   "archivo": "oficial/of-069ab49d03.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.31,
-   "barco": 0.086,
-   "camion": 0.099,
-   "helicoptero": 0.162,
-   "pantano": 0.091
+   "accion": 0.252,
+   "camion": 0.081,
+   "helicoptero": 0.132,
+   "pantano": 0.074,
+   "tren": 0.118
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-069ab49d03.jpg",
   "etiquetas": [
    "accion",
    "grassrivers",
-   "helicoptero"
+   "helicoptero",
+   "tren"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -192,14 +203,15 @@
   "archivo": "oficial/of-07640ce8fe.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.107,
-   "arma": 0.067,
-   "criminal": 0.092,
-   "gasolinera": 0.155,
-   "pareja": 0.288
+   "accion": 0.103,
+   "arma": 0.064,
+   "criminal": 0.089,
+   "gasolinera": 0.149,
+   "pareja": 0.277
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-07640ce8fe.jpg",
   "etiquetas": [
    "accion",
    "gasolinera",
@@ -222,13 +234,13 @@
   "archivo": "oficial/of-08a686388f.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.002,
    "barco": 0.02,
    "carretera": 0.011,
-   "ciudad": 0.621,
-   "puerto": 0.34
+   "ciudad": 0.613,
+   "monumento": 0.007,
+   "puerto": 0.335
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-08a686388f.jpg",
   "etiquetas": [
@@ -249,18 +261,20 @@
   "archivo": "oficial/of-09087faf3e.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.082,
-   "carcel": 0.083,
-   "club": 0.197,
-   "criminal": 0.337,
-   "policia": 0.099
+   "carcel": 0.065,
+   "club": 0.154,
+   "criminal": 0.264,
+   "policia": 0.078,
+   "retrato": 0.171
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-09087faf3e.jpg",
   "etiquetas": [
    "club",
    "criminal",
-   "jason"
+   "jason",
+   "retrato"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -279,11 +293,12 @@
    "accion": 0.012,
    "coche": 0.009,
    "dinero": 0.011,
-   "pareja": 0.942,
+   "pareja": 0.937,
    "personas": 0.005
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-0965eb98d9.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -301,14 +316,15 @@
   "archivo": "oficial/of-0b85f07c6b.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.873,
+   "barco": 0.863,
    "caiman": 0.003,
-   "deportivo": 0.001,
+   "mar": 0.005,
    "pez": 0.005,
-   "puerto": 0.108
+   "puerto": 0.107
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-0b85f07c6b.jpg",
   "etiquetas": [
    "barco",
    "puerto"
@@ -327,14 +343,15 @@
   "archivo": "oficial/of-0ba04af34b.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.04,
-   "arma": 0.036,
-   "atardecer": 0.017,
-   "camion": 0.053,
-   "pareja": 0.744
+   "accion": 0.038,
+   "arma": 0.035,
+   "camion": 0.052,
+   "desierto": 0.018,
+   "pareja": 0.718
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-0ba04af34b.jpg",
   "etiquetas": [
    "jason",
    "logo",
@@ -355,14 +372,15 @@
   "archivo": "oficial/of-0fa140402f.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.032,
+   "accion": 0.031,
    "arma": 0.02,
-   "camion": 0.046,
-   "coche": 0.115,
-   "pareja": 0.698
+   "camion": 0.045,
+   "coche": 0.113,
+   "pareja": 0.686
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-0fa140402f.jpg",
   "etiquetas": [
    "coche",
    "pareja",
@@ -382,14 +400,15 @@
   "archivo": "oficial/of-10cb68ba25.jpg",
   "categoria": "oficial",
   "clip": {
-   "comida": 0.049,
-   "fiesta": 0.165,
-   "gasolinera": 0.147,
-   "personas": 0.05,
-   "tienda": 0.366
+   "comida": 0.044,
+   "fiesta": 0.148,
+   "gasolinera": 0.131,
+   "personas": 0.045,
+   "tienda": 0.327
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-10cb68ba25.jpg",
   "etiquetas": [
    "fiesta",
    "gasolinera",
@@ -411,14 +430,15 @@
   "archivo": "oficial/of-11a7055696.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.101,
-   "camion": 0.392,
-   "carretera": 0.054,
-   "coche": 0.262,
-   "deportivo": 0.09
+   "accion": 0.088,
+   "camion": 0.343,
+   "coche": 0.228,
+   "deportivo": 0.078,
+   "desierto": 0.067
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-11a7055696.jpg",
   "etiquetas": [
    "accion",
    "camion",
@@ -438,14 +458,15 @@
   "archivo": "oficial/of-120f0a782b.jpg",
   "categoria": "oficial",
   "clip": {
-   "camion": 0.173,
-   "coche": 0.157,
-   "dinero": 0.111,
-   "gasolinera": 0.174,
-   "noche": 0.093
+   "camion": 0.161,
+   "coche": 0.146,
+   "dinero": 0.103,
+   "gasolinera": 0.161,
+   "noche": 0.086
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-120f0a782b.jpg",
   "etiquetas": [
    "camion",
    "coche",
@@ -466,14 +487,15 @@
   "archivo": "oficial/of-121472b0d8.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.645,
-   "dinero": 0.006,
-   "fiesta": 0.103,
+   "barco": 0.634,
+   "deporte": 0.009,
+   "fiesta": 0.101,
    "personas": 0.006,
-   "puerto": 0.219
+   "puerto": 0.215
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-121472b0d8.jpg",
   "etiquetas": [
    "barco",
    "fiesta",
@@ -497,12 +519,13 @@
   "clip": {
    "camion": 0.004,
    "coche": 0.044,
-   "deportivo": 0.915,
+   "deportivo": 0.904,
    "gasolinera": 0.007,
    "pareja": 0.009
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-12c246f0c8.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -520,14 +543,15 @@
   "archivo": "oficial/of-136a724721.jpg",
   "categoria": "oficial",
   "clip": {
-   "criminal": 0.714,
-   "dinero": 0.033,
-   "fiesta": 0.026,
-   "noche": 0.034,
-   "pareja": 0.028
+   "arte": 0.049,
+   "criminal": 0.613,
+   "deporte": 0.044,
+   "dinero": 0.029,
+   "noche": 0.029
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-136a724721.jpg",
   "etiquetas": [
    "criminal"
   ],
@@ -545,14 +569,15 @@
   "archivo": "oficial/of-1371b9ebe7.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.081,
-   "arma": 0.564,
-   "club": 0.054,
-   "noche": 0.088,
-   "pareja": 0.07
+   "accion": 0.072,
+   "arma": 0.502,
+   "club": 0.048,
+   "noche": 0.078,
+   "pareja": 0.062
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1371b9ebe7.jpg",
   "etiquetas": [
    "arma",
    "lucia"
@@ -571,14 +596,15 @@
   "archivo": "oficial/of-14bc9b3aa3.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.016,
-   "coche": 0.084,
-   "deportivo": 0.817,
-   "pareja": 0.019,
-   "policia": 0.014
+   "atardecer": 0.015,
+   "coche": 0.083,
+   "deportivo": 0.803,
+   "pareja": 0.018,
+   "policia": 0.013
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-14bc9b3aa3.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -596,14 +622,15 @@
   "archivo": "oficial/of-14bd0aaf25.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.036,
-   "arma": 0.874,
-   "helicoptero": 0.005,
-   "lucia": 0.026,
-   "pareja": 0.024
+   "accion": 0.035,
+   "arma": 0.848,
+   "lucia": 0.025,
+   "pareja": 0.024,
+   "retrato": 0.009
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-14bd0aaf25.jpg",
   "etiquetas": [
    "arma",
    "lucia"
@@ -622,14 +649,15 @@
   "archivo": "oficial/of-151226a488.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.118,
-   "arma": 0.204,
-   "atardecer": 0.202,
-   "noche": 0.112,
-   "pareja": 0.153
+   "accion": 0.106,
+   "arma": 0.184,
+   "atardecer": 0.182,
+   "noche": 0.1,
+   "pareja": 0.138
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-151226a488.jpg",
   "etiquetas": [
    "arma",
    "atardecer",
@@ -651,14 +679,15 @@
   "archivo": "oficial/of-1654dd5dcc.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.1,
-   "arma": 0.051,
-   "caiman": 0.095,
-   "club": 0.22,
-   "policia": 0.146
+   "accion": 0.073,
+   "caiman": 0.07,
+   "club": 0.161,
+   "militar": 0.062,
+   "policia": 0.107
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1654dd5dcc.jpg",
   "etiquetas": [
    "club",
    "grassrivers",
@@ -678,14 +707,15 @@
   "archivo": "oficial/of-16dc6e279f.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.083,
-   "arma": 0.406,
-   "helicoptero": 0.036,
-   "noche": 0.085,
-   "pareja": 0.122
+   "accion": 0.077,
+   "arma": 0.376,
+   "helicoptero": 0.033,
+   "noche": 0.078,
+   "pareja": 0.113
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-16dc6e279f.jpg",
   "etiquetas": [
    "arma",
    "jason",
@@ -706,14 +736,15 @@
   "archivo": "oficial/of-17bb9f7cf3.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.159,
-   "comida": 0.039,
-   "fiesta": 0.149,
-   "lucia": 0.117,
-   "noche": 0.419
+   "club": 0.147,
+   "comida": 0.036,
+   "fiesta": 0.138,
+   "lucia": 0.108,
+   "noche": 0.387
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-17bb9f7cf3.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -735,14 +766,15 @@
   "archivo": "oficial/of-18e7ee3f5c.jpg",
   "categoria": "oficial",
   "clip": {
-   "moto": 0.027,
-   "noche": 0.093,
-   "pareja": 0.581,
-   "personas": 0.041,
-   "tienda": 0.029
+   "arte": 0.032,
+   "musica": 0.088,
+   "noche": 0.077,
+   "pareja": 0.483,
+   "personas": 0.034
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-18e7ee3f5c.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -760,14 +792,15 @@
   "archivo": "oficial/of-1b4e914efb.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.188,
-   "fiesta": 0.07,
-   "joyas": 0.329,
-   "noche": 0.085,
-   "personas": 0.078
+   "club": 0.156,
+   "joyas": 0.273,
+   "musica": 0.069,
+   "noche": 0.07,
+   "personas": 0.065
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1b4e914efb.jpg",
   "etiquetas": [
    "club",
    "joyas",
@@ -787,14 +820,15 @@
   "archivo": "oficial/of-1b7ae14eca.jpg",
   "categoria": "oficial",
   "clip": {
-   "carcel": 0.061,
-   "criminal": 0.08,
-   "fiesta": 0.096,
-   "interior": 0.038,
-   "personas": 0.629
+   "carcel": 0.058,
+   "criminal": 0.075,
+   "fiesta": 0.09,
+   "interior": 0.036,
+   "personas": 0.591
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1b7ae14eca.jpg",
   "etiquetas": [
    "jason",
    "lucia",
@@ -814,14 +848,15 @@
   "archivo": "oficial/of-1cfadc2d9b.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.107,
-   "arma": 0.026,
+   "accion": 0.104,
+   "arma": 0.025,
    "coche": 0.022,
-   "moto": 0.02,
-   "pareja": 0.712
+   "moto": 0.019,
+   "pareja": 0.695
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1cfadc2d9b.jpg",
   "etiquetas": [
    "accion",
    "pareja"
@@ -840,14 +875,15 @@
   "archivo": "oficial/of-1d2230166a.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.034,
-   "cartel": 0.262,
+   "arma": 0.033,
+   "cartel": 0.259,
    "club": 0.05,
-   "moto": 0.071,
-   "noche": 0.429
+   "moto": 0.07,
+   "noche": 0.423
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1d2230166a.jpg",
   "etiquetas": [
    "cartel",
    "lucia",
@@ -871,10 +907,11 @@
    "atardecer": 0.01,
    "coche": 0.01,
    "noche": 0.009,
-   "pareja": 0.92
+   "pareja": 0.913
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1d4757ded0.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -892,14 +929,15 @@
   "archivo": "oficial/of-1d4e4412f6.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.417,
-   "criminal": 0.028,
-   "dinero": 0.023,
-   "pez": 0.244,
-   "puerto": 0.158
+   "barco": 0.365,
+   "criminal": 0.024,
+   "mar": 0.063,
+   "pez": 0.213,
+   "puerto": 0.138
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1d4e4412f6.jpg",
   "etiquetas": [
    "barco",
    "jason",
@@ -920,17 +958,19 @@
   "archivo": "oficial/of-1d63d27f26.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.125,
-   "calle": 0.059,
-   "coche": 0.264,
-   "moto": 0.113,
-   "pareja": 0.197
+   "accion": 0.088,
+   "coche": 0.187,
+   "deporte": 0.219,
+   "moto": 0.08,
+   "pareja": 0.14
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1d63d27f26.jpg",
   "etiquetas": [
    "accion",
    "coche",
+   "deporte",
    "keys",
    "leonida",
    "pareja"
@@ -939,7 +979,7 @@
   "h": 1080,
   "hash": "1111111111111111111111111111111111111111111111111110011111111000111101111011000011100010001001101000001100001000000000000001000000000000000000000000000000110001000000000010000100010010011000000100010000000000000000111000000000000000111111101000000111111111",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "coche",
+  "tema": "deporte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_02.0~ptk-53gl0lq.jpg",
   "w": 1920
  },
@@ -949,14 +989,15 @@
   "archivo": "oficial/of-1d78dfc16c.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.102,
-   "atardecer": 0.216,
-   "barco": 0.027,
-   "pareja": 0.501,
-   "tormenta": 0.051
+   "accion": 0.094,
+   "atardecer": 0.198,
+   "barco": 0.025,
+   "pareja": 0.461,
+   "tormenta": 0.047
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1d78dfc16c.jpg",
   "etiquetas": [
    "accion",
    "atardecer",
@@ -980,12 +1021,13 @@
   "clip": {
    "accion": 0.012,
    "atardecer": 0.004,
-   "avion": 0.002,
-   "helicoptero": 0.972,
+   "helicoptero": 0.956,
+   "montana": 0.007,
    "tormenta": 0.003
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1da9b39eb9.jpg",
   "etiquetas": [
    "helicoptero",
    "mount-kalaga"
@@ -1004,14 +1046,15 @@
   "archivo": "oficial/of-1db382b69e.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.065,
-   "arma": 0.241,
+   "accion": 0.063,
+   "arma": 0.236,
    "club": 0.018,
-   "criminal": 0.516,
-   "noche": 0.088
+   "criminal": 0.504,
+   "noche": 0.086
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1db382b69e.jpg",
   "etiquetas": [
    "arma",
    "criminal",
@@ -1031,14 +1074,15 @@
   "archivo": "oficial/of-1eb662af64.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.939,
-   "criminal": 0.009,
-   "dinero": 0.005,
+   "arma": 0.919,
+   "criminal": 0.008,
+   "desierto": 0.008,
    "fiesta": 0.005,
    "helicoptero": 0.006
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1eb662af64.jpg",
   "etiquetas": [
    "arma",
    "vice-city"
@@ -1057,18 +1101,20 @@
   "archivo": "oficial/of-1f0cbcd8e3.jpg",
   "categoria": "oficial",
   "clip": {
-   "caiman": 0.232,
-   "camion": 0.056,
-   "deportivo": 0.132,
-   "helicoptero": 0.071,
-   "moto": 0.16
+   "caiman": 0.138,
+   "deportivo": 0.078,
+   "desierto": 0.066,
+   "militar": 0.249,
+   "moto": 0.095
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1f0cbcd8e3.jpg",
   "etiquetas": [
    "caiman",
    "deportivo",
    "lucia",
+   "militar",
    "moto",
    "personaje"
   ],
@@ -1076,7 +1122,7 @@
   "h": 1548,
   "hash": "1111111111111111111100111111111100000001111111110000000111111111000000001111111100000000001111110000000000011111000000000000111011000000000000000000000000000000000000000000000000000000000000000110000000000000111000000000000011011100000000001101000000000000",
   "pagina": "https://www.rockstargames.com/VI/people/lucia-caminos",
-  "tema": "caiman",
+  "tema": "militar",
   "url": "https://www.rockstargames.com/VI/_next/static/media/background.0itbadz15_csy.png",
   "w": 1920
  },
@@ -1089,11 +1135,12 @@
    "accion": 0.025,
    "camion": 0.017,
    "coche": 0.03,
-   "deportivo": 0.196,
-   "pareja": 0.671
+   "deportivo": 0.194,
+   "pareja": 0.664
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-1f40a4adb9.jpg",
   "etiquetas": [
    "deportivo",
    "pareja",
@@ -1113,14 +1160,15 @@
   "archivo": "oficial/of-201fa6b84e.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.032,
-   "atardecer": 0.038,
-   "fiesta": 0.041,
-   "noche": 0.079,
-   "pareja": 0.649
+   "atardecer": 0.036,
+   "desierto": 0.034,
+   "fiesta": 0.039,
+   "noche": 0.073,
+   "pareja": 0.604
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-201fa6b84e.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -1138,14 +1186,15 @@
   "archivo": "oficial/of-20662f44ee.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.071,
-   "club": 0.048,
-   "dinero": 0.552,
-   "joyas": 0.058,
-   "noche": 0.05
+   "arma": 0.064,
+   "club": 0.043,
+   "dinero": 0.499,
+   "joyas": 0.052,
+   "noche": 0.045
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-20662f44ee.jpg",
   "etiquetas": [
    "dinero",
    "personaje"
@@ -1164,16 +1213,18 @@
   "archivo": "oficial/of-26fddd3ebb.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.096,
-   "club": 0.349,
-   "dinero": 0.075,
-   "noche": 0.073,
-   "tormenta": 0.057
+   "arma": 0.066,
+   "club": 0.241,
+   "dinero": 0.051,
+   "musica": 0.102,
+   "noche": 0.051
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-26fddd3ebb.jpg",
   "etiquetas": [
    "club",
+   "musica",
    "personaje"
   ],
   "fuente": "oficial",
@@ -1190,18 +1241,20 @@
   "archivo": "oficial/of-2715e5d00a.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.11,
-   "camion": 0.199,
-   "cartel": 0.1,
-   "deportivo": 0.364,
-   "moto": 0.085
+   "arma": 0.078,
+   "camion": 0.141,
+   "deportivo": 0.257,
+   "militar": 0.139,
+   "tecnologia": 0.071
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2715e5d00a.jpg",
   "etiquetas": [
    "arma",
    "camion",
-   "deportivo"
+   "deportivo",
+   "militar"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -1217,14 +1270,15 @@
   "archivo": "oficial/of-2752903241.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.065,
-   "arma": 0.223,
-   "dinero": 0.084,
-   "moto": 0.054,
-   "tienda": 0.055
+   "accion": 0.045,
+   "arma": 0.154,
+   "arte": 0.088,
+   "cohete": 0.072,
+   "dinero": 0.058
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2752903241.jpg",
   "etiquetas": [
    "arma",
    "vice-city"
@@ -1243,14 +1297,15 @@
   "archivo": "oficial/of-27e513e275.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.294,
-   "criminal": 0.079,
-   "dinero": 0.074,
-   "helicoptero": 0.056,
-   "moto": 0.071
+   "arma": 0.218,
+   "cohete": 0.063,
+   "criminal": 0.059,
+   "dinero": 0.055,
+   "moto": 0.052
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-27e513e275.jpg",
   "etiquetas": [
    "arma"
   ],
@@ -1268,37 +1323,52 @@
   "archivo": "oficial/of-282f187697.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.098,
-   "criminal": 0.229,
-   "fiesta": 0.06,
-   "joyas": 0.272,
-   "movil": 0.086
+   "criminal": 0.055,
+   "deporte": 0.048,
+   "joyas": 0.066,
+   "musica": 0.024,
+   "retrato": 0.66
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-282f187697.jpg",
   "etiquetas": [
    "criminal",
    "joyas",
+   "retrato",
    "vice-city"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "1100110001000000110110000100000011111000010000001111100000000000110010010000000011111001001000001111101110100000111111111010010011111011110000001111101111000000011111111000000011111101100000001111110110000000111110011100000000000100110000110000011001000000",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "joyas",
+  "tema": "retrato",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_16.16hjjmnxqg9mv.jpg",
   "w": 1920
  },
  "of-2a22a56fea": {
   "alt": "",
+  "animada": "animadas/of-2a22a56fea.mp4",
   "archivo": "oficial/of-2a22a56fea.jpg",
   "categoria": "oficial",
+  "clip": {
+   "avion": 0.054,
+   "bosque": 0.055,
+   "caiman": 0.21,
+   "militar": 0.089,
+   "pantano": 0.057
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-2a22a56fea.jpg",
+  "etiquetas": [
+   "caiman"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000001111000000000000111100000000000011110000000000001011000000000000101100000000000011110000000000001001000000000000100100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard3.0ip~4n1dqh9g2.png",
   "w": 1920
  },
@@ -1309,13 +1379,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.008,
-   "arma": 0.952,
+   "arma": 0.932,
    "criminal": 0.012,
-   "dinero": 0.003,
-   "helicoptero": 0.013
+   "helicoptero": 0.013,
+   "militar": 0.011
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2a6eafac7b.jpg",
   "etiquetas": [
    "arma",
    "jason"
@@ -1334,13 +1405,13 @@
   "archivo": "oficial/of-2af5a43a74.jpg",
   "categoria": "oficial",
   "clip": {
-   "caiman": 0.006,
-   "campo": 0.008,
-   "ciudad": 0.812,
-   "pantano": 0.114,
-   "puerto": 0.026
+   "agua": 0.023,
+   "ciudad": 0.771,
+   "montana": 0.009,
+   "pantano": 0.109,
+   "puerto": 0.024
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-2af5a43a74.jpg",
   "etiquetas": [
@@ -1362,14 +1433,15 @@
   "archivo": "oficial/of-2bd159e64d.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.0,
+   "agua": 0.003,
+   "bosque": 0.006,
    "caiman": 0.001,
-   "interior": 0.0,
-   "pantano": 0.997,
-   "tormenta": 0.0
+   "desierto": 0.001,
+   "pantano": 0.986
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2bd159e64d.jpg",
   "etiquetas": [
    "jason",
    "pantano",
@@ -1389,23 +1461,25 @@
   "archivo": "oficial/of-2c09766a73.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.068,
-   "club": 0.34,
-   "fiesta": 0.392,
-   "moto": 0.049,
-   "movil": 0.035
+   "accion": 0.03,
+   "arte": 0.138,
+   "club": 0.15,
+   "deporte": 0.379,
+   "fiesta": 0.173
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2c09766a73.jpg",
   "etiquetas": [
    "club",
+   "deporte",
    "fiesta"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "1011100000000000011110000110000001111111111100100101111111110000011111111111000001111111110000001001111111000100001111111110010000011111101001000001111111000100010111111000000000010111000000000000000000011111000000000001111100000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "fiesta",
+  "tema": "deporte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_PTT_STORE_01.0seuocb~7b1-q.jpg",
   "w": 1920
  },
@@ -1415,14 +1489,15 @@
   "archivo": "oficial/of-2c38ec826f.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.132,
-   "arma": 0.411,
-   "barco": 0.054,
-   "criminal": 0.055,
-   "pareja": 0.085
+   "accion": 0.124,
+   "arma": 0.387,
+   "barco": 0.051,
+   "criminal": 0.052,
+   "pareja": 0.08
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2c38ec826f.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -1444,15 +1519,17 @@
   "archivo": "oficial/of-2d62b2d110.jpg",
   "categoria": "oficial",
   "clip": {
-   "ave": 0.048,
-   "carcel": 0.044,
-   "comida": 0.224,
-   "dinero": 0.049,
-   "fiesta": 0.295
+   "arte": 0.125,
+   "comida": 0.17,
+   "deporte": 0.061,
+   "dinero": 0.037,
+   "fiesta": 0.224
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2d62b2d110.jpg",
   "etiquetas": [
+   "arte",
    "comida",
    "fiesta"
   ],
@@ -1470,14 +1547,15 @@
   "archivo": "oficial/of-2d8f2f50a8.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.034,
-   "atardecer": 0.047,
-   "gasolinera": 0.024,
-   "movil": 0.036,
-   "pareja": 0.717
+   "accion": 0.032,
+   "atardecer": 0.045,
+   "gasolinera": 0.023,
+   "movil": 0.034,
+   "pareja": 0.678
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2d8f2f50a8.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -1495,14 +1573,15 @@
   "archivo": "oficial/of-2deae83195.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.224,
+   "club": 0.222,
    "deportivo": 0.027,
-   "fiesta": 0.146,
-   "noche": 0.105,
-   "policia": 0.398
+   "fiesta": 0.145,
+   "noche": 0.104,
+   "policia": 0.395
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2deae83195.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -1523,14 +1602,15 @@
   "archivo": "oficial/of-2ded1253b3.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.1,
-   "atardecer": 0.053,
-   "coche": 0.146,
-   "dinero": 0.043,
-   "pareja": 0.522
+   "accion": 0.096,
+   "atardecer": 0.05,
+   "coche": 0.14,
+   "dinero": 0.041,
+   "pareja": 0.499
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2ded1253b3.jpg",
   "etiquetas": [
    "accion",
    "coche",
@@ -1550,14 +1630,15 @@
   "archivo": "oficial/of-2f1135939b.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.121,
-   "camion": 0.052,
-   "carretera": 0.201,
-   "dinero": 0.047,
-   "lucia": 0.295
+   "arma": 0.091,
+   "carretera": 0.151,
+   "desierto": 0.046,
+   "lucia": 0.222,
+   "musica": 0.052
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-2f1135939b.jpg",
   "etiquetas": [
    "arma",
    "carretera",
@@ -1578,23 +1659,25 @@
   "archivo": "oficial/of-30c9190ac1.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.075,
-   "avion": 0.193,
-   "carcel": 0.081,
-   "gasolinera": 0.082,
-   "helicoptero": 0.193
+   "avion": 0.097,
+   "desierto": 0.328,
+   "gasolinera": 0.041,
+   "helicoptero": 0.097,
+   "militar": 0.049
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-30c9190ac1.jpg",
   "etiquetas": [
    "avion",
+   "desierto",
    "helicoptero"
   ],
   "fuente": "oficial",
   "h": 1548,
   "hash": "0011111111111111000111111111111100011111111111110000011111111111000000011111111100000111111111110000011111111110000000011111110000000001111111110000000001101000000000000000000000000000000000000000000000000000000000000000000000001000000000001000000000000000",
   "pagina": "https://www.rockstargames.com/VI/places",
-  "tema": "helicoptero",
+  "tema": "desierto",
   "url": "https://www.rockstargames.com/VI/_next/static/media/background.09b0sdqcjbdo6.png",
   "w": 1920
  },
@@ -1604,14 +1687,15 @@
   "archivo": "oficial/of-314b7f739f.jpg",
   "categoria": "oficial",
   "clip": {
-   "comida": 0.066,
-   "dinero": 0.195,
-   "fiesta": 0.095,
-   "noche": 0.25,
-   "personas": 0.088
+   "comida": 0.052,
+   "dinero": 0.153,
+   "fiesta": 0.075,
+   "noche": 0.197,
+   "personas": 0.069
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-314b7f739f.jpg",
   "etiquetas": [
    "dinero",
    "noche"
@@ -1630,14 +1714,15 @@
   "archivo": "oficial/of-31625df760.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.038,
-   "ciudad": 0.194,
-   "helicoptero": 0.022,
-   "puerto": 0.623,
-   "tienda": 0.019
+   "barco": 0.036,
+   "ciudad": 0.183,
+   "helicoptero": 0.021,
+   "puerto": 0.589,
+   "tienda": 0.018
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-31625df760.jpg",
   "etiquetas": [
    "ciudad",
    "grassrivers",
@@ -1657,17 +1742,19 @@
   "archivo": "oficial/of-3365b5ebcd.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.027,
-   "barco": 0.03,
-   "camion": 0.042,
-   "cartel": 0.681,
-   "tormenta": 0.019
+   "camion": 0.027,
+   "cartel": 0.44,
+   "ciencia": 0.036,
+   "musica": 0.025,
+   "volcan": 0.152
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-3365b5ebcd.jpg",
   "etiquetas": [
    "cartel",
-   "logo"
+   "logo",
+   "volcan"
   ],
   "fuente": "oficial",
   "h": 1920,
@@ -1683,14 +1770,15 @@
   "archivo": "oficial/of-340a4b5f3c.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.462,
+   "cartel": 0.461,
    "club": 0.017,
    "comida": 0.011,
-   "noche": 0.461,
+   "noche": 0.459,
    "tienda": 0.012
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-340a4b5f3c.jpg",
   "etiquetas": [
    "cartel",
    "noche",
@@ -1710,14 +1798,15 @@
   "archivo": "oficial/of-3813bfe7e0.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.34,
-   "criminal": 0.062,
-   "gasolinera": 0.065,
-   "noche": 0.121,
-   "pareja": 0.099
+   "accion": 0.329,
+   "criminal": 0.06,
+   "gasolinera": 0.063,
+   "noche": 0.117,
+   "pareja": 0.096
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-3813bfe7e0.jpg",
   "etiquetas": [
    "accion",
    "jason",
@@ -1733,14 +1822,27 @@
  },
  "of-3a33d68ef6": {
   "alt": "",
+  "animada": "animadas/of-3a33d68ef6.mp4",
   "archivo": "oficial/of-3a33d68ef6.jpg",
   "categoria": "oficial",
+  "clip": {
+   "avion": 0.054,
+   "bosque": 0.055,
+   "caiman": 0.21,
+   "militar": 0.089,
+   "pantano": 0.057
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-3a33d68ef6.jpg",
+  "etiquetas": [
+   "caiman"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "1100000000000000111100000000000011110000000000001111000000000000111100000000000011110000000000001111000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard0.05mjizbf5hj_f.png",
   "w": 1920
  },
@@ -1752,12 +1854,13 @@
   "clip": {
    "accion": 0.019,
    "atardecer": 0.004,
-   "coche": 0.12,
-   "deportivo": 0.817,
+   "coche": 0.118,
+   "deportivo": 0.809,
    "pareja": 0.02
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-3af211e6e9.jpg",
   "etiquetas": [
    "coche",
    "deportivo"
@@ -1776,23 +1879,26 @@
   "archivo": "oficial/of-3d4eda1f93.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.156,
-   "comida": 0.077,
-   "dinero": 0.066,
-   "pez": 0.076,
-   "tormenta": 0.066
+   "animal": 0.079,
+   "arte": 0.102,
+   "comida": 0.039,
+   "desierto": 0.239,
+   "pez": 0.038
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-3d4eda1f93.jpg",
   "etiquetas": [
    "animal",
+   "arte",
+   "desierto",
    "vice-city"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0111111111000100001111101000010011111110101100001111110010010000111111011000000011111111100000001011110000100000101111001110001010011100011100111000010000100011100000000010001110000000001100001110000000000100111000000000011011101000011001101100000110111100",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "animal",
+  "tema": "desierto",
   "url": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VICE_CITY_STYLE_03.08.sic8sgqk4u.jpg",
   "w": 1920
  },
@@ -1802,14 +1908,15 @@
   "archivo": "oficial/of-3de50b2c8a.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.105,
-   "criminal": 0.384,
-   "fiesta": 0.059,
-   "gasolinera": 0.074,
-   "pareja": 0.086
+   "arma": 0.098,
+   "criminal": 0.359,
+   "fiesta": 0.056,
+   "gasolinera": 0.069,
+   "pareja": 0.08
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-3de50b2c8a.jpg",
   "etiquetas": [
    "arma",
    "criminal"
@@ -1828,14 +1935,15 @@
   "archivo": "oficial/of-3ef80159f0.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.531,
-   "arma": 0.175,
-   "camion": 0.076,
-   "cartel": 0.066,
-   "gasolinera": 0.016
+   "accion": 0.492,
+   "arma": 0.162,
+   "camion": 0.071,
+   "cartel": 0.061,
+   "gasolinera": 0.015
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-3ef80159f0.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -1855,14 +1963,15 @@
   "archivo": "oficial/of-403dc26e2a.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.177,
-   "arma": 0.037,
-   "coche": 0.085,
-   "criminal": 0.051,
-   "pareja": 0.496
+   "accion": 0.173,
+   "arma": 0.036,
+   "coche": 0.083,
+   "criminal": 0.049,
+   "pareja": 0.485
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-403dc26e2a.jpg",
   "etiquetas": [
    "accion",
    "pareja",
@@ -1882,18 +1991,20 @@
   "archivo": "oficial/of-40a97ed00c.jpg",
   "categoria": "oficial",
   "clip": {
-   "camion": 0.143,
-   "comida": 0.08,
-   "movil": 0.075,
-   "pareja": 0.215,
-   "pez": 0.06
+   "camion": 0.1,
+   "comida": 0.055,
+   "movil": 0.052,
+   "pareja": 0.15,
+   "retrato": 0.117
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-40a97ed00c.jpg",
   "etiquetas": [
    "camion",
    "pareja",
-   "personaje"
+   "personaje",
+   "retrato"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -1909,14 +2020,15 @@
   "archivo": "oficial/of-425b5fd6ae.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.047,
-   "club": 0.36,
-   "fiesta": 0.156,
-   "noche": 0.152,
-   "pareja": 0.129
+   "cartel": 0.043,
+   "club": 0.33,
+   "fiesta": 0.143,
+   "noche": 0.14,
+   "pareja": 0.118
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-425b5fd6ae.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -1938,12 +2050,13 @@
   "clip": {
    "atardecer": 0.05,
    "coche": 0.014,
-   "deportivo": 0.907,
-   "gasolinera": 0.003,
+   "deportivo": 0.899,
+   "desierto": 0.005,
    "noche": 0.008
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-4285bde0f0.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -1961,16 +2074,18 @@
   "archivo": "oficial/of-43323aa2d1.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.35,
-   "camion": 0.05,
-   "dinero": 0.08,
-   "gasolinera": 0.068,
-   "personas": 0.116
+   "arma": 0.284,
+   "desierto": 0.112,
+   "dinero": 0.065,
+   "gasolinera": 0.055,
+   "personas": 0.094
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-43323aa2d1.jpg",
   "etiquetas": [
    "arma",
+   "desierto",
    "personas"
   ],
   "fuente": "oficial",
@@ -1987,36 +2102,52 @@
   "archivo": "oficial/of-44c583eae8.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.067,
-   "avion": 0.133,
-   "caiman": 0.074,
-   "joyas": 0.073,
-   "pez": 0.164
+   "avion": 0.078,
+   "ciencia": 0.129,
+   "militar": 0.101,
+   "musica": 0.049,
+   "pez": 0.097
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-44c583eae8.jpg",
   "etiquetas": [
    "avion",
+   "ciencia",
+   "militar",
    "pez"
   ],
   "fuente": "oficial",
   "h": 1920,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000001111110000000000110111000000000011101100000000001111110000000000111111",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "pez",
+  "tema": "ciencia",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard8.0-8ntmv6fr3hm.png",
   "w": 1920
  },
  "of-4545726c21": {
   "alt": "",
+  "animada": "animadas/of-4545726c21.mp4",
   "archivo": "oficial/of-4545726c21.jpg",
   "categoria": "oficial",
+  "clip": {
+   "atardecer": 0.08,
+   "caiman": 0.056,
+   "desierto": 0.085,
+   "militar": 0.066,
+   "volcan": 0.128
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-4545726c21.jpg",
+  "etiquetas": [
+   "volcan"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000011100000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "volcan",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard9.0jh6qrro1q9gf.png",
   "w": 1920
  },
@@ -2027,13 +2158,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.001,
-   "arma": 0.923,
+   "arma": 0.921,
    "criminal": 0.072,
    "helicoptero": 0.001,
    "policia": 0.001
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-4c262b8861.jpg",
   "etiquetas": [
    "arma"
   ],
@@ -2051,14 +2183,15 @@
   "archivo": "oficial/of-4c3ce76fee.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.055,
-   "barco": 0.36,
-   "dinero": 0.055,
-   "fiesta": 0.081,
-   "pez": 0.06
+   "barco": 0.231,
+   "ciencia": 0.056,
+   "deporte": 0.043,
+   "fiesta": 0.052,
+   "musica": 0.079
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-4c3ce76fee.jpg",
   "etiquetas": [
    "barco",
    "vice-city"
@@ -2080,11 +2213,12 @@
    "cartel": 0.039,
    "club": 0.031,
    "lucia": 0.02,
-   "noche": 0.723,
-   "pareja": 0.12
+   "noche": 0.714,
+   "pareja": 0.119
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-4ca7904197.jpg",
   "etiquetas": [
    "lucia",
    "noche",
@@ -2104,14 +2238,15 @@
   "archivo": "oficial/of-4e705d01dc.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.084,
-   "arma": 0.209,
-   "fiesta": 0.051,
-   "noche": 0.392,
-   "personas": 0.068
+   "accion": 0.078,
+   "arma": 0.193,
+   "fiesta": 0.047,
+   "noche": 0.363,
+   "personas": 0.063
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-4e705d01dc.jpg",
   "etiquetas": [
    "arma",
    "noche"
@@ -2130,14 +2265,15 @@
   "archivo": "oficial/of-4ecd975332.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.044,
-   "comida": 0.041,
-   "fiesta": 0.382,
-   "pareja": 0.392,
-   "personas": 0.03
+   "arma": 0.043,
+   "comida": 0.04,
+   "fiesta": 0.374,
+   "pareja": 0.383,
+   "personas": 0.029
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-4ecd975332.jpg",
   "etiquetas": [
    "fiesta",
    "pareja",
@@ -2157,14 +2293,15 @@
   "archivo": "oficial/of-51816f683d.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.038,
-   "comida": 0.035,
-   "dinero": 0.609,
-   "gasolinera": 0.03,
-   "noche": 0.033
+   "arma": 0.037,
+   "comida": 0.034,
+   "dinero": 0.587,
+   "gasolinera": 0.029,
+   "noche": 0.031
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-51816f683d.jpg",
   "etiquetas": [
    "dinero",
    "personaje"
@@ -2183,14 +2320,15 @@
   "archivo": "oficial/of-52d6f6a458.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.465,
-   "fiesta": 0.361,
-   "noche": 0.04,
-   "pareja": 0.063,
-   "tormenta": 0.014
+   "club": 0.453,
+   "fiesta": 0.352,
+   "noche": 0.039,
+   "pareja": 0.061,
+   "tormenta": 0.013
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-52d6f6a458.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -2211,16 +2349,18 @@
   "archivo": "oficial/of-531a0ae7b8.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.006,
-   "comida": 0.012,
-   "fiesta": 0.948,
-   "movil": 0.001,
-   "personas": 0.023
+   "comida": 0.009,
+   "deporte": 0.161,
+   "fiesta": 0.763,
+   "personas": 0.018,
+   "retrato": 0.014
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-531a0ae7b8.jpg",
   "etiquetas": [
    "ambrosia",
+   "deporte",
    "fiesta"
   ],
   "fuente": "oficial",
@@ -2233,16 +2373,29 @@
  },
  "of-53d1e6b81a": {
   "alt": "",
+  "animada": "animadas/of-53d1e6b81a.mp4",
   "archivo": "oficial/of-53d1e6b81a.jpg",
   "categoria": "oficial",
+  "clip": {
+   "barco": 0.029,
+   "camion": 0.064,
+   "cartel": 0.337,
+   "ciencia": 0.022,
+   "volcan": 0.301
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-53d1e6b81a.jpg",
   "etiquetas": [
-   "logo"
+   "cartel",
+   "logo",
+   "volcan"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000111111111000000011111111100000001111111110000000111111111000000011111111100000001111111111000000111111111110000011111111111111111111111111111111111111111111111111111",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "cartel",
   "url": "https://www.rockstargames.com/VI/_next/static/media/logo_vi.02gnpy7k4ozcz.png",
   "w": 1920
  },
@@ -2252,14 +2405,15 @@
   "archivo": "oficial/of-54299e6f5f.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.425,
-   "campo": 0.315,
-   "ciudad": 0.156,
-   "pantano": 0.023,
-   "personas": 0.015
+   "atardecer": 0.358,
+   "bosque": 0.066,
+   "campo": 0.265,
+   "ciudad": 0.132,
+   "montana": 0.03
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-54299e6f5f.jpg",
   "etiquetas": [
    "atardecer",
    "campo",
@@ -2283,11 +2437,11 @@
   "clip": {
    "atardecer": 0.008,
    "barco": 0.003,
-   "ciudad": 0.94,
+   "ciudad": 0.937,
    "noche": 0.028,
    "puerto": 0.019
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-554654608e.jpg",
   "etiquetas": [
@@ -2307,15 +2461,17 @@
   "archivo": "oficial/of-55922378ae.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.047,
-   "dinero": 0.069,
-   "fiesta": 0.126,
-   "pareja": 0.416,
-   "personas": 0.084
+   "deporte": 0.567,
+   "dinero": 0.026,
+   "fiesta": 0.047,
+   "pareja": 0.155,
+   "personas": 0.031
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-55922378ae.jpg",
   "etiquetas": [
+   "deporte",
    "fiesta",
    "pareja"
   ],
@@ -2323,7 +2479,7 @@
   "h": 1080,
   "hash": "0000000000111000000000000001100000000000000110000001100000011100000010001101110000001100101111000000010011111100000000111111111000000000011111100000000001111110000001100111111000000101011101001111111001111110111111100111111011101001011111001110001101111100",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "pareja",
+  "tema": "deporte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GOODTIME_GEAR_01.0t7de8dow381q.jpg",
   "w": 1920
  },
@@ -2335,12 +2491,13 @@
   "clip": {
    "barco": 0.002,
    "club": 0.009,
-   "dinero": 0.958,
+   "dinero": 0.954,
    "joyas": 0.018,
    "noche": 0.003
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-55ab566ad2.jpg",
   "etiquetas": [
    "dinero",
    "vice-city"
@@ -2358,14 +2515,15 @@
   "archivo": "oficial/of-5695ac9027.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.021,
-   "club": 0.502,
-   "dinero": 0.015,
-   "fiesta": 0.187,
-   "noche": 0.243
+   "cartel": 0.02,
+   "club": 0.473,
+   "fiesta": 0.176,
+   "musica": 0.028,
+   "noche": 0.229
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5695ac9027.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -2385,23 +2543,25 @@
   "archivo": "oficial/of-56c0dc6ab1.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.091,
-   "dinero": 0.428,
-   "fiesta": 0.094,
-   "personas": 0.102,
-   "tormenta": 0.072
+   "club": 0.043,
+   "dinero": 0.201,
+   "fiesta": 0.044,
+   "musica": 0.473,
+   "personas": 0.048
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-56c0dc6ab1.jpg",
   "etiquetas": [
    "dinero",
+   "musica",
    "personas"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "1111111111110000111111110111000011110110111100001110101001111100111001100111110011000110011111001100011001110000110001000101001010000100010100001000000001010000100000000001110110000000000011110000000000000111000001000001111100000000000111110000010000011111",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "dinero",
+  "tema": "musica",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Real_Dimez_04.0wa3vo07lz4e2.jpg",
   "w": 1920
  },
@@ -2409,12 +2569,24 @@
   "alt": "",
   "archivo": "oficial/of-570abd8d4f.jpg",
   "categoria": "oficial",
+  "clip": {
+   "animal": 0.001,
+   "caiman": 0.991,
+   "ciencia": 0.001,
+   "militar": 0.001,
+   "pez": 0.004
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-570abd8d4f.jpg",
+  "etiquetas": [
+   "caiman"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011100000000000011110000000000001110000000000000110000000000000011110000000000001111000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard6.0ir_.4rvxg_vg.png",
   "w": 1920
  },
@@ -2423,14 +2595,15 @@
   "archivo": "oficial/of-587bc41604.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.299,
+   "accion": 0.296,
    "arma": 0.036,
-   "moto": 0.105,
+   "moto": 0.104,
    "pareja": 0.036,
-   "policia": 0.441
+   "policia": 0.437
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-587bc41604.jpg",
   "etiquetas": [
    "accion",
    "jason",
@@ -2450,14 +2623,15 @@
   "archivo": "oficial/of-5a50192ef2.jpg",
   "categoria": "oficial",
   "clip": {
-   "avion": 0.312,
-   "barco": 0.026,
-   "carretera": 0.507,
-   "helicoptero": 0.042,
-   "puerto": 0.08
+   "agua": 0.039,
+   "avion": 0.28,
+   "carretera": 0.454,
+   "helicoptero": 0.038,
+   "puerto": 0.072
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5a50192ef2.jpg",
   "etiquetas": [
    "avion",
    "carretera",
@@ -2478,14 +2652,15 @@
   "archivo": "oficial/of-5b893e9772.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.02,
-   "arma": 0.033,
-   "moto": 0.592,
-   "pareja": 0.185,
-   "personas": 0.078
+   "arma": 0.029,
+   "deporte": 0.059,
+   "moto": 0.512,
+   "pareja": 0.16,
+   "personas": 0.067
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5b893e9772.jpg",
   "etiquetas": [
    "moto",
    "mount-kalaga",
@@ -2504,14 +2679,15 @@
   "archivo": "oficial/of-5c6e7d7f65.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.08,
-   "criminal": 0.836,
-   "fiesta": 0.004,
+   "arma": 0.078,
+   "criminal": 0.82,
+   "deporte": 0.007,
    "pareja": 0.046,
    "personas": 0.02
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5c6e7d7f65.jpg",
   "etiquetas": [
    "criminal"
   ],
@@ -2528,14 +2704,15 @@
   "archivo": "oficial/of-5c7fbe8d2f.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.169,
-   "club": 0.199,
-   "comida": 0.166,
-   "joyas": 0.066,
-   "noche": 0.313
+   "cartel": 0.159,
+   "club": 0.188,
+   "comida": 0.157,
+   "joyas": 0.062,
+   "noche": 0.295
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5c7fbe8d2f.jpg",
   "etiquetas": [
    "cartel",
    "club",
@@ -2555,14 +2732,15 @@
   "archivo": "oficial/of-5d2895374d.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.207,
-   "atardecer": 0.353,
-   "calle": 0.094,
-   "carretera": 0.049,
-   "ciudad": 0.142
+   "accion": 0.163,
+   "atardecer": 0.279,
+   "calle": 0.074,
+   "ciudad": 0.112,
+   "desierto": 0.101
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5d2895374d.jpg",
   "etiquetas": [
    "accion",
    "atardecer",
@@ -2582,14 +2760,15 @@
   "archivo": "oficial/of-5da2296197.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.877,
-   "fiesta": 0.001,
-   "pez": 0.001,
-   "puerto": 0.114,
+   "barco": 0.87,
+   "cohete": 0.002,
+   "deporte": 0.002,
+   "puerto": 0.113,
    "tormenta": 0.002
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5da2296197.jpg",
   "etiquetas": [
    "barco",
    "puerto"
@@ -2607,14 +2786,15 @@
   "archivo": "oficial/of-5e3fa2c079.jpg",
   "categoria": "oficial",
   "clip": {
-   "avion": 0.006,
-   "barco": 0.02,
-   "caiman": 0.831,
-   "pantano": 0.05,
-   "pez": 0.041
+   "barco": 0.019,
+   "caiman": 0.78,
+   "mar": 0.014,
+   "pantano": 0.047,
+   "pez": 0.039
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5e3fa2c079.jpg",
   "etiquetas": [
    "caiman"
   ],
@@ -2632,15 +2812,17 @@
   "archivo": "oficial/of-5e881f72e9.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.089,
-   "arma": 0.07,
-   "caiman": 0.036,
-   "criminal": 0.016,
-   "pantano": 0.714
+   "animal": 0.056,
+   "arma": 0.044,
+   "bosque": 0.338,
+   "caiman": 0.022,
+   "pantano": 0.45
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5e881f72e9.jpg",
   "etiquetas": [
+   "bosque",
    "mount-kalaga",
    "pantano"
   ],
@@ -2658,13 +2840,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.022,
-   "camion": 0.007,
+   "arte": 0.023,
    "coche": 0.013,
-   "deportivo": 0.01,
-   "pareja": 0.93
+   "deportivo": 0.009,
+   "pareja": 0.896
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5ec48f7e4a.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -2681,14 +2864,15 @@
   "archivo": "oficial/of-5eecc68714.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.137,
-   "atardecer": 0.086,
-   "fiesta": 0.054,
-   "pareja": 0.338,
-   "tormenta": 0.087
+   "arma": 0.117,
+   "atardecer": 0.074,
+   "desierto": 0.056,
+   "pareja": 0.289,
+   "tormenta": 0.075
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5eecc68714.jpg",
   "etiquetas": [
    "arma",
    "pareja"
@@ -2706,14 +2890,15 @@
   "archivo": "oficial/of-5f09a6bd84.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.077,
-   "barco": 0.246,
-   "comida": 0.134,
-   "fiesta": 0.115,
-   "jason": 0.044
+   "animal": 0.063,
+   "barco": 0.203,
+   "comida": 0.11,
+   "deporte": 0.042,
+   "fiesta": 0.095
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5f09a6bd84.jpg",
   "etiquetas": [
    "barco",
    "comida",
@@ -2733,14 +2918,15 @@
   "archivo": "oficial/of-5f61c0bae4.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.208,
-   "carretera": 0.059,
-   "coche": 0.394,
-   "deportivo": 0.182,
-   "pareja": 0.036
+   "accion": 0.19,
+   "carretera": 0.054,
+   "coche": 0.362,
+   "deportivo": 0.167,
+   "militar": 0.048
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5f61c0bae4.jpg",
   "etiquetas": [
    "accion",
    "coche",
@@ -2759,14 +2945,15 @@
   "archivo": "oficial/of-5f7e3ede58.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.11,
-   "arma": 0.42,
-   "fiesta": 0.054,
-   "pareja": 0.137,
-   "personas": 0.059
+   "accion": 0.101,
+   "arma": 0.385,
+   "deporte": 0.054,
+   "pareja": 0.126,
+   "personas": 0.054
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5f7e3ede58.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -2789,13 +2976,14 @@
   "categoria": "oficial",
   "clip": {
    "calle": 0.002,
-   "ciudad": 0.198,
+   "ciudad": 0.197,
    "club": 0.009,
-   "noche": 0.785,
+   "noche": 0.783,
    "puerto": 0.001
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5fa8ee7aba.jpg",
   "etiquetas": [
    "ciudad",
    "noche",
@@ -2814,14 +3002,15 @@
   "archivo": "oficial/of-5ff9bec328.jpg",
   "categoria": "oficial",
   "clip": {
-   "coche": 0.28,
-   "deportivo": 0.112,
-   "gasolinera": 0.046,
-   "noche": 0.319,
-   "pareja": 0.076
+   "coche": 0.274,
+   "deportivo": 0.11,
+   "gasolinera": 0.045,
+   "noche": 0.313,
+   "pareja": 0.074
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-5ff9bec328.jpg",
   "etiquetas": [
    "coche",
    "deportivo",
@@ -2841,15 +3030,17 @@
   "archivo": "oficial/of-602e6b55d8.jpg",
   "categoria": "oficial",
   "clip": {
-   "gasolinera": 0.25,
-   "lucia": 0.12,
-   "moto": 0.019,
-   "puerto": 0.024,
-   "tienda": 0.451
+   "arte": 0.101,
+   "deporte": 0.029,
+   "gasolinera": 0.198,
+   "lucia": 0.095,
+   "tienda": 0.357
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-602e6b55d8.jpg",
   "etiquetas": [
+   "arte",
    "gasolinera",
    "lucia",
    "tienda"
@@ -2867,14 +3058,15 @@
   "archivo": "oficial/of-6060a6e640.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.079,
-   "comida": 0.099,
-   "dinero": 0.222,
-   "fiesta": 0.397,
-   "joyas": 0.084
+   "club": 0.076,
+   "comida": 0.096,
+   "dinero": 0.215,
+   "fiesta": 0.384,
+   "joyas": 0.081
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6060a6e640.jpg",
   "etiquetas": [
    "dinero",
    "fiesta",
@@ -2893,14 +3085,15 @@
   "archivo": "oficial/of-60623fa0b9.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.138,
-   "criminal": 0.061,
-   "dinero": 0.03,
-   "fiesta": 0.025,
-   "jason": 0.595
+   "arma": 0.121,
+   "criminal": 0.054,
+   "dinero": 0.026,
+   "jason": 0.52,
+   "musica": 0.049
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-60623fa0b9.jpg",
   "etiquetas": [
    "arma",
    "grassrivers",
@@ -2919,14 +3112,15 @@
   "archivo": "oficial/of-616334f012.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.254,
-   "arma": 0.649,
-   "criminal": 0.015,
-   "fiesta": 0.008,
-   "helicoptero": 0.013
+   "accion": 0.239,
+   "arma": 0.611,
+   "ciencia": 0.021,
+   "criminal": 0.014,
+   "helicoptero": 0.012
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-616334f012.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -2947,14 +3141,15 @@
   "archivo": "oficial/of-6177974c05.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.059,
+   "accion": 0.058,
    "arma": 0.015,
    "carretera": 0.005,
    "joyas": 0.005,
-   "pareja": 0.884
+   "pareja": 0.874
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6177974c05.jpg",
   "etiquetas": [
    "jason",
    "lucia",
@@ -2974,13 +3169,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.011,
-   "coche": 0.02,
+   "coche": 0.019,
    "criminal": 0.006,
    "deportivo": 0.016,
-   "pareja": 0.927
+   "pareja": 0.921
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-626f0f1146.jpg",
   "etiquetas": [
    "ambrosia",
    "pareja"
@@ -2998,14 +3194,15 @@
   "archivo": "oficial/of-62d9ce08ad.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.082,
-   "arma": 0.726,
+   "accion": 0.079,
+   "arma": 0.7,
    "camion": 0.016,
-   "helicoptero": 0.077,
-   "pareja": 0.025
+   "helicoptero": 0.074,
+   "pareja": 0.024
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-62d9ce08ad.jpg",
   "etiquetas": [
    "arma",
    "jason"
@@ -3023,14 +3220,15 @@
   "archivo": "oficial/of-62effb27b5.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.156,
-   "arma": 0.228,
-   "dinero": 0.211,
-   "helicoptero": 0.104,
-   "personas": 0.039
+   "accion": 0.139,
+   "arma": 0.203,
+   "desierto": 0.049,
+   "dinero": 0.188,
+   "helicoptero": 0.093
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-62effb27b5.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -3049,14 +3247,15 @@
   "archivo": "oficial/of-639d3c84f6.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.063,
-   "arma": 0.146,
-   "camion": 0.009,
-   "fiesta": 0.009,
-   "pareja": 0.712
+   "accion": 0.058,
+   "arma": 0.136,
+   "deporte": 0.013,
+   "musica": 0.037,
+   "pareja": 0.665
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-639d3c84f6.jpg",
   "etiquetas": [
    "arma",
    "pareja",
@@ -3075,14 +3274,15 @@
   "archivo": "oficial/of-63b795b6b8.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.376,
-   "camion": 0.17,
-   "coche": 0.112,
-   "pareja": 0.075,
-   "personas": 0.09
+   "accion": 0.337,
+   "camion": 0.153,
+   "coche": 0.101,
+   "deporte": 0.086,
+   "personas": 0.081
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-63b795b6b8.jpg",
   "etiquetas": [
    "accion",
    "camion",
@@ -3103,14 +3303,15 @@
   "archivo": "oficial/of-64b4844024.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.713,
-   "arma": 0.049,
-   "fiesta": 0.039,
-   "pareja": 0.045,
-   "personas": 0.084
+   "accion": 0.682,
+   "arma": 0.047,
+   "fiesta": 0.038,
+   "pareja": 0.043,
+   "personas": 0.08
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-64b4844024.jpg",
   "etiquetas": [
    "accion",
    "jason",
@@ -3133,10 +3334,11 @@
    "camion": 0.008,
    "coche": 0.02,
    "moto": 0.012,
-   "pareja": 0.843
+   "pareja": 0.84
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6619d8b064.jpg",
   "etiquetas": [
    "accion",
    "jason",
@@ -3156,14 +3358,15 @@
   "archivo": "oficial/of-686ea668d7.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.03,
-   "club": 0.707,
-   "fiesta": 0.03,
-   "lucia": 0.02,
-   "noche": 0.104
+   "cartel": 0.029,
+   "club": 0.675,
+   "fiesta": 0.029,
+   "lucia": 0.019,
+   "noche": 0.1
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-686ea668d7.jpg",
   "etiquetas": [
    "club",
    "lucia",
@@ -3182,13 +3385,13 @@
   "archivo": "oficial/of-68761efbf5.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.021,
-   "calle": 0.063,
-   "casa": 0.028,
-   "ciudad": 0.642,
-   "puerto": 0.168
+   "accion": 0.019,
+   "calle": 0.057,
+   "casa": 0.026,
+   "ciudad": 0.585,
+   "puerto": 0.153
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-68761efbf5.jpg",
   "etiquetas": [
@@ -3209,14 +3412,15 @@
   "archivo": "oficial/of-688a796040.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.205,
-   "arma": 0.07,
-   "movil": 0.075,
-   "noche": 0.103,
-   "policia": 0.085
+   "accion": 0.182,
+   "arma": 0.062,
+   "movil": 0.066,
+   "noche": 0.091,
+   "policia": 0.075
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-688a796040.jpg",
   "etiquetas": [
    "accion",
    "jason",
@@ -3235,14 +3439,15 @@
   "archivo": "oficial/of-689d0f41c1.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.025,
-   "deportivo": 0.035,
-   "helicoptero": 0.024,
-   "moto": 0.697,
-   "pez": 0.033
+   "ciencia": 0.05,
+   "cohete": 0.027,
+   "espacio": 0.049,
+   "militar": 0.048,
+   "moto": 0.528
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-689d0f41c1.jpg",
   "etiquetas": [
    "moto"
   ],
@@ -3260,14 +3465,15 @@
   "archivo": "oficial/of-68f871f2c9.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.245,
-   "coche": 0.051,
-   "deportivo": 0.569,
-   "gasolinera": 0.024,
-   "pareja": 0.041
+   "accion": 0.231,
+   "coche": 0.048,
+   "deportivo": 0.537,
+   "gasolinera": 0.022,
+   "pareja": 0.039
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-68f871f2c9.jpg",
   "etiquetas": [
    "accion",
    "deportivo"
@@ -3285,14 +3491,15 @@
   "archivo": "oficial/of-69421d9055.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.134,
-   "arma": 0.119,
-   "criminal": 0.144,
-   "fiesta": 0.094,
-   "pareja": 0.165
+   "accion": 0.125,
+   "arma": 0.111,
+   "criminal": 0.135,
+   "fiesta": 0.088,
+   "pareja": 0.154
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-69421d9055.jpg",
   "etiquetas": [
    "accion",
    "criminal",
@@ -3311,14 +3518,15 @@
   "archivo": "oficial/of-6a5f39d681.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.053,
-   "club": 0.359,
-   "dinero": 0.189,
-   "fiesta": 0.077,
-   "noche": 0.123
+   "arma": 0.05,
+   "club": 0.337,
+   "dinero": 0.177,
+   "fiesta": 0.073,
+   "noche": 0.115
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6a5f39d681.jpg",
   "etiquetas": [
    "club",
    "dinero",
@@ -3338,14 +3546,15 @@
   "archivo": "oficial/of-6b39a67a1e.jpg",
   "categoria": "oficial",
   "clip": {
-   "camion": 0.09,
-   "comida": 0.288,
-   "fiesta": 0.137,
-   "gasolinera": 0.072,
-   "helicoptero": 0.045
+   "arte": 0.076,
+   "camion": 0.069,
+   "comida": 0.218,
+   "deporte": 0.071,
+   "fiesta": 0.104
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6b39a67a1e.jpg",
   "etiquetas": [
    "comida",
    "fiesta",
@@ -3364,14 +3573,15 @@
   "archivo": "oficial/of-6b5aec6f84.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.061,
-   "arma": 0.366,
-   "criminal": 0.123,
+   "accion": 0.06,
+   "arma": 0.358,
+   "criminal": 0.12,
    "dinero": 0.013,
-   "noche": 0.381
+   "noche": 0.373
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6b5aec6f84.jpg",
   "etiquetas": [
    "arma",
    "criminal",
@@ -3391,18 +3601,20 @@
   "archivo": "oficial/of-6bcfc85de1.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.151,
-   "joyas": 0.103,
-   "lucia": 0.577,
-   "noche": 0.042,
-   "tormenta": 0.032
+   "club": 0.1,
+   "espacio": 0.03,
+   "joyas": 0.068,
+   "lucia": 0.381,
+   "retrato": 0.281
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6bcfc85de1.jpg",
   "etiquetas": [
    "club",
    "joyas",
    "lucia",
+   "retrato",
    "vice-city"
   ],
   "fuente": "oficial",
@@ -3419,14 +3631,15 @@
   "archivo": "oficial/of-6c26af33ff.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.112,
-   "atardecer": 0.079,
-   "fiesta": 0.065,
-   "pareja": 0.238,
-   "personas": 0.202
+   "accion": 0.09,
+   "atardecer": 0.064,
+   "musica": 0.057,
+   "pareja": 0.192,
+   "personas": 0.163
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6c26af33ff.jpg",
   "etiquetas": [
    "accion",
    "pareja",
@@ -3446,13 +3659,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.041,
-   "coche": 0.366,
-   "deportivo": 0.403,
-   "gasolinera": 0.022,
-   "pareja": 0.065
+   "coche": 0.36,
+   "deportivo": 0.395,
+   "gasolinera": 0.021,
+   "pareja": 0.064
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6ce336f4c3.jpg",
   "etiquetas": [
    "coche",
    "deportivo"
@@ -3470,19 +3684,21 @@
   "archivo": "oficial/of-6ce3b9fc57.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.043,
-   "comida": 0.046,
-   "dinero": 0.405,
-   "jason": 0.105,
-   "joyas": 0.212
+   "dinero": 0.291,
+   "jason": 0.076,
+   "joyas": 0.152,
+   "musica": 0.063,
+   "tecnologia": 0.115
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6ce3b9fc57.jpg",
   "etiquetas": [
    "dinero",
    "jason",
    "joyas",
-   "personaje"
+   "personaje",
+   "tecnologia"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -3501,10 +3717,11 @@
    "arma": 0.137,
    "camion": 0.008,
    "criminal": 0.006,
-   "pareja": 0.793
+   "pareja": 0.79
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6d67cf9753.jpg",
   "etiquetas": [
    "arma",
    "jason",
@@ -3524,14 +3741,15 @@
   "archivo": "oficial/of-6e690ddc89.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.003,
-   "ciudad": 0.071,
-   "club": 0.065,
-   "noche": 0.816,
-   "puerto": 0.019
+   "ciudad": 0.066,
+   "club": 0.061,
+   "monumento": 0.031,
+   "noche": 0.763,
+   "puerto": 0.018
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6e690ddc89.jpg",
   "etiquetas": [
    "noche",
    "vice-city"
@@ -3549,18 +3767,20 @@
   "archivo": "oficial/of-6ecf6bf77a.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.138,
-   "camion": 0.065,
-   "coche": 0.38,
-   "deportivo": 0.26,
-   "moto": 0.025
+   "accion": 0.108,
+   "camion": 0.051,
+   "coche": 0.299,
+   "deportivo": 0.205,
+   "militar": 0.146
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6ecf6bf77a.jpg",
   "etiquetas": [
    "accion",
    "coche",
-   "deportivo"
+   "deportivo",
+   "militar"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -3576,14 +3796,15 @@
   "archivo": "oficial/of-6f3783d2b0.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.069,
-   "arma": 0.123,
+   "accion": 0.067,
+   "arma": 0.121,
    "camion": 0.015,
    "coche": 0.01,
-   "pareja": 0.719
+   "pareja": 0.707
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6f3783d2b0.jpg",
   "etiquetas": [
    "arma",
    "pareja",
@@ -3602,14 +3823,15 @@
   "archivo": "oficial/of-6f4e20b79b.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.047,
-   "camion": 0.028,
-   "dinero": 0.027,
-   "fiesta": 0.144,
-   "personas": 0.644
+   "arma": 0.04,
+   "deporte": 0.025,
+   "fiesta": 0.121,
+   "musica": 0.085,
+   "personas": 0.541
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6f4e20b79b.jpg",
   "etiquetas": [
    "fiesta",
    "grassrivers",
@@ -3628,14 +3850,15 @@
   "archivo": "oficial/of-6f67c629f4.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.043,
-   "barco": 0.041,
-   "comida": 0.045,
-   "joyas": 0.087,
-   "lucia": 0.315
+   "arma": 0.035,
+   "comida": 0.036,
+   "desierto": 0.06,
+   "joyas": 0.071,
+   "lucia": 0.255
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6f67c629f4.jpg",
   "etiquetas": [
    "lucia"
   ],
@@ -3652,25 +3875,27 @@
   "archivo": "oficial/of-6fc9582929.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.319,
-   "atardecer": 0.25,
-   "carretera": 0.097,
-   "ciudad": 0.11,
-   "noche": 0.079
+   "accion": 0.133,
+   "atardecer": 0.104,
+   "carretera": 0.041,
+   "ciencia": 0.524,
+   "ciudad": 0.046
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-6fc9582929.jpg",
   "etiquetas": [
    "accion",
    "ambrosia",
    "atardecer",
+   "ciencia",
    "ciudad"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000000011111000001111111111100111111101111110010000111111101001111111111110100111111111111000011111111111100001101101100010000100000000001000010000000000100001000000000010000000000000001000000000000000100000110000011110000111111111000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI/downloads/artwork-wallpapers",
-  "tema": "accion",
+  "tema": "ciencia",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_Postcard_landscape.0gd~9a41ia-rt.jpg",
   "w": 1920
  },
@@ -3679,17 +3904,19 @@
   "archivo": "oficial/of-720a62500d.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.315,
-   "arma": 0.085,
-   "camion": 0.305,
-   "ciudad": 0.03,
-   "personas": 0.037
+   "accion": 0.241,
+   "arma": 0.065,
+   "camion": 0.233,
+   "ciencia": 0.133,
+   "personas": 0.029
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-720a62500d.jpg",
   "etiquetas": [
    "accion",
-   "camion"
+   "camion",
+   "ciencia"
   ],
   "fuente": "oficial",
   "h": 1600,
@@ -3704,14 +3931,15 @@
   "archivo": "oficial/of-73a25d1e5c.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.2,
-   "dinero": 0.095,
-   "joyas": 0.084,
-   "moto": 0.095,
-   "puerto": 0.082
+   "arma": 0.184,
+   "dinero": 0.088,
+   "joyas": 0.077,
+   "moto": 0.088,
+   "puerto": 0.075
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-73a25d1e5c.jpg",
   "etiquetas": [
    "arma"
   ],
@@ -3729,15 +3957,18 @@
   "archivo": "oficial/of-75cfdfb260.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.066,
-   "caiman": 0.026,
-   "pantano": 0.695,
-   "personas": 0.092,
-   "pez": 0.03
+   "agua": 0.196,
+   "animal": 0.038,
+   "bosque": 0.151,
+   "pantano": 0.397,
+   "personas": 0.053
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-75cfdfb260.jpg",
   "etiquetas": [
+   "agua",
+   "bosque",
    "mount-kalaga",
    "pantano"
   ],
@@ -3754,14 +3985,15 @@
   "archivo": "oficial/of-7671e7f81b.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.054,
-   "caiman": 0.602,
-   "camion": 0.156,
-   "deportivo": 0.09,
-   "policia": 0.036
+   "accion": 0.051,
+   "caiman": 0.569,
+   "camion": 0.147,
+   "deportivo": 0.085,
+   "militar": 0.038
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7671e7f81b.jpg",
   "etiquetas": [
    "caiman",
    "camion"
@@ -3779,14 +4011,15 @@
   "archivo": "oficial/of-78c2f7efcf.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.05,
-   "arma": 0.457,
+   "accion": 0.049,
+   "arma": 0.449,
    "cartel": 0.035,
-   "club": 0.112,
-   "noche": 0.236
+   "club": 0.11,
+   "noche": 0.232
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-78c2f7efcf.jpg",
   "etiquetas": [
    "arma",
    "club",
@@ -3806,14 +4039,15 @@
   "archivo": "oficial/of-7a4cd70ce4.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.118,
-   "ciudad": 0.215,
-   "helicoptero": 0.11,
-   "noche": 0.22,
-   "tormenta": 0.128
+   "accion": 0.095,
+   "ciudad": 0.173,
+   "noche": 0.177,
+   "tormenta": 0.103,
+   "volcan": 0.09
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7a4cd70ce4.jpg",
   "etiquetas": [
    "ambrosia",
    "ciudad",
@@ -3833,15 +4067,17 @@
   "archivo": "oficial/of-7b200924ec.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.061,
-   "criminal": 0.057,
-   "fiesta": 0.249,
-   "moto": 0.166,
-   "personas": 0.327
+   "espacio": 0.173,
+   "fiesta": 0.153,
+   "moto": 0.102,
+   "personas": 0.201,
+   "tecnologia": 0.121
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7b200924ec.jpg",
   "etiquetas": [
+   "espacio",
    "fiesta",
    "jason",
    "moto",
@@ -3860,14 +4096,15 @@
   "archivo": "oficial/of-7cab8283b7.jpg",
   "categoria": "oficial",
   "clip": {
-   "criminal": 0.124,
-   "fiesta": 0.108,
-   "gasolinera": 0.254,
-   "noche": 0.093,
-   "personas": 0.115
+   "criminal": 0.116,
+   "fiesta": 0.101,
+   "gasolinera": 0.238,
+   "noche": 0.086,
+   "personas": 0.107
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7cab8283b7.jpg",
   "etiquetas": [
    "criminal",
    "gasolinera",
@@ -3889,14 +4126,15 @@
   "archivo": "oficial/of-7d1c844ead.jpg",
   "categoria": "oficial",
   "clip": {
-   "coche": 0.069,
-   "comida": 0.232,
-   "fiesta": 0.068,
-   "gasolinera": 0.166,
-   "pareja": 0.071
+   "coche": 0.065,
+   "comida": 0.218,
+   "fiesta": 0.064,
+   "gasolinera": 0.156,
+   "pareja": 0.067
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7d1c844ead.jpg",
   "etiquetas": [
    "comida",
    "gasolinera"
@@ -3914,17 +4152,19 @@
   "archivo": "oficial/of-7da49aa147.jpg",
   "categoria": "oficial",
   "clip": {
-   "caiman": 0.13,
-   "carretera": 0.322,
-   "coche": 0.059,
-   "moto": 0.241,
-   "tienda": 0.051
+   "agua": 0.071,
+   "carretera": 0.048,
+   "historia": 0.064,
+   "montana": 0.683,
+   "moto": 0.036
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7da49aa147.jpg",
   "etiquetas": [
    "caiman",
    "carretera",
+   "montana",
    "moto",
    "mount-kalaga"
   ],
@@ -3932,7 +4172,7 @@
   "h": 1080,
   "hash": "0000000000000000000000011111100000111111111110000011111111111100000011111111110000001111111111000000011111111000000001111111100000000011111110000000000001110000000000000010000000000000010000000000000111000000000110111111110000011111100000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI/downloads/artwork-wallpapers",
-  "tema": "carretera",
+  "tema": "montana",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_Postcard_landscape.0c1cb4ocq16n3.jpg",
   "w": 1920
  },
@@ -3941,14 +4181,15 @@
   "archivo": "oficial/of-7e72e69314.jpg",
   "categoria": "oficial",
   "clip": {
-   "camion": 0.053,
-   "coche": 0.033,
-   "deportivo": 0.755,
-   "interior": 0.013,
-   "pareja": 0.086
+   "camion": 0.052,
+   "coche": 0.032,
+   "deportivo": 0.732,
+   "pareja": 0.084,
+   "tecnologia": 0.018
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7e72e69314.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -3965,14 +4206,15 @@
   "archivo": "oficial/of-7e784eb967.jpg",
   "categoria": "oficial",
   "clip": {
-   "camion": 0.036,
-   "coche": 0.03,
-   "deportivo": 0.809,
-   "interior": 0.023,
-   "pareja": 0.024
+   "camion": 0.035,
+   "coche": 0.029,
+   "deportivo": 0.79,
+   "interior": 0.022,
+   "pareja": 0.023
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-7e784eb967.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -3988,12 +4230,25 @@
   "alt": "",
   "archivo": "oficial/of-80e92c3993.jpg",
   "categoria": "oficial",
+  "clip": {
+   "barco": 0.041,
+   "caiman": 0.273,
+   "desierto": 0.098,
+   "mar": 0.146,
+   "pantano": 0.09
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-80e92c3993.jpg",
+  "etiquetas": [
+   "caiman",
+   "mar"
+  ],
   "fuente": "oficial",
   "h": 1548,
   "hash": "1111111111111111111111111111111110011111111111110001111111111111000111111111111100011111111111110000001111111111000000111111111100001011111111110000000000011111000000000000111100000000000011110000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI/places",
+  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/background.0n134dm1nwylt.png",
   "w": 1920
  },
@@ -4002,14 +4257,15 @@
   "archivo": "oficial/of-842ed51cbf.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.081,
-   "comida": 0.131,
-   "fiesta": 0.214,
-   "joyas": 0.158,
-   "playa": 0.102
+   "atardecer": 0.071,
+   "comida": 0.114,
+   "fiesta": 0.187,
+   "joyas": 0.138,
+   "playa": 0.089
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-842ed51cbf.jpg",
   "etiquetas": [
    "comida",
    "fiesta",
@@ -4029,14 +4285,15 @@
   "archivo": "oficial/of-84883707a8.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.272,
-   "criminal": 0.098,
-   "deportivo": 0.109,
-   "dinero": 0.345,
-   "pareja": 0.041
+   "arma": 0.268,
+   "criminal": 0.096,
+   "deportivo": 0.107,
+   "dinero": 0.339,
+   "pareja": 0.04
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-84883707a8.jpg",
   "etiquetas": [
    "arma",
    "deportivo",
@@ -4058,13 +4315,14 @@
   "categoria": "oficial",
   "clip": {
    "atardecer": 0.008,
-   "camion": 0.007,
-   "coche": 0.35,
-   "deportivo": 0.565,
-   "pareja": 0.026
+   "camion": 0.006,
+   "coche": 0.344,
+   "deportivo": 0.555,
+   "pareja": 0.025
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-8544359bf3.jpg",
   "etiquetas": [
    "coche",
    "deportivo",
@@ -4083,14 +4341,15 @@
   "archivo": "oficial/of-87ce3b8b2f.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.18,
-   "carretera": 0.047,
-   "coche": 0.275,
-   "noche": 0.193,
-   "pareja": 0.213
+   "accion": 0.169,
+   "carretera": 0.044,
+   "coche": 0.258,
+   "noche": 0.181,
+   "pareja": 0.2
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-87ce3b8b2f.jpg",
   "etiquetas": [
    "coche",
    "lucia",
@@ -4110,14 +4369,15 @@
   "archivo": "oficial/of-893d45faeb.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.368,
-   "criminal": 0.038,
-   "dinero": 0.229,
-   "joyas": 0.045,
-   "tormenta": 0.042
+   "arma": 0.281,
+   "cohete": 0.044,
+   "dinero": 0.175,
+   "joyas": 0.034,
+   "musica": 0.077
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-893d45faeb.jpg",
   "etiquetas": [
    "arma",
    "dinero"
@@ -4135,14 +4395,15 @@
   "archivo": "oficial/of-8b1b3805ed.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.227,
-   "arma": 0.151,
-   "helicoptero": 0.098,
-   "moto": 0.109,
-   "pareja": 0.078
+   "accion": 0.216,
+   "arma": 0.144,
+   "helicoptero": 0.093,
+   "moto": 0.104,
+   "pareja": 0.074
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-8b1b3805ed.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -4161,16 +4422,18 @@
   "archivo": "oficial/of-8ba5bc913d.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.046,
-   "atardecer": 0.144,
-   "barco": 0.043,
-   "fiesta": 0.055,
-   "pareja": 0.468
+   "arma": 0.037,
+   "atardecer": 0.115,
+   "desierto": 0.128,
+   "fiesta": 0.044,
+   "pareja": 0.373
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-8ba5bc913d.jpg",
   "etiquetas": [
    "atardecer",
+   "desierto",
    "jason",
    "lucia",
    "pareja"
@@ -4188,17 +4451,20 @@
   "archivo": "oficial/of-916fa0cd76.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.05,
-   "joyas": 0.056,
-   "pez": 0.232,
-   "playa": 0.134,
-   "puerto": 0.347
+   "historia": 0.278,
+   "mar": 0.158,
+   "monumento": 0.057,
+   "pez": 0.093,
+   "puerto": 0.14
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-916fa0cd76.jpg",
   "etiquetas": [
+   "historia",
    "keys",
    "leonida",
+   "mar",
    "pez",
    "playa",
    "puerto"
@@ -4207,7 +4473,7 @@
   "h": 1080,
   "hash": "0000000000000000000000011111110000111111111111000011111111111100001111111111110000111111111111000011111101111100001111111011110000111111110110000001111111111000000111110000110000010000000011000001000000000000000110000011110000011111100000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI/downloads/artwork-wallpapers",
-  "tema": "puerto",
+  "tema": "historia",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_Postcard_landscape.05oezf2h--~ed.jpg",
   "w": 1920
  },
@@ -4217,14 +4483,15 @@
   "archivo": "oficial/of-925501c1d5.jpg",
   "categoria": "oficial",
   "clip": {
-   "camion": 0.12,
-   "carretera": 0.093,
-   "coche": 0.328,
-   "deportivo": 0.191,
-   "pareja": 0.105
+   "camion": 0.114,
+   "carretera": 0.088,
+   "coche": 0.31,
+   "deportivo": 0.181,
+   "pareja": 0.099
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-925501c1d5.jpg",
   "etiquetas": [
    "camion",
    "coche",
@@ -4245,12 +4512,13 @@
   "clip": {
    "accion": 0.004,
    "arma": 0.011,
-   "criminal": 0.982,
-   "fiesta": 0.001,
+   "criminal": 0.98,
+   "deporte": 0.001,
    "personas": 0.002
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-93c096232e.jpg",
   "etiquetas": [
    "criminal",
    "jason",
@@ -4269,14 +4537,15 @@
   "archivo": "oficial/of-949b19d42d.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.006,
-   "camion": 0.106,
-   "coche": 0.014,
-   "pareja": 0.829,
-   "personas": 0.006
+   "arte": 0.051,
+   "camion": 0.098,
+   "coche": 0.013,
+   "musica": 0.011,
+   "pareja": 0.768
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-949b19d42d.jpg",
   "etiquetas": [
    "camion",
    "pareja"
@@ -4294,14 +4563,15 @@
   "archivo": "oficial/of-968369d064.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.001,
-   "club": 0.951,
+   "bosque": 0.002,
+   "club": 0.946,
    "fiesta": 0.038,
    "interior": 0.002,
    "noche": 0.005
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-968369d064.jpg",
   "etiquetas": [
    "club",
    "vice-city"
@@ -4319,14 +4589,15 @@
   "archivo": "oficial/of-97de39ae4c.jpg",
   "categoria": "oficial",
   "clip": {
-   "calle": 0.309,
-   "casa": 0.119,
-   "gasolinera": 0.163,
-   "puerto": 0.059,
-   "tienda": 0.069
+   "calle": 0.293,
+   "casa": 0.113,
+   "gasolinera": 0.155,
+   "puerto": 0.056,
+   "tienda": 0.065
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-97de39ae4c.jpg",
   "etiquetas": [
    "calle",
    "casa",
@@ -4347,12 +4618,13 @@
   "clip": {
    "accion": 0.017,
    "calle": 0.007,
-   "cartel": 0.186,
+   "cartel": 0.185,
    "gasolinera": 0.044,
-   "noche": 0.719
+   "noche": 0.717
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-980b8d5ae7.jpg",
   "etiquetas": [
    "cartel",
    "noche",
@@ -4372,14 +4644,15 @@
   "archivo": "oficial/of-9a88e554e7.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.121,
-   "coche": 0.025,
+   "accion": 0.12,
+   "coche": 0.024,
    "noche": 0.062,
-   "pareja": 0.178,
-   "policia": 0.55
+   "pareja": 0.177,
+   "policia": 0.546
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-9a88e554e7.jpg",
   "etiquetas": [
    "accion",
    "jason",
@@ -4399,22 +4672,24 @@
   "archivo": "oficial/of-9aa5239f5b.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.026,
-   "club": 0.085,
-   "comida": 0.078,
-   "fiesta": 0.619,
-   "personas": 0.057
+   "club": 0.012,
+   "comida": 0.011,
+   "deporte": 0.829,
+   "fiesta": 0.085,
+   "musica": 0.023
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-9aa5239f5b.jpg",
   "etiquetas": [
+   "deporte",
    "fiesta"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000000000111000000000000011100000111000001110000011101000111000001101000011100000000111111011110010111101101110001011110011000000101111101000000010111111100000000001101110000000100100010000000000011000100000000001100000000010111111111110001111111111111",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "fiesta",
+  "tema": "deporte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Cal_Hampton_02.05r2t_mck65fe.jpg",
   "w": 1920
  },
@@ -4424,13 +4699,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.008,
-   "carretera": 0.952,
-   "coche": 0.026,
-   "moto": 0.007,
-   "pareja": 0.001
+   "carretera": 0.929,
+   "coche": 0.025,
+   "montana": 0.008,
+   "moto": 0.007
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-9b9b78e150.jpg",
   "etiquetas": [
    "carretera",
    "mount-kalaga"
@@ -4448,14 +4724,15 @@
   "archivo": "oficial/of-9c81d4c81c.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.055,
-   "carcel": 0.069,
-   "club": 0.503,
-   "fiesta": 0.055,
-   "personas": 0.056
+   "arma": 0.045,
+   "arte": 0.085,
+   "carcel": 0.056,
+   "club": 0.409,
+   "personas": 0.045
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-9c81d4c81c.jpg",
   "etiquetas": [
    "club"
   ],
@@ -4472,14 +4749,15 @@
   "archivo": "oficial/of-9d7d0ac8d1.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.195,
-   "arma": 0.614,
+   "accion": 0.191,
+   "arma": 0.601,
    "criminal": 0.014,
-   "pareja": 0.111,
+   "pareja": 0.108,
    "personas": 0.02
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-9d7d0ac8d1.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -4500,14 +4778,15 @@
   "archivo": "oficial/of-9f865686b0.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.105,
-   "arma": 0.11,
-   "camion": 0.099,
-   "dinero": 0.027,
-   "pareja": 0.494
+   "accion": 0.101,
+   "arma": 0.106,
+   "camion": 0.095,
+   "dinero": 0.026,
+   "pareja": 0.477
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-9f865686b0.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -4530,14 +4809,15 @@
   "archivo": "oficial/of-9fb22491d0.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.107,
-   "avion": 0.746,
-   "ciudad": 0.016,
-   "club": 0.026,
-   "helicoptero": 0.017
+   "accion": 0.099,
+   "avion": 0.691,
+   "club": 0.024,
+   "helicoptero": 0.016,
+   "historia": 0.022
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-9fb22491d0.jpg",
   "etiquetas": [
    "accion",
    "avion",
@@ -4556,14 +4836,15 @@
   "archivo": "oficial/of-a057f215ab.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.032,
-   "atardecer": 0.021,
-   "coche": 0.024,
-   "fiesta": 0.017,
-   "pareja": 0.788
+   "accion": 0.03,
+   "atardecer": 0.02,
+   "coche": 0.023,
+   "fiesta": 0.016,
+   "pareja": 0.751
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a057f215ab.jpg",
   "etiquetas": [
    "jason",
    "lucia",
@@ -4582,17 +4863,19 @@
   "archivo": "oficial/of-a1417aea35.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.046,
-   "comida": 0.032,
-   "dinero": 0.575,
-   "fiesta": 0.198,
-   "personas": 0.039
+   "arma": 0.038,
+   "dinero": 0.477,
+   "fiesta": 0.164,
+   "musica": 0.118,
+   "personas": 0.032
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a1417aea35.jpg",
   "etiquetas": [
    "dinero",
    "fiesta",
+   "musica",
    "personaje"
   ],
   "fuente": "oficial",
@@ -4608,14 +4891,15 @@
   "archivo": "oficial/of-a15f623d68.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.255,
-   "camion": 0.056,
-   "coche": 0.168,
-   "deportivo": 0.463,
+   "accion": 0.249,
+   "camion": 0.054,
+   "coche": 0.164,
+   "deportivo": 0.452,
    "pareja": 0.013
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a15f623d68.jpg",
   "etiquetas": [
    "accion",
    "coche",
@@ -4634,14 +4918,15 @@
   "archivo": "oficial/of-a1959a7ccb.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.363,
-   "arma": 0.063,
-   "camion": 0.31,
-   "cartel": 0.049,
-   "pareja": 0.027
+   "accion": 0.326,
+   "arma": 0.056,
+   "camion": 0.279,
+   "cartel": 0.044,
+   "pareja": 0.024
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a1959a7ccb.jpg",
   "etiquetas": [
    "accion",
    "camion"
@@ -4659,15 +4944,17 @@
   "archivo": "oficial/of-a1a2f122c5.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.015,
-   "comida": 0.029,
-   "fiesta": 0.361,
-   "personas": 0.398,
-   "playa": 0.108
+   "comida": 0.009,
+   "deporte": 0.684,
+   "fiesta": 0.108,
+   "personas": 0.12,
+   "playa": 0.032
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a1a2f122c5.jpg",
   "etiquetas": [
+   "deporte",
    "fiesta",
    "personas",
    "playa",
@@ -4677,20 +4964,33 @@
   "h": 1080,
   "hash": "0000011000000000111101111111111111100011101111111100000110111111110000011010111111000001101111111100100011000001000000001100000100000000000000000000000000000000011100000010000111111111101011010011011111111111000001111111111111000111111111111111100011111111",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "personas",
+  "tema": "deporte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_05.0~r~o0jzpp4a-.jpg",
   "w": 1920
  },
  "of-a22211a310": {
   "alt": "",
+  "animada": "animadas/of-a22211a310.mp4",
   "archivo": "oficial/of-a22211a310.jpg",
   "categoria": "oficial",
+  "clip": {
+   "avion": 0.054,
+   "bosque": 0.055,
+   "caiman": 0.21,
+   "militar": 0.089,
+   "pantano": 0.057
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-a22211a310.jpg",
+  "etiquetas": [
+   "caiman"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000000000001111000000000000111100000000000010110000000000001111000000000000111000000000000011110000000000001111",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard8.0l9y_pmj~t8yt.png",
   "w": 1920
  },
@@ -4699,14 +4999,15 @@
   "archivo": "oficial/of-a24d33d5dd.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.396,
-   "atardecer": 0.486,
-   "campo": 0.014,
-   "carretera": 0.036,
-   "pantano": 0.014
+   "accion": 0.337,
+   "atardecer": 0.413,
+   "carretera": 0.031,
+   "desierto": 0.024,
+   "volcan": 0.09
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a24d33d5dd.jpg",
   "etiquetas": [
    "accion",
    "ambrosia",
@@ -4725,14 +5026,15 @@
   "archivo": "oficial/of-a2d494b252.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.066,
-   "carretera": 0.039,
-   "helicoptero": 0.016,
-   "noche": 0.161,
-   "puerto": 0.647
+   "accion": 0.063,
+   "carretera": 0.037,
+   "noche": 0.153,
+   "puerto": 0.618,
+   "tren": 0.025
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a2d494b252.jpg",
   "etiquetas": [
    "noche",
    "port-gellhorn",
@@ -4750,12 +5052,26 @@
   "alt": "",
   "archivo": "oficial/of-a3610abf4c.jpg",
   "categoria": "oficial",
+  "clip": {
+   "accion": 0.04,
+   "avion": 0.209,
+   "deportivo": 0.042,
+   "helicoptero": 0.163,
+   "militar": 0.338
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-a3610abf4c.jpg",
+  "etiquetas": [
+   "avion",
+   "helicoptero",
+   "militar"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000011111000000000001111100000000000111110000000000011111000000000001101100000000000111110000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "militar",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard2.05al8-ha_.0q1.png",
   "w": 1920
  },
@@ -4764,14 +5080,15 @@
   "archivo": "oficial/of-a7bc1b44ba.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.451,
-   "arma": 0.172,
-   "criminal": 0.242,
+   "accion": 0.44,
+   "arma": 0.167,
+   "criminal": 0.236,
    "fiesta": 0.019,
-   "noche": 0.034
+   "noche": 0.033
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a7bc1b44ba.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -4797,8 +5114,9 @@
    "dinero": 0.0,
    "gasolinera": 0.0
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a825ed52db.jpg",
   "etiquetas": [
    "criminal",
    "jason"
@@ -4819,11 +5137,12 @@
    "barco": 0.058,
    "ciudad": 0.043,
    "helicoptero": 0.001,
-   "pez": 0.001,
-   "puerto": 0.894
+   "mar": 0.001,
+   "puerto": 0.891
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a8414dc903.jpg",
   "etiquetas": [
    "puerto",
    "vice-city"
@@ -4841,14 +5160,15 @@
   "archivo": "oficial/of-a87fcb7773.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.113,
-   "animal": 0.083,
-   "arma": 0.184,
-   "caiman": 0.041,
-   "criminal": 0.438
+   "accion": 0.1,
+   "animal": 0.073,
+   "arma": 0.163,
+   "caiman": 0.037,
+   "criminal": 0.388
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a87fcb7773.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -4867,14 +5187,15 @@
   "archivo": "oficial/of-a9331b3395.jpg",
   "categoria": "oficial",
   "clip": {
-   "calle": 0.079,
-   "cartel": 0.456,
-   "gasolinera": 0.052,
-   "noche": 0.324,
+   "calle": 0.077,
+   "cartel": 0.446,
+   "gasolinera": 0.05,
+   "noche": 0.316,
    "tienda": 0.016
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-a9331b3395.jpg",
   "etiquetas": [
    "cartel",
    "noche",
@@ -4893,14 +5214,15 @@
   "archivo": "oficial/of-ab3a9899c6.jpg",
   "categoria": "oficial",
   "clip": {
-   "caiman": 0.052,
-   "casa": 0.068,
-   "helicoptero": 0.123,
-   "playa": 0.044,
-   "puerto": 0.396
+   "desierto": 0.075,
+   "helicoptero": 0.08,
+   "monumento": 0.058,
+   "puerto": 0.257,
+   "volcan": 0.067
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ab3a9899c6.jpg",
   "etiquetas": [
    "helicoptero",
    "puerto",
@@ -4919,14 +5241,15 @@
   "archivo": "oficial/of-ad7e38fed6.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.065,
-   "arma": 0.238,
-   "avion": 0.081,
-   "camion": 0.025,
-   "helicoptero": 0.523
+   "accion": 0.062,
+   "arma": 0.226,
+   "avion": 0.077,
+   "helicoptero": 0.497,
+   "militar": 0.027
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ad7e38fed6.jpg",
   "etiquetas": [
    "arma",
    "helicoptero",
@@ -4944,12 +5267,25 @@
   "alt": "",
   "archivo": "oficial/of-ae50b3bd1b.jpg",
   "categoria": "oficial",
+  "clip": {
+   "accion": 0.287,
+   "arma": 0.079,
+   "dinero": 0.085,
+   "helicoptero": 0.064,
+   "pareja": 0.177
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-ae50b3bd1b.jpg",
+  "etiquetas": [
+   "accion",
+   "pareja"
+  ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000011000000011111111111101110110011101110111100011110111000111001111101100111111000000110001111101111000000011100111110000000110011110000000010001111100100001001111110001101100111110000100111110100000000000110010000010010100001110001000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "accion",
   "url": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg",
   "w": 1920
  },
@@ -4958,14 +5294,15 @@
   "archivo": "oficial/of-aeaa9fd2f3.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.098,
-   "fiesta": 0.064,
-   "noche": 0.044,
-   "pareja": 0.644,
-   "tormenta": 0.039
+   "club": 0.091,
+   "fiesta": 0.059,
+   "noche": 0.04,
+   "pareja": 0.594,
+   "tormenta": 0.036
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-aeaa9fd2f3.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -4984,12 +5321,13 @@
   "clip": {
    "accion": 0.016,
    "atardecer": 0.006,
-   "coche": 0.025,
+   "coche": 0.024,
    "moto": 0.006,
-   "pareja": 0.925
+   "pareja": 0.92
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-aed9d003a7.jpg",
   "etiquetas": [
    "jason",
    "lucia",
@@ -5008,14 +5346,15 @@
   "archivo": "oficial/of-aeeb966755.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.021,
-   "arma": 0.038,
-   "dinero": 0.766,
-   "fiesta": 0.061,
-   "personas": 0.023
+   "arma": 0.036,
+   "dinero": 0.711,
+   "fiesta": 0.057,
+   "musica": 0.024,
+   "personas": 0.021
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-aeeb966755.jpg",
   "etiquetas": [
    "dinero",
    "vice-city"
@@ -5032,12 +5371,25 @@
   "alt": "",
   "archivo": "oficial/of-b01a2c2058.jpg",
   "categoria": "oficial",
+  "clip": {
+   "accion": 0.039,
+   "camion": 0.146,
+   "coche": 0.058,
+   "deportivo": 0.539,
+   "pareja": 0.073
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-b01a2c2058.jpg",
+  "etiquetas": [
+   "camion",
+   "deportivo"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000001011000000000000111110000000000011110000000000001111000000000000111100000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "deportivo",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard5.0sr0ukcy.u788.png",
   "w": 1920
  },
@@ -5050,10 +5402,11 @@
    "coche": 0.008,
    "deportivo": 0.055,
    "dinero": 0.014,
-   "pareja": 0.907
+   "pareja": 0.903
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b055da6528.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -5070,24 +5423,26 @@
   "archivo": "oficial/of-b0cb77af29.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.003,
-   "caiman": 0.008,
-   "personas": 0.001,
-   "pez": 0.984,
-   "puerto": 0.001
+   "animal": 0.0,
+   "caiman": 0.001,
+   "espacio": 0.001,
+   "mar": 0.848,
+   "pez": 0.148
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b0cb77af29.jpg",
   "etiquetas": [
    "keys",
    "leonida",
+   "mar",
    "pez"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "1111111111111111000111111111111100011111111111110001111111111110000011111111110100000111111110000000000111110000000000011110000000000000011000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "pez",
+  "tema": "mar",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_04.0hce1rw1s8pd9.jpg",
   "w": 1920
  },
@@ -5100,10 +5455,11 @@
    "atardecer": 0.009,
    "coche": 0.024,
    "moto": 0.005,
-   "pareja": 0.927
+   "pareja": 0.921
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b1da5c023f.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -5120,14 +5476,15 @@
   "archivo": "oficial/of-b33cee4ca7.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.289,
-   "criminal": 0.057,
-   "dinero": 0.044,
-   "jason": 0.492,
-   "joyas": 0.019
+   "arma": 0.269,
+   "criminal": 0.053,
+   "dinero": 0.041,
+   "jason": 0.458,
+   "musica": 0.018
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b33cee4ca7.jpg",
   "etiquetas": [
    "arma",
    "jason",
@@ -5146,16 +5503,18 @@
   "archivo": "oficial/of-b3689db779.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.309,
-   "criminal": 0.043,
-   "helicoptero": 0.068,
-   "moto": 0.098,
-   "pez": 0.053
+   "arma": 0.174,
+   "cohete": 0.07,
+   "militar": 0.136,
+   "moto": 0.055,
+   "musica": 0.088
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b3689db779.jpg",
   "etiquetas": [
-   "arma"
+   "arma",
+   "militar"
   ],
   "fuente": "oficial",
   "h": 1920,
@@ -5170,14 +5529,15 @@
   "archivo": "oficial/of-b37ef9992b.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.091,
+   "accion": 0.09,
    "arma": 0.015,
    "camion": 0.002,
    "coche": 0.015,
-   "pareja": 0.865
+   "pareja": 0.862
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b37ef9992b.jpg",
   "etiquetas": [
    "jason",
    "lucia",
@@ -5196,14 +5556,15 @@
   "archivo": "oficial/of-b3ac95458b.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.137,
-   "camion": 0.297,
-   "fiesta": 0.051,
-   "jason": 0.074,
-   "pareja": 0.144
+   "accion": 0.124,
+   "camion": 0.268,
+   "fiesta": 0.046,
+   "jason": 0.066,
+   "pareja": 0.13
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b3ac95458b.jpg",
   "etiquetas": [
    "accion",
    "camion",
@@ -5223,14 +5584,15 @@
   "archivo": "oficial/of-b50b6e6f95.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.232,
-   "ciudad": 0.049,
-   "noche": 0.377,
-   "pareja": 0.26,
-   "puerto": 0.013
+   "atardecer": 0.221,
+   "ciudad": 0.047,
+   "desierto": 0.017,
+   "noche": 0.359,
+   "pareja": 0.248
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b50b6e6f95.jpg",
   "etiquetas": [
    "atardecer",
    "noche",
@@ -5249,16 +5611,18 @@
   "archivo": "oficial/of-b8127f1195.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.077,
-   "arma": 0.161,
-   "cartel": 0.108,
-   "fiesta": 0.198,
-   "noche": 0.117
+   "arma": 0.099,
+   "cartel": 0.066,
+   "deporte": 0.338,
+   "fiesta": 0.122,
+   "noche": 0.072
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b8127f1195.jpg",
   "etiquetas": [
    "arma",
+   "deporte",
    "fiesta",
    "noche"
   ],
@@ -5266,7 +5630,7 @@
   "h": 1080,
   "hash": "0000000011111100100000011111000011000011110100011110001110110010111000011000010011100000101100001110000011111000111000000111100011100000001011001110000001101100110000001111110010000011101111100000001100100111000010000000100100001000000010010000100100000010",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "fiesta",
+  "tema": "deporte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_ELECTRIC_FANG_03.0wd4urd9xwy5..jpg",
   "w": 1920
  },
@@ -5275,14 +5639,15 @@
   "archivo": "oficial/of-b94f6aad7a.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.201,
-   "arma": 0.314,
-   "dinero": 0.075,
-   "helicoptero": 0.092,
-   "moto": 0.065
+   "accion": 0.189,
+   "arma": 0.295,
+   "dinero": 0.07,
+   "helicoptero": 0.087,
+   "moto": 0.061
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b94f6aad7a.jpg",
   "etiquetas": [
    "accion",
    "arma"
@@ -5300,14 +5665,15 @@
   "archivo": "oficial/of-b96179cdc9.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.765,
-   "comida": 0.024,
-   "criminal": 0.097,
-   "dinero": 0.04,
-   "tormenta": 0.01
+   "arma": 0.702,
+   "comida": 0.022,
+   "criminal": 0.089,
+   "desierto": 0.044,
+   "dinero": 0.037
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b96179cdc9.jpg",
   "etiquetas": [
    "arma"
   ],
@@ -5324,14 +5690,15 @@
   "archivo": "oficial/of-b9f0658fa2.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.205,
-   "criminal": 0.065,
-   "dinero": 0.107,
-   "jason": 0.197,
-   "noche": 0.045
+   "arma": 0.164,
+   "arte": 0.074,
+   "criminal": 0.052,
+   "dinero": 0.086,
+   "jason": 0.157
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b9f0658fa2.jpg",
   "etiquetas": [
    "arma",
    "dinero",
@@ -5357,8 +5724,9 @@
    "coche": 0.002,
    "pareja": 0.972
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-b9fb7008c7.jpg",
   "etiquetas": [
    "jason",
    "lucia",
@@ -5377,14 +5745,15 @@
   "archivo": "oficial/of-ba8f23cad7.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.059,
-   "arma": 0.268,
-   "criminal": 0.264,
-   "moto": 0.058,
-   "tormenta": 0.051
+   "accion": 0.044,
+   "arma": 0.201,
+   "cohete": 0.074,
+   "criminal": 0.197,
+   "moto": 0.043
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ba8f23cad7.jpg",
   "etiquetas": [
    "arma",
    "criminal"
@@ -5402,14 +5771,15 @@
   "archivo": "oficial/of-bbfd23d75a.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.098,
-   "arma": 0.388,
-   "camion": 0.176,
-   "deportivo": 0.05,
-   "helicoptero": 0.04
+   "accion": 0.092,
+   "arma": 0.363,
+   "camion": 0.165,
+   "deportivo": 0.047,
+   "helicoptero": 0.037
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-bbfd23d75a.jpg",
   "etiquetas": [
    "arma",
    "camion",
@@ -5428,16 +5798,18 @@
   "archivo": "oficial/of-bc4ffae508.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.03,
-   "barco": 0.228,
-   "comida": 0.034,
-   "pez": 0.555,
-   "puerto": 0.084
+   "barco": 0.182,
+   "deporte": 0.031,
+   "mar": 0.156,
+   "pez": 0.442,
+   "puerto": 0.067
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-bc4ffae508.jpg",
   "etiquetas": [
    "barco",
+   "mar",
    "pez"
   ],
   "fuente": "oficial",
@@ -5453,14 +5825,15 @@
   "archivo": "oficial/of-bd08abeeb1.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.07,
-   "club": 0.378,
-   "dinero": 0.208,
-   "joyas": 0.102,
-   "noche": 0.031
+   "arma": 0.059,
+   "club": 0.317,
+   "dinero": 0.175,
+   "joyas": 0.086,
+   "retrato": 0.066
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-bd08abeeb1.jpg",
   "etiquetas": [
    "club",
    "dinero",
@@ -5480,14 +5853,15 @@
   "archivo": "oficial/of-bdd6e50991.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.066,
-   "arma": 0.053,
-   "camion": 0.13,
-   "coche": 0.134,
-   "pareja": 0.429
+   "accion": 0.062,
+   "arma": 0.049,
+   "camion": 0.121,
+   "coche": 0.125,
+   "pareja": 0.401
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-bdd6e50991.jpg",
   "etiquetas": [
    "camion",
    "coche",
@@ -5507,14 +5881,15 @@
   "archivo": "oficial/of-beba3a5b50.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.495,
-   "arma": 0.078,
-   "camion": 0.074,
-   "helicoptero": 0.044,
-   "pareja": 0.081
+   "accion": 0.475,
+   "arma": 0.074,
+   "camion": 0.071,
+   "helicoptero": 0.042,
+   "pareja": 0.078
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-beba3a5b50.jpg",
   "etiquetas": [
    "accion"
   ],
@@ -5531,16 +5906,18 @@
   "archivo": "oficial/of-bf76ee257e.jpg",
   "categoria": "oficial",
   "clip": {
-   "comida": 0.039,
-   "fiesta": 0.035,
-   "jason": 0.6,
-   "moto": 0.062,
-   "perro": 0.037
+   "comida": 0.026,
+   "jason": 0.399,
+   "moto": 0.041,
+   "perro": 0.024,
+   "retrato": 0.264
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-bf76ee257e.jpg",
   "etiquetas": [
-   "jason"
+   "jason",
+   "retrato"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -5555,16 +5932,18 @@
   "archivo": "oficial/of-c09bcdfa64.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.517,
-   "coche": 0.146,
-   "deportivo": 0.051,
-   "moto": 0.094,
-   "pareja": 0.078
+   "accion": 0.347,
+   "arte": 0.307,
+   "coche": 0.098,
+   "moto": 0.063,
+   "pareja": 0.052
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c09bcdfa64.jpg",
   "etiquetas": [
    "accion",
+   "arte",
    "coche",
    "vice-city"
   ],
@@ -5581,14 +5960,15 @@
   "archivo": "oficial/of-c0cf2e1c08.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.167,
-   "arma": 0.232,
-   "criminal": 0.129,
-   "dinero": 0.279,
-   "pareja": 0.054
+   "accion": 0.162,
+   "arma": 0.224,
+   "criminal": 0.124,
+   "dinero": 0.269,
+   "pareja": 0.052
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c0cf2e1c08.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -5607,14 +5987,15 @@
   "archivo": "oficial/of-c1682a0e03.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.118,
-   "arma": 0.174,
-   "dinero": 0.235,
-   "fiesta": 0.049,
-   "joyas": 0.051
+   "accion": 0.101,
+   "arma": 0.15,
+   "dinero": 0.203,
+   "fiesta": 0.042,
+   "joyas": 0.044
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c1682a0e03.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -5634,14 +6015,15 @@
   "archivo": "oficial/of-c23750dda2.jpg",
   "categoria": "oficial",
   "clip": {
-   "comida": 0.033,
+   "comida": 0.032,
    "deportivo": 0.012,
-   "dinero": 0.008,
-   "movil": 0.043,
-   "pareja": 0.867
+   "dinero": 0.007,
+   "movil": 0.042,
+   "pareja": 0.857
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c23750dda2.jpg",
   "etiquetas": [
    "pareja",
    "port-gellhorn"
@@ -5658,12 +6040,24 @@
   "alt": "",
   "archivo": "oficial/of-c2a0a74b8a.jpg",
   "categoria": "oficial",
+  "clip": {
+   "avion": 0.054,
+   "bosque": 0.055,
+   "caiman": 0.21,
+   "militar": 0.089,
+   "pantano": 0.057
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-c2a0a74b8a.jpg",
+  "etiquetas": [
+   "caiman"
+  ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111100000000000011110000000000001011000000000000101100000000000011110000000000001111000000000000111100000000000011110000000000001111000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard4.0c84culhxxr-b.png",
   "w": 1920
  },
@@ -5672,15 +6066,17 @@
   "archivo": "oficial/of-c31ae106ff.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.098,
-   "caiman": 0.211,
-   "comida": 0.08,
-   "dinero": 0.088,
-   "jason": 0.101
+   "arte": 0.217,
+   "caiman": 0.097,
+   "deporte": 0.09,
+   "desierto": 0.061,
+   "musica": 0.062
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c31ae106ff.jpg",
   "etiquetas": [
+   "arte",
    "caiman",
    "jason"
   ],
@@ -5688,7 +6084,7 @@
   "h": 1080,
   "hash": "1111011111111111111111111111111111011100110011110000100111001111000000010001111000001000011111100000000001110000000000000011000000000000001100000000000000110000000000000010000010111000111000100110101111100000011100111100011101100011100001110011111011000111",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "caiman",
+  "tema": "arte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Cal_Hampton_01.0xlil231_osh4.jpg",
   "w": 1920
  },
@@ -5700,11 +6096,12 @@
    "accion": 0.022,
    "arma": 0.026,
    "criminal": 0.013,
-   "moto": 0.811,
-   "pareja": 0.066
+   "moto": 0.799,
+   "pareja": 0.065
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c39075ea32.jpg",
   "etiquetas": [
    "jason",
    "moto"
@@ -5722,23 +6119,26 @@
   "archivo": "oficial/of-c399918157.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.066,
-   "arma": 0.071,
-   "interior": 0.081,
-   "moto": 0.158,
-   "tormenta": 0.072
+   "ciencia": 0.066,
+   "deporte": 0.298,
+   "interior": 0.03,
+   "moto": 0.059,
+   "tecnologia": 0.164
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c399918157.jpg",
   "etiquetas": [
+   "deporte",
    "lucia",
-   "moto"
+   "moto",
+   "tecnologia"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "1111111011111111111111100111111111111110011111111111111000000111111111100011111111111100000000101111110000100011111111000000001111111100001000001111110000000011111111000111101011111100000000001110100000000110111000000000011011000000000000101100000000000000",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "moto",
+  "tema": "deporte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_09.0pd.ppokmi8-n.jpg",
   "w": 1920
  },
@@ -5747,14 +6147,15 @@
   "archivo": "oficial/of-c6ca3bd7ba.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.03,
-   "gasolinera": 0.051,
-   "moto": 0.815,
-   "personas": 0.042,
+   "accion": 0.029,
+   "gasolinera": 0.05,
+   "moto": 0.799,
+   "personas": 0.041,
    "tienda": 0.013
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c6ca3bd7ba.jpg",
   "etiquetas": [
    "ambrosia",
    "moto"
@@ -5772,14 +6173,15 @@
   "archivo": "oficial/of-c70d154a5e.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.063,
-   "caiman": 0.344,
-   "pantano": 0.335,
-   "pez": 0.146,
-   "playa": 0.037
+   "caiman": 0.256,
+   "espacio": 0.074,
+   "monumento": 0.066,
+   "pantano": 0.249,
+   "pez": 0.109
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c70d154a5e.jpg",
   "etiquetas": [
    "caiman",
    "grassrivers",
@@ -5799,14 +6201,15 @@
   "archivo": "oficial/of-c746e85a4a.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.409,
-   "fiesta": 0.15,
-   "noche": 0.148,
-   "pareja": 0.167,
-   "personas": 0.028
+   "accion": 0.386,
+   "fiesta": 0.142,
+   "noche": 0.14,
+   "pareja": 0.158,
+   "personas": 0.027
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c746e85a4a.jpg",
   "etiquetas": [
    "accion",
    "fiesta",
@@ -5831,8 +6234,9 @@
    "noche": 0.002,
    "pareja": 0.986
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c77cca3008.jpg",
   "etiquetas": [
    "pareja",
    "vice-city"
@@ -5850,13 +6254,13 @@
   "archivo": "oficial/of-c7bd456033.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.253,
-   "casa": 0.014,
-   "ciudad": 0.38,
-   "helicoptero": 0.006,
-   "puerto": 0.317
+   "agua": 0.079,
+   "barco": 0.197,
+   "ciudad": 0.296,
+   "monumento": 0.109,
+   "puerto": 0.247
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-c7bd456033.jpg",
   "etiquetas": [
@@ -5878,15 +6282,17 @@
   "archivo": "oficial/of-c7e496eb66.jpg",
   "categoria": "oficial",
   "clip": {
-   "calle": 0.137,
-   "camion": 0.014,
-   "cartel": 0.245,
-   "movil": 0.081,
-   "tienda": 0.449
+   "arte": 0.769,
+   "calle": 0.028,
+   "cartel": 0.051,
+   "movil": 0.017,
+   "tienda": 0.093
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c7e496eb66.jpg",
   "etiquetas": [
+   "arte",
    "calle",
    "cartel",
    "tienda"
@@ -5895,7 +6301,7 @@
   "h": 1080,
   "hash": "1101111101100011100001110000001110000111001000010000001100010000100000111000010011000001101000001110011111110000011000111110000111100011111000111110000111100011110110010111101111011101000111011011111100011100011111110001110111111111000110001111111110011000",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "tienda",
+  "tema": "arte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_STOCK_305_03.00wltke54q_n0.jpg",
   "w": 1920
  },
@@ -5904,17 +6310,19 @@
   "archivo": "oficial/of-c8cf175528.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.003,
+   "animal": 0.002,
    "arma": 0.001,
-   "caiman": 0.001,
-   "personas": 0.001,
-   "pez": 0.992
+   "caiman": 0.0,
+   "mar": 0.289,
+   "pez": 0.703
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-c8cf175528.jpg",
   "etiquetas": [
    "keys",
    "leonida",
+   "mar",
    "pez"
   ],
   "fuente": "oficial",
@@ -5930,14 +6338,15 @@
   "archivo": "oficial/of-cb90e0c7de.jpg",
   "categoria": "oficial",
   "clip": {
-   "calle": 0.167,
-   "cartel": 0.222,
-   "club": 0.111,
-   "gasolinera": 0.075,
-   "noche": 0.208
+   "calle": 0.165,
+   "cartel": 0.219,
+   "club": 0.109,
+   "gasolinera": 0.074,
+   "noche": 0.205
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-cb90e0c7de.jpg",
   "etiquetas": [
    "calle",
    "cartel",
@@ -5956,14 +6365,15 @@
   "archivo": "oficial/of-cbe0d02478.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.078,
-   "carcel": 0.444,
-   "fiesta": 0.031,
-   "pareja": 0.07,
-   "personas": 0.224
+   "arma": 0.072,
+   "carcel": 0.411,
+   "fiesta": 0.029,
+   "pareja": 0.065,
+   "personas": 0.208
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-cbe0d02478.jpg",
   "etiquetas": [
    "carcel",
    "lucia",
@@ -5982,23 +6392,25 @@
   "archivo": "oficial/of-cd34ccf97b.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.294,
-   "helicoptero": 0.066,
-   "jason": 0.078,
-   "moto": 0.097,
-   "noche": 0.058
+   "arma": 0.134,
+   "helicoptero": 0.03,
+   "jason": 0.036,
+   "moto": 0.044,
+   "retrato": 0.468
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-cd34ccf97b.jpg",
   "etiquetas": [
    "arma",
+   "retrato",
    "vice-city"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000001111100001000000111110000100000011111100110000001111110011000000111101001100000001110100110000011111111011000001111111000000000111111100000000011111110000000001111111000000000111111100000000001111110000000000111111011100000011111101110000000111000110",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "arma",
+  "tema": "retrato",
   "url": "https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_05.01rxi8y_wrmf1.jpg",
   "w": 1920
  },
@@ -6010,11 +6422,12 @@
    "arma": 0.024,
    "camion": 0.009,
    "moto": 0.01,
-   "pareja": 0.929,
+   "pareja": 0.923,
    "personas": 0.007
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-cd654cbfad.jpg",
   "etiquetas": [
    "ambrosia",
    "pareja"
@@ -6033,13 +6446,14 @@
   "categoria": "oficial",
   "clip": {
    "atardecer": 0.011,
-   "barco": 0.117,
-   "jason": 0.781,
+   "barco": 0.115,
+   "jason": 0.766,
    "pareja": 0.011,
    "puerto": 0.017
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ce0addfba2.jpg",
   "etiquetas": [
    "barco",
    "jason",
@@ -6058,15 +6472,17 @@
   "archivo": "oficial/of-ce0e44e0c0.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.215,
-   "club": 0.044,
-   "comida": 0.055,
-   "lucia": 0.172,
-   "noche": 0.126
+   "arte": 0.26,
+   "cartel": 0.148,
+   "comida": 0.038,
+   "lucia": 0.119,
+   "noche": 0.087
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ce0e44e0c0.jpg",
   "etiquetas": [
+   "arte",
    "cartel",
    "lucia",
    "noche"
@@ -6075,7 +6491,7 @@
   "h": 1080,
   "hash": "0011111111111100001111111111110000111111111111000011111011111100001111101111110000111111111111000111111111111100000111111111110000011100001111000000110000011100001111111111110001101100001111100000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI/downloads/screenshots",
-  "tema": "cartel",
+  "tema": "arte",
   "url": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_STOCK_305_04.0ipze9~3u6eok.jpg",
   "w": 1920
  },
@@ -6084,15 +6500,17 @@
   "archivo": "oficial/of-cebd52f765.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.048,
-   "club": 0.084,
-   "comida": 0.138,
-   "jason": 0.315,
-   "tienda": 0.065
+   "ciencia": 0.116,
+   "club": 0.051,
+   "comida": 0.083,
+   "jason": 0.19,
+   "musica": 0.059
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-cebd52f765.jpg",
   "etiquetas": [
+   "ciencia",
    "comida",
    "jason"
   ],
@@ -6109,14 +6527,15 @@
   "archivo": "oficial/of-cf21f2d510.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.031,
-   "carretera": 0.037,
-   "coche": 0.174,
-   "gasolinera": 0.433,
-   "moto": 0.044
+   "ciencia": 0.078,
+   "coche": 0.127,
+   "desierto": 0.047,
+   "gasolinera": 0.318,
+   "tren": 0.06
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-cf21f2d510.jpg",
   "etiquetas": [
    "coche",
    "gasolinera",
@@ -6135,14 +6554,15 @@
   "archivo": "oficial/of-cffa2e8dfe.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.052,
-   "arma": 0.342,
-   "comida": 0.199,
-   "pareja": 0.125,
-   "personas": 0.049
+   "accion": 0.044,
+   "arma": 0.288,
+   "comida": 0.168,
+   "musica": 0.064,
+   "pareja": 0.106
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-cffa2e8dfe.jpg",
   "etiquetas": [
    "arma",
    "comida",
@@ -6163,13 +6583,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.017,
-   "arma": 0.396,
-   "criminal": 0.522,
+   "arma": 0.39,
+   "criminal": 0.515,
    "dinero": 0.021,
-   "jason": 0.023
+   "jason": 0.022
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d07d932f2d.jpg",
   "etiquetas": [
    "arma",
    "criminal",
@@ -6188,18 +6609,20 @@
   "archivo": "oficial/of-d11440591f.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.543,
-   "criminal": 0.121,
-   "helicoptero": 0.079,
-   "jason": 0.088,
-   "movil": 0.029
+   "arma": 0.416,
+   "criminal": 0.093,
+   "helicoptero": 0.06,
+   "jason": 0.068,
+   "militar": 0.109
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d11440591f.jpg",
   "etiquetas": [
    "arma",
    "criminal",
-   "jason"
+   "jason",
+   "militar"
   ],
   "fuente": "oficial",
   "h": 1080,
@@ -6214,14 +6637,15 @@
   "archivo": "oficial/of-d137521865.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.311,
-   "coche": 0.053,
-   "deportivo": 0.172,
-   "noche": 0.081,
-   "policia": 0.143
+   "cartel": 0.292,
+   "coche": 0.05,
+   "deportivo": 0.161,
+   "noche": 0.076,
+   "policia": 0.134
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d137521865.jpg",
   "etiquetas": [
    "cartel",
    "deportivo",
@@ -6241,14 +6665,15 @@
   "archivo": "oficial/of-d2525d0bc3.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.166,
-   "dinero": 0.038,
-   "fiesta": 0.569,
-   "noche": 0.036,
-   "personas": 0.133
+   "club": 0.16,
+   "dinero": 0.036,
+   "fiesta": 0.549,
+   "noche": 0.035,
+   "personas": 0.128
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d2525d0bc3.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -6268,17 +6693,19 @@
   "archivo": "oficial/of-d25fd0792c.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.14,
-   "barco": 0.493,
-   "criminal": 0.018,
-   "pez": 0.018,
-   "puerto": 0.186
+   "atardecer": 0.09,
+   "barco": 0.316,
+   "deporte": 0.3,
+   "mar": 0.023,
+   "puerto": 0.119
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d25fd0792c.jpg",
   "etiquetas": [
    "atardecer",
    "barco",
+   "deporte",
    "puerto"
   ],
   "fuente": "oficial",
@@ -6294,14 +6721,15 @@
   "archivo": "oficial/of-d2ed630de0.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.409,
-   "fiesta": 0.475,
-   "noche": 0.038,
-   "pareja": 0.021,
-   "personas": 0.014
+   "club": 0.385,
+   "fiesta": 0.446,
+   "musica": 0.03,
+   "noche": 0.036,
+   "pareja": 0.02
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d2ed630de0.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -6320,14 +6748,15 @@
   "archivo": "oficial/of-d37c12abed.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.038,
-   "caiman": 0.028,
-   "camion": 0.802,
-   "coche": 0.02,
-   "deportivo": 0.037
+   "accion": 0.036,
+   "caiman": 0.027,
+   "camion": 0.76,
+   "coche": 0.019,
+   "deportivo": 0.035
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d37c12abed.jpg",
   "etiquetas": [
    "camion"
   ],
@@ -6344,14 +6773,15 @@
   "archivo": "oficial/of-d41341a788.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.035,
-   "camion": 0.044,
-   "comida": 0.531,
-   "gasolinera": 0.126,
-   "noche": 0.038
+   "arma": 0.033,
+   "camion": 0.041,
+   "comida": 0.505,
+   "gasolinera": 0.12,
+   "noche": 0.036
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d41341a788.jpg",
   "etiquetas": [
    "comida",
    "gasolinera",
@@ -6369,12 +6799,25 @@
   "alt": "",
   "archivo": "oficial/of-d4babc2bf3.jpg",
   "categoria": "oficial",
+  "clip": {
+   "accion": 0.054,
+   "arma": 0.233,
+   "camion": 0.058,
+   "gasolinera": 0.035,
+   "pareja": 0.343
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-d4babc2bf3.jpg",
+  "etiquetas": [
+   "arma",
+   "pareja"
+  ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000000000000000000000000000001111100010000001111110000100011111111111111001100111111111100110011111111100011011111011110001011111111111000000001110110000000000010000010001100111000011000110011111011100000001111110010000000111111001000110000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "pareja",
   "url": "https://www.rockstargames.com/VI/_next/static/media/89834o94713o21.04n287k6o2lh9.jpg",
   "w": 1920
  },
@@ -6383,14 +6826,15 @@
   "archivo": "oficial/of-d53a10e7bc.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.036,
-   "camion": 0.043,
-   "coche": 0.053,
-   "deportivo": 0.616,
-   "pareja": 0.026
+   "accion": 0.03,
+   "camion": 0.036,
+   "coche": 0.044,
+   "deportivo": 0.516,
+   "militar": 0.066
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d53a10e7bc.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -6407,14 +6851,15 @@
   "archivo": "oficial/of-d5a0297a4a.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.224,
-   "arma": 0.065,
-   "camion": 0.224,
-   "criminal": 0.068,
-   "gasolinera": 0.165
+   "accion": 0.199,
+   "arma": 0.057,
+   "camion": 0.199,
+   "criminal": 0.06,
+   "gasolinera": 0.147
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d5a0297a4a.jpg",
   "etiquetas": [
    "accion",
    "camion",
@@ -6433,17 +6878,19 @@
   "archivo": "oficial/of-d613a1392d.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.374,
-   "arma": 0.291,
-   "interior": 0.026,
-   "lucia": 0.091,
-   "tormenta": 0.033
+   "accion": 0.256,
+   "arma": 0.199,
+   "deporte": 0.125,
+   "lucia": 0.062,
+   "retrato": 0.063
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d613a1392d.jpg",
   "etiquetas": [
    "accion",
    "arma",
+   "deporte",
    "lucia"
   ],
   "fuente": "oficial",
@@ -6459,14 +6906,15 @@
   "archivo": "oficial/of-d6650d32cc.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.052,
-   "arma": 0.118,
-   "fiesta": 0.054,
-   "pareja": 0.423,
-   "personas": 0.12
+   "accion": 0.047,
+   "arma": 0.106,
+   "fiesta": 0.049,
+   "pareja": 0.382,
+   "personas": 0.108
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d6650d32cc.jpg",
   "etiquetas": [
    "arma",
    "jason",
@@ -6488,13 +6936,14 @@
   "categoria": "oficial",
   "clip": {
    "coche": 0.015,
-   "deportivo": 0.031,
+   "deportivo": 0.03,
    "dinero": 0.031,
-   "pareja": 0.858,
-   "personas": 0.016
+   "pareja": 0.838,
+   "personas": 0.015
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d6cfe328e5.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -6511,14 +6960,15 @@
   "archivo": "oficial/of-d9f3be4a62.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.583,
-   "ciudad": 0.163,
+   "barco": 0.578,
+   "ciudad": 0.162,
    "club": 0.006,
-   "noche": 0.125,
-   "puerto": 0.099
+   "noche": 0.124,
+   "puerto": 0.098
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-d9f3be4a62.jpg",
   "etiquetas": [
    "barco",
    "ciudad",
@@ -6537,14 +6987,15 @@
   "archivo": "oficial/of-daa301d5b9.jpg",
   "categoria": "oficial",
   "clip": {
-   "barco": 0.084,
-   "fiesta": 0.036,
-   "helicoptero": 0.034,
-   "lucia": 0.479,
-   "puerto": 0.14
+   "barco": 0.066,
+   "deporte": 0.067,
+   "lucia": 0.377,
+   "puerto": 0.111,
+   "retrato": 0.083
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-daa301d5b9.jpg",
   "etiquetas": [
    "lucia",
    "puerto"
@@ -6562,14 +7013,15 @@
   "archivo": "oficial/of-dad25108e5.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.068,
-   "arma": 0.263,
-   "barco": 0.058,
-   "camion": 0.305,
-   "cartel": 0.127
+   "accion": 0.059,
+   "arma": 0.226,
+   "camion": 0.262,
+   "cartel": 0.109,
+   "volcan": 0.052
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-dad25108e5.jpg",
   "etiquetas": [
    "arma",
    "camion",
@@ -6588,14 +7040,15 @@
   "archivo": "oficial/of-db2c8ca445.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.054,
-   "arma": 0.209,
+   "accion": 0.053,
+   "arma": 0.208,
    "criminal": 0.012,
-   "pareja": 0.683,
+   "pareja": 0.68,
    "policia": 0.016
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-db2c8ca445.jpg",
   "etiquetas": [
    "arma",
    "lucia",
@@ -6614,14 +7067,15 @@
   "archivo": "oficial/of-dba888f24a.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.812,
+   "cartel": 0.811,
    "club": 0.133,
    "fiesta": 0.001,
    "noche": 0.051,
    "tienda": 0.001
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-dba888f24a.jpg",
   "etiquetas": [
    "cartel",
    "club",
@@ -6640,14 +7094,15 @@
   "archivo": "oficial/of-dbbb8d8008.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.116,
-   "arma": 0.492,
-   "criminal": 0.037,
-   "fiesta": 0.043,
-   "pareja": 0.124
+   "accion": 0.109,
+   "arma": 0.462,
+   "criminal": 0.035,
+   "fiesta": 0.04,
+   "pareja": 0.116
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-dbbb8d8008.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -6666,14 +7121,15 @@
   "archivo": "oficial/of-e005d9bbfa.jpg",
   "categoria": "oficial",
   "clip": {
-   "club": 0.674,
-   "dinero": 0.039,
-   "fiesta": 0.23,
+   "club": 0.664,
+   "dinero": 0.038,
+   "fiesta": 0.227,
    "joyas": 0.013,
    "personas": 0.022
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e005d9bbfa.jpg",
   "etiquetas": [
    "club",
    "fiesta",
@@ -6692,14 +7148,15 @@
   "archivo": "oficial/of-e3f3b9f2a5.jpg",
   "categoria": "oficial",
   "clip": {
-   "camion": 0.057,
-   "coche": 0.073,
-   "deportivo": 0.425,
-   "movil": 0.081,
-   "pareja": 0.169
+   "coche": 0.062,
+   "deportivo": 0.363,
+   "movil": 0.069,
+   "musica": 0.1,
+   "pareja": 0.144
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e3f3b9f2a5.jpg",
   "etiquetas": [
    "deportivo",
    "pareja"
@@ -6717,13 +7174,13 @@
   "archivo": "oficial/of-e4ae57b014.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.003,
-   "barco": 0.035,
-   "ciudad": 0.925,
-   "noche": 0.022,
-   "puerto": 0.007
+   "agua": 0.016,
+   "barco": 0.033,
+   "ciudad": 0.879,
+   "monumento": 0.022,
+   "noche": 0.021
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-e4ae57b014.jpg",
   "etiquetas": [
@@ -6742,12 +7199,24 @@
   "alt": "",
   "archivo": "oficial/of-e703a9b2dc.jpg",
   "categoria": "oficial",
+  "clip": {
+   "accion": 0.003,
+   "coche": 0.001,
+   "deportivo": 0.001,
+   "pareja": 0.988,
+   "tecnologia": 0.001
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [],
+  "dibujo": "dibujos/gta/of-e703a9b2dc.jpg",
+  "etiquetas": [
+   "pareja"
+  ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000000011000000000010001110000111111001100000111110110010000011111111111000001111111111100011111111111101111111110001100111111101110010011111100111100100111100111100010001110011111000100110001111100000011000011000000001000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "pareja",
   "url": "https://www.rockstargames.com/VI/_next/static/media/39ak81277255o9.0lmk9f~r~10.x.jpg",
   "w": 1920
  },
@@ -6756,14 +7225,15 @@
   "archivo": "oficial/of-e73afef696.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.084,
-   "fiesta": 0.1,
-   "pareja": 0.279,
-   "personas": 0.11,
-   "tormenta": 0.071
+   "arma": 0.071,
+   "fiesta": 0.085,
+   "pareja": 0.237,
+   "personas": 0.094,
+   "tormenta": 0.06
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e73afef696.jpg",
   "etiquetas": [
    "pareja",
    "personas"
@@ -6783,12 +7253,13 @@
   "clip": {
    "atardecer": 0.022,
    "coche": 0.016,
-   "gasolinera": 0.007,
-   "movil": 0.009,
-   "pareja": 0.915
+   "desierto": 0.008,
+   "movil": 0.008,
+   "pareja": 0.898
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e74a555de8.jpg",
   "etiquetas": [
    "pareja"
   ],
@@ -6805,14 +7276,15 @@
   "archivo": "oficial/of-e80c81a404.jpg",
   "categoria": "oficial",
   "clip": {
-   "dinero": 0.357,
-   "fiesta": 0.048,
-   "joyas": 0.12,
-   "perro": 0.419,
-   "personas": 0.015
+   "dinero": 0.336,
+   "fiesta": 0.045,
+   "joyas": 0.113,
+   "musica": 0.027,
+   "perro": 0.395
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e80c81a404.jpg",
   "etiquetas": [
    "dinero",
    "joyas",
@@ -6832,14 +7304,15 @@
   "archivo": "oficial/of-e8b76f6a12.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.029,
-   "carcel": 0.277,
-   "dinero": 0.132,
-   "fiesta": 0.046,
-   "personas": 0.432
+   "carcel": 0.241,
+   "deporte": 0.08,
+   "dinero": 0.115,
+   "fiesta": 0.04,
+   "personas": 0.376
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e8b76f6a12.jpg",
   "etiquetas": [
    "carcel",
    "dinero",
@@ -6859,14 +7332,15 @@
   "archivo": "oficial/of-e917154c15.jpg",
   "categoria": "oficial",
   "clip": {
-   "dinero": 0.085,
-   "fiesta": 0.165,
-   "gasolinera": 0.192,
-   "personas": 0.188,
-   "puerto": 0.052
+   "deporte": 0.1,
+   "dinero": 0.073,
+   "fiesta": 0.142,
+   "gasolinera": 0.165,
+   "personas": 0.162
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e917154c15.jpg",
   "etiquetas": [
    "fiesta",
    "gasolinera",
@@ -6885,14 +7359,15 @@
   "archivo": "oficial/of-e9203629c1.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.017,
-   "barco": 0.052,
-   "caiman": 0.13,
-   "carretera": 0.695,
-   "pantano": 0.03
+   "barco": 0.042,
+   "caiman": 0.105,
+   "carretera": 0.561,
+   "deporte": 0.081,
+   "tren": 0.045
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-e9203629c1.jpg",
   "etiquetas": [
    "caiman",
    "carretera",
@@ -6913,12 +7388,13 @@
   "clip": {
    "accion": 0.011,
    "camion": 0.007,
-   "coche": 0.02,
-   "deportivo": 0.875,
+   "coche": 0.019,
+   "deportivo": 0.853,
    "pareja": 0.032
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ecf7966cf8.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -6935,14 +7411,15 @@
   "archivo": "oficial/of-eeba1f76ac.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.055,
-   "club": 0.093,
-   "fiesta": 0.027,
-   "noche": 0.492,
-   "pareja": 0.226
+   "cartel": 0.054,
+   "club": 0.091,
+   "fiesta": 0.026,
+   "noche": 0.484,
+   "pareja": 0.223
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-eeba1f76ac.jpg",
   "etiquetas": [
    "noche",
    "pareja",
@@ -6960,14 +7437,25 @@
   "alt": "",
   "archivo": "oficial/of-eede6f70f5.jpg",
   "categoria": "oficial",
+  "clip": {
+   "accion": 0.089,
+   "arma": 0.475,
+   "camion": 0.066,
+   "coche": 0.066,
+   "deportivo": 0.045
+  },
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-eede6f70f5.jpg",
   "etiquetas": [
+   "arma",
    "logo"
   ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000000000001111000000000000111100000000000001110000000000001111000000000000111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
+  "tema": "arma",
   "url": "https://www.rockstargames.com/VI/_next/static/media/logo_gta.0-hc15s02t_zg.png",
   "w": 1920
  },
@@ -6976,14 +7464,15 @@
   "archivo": "oficial/of-ef925fdcdf.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.028,
-   "arma": 0.073,
-   "criminal": 0.686,
-   "dinero": 0.085,
-   "personas": 0.074
+   "accion": 0.027,
+   "arma": 0.071,
+   "criminal": 0.665,
+   "dinero": 0.083,
+   "personas": 0.072
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ef925fdcdf.jpg",
   "etiquetas": [
    "criminal",
    "jason",
@@ -7002,13 +7491,13 @@
   "archivo": "oficial/of-f063600c11.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.006,
-   "ciudad": 0.509,
-   "club": 0.011,
-   "noche": 0.41,
-   "puerto": 0.05
+   "ciudad": 0.5,
+   "club": 0.01,
+   "monumento": 0.008,
+   "noche": 0.403,
+   "puerto": 0.049
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-f063600c11.jpg",
   "etiquetas": [
@@ -7029,13 +7518,14 @@
   "categoria": "oficial",
   "clip": {
    "camion": 0.002,
-   "deportivo": 0.001,
+   "desierto": 0.002,
    "gasolinera": 0.001,
-   "helicoptero": 0.001,
-   "moto": 0.991
+   "militar": 0.016,
+   "moto": 0.973
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f095283010.jpg",
   "etiquetas": [
    "moto"
   ],
@@ -7052,14 +7542,15 @@
   "archivo": "oficial/of-f0bd920903.jpg",
   "categoria": "oficial",
   "clip": {
-   "arma": 0.103,
-   "fiesta": 0.079,
-   "joyas": 0.076,
-   "pareja": 0.24,
-   "personas": 0.082
+   "arma": 0.076,
+   "espacio": 0.073,
+   "musica": 0.08,
+   "pareja": 0.177,
+   "personas": 0.06
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f0bd920903.jpg",
   "etiquetas": [
    "arma",
    "pareja"
@@ -7077,14 +7568,15 @@
   "archivo": "oficial/of-f1c7143df2.jpg",
   "categoria": "oficial",
   "clip": {
-   "atardecer": 0.065,
-   "comida": 0.253,
-   "fiesta": 0.126,
-   "jason": 0.227,
-   "noche": 0.108
+   "atardecer": 0.062,
+   "comida": 0.243,
+   "fiesta": 0.12,
+   "jason": 0.218,
+   "noche": 0.104
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f1c7143df2.jpg",
   "etiquetas": [
    "comida",
    "fiesta",
@@ -7104,13 +7596,13 @@
   "archivo": "oficial/of-f20c8a777d.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.013,
-   "atardecer": 0.005,
-   "ciudad": 0.824,
-   "helicoptero": 0.135,
+   "accion": 0.012,
+   "ciudad": 0.799,
+   "helicoptero": 0.131,
+   "monumento": 0.027,
    "noche": 0.008
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "dibujo": "dibujos/gta/of-f20c8a777d.jpg",
   "etiquetas": [
@@ -7132,13 +7624,14 @@
   "categoria": "oficial",
   "clip": {
    "accion": 0.106,
-   "club": 0.053,
+   "club": 0.052,
    "coche": 0.05,
-   "noche": 0.6,
-   "pareja": 0.083
+   "noche": 0.595,
+   "pareja": 0.082
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f38d269eed.jpg",
   "etiquetas": [
    "accion",
    "lucia",
@@ -7157,14 +7650,15 @@
   "archivo": "oficial/of-f3a2de8da9.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.1,
-   "arma": 0.359,
-   "fiesta": 0.052,
-   "noche": 0.097,
-   "pareja": 0.156
+   "accion": 0.091,
+   "arma": 0.324,
+   "fiesta": 0.047,
+   "noche": 0.087,
+   "pareja": 0.141
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f3a2de8da9.jpg",
   "etiquetas": [
    "accion",
    "arma",
@@ -7183,14 +7677,15 @@
   "archivo": "oficial/of-f416a5a85a.jpg",
   "categoria": "oficial",
   "clip": {
-   "cartel": 0.052,
-   "club": 0.571,
-   "dinero": 0.066,
-   "fiesta": 0.053,
-   "noche": 0.137
+   "cartel": 0.048,
+   "club": 0.53,
+   "dinero": 0.061,
+   "fiesta": 0.049,
+   "noche": 0.127
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f416a5a85a.jpg",
   "etiquetas": [
    "club",
    "noche",
@@ -7209,14 +7704,15 @@
   "archivo": "oficial/of-f6ebdc0017.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.029,
-   "arma": 0.207,
-   "criminal": 0.024,
-   "pareja": 0.674,
-   "personas": 0.011
+   "accion": 0.028,
+   "arma": 0.198,
+   "criminal": 0.023,
+   "pareja": 0.644,
+   "retrato": 0.022
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f6ebdc0017.jpg",
   "etiquetas": [
    "arma",
    "lucia",
@@ -7237,12 +7733,13 @@
   "clip": {
    "club": 0.064,
    "comida": 0.033,
-   "fiesta": 0.856,
-   "noche": 0.006,
+   "deporte": 0.008,
+   "fiesta": 0.844,
    "personas": 0.016
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-f8d7092399.jpg",
   "etiquetas": [
    "fiesta",
    "jason",
@@ -7261,14 +7758,15 @@
   "archivo": "oficial/of-fa60778936.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.041,
-   "arma": 0.028,
-   "coche": 0.041,
-   "deportivo": 0.714,
-   "pareja": 0.078
+   "accion": 0.036,
+   "coche": 0.036,
+   "deportivo": 0.632,
+   "militar": 0.094,
+   "pareja": 0.069
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fa60778936.jpg",
   "etiquetas": [
    "deportivo"
   ],
@@ -7285,14 +7783,15 @@
   "archivo": "oficial/of-fa724f69b9.jpg",
   "categoria": "oficial",
   "clip": {
-   "ave": 0.506,
-   "barco": 0.043,
-   "caiman": 0.044,
-   "movil": 0.132,
-   "puerto": 0.043
+   "ave": 0.367,
+   "desierto": 0.09,
+   "movil": 0.096,
+   "retrato": 0.038,
+   "volcan": 0.067
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fa724f69b9.jpg",
   "etiquetas": [
    "ave",
    "movil"
@@ -7312,12 +7811,13 @@
   "clip": {
    "accion": 0.008,
    "camion": 0.008,
-   "criminal": 0.043,
-   "gasolinera": 0.841,
+   "criminal": 0.042,
+   "gasolinera": 0.831,
    "pareja": 0.05
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fbb7c69bda.jpg",
   "etiquetas": [
    "gasolinera"
   ],
@@ -7338,10 +7838,11 @@
    "arma": 0.004,
    "barco": 0.004,
    "comida": 0.007,
-   "pareja": 0.965
+   "pareja": 0.961
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fc2cde6e7b.jpg",
   "etiquetas": [
    "jason",
    "lucia",
@@ -7360,16 +7861,18 @@
   "archivo": "oficial/of-fcdc2e2bf7.jpg",
   "categoria": "oficial",
   "clip": {
-   "animal": 0.071,
-   "caiman": 0.406,
-   "cartel": 0.069,
-   "gasolinera": 0.057,
-   "perro": 0.102
+   "animal": 0.051,
+   "caiman": 0.29,
+   "cartel": 0.049,
+   "desierto": 0.124,
+   "perro": 0.072
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fcdc2e2bf7.jpg",
   "etiquetas": [
    "caiman",
+   "desierto",
    "jason",
    "perro",
    "personaje"
@@ -7387,14 +7890,15 @@
   "archivo": "oficial/of-fd581b9eed.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.15,
-   "barco": 0.283,
-   "ciudad": 0.105,
-   "noche": 0.181,
-   "puerto": 0.118
+   "accion": 0.147,
+   "barco": 0.276,
+   "ciudad": 0.103,
+   "noche": 0.177,
+   "puerto": 0.116
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fd581b9eed.jpg",
   "etiquetas": [
    "accion",
    "barco",
@@ -7414,14 +7918,15 @@
   "archivo": "oficial/of-fd5efe7315.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.016,
-   "coche": 0.173,
-   "deportivo": 0.691,
-   "pareja": 0.015,
-   "policia": 0.016
+   "accion": 0.015,
+   "coche": 0.167,
+   "deportivo": 0.669,
+   "pareja": 0.014,
+   "policia": 0.015
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fd5efe7315.jpg",
   "etiquetas": [
    "coche",
    "deportivo"
@@ -7439,14 +7944,15 @@
   "archivo": "oficial/of-fdc8c3d782.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.242,
-   "caiman": 0.012,
-   "coche": 0.024,
-   "helicoptero": 0.112,
-   "pantano": 0.564
+   "accion": 0.228,
+   "agua": 0.028,
+   "coche": 0.023,
+   "helicoptero": 0.106,
+   "pantano": 0.533
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-fdc8c3d782.jpg",
   "etiquetas": [
    "accion",
    "grassrivers",
@@ -7466,14 +7972,15 @@
   "archivo": "oficial/of-ff4039dd92.jpg",
   "categoria": "oficial",
   "clip": {
-   "accion": 0.082,
-   "arma": 0.062,
-   "atardecer": 0.038,
-   "dinero": 0.044,
-   "pareja": 0.494
+   "accion": 0.071,
+   "arma": 0.054,
+   "desierto": 0.07,
+   "dinero": 0.038,
+   "pareja": 0.428
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ff4039dd92.jpg",
   "etiquetas": [
    "jason",
    "logo",
@@ -7494,13 +8001,14 @@
   "categoria": "oficial",
   "clip": {
    "animal": 0.002,
-   "caiman": 0.988,
-   "joyas": 0.0,
+   "caiman": 0.983,
+   "mar": 0.003,
    "movil": 0.0,
    "pez": 0.007
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ff793d0499.jpg",
   "etiquetas": [
    "caiman",
    "keys",
@@ -7519,14 +8027,15 @@
   "archivo": "oficial/of-ffe5edcb58.jpg",
   "categoria": "oficial",
   "clip": {
-   "comida": 0.019,
-   "dinero": 0.134,
-   "joyas": 0.563,
-   "lucia": 0.107,
-   "movil": 0.063
+   "ciencia": 0.097,
+   "dinero": 0.112,
+   "joyas": 0.469,
+   "lucia": 0.089,
+   "movil": 0.052
   },
-  "clip_v": 2,
+  "clip_v": 3,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "dibujo": "dibujos/gta/of-ffe5edcb58.jpg",
   "etiquetas": [
    "dinero",
    "joyas",

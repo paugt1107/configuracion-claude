@@ -2,9 +2,19 @@
  "lb-0b1dc715c6": {
   "archivo": "libres/vida/pool-party-mansion-ov4.jpg",
   "categoria": "vida",
+  "clip": {
+   "bosque": 0.011,
+   "carcel": 0.014,
+   "casa": 0.064,
+   "ciencia": 0.081,
+   "interior": 0.771
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Icaland - Mansion 02 - 0013 — icalandind. — CC BY 2.0 — https://www.flickr.com/photos/151832979@N03/53386061377",
+  "dibujo": "dibujos/gta/lb-0b1dc715c6.jpg",
   "etiquetas": [
+   "interior",
    "mansion",
    "party",
    "pool",
@@ -12,41 +22,75 @@
   ],
   "fuente": "libre",
   "h": 616,
+  "tema": "interior",
   "w": 1023
  },
  "lb-0eebc1625e": {
   "archivo": "libres/vida/gym-bodybuilder-ov2.jpg",
   "categoria": "vida",
+  "clip": {
+   "ciencia": 0.036,
+   "deporte": 0.517,
+   "helicoptero": 0.041,
+   "moto": 0.034,
+   "personas": 0.042
+  },
+  "clip_v": 3,
   "consulta": "Gym bodybuilder",
   "credito": "tribal — istolethetv — CC BY 2.0 — https://www.flickr.com/photos/44124401641@N01/3483630555",
+  "dibujo": "dibujos/gta/lb-0eebc1625e.jpg",
   "etiquetas": [
    "bodybuilder",
+   "deporte",
    "gym",
    "vida"
   ],
   "fuente": "libre",
   "h": 812,
+  "tema": "deporte",
   "w": 1023
  },
  "lb-12ae58143e": {
   "archivo": "libres/vida/skatepark-ov2.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.02,
+   "carretera": 0.015,
+   "deporte": 0.758,
+   "monumento": 0.014,
+   "personas": 0.067
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "SkatePark — olo81 — CC BY 2.0 — https://www.flickr.com/photos/15923970@N00/2579838101",
+  "dibujo": "dibujos/gta/lb-12ae58143e.jpg",
   "etiquetas": [
+   "deporte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 709,
+  "tema": "deporte",
   "w": 1023
  },
  "lb-155ff4c913": {
   "archivo": "libres/vida/pool-party-mansion-3.jpg",
   "categoria": "vida",
+  "clip": {
+   "agua": 0.088,
+   "bosque": 0.46,
+   "carretera": 0.122,
+   "montana": 0.066,
+   "pantano": 0.085
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Trail to Bowers Mansion Cemetery, Bowers Mansion Park, Washoe Valley, Nevada (21331487152).jpg — Ken Lund from Reno, Nevada, USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Trail_to_Bowers_Mansion_Cemetery,_Bowers_Mansion_Park,_Washoe_Valley,_Nevada_(21331487152).jpg",
+  "dibujo": "dibujos/gta/lb-155ff4c913.jpg",
   "etiquetas": [
+   "bosque",
+   "carretera",
    "mansion",
    "party",
    "pool",
@@ -54,14 +98,27 @@
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "bosque",
   "w": 1920
  },
  "lb-1567f1fe22": {
   "archivo": "libres/vida/pool-party-mansion-4.jpg",
   "categoria": "vida",
+  "clip": {
+   "carcel": 0.116,
+   "casa": 0.275,
+   "ciencia": 0.228,
+   "historia": 0.143,
+   "monumento": 0.056
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Bowers Mansion, Nevada (7425820610).jpg — Ken Lund from Reno, Nevada, USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Bowers_Mansion,_Nevada_(7425820610).jpg",
+  "dibujo": "dibujos/gta/lb-1567f1fe22.jpg",
   "etiquetas": [
+   "casa",
+   "ciencia",
+   "historia",
    "mansion",
    "party",
    "pool",
@@ -69,141 +126,261 @@
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "casa",
   "w": 1920
  },
  "lb-15867b7283": {
   "archivo": "libres/vida/gym-bodybuilder-ov1.jpg",
   "categoria": "vida",
+  "clip": {
+   "carcel": 0.082,
+   "casa": 0.056,
+   "ciencia": 0.096,
+   "interior": 0.505,
+   "militar": 0.054
+  },
+  "clip_v": 3,
   "consulta": "Gym bodybuilder",
   "credito": "IMG_2529 — Neeta Lind — CC BY 2.0 — https://www.flickr.com/photos/71132408@N00/2517026291",
+  "dibujo": "dibujos/gta/lb-15867b7283.jpg",
   "etiquetas": [
    "bodybuilder",
    "gym",
+   "interior",
    "vida"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "interior",
   "w": 1024
  },
  "lb-2261203b1a": {
   "archivo": "libres/vida/skatepark-ov6.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.015,
+   "carretera": 0.736,
+   "coche": 0.015,
+   "misterio": 0.164,
+   "tren": 0.024
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Skatepark: com'è — GRAB velolove — Dominio público 1.0 — https://www.flickr.com/photos/145565953@N08/30645273551",
+  "dibujo": "dibujos/gta/lb-2261203b1a.jpg",
   "etiquetas": [
+   "carretera",
+   "misterio",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 352,
+  "tema": "carretera",
   "w": 1023
  },
  "lb-2ad61aa1fd": {
   "archivo": "libres/vida/pool-party-mansion-ov3.jpg",
   "categoria": "vida",
+  "clip": {
+   "arma": 0.085,
+   "carcel": 0.107,
+   "ciencia": 0.173,
+   "dinero": 0.118,
+   "volcan": 0.125
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Parting Gift — mynameisharsha — CC BY-SA 2.0 — https://www.flickr.com/photos/27526538@N07/3476030618",
+  "dibujo": "dibujos/gta/lb-2ad61aa1fd.jpg",
   "etiquetas": [
+   "ciencia",
+   "dinero",
    "mansion",
    "party",
    "pool",
-   "vida"
+   "vida",
+   "volcan"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "ciencia",
   "w": 1023
  },
  "lb-4846ef1560": {
   "archivo": "libres/vida/pool-party-mansion-1.jpg",
   "categoria": "vida",
+  "clip": {
+   "agua": 0.004,
+   "campo": 0.527,
+   "desierto": 0.006,
+   "montana": 0.434,
+   "pantano": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Bowers Mansion Cemetery, Bowers Mansion Park, Washoe Valley, Nevada (21315951256).jpg — Ken Lund from Reno, Nevada, USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Bowers_Mansion_Cemetery,_Bowers_Mansion_Park,_Washoe_Valley,_Nevada_(21315951256).jpg",
+  "dibujo": "dibujos/gta/lb-4846ef1560.jpg",
   "etiquetas": [
+   "campo",
    "mansion",
+   "montana",
    "party",
    "pool",
    "vida"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "campo",
   "w": 1920
  },
  "lb-4cdb56d78f": {
   "archivo": "libres/vida/gym-bodybuilder-ov5.jpg",
   "categoria": "vida",
+  "clip": {
+   "arma": 0.139,
+   "avion": 0.066,
+   "cohete": 0.142,
+   "espacio": 0.057,
+   "helicoptero": 0.135
+  },
+  "clip_v": 3,
   "consulta": "Gym bodybuilder",
   "credito": "At the gym — freyafit — CC BY 2.0 — https://www.flickr.com/photos/72797849@N03/6841971873",
+  "dibujo": "dibujos/gta/lb-4cdb56d78f.jpg",
   "etiquetas": [
+   "arma",
    "bodybuilder",
+   "cohete",
    "gym",
+   "helicoptero",
    "vida"
   ],
   "fuente": "libre",
   "h": 766,
+  "tema": "cohete",
   "w": 1024
  },
  "lb-545af23bd0": {
   "archivo": "libres/vida/pool-party-mansion-ov1.jpg",
   "categoria": "vida",
+  "clip": {
+   "carcel": 0.014,
+   "casa": 0.09,
+   "ciencia": 0.061,
+   "historia": 0.172,
+   "monumento": 0.584
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Ickworth Park (NT) 24-07-2011 — Karen Roe — CC BY 2.0 — https://www.flickr.com/photos/28752865@N08/6163123759",
+  "dibujo": "dibujos/gta/lb-545af23bd0.jpg",
   "etiquetas": [
+   "historia",
    "mansion",
+   "monumento",
    "party",
    "pool",
    "vida"
   ],
   "fuente": "libre",
   "h": 672,
+  "tema": "monumento",
   "w": 1024
  },
  "lb-55110048e3": {
   "archivo": "libres/vida/skatepark-ov1.jpg",
   "categoria": "vida",
+  "clip": {
+   "coche": 0.012,
+   "criminal": 0.061,
+   "deporte": 0.749,
+   "moto": 0.103,
+   "personas": 0.035
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Skatepark guys Le Touquet France #dailyshoot #monochrome — Leshaines123 — CC BY 2.0 — https://www.flickr.com/photos/46018453@N06/7893225310",
+  "dibujo": "dibujos/gta/lb-55110048e3.jpg",
   "etiquetas": [
+   "deporte",
+   "moto",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 451,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-579cf3fb50": {
   "archivo": "libres/vida/gym-bodybuilder-ov6.jpg",
   "categoria": "vida",
+  "clip": {
+   "ciencia": 0.003,
+   "deporte": 0.943,
+   "militar": 0.008,
+   "personas": 0.028,
+   "tren": 0.003
+  },
+  "clip_v": 3,
   "consulta": "Gym bodybuilder",
   "credito": "not what it looks like — istolethetv — CC BY 2.0 — https://www.flickr.com/photos/44124401641@N01/5064711595",
+  "dibujo": "dibujos/gta/lb-579cf3fb50.jpg",
   "etiquetas": [
    "bodybuilder",
+   "deporte",
    "gym",
    "vida"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-5dbcb8bedc": {
   "archivo": "libres/vida/gym-bodybuilder-ov4.jpg",
   "categoria": "vida",
+  "clip": {
+   "club": 0.019,
+   "deporte": 0.83,
+   "lucia": 0.018,
+   "militar": 0.018,
+   "personas": 0.013
+  },
+  "clip_v": 3,
   "consulta": "Gym bodybuilder",
   "credito": "Kathy Nguyen — mark sebastian — CC BY-SA 2.0 — https://www.flickr.com/photos/71865026@N00/42306355931",
+  "dibujo": "dibujos/gta/lb-5dbcb8bedc.jpg",
   "etiquetas": [
    "bodybuilder",
+   "deporte",
    "gym",
    "vida"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-699e7998bf": {
   "archivo": "libres/vida/pool-party-mansion-5.jpg",
   "categoria": "vida",
+  "clip": {
+   "carcel": 0.146,
+   "casa": 0.165,
+   "ciencia": 0.256,
+   "historia": 0.159,
+   "tienda": 0.075
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Bowers Mansion, Nevada (7425848104).jpg — Ken Lund from Reno, Nevada, USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Bowers_Mansion,_Nevada_(7425848104).jpg",
+  "dibujo": "dibujos/gta/lb-699e7998bf.jpg",
   "etiquetas": [
+   "casa",
+   "ciencia",
+   "historia",
    "mansion",
    "party",
    "pool",
@@ -211,14 +388,25 @@
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "ciencia",
   "w": 1920
  },
  "lb-6e3dd1bcb8": {
   "archivo": "libres/vida/pool-party-mansion-ov6.jpg",
   "categoria": "vida",
+  "clip": {
+   "calle": 0.01,
+   "casa": 0.036,
+   "ciencia": 0.006,
+   "desierto": 0.007,
+   "interior": 0.893
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Icaland - Mansion 02 - 0010 — icalandind. — CC BY 2.0 — https://www.flickr.com/photos/151832979@N03/53387167218",
+  "dibujo": "dibujos/gta/lb-6e3dd1bcb8.jpg",
   "etiquetas": [
+   "interior",
    "mansion",
    "party",
    "pool",
@@ -226,70 +414,129 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "interior",
   "w": 1024
  },
  "lb-81a9583868": {
   "archivo": "libres/vida/pool-party-mansion-6.jpg",
   "categoria": "vida",
+  "clip": {
+   "monumento": 0.155,
+   "musica": 0.064,
+   "personas": 0.131,
+   "retrato": 0.068,
+   "tecnologia": 0.068
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Bowers Mansion, Nevada (7425834722).jpg — Ken Lund from Reno, Nevada, USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Bowers_Mansion,_Nevada_(7425834722).jpg",
+  "dibujo": "dibujos/gta/lb-81a9583868.jpg",
   "etiquetas": [
    "mansion",
+   "monumento",
    "party",
+   "personas",
    "pool",
    "vida"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "monumento",
   "w": 1920
  },
  "lb-8a103b87ac": {
   "archivo": "libres/vida/skatepark-5.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.089,
+   "carcel": 0.141,
+   "deporte": 0.069,
+   "militar": 0.085,
+   "misterio": 0.111
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Skatepark, Crabtree Park, Camberley, Surrey.jpg — Mertbiol — CC0 — https://commons.wikimedia.org/wiki/File:Skatepark,_Crabtree_Park,_Camberley,_Surrey.jpg",
+  "dibujo": "dibujos/gta/lb-8a103b87ac.jpg",
   "etiquetas": [
+   "carcel",
+   "misterio",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "carcel",
   "w": 1920
  },
  "lb-8bc9a921f4": {
   "archivo": "libres/vida/pool-party-mansion-2.jpg",
   "categoria": "vida",
+  "clip": {
+   "carcel": 0.108,
+   "historia": 0.208,
+   "monumento": 0.053,
+   "musica": 0.189,
+   "personas": 0.079
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Bowers Mansion Cemetery, Bowers Mansion Park, Washoe Valley, Nevada (21350566541).jpg — Ken Lund from Reno, Nevada, USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Bowers_Mansion_Cemetery,_Bowers_Mansion_Park,_Washoe_Valley,_Nevada_(21350566541).jpg",
+  "dibujo": "dibujos/gta/lb-8bc9a921f4.jpg",
   "etiquetas": [
+   "carcel",
+   "historia",
    "mansion",
+   "musica",
    "party",
    "pool",
    "vida"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "historia",
   "w": 1920
  },
  "lb-8e1f35025d": {
   "archivo": "libres/vida/skatepark-ov4.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.99,
+   "club": 0.001,
+   "noche": 0.002,
+   "puerto": 0.002,
+   "retrato": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Skatepark streetart — Kjeldvdh — CC BY 2.0 — https://www.flickr.com/photos/137994517@N02/25286360254",
+  "dibujo": "dibujos/gta/lb-8e1f35025d.jpg",
   "etiquetas": [
+   "arte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 603,
+  "tema": "arte",
   "w": 1024
  },
  "lb-91e8267794": {
   "archivo": "libres/vida/pool-party-mansion-ov2.jpg",
   "categoria": "vida",
+  "clip": {
+   "casa": 0.006,
+   "ciencia": 0.006,
+   "interior": 0.969,
+   "musica": 0.006,
+   "personas": 0.003
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Ickworth Park (NT) 02-04-2011 — Karen Roe — CC BY 2.0 — https://www.flickr.com/photos/28752865@N08/5742525694",
+  "dibujo": "dibujos/gta/lb-91e8267794.jpg",
   "etiquetas": [
+   "interior",
    "mansion",
    "party",
    "pool",
@@ -297,53 +544,101 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "interior",
   "w": 1024
  },
  "lb-9cd361ab22": {
   "archivo": "libres/vida/skatepark-6.jpg",
   "categoria": "vida",
+  "clip": {
+   "agua": 0.059,
+   "carcel": 0.084,
+   "carretera": 0.273,
+   "deporte": 0.113,
+   "historia": 0.065
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Solvang Skatepark.jpg — Troy Sankey — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Solvang_Skatepark.jpg",
+  "dibujo": "dibujos/gta/lb-9cd361ab22.jpg",
   "etiquetas": [
+   "carretera",
+   "deporte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 1283,
+  "tema": "carretera",
   "w": 1920
  },
  "lb-9d80bbbfe8": {
   "archivo": "libres/vida/skatepark-ov3.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.099,
+   "carcel": 0.021,
+   "carretera": 0.356,
+   "deporte": 0.391,
+   "gasolinera": 0.017
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Skatepark: come sarà — GRAB velolove — Dominio público 1.0 — https://www.flickr.com/photos/145565953@N08/30645273581",
+  "dibujo": "dibujos/gta/lb-9d80bbbfe8.jpg",
   "etiquetas": [
+   "carretera",
+   "deporte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 336,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-9efbd175fb": {
   "archivo": "libres/vida/skatepark-2.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.284,
+   "bosque": 0.051,
+   "deporte": 0.257,
+   "personas": 0.073,
+   "tren": 0.039
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Lambersart piste skatepark.jpg — Velvet — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lambersart_piste_skatepark.jpg",
+  "dibujo": "dibujos/gta/lb-9efbd175fb.jpg",
   "etiquetas": [
+   "arte",
+   "deporte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "arte",
   "w": 1920
  },
  "lb-af25a6c198": {
   "archivo": "libres/vida/pool-party-mansion-ov5.jpg",
   "categoria": "vida",
+  "clip": {
+   "carcel": 0.011,
+   "casa": 0.61,
+   "historia": 0.008,
+   "interior": 0.312,
+   "monumento": 0.01
+  },
+  "clip_v": 3,
   "consulta": "Pool party mansion",
   "credito": "Icaland - Mansion 02 - 0011 — icalandind. — CC BY 2.0 — https://www.flickr.com/photos/151832979@N03/53386061362",
+  "dibujo": "dibujos/gta/lb-af25a6c198.jpg",
   "etiquetas": [
+   "casa",
+   "interior",
    "mansion",
    "party",
    "pool",
@@ -351,72 +646,132 @@
   ],
   "fuente": "libre",
   "h": 694,
+  "tema": "casa",
   "w": 1024
  },
  "lb-b139d04923": {
   "archivo": "libres/vida/gym-bodybuilder-ov3.jpg",
   "categoria": "vida",
+  "clip": {
+   "carcel": 0.046,
+   "ciencia": 0.208,
+   "interior": 0.208,
+   "militar": 0.09,
+   "puerto": 0.219
+  },
+  "clip_v": 3,
   "consulta": "Gym bodybuilder",
   "credito": "Cruise Gym — alantankenghoe — CC BY 2.0 — https://www.flickr.com/photos/57785759@N06/5767535604",
+  "dibujo": "dibujos/gta/lb-b139d04923.jpg",
   "etiquetas": [
    "bodybuilder",
+   "ciencia",
    "gym",
+   "interior",
+   "puerto",
    "vida"
   ],
   "fuente": "libre",
   "h": 789,
+  "tema": "puerto",
   "w": 1024
  },
  "lb-b5e8e3dd87": {
   "archivo": "libres/vida/skatepark-1.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.198,
+   "carretera": 0.045,
+   "deporte": 0.116,
+   "militar": 0.076,
+   "retrato": 0.066
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Part of ramp at Brastad SK8, the new skatepark in Lysekil Municipality.jpg — W.carter — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Part_of_ramp_at_Brastad_SK8,_the_new_skatepark_in_Lysekil_Municipality.jpg",
+  "dibujo": "dibujos/gta/lb-b5e8e3dd87.jpg",
   "etiquetas": [
+   "arte",
+   "deporte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 1173,
+  "tema": "arte",
   "w": 1920
  },
  "lb-b95dc6a75a": {
   "archivo": "libres/vida/skatepark-ov5.jpg",
   "categoria": "vida",
+  "clip": {
+   "arte": 0.011,
+   "deporte": 0.856,
+   "dinero": 0.011,
+   "fiesta": 0.012,
+   "personas": 0.011
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Birdhouse team in Fælledparken Skatepark — Stig Nygaard — CC BY 2.0 — https://www.flickr.com/photos/10259776@N00/19175646904",
+  "dibujo": "dibujos/gta/lb-b95dc6a75a.jpg",
   "etiquetas": [
+   "deporte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-c13970cf30": {
   "archivo": "libres/vida/skatepark-3.jpg",
   "categoria": "vida",
+  "clip": {
+   "deporte": 0.087,
+   "gasolinera": 0.058,
+   "misterio": 0.096,
+   "personas": 0.16,
+   "volcan": 0.16
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Spryfield Skatepark entrance view.jpg — T.Newfeels — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Spryfield_Skatepark_entrance_view.jpg",
+  "dibujo": "dibujos/gta/lb-c13970cf30.jpg",
   "etiquetas": [
+   "personas",
    "skatepark",
-   "vida"
+   "vida",
+   "volcan"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "personas",
   "w": 1920
  },
  "lb-c84d97aa50": {
   "archivo": "libres/vida/skatepark-4.jpg",
   "categoria": "vida",
+  "clip": {
+   "agua": 0.071,
+   "ave": 0.061,
+   "bosque": 0.056,
+   "deporte": 0.119,
+   "volcan": 0.077
+  },
+  "clip_v": 3,
   "consulta": "Skatepark",
   "credito": "Community center (pol. Centrum Animacji Społecznej), skatepark in Tomaszów Mazowiecki. Farbiarska Street.jpg — Warszawska róg Szerokiej w Tomaszowie Mazowieckim, w województwie łódzkim, PL, EU. — Public domain — https://commons.wikimedia.org/wiki/File:Community_center_(pol._Centrum_Animacji_Spo%C5%82ecznej),_skatepark_in_Tomasz%C3%B3w_Mazowiecki._Farbiarska_Street.jpg",
+  "dibujo": "dibujos/gta/lb-c84d97aa50.jpg",
   "etiquetas": [
+   "deporte",
    "skatepark",
    "vida"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "deporte",
   "w": 1920
  }
 }

@@ -2,787 +2,1415 @@
  "lb-0013c97206": {
   "archivo": "libres/animales/cat-portrait-ov2.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.027,
+   "gato": 0.92,
+   "joyas": 0.003,
+   "perro": 0.003,
+   "retrato": 0.028
+  },
+  "clip_v": 3,
   "consulta": "Cat portrait",
   "credito": "Cat portrait — www.ownwayphotography.com — CC BY 2.0 — https://www.flickr.com/photos/155376904@N07/29484396147",
+  "dibujo": "dibujos/gta/lb-0013c97206.jpg",
   "etiquetas": [
    "animales",
    "cat",
+   "gato",
    "portrait"
   ],
   "fuente": "libre",
   "h": 741,
+  "tema": "gato",
   "w": 1024
  },
  "lb-0367b4cd85": {
   "archivo": "libres/animales/parrot-macaw-4.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.635,
+   "avion": 0.054,
+   "helicoptero": 0.059,
+   "historia": 0.02,
+   "militar": 0.037
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "189 Red-and-green macaw couple flying in Chapada dos Guimarães National Park Photo by Giles Laurent.jpg — Giles Laurent — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:189_Red-and-green_macaw_couple_flying_in_Chapada_dos_Guimar%C3%A3es_National_Park_Photo_by_Giles_Laurent.jpg",
+  "dibujo": "dibujos/gta/lb-0367b4cd85.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "macaw",
    "parrot"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "ave",
   "w": 1920
  },
  "lb-0c74919cc4": {
   "archivo": "libres/animales/brown-pelican-florida-4.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.034,
+   "ave": 0.153,
+   "avion": 0.173,
+   "helicoptero": 0.22,
+   "militar": 0.236
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Florida Pelican fliing on Bradenton Beach.jpg — This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me a  message. \n\n\n\nThis image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here are not appropriate.\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract. — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Florida_Pelican_fliing_on_Bradenton_Beach.jpg",
+  "dibujo": "dibujos/gta/lb-0c74919cc4.jpg",
   "etiquetas": [
    "animales",
+   "avion",
    "brown",
    "florida",
+   "helicoptero",
+   "militar",
    "pelican"
   ],
   "fuente": "libre",
   "h": 1282,
+  "tema": "militar",
   "w": 1920
  },
  "lb-0dd34ba022": {
   "archivo": "libres/animales/german-shepherd-police-dog-1.jpg",
   "categoria": "animales",
+  "clip": {
+   "caiman": 0.072,
+   "deporte": 0.125,
+   "desierto": 0.136,
+   "militar": 0.068,
+   "perro": 0.187
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Police dog, belgian shepherd.jpg — Biodiversity Heritage Library — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Police_dog,_belgian_shepherd.jpg",
+  "dibujo": "dibujos/gta/lb-0dd34ba022.jpg",
   "etiquetas": [
    "animales",
+   "deporte",
+   "desierto",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 1291,
+  "tema": "perro",
   "w": 1920
  },
  "lb-18fe1a9421": {
   "archivo": "libres/animales/pit-bull-dog-ov5.jpg",
   "categoria": "animales",
+  "clip": {
+   "arma": 0.009,
+   "ciencia": 0.012,
+   "comida": 0.015,
+   "joyas": 0.012,
+   "perro": 0.854
+  },
+  "clip_v": 3,
   "consulta": "Pit bull dog",
   "credito": "Pit bull dog drawing, animal — None — CC0 1.0 — https://www.rawpixel.com/image/6436855/image-public-domain-black-illustrations",
+  "dibujo": "dibujos/gta/lb-18fe1a9421.jpg",
   "etiquetas": [
    "animales",
    "bull",
    "dog",
+   "perro",
    "pit"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "perro",
   "w": 1024
  },
  "lb-1952576d1e": {
   "archivo": "libres/animales/dog-portrait-ov3.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.039,
+   "campo": 0.008,
+   "pantano": 0.008,
+   "perro": 0.89,
+   "retrato": 0.01
+  },
+  "clip_v": 3,
   "consulta": "Dog portrait",
   "credito": "dog portrait 1 — waferboard — CC BY 2.0 — https://www.flickr.com/photos/60944931@N00/7261761276",
+  "dibujo": "dibujos/gta/lb-1952576d1e.jpg",
   "etiquetas": [
    "animales",
    "dog",
+   "perro",
    "portrait"
   ],
   "fuente": "libre",
   "h": 874,
+  "tema": "perro",
   "w": 1000
  },
  "lb-197dbf0a50": {
   "archivo": "libres/animales/pit-bull-dog-ov6.jpg",
   "categoria": "animales",
+  "clip": {
+   "arma": 0.009,
+   "ciencia": 0.014,
+   "comida": 0.016,
+   "joyas": 0.013,
+   "perro": 0.846
+  },
+  "clip_v": 3,
   "consulta": "Pit bull dog",
   "credito": "Pit bull dog drawing, animal — None — CC0 1.0 — https://www.rawpixel.com/image/6436963/vector-sticker-public-domain-black",
+  "dibujo": "dibujos/gta/lb-197dbf0a50.jpg",
   "etiquetas": [
    "animales",
    "bull",
    "dog",
+   "perro",
    "pit"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "perro",
   "w": 1024
  },
  "lb-1a43e89782": {
   "archivo": "libres/animales/dog-portrait-ov1.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.004,
+   "ciencia": 0.004,
+   "joyas": 0.006,
+   "militar": 0.004,
+   "perro": 0.954
+  },
+  "clip_v": 3,
   "consulta": "Dog portrait",
   "credito": "Ginger - red doberman dog portrait — tim-johnson — CC BY 2.0 — https://www.flickr.com/photos/83451854@N00/2844199451",
+  "dibujo": "dibujos/gta/lb-1a43e89782.jpg",
   "etiquetas": [
    "animales",
    "dog",
+   "perro",
    "portrait"
   ],
   "fuente": "libre",
   "h": 682,
+  "tema": "perro",
   "w": 1023
  },
  "lb-2ccf0a8580": {
   "archivo": "libres/animales/parrot-macaw-ov2.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.013,
+   "ave": 0.886,
+   "ciencia": 0.006,
+   "pez": 0.004,
+   "retrato": 0.029
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Parrot Macaw - Lagos Zoo - The Algarve, Portugal — Glen Bowman — CC BY-SA 2.0 — https://www.flickr.com/photos/10978503@N00/1736575174",
+  "dibujo": "dibujos/gta/lb-2ccf0a8580.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "macaw",
    "parrot"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "ave",
   "w": 1024
  },
  "lb-2d94adc9b2": {
   "archivo": "libres/animales/german-shepherd-police-dog-2.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.013,
+   "arma": 0.012,
+   "criminal": 0.208,
+   "pareja": 0.013,
+   "perro": 0.644
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "German police dog used to trace bootleggers LCCN2016891965.jpg — Harris &amp; Ewing, photographer — Public domain — https://commons.wikimedia.org/wiki/File:German_police_dog_used_to_trace_bootleggers_LCCN2016891965.jpg",
+  "dibujo": "dibujos/gta/lb-2d94adc9b2.jpg",
   "etiquetas": [
    "animales",
+   "criminal",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 2479,
+  "tema": "perro",
   "w": 1920
  },
  "lb-3466b6db7f": {
   "archivo": "libres/animales/cat-portrait-ov5.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.011,
+   "gato": 0.855,
+   "lucia": 0.011,
+   "perro": 0.007,
+   "retrato": 0.097
+  },
+  "clip_v": 3,
   "consulta": "Cat portrait",
   "credito": "Cat Portrait — Tim Sheerman-Chase — CC BY 2.0 — https://www.flickr.com/photos/68932647@N00/9126414150",
+  "dibujo": "dibujos/gta/lb-3466b6db7f.jpg",
   "etiquetas": [
    "animales",
    "cat",
+   "gato",
    "portrait"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "gato",
   "w": 1024
  },
  "lb-34e99f86e3": {
   "archivo": "libres/animales/german-shepherd-police-dog-ov2.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.008,
+   "arma": 0.013,
+   "caiman": 0.003,
+   "joyas": 0.005,
+   "perro": 0.934
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "German Shepherd -- 2011 — Ron Cogswell — CC BY 2.0 — https://www.flickr.com/photos/22711505@N05/6083332153",
+  "dibujo": "dibujos/gta/lb-34e99f86e3.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 986,
+  "tema": "perro",
   "w": 1024
  },
  "lb-37e107838f": {
   "archivo": "libres/animales/german-shepherd-police-dog-ov6.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.015,
+   "desierto": 0.012,
+   "gato": 0.008,
+   "historia": 0.011,
+   "perro": 0.906
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Guard dog outside — localpups — CC BY 2.0 — https://www.flickr.com/photos/133374862@N02/20474454906",
+  "dibujo": "dibujos/gta/lb-37e107838f.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 680,
+  "tema": "perro",
   "w": 1024
  },
  "lb-39fb32ac45": {
   "archivo": "libres/animales/brown-pelican-florida-2.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.091,
+   "caiman": 0.178,
+   "deporte": 0.057,
+   "mar": 0.286,
+   "pez": 0.148
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Brown pelican splash.JPG — Korall — CC BY 3.0 — https://commons.wikimedia.org/wiki/File:Brown_pelican_splash.JPG",
+  "dibujo": "dibujos/gta/lb-39fb32ac45.jpg",
   "etiquetas": [
    "animales",
    "brown",
+   "caiman",
    "florida",
-   "pelican"
+   "mar",
+   "pelican",
+   "pez"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "mar",
   "w": 1920
  },
  "lb-3f1777ca3f": {
   "archivo": "libres/animales/brown-pelican-florida-6.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.103,
+   "avion": 0.188,
+   "caiman": 0.037,
+   "helicoptero": 0.335,
+   "militar": 0.222
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Brown Pelican in flight.jpg — SpongeLover08 — CC0 — https://commons.wikimedia.org/wiki/File:Brown_Pelican_in_flight.jpg",
+  "dibujo": "dibujos/gta/lb-3f1777ca3f.jpg",
   "etiquetas": [
    "animales",
+   "avion",
    "brown",
    "florida",
+   "helicoptero",
+   "militar",
    "pelican"
   ],
   "fuente": "libre",
   "h": 2550,
+  "tema": "helicoptero",
   "w": 1920
  },
  "lb-4116a049bc": {
   "archivo": "libres/animales/dog-portrait-ov2.jpg",
   "categoria": "animales",
+  "clip": {
+   "arma": 0.071,
+   "arte": 0.071,
+   "ciencia": 0.097,
+   "cohete": 0.145,
+   "perro": 0.297
+  },
+  "clip_v": 3,
   "consulta": "Dog portrait",
   "credito": "Beautiful dog portrait 'Clyde', by Anderson, Glasgow, ca 1864-5 — whatsthatpicture — Dominio público 1.0 — https://www.flickr.com/photos/24469639@N00/4354381708",
+  "dibujo": "dibujos/gta/lb-4116a049bc.jpg",
   "etiquetas": [
    "animales",
+   "cohete",
    "dog",
+   "perro",
    "portrait"
   ],
   "fuente": "libre",
   "h": 790,
+  "tema": "perro",
   "w": 1024
  },
  "lb-4244f2933e": {
   "archivo": "libres/animales/brown-pelican-florida-ov1.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.168,
+   "ave": 0.557,
+   "caiman": 0.028,
+   "desierto": 0.064,
+   "helicoptero": 0.026
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Brown Pelican - Florida 04 0001 — fveronesi1 — CC BY-SA 2.0 — https://www.flickr.com/photos/30818542@N04/15205637218",
+  "dibujo": "dibujos/gta/lb-4244f2933e.jpg",
   "etiquetas": [
+   "animal",
    "animales",
+   "ave",
    "brown",
    "florida",
    "pelican"
   ],
   "fuente": "libre",
   "h": 713,
+  "tema": "ave",
   "w": 1024
  },
  "lb-445404f6dd": {
   "archivo": "libres/animales/parrot-macaw-ov3.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.013,
+   "ave": 0.741,
+   "movil": 0.011,
+   "retrato": 0.18,
+   "volcan": 0.01
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Parrot Macaw - Lagos Zoo - The Algarve, Portugal — Glen Bowman — CC BY-SA 2.0 — https://www.flickr.com/photos/10978503@N00/1735362053",
+  "dibujo": "dibujos/gta/lb-445404f6dd.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "macaw",
-   "parrot"
+   "parrot",
+   "retrato"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "ave",
   "w": 1024
  },
  "lb-4edd90e1b2": {
   "archivo": "libres/animales/dog-portrait-ov4.jpg",
   "categoria": "animales",
+  "clip": {
+   "agua": 0.006,
+   "animal": 0.089,
+   "caiman": 0.016,
+   "jason": 0.009,
+   "perro": 0.803
+  },
+  "clip_v": 3,
   "consulta": "Dog portrait",
   "credito": "A dog portrait - Explore - 17/11/22. — ohefin — CC BY-SA 2.0 — https://www.flickr.com/photos/47515486@N05/52501900606",
+  "dibujo": "dibujos/gta/lb-4edd90e1b2.jpg",
   "etiquetas": [
    "animales",
    "dog",
+   "perro",
    "portrait"
   ],
   "fuente": "libre",
   "h": 898,
+  "tema": "perro",
   "w": 1024
  },
  "lb-5219588d71": {
   "archivo": "libres/animales/brown-pelican-florida-1.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.056,
+   "ave": 0.36,
+   "caiman": 0.143,
+   "mar": 0.105,
+   "pez": 0.158
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Brown-Pelican-Ponce-Inlet-FL.jpg — Uploaded by Mrmiscellanious — CC BY 1.0 — https://commons.wikimedia.org/wiki/File:Brown-Pelican-Ponce-Inlet-FL.jpg",
+  "dibujo": "dibujos/gta/lb-5219588d71.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "brown",
+   "caiman",
    "florida",
-   "pelican"
+   "pelican",
+   "pez"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "ave",
   "w": 1920
  },
  "lb-5d01a28808": {
   "archivo": "libres/animales/parrot-macaw-ov5.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.058,
+   "carcel": 0.234,
+   "criminal": 0.219,
+   "jason": 0.069,
+   "lucia": 0.079
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Parrot Macaw - Lagos Zoo - The Algarve, Portugal — Glen Bowman — CC BY-SA 2.0 — https://www.flickr.com/photos/10978503@N00/1735268935",
+  "dibujo": "dibujos/gta/lb-5d01a28808.jpg",
   "etiquetas": [
    "animales",
+   "carcel",
+   "criminal",
    "macaw",
    "parrot"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "carcel",
   "w": 1024
  },
  "lb-656251f14d": {
   "archivo": "libres/animales/parrot-macaw-2.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.063,
+   "arma": 0.051,
+   "comida_rica": 0.14,
+   "desierto": 0.151,
+   "militar": 0.113
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Hyacinth macaw (Anodorhynchus hyacinthinus) head.JPG — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Hyacinth_macaw_(Anodorhynchus_hyacinthinus)_head.JPG",
+  "dibujo": "dibujos/gta/lb-656251f14d.jpg",
   "etiquetas": [
    "animales",
+   "comida_rica",
+   "desierto",
    "macaw",
+   "militar",
    "parrot"
   ],
   "fuente": "libre",
   "h": 2146,
+  "tema": "desierto",
   "w": 1920
  },
  "lb-6721868704": {
   "archivo": "libres/animales/cat-portrait-ov6.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.095,
+   "ave": 0.013,
+   "cohete": 0.013,
+   "gato": 0.837,
+   "perro": 0.008
+  },
+  "clip_v": 3,
   "consulta": "Cat portrait",
   "credito": "Cat Portrait — siraf72 — CC BY 2.0 — https://www.flickr.com/photos/44090799@N07/15472968791",
+  "dibujo": "dibujos/gta/lb-6721868704.jpg",
   "etiquetas": [
    "animales",
    "cat",
+   "gato",
    "portrait"
   ],
   "fuente": "libre",
   "h": 681,
+  "tema": "gato",
   "w": 1023
  },
  "lb-6d800c8135": {
   "archivo": "libres/animales/german-shepherd-police-dog-3.jpg",
   "categoria": "animales",
+  "clip": {
+   "accion": 0.036,
+   "carcel": 0.032,
+   "deporte": 0.049,
+   "perro": 0.64,
+   "policia": 0.042
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Police Dog at Toronto Open House 03.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_03.jpg",
+  "dibujo": "dibujos/gta/lb-6d800c8135.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "perro",
   "w": 1920
  },
  "lb-6de6048a54": {
   "archivo": "libres/animales/brown-pelican-florida-ov2.jpg",
   "categoria": "animales",
+  "clip": {
+   "agua": 0.033,
+   "ave": 0.616,
+   "caiman": 0.075,
+   "personas": 0.031,
+   "pez": 0.054
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "brown-pelican-florida-keys — M.-J. Taylor — CC BY 2.0 — https://www.flickr.com/photos/76041173@N08/8545664140",
+  "dibujo": "dibujos/gta/lb-6de6048a54.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "brown",
    "florida",
    "pelican"
   ],
   "fuente": "libre",
   "h": 561,
+  "tema": "ave",
   "w": 1023
  },
  "lb-733da8766e": {
   "archivo": "libres/animales/pit-bull-dog-ov3.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.024,
+   "comida": 0.078,
+   "comida_rica": 0.106,
+   "perro": 0.598,
+   "personas": 0.02
+  },
+  "clip_v": 3,
   "consulta": "Pit bull dog",
   "credito": "Pit Bull Dog with Halloween Decorations — Found Animals — CC BY-SA 2.0 — https://www.flickr.com/photos/61545668@N08/8557041541",
+  "dibujo": "dibujos/gta/lb-733da8766e.jpg",
   "etiquetas": [
    "animales",
    "bull",
+   "comida_rica",
    "dog",
+   "perro",
    "pit"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "perro",
   "w": 1024
  },
  "lb-73ef0bce5d": {
   "archivo": "libres/animales/cat-portrait-ov3.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.008,
+   "gato": 0.939,
+   "lucia": 0.003,
+   "perro": 0.006,
+   "retrato": 0.029
+  },
+  "clip_v": 3,
   "consulta": "Cat portrait",
   "credito": "Cat Portrait — siraf72 — CC BY 2.0 — https://www.flickr.com/photos/44090799@N07/14340044188",
+  "dibujo": "dibujos/gta/lb-73ef0bce5d.jpg",
   "etiquetas": [
    "animales",
    "cat",
+   "gato",
    "portrait"
   ],
   "fuente": "libre",
   "h": 684,
+  "tema": "gato",
   "w": 1024
  },
  "lb-7abdbba3af": {
   "archivo": "libres/animales/parrot-macaw-ov4.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.351,
+   "fiesta": 0.047,
+   "pareja": 0.07,
+   "personas": 0.17,
+   "tienda": 0.044
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Parrot Macaws - Lagos Zoo - The Algarve, Portugal — Glen Bowman — CC BY-SA 2.0 — https://www.flickr.com/photos/10978503@N00/1735498323",
+  "dibujo": "dibujos/gta/lb-7abdbba3af.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "macaw",
-   "parrot"
+   "parrot",
+   "personas"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "ave",
   "w": 1024
  },
  "lb-7bf41ee43a": {
   "archivo": "libres/animales/parrot-macaw-6.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.148,
+   "ave": 0.175,
+   "helicoptero": 0.082,
+   "militar": 0.099,
+   "movil": 0.075
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "017 Hyacinth macaw flying in Encontro das Águas State Park Photo by Giles Laurent.jpg — Giles Laurent — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:017_Hyacinth_macaw_flying_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+  "dibujo": "dibujos/gta/lb-7bf41ee43a.jpg",
   "etiquetas": [
+   "animal",
    "animales",
+   "ave",
    "macaw",
    "parrot"
   ],
   "fuente": "libre",
   "h": 1407,
+  "tema": "ave",
   "w": 1920
  },
  "lb-811e8d6947": {
   "archivo": "libres/animales/german-shepherd-police-dog-ov5.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.013,
+   "arte": 0.518,
+   "gato": 0.022,
+   "monumento": 0.059,
+   "perro": 0.299
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "'Semper Fi', sculpter Patsy Davis — Ferlinka Borzoi (Deb West) — CC BY 2.0 — https://www.flickr.com/photos/62631588@N00/6145169775",
+  "dibujo": "dibujos/gta/lb-811e8d6947.jpg",
   "etiquetas": [
    "animales",
+   "arte",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arte",
   "w": 1024
  },
  "lb-8310084855": {
   "archivo": "libres/animales/german-shepherd-police-dog-6.jpg",
   "categoria": "animales",
+  "clip": {
+   "accion": 0.031,
+   "criminal": 0.077,
+   "deporte": 0.019,
+   "perro": 0.332,
+   "policia": 0.437
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Police Dog at Toronto Open House 01.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_01.jpg",
+  "dibujo": "dibujos/gta/lb-8310084855.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
+   "policia",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 2560,
+  "tema": "policia",
   "w": 1920
  },
  "lb-86f8bd7641": {
   "archivo": "libres/animales/brown-pelican-florida-ov3.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.65,
+   "caiman": 0.032,
+   "mar": 0.035,
+   "pez": 0.038,
+   "puerto": 0.16
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Portrait of adult brown pelican. Florida — Mary Gillham Archive Project — CC BY 2.0 — https://www.flickr.com/photos/139791896@N06/38165882255",
+  "dibujo": "dibujos/gta/lb-86f8bd7641.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "brown",
    "florida",
-   "pelican"
+   "pelican",
+   "puerto"
   ],
   "fuente": "libre",
   "h": 670,
+  "tema": "ave",
   "w": 1023
  },
  "lb-894c259f34": {
   "archivo": "libres/animales/german-shepherd-police-dog-ov1.jpg",
   "categoria": "animales",
+  "clip": {
+   "accion": 0.011,
+   "arma": 0.03,
+   "criminal": 0.038,
+   "perro": 0.84,
+   "retrato": 0.012
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "German Shepherd, police dog — usdhs — CC0 1.0 — https://www.rawpixel.com/image/10995751/german-shepherd-police-dog",
+  "dibujo": "dibujos/gta/lb-894c259f34.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "perro",
   "w": 1024
  },
  "lb-8e9296b16d": {
   "archivo": "libres/animales/brown-pelican-florida-3.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.336,
+   "barco": 0.014,
+   "caiman": 0.023,
+   "helicoptero": 0.005,
+   "puerto": 0.584
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Florida Pelican on dock on Bradenton Beach.jpg — This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me a  message. \n\n\n\nThis image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here are not appropriate.\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract. — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Florida_Pelican_on_dock_on_Bradenton_Beach.jpg",
+  "dibujo": "dibujos/gta/lb-8e9296b16d.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "brown",
    "florida",
-   "pelican"
+   "pelican",
+   "puerto"
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "puerto",
   "w": 1920
  },
  "lb-9999fb7b77": {
   "archivo": "libres/animales/german-shepherd-police-dog-4.jpg",
   "categoria": "animales",
+  "clip": {
+   "accion": 0.053,
+   "criminal": 0.033,
+   "helicoptero": 0.014,
+   "perro": 0.331,
+   "policia": 0.481
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Police Dog at Toronto Open House 04.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_04.jpg",
+  "dibujo": "dibujos/gta/lb-9999fb7b77.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
+   "policia",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "policia",
   "w": 1920
  },
  "lb-a0c6fd4fbc": {
   "archivo": "libres/animales/pit-bull-dog-ov4.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.051,
+   "caiman": 0.066,
+   "comida": 0.01,
+   "espacio": 0.013,
+   "perro": 0.733
+  },
+  "clip_v": 3,
   "consulta": "Pit bull dog",
   "credito": "Halloween Pit Bull Dog — Found Animals — CC BY-SA 2.0 — https://www.flickr.com/photos/61545668@N08/8558150566",
+  "dibujo": "dibujos/gta/lb-a0c6fd4fbc.jpg",
   "etiquetas": [
    "animales",
    "bull",
    "dog",
+   "perro",
    "pit"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "perro",
   "w": 1024
  },
  "lb-a600b4134a": {
   "archivo": "libres/animales/dog-portrait-ov5.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.035,
+   "caiman": 0.021,
+   "jason": 0.014,
+   "pantano": 0.167,
+   "perro": 0.699
+  },
+  "clip_v": 3,
   "consulta": "Dog portrait",
   "credito": "dog portrait 2 — waferboard — CC BY 2.0 — https://www.flickr.com/photos/60944931@N00/7261761540",
+  "dibujo": "dibujos/gta/lb-a600b4134a.jpg",
   "etiquetas": [
    "animales",
    "dog",
+   "pantano",
+   "perro",
    "portrait"
   ],
   "fuente": "libre",
   "h": 754,
+  "tema": "perro",
   "w": 1000
  },
  "lb-aa32f4d77e": {
   "archivo": "libres/animales/brown-pelican-florida-5.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.008,
+   "ave": 0.938,
+   "avion": 0.01,
+   "militar": 0.01,
+   "pez": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Brown Pelican in flight (6827483835).jpg — Andy  Morffew from Itchen Abbas, Hampshire, UK — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Brown_Pelican_in_flight_(6827483835).jpg",
+  "dibujo": "dibujos/gta/lb-aa32f4d77e.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "brown",
    "florida",
    "pelican"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "ave",
   "w": 1920
  },
  "lb-ba4e98381a": {
   "archivo": "libres/animales/parrot-macaw-ov6.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.116,
+   "arte": 0.055,
+   "ave": 0.235,
+   "avion": 0.064,
+   "retrato": 0.045
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "#parrot #macaw #bird #whatever. At the Alligator Farm in Mosca, CO. #2015photoaday — bradleygee — CC BY 2.0 — https://www.flickr.com/photos/13951072@N00/18892485353",
+  "dibujo": "dibujos/gta/lb-ba4e98381a.jpg",
   "etiquetas": [
+   "animal",
    "animales",
+   "ave",
    "macaw",
    "parrot"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "ave",
   "w": 1024
  },
  "lb-bfb76169f4": {
   "archivo": "libres/animales/cat-portrait-ov4.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.032,
+   "ave": 0.004,
+   "gato": 0.9,
+   "perro": 0.012,
+   "retrato": 0.009
+  },
+  "clip_v": 3,
   "consulta": "Cat portrait",
   "credito": "Sleeping cat portrait — joshualeestuart — CC BY 2.0 — https://www.flickr.com/photos/131576804@N05/19853584625",
+  "dibujo": "dibujos/gta/lb-bfb76169f4.jpg",
   "etiquetas": [
    "animales",
    "cat",
+   "gato",
    "portrait"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "gato",
   "w": 1024
  },
  "lb-c0e4bd4475": {
   "archivo": "libres/animales/parrot-macaw-5.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.048,
+   "ave": 0.175,
+   "avion": 0.085,
+   "helicoptero": 0.089,
+   "militar": 0.345
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Hyacinth macaw (Anodorhynchus hyacinthinus) in flight.JPG — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Hyacinth_macaw_(Anodorhynchus_hyacinthinus)_in_flight.JPG",
+  "dibujo": "dibujos/gta/lb-c0e4bd4475.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "macaw",
+   "militar",
    "parrot"
   ],
   "fuente": "libre",
   "h": 1456,
+  "tema": "militar",
   "w": 1920
  },
  "lb-c1effa394a": {
   "archivo": "libres/animales/parrot-macaw-3.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.033,
+   "ave": 0.843,
+   "avion": 0.011,
+   "bosque": 0.011,
+   "desierto": 0.011
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Scarlet macaw (Ara macao cyanopterus) Copan.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg",
+  "dibujo": "dibujos/gta/lb-c1effa394a.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "macaw",
    "parrot"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "ave",
   "w": 1920
  },
  "lb-caa9ed7a53": {
   "archivo": "libres/animales/pit-bull-dog-ov2.jpg",
   "categoria": "animales",
+  "clip": {
+   "cartel": 0.037,
+   "fiesta": 0.006,
+   "gato": 0.03,
+   "joyas": 0.007,
+   "perro": 0.872
+  },
+  "clip_v": 3,
   "consulta": "Pit bull dog",
   "credito": "Happy St. Patrick's Day, Pit Bull Dog — Beverly & Pack — CC BY 2.0 — https://www.flickr.com/photos/10101046@N06/4433368233",
+  "dibujo": "dibujos/gta/lb-caa9ed7a53.jpg",
   "etiquetas": [
    "animales",
    "bull",
    "dog",
+   "perro",
    "pit"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "perro",
   "w": 1024
  },
  "lb-cac2d4d04c": {
   "archivo": "libres/animales/brown-pelican-florida-ov5.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.143,
+   "camion": 0.019,
+   "ciencia": 0.041,
+   "militar": 0.123,
+   "pez": 0.537
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Elizabeth Freiday, #ScienceWoman — U. S. Fish and Wildlife Service - Northeast Region — Dominio público 1.0 — https://www.flickr.com/photos/43322816@N08/16766208581",
+  "dibujo": "dibujos/gta/lb-cac2d4d04c.jpg",
   "etiquetas": [
+   "animal",
    "animales",
    "brown",
    "florida",
-   "pelican"
+   "militar",
+   "pelican",
+   "pez"
   ],
   "fuente": "libre",
   "h": 848,
+  "tema": "pez",
   "w": 1024
  },
  "lb-cd8dd7ba67": {
   "archivo": "libres/animales/german-shepherd-police-dog-ov3.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.045,
+   "gato": 0.004,
+   "jason": 0.003,
+   "perro": 0.927,
+   "retrato": 0.003
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Shacco — Kyler Barrett — CC BY 2.0 — https://www.flickr.com/photos/60122625@N07/7648063248",
+  "dibujo": "dibujos/gta/lb-cd8dd7ba67.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 680,
+  "tema": "perro",
   "w": 1024
  },
  "lb-cdefbf789c": {
   "archivo": "libres/animales/parrot-macaw-ov1.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.084,
+   "fiesta": 0.057,
+   "movil": 0.023,
+   "personas": 0.616,
+   "tienda": 0.028
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Parrot Macaws - Lagos Zoo - The Algarve, Portugal — Glen Bowman — CC BY-SA 2.0 — https://www.flickr.com/photos/10978503@N00/1736212132",
+  "dibujo": "dibujos/gta/lb-cdefbf789c.jpg",
   "etiquetas": [
    "animales",
    "macaw",
-   "parrot"
+   "parrot",
+   "personas"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "personas",
   "w": 1024
  },
  "lb-cfd5a4ebf0": {
   "archivo": "libres/animales/brown-pelican-florida-ov6.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.473,
+   "avion": 0.032,
+   "caiman": 0.253,
+   "helicoptero": 0.077,
+   "puerto": 0.026
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Brown Pelican - Pelecanus occidentalis, Biscayne National Park, Homestead, Florida — Judy Gallagher — CC BY 2.0 — https://www.flickr.com/photos/52450054@N04/40348544472",
+  "dibujo": "dibujos/gta/lb-cfd5a4ebf0.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "brown",
+   "caiman",
    "florida",
    "pelican"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "ave",
   "w": 1024
  },
  "lb-da533344fd": {
   "archivo": "libres/animales/cat-portrait-ov1.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.034,
+   "comida": 0.012,
+   "comida_rica": 0.058,
+   "gato": 0.848,
+   "perro": 0.009
+  },
+  "clip_v": 3,
   "consulta": "Cat portrait",
   "credito": "Cat portrait — solarisgirl — CC BY-SA 2.0 — https://www.flickr.com/photos/7252160@N04/33533092025",
+  "dibujo": "dibujos/gta/lb-da533344fd.jpg",
   "etiquetas": [
    "animales",
    "cat",
+   "gato",
    "portrait"
   ],
   "fuente": "libre",
   "h": 819,
+  "tema": "gato",
   "w": 1023
  },
  "lb-daa284dfec": {
   "archivo": "libres/animales/pit-bull-dog-ov1.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.01,
+   "avion": 0.041,
+   "gato": 0.012,
+   "helicoptero": 0.019,
+   "perro": 0.847
+  },
+  "clip_v": 3,
   "consulta": "Pit bull dog",
   "credito": "Breed Specific Legislation, BSL, kills innocent bully breeds, aka Pit Bull dogs — Beverly & Pack — CC BY 2.0 — https://www.flickr.com/photos/10101046@N06/12878984974",
+  "dibujo": "dibujos/gta/lb-daa284dfec.jpg",
   "etiquetas": [
    "animales",
    "bull",
    "dog",
+   "perro",
    "pit"
   ],
   "fuente": "libre",
   "h": 713,
+  "tema": "perro",
   "w": 1024
  },
  "lb-e798031b4b": {
   "archivo": "libres/animales/parrot-macaw-1.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.018,
+   "ave": 0.721,
+   "avion": 0.026,
+   "helicoptero": 0.019,
+   "militar": 0.039
+  },
+  "clip_v": 3,
   "consulta": "Parrot macaw",
   "credito": "Red-and-green macaw (Ara chloropterus) juvenile.JPG — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Red-and-green_macaw_(Ara_chloropterus)_juvenile.JPG",
+  "dibujo": "dibujos/gta/lb-e798031b4b.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "macaw",
    "parrot"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "ave",
   "w": 1920
  },
  "lb-e7bb38e128": {
   "archivo": "libres/animales/brown-pelican-florida-ov4.jpg",
   "categoria": "animales",
+  "clip": {
+   "ave": 0.165,
+   "avion": 0.036,
+   "caiman": 0.512,
+   "helicoptero": 0.111,
+   "militar": 0.078
+  },
+  "clip_v": 3,
   "consulta": "Brown pelican Florida",
   "credito": "Photo of the Week - An oil-free brown pelican soars over Pelican Island National Wildlife Refuge (FL) — U. S. Fish and Wildlife Service - Northeast Region — Dominio público 1.0 — https://www.flickr.com/photos/43322816@N08/4599641936",
+  "dibujo": "dibujos/gta/lb-e7bb38e128.jpg",
   "etiquetas": [
    "animales",
+   "ave",
    "brown",
+   "caiman",
    "florida",
+   "helicoptero",
    "pelican"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "caiman",
   "w": 1024
  },
  "lb-eb4029121f": {
   "archivo": "libres/animales/german-shepherd-police-dog-ov4.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.01,
+   "caiman": 0.048,
+   "gato": 0.005,
+   "lucia": 0.037,
+   "perro": 0.882
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Hattie 8 months old — Richard Elzey — CC BY 2.0 — https://www.flickr.com/photos/54602205@N00/29197062920",
+  "dibujo": "dibujos/gta/lb-eb4029121f.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "perro",
   "w": 1024
  },
  "lb-ed25804402": {
   "archivo": "libres/animales/german-shepherd-police-dog-5.jpg",
   "categoria": "animales",
+  "clip": {
+   "accion": 0.035,
+   "arma": 0.019,
+   "criminal": 0.016,
+   "perro": 0.67,
+   "policia": 0.182
+  },
+  "clip_v": 3,
   "consulta": "German shepherd police dog",
   "credito": "Police Dog at Toronto Open House 06.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_06.jpg",
+  "dibujo": "dibujos/gta/lb-ed25804402.jpg",
   "etiquetas": [
    "animales",
    "german",
+   "perro",
    "police",
+   "policia",
    "shepherd"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "perro",
   "w": 1920
  },
  "lb-faefe62058": {
   "archivo": "libres/animales/dog-portrait-ov6.jpg",
   "categoria": "animales",
+  "clip": {
+   "animal": 0.026,
+   "espacio": 0.005,
+   "jason": 0.02,
+   "perro": 0.889,
+   "retrato": 0.025
+  },
+  "clip_v": 3,
   "consulta": "Dog portrait",
   "credito": "Dog Portrait | 111211-4272-jikatu — jikatu — CC BY-SA 2.0 — https://www.flickr.com/photos/7221539@N06/6536909871",
+  "dibujo": "dibujos/gta/lb-faefe62058.jpg",
   "etiquetas": [
    "animales",
    "dog",
+   "perro",
    "portrait"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "perro",
   "w": 1024
  }
 }

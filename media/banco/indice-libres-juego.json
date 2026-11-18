@@ -2,24 +2,48 @@
  "lb-10ae0239f8": {
   "archivo": "libres/juego/rockstar-games-logo-2.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.034,
+   "deporte": 0.282,
+   "fiesta": 0.153,
+   "movil": 0.133,
+   "personas": 0.145
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "Biggest Rockstar Games fan ever - Flickr - Sergey Galyonkin.jpg — Sergey Galyonkin from Kyiv, Ukraine — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Biggest_Rockstar_Games_fan_ever_-_Flickr_-_Sergey_Galyonkin.jpg",
+  "dibujo": "dibujos/gta/lb-10ae0239f8.jpg",
   "etiquetas": [
+   "deporte",
+   "fiesta",
    "games",
    "juego",
    "logo",
+   "personas",
    "rockstar"
   ],
   "fuente": "libre",
   "h": 1784,
+  "tema": "deporte",
   "w": 1213
  },
  "lb-1f6bb28b1d": {
   "archivo": "libres/juego/rockstar-games-logo-1.jpg",
   "categoria": "juego",
+  "clip": {
+   "barco": 0.059,
+   "camion": 0.335,
+   "cartel": 0.05,
+   "cohete": 0.112,
+   "tren": 0.098
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "Grand Theft Auto VI trailer 1 date.png — Rockstar Games — Public domain — https://commons.wikimedia.org/wiki/File:Grand_Theft_Auto_VI_trailer_1_date.png",
+  "dibujo": "dibujos/gta/lb-1f6bb28b1d.jpg",
   "etiquetas": [
+   "camion",
+   "cohete",
    "games",
    "juego",
    "logo",
@@ -27,44 +51,81 @@
   ],
   "fuente": "libre",
   "h": 800,
+  "tema": "camion",
   "w": 1170
  },
  "lb-3268fb8ed9": {
   "archivo": "libres/juego/video-game-controller-ov1.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.094,
+   "deporte": 0.13,
+   "movil": 0.096,
+   "musica": 0.062,
+   "tecnologia": 0.292
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "New video game controller exposed — None — CC0 1.0 — https://www.rawpixel.com/image/3298255/free-photo-image-playstation-game-controller-gaming-control",
+  "dibujo": "dibujos/gta/lb-3268fb8ed9.jpg",
   "etiquetas": [
    "controller",
+   "deporte",
    "game",
    "juego",
+   "tecnologia",
    "video"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tecnologia",
   "w": 1024
  },
  "lb-35f5d32576": {
   "archivo": "libres/juego/rockstar-games-logo-ov2.jpg",
   "categoria": "juego",
+  "clip": {
+   "atardecer": 0.12,
+   "barco": 0.074,
+   "casa": 0.139,
+   "ciudad": 0.241,
+   "puerto": 0.152
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "GTAV - Panoramic 2560x1080 Ultrawide 21:9 Widescreen Wallpaper - Micheal Poolside (Day) by The Game Tips And More Blog (GTAV Logo) — thegametipsandmoreblog — CC BY 2.0 — https://www.flickr.com/photos/144790077@N03/32868122735",
+  "dibujo": "dibujos/gta/lb-35f5d32576.jpg",
   "etiquetas": [
+   "casa",
+   "ciudad",
    "games",
    "juego",
    "logo",
+   "puerto",
    "rockstar"
   ],
   "fuente": "libre",
   "h": 432,
+  "tema": "ciudad",
   "w": 1024
  },
  "lb-472867f731": {
   "archivo": "libres/juego/rockstar-games-logo-ov1.jpg",
   "categoria": "juego",
+  "clip": {
+   "cohete": 0.243,
+   "criminal": 0.209,
+   "espacio": 0.068,
+   "musica": 0.09,
+   "tienda": 0.063
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "Grand Theft Auto 4 (23) — William Hook — CC BY-SA 2.0 — https://www.flickr.com/photos/83542829@N00/2452247524",
+  "dibujo": "dibujos/gta/lb-472867f731.jpg",
   "etiquetas": [
+   "cohete",
+   "criminal",
    "games",
    "juego",
    "logo",
@@ -72,119 +133,217 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "cohete",
   "w": 1024
  },
  "lb-479eb524f7": {
   "archivo": "libres/juego/video-game-controller-5.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.191,
+   "helicoptero": 0.207,
+   "movil": 0.179,
+   "policia": 0.09,
+   "tecnologia": 0.082
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "Sega-Saturn-3D-Controller.jpg — Evan-Amos — Public domain — https://commons.wikimedia.org/wiki/File:Sega-Saturn-3D-Controller.jpg",
+  "dibujo": "dibujos/gta/lb-479eb524f7.jpg",
   "etiquetas": [
+   "arma",
    "controller",
    "game",
+   "helicoptero",
    "juego",
+   "movil",
    "video"
   ],
   "fuente": "libre",
   "h": 2197,
+  "tema": "helicoptero",
   "w": 1920
  },
  "lb-490fb118c4": {
   "archivo": "libres/juego/rockstar-games-logo-6.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.254,
+   "dinero": 0.209,
+   "helicoptero": 0.105,
+   "movil": 0.057,
+   "tormenta": 0.037
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "2026-11-18 Umfrage zum GTA VI-Hype.png — PantheraLeo1359531 — Public domain — https://commons.wikimedia.org/wiki/File:2026-11-18_Umfrage_zum_GTA_VI-Hype.png",
+  "dibujo": "dibujos/gta/lb-490fb118c4.jpg",
   "etiquetas": [
+   "arma",
+   "dinero",
    "games",
+   "helicoptero",
    "juego",
    "logo",
    "rockstar"
   ],
   "fuente": "libre",
   "h": 924,
+  "tema": "arma",
   "w": 1440
  },
  "lb-5616ee81dc": {
   "archivo": "libres/juego/video-game-controller-ov2.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.129,
+   "caiman": 0.056,
+   "deporte": 0.043,
+   "movil": 0.201,
+   "tecnologia": 0.251
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "Video game controller — None — CC0 1.0 — https://www.rawpixel.com/image/6026166/photo-image-public-domain-technology-free",
+  "dibujo": "dibujos/gta/lb-5616ee81dc.jpg",
   "etiquetas": [
+   "arma",
    "controller",
    "game",
    "juego",
+   "movil",
+   "tecnologia",
    "video"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tecnologia",
   "w": 1024
  },
  "lb-7b88e7624d": {
   "archivo": "libres/juego/rockstar-games-logo-ov3.jpg",
   "categoria": "juego",
+  "clip": {
+   "barco": 0.046,
+   "casa": 0.133,
+   "ciudad": 0.228,
+   "monumento": 0.087,
+   "puerto": 0.199
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "GTAV - 1920x1080 Panoramic 16:9 Widescreen Wallpaper - Micheal Poolside (Day) by The Game Tips And More Blog (GTAV Logo) — thegametipsandmoreblog — CC BY 2.0 — https://www.flickr.com/photos/144790077@N03/32025393384",
+  "dibujo": "dibujos/gta/lb-7b88e7624d.jpg",
   "etiquetas": [
+   "casa",
+   "ciudad",
    "games",
    "juego",
    "logo",
+   "puerto",
    "rockstar"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "ciudad",
   "w": 1023
  },
  "lb-a54e57385d": {
   "archivo": "libres/juego/video-game-controller-1.jpg",
   "categoria": "juego",
+  "clip": {
+   "deportivo": 0.092,
+   "espacio": 0.079,
+   "militar": 0.065,
+   "musica": 0.069,
+   "tecnologia": 0.269
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "Xbox-360-Wireless-Controller-White.jpg — Evan-Amos — Public domain — https://commons.wikimedia.org/wiki/File:Xbox-360-Wireless-Controller-White.jpg",
+  "dibujo": "dibujos/gta/lb-a54e57385d.jpg",
   "etiquetas": [
    "controller",
    "game",
    "juego",
+   "tecnologia",
    "video"
   ],
   "fuente": "libre",
   "h": 1749,
+  "tema": "tecnologia",
   "w": 1920
  },
  "lb-ac7ceda8c3": {
   "archivo": "libres/juego/rockstar-games-logo-3.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.084,
+   "caiman": 0.07,
+   "cohete": 0.086,
+   "espacio": 0.082,
+   "helicoptero": 0.108
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "Rockstar Barnstar.png — Rhain — CC0 — https://commons.wikimedia.org/wiki/File:Rockstar_Barnstar.png",
+  "dibujo": "dibujos/gta/lb-ac7ceda8c3.jpg",
   "etiquetas": [
    "games",
+   "helicoptero",
    "juego",
    "logo",
    "rockstar"
   ],
   "fuente": "libre",
   "h": 1824,
+  "tema": "helicoptero",
   "w": 1920
  },
  "lb-c6b6ecdca4": {
   "archivo": "libres/juego/video-game-controller-2.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.045,
+   "deportivo": 0.031,
+   "monumento": 0.029,
+   "movil": 0.03,
+   "tecnologia": 0.608
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "Xbox-360-Pro-wController.jpg — Evan-Amos — Public domain — https://commons.wikimedia.org/wiki/File:Xbox-360-Pro-wController.jpg",
+  "dibujo": "dibujos/gta/lb-c6b6ecdca4.jpg",
   "etiquetas": [
    "controller",
    "game",
    "juego",
+   "tecnologia",
    "video"
   ],
   "fuente": "libre",
   "h": 2871,
+  "tema": "tecnologia",
   "w": 1920
  },
  "lb-c94753ba90": {
   "archivo": "libres/juego/rockstar-games-logo-5.jpg",
   "categoria": "juego",
+  "clip": {
+   "accion": 0.172,
+   "arma": 0.285,
+   "camion": 0.148,
+   "dinero": 0.047,
+   "moto": 0.046
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "Grand Theft Auto logo series (with gradient).png — Rockstar Games — Public domain — https://commons.wikimedia.org/wiki/File:Grand_Theft_Auto_logo_series_(with_gradient).png",
+  "dibujo": "dibujos/gta/lb-c94753ba90.jpg",
   "etiquetas": [
+   "accion",
+   "arma",
+   "camion",
    "games",
    "juego",
    "logo",
@@ -192,29 +351,52 @@
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "arma",
   "w": 1920
  },
  "lb-cfd4ad0f3d": {
   "archivo": "libres/juego/video-game-controller-3.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.111,
+   "deportivo": 0.093,
+   "espacio": 0.078,
+   "militar": 0.06,
+   "tecnologia": 0.287
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "Xbox-360-Controller-Black.jpg — Evan-Amos — Public domain — https://commons.wikimedia.org/wiki/File:Xbox-360-Controller-Black.jpg",
+  "dibujo": "dibujos/gta/lb-cfd4ad0f3d.jpg",
   "etiquetas": [
+   "arma",
    "controller",
    "game",
    "juego",
+   "tecnologia",
    "video"
   ],
   "fuente": "libre",
   "h": 1451,
+  "tema": "tecnologia",
   "w": 1920
  },
  "lb-d37a65dbb6": {
   "archivo": "libres/juego/rockstar-games-logo-4.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.063,
+   "cohete": 0.25,
+   "espacio": 0.093,
+   "gasolinera": 0.052,
+   "tienda": 0.067
+  },
+  "clip_v": 3,
   "consulta": "Rockstar Games logo",
   "credito": "Rockstar logo for tweets.png — Take-Two Interactive — Public domain — https://commons.wikimedia.org/wiki/File:Rockstar_logo_for_tweets.png",
+  "dibujo": "dibujos/gta/lb-d37a65dbb6.jpg",
   "etiquetas": [
+   "cohete",
    "games",
    "juego",
    "logo",
@@ -222,14 +404,25 @@
   ],
   "fuente": "libre",
   "h": 1769,
+  "tema": "cohete",
   "w": 1920
  },
  "lb-e0e2a97d97": {
   "archivo": "libres/juego/video-game-controller-4.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.346,
+   "avion": 0.047,
+   "militar": 0.053,
+   "movil": 0.089,
+   "tecnologia": 0.048
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "Nintendo-Switch-Pro-Controller-FL.jpg — Evan-Amos — Public domain — https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Pro-Controller-FL.jpg",
+  "dibujo": "dibujos/gta/lb-e0e2a97d97.jpg",
   "etiquetas": [
+   "arma",
    "controller",
    "game",
    "juego",
@@ -237,21 +430,34 @@
   ],
   "fuente": "libre",
   "h": 1493,
+  "tema": "arma",
   "w": 1920
  },
  "lb-fc9679efd3": {
   "archivo": "libres/juego/video-game-controller-6.jpg",
   "categoria": "juego",
+  "clip": {
+   "arma": 0.07,
+   "deportivo": 0.092,
+   "helicoptero": 0.065,
+   "tecnologia": 0.113,
+   "tormenta": 0.162
+  },
+  "clip_v": 3,
   "consulta": "Video game controller",
   "credito": "GameCube-Set.jpg — Evan-Amos — Public domain — https://commons.wikimedia.org/wiki/File:GameCube-Set.jpg",
+  "dibujo": "dibujos/gta/lb-fc9679efd3.jpg",
   "etiquetas": [
    "controller",
    "game",
    "juego",
+   "tecnologia",
+   "tormenta",
    "video"
   ],
   "fuente": "libre",
   "h": 1077,
+  "tema": "tormenta",
   "w": 1920
  }
 }

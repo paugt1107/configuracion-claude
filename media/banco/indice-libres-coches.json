@@ -2,307 +2,561 @@
  "lb-00aabeafb9": {
   "archivo": "libres/coches/ferrari-testarossa-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.009,
+   "deportivo": 0.944,
+   "dinero": 0.006,
+   "militar": 0.003,
+   "pareja": 0.008
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa IAA 2019 JM 0957.jpg — Johannes Maximilian — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_IAA_2019_JM_0957.jpg",
+  "dibujo": "dibujos/gta/lb-00aabeafb9.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-00f7192f01": {
   "archivo": "libres/coches/ferrari-testarossa-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "arma": 0.004,
+   "coche": 0.11,
+   "deportivo": 0.849,
+   "desierto": 0.005,
+   "militar": 0.007
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa (MOD) — ER0L — CC BY 2.0 — https://www.flickr.com/photos/61030174@N03/22788811371",
+  "dibujo": "dibujos/gta/lb-00f7192f01.jpg",
   "etiquetas": [
+   "coche",
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-01cecdb816": {
   "archivo": "libres/coches/chevrolet-corvette-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.09,
+   "deportivo": 0.623,
+   "joyas": 0.01,
+   "moto": 0.014,
+   "pareja": 0.22
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "1960 Chevrolet Corvette — Hugo-90 — CC BY 2.0 — https://www.flickr.com/photos/32109282@N00/4139829768",
+  "dibujo": "dibujos/gta/lb-01cecdb816.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo",
+   "pareja"
   ],
   "fuente": "libre",
   "h": 717,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-040f5f0a9e": {
   "archivo": "libres/coches/lamborghini-countach-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.006,
+   "deportivo": 0.938,
+   "dinero": 0.016,
+   "helicoptero": 0.007,
+   "militar": 0.009
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach LPI 800-4 IMG 8034.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LPI_800-4_IMG_8034.jpg",
+  "dibujo": "dibujos/gta/lb-040f5f0a9e.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 1278,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-0468a3989d": {
   "archivo": "libres/coches/lowrider-car-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.761,
+   "coche": 0.01,
+   "deportivo": 0.143,
+   "militar": 0.011,
+   "pareja": 0.04
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Hydraulic Lowrider Car Lincoln Town Car Executive Series - Helldorado Days Parade 2024 — TDelCoro — CC BY-SA 2.0 — https://www.flickr.com/photos/45549579@N05/53749305453",
+  "dibujo": "dibujos/gta/lb-0468a3989d.jpg",
   "etiquetas": [
+   "camion",
    "car",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 437,
+  "tema": "camion",
   "w": 1024
  },
  "lb-0ce28992e1": {
   "archivo": "libres/coches/ford-mustang-muscle-car-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "animal": 0.008,
+   "coche": 0.077,
+   "deportivo": 0.815,
+   "jason": 0.042,
+   "pareja": 0.014
+  },
+  "clip_v": 3,
   "consulta": "Ford Mustang muscle car",
   "credito": "Mustang — racin jason — CC BY 2.0 — https://www.flickr.com/photos/14373548@N03/9683625373",
+  "dibujo": "dibujos/gta/lb-0ce28992e1.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ford",
    "muscle",
    "mustang"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-0e02fdcaf0": {
   "archivo": "libres/coches/lamborghini-huracan-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "deportivo": 0.834,
+   "dinero": 0.022,
+   "gasolinera": 0.047,
+   "personas": 0.018,
+   "puerto": 0.018
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Alfa Romeo Giulia Quadrifoglio Carabinieri & Lamborghini Huracan Polizia & Ford Mustang Polizei — crash71100 — CC0 1.0 — https://www.flickr.com/photos/152930510@N02/32611655817",
+  "dibujo": "dibujos/gta/lb-0e02fdcaf0.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 589,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-0f6b491517": {
   "archivo": "libres/coches/lowrider-car-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.051,
+   "coche": 0.29,
+   "deportivo": 0.241,
+   "gasolinera": 0.055,
+   "pareja": 0.164
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Lowrider Car Show in Chula Vista.jpg — Ahsoka Dillard — CC0 — https://commons.wikimedia.org/wiki/File:Lowrider_Car_Show_in_Chula_Vista.jpg",
+  "dibujo": "dibujos/gta/lb-0f6b491517.jpg",
   "etiquetas": [
    "car",
+   "coche",
    "coches",
-   "lowrider"
+   "deportivo",
+   "lowrider",
+   "pareja"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "coche",
   "w": 1920
  },
  "lb-11492a0a2e": {
   "archivo": "libres/coches/ferrari-testarossa-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.022,
+   "deportivo": 0.959,
+   "historia": 0.002,
+   "monumento": 0.002,
+   "pareja": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa-20190419.jpg — JoachimKohler-HB — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa-20190419.jpg",
+  "dibujo": "dibujos/gta/lb-11492a0a2e.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-116b7304a8": {
   "archivo": "libres/coches/dodge-charger-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.015,
+   "coche": 0.093,
+   "deportivo": 0.717,
+   "pareja": 0.027,
+   "volcan": 0.071
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger Hirschaid-20220709-RM-113717.jpg — Ermell — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dodge_Charger_Hirschaid-20220709-RM-113717.jpg",
+  "dibujo": "dibujos/gta/lb-116b7304a8.jpg",
   "etiquetas": [
    "charger",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 1316,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-1718af2471": {
   "archivo": "libres/coches/lamborghini-countach-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.013,
+   "deportivo": 0.742,
+   "dinero": 0.087,
+   "gasolinera": 0.021,
+   "personas": 0.075
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach, Diablo SV and Murciélago — exfordy — CC BY 2.0 — https://www.flickr.com/photos/32659528@N00/2557314710",
+  "dibujo": "dibujos/gta/lb-1718af2471.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 571,
+  "tema": "deportivo",
   "w": 1023
  },
  "lb-1bece2a897": {
   "archivo": "libres/coches/lamborghini-countach-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.009,
+   "deportivo": 0.964,
+   "dinero": 0.002,
+   "militar": 0.002,
+   "pareja": 0.007
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach, BAS 24, Brussels (P1170237-RR).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach,_BAS_24,_Brussels_(P1170237-RR).jpg",
+  "dibujo": "dibujos/gta/lb-1bece2a897.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-1d73c5b2bc": {
   "archivo": "libres/coches/dodge-charger-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.007,
+   "coche": 0.024,
+   "deportivo": 0.91,
+   "pareja": 0.027,
+   "policia": 0.008
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "2012 Dodge Charger R/T Fast Five edition (rear) — Schen Photography — CC BY 2.0 — https://www.flickr.com/photos/27770908@N06/5664340915",
+  "dibujo": "dibujos/gta/lb-1d73c5b2bc.jpg",
   "etiquetas": [
    "charger",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 682,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-207b68224f": {
   "archivo": "libres/coches/lowrider-car-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "arte": 0.025,
+   "camion": 0.133,
+   "coche": 0.197,
+   "deportivo": 0.156,
+   "pareja": 0.415
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Hydraulic Lowrider Car - Helldorado Days Parade 2024 — TDelCoro — CC BY-SA 2.0 — https://www.flickr.com/photos/45549579@N05/53748995646",
+  "dibujo": "dibujos/gta/lb-207b68224f.jpg",
   "etiquetas": [
    "car",
+   "coche",
    "coches",
-   "lowrider"
+   "deportivo",
+   "lowrider",
+   "pareja"
   ],
   "fuente": "libre",
   "h": 430,
+  "tema": "pareja",
   "w": 1024
  },
  "lb-21daa0114c": {
   "archivo": "libres/coches/lamborghini-huracan-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "barco": 0.009,
+   "coche": 0.009,
+   "deportivo": 0.942,
+   "militar": 0.019,
+   "pareja": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan — Benoit cars — CC BY-SA 2.0 — https://www.flickr.com/photos/67847534@N03/15328034899",
+  "dibujo": "dibujos/gta/lb-21daa0114c.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 697,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-279e1bea2f": {
   "archivo": "libres/coches/lowrider-car-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.667,
+   "coche": 0.046,
+   "deportivo": 0.173,
+   "dinero": 0.039,
+   "moto": 0.015
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Hydraulic Lowrider Car 1987 Oldsmobile Cutlass - Helldorado Days Parade 2024 — TDelCoro — CC BY-SA 2.0 — https://www.flickr.com/photos/45549579@N05/53749414924",
+  "dibujo": "dibujos/gta/lb-279e1bea2f.jpg",
   "etiquetas": [
+   "camion",
    "car",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 424,
+  "tema": "camion",
   "w": 1024
  },
  "lb-2cd14146dc": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.012,
+   "coche": 0.391,
+   "deportivo": 0.501,
+   "montana": 0.005,
+   "pareja": 0.052
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Yanks Want It — Hugo-90 — CC BY 2.0 — https://www.flickr.com/photos/32109282@N00/7297801078",
+  "dibujo": "dibujos/gta/lb-2cd14146dc.jpg",
   "etiquetas": [
+   "coche",
    "coches",
+   "deportivo",
    "ford",
    "pickup",
    "truck"
   ],
   "fuente": "libre",
   "h": 698,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-37abc04e8a": {
   "archivo": "libres/coches/harley-davidson-motorcycle-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.003,
+   "dinero": 0.001,
+   "moto": 0.005,
+   "personas": 0.01,
+   "policia": 0.979
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "APD Harley Davidson Motorcycles — Seluryar — CC BY-SA 2.0 — https://www.flickr.com/photos/90403972@N00/15722462160",
+  "dibujo": "dibujos/gta/lb-37abc04e8a.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
-   "motorcycle"
+   "motorcycle",
+   "policia"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "policia",
   "w": 1024
  },
  "lb-390849f36a": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "arma": 0.006,
+   "camion": 0.798,
+   "coche": 0.025,
+   "deportivo": 0.021,
+   "gasolinera": 0.101
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "1978 Ford F-150 Ranger — dave_7 — CC BY 2.0 — https://www.flickr.com/photos/21612624@N00/11936343995",
+  "dibujo": "dibujos/gta/lb-390849f36a.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
+   "gasolinera",
    "pickup",
    "truck"
   ],
   "fuente": "libre",
   "h": 682,
+  "tema": "camion",
   "w": 1023
  },
  "lb-3e0790d58d": {
   "archivo": "libres/coches/speedboat-miami-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.122,
+   "barco": 0.349,
+   "coche": 0.137,
+   "deportivo": 0.126,
+   "pareja": 0.12
+  },
+  "clip_v": 3,
   "consulta": "Speedboat Miami",
   "credito": "MSC Divina #Fiatatsea Fiat 500 at sea escorts speedboats — Tips For Travellers — CC BY 2.0 — https://www.flickr.com/photos/8327374@N02/11106742976",
+  "dibujo": "dibujos/gta/lb-3e0790d58d.jpg",
   "etiquetas": [
+   "barco",
+   "coche",
    "coches",
+   "deportivo",
    "miami",
    "speedboat"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "barco",
   "w": 1024
  },
  "lb-407d37b3b6": {
   "archivo": "libres/coches/dodge-charger-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.004,
+   "criminal": 0.001,
+   "deportivo": 0.0,
+   "helicoptero": 0.0,
+   "policia": 0.992
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger Michigan State Police car — Corvair Owner — CC BY-SA 2.0 — https://www.flickr.com/photos/59398780@N00/8489849347",
+  "dibujo": "dibujos/gta/lb-407d37b3b6.jpg",
   "etiquetas": [
    "charger",
    "coches",
-   "dodge"
+   "dodge",
+   "policia"
   ],
   "fuente": "libre",
   "h": 678,
+  "tema": "policia",
   "w": 1023
  },
  "lb-45d3b09595": {
   "archivo": "libres/coches/ford-mustang-muscle-car-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.422,
+   "arte": 0.092,
+   "coche": 0.142,
+   "deportivo": 0.081,
+   "militar": 0.073
+  },
+  "clip_v": 3,
   "consulta": "Ford Mustang muscle car",
   "credito": "Dead Mustang Mach 1 — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/14453752520",
+  "dibujo": "dibujos/gta/lb-45d3b09595.jpg",
   "etiquetas": [
+   "accion",
+   "coche",
    "coches",
    "ford",
    "muscle",
@@ -310,452 +564,822 @@
   ],
   "fuente": "libre",
   "h": 661,
+  "tema": "accion",
   "w": 1024
  },
  "lb-45fea10cfc": {
   "archivo": "libres/coches/lamborghini-huracan-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "club": 0.003,
+   "coche": 0.023,
+   "deportivo": 0.94,
+   "militar": 0.012,
+   "pareja": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan Performante, IAA 2017, Frankfurt (1Y7A2827).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan_Performante,_IAA_2017,_Frankfurt_(1Y7A2827).jpg",
+  "dibujo": "dibujos/gta/lb-45fea10cfc.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-477da012e1": {
   "archivo": "libres/coches/lowrider-car-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.085,
+   "coche": 0.24,
+   "deportivo": 0.441,
+   "pareja": 0.073,
+   "policia": 0.04
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Hydraulic Lowrider Car 1987 Oldsmobile Cutlass - Helldorado Days Parade 2024 — TDelCoro — CC BY-SA 2.0 — https://www.flickr.com/photos/45549579@N05/53749447190",
+  "dibujo": "dibujos/gta/lb-477da012e1.jpg",
   "etiquetas": [
    "car",
+   "coche",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 479,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-485a102bc7": {
   "archivo": "libres/coches/ferrari-testarossa-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.012,
+   "deportivo": 0.888,
+   "dinero": 0.009,
+   "helicoptero": 0.012,
+   "pareja": 0.042
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa, Jersey — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/9266764188",
+  "dibujo": "dibujos/gta/lb-485a102bc7.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 554,
+  "tema": "deportivo",
   "w": 1023
  },
  "lb-48c41752eb": {
   "archivo": "libres/coches/ferrari-testarossa-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.016,
+   "deportivo": 0.922,
+   "desierto": 0.008,
+   "dinero": 0.007,
+   "pareja": 0.014
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "1986 Ferrari Testarossa — aldenjewell — CC BY 2.0 — https://www.flickr.com/photos/31411679@N08/33561376418",
+  "dibujo": "dibujos/gta/lb-48c41752eb.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 780,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-4ac3c9d9ca": {
   "archivo": "libres/coches/chevrolet-corvette-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "calle": 0.395,
+   "deportivo": 0.072,
+   "monumento": 0.113,
+   "personas": 0.093,
+   "tienda": 0.067
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Auberge Du Tresor.jpg — Wilfredor — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Auberge_Du_Tresor.jpg",
+  "dibujo": "dibujos/gta/lb-4ac3c9d9ca.jpg",
   "etiquetas": [
+   "calle",
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "monumento"
   ],
   "fuente": "libre",
   "h": 1027,
+  "tema": "calle",
   "w": 1920
  },
  "lb-4c6293f53a": {
   "archivo": "libres/coches/lowrider-car-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "arte": 0.237,
+   "camion": 0.025,
+   "coche": 0.247,
+   "deportivo": 0.367,
+   "gasolinera": 0.044
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Moscow car show 2026-08-01 GAZ lowriders, blue 11.jpg — Retired electrician — CC0 — https://commons.wikimedia.org/wiki/File:Moscow_car_show_2026-08-01_GAZ_lowriders,_blue_11.jpg",
+  "dibujo": "dibujos/gta/lb-4c6293f53a.jpg",
   "etiquetas": [
+   "arte",
    "car",
+   "coche",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 1207,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-4c7bad61e6": {
   "archivo": "libres/coches/ferrari-testarossa-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "arma": 0.006,
+   "coche": 0.078,
+   "deportivo": 0.845,
+   "helicoptero": 0.006,
+   "militar": 0.029
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa (MOD) — ER0L — CC BY 2.0 — https://www.flickr.com/photos/61030174@N03/22788786781",
+  "dibujo": "dibujos/gta/lb-4c7bad61e6.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 796,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-525ca9340b": {
   "archivo": "libres/coches/speedboat-miami-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.018,
+   "barco": 0.712,
+   "militar": 0.029,
+   "policia": 0.025,
+   "puerto": 0.157
+  },
+  "clip_v": 3,
   "consulta": "Speedboat Miami",
   "credito": "Miami — James Willamor — CC BY-SA 2.0 — https://www.flickr.com/photos/81464596@N00/3523787977",
+  "dibujo": "dibujos/gta/lb-525ca9340b.jpg",
   "etiquetas": [
+   "barco",
    "coches",
    "miami",
+   "puerto",
    "speedboat"
   ],
   "fuente": "libre",
   "h": 756,
+  "tema": "barco",
   "w": 1024
  },
  "lb-572f08ae0f": {
   "archivo": "libres/coches/lamborghini-huracan-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "barco": 0.003,
+   "coche": 0.016,
+   "deportivo": 0.954,
+   "gasolinera": 0.002,
+   "militar": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan — Benoit cars — CC BY-SA 2.0 — https://www.flickr.com/photos/67847534@N03/17640581108",
+  "dibujo": "dibujos/gta/lb-572f08ae0f.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-59a8dcd2e9": {
   "archivo": "libres/coches/lamborghini-huracan-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.025,
+   "deportivo": 0.957,
+   "dinero": 0.002,
+   "militar": 0.007,
+   "pareja": 0.002
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan — Benoit cars — CC BY-SA 2.0 — https://www.flickr.com/photos/67847534@N03/18503486581",
+  "dibujo": "dibujos/gta/lb-59a8dcd2e9.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-5a73ae1dbe": {
   "archivo": "libres/coches/lamborghini-huracan-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "barco": 0.002,
+   "coche": 0.006,
+   "deportivo": 0.976,
+   "dinero": 0.003,
+   "militar": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Салоники, Lamborghini Huracan 2015 возле Grand Hotel Palace (2).jpg — Nikolai Bulykin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%BB%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8,_Lamborghini_Huracan_2015_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_Grand_Hotel_Palace_(2).jpg",
+  "dibujo": "dibujos/gta/lb-5a73ae1dbe.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-5aa454cd40": {
   "archivo": "libres/coches/lowrider-car-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.023,
+   "camion": 0.579,
+   "coche": 0.082,
+   "deportivo": 0.116,
+   "militar": 0.031
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Hydraulic Lowrider Car Cadillac Fleetwood - Helldorado Days Parade 2024 — TDelCoro — CC BY-SA 2.0 — https://www.flickr.com/photos/45549579@N05/53752055234",
+  "dibujo": "dibujos/gta/lb-5aa454cd40.jpg",
   "etiquetas": [
+   "camion",
    "car",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 418,
+  "tema": "camion",
   "w": 1024
  },
  "lb-5ee63ccd0d": {
   "archivo": "libres/coches/chevrolet-corvette-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.001,
+   "carretera": 0.002,
+   "coche": 0.202,
+   "deportivo": 0.064,
+   "pareja": 0.727
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "1961 Chevrolet Corvette — aldenjewell — CC BY 2.0 — https://www.flickr.com/photos/31411679@N08/51297359149",
+  "dibujo": "dibujos/gta/lb-5ee63ccd0d.jpg",
   "etiquetas": [
    "chevrolet",
+   "coche",
    "coches",
-   "corvette"
+   "corvette",
+   "pareja"
   ],
   "fuente": "libre",
   "h": 616,
+  "tema": "pareja",
   "w": 1023
  },
  "lb-5f2393eb5d": {
   "archivo": "libres/coches/chevrolet-corvette-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.199,
+   "deportivo": 0.66,
+   "noche": 0.034,
+   "pareja": 0.016,
+   "policia": 0.028
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "24 Hours of Le Mans 2011 - Race - Chevrolet Corvette C6-ZR1 #74 — bibendum84 — CC BY-SA 2.0 — https://www.flickr.com/photos/14246531@N04/5834058428",
+  "dibujo": "dibujos/gta/lb-5f2393eb5d.jpg",
   "etiquetas": [
    "chevrolet",
+   "coche",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "deportivo",
   "w": 1023
  },
  "lb-61def0ee6a": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.018,
+   "camion": 0.581,
+   "coche": 0.102,
+   "deportivo": 0.146,
+   "pareja": 0.064
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Ford F-150 Lightning IAA 2023 1X7A0596.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ford_F-150_Lightning_IAA_2023_1X7A0596.jpg",
+  "dibujo": "dibujos/gta/lb-61def0ee6a.jpg",
   "etiquetas": [
+   "camion",
+   "coche",
    "coches",
+   "deportivo",
    "ford",
    "pickup",
    "truck"
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "camion",
   "w": 1920
  },
  "lb-62a56b7bfa": {
   "archivo": "libres/coches/speedboat-miami-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "barco": 0.152,
+   "coche": 0.337,
+   "deportivo": 0.132,
+   "pareja": 0.133,
+   "puerto": 0.084
+  },
+  "clip_v": 3,
   "consulta": "Speedboat Miami",
   "credito": "MSC Divina #Fiatatsea Fiat 500 at sea escorts speedboats — Tips For Travellers — CC BY 2.0 — https://www.flickr.com/photos/8327374@N02/11106686865",
+  "dibujo": "dibujos/gta/lb-62a56b7bfa.jpg",
   "etiquetas": [
+   "barco",
+   "coche",
    "coches",
    "miami",
+   "pareja",
    "speedboat"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "coche",
   "w": 1024
  },
  "lb-63e8811c14": {
   "archivo": "libres/coches/harley-davidson-motorcycle-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "carretera": 0.018,
+   "coche": 0.058,
+   "moto": 0.721,
+   "personas": 0.063,
+   "tren": 0.037
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "San Francisco Police Department motorcycle officers line scan 2026 dllu.jpg — Daniel Lu (User:dllu) — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:San_Francisco_Police_Department_motorcycle_officers_line_scan_2026_dllu.jpg",
+  "dibujo": "dibujos/gta/lb-63e8811c14.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 809,
+  "tema": "moto",
   "w": 1920
  },
  "lb-6434db3081": {
   "archivo": "libres/coches/lamborghini-countach-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.009,
+   "deportivo": 0.885,
+   "dinero": 0.009,
+   "pareja": 0.019,
+   "personas": 0.046
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach, Diablo SV and Murciélago — exfordy — CC BY 2.0 — https://www.flickr.com/photos/32659528@N00/2556493273",
+  "dibujo": "dibujos/gta/lb-6434db3081.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 639,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-65feab0ea8": {
   "archivo": "libres/coches/ferrari-testarossa-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.002,
+   "coche": 0.063,
+   "deportivo": 0.906,
+   "militar": 0.004,
+   "pareja": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa-20190419-2.jpg — JoachimKohler-HB — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa-20190419-2.jpg",
+  "dibujo": "dibujos/gta/lb-65feab0ea8.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 1200,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-68aae856fa": {
   "archivo": "libres/coches/dodge-charger-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.002,
+   "arma": 0.0,
+   "coche": 0.0,
+   "criminal": 0.001,
+   "policia": 0.997
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Fairborn Ohio Police Dodge Charger — Seluryar — CC BY 2.0 — https://www.flickr.com/photos/90403972@N00/51364630045",
+  "dibujo": "dibujos/gta/lb-68aae856fa.jpg",
   "etiquetas": [
    "charger",
    "coches",
-   "dodge"
+   "dodge",
+   "policia"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "policia",
   "w": 1024
  },
  "lb-68ded2d554": {
   "archivo": "libres/coches/dodge-charger-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "arma": 0.011,
+   "coche": 0.09,
+   "deportivo": 0.776,
+   "dinero": 0.01,
+   "pareja": 0.04
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger 1971 left view.jpg — Pierre André Leclercq — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Dodge_Charger_1971_left_view.jpg",
+  "dibujo": "dibujos/gta/lb-68ded2d554.jpg",
   "etiquetas": [
    "charger",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 702,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-6cec70858b": {
   "archivo": "libres/coches/chevrolet-corvette-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.015,
+   "deportivo": 0.904,
+   "interior": 0.004,
+   "moto": 0.016,
+   "pareja": 0.031
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Chevrolet Corvette C1, Bj. 1962, Cockpit.JPG — Lothar Spurzem — CC BY-SA 2.0 de — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C1,_Bj._1962,_Cockpit.JPG",
+  "dibujo": "dibujos/gta/lb-6cec70858b.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-6cee8efeee": {
   "archivo": "libres/coches/lamborghini-countach-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.138,
+   "deportivo": 0.83,
+   "dinero": 0.002,
+   "gato": 0.002,
+   "pareja": 0.015
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach — allenthepostman — CC BY-SA 2.0 — https://www.flickr.com/photos/28448204@N00/1904189666",
+  "dibujo": "dibujos/gta/lb-6cee8efeee.jpg",
   "etiquetas": [
+   "coche",
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "deportivo",
   "w": 1023
  },
  "lb-6e60049795": {
   "archivo": "libres/coches/lamborghini-huracan-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.021,
+   "deportivo": 0.945,
+   "gasolinera": 0.002,
+   "militar": 0.016,
+   "pareja": 0.003
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracán Tecnica 1X7A7432.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_Tecnica_1X7A7432.jpg",
+  "dibujo": "dibujos/gta/lb-6e60049795.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 912,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-6f572ea7af": {
   "archivo": "libres/coches/dodge-charger-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "carretera": 0.075,
+   "coche": 0.49,
+   "deportivo": 0.368,
+   "militar": 0.009,
+   "pareja": 0.02
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger Kulmbach-20220626-RM-163443.jpg — Ermell — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dodge_Charger_Kulmbach-20220626-RM-163443.jpg",
+  "dibujo": "dibujos/gta/lb-6f572ea7af.jpg",
   "etiquetas": [
    "charger",
+   "coche",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 1489,
+  "tema": "coche",
   "w": 1920
  },
  "lb-6fb3950f40": {
   "archivo": "libres/coches/harley-davidson-motorcycle-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "arma": 0.0,
+   "deportivo": 0.001,
+   "helicoptero": 0.0,
+   "militar": 0.008,
+   "moto": 0.989
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Harley-Davidson Road King in Switzerland (2022).jpg — JoachimKohler-HB — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Harley-Davidson_Road_King_in_Switzerland_(2022).jpg",
+  "dibujo": "dibujos/gta/lb-6fb3950f40.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "moto",
   "w": 1920
  },
  "lb-716c4034f5": {
   "archivo": "libres/coches/ferrari-testarossa-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.081,
+   "deportivo": 0.148,
+   "movil": 0.177,
+   "pareja": 0.193,
+   "retrato": 0.054
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa, Jersey — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/9263984267",
+  "dibujo": "dibujos/gta/lb-716c4034f5.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
+   "movil",
+   "pareja",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 734,
+  "tema": "pareja",
   "w": 1024
  },
  "lb-7233657354": {
   "archivo": "libres/coches/harley-davidson-motorcycle-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "arma": 0.001,
+   "deportivo": 0.0,
+   "helicoptero": 0.0,
+   "militar": 0.003,
+   "moto": 0.992
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Harley-Davidson Softail Springer Screamin' Eagle 2008.jpg — Pierre André Leclercq — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Harley-Davidson_Softail_Springer_Screamin%27_Eagle_2008.jpg",
+  "dibujo": "dibujos/gta/lb-7233657354.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 1384,
+  "tema": "moto",
   "w": 1920
  },
  "lb-7235f5f6ff": {
   "archivo": "libres/coches/ferrari-testarossa-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.033,
+   "camion": 0.023,
+   "coche": 0.103,
+   "deportivo": 0.722,
+   "pareja": 0.07
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa (MOD) - Minifig scale — ER0L — CC BY 2.0 — https://www.flickr.com/photos/61030174@N03/22381625227",
+  "dibujo": "dibujos/gta/lb-7235f5f6ff.jpg",
   "etiquetas": [
+   "coche",
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-732966a5ae": {
   "archivo": "libres/coches/lamborghini-huracan-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.042,
+   "deportivo": 0.907,
+   "gasolinera": 0.013,
+   "militar": 0.009,
+   "pareja": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan — Yes, This Is Mine! — CC BY-SA 2.0 — https://www.flickr.com/photos/123927290@N04/14451697668",
+  "dibujo": "dibujos/gta/lb-732966a5ae.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-74e9a58312": {
   "archivo": "libres/coches/dodge-charger-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.03,
+   "carretera": 0.013,
+   "coche": 0.755,
+   "deportivo": 0.112,
+   "pareja": 0.068
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger (1967)-20180909-RM-171601.jpg — Ermell — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dodge_Charger_(1967)-20180909-RM-171601.jpg",
+  "dibujo": "dibujos/gta/lb-74e9a58312.jpg",
   "etiquetas": [
    "charger",
+   "coche",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 1056,
+  "tema": "coche",
   "w": 1920
  },
  "lb-7654c0c161": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.915,
+   "coche": 0.012,
+   "deportivo": 0.015,
+   "gasolinera": 0.015,
+   "militar": 0.018
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Ford F-150 (fourteenth generation) Rutesheimer Autoschau 2025 DSC 9230.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ford_F-150_(fourteenth_generation)_Rutesheimer_Autoschau_2025_DSC_9230.jpg",
+  "dibujo": "dibujos/gta/lb-7654c0c161.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -763,43 +1387,76 @@
   ],
   "fuente": "libre",
   "h": 1283,
+  "tema": "camion",
   "w": 1920
  },
  "lb-77b077d384": {
   "archivo": "libres/coches/harley-davidson-motorcycle-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.004,
+   "dinero": 0.0,
+   "moto": 0.03,
+   "personas": 0.006,
+   "policia": 0.957
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Akron Police Harley Davidson Motorcycles — Seluryar — CC BY-SA 2.0 — https://www.flickr.com/photos/90403972@N00/16627422480",
+  "dibujo": "dibujos/gta/lb-77b077d384.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
-   "motorcycle"
+   "motorcycle",
+   "policia"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "policia",
   "w": 1024
  },
  "lb-7a68bd8e61": {
   "archivo": "libres/coches/lamborghini-countach-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.008,
+   "deportivo": 0.965,
+   "dinero": 0.002,
+   "militar": 0.005,
+   "pareja": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach LP 5000S 1983.jpg — Palauenc05 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_5000S_1983.jpg",
+  "dibujo": "dibujos/gta/lb-7a68bd8e61.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 1016,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-7d2880f257": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.863,
+   "coche": 0.007,
+   "deportivo": 0.027,
+   "gasolinera": 0.008,
+   "militar": 0.057
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Ford F-150 (thirteenth generation) 1X7A1775.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ford_F-150_(thirteenth_generation)_1X7A1775.jpg",
+  "dibujo": "dibujos/gta/lb-7d2880f257.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -807,73 +1464,131 @@
   ],
   "fuente": "libre",
   "h": 1162,
+  "tema": "camion",
   "w": 1920
  },
  "lb-7e05a4b353": {
   "archivo": "libres/coches/harley-davidson-motorcycle-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.001,
+   "criminal": 0.001,
+   "moto": 0.022,
+   "personas": 0.002,
+   "policia": 0.972
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Broadview Heights Ohio Police Harley Davidson Motorcycle — Seluryar — CC BY-SA 2.0 — https://www.flickr.com/photos/90403972@N00/14178268296",
+  "dibujo": "dibujos/gta/lb-7e05a4b353.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
-   "motorcycle"
+   "motorcycle",
+   "policia"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "policia",
   "w": 1024
  },
  "lb-7f95d8b3ff": {
   "archivo": "libres/coches/ford-mustang-muscle-car-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.105,
+   "deportivo": 0.379,
+   "gasolinera": 0.013,
+   "pareja": 0.348,
+   "policia": 0.049
+  },
+  "clip_v": 3,
   "consulta": "Ford Mustang muscle car",
   "credito": "Rear View - Mustang GT — Scott 97006 — CC BY 2.0 — https://www.flickr.com/photos/29487672@N07/14740526014",
+  "dibujo": "dibujos/gta/lb-7f95d8b3ff.jpg",
   "etiquetas": [
+   "coche",
    "coches",
+   "deportivo",
    "ford",
    "muscle",
-   "mustang"
+   "mustang",
+   "pareja"
   ],
   "fuente": "libre",
   "h": 686,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-82fd868d66": {
   "archivo": "libres/coches/speedboat-miami-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.269,
+   "barco": 0.541,
+   "deportivo": 0.028,
+   "militar": 0.023,
+   "puerto": 0.072
+  },
+  "clip_v": 3,
   "consulta": "Speedboat Miami",
   "credito": "MSC Divina #Fiatatsea Fiat 500 at sea escorts speedboats — Tips For Travellers — CC BY 2.0 — https://www.flickr.com/photos/8327374@N02/11106793136",
+  "dibujo": "dibujos/gta/lb-82fd868d66.jpg",
   "etiquetas": [
+   "accion",
+   "barco",
    "coches",
    "miami",
    "speedboat"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "barco",
   "w": 1024
  },
  "lb-83710fa0ec": {
   "archivo": "libres/coches/harley-davidson-motorcycle-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "caiman": 0.0,
+   "deportivo": 0.001,
+   "helicoptero": 0.001,
+   "militar": 0.005,
+   "moto": 0.991
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Harley-Davidson custom Leimershof -20190907-RM-162129.jpg — Ermell — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Harley-Davidson_custom_Leimershof_-20190907-RM-162129.jpg",
+  "dibujo": "dibujos/gta/lb-83710fa0ec.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "moto",
   "w": 1920
  },
  "lb-8398909e9d": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.92,
+   "coche": 0.004,
+   "deportivo": 0.037,
+   "gasolinera": 0.004,
+   "militar": 0.012
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Ford F-150 (fourteenth generation) Rutesheimer Autoschau 2025 DSC 9217.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ford_F-150_(fourteenth_generation)_Rutesheimer_Autoschau_2025_DSC_9217.jpg",
+  "dibujo": "dibujos/gta/lb-8398909e9d.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -881,14 +1596,26 @@
   ],
   "fuente": "libre",
   "h": 1162,
+  "tema": "camion",
   "w": 1920
  },
  "lb-84640b291a": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "arma": 0.174,
+   "camion": 0.296,
+   "musica": 0.064,
+   "pareja": 0.051,
+   "tecnologia": 0.082
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Rear View of Black Tonneau Cover on Black Ford Pickup Truck — DiamondBack Truck Covers — CC BY-SA 2.0 — https://www.flickr.com/photos/48067004@N04/10948677764",
+  "dibujo": "dibujos/gta/lb-84640b291a.jpg",
   "etiquetas": [
+   "arma",
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -896,43 +1623,76 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "camion",
   "w": 1024
  },
  "lb-865e82220f": {
   "archivo": "libres/coches/lamborghini-countach-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.015,
+   "deportivo": 0.935,
+   "dinero": 0.008,
+   "gasolinera": 0.004,
+   "militar": 0.019
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach LPI 800-4 IMG 8019.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LPI_800-4_IMG_8019.jpg",
+  "dibujo": "dibujos/gta/lb-865e82220f.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 869,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-86f4a7ab3a": {
   "archivo": "libres/coches/harley-davidson-motorcycle-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.002,
+   "helicoptero": 0.001,
+   "moto": 0.976,
+   "personas": 0.008,
+   "tecnologia": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "1975 Harley-Davidson Motorcycle with Evel Knievel Advertisement Hot Rod October 1974 — SenseiAlan — CC BY 2.0 — https://www.flickr.com/photos/91591049@N00/51341467214",
+  "dibujo": "dibujos/gta/lb-86f4a7ab3a.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 696,
+  "tema": "moto",
   "w": 1024
  },
  "lb-88c9fae262": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.885,
+   "coche": 0.013,
+   "deportivo": 0.039,
+   "gasolinera": 0.012,
+   "perro": 0.006
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "1984 F-150 Explorer from Mexico — Hugo-90 — CC BY 2.0 — https://www.flickr.com/photos/32109282@N00/4492163047",
+  "dibujo": "dibujos/gta/lb-88c9fae262.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -940,184 +1700,332 @@
   ],
   "fuente": "libre",
   "h": 744,
+  "tema": "camion",
   "w": 1023
  },
  "lb-8c18953960": {
   "archivo": "libres/coches/dodge-charger-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.017,
+   "coche": 0.035,
+   "deportivo": 0.739,
+   "pareja": 0.081,
+   "policia": 0.031
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger SRT8 (2015) 1X7A7417.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dodge_Charger_SRT8_(2015)_1X7A7417.jpg",
+  "dibujo": "dibujos/gta/lb-8c18953960.jpg",
   "etiquetas": [
    "charger",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 945,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-8dd6d728dd": {
   "archivo": "libres/coches/lamborghini-huracan-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.01,
+   "deportivo": 0.954,
+   "gasolinera": 0.004,
+   "militar": 0.007,
+   "pareja": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracán Tecnica 1X7A7430.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_Tecnica_1X7A7430.jpg",
+  "dibujo": "dibujos/gta/lb-8dd6d728dd.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 814,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-8ebefe2f09": {
   "archivo": "libres/coches/harley-davidson-motorcycle-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "ciencia": 0.001,
+   "deportivo": 0.004,
+   "helicoptero": 0.001,
+   "militar": 0.012,
+   "moto": 0.978
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Harley Davidson LiveWire right noBG.jpg — Auge=mit — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Harley_Davidson_LiveWire_right_noBG.jpg",
+  "dibujo": "dibujos/gta/lb-8ebefe2f09.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "moto",
   "w": 1920
  },
  "lb-8ec2d7715d": {
   "archivo": "libres/coches/dodge-charger-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.077,
+   "coche": 0.107,
+   "deportivo": 0.383,
+   "militar": 0.082,
+   "pareja": 0.07
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger — pyntofmyld — CC BY 2.0 — https://www.flickr.com/photos/84012662@N00/2687245282",
+  "dibujo": "dibujos/gta/lb-8ec2d7715d.jpg",
   "etiquetas": [
    "charger",
+   "coche",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 675,
+  "tema": "deportivo",
   "w": 1023
  },
  "lb-90f34a6c33": {
   "archivo": "libres/coches/lowrider-car-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.09,
+   "deportivo": 0.77,
+   "militar": 0.021,
+   "moto": 0.014,
+   "retrato": 0.014
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Moscow car show 2026-08-01 GAZ lowriders, red 06.jpg — Retired electrician — CC0 — https://commons.wikimedia.org/wiki/File:Moscow_car_show_2026-08-01_GAZ_lowriders,_red_06.jpg",
+  "dibujo": "dibujos/gta/lb-90f34a6c33.jpg",
   "etiquetas": [
    "car",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-91c49fc267": {
   "archivo": "libres/coches/harley-davidson-motorcycle-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "deportivo": 0.002,
+   "helicoptero": 0.001,
+   "militar": 0.009,
+   "moto": 0.977,
+   "movil": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Harley Davidson Motorcycle — born1945 — CC BY 2.0 — https://www.flickr.com/photos/12567713@N00/4483319232",
+  "dibujo": "dibujos/gta/lb-91c49fc267.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 760,
+  "tema": "moto",
   "w": 1024
  },
  "lb-97ed5fb7f1": {
   "archivo": "libres/coches/lamborghini-huracan-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.005,
+   "deportivo": 0.439,
+   "dinero": 0.003,
+   "militar": 0.005,
+   "policia": 0.54
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan Polizia Police — crash71100 — CC0 1.0 — https://www.flickr.com/photos/152930510@N02/47742402012",
+  "dibujo": "dibujos/gta/lb-97ed5fb7f1.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
-   "lamborghini"
+   "lamborghini",
+   "policia"
   ],
   "fuente": "libre",
   "h": 643,
+  "tema": "policia",
   "w": 1024
  },
  "lb-985ae881b2": {
   "archivo": "libres/coches/lamborghini-countach-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.015,
+   "deportivo": 0.94,
+   "dinero": 0.011,
+   "helicoptero": 0.005,
+   "militar": 0.007
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach LPI 800-4 IMG 8009.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LPI_800-4_IMG_8009.jpg",
+  "dibujo": "dibujos/gta/lb-985ae881b2.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 1089,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-99e71de4ae": {
   "archivo": "libres/coches/lowrider-car-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.013,
+   "coche": 0.169,
+   "deportivo": 0.652,
+   "gasolinera": 0.034,
+   "pareja": 0.055
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Moscow car show 2026-08-01 GAZ lowriders, red 04.jpg — Retired electrician — CC0 — https://commons.wikimedia.org/wiki/File:Moscow_car_show_2026-08-01_GAZ_lowriders,_red_04.jpg",
+  "dibujo": "dibujos/gta/lb-99e71de4ae.jpg",
   "etiquetas": [
    "car",
+   "coche",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 1313,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-9a096751fa": {
   "archivo": "libres/coches/dodge-charger-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.031,
+   "carretera": 0.025,
+   "coche": 0.411,
+   "deportivo": 0.397,
+   "militar": 0.028
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger Eté2016.jpg — PIERRE ANDRE LECLERCQ — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dodge_Charger_Et%C3%A92016.jpg",
+  "dibujo": "dibujos/gta/lb-9a096751fa.jpg",
   "etiquetas": [
    "charger",
+   "coche",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 1067,
+  "tema": "coche",
   "w": 1920
  },
  "lb-9a44cf8e63": {
   "archivo": "libres/coches/dodge-charger-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.296,
+   "deportivo": 0.492,
+   "gasolinera": 0.029,
+   "gato": 0.012,
+   "pareja": 0.088
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger, 1968 — Triple-green — CC BY 2.0 — https://www.flickr.com/photos/66451944@N03/52444479373",
+  "dibujo": "dibujos/gta/lb-9a44cf8e63.jpg",
   "etiquetas": [
    "charger",
+   "coche",
    "coches",
+   "deportivo",
    "dodge"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-9a45286ddd": {
   "archivo": "libres/coches/lamborghini-countach-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.012,
+   "deportivo": 0.96,
+   "dinero": 0.01,
+   "gasolinera": 0.002,
+   "pareja": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach LP500S IMG 4464.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP500S_IMG_4464.jpg",
+  "dibujo": "dibujos/gta/lb-9a45286ddd.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 817,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-a88849dc53": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.891,
+   "coche": 0.017,
+   "deportivo": 0.02,
+   "militar": 0.018,
+   "pareja": 0.016
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Ford F-150 (fourteenth generation) Rutesheimer Autoschau 2025 DSC 9231.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ford_F-150_(fourteenth_generation)_Rutesheimer_Autoschau_2025_DSC_9231.jpg",
+  "dibujo": "dibujos/gta/lb-a88849dc53.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -1125,14 +2033,25 @@
   ],
   "fuente": "libre",
   "h": 1283,
+  "tema": "camion",
   "w": 1920
  },
  "lb-ad8db989a8": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.819,
+   "coche": 0.016,
+   "deportivo": 0.049,
+   "gasolinera": 0.039,
+   "moto": 0.032
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "1978 Ford F-150 Ranger — dave_7 — CC BY 2.0 — https://www.flickr.com/photos/21612624@N00/11937192726",
+  "dibujo": "dibujos/gta/lb-ad8db989a8.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -1140,212 +2059,384 @@
   ],
   "fuente": "libre",
   "h": 682,
+  "tema": "camion",
   "w": 1023
  },
  "lb-b136fa3f35": {
   "archivo": "libres/coches/lowrider-car-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.056,
+   "coche": 0.373,
+   "deportivo": 0.292,
+   "gasolinera": 0.079,
+   "pareja": 0.081
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Moscow car show 2026-08-01 GAZ lowriders, red 08.jpg — Retired electrician — CC0 — https://commons.wikimedia.org/wiki/File:Moscow_car_show_2026-08-01_GAZ_lowriders,_red_08.jpg",
+  "dibujo": "dibujos/gta/lb-b136fa3f35.jpg",
   "etiquetas": [
    "car",
+   "coche",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "coche",
   "w": 1920
  },
  "lb-b1ac5234b9": {
   "archivo": "libres/coches/chevrolet-corvette-ov4.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.022,
+   "deportivo": 0.966,
+   "gasolinera": 0.001,
+   "gato": 0.001,
+   "pareja": 0.003
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "1970 Chevrolet Corvette Stingray Convertible V8 — Rutger van der Maar — CC BY 2.0 — https://www.flickr.com/photos/83468718@N06/52602331525",
+  "dibujo": "dibujos/gta/lb-b1ac5234b9.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 724,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-b23f11dbc9": {
   "archivo": "libres/coches/ferrari-testarossa-1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.012,
+   "deportivo": 0.925,
+   "dinero": 0.007,
+   "gasolinera": 0.006,
+   "volcan": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa 01.jpg — TTTNIS — Public domain — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_01.jpg",
+  "dibujo": "dibujos/gta/lb-b23f11dbc9.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 880,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-b2b23972b0": {
   "archivo": "libres/coches/lamborghini-huracan-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.02,
+   "deportivo": 0.866,
+   "dinero": 0.053,
+   "gasolinera": 0.012,
+   "militar": 0.008
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan, EMS 2024, Essen (P1032274).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan,_EMS_2024,_Essen_(P1032274).jpg",
+  "dibujo": "dibujos/gta/lb-b2b23972b0.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-b3f2b31692": {
   "archivo": "libres/coches/chevrolet-corvette-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.004,
+   "deportivo": 0.976,
+   "gasolinera": 0.002,
+   "militar": 0.004,
+   "pareja": 0.002
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Old/new Chevrolet Corvette rear — dave_7 — CC BY 2.0 — https://www.flickr.com/photos/21612624@N00/15123956336",
+  "dibujo": "dibujos/gta/lb-b3f2b31692.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-b540ef38e8": {
   "archivo": "libres/coches/chevrolet-corvette-6.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.007,
+   "deportivo": 0.982,
+   "gato": 0.001,
+   "militar": 0.003,
+   "pareja": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Chevrolet Corvette C3 Stingray IMG 3199.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C3_Stingray_IMG_3199.jpg",
+  "dibujo": "dibujos/gta/lb-b540ef38e8.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 1276,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-ba5871f1c6": {
   "archivo": "libres/coches/speedboat-miami-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "arte": 0.009,
+   "barco": 0.583,
+   "deporte": 0.007,
+   "monumento": 0.006,
+   "puerto": 0.367
+  },
+  "clip_v": 3,
   "consulta": "Speedboat Miami",
   "credito": "MSC Divina #Fiatatsea Fiat 500 at sea escorts speedboats — Tips For Travellers — CC BY 2.0 — https://www.flickr.com/photos/8327374@N02/11106874363",
+  "dibujo": "dibujos/gta/lb-ba5871f1c6.jpg",
   "etiquetas": [
+   "barco",
    "coches",
    "miami",
+   "puerto",
    "speedboat"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "barco",
   "w": 1024
  },
  "lb-bbbd9d325a": {
   "archivo": "libres/coches/chevrolet-corvette-4.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.373,
+   "deportivo": 0.578,
+   "gasolinera": 0.004,
+   "gato": 0.007,
+   "pareja": 0.02
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Chevrolet Corvette, Bj. 1963 (2017-06-11 Sp).JPG — Lothar Spurzem — CC BY-SA 2.0 de — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette,_Bj._1963_(2017-06-11_Sp).JPG",
+  "dibujo": "dibujos/gta/lb-bbbd9d325a.jpg",
   "etiquetas": [
    "chevrolet",
+   "coche",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-bfac89b8d8": {
   "archivo": "libres/coches/lamborghini-countach-ov3.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.017,
+   "deportivo": 0.965,
+   "dinero": 0.002,
+   "militar": 0.004,
+   "moto": 0.002
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "1988 Lamborghini Countach 5000QV, federal spec — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/11919400493",
+  "dibujo": "dibujos/gta/lb-bfac89b8d8.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 562,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-c2e4a539a0": {
   "archivo": "libres/coches/speedboat-miami-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "barco": 0.18,
+   "deportivo": 0.165,
+   "gasolinera": 0.033,
+   "militar": 0.064,
+   "puerto": 0.504
+  },
+  "clip_v": 3,
   "consulta": "Speedboat Miami",
   "credito": "Donzi Shelby — BrentOzar — CC BY-SA 2.0 — https://www.flickr.com/photos/56756426@N00/101872149",
+  "dibujo": "dibujos/gta/lb-c2e4a539a0.jpg",
   "etiquetas": [
+   "barco",
    "coches",
+   "deportivo",
    "miami",
+   "puerto",
    "speedboat"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "puerto",
   "w": 1024
  },
  "lb-c33a28a112": {
   "archivo": "libres/coches/dodge-charger-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.033,
+   "coche": 0.002,
+   "criminal": 0.002,
+   "deportivo": 0.013,
+   "policia": 0.945
+  },
+  "clip_v": 3,
   "consulta": "Dodge Charger",
   "credito": "Dodge Charger Michigan State Police car — Corvair Owner — CC BY-SA 2.0 — https://www.flickr.com/photos/59398780@N00/8490948848",
+  "dibujo": "dibujos/gta/lb-c33a28a112.jpg",
   "etiquetas": [
    "charger",
    "coches",
-   "dodge"
+   "dodge",
+   "policia"
   ],
   "fuente": "libre",
   "h": 678,
+  "tema": "policia",
   "w": 1023
  },
  "lb-c482406b49": {
   "archivo": "libres/coches/ford-mustang-muscle-car-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.006,
+   "coche": 0.044,
+   "deportivo": 0.857,
+   "pareja": 0.039,
+   "policia": 0.008
+  },
+  "clip_v": 3,
   "consulta": "Ford Mustang muscle car",
   "credito": "Mustang — Scott 97006 — CC BY 2.0 — https://www.flickr.com/photos/29487672@N07/14740179783",
+  "dibujo": "dibujos/gta/lb-c482406b49.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ford",
    "muscle",
    "mustang"
   ],
   "fuente": "libre",
   "h": 686,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-c6842f762e": {
   "archivo": "libres/coches/lowrider-car-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.32,
+   "deportivo": 0.088,
+   "pareja": 0.471,
+   "personas": 0.009,
+   "policia": 0.057
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Moscow car show 2026-08-01 GAZ lowriders, blue 09.jpg — Retired electrician — CC0 — https://commons.wikimedia.org/wiki/File:Moscow_car_show_2026-08-01_GAZ_lowriders,_blue_09.jpg",
+  "dibujo": "dibujos/gta/lb-c6842f762e.jpg",
   "etiquetas": [
    "car",
+   "coche",
    "coches",
-   "lowrider"
+   "lowrider",
+   "pareja"
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "pareja",
   "w": 1920
  },
  "lb-c806dc4eb8": {
   "archivo": "libres/coches/ford-mustang-muscle-car-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.015,
+   "deportivo": 0.03,
+   "gasolinera": 0.01,
+   "pareja": 0.043,
+   "policia": 0.877
+  },
+  "clip_v": 3,
   "consulta": "Ford Mustang muscle car",
   "credito": "Muscle — Arturo Hurtado — CC BY 2.0 — https://www.flickr.com/photos/63142286@N04/15953995413",
+  "dibujo": "dibujos/gta/lb-c806dc4eb8.jpg",
   "etiquetas": [
    "coches",
    "ford",
    "muscle",
-   "mustang"
+   "mustang",
+   "policia"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "policia",
   "w": 1024
  },
  "lb-c8fd1dc62f": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.766,
+   "coche": 0.136,
+   "deportivo": 0.039,
+   "militar": 0.01,
+   "moto": 0.007
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Ford F-150 truck — dave_7 — CC BY 2.0 — https://www.flickr.com/photos/21612624@N00/7306393350",
+  "dibujo": "dibujos/gta/lb-c8fd1dc62f.jpg",
   "etiquetas": [
+   "camion",
+   "coche",
    "coches",
    "ford",
    "pickup",
@@ -1353,99 +2444,178 @@
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "camion",
   "w": 1024
  },
  "lb-cf3901c20c": {
   "archivo": "libres/coches/chevrolet-corvette-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.005,
+   "coche": 0.028,
+   "deportivo": 0.921,
+   "militar": 0.016,
+   "pareja": 0.009
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Chevrolet Corvette, BAS 24, Brussels (P1170425-RR).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette,_BAS_24,_Brussels_(P1170425-RR).jpg",
+  "dibujo": "dibujos/gta/lb-cf3901c20c.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-d258718d87": {
   "archivo": "libres/coches/chevrolet-corvette-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.028,
+   "deportivo": 0.89,
+   "desierto": 0.012,
+   "militar": 0.01,
+   "pareja": 0.019
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Old/New Chevrolet Corvette — dave_7 — CC BY 2.0 — https://www.flickr.com/photos/21612624@N00/14955217369",
+  "dibujo": "dibujos/gta/lb-d258718d87.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-d3cd5d7b6a": {
   "archivo": "libres/coches/lamborghini-huracan-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.003,
+   "coche": 0.004,
+   "deportivo": 0.962,
+   "militar": 0.011,
+   "pareja": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Huracan",
   "credito": "Lamborghini Huracan STO 1X7A0297.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan_STO_1X7A0297.jpg",
+  "dibujo": "dibujos/gta/lb-d3cd5d7b6a.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "huracan",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 945,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-dd19f38816": {
   "archivo": "libres/coches/lamborghini-countach-ov5.jpg",
   "categoria": "coches",
+  "clip": {
+   "barco": 0.022,
+   "camion": 0.041,
+   "coche": 0.031,
+   "deportivo": 0.764,
+   "policia": 0.027
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach interior — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/9279572324",
+  "dibujo": "dibujos/gta/lb-dd19f38816.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-de1c723612": {
   "archivo": "libres/coches/lowrider-car-ov6.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.039,
+   "coche": 0.388,
+   "deportivo": 0.33,
+   "pareja": 0.042,
+   "policia": 0.031
+  },
+  "clip_v": 3,
   "consulta": "Lowrider car",
   "credito": "Hydraulic Lowrider Car Chevrolet Impala - Helldorado Days Parade 2024 — TDelCoro — CC BY-SA 2.0 — https://www.flickr.com/photos/45549579@N05/53752065775",
+  "dibujo": "dibujos/gta/lb-de1c723612.jpg",
   "etiquetas": [
    "car",
+   "coche",
    "coches",
+   "deportivo",
    "lowrider"
   ],
   "fuente": "libre",
   "h": 435,
+  "tema": "coche",
   "w": 1024
  },
  "lb-e059fffab6": {
   "archivo": "libres/coches/ford-mustang-muscle-car-ov1.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.232,
+   "deportivo": 0.574,
+   "moto": 0.029,
+   "pareja": 0.023,
+   "policia": 0.031
+  },
+  "clip_v": 3,
   "consulta": "Ford Mustang muscle car",
   "credito": "Ford Mustang Muscle Car — netwalkerz_net — CC BY 2.0 — https://www.flickr.com/photos/7253388@N02/1240929260",
+  "dibujo": "dibujos/gta/lb-e059fffab6.jpg",
   "etiquetas": [
+   "coche",
    "coches",
+   "deportivo",
    "ford",
    "muscle",
    "mustang"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-e6d254dbdb": {
   "archivo": "libres/coches/pickup-truck-ford-f-150-3.jpg",
   "categoria": "coches",
+  "clip": {
+   "camion": 0.944,
+   "coche": 0.005,
+   "deportivo": 0.01,
+   "gasolinera": 0.019,
+   "militar": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Pickup truck Ford F-150",
   "credito": "Ford F-150 (thirteenth generation) IMG 0504.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ford_F-150_(thirteenth_generation)_IMG_0504.jpg",
+  "dibujo": "dibujos/gta/lb-e6d254dbdb.jpg",
   "etiquetas": [
+   "camion",
    "coches",
    "ford",
    "pickup",
@@ -1453,92 +2623,159 @@
   ],
   "fuente": "libre",
   "h": 1139,
+  "tema": "camion",
   "w": 1920
  },
  "lb-f136e1864c": {
   "archivo": "libres/coches/ferrari-testarossa-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "deportivo": 0.791,
+   "dinero": 0.018,
+   "interior": 0.033,
+   "pareja": 0.027,
+   "personas": 0.04
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa Toulouse.jpg — Handelsgeselschaft — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_Toulouse.jpg",
+  "dibujo": "dibujos/gta/lb-f136e1864c.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-f5eccb47c7": {
   "archivo": "libres/coches/harley-davidson-motorcycle-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.007,
+   "criminal": 0.003,
+   "gasolinera": 0.005,
+   "moto": 0.967,
+   "pareja": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "1935 Harley Davidson motorcycle — Seattle Municipal Archives — CC BY 2.0 — https://www.flickr.com/photos/24256351@N04/4114926141",
+  "dibujo": "dibujos/gta/lb-f5eccb47c7.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 737,
+  "tema": "moto",
   "w": 1024
  },
  "lb-f62824a720": {
   "archivo": "libres/coches/lamborghini-countach-ov2.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.019,
+   "deportivo": 0.924,
+   "dinero": 0.008,
+   "pareja": 0.014,
+   "personas": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Lamborghini Countach",
   "credito": "Lamborghini Countach — contri — CC BY-SA 2.0 — https://www.flickr.com/photos/8179007@N02/8014529631",
+  "dibujo": "dibujos/gta/lb-f62824a720.jpg",
   "etiquetas": [
    "coches",
    "countach",
+   "deportivo",
    "lamborghini"
   ],
   "fuente": "libre",
   "h": 680,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-f73b177702": {
   "archivo": "libres/coches/ferrari-testarossa-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "coche": 0.01,
+   "deportivo": 0.964,
+   "gato": 0.003,
+   "pareja": 0.008,
+   "volcan": 0.003
+  },
+  "clip_v": 3,
   "consulta": "Ferrari Testarossa",
   "credito": "Ferrari Testarossa 2.jpg — Calreyn88 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_2.jpg",
+  "dibujo": "dibujos/gta/lb-f73b177702.jpg",
   "etiquetas": [
    "coches",
+   "deportivo",
    "ferrari",
    "testarossa"
   ],
   "fuente": "libre",
   "h": 1158,
+  "tema": "deportivo",
   "w": 1920
  },
  "lb-f9cb3d9048": {
   "archivo": "libres/coches/harley-davidson-motorcycle-2.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.002,
+   "gasolinera": 0.003,
+   "militar": 0.021,
+   "moto": 0.904,
+   "policia": 0.048
+  },
+  "clip_v": 3,
   "consulta": "Harley-Davidson motorcycle",
   "credito": "Harley-Davidson Electra Glide - 236.jpg — Another one of my pictures:\n\n\n\nThis photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image.\n\n\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract. — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Harley-Davidson_Electra_Glide_-_236.jpg",
+  "dibujo": "dibujos/gta/lb-f9cb3d9048.jpg",
   "etiquetas": [
    "coches",
    "davidson",
    "harley",
+   "moto",
    "motorcycle"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "moto",
   "w": 1920
  },
  "lb-fd57149596": {
   "archivo": "libres/coches/chevrolet-corvette-5.jpg",
   "categoria": "coches",
+  "clip": {
+   "accion": 0.001,
+   "coche": 0.043,
+   "deportivo": 0.946,
+   "militar": 0.002,
+   "pareja": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Chevrolet Corvette",
   "credito": "Chevrolet Corvette Kulmbach -20220626-RM-122539.jpg — Ermell — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_Kulmbach_-20220626-RM-122539.jpg",
+  "dibujo": "dibujos/gta/lb-fd57149596.jpg",
   "etiquetas": [
    "chevrolet",
    "coches",
-   "corvette"
+   "corvette",
+   "deportivo"
   ],
   "fuente": "libre",
   "h": 1079,
+  "tema": "deportivo",
   "w": 1920
  }
 }

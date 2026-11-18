@@ -2,52 +2,98 @@
  "lb-054ad527f2": {
   "archivo": "libres/objetos/poker-chips-casino-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "deporte": 0.1,
+   "dinero": 0.557,
+   "interior": 0.024,
+   "joyas": 0.031,
+   "monumento": 0.087
+  },
+  "clip_v": 3,
   "consulta": "Poker chips casino",
   "credito": "poker chips — V1LL14N — CC BY 2.0 — https://www.flickr.com/photos/9555206@N04/2235120304",
+  "dibujo": "dibujos/gta/lb-054ad527f2.jpg",
   "etiquetas": [
    "casino",
    "chips",
+   "dinero",
    "objetos",
    "poker"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "dinero",
   "w": 1024
  },
  "lb-07b62bc71a": {
   "archivo": "libres/objetos/vintage-television-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.048,
+   "ciencia": 0.073,
+   "interior": 0.185,
+   "movil": 0.279,
+   "tecnologia": 0.181
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "20141226 28 Vintage Television — davidwilson1949 — CC BY 2.0 — https://www.flickr.com/photos/32693718@N07/25962706434",
+  "dibujo": "dibujos/gta/lb-07b62bc71a.jpg",
   "etiquetas": [
+   "interior",
+   "movil",
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "movil",
   "w": 1024
  },
  "lb-0d3be10e6e": {
   "archivo": "libres/objetos/cigar-smoke-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.027,
+   "criminal": 0.595,
+   "musica": 0.15,
+   "pareja": 0.028,
+   "tienda": 0.046
+  },
+  "clip_v": 3,
   "consulta": "Cigar smoke",
   "credito": "Cigar, smoking tobacco, cut tobacco, cigarettes, Raleigh O&R [back] — Boston Public Library — CC BY 2.0 — https://www.flickr.com/photos/24029425@N06/9443177251",
+  "dibujo": "dibujos/gta/lb-0d3be10e6e.jpg",
   "etiquetas": [
    "cigar",
+   "criminal",
+   "musica",
    "objetos",
    "smoke"
   ],
   "fuente": "libre",
   "h": 529,
+  "tema": "criminal",
   "w": 1024
  },
  "lb-0d535c2643": {
   "archivo": "libres/objetos/neon-open-sign-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.975,
+   "club": 0.005,
+   "comida": 0.005,
+   "noche": 0.001,
+   "tienda": 0.01
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "A vibrant blue and red neon “open” sign inside of a restaurant’s window, shot at night. — James Huff — CC0 1.0 — https://wordpress.org/photos/photo/298671c58c/",
+  "dibujo": "dibujos/gta/lb-0d535c2643.jpg",
   "etiquetas": [
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -55,71 +101,130 @@
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "cartel",
   "w": 1920
  },
  "lb-0e36467610": {
   "archivo": "libres/objetos/car-keys-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.163,
+   "ciencia": 0.011,
+   "criminal": 0.675,
+   "dinero": 0.006,
+   "militar": 0.088
+  },
+  "clip_v": 3,
   "consulta": "Car keys",
   "credito": "Car Keys on Pounds — Images_of_Money — CC BY 2.0 — https://www.flickr.com/photos/59937401@N07/5856939281",
+  "dibujo": "dibujos/gta/lb-0e36467610.jpg",
   "etiquetas": [
+   "arma",
    "car",
+   "criminal",
    "keys",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "criminal",
   "w": 1024
  },
  "lb-12b5fdc554": {
   "archivo": "libres/objetos/cigar-smoke-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.037,
+   "cartel": 0.12,
+   "dinero": 0.086,
+   "joyas": 0.226,
+   "musica": 0.235
+  },
+  "clip_v": 3,
   "consulta": "Cigar smoke",
   "credito": "Annual cigar smoking day at the office — Myra's Journal by Myra Alberti — CC BY-SA 2.0 — https://www.flickr.com/photos/82930663@N08/10764978935",
+  "dibujo": "dibujos/gta/lb-12b5fdc554.jpg",
   "etiquetas": [
+   "cartel",
    "cigar",
+   "joyas",
+   "musica",
    "objetos",
    "smoke"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "musica",
   "w": 1024
  },
  "lb-143c20e9f0": {
   "archivo": "libres/objetos/smartphone-social-media-5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "agua": 0.0,
+   "desierto": 0.0,
+   "montana": 0.0,
+   "movil": 1.0,
+   "tecnologia": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Blackview A60 Smartphone Android mobile phone front face logged in screen.jpg — Acabashi — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_front_face_logged_in_screen.jpg",
+  "dibujo": "dibujos/gta/lb-143c20e9f0.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
    "social"
   ],
   "fuente": "libre",
   "h": 3432,
+  "tema": "movil",
   "w": 1920
  },
  "lb-1781190761": {
   "archivo": "libres/objetos/car-keys-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.306,
+   "ciencia": 0.098,
+   "joyas": 0.054,
+   "militar": 0.12,
+   "musica": 0.079
+  },
+  "clip_v": 3,
   "consulta": "Car keys",
   "credito": "Close up Car key — Images_of_Money — CC BY 2.0 — https://www.flickr.com/photos/59937401@N07/5857485174",
+  "dibujo": "dibujos/gta/lb-1781190761.jpg",
   "etiquetas": [
+   "arma",
    "car",
    "keys",
+   "militar",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "arma",
   "w": 1024
  },
  "lb-1b1248c5f9": {
   "archivo": "libres/objetos/neon-open-sign-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.793,
+   "club": 0.023,
+   "comida": 0.032,
+   "noche": 0.033,
+   "tienda": 0.024
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "cool man in blue suit looking like a business mogul next to neon open sign — jacobisamodel — CC BY 2.0 — https://www.flickr.com/photos/145100595@N04/28235687542",
+  "dibujo": "dibujos/gta/lb-1b1248c5f9.jpg",
   "etiquetas": [
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -127,14 +232,26 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-1cff7c72f1": {
   "archivo": "libres/objetos/smartphone-social-media-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.03,
+   "ciencia": 0.055,
+   "comida": 0.647,
+   "espacio": 0.156,
+   "tormenta": 0.02
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Guinness QR cup: A first of it's kind, product-activated QR code (best viewed large) — dullhunk — CC BY 2.0 — https://www.flickr.com/photos/14829735@N00/7223045392",
+  "dibujo": "dibujos/gta/lb-1cff7c72f1.jpg",
   "etiquetas": [
+   "comida",
+   "espacio",
    "media",
    "objetos",
    "smartphone",
@@ -142,14 +259,27 @@
   ],
   "fuente": "libre",
   "h": 721,
+  "tema": "comida",
   "w": 1024
  },
  "lb-1e5f1e1077": {
   "archivo": "libres/objetos/neon-open-sign-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.367,
+   "club": 0.178,
+   "comida": 0.055,
+   "gasolinera": 0.133,
+   "noche": 0.053
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "cool man in blue suit powerfully demonstrating the value of advertising next to neon open signs — jacobisamodel — CC BY 2.0 — https://www.flickr.com/photos/145100595@N04/28235689482",
+  "dibujo": "dibujos/gta/lb-1e5f1e1077.jpg",
   "etiquetas": [
+   "cartel",
+   "club",
+   "gasolinera",
    "neon",
    "objetos",
    "open",
@@ -157,72 +287,129 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-2631ae05e6": {
   "archivo": "libres/objetos/vintage-television-3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.017,
+   "movil": 0.87,
+   "musica": 0.035,
+   "retrato": 0.008,
+   "tecnologia": 0.027
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage Wood Television Savings Bank, Likely Handcrafted, Measures 7-3-8 Inches Tall (15388600058).jpg — Joe Haupt from USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Vintage_Wood_Television_Savings_Bank,_Likely_Handcrafted,_Measures_7-3-8_Inches_Tall_(15388600058).jpg",
+  "dibujo": "dibujos/gta/lb-2631ae05e6.jpg",
   "etiquetas": [
+   "movil",
    "objetos",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 2568,
+  "tema": "movil",
   "w": 1920
  },
  "lb-294fc12c57": {
   "archivo": "libres/objetos/vintage-television-5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.073,
+   "militar": 0.033,
+   "movil": 0.437,
+   "policia": 0.037,
+   "tecnologia": 0.238
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage Casio Minature LCD Television, Model JY-70, Made in Japan.jpg — Joe Haupt — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Vintage_Casio_Minature_LCD_Television,_Model_JY-70,_Made_in_Japan.jpg",
+  "dibujo": "dibujos/gta/lb-294fc12c57.jpg",
   "etiquetas": [
+   "movil",
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 1262,
+  "tema": "movil",
   "w": 1920
  },
  "lb-29d4c4b686": {
   "archivo": "libres/objetos/poker-chips-casino-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "deporte": 0.073,
+   "dinero": 0.634,
+   "interior": 0.077,
+   "joyas": 0.026,
+   "monumento": 0.023
+  },
+  "clip_v": 3,
   "consulta": "Poker chips casino",
   "credito": "Poker Night — chrischappelear — CC BY 2.0 — https://www.flickr.com/photos/36447327@N00/114781228",
+  "dibujo": "dibujos/gta/lb-29d4c4b686.jpg",
   "etiquetas": [
    "casino",
    "chips",
+   "dinero",
    "objetos",
    "poker"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "dinero",
   "w": 1024
  },
  "lb-2c80ba648c": {
   "archivo": "libres/objetos/neon-open-sign-4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "calle": 0.209,
+   "cartel": 0.034,
+   "monumento": 0.033,
+   "noche": 0.649,
+   "tienda": 0.019
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "Kabukicho red gate and colorful neon street signs at night, Shinjuku, Tokyo, Japan.jpg — Basile Morin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Kabukicho_red_gate_and_colorful_neon_street_signs_at_night,_Shinjuku,_Tokyo,_Japan.jpg",
+  "dibujo": "dibujos/gta/lb-2c80ba648c.jpg",
   "etiquetas": [
+   "calle",
    "neon",
+   "noche",
    "objetos",
    "open",
    "sign"
   ],
   "fuente": "libre",
   "h": 1711,
+  "tema": "noche",
   "w": 1920
  },
  "lb-2fe0070eda": {
   "archivo": "libres/objetos/neon-open-sign-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.772,
+   "club": 0.024,
+   "comida": 0.046,
+   "gasolinera": 0.021,
+   "tienda": 0.07
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "red neon “open sign” storefront — None — CC0 1.0 — https://www.rawpixel.com/image/3285990/free-photo-image-cafe-city-night-neon-light",
+  "dibujo": "dibujos/gta/lb-2fe0070eda.jpg",
   "etiquetas": [
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -230,14 +417,25 @@
   ],
   "fuente": "libre",
   "h": 698,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-334833a6dd": {
   "archivo": "libres/objetos/neon-open-sign-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.817,
+   "criminal": 0.011,
+   "gasolinera": 0.016,
+   "musica": 0.014,
+   "tienda": 0.068
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "IMG_1165-neon-open-sign — Yotoen — CC BY 2.0 — https://www.flickr.com/photos/31474385@N02/6866428974",
+  "dibujo": "dibujos/gta/lb-334833a6dd.jpg",
   "etiquetas": [
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -245,57 +443,106 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-361685fc2e": {
   "archivo": "libres/objetos/neon-open-sign-2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "calle": 0.105,
+   "deporte": 0.009,
+   "monumento": 0.01,
+   "noche": 0.833,
+   "tienda": 0.008
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "Colorful neon street signs in Kabukichō, Shinjuku, Tokyo.jpg — Basile Morin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Colorful_neon_street_signs_in_Kabukich%C5%8D,_Shinjuku,_Tokyo.jpg",
+  "dibujo": "dibujos/gta/lb-361685fc2e.jpg",
   "etiquetas": [
+   "calle",
    "neon",
+   "noche",
    "objetos",
    "open",
    "sign"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "noche",
   "w": 1920
  },
  "lb-364be4d764": {
   "archivo": "libres/objetos/cigar-smoke-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.135,
+   "ciencia": 0.11,
+   "gasolinera": 0.068,
+   "joyas": 0.108,
+   "musica": 0.116
+  },
+  "clip_v": 3,
   "consulta": "Cigar smoke",
   "credito": "Cigar, smoking tobacco, cut tobacco, cigarettes, Raleigh O&R [front] — Boston Public Library — CC BY 2.0 — https://www.flickr.com/photos/24029425@N06/9443177243",
+  "dibujo": "dibujos/gta/lb-364be4d764.jpg",
   "etiquetas": [
+   "cartel",
+   "ciencia",
    "cigar",
+   "musica",
    "objetos",
    "smoke"
   ],
   "fuente": "libre",
   "h": 535,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-36dddd4533": {
   "archivo": "libres/objetos/sneakers-collection-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.062,
+   "caiman": 0.627,
+   "dinero": 0.042,
+   "helicoptero": 0.033,
+   "militar": 0.042
+  },
+  "clip_v": 3,
   "consulta": "Sneakers collection",
   "credito": "Sneakers collection show — Tnisamante — CC BY-SA 2.0 — https://www.flickr.com/photos/95027552@N02/32252626534",
+  "dibujo": "dibujos/gta/lb-36dddd4533.jpg",
   "etiquetas": [
+   "caiman",
    "collection",
    "objetos",
    "sneakers"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "caiman",
   "w": 1024
  },
  "lb-3f7ce2f00a": {
   "archivo": "libres/objetos/smartphone-social-media-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.319,
+   "ciencia": 0.132,
+   "cohete": 0.029,
+   "criminal": 0.185,
+   "musica": 0.085
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Live from the streets — Go-tea 郭天 — CC BY 2.0 — https://www.flickr.com/photos/131814204@N04/43006614802",
+  "dibujo": "dibujos/gta/lb-3f7ce2f00a.jpg",
   "etiquetas": [
+   "arma",
+   "ciencia",
+   "criminal",
    "media",
    "objetos",
    "smartphone",
@@ -303,171 +550,312 @@
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "arma",
   "w": 1024
  },
  "lb-406a6785e3": {
   "archivo": "libres/objetos/vintage-television-4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "accion": 0.029,
+   "ciencia": 0.054,
+   "movil": 0.05,
+   "musica": 0.036,
+   "tecnologia": 0.622
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "A woman adjusts a vintage television on a wooden table in a warm, inviting room.jpg — Shixart1985 — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:A_woman_adjusts_a_vintage_television_on_a_wooden_table_in_a_warm,_inviting_room.jpg",
+  "dibujo": "dibujos/gta/lb-406a6785e3.jpg",
   "etiquetas": [
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 2886,
+  "tema": "tecnologia",
   "w": 1920
  },
  "lb-409904e5a0": {
   "archivo": "libres/objetos/vintage-television-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.045,
+   "ciencia": 0.105,
+   "movil": 0.082,
+   "musica": 0.229,
+   "tecnologia": 0.284
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage Television Collection - Motorola Porthole Suitcase 7-Inch Television Set, Model 7VT5RB, Leatherette Covered Wood, Uses Electrostatic Deflection, Missing Antenna Housed in Cover (Typical of These Sets), Circa 1949 — France1978 — CC BY-SA 2.0 — https://www.flickr.com/photos/51764518@N02/32925911443",
+  "dibujo": "dibujos/gta/lb-409904e5a0.jpg",
   "etiquetas": [
+   "ciencia",
+   "musica",
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 794,
+  "tema": "tecnologia",
   "w": 1024
  },
  "lb-4495aed589": {
   "archivo": "libres/objetos/car-keys-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.174,
+   "coche": 0.083,
+   "helicoptero": 0.079,
+   "militar": 0.074,
+   "moto": 0.125
+  },
+  "clip_v": 3,
   "consulta": "Car keys",
   "credito": "Car Key — Sean MacEntee — CC BY 2.0 — https://www.flickr.com/photos/18090920@N07/5657719155",
+  "dibujo": "dibujos/gta/lb-4495aed589.jpg",
   "etiquetas": [
+   "arma",
    "car",
    "keys",
+   "moto",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "arma",
   "w": 1024
  },
  "lb-44bea15037": {
   "archivo": "libres/objetos/briefcase-cash-2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.103,
+   "coche": 0.062,
+   "dinero": 0.089,
+   "militar": 0.157,
+   "policia": 0.054
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "July 2016 D.B. Cooper Plane Ticket (28379315406).jpg — Federal Bureau of Investigation (FBI) — Public domain — https://commons.wikimedia.org/wiki/File:July_2016_D.B._Cooper_Plane_Ticket_(28379315406).jpg",
+  "dibujo": "dibujos/gta/lb-44bea15037.jpg",
   "etiquetas": [
+   "arma",
    "briefcase",
    "cash",
+   "militar",
    "objetos"
   ],
   "fuente": "libre",
   "h": 1095,
+  "tema": "militar",
   "w": 1920
  },
  "lb-45293eaf64": {
   "archivo": "libres/objetos/gold-chain-jewelry-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.012,
+   "joyas": 0.899,
+   "musica": 0.027,
+   "puerto": 0.004,
+   "retrato": 0.009
+  },
+  "clip_v": 3,
   "consulta": "Gold chain jewelry",
   "credito": "Fearless — Saucy Salad — CC BY 2.0 — https://www.flickr.com/photos/34048699@N07/4236752095",
+  "dibujo": "dibujos/gta/lb-45293eaf64.jpg",
   "etiquetas": [
    "chain",
    "gold",
    "jewelry",
+   "joyas",
    "objetos"
   ],
   "fuente": "libre",
   "h": 681,
+  "tema": "joyas",
   "w": 1024
  },
  "lb-47529d95dd": {
   "archivo": "libres/objetos/briefcase-cash-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "barco": 0.003,
+   "ciencia": 0.004,
+   "dinero": 0.958,
+   "interior": 0.006,
+   "militar": 0.003
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "IMG_8005.JPG — ryanmshea — CC BY 2.0 — https://www.flickr.com/photos/34163650@N00/341714428",
+  "dibujo": "dibujos/gta/lb-47529d95dd.jpg",
   "etiquetas": [
    "briefcase",
    "cash",
+   "dinero",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "dinero",
   "w": 1024
  },
  "lb-47bf994393": {
   "archivo": "libres/objetos/vintage-television-2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.022,
+   "ciencia": 0.043,
+   "interior": 0.09,
+   "movil": 0.067,
+   "tecnologia": 0.626
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "A Vintage Television Set.jpg — Naula Ayisabun Aningore — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:A_Vintage_Television_Set.jpg",
+  "dibujo": "dibujos/gta/lb-47bf994393.jpg",
   "etiquetas": [
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 2763,
+  "tema": "tecnologia",
   "w": 1920
  },
  "lb-4a4ad3c64c": {
   "archivo": "libres/objetos/smartphone-social-media-1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "club": 0.019,
+   "fiesta": 0.005,
+   "interior": 0.013,
+   "movil": 0.668,
+   "tecnologia": 0.257
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Social media addiction.jpg — Doctorxgc — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Social_media_addiction.jpg",
+  "dibujo": "dibujos/gta/lb-4a4ad3c64c.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
-   "social"
+   "social",
+   "tecnologia"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "movil",
   "w": 1024
  },
  "lb-5207343ab0": {
   "archivo": "libres/objetos/car-keys-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.174,
+   "coche": 0.083,
+   "helicoptero": 0.079,
+   "militar": 0.074,
+   "moto": 0.125
+  },
+  "clip_v": 3,
   "consulta": "Car keys",
   "credito": "car key — Sean MacEntee — CC BY 2.0 — https://www.flickr.com/photos/18090920@N07/5644450187",
+  "dibujo": "dibujos/gta/lb-5207343ab0.jpg",
   "etiquetas": [
+   "arma",
    "car",
    "keys",
+   "moto",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "arma",
   "w": 1024
  },
  "lb-561c8c9f73": {
   "archivo": "libres/objetos/poker-chips-casino-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "caiman": 0.05,
+   "deporte": 0.314,
+   "interior": 0.046,
+   "movil": 0.149,
+   "retrato": 0.058
+  },
+  "clip_v": 3,
   "consulta": "Poker chips casino",
   "credito": "Playing Poker — Images_of_Money — CC BY 2.0 — https://www.flickr.com/photos/59937401@N07/5857289885",
+  "dibujo": "dibujos/gta/lb-561c8c9f73.jpg",
   "etiquetas": [
    "casino",
    "chips",
+   "deporte",
+   "movil",
    "objetos",
    "poker"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-6367c91aca": {
   "archivo": "libres/objetos/sneakers-collection-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "camion": 0.08,
+   "comida": 0.059,
+   "desierto": 0.061,
+   "dinero": 0.273,
+   "personas": 0.192
+  },
+  "clip_v": 3,
   "consulta": "Sneakers collection",
   "credito": "Sneakers collection show — Tnisamante — CC BY-SA 2.0 — https://www.flickr.com/photos/95027552@N02/32715763240",
+  "dibujo": "dibujos/gta/lb-6367c91aca.jpg",
   "etiquetas": [
    "collection",
+   "dinero",
    "objetos",
+   "personas",
    "sneakers"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "dinero",
   "w": 1024
  },
  "lb-6c0fc30b7f": {
   "archivo": "libres/objetos/neon-open-sign-6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.017,
+   "calle": 0.541,
+   "cartel": 0.209,
+   "club": 0.049,
+   "tienda": 0.091
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "Neon Sign Museum.jpg — Oficial K — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Neon_Sign_Museum.jpg",
+  "dibujo": "dibujos/gta/lb-6c0fc30b7f.jpg",
   "etiquetas": [
+   "calle",
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -475,28 +863,52 @@
   ],
   "fuente": "libre",
   "h": 2550,
+  "tema": "calle",
   "w": 1920
  },
  "lb-6db2549939": {
   "archivo": "libres/objetos/briefcase-cash-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.012,
+   "ciencia": 0.183,
+   "monumento": 0.013,
+   "musica": 0.227,
+   "personas": 0.481
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "Tiatr NOVI DIXA — joegoauktiatr15 — CC BY-SA 2.0 — https://www.flickr.com/photos/89435359@N03/8140786161",
+  "dibujo": "dibujos/gta/lb-6db2549939.jpg",
   "etiquetas": [
    "briefcase",
    "cash",
-   "objetos"
+   "ciencia",
+   "musica",
+   "objetos",
+   "personas"
   ],
   "fuente": "libre",
   "h": 576,
+  "tema": "personas",
   "w": 1024
  },
  "lb-74c541ef65": {
   "archivo": "libres/objetos/neon-open-sign-1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.987,
+   "club": 0.007,
+   "noche": 0.003,
+   "tienda": 0.001,
+   "volcan": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "Boulevard Hotel (Neon sign), Miami Beach.jpg — Photograph:  Radomianin — Public domain — https://commons.wikimedia.org/wiki/File:Boulevard_Hotel_(Neon_sign),_Miami_Beach.jpg",
+  "dibujo": "dibujos/gta/lb-74c541ef65.jpg",
   "etiquetas": [
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -504,302 +916,548 @@
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "cartel",
   "w": 1920
  },
  "lb-74dd0ca232": {
   "archivo": "libres/objetos/neon-open-sign-3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "calle": 0.119,
+   "club": 0.031,
+   "monumento": 0.138,
+   "noche": 0.602,
+   "tienda": 0.035
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "Buildings with colorful neon street signs at blue hour, Shinjuku, Tokyo.jpg — Basile Morin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Buildings_with_colorful_neon_street_signs_at_blue_hour,_Shinjuku,_Tokyo.jpg",
+  "dibujo": "dibujos/gta/lb-74dd0ca232.jpg",
   "etiquetas": [
+   "calle",
+   "monumento",
    "neon",
+   "noche",
    "objetos",
    "open",
    "sign"
   ],
   "fuente": "libre",
   "h": 1536,
+  "tema": "noche",
   "w": 1920
  },
  "lb-76c3cb8965": {
   "archivo": "libres/objetos/briefcase-cash-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "barco": 0.004,
+   "camion": 0.003,
+   "ciencia": 0.005,
+   "dinero": 0.96,
+   "interior": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "Banknotes - Credit to https://www.semtrio.com/ — Semtrio — CC BY 2.0 — https://www.flickr.com/photos/163837264@N07/44290747382",
+  "dibujo": "dibujos/gta/lb-76c3cb8965.jpg",
   "etiquetas": [
    "briefcase",
    "cash",
+   "dinero",
    "objetos"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "dinero",
   "w": 1024
  },
  "lb-7934581041": {
   "archivo": "libres/objetos/smartphone-social-media-4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.001,
+   "cohete": 0.001,
+   "movil": 0.994,
+   "musica": 0.001,
+   "tecnologia": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Blackview A60 Smartphone Android mobile phone back face.jpg — Acabashi — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_back_face.jpg",
+  "dibujo": "dibujos/gta/lb-7934581041.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
    "social"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "movil",
   "w": 1920
  },
  "lb-7a1c9d39d4": {
   "archivo": "libres/objetos/briefcase-cash-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "deporte": 0.006,
+   "espacio": 0.014,
+   "fiesta": 0.005,
+   "musica": 0.141,
+   "personas": 0.817
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "1st place winners -- $10,000 CASH — gen13x — CC BY-SA 2.0 — https://www.flickr.com/photos/46587703@N04/5903247258",
+  "dibujo": "dibujos/gta/lb-7a1c9d39d4.jpg",
   "etiquetas": [
    "briefcase",
    "cash",
-   "objetos"
+   "musica",
+   "objetos",
+   "personas"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "personas",
   "w": 1024
  },
  "lb-7d161699d1": {
   "archivo": "libres/objetos/briefcase-cash-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.18,
+   "criminal": 0.064,
+   "movil": 0.05,
+   "tecnologia": 0.167,
+   "volcan": 0.148
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "The future comes in small packages — ₡ґǘșϯγ Ɗᶏ Ⱪᶅṏⱳդ — CC0 1.0 — https://www.flickr.com/photos/148598741@N02/53436091904",
+  "dibujo": "dibujos/gta/lb-7d161699d1.jpg",
   "etiquetas": [
+   "arte",
    "briefcase",
    "cash",
-   "objetos"
+   "objetos",
+   "tecnologia",
+   "volcan"
   ],
   "fuente": "libre",
   "h": 581,
+  "tema": "arte",
   "w": 1024
  },
  "lb-7f4a8ec69b": {
   "archivo": "libres/objetos/smartphone-social-media-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.009,
+   "comida": 0.002,
+   "movil": 0.948,
+   "musica": 0.004,
+   "tecnologia": 0.012
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Welcome to Twitter — freestocks.org — CC0 1.0 — https://www.flickr.com/photos/135396164@N05/25314591330",
+  "dibujo": "dibujos/gta/lb-7f4a8ec69b.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
    "social"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "movil",
   "w": 1024
  },
  "lb-84cb390c1f": {
   "archivo": "libres/objetos/briefcase-cash-1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "avion": 0.059,
+   "militar": 0.064,
+   "musica": 0.429,
+   "pareja": 0.082,
+   "tecnologia": 0.128
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "Desperate times lead to adaptable teams (8608277).jpg — U.S. Air Force AFCENT by Staff Sgt. Devin Rumbaugh — Public domain — https://commons.wikimedia.org/wiki/File:Desperate_times_lead_to_adaptable_teams_(8608277).jpg",
+  "dibujo": "dibujos/gta/lb-84cb390c1f.jpg",
   "etiquetas": [
    "briefcase",
    "cash",
-   "objetos"
+   "musica",
+   "objetos",
+   "tecnologia"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "musica",
   "w": 1920
  },
  "lb-87fc0fc2e2": {
   "archivo": "libres/objetos/sneakers-collection-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.073,
+   "ciencia": 0.057,
+   "deporte": 0.109,
+   "interior": 0.197,
+   "tienda": 0.191
+  },
+  "clip_v": 3,
   "consulta": "Sneakers collection",
   "credito": "Oshima Yuko Festival: Sneaker Collection — Dick Thomas Johnson — CC BY 2.0 — https://www.flickr.com/photos/31029865@N06/20466203182",
+  "dibujo": "dibujos/gta/lb-87fc0fc2e2.jpg",
   "etiquetas": [
    "collection",
+   "deporte",
+   "interior",
    "objetos",
-   "sneakers"
+   "sneakers",
+   "tienda"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "interior",
   "w": 1024
  },
  "lb-8cf11c67ba": {
   "archivo": "libres/objetos/vintage-television-1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "accion": 0.056,
+   "camion": 0.053,
+   "ciencia": 0.061,
+   "movil": 0.041,
+   "tecnologia": 0.394
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage television (Unsplash).jpg — Sven Scheuermeier sveninho — CC0 — https://commons.wikimedia.org/wiki/File:Vintage_television_(Unsplash).jpg",
+  "dibujo": "dibujos/gta/lb-8cf11c67ba.jpg",
   "etiquetas": [
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 1281,
+  "tema": "tecnologia",
   "w": 1920
  },
  "lb-8d9ba12ea1": {
   "archivo": "libres/objetos/sneakers-collection-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.3,
+   "ciencia": 0.138,
+   "dinero": 0.104,
+   "espacio": 0.046,
+   "tienda": 0.067
+  },
+  "clip_v": 3,
   "consulta": "Sneakers collection",
   "credito": "Oshima Yuko Festival: Sneaker Collection — Dick Thomas Johnson — CC BY 2.0 — https://www.flickr.com/photos/31029865@N06/20474938665",
+  "dibujo": "dibujos/gta/lb-8d9ba12ea1.jpg",
   "etiquetas": [
+   "arte",
+   "ciencia",
    "collection",
+   "dinero",
    "objetos",
    "sneakers"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "arte",
   "w": 1024
  },
  "lb-8e2df045f8": {
   "archivo": "libres/objetos/poker-chips-casino-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "deporte": 0.015,
+   "dinero": 0.81,
+   "interior": 0.012,
+   "monumento": 0.028,
+   "volcan": 0.012
+  },
+  "clip_v": 3,
   "consulta": "Poker chips casino",
   "credito": "Texas Hold 'Em. — @yakobusan Jakob Montrasio — CC BY 2.0 — https://www.flickr.com/photos/37803129@N00/2179725091",
+  "dibujo": "dibujos/gta/lb-8e2df045f8.jpg",
   "etiquetas": [
    "casino",
    "chips",
+   "dinero",
    "objetos",
    "poker"
   ],
   "fuente": "libre",
   "h": 541,
+  "tema": "dinero",
   "w": 1023
  },
  "lb-90c8f5e627": {
   "archivo": "libres/objetos/sneakers-collection-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "deporte": 0.096,
+   "dinero": 0.082,
+   "interior": 0.061,
+   "personas": 0.347,
+   "tecnologia": 0.103
+  },
+  "clip_v": 3,
   "consulta": "Sneakers collection",
   "credito": "Sneakers collection show — Tnisamante — CC BY-SA 2.0 — https://www.flickr.com/photos/95027552@N02/32715763180",
+  "dibujo": "dibujos/gta/lb-90c8f5e627.jpg",
   "etiquetas": [
    "collection",
    "objetos",
-   "sneakers"
+   "personas",
+   "sneakers",
+   "tecnologia"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "personas",
   "w": 1024
  },
  "lb-92159cc414": {
   "archivo": "libres/objetos/vintage-television-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.065,
+   "interior": 0.056,
+   "movil": 0.235,
+   "musica": 0.072,
+   "tecnologia": 0.455
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage Televisions — tr.robinson — CC BY-SA 2.0 — https://www.flickr.com/photos/12269257@N03/8279790808",
+  "dibujo": "dibujos/gta/lb-92159cc414.jpg",
   "etiquetas": [
+   "movil",
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 775,
+  "tema": "tecnologia",
   "w": 1024
  },
  "lb-93e0667b0f": {
   "archivo": "libres/objetos/briefcase-cash-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.012,
+   "dinero": 0.904,
+   "helicoptero": 0.008,
+   "movil": 0.009,
+   "tren": 0.01
+  },
+  "clip_v": 3,
   "consulta": "Briefcase cash",
   "credito": "IMG_8013.JPG — ryanmshea — CC BY 2.0 — https://www.flickr.com/photos/34163650@N00/341715830",
+  "dibujo": "dibujos/gta/lb-93e0667b0f.jpg",
   "etiquetas": [
    "briefcase",
    "cash",
+   "dinero",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "dinero",
   "w": 1024
  },
  "lb-95147595e8": {
   "archivo": "libres/objetos/sneakers-collection-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.08,
+   "ciencia": 0.136,
+   "dinero": 0.317,
+   "espacio": 0.081,
+   "tormenta": 0.05
+  },
+  "clip_v": 3,
   "consulta": "Sneakers collection",
   "credito": "Oshima Yuko Festival: Sneaker Collection — Dick Thomas Johnson — CC BY 2.0 — https://www.flickr.com/photos/31029865@N06/20466202822",
+  "dibujo": "dibujos/gta/lb-95147595e8.jpg",
   "etiquetas": [
+   "ciencia",
    "collection",
+   "dinero",
    "objetos",
    "sneakers"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "dinero",
   "w": 1024
  },
  "lb-9b020275e4": {
   "archivo": "libres/objetos/smartphone-social-media-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.001,
+   "militar": 0.001,
+   "movil": 0.938,
+   "musica": 0.0,
+   "tecnologia": 0.057
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Broken Blackberry — MattHurst — CC BY-SA 2.0 — https://www.flickr.com/photos/22937701@N00/3160670483",
+  "dibujo": "dibujos/gta/lb-9b020275e4.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
    "social"
   ],
   "fuente": "libre",
   "h": 691,
+  "tema": "movil",
   "w": 1024
  },
  "lb-a4402f172e": {
   "archivo": "libres/objetos/vintage-television-6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.163,
+   "espacio": 0.021,
+   "interior": 0.018,
+   "pez": 0.009,
+   "tecnologia": 0.75
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage Televisions (53996919862).jpg — Ethan Long — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Vintage_Televisions_(53996919862).jpg",
+  "dibujo": "dibujos/gta/lb-a4402f172e.jpg",
   "etiquetas": [
+   "ciencia",
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "tecnologia",
   "w": 1920
  },
  "lb-a54ee4e5d1": {
   "archivo": "libres/objetos/gold-chain-jewelry-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "caiman": 0.002,
+   "ciencia": 0.002,
+   "espacio": 0.005,
+   "joyas": 0.982,
+   "puerto": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Gold chain jewelry",
   "credito": "PRECIOSA Twin™ Seed Beads — PRECIOSA ORNELA — CC BY 2.0 — https://www.flickr.com/photos/67488680@N04/6350796232",
+  "dibujo": "dibujos/gta/lb-a54ee4e5d1.jpg",
   "etiquetas": [
    "chain",
    "gold",
    "jewelry",
+   "joyas",
    "objetos"
   ],
   "fuente": "libre",
   "h": 680,
+  "tema": "joyas",
   "w": 1024
  },
  "lb-a55ab3045c": {
   "archivo": "libres/objetos/poker-chips-casino-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "deporte": 0.43,
+   "dinero": 0.262,
+   "fiesta": 0.019,
+   "monumento": 0.073,
+   "personas": 0.019
+  },
+  "clip_v": 3,
   "consulta": "Poker chips casino",
   "credito": "11g poker chips — Plutor — CC BY 2.0 — https://www.flickr.com/photos/11831132@N00/1818402449",
+  "dibujo": "dibujos/gta/lb-a55ab3045c.jpg",
   "etiquetas": [
    "casino",
    "chips",
+   "deporte",
+   "dinero",
    "objetos",
    "poker"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-a826c43f81": {
   "archivo": "libres/objetos/gold-chain-jewelry-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.01,
+   "espacio": 0.015,
+   "joyas": 0.93,
+   "musica": 0.007,
+   "puerto": 0.018
+  },
+  "clip_v": 3,
   "consulta": "Gold chain jewelry",
   "credito": "'Time is making fools of us again' — melloveschallah — CC BY 2.0 — https://www.flickr.com/photos/10128633@N07/3399525959",
+  "dibujo": "dibujos/gta/lb-a826c43f81.jpg",
   "etiquetas": [
    "chain",
    "gold",
    "jewelry",
+   "joyas",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "joyas",
   "w": 1024
  },
  "lb-abb0567832": {
   "archivo": "libres/objetos/neon-open-sign-5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.931,
+   "comida": 0.01,
+   "gasolinera": 0.003,
+   "tecnologia": 0.006,
+   "tienda": 0.038
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "Neon Open Sign.jpg — Aaron Pruzaniec — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Neon_Open_Sign.jpg",
+  "dibujo": "dibujos/gta/lb-abb0567832.jpg",
   "etiquetas": [
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -807,86 +1465,158 @@
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "cartel",
   "w": 1920
  },
  "lb-ad3cd2c594": {
   "archivo": "libres/objetos/cigar-smoke-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.535,
+   "comida": 0.113,
+   "fiesta": 0.035,
+   "musica": 0.034,
+   "puerto": 0.081
+  },
+  "clip_v": 3,
   "consulta": "Cigar smoke",
   "credito": "Beer Sellar cigar smoke — 5chw4r7z — CC BY-SA 2.0 — https://www.flickr.com/photos/21200741@N07/5980821533",
+  "dibujo": "dibujos/gta/lb-ad3cd2c594.jpg",
   "etiquetas": [
+   "ciencia",
    "cigar",
+   "comida",
    "objetos",
    "smoke"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "ciencia",
   "w": 1024
  },
  "lb-b71c0ad74a": {
   "archivo": "libres/objetos/cigar-smoke-ov5.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.019,
+   "criminal": 0.318,
+   "movil": 0.115,
+   "musica": 0.025,
+   "personas": 0.42
+  },
+  "clip_v": 3,
   "consulta": "Cigar smoke",
   "credito": "Cigar Smoking Dog — Jagz Mario — CC BY-SA 2.0 — https://www.flickr.com/photos/70196349@N00/6299303512",
+  "dibujo": "dibujos/gta/lb-b71c0ad74a.jpg",
   "etiquetas": [
    "cigar",
+   "criminal",
+   "movil",
    "objetos",
+   "personas",
    "smoke"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "personas",
   "w": 1024
  },
  "lb-b870e5b5d2": {
   "archivo": "libres/objetos/vintage-television-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.032,
+   "ciencia": 0.032,
+   "lucia": 0.066,
+   "movil": 0.447,
+   "tecnologia": 0.201
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage Television-Shaped Novelty Transistor Radio by Sandhurst, Made in Okinawa — France1978 — CC BY-SA 2.0 — https://www.flickr.com/photos/51764518@N02/9264376334",
+  "dibujo": "dibujos/gta/lb-b870e5b5d2.jpg",
   "etiquetas": [
+   "movil",
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 893,
+  "tema": "movil",
   "w": 1024
  },
  "lb-cf317eee27": {
   "archivo": "libres/objetos/gold-chain-jewelry-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "bosque": 0.002,
+   "espacio": 0.005,
+   "joyas": 0.974,
+   "monumento": 0.002,
+   "puerto": 0.002
+  },
+  "clip_v": 3,
   "consulta": "Gold chain jewelry",
   "credito": "Happy Earrings — Melissa Ingram Design — CC BY 2.0 — https://www.flickr.com/photos/42121564@N04/6202882398",
+  "dibujo": "dibujos/gta/lb-cf317eee27.jpg",
   "etiquetas": [
    "chain",
    "gold",
    "jewelry",
+   "joyas",
    "objetos"
   ],
   "fuente": "libre",
   "h": 795,
+  "tema": "joyas",
   "w": 1024
  },
  "lb-cf5b6a2a44": {
   "archivo": "libres/objetos/poker-chips-casino-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "caiman": 0.03,
+   "deporte": 0.394,
+   "dinero": 0.107,
+   "joyas": 0.041,
+   "monumento": 0.102
+  },
+  "clip_v": 3,
   "consulta": "Poker chips casino",
   "credito": "Poker hand and Chips — Images_of_Money — CC BY 2.0 — https://www.flickr.com/photos/59937401@N07/5857248045",
+  "dibujo": "dibujos/gta/lb-cf5b6a2a44.jpg",
   "etiquetas": [
    "casino",
    "chips",
+   "deporte",
+   "dinero",
+   "monumento",
    "objetos",
    "poker"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "deporte",
   "w": 1024
  },
  "lb-d8f5777b70": {
   "archivo": "libres/objetos/smartphone-social-media-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "bosque": 0.003,
+   "campo": 0.98,
+   "carcel": 0.002,
+   "deporte": 0.002,
+   "pantano": 0.003
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Project 365 #365: 311214 When All Is Said And Done — comedy_nose — Dominio público 1.0 — https://www.flickr.com/photos/23408922@N07/16168114115",
+  "dibujo": "dibujos/gta/lb-d8f5777b70.jpg",
   "etiquetas": [
+   "campo",
    "media",
    "objetos",
    "smartphone",
@@ -894,14 +1624,25 @@
   ],
   "fuente": "libre",
   "h": 682,
+  "tema": "campo",
   "w": 1024
  },
  "lb-da7f0fc344": {
   "archivo": "libres/objetos/neon-open-sign-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "cartel": 0.984,
+   "ciencia": 0.001,
+   "club": 0.001,
+   "comida": 0.002,
+   "tienda": 0.009
+  },
+  "clip_v": 3,
   "consulta": "Neon open sign",
   "credito": "Neon open sign — Valerie Everett — CC BY-SA 2.0 — https://www.flickr.com/photos/66742614@N00/3413814970",
+  "dibujo": "dibujos/gta/lb-da7f0fc344.jpg",
   "etiquetas": [
+   "cartel",
    "neon",
    "objetos",
    "open",
@@ -909,166 +1650,294 @@
   ],
   "fuente": "libre",
   "h": 619,
+  "tema": "cartel",
   "w": 1024
  },
  "lb-dfaf662b10": {
   "archivo": "libres/objetos/car-keys-ov4.jpg",
   "categoria": "objetos",
+  "clip": {
+   "accion": 0.055,
+   "camion": 0.072,
+   "coche": 0.04,
+   "criminal": 0.484,
+   "dinero": 0.099
+  },
+  "clip_v": 3,
   "consulta": "Car keys",
   "credito": "Car Keys on £10 — Images_of_Money — CC BY 2.0 — https://www.flickr.com/photos/59937401@N07/5857489992",
+  "dibujo": "dibujos/gta/lb-dfaf662b10.jpg",
   "etiquetas": [
    "car",
+   "criminal",
    "keys",
    "objetos"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "criminal",
   "w": 1024
  },
  "lb-e43b28fe45": {
   "archivo": "libres/objetos/gold-chain-jewelry-ov1.jpg",
   "categoria": "objetos",
+  "clip": {
+   "caiman": 0.008,
+   "joyas": 0.916,
+   "musica": 0.011,
+   "puerto": 0.016,
+   "tormenta": 0.005
+  },
+  "clip_v": 3,
   "consulta": "Gold chain jewelry",
   "credito": "Gold plated brass 3d printed sun sprocket grip rings — Euphy — CC BY 2.0 — https://www.flickr.com/photos/15591303@N00/10161007493",
+  "dibujo": "dibujos/gta/lb-e43b28fe45.jpg",
   "etiquetas": [
    "chain",
    "gold",
    "jewelry",
+   "joyas",
    "objetos"
   ],
   "fuente": "libre",
   "h": 1024,
+  "tema": "joyas",
   "w": 1024
  },
  "lb-ee1aca4e98": {
   "archivo": "libres/objetos/gold-chain-jewelry-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.001,
+   "espacio": 0.001,
+   "joyas": 0.996,
+   "musica": 0.001,
+   "puerto": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Gold chain jewelry",
   "credito": "diamond solitare dangle earrings — paparutzi — CC BY 2.0 — https://www.flickr.com/photos/28396605@N00/365420835",
+  "dibujo": "dibujos/gta/lb-ee1aca4e98.jpg",
   "etiquetas": [
    "chain",
    "gold",
    "jewelry",
+   "joyas",
    "objetos"
   ],
   "fuente": "libre",
   "h": 825,
+  "tema": "joyas",
   "w": 1024
  },
  "lb-f0a373c522": {
   "archivo": "libres/objetos/smartphone-social-media-2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.009,
+   "espacio": 0.006,
+   "movil": 0.938,
+   "musica": 0.01,
+   "tecnologia": 0.015
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Social Media App Icons On The Screen of A Smartphone.jpg — mikemacmarketing — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Social_Media_App_Icons_On_The_Screen_of_A_Smartphone.jpg",
+  "dibujo": "dibujos/gta/lb-f0a373c522.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
    "social"
   ],
   "fuente": "libre",
   "h": 1536,
+  "tema": "movil",
   "w": 1920
  },
  "lb-f23f3cf18d": {
   "archivo": "libres/objetos/vintage-television-ov6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "accion": 0.018,
+   "arte": 0.023,
+   "ciencia": 0.042,
+   "movil": 0.148,
+   "tecnologia": 0.617
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Vintage Television Set Novelty Radio, AM Band, 3.75 Inches High x 6 Inches Wide, Made In Hong Kong, Circa 1970s — France1978 — CC BY-SA 2.0 — https://www.flickr.com/photos/51764518@N02/49913650117",
+  "dibujo": "dibujos/gta/lb-f23f3cf18d.jpg",
   "etiquetas": [
+   "movil",
    "objetos",
+   "tecnologia",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 821,
+  "tema": "tecnologia",
   "w": 1024
  },
  "lb-f2d3105ee3": {
   "archivo": "libres/objetos/smartphone-social-media-3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "carcel": 0.0,
+   "ciencia": 0.0,
+   "movil": 0.994,
+   "retrato": 0.0,
+   "tecnologia": 0.002
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Blackview A60 Smartphone Android mobile phone and folio case.jpg — Acabashi — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg",
+  "dibujo": "dibujos/gta/lb-f2d3105ee3.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
    "social"
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "movil",
   "w": 1920
  },
  "lb-f4618927a3": {
   "archivo": "libres/objetos/cigar-smoke-ov3.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arte": 0.046,
+   "ciencia": 0.032,
+   "movil": 0.431,
+   "musica": 0.043,
+   "tecnologia": 0.039
+  },
+  "clip_v": 3,
   "consulta": "Cigar smoke",
   "credito": "Cigar smoking guy — Amy Jeffries — CC BY 2.0 — https://www.flickr.com/photos/67998313@N00/3488918000",
+  "dibujo": "dibujos/gta/lb-f4618927a3.jpg",
   "etiquetas": [
    "cigar",
+   "movil",
    "objetos",
    "smoke"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "movil",
   "w": 1023
  },
  "lb-f595e657f8": {
   "archivo": "libres/objetos/vintage-television-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "ciencia": 0.11,
+   "comida_rica": 0.061,
+   "desierto": 0.287,
+   "movil": 0.11,
+   "tecnologia": 0.092
+  },
+  "clip_v": 3,
   "consulta": "Vintage television",
   "credito": "Pair Of Vintage Television-Shaped Salt & Pepper Shakers, Measure About 3.5 Inches Tall — France1978 — CC BY 2.0 — https://www.flickr.com/photos/51764518@N02/15551184436",
+  "dibujo": "dibujos/gta/lb-f595e657f8.jpg",
   "etiquetas": [
+   "ciencia",
+   "desierto",
+   "movil",
    "objetos",
    "television",
    "vintage"
   ],
   "fuente": "libre",
   "h": 848,
+  "tema": "desierto",
   "w": 1024
  },
  "lb-f66b1d63fc": {
   "archivo": "libres/objetos/smartphone-social-media-6.jpg",
   "categoria": "objetos",
+  "clip": {
+   "agua": 0.0,
+   "caiman": 0.0,
+   "desierto": 0.0,
+   "movil": 0.998,
+   "tecnologia": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Blackview A60 Smartphone Android mobile phone front face lock screen.jpg — Acabashi — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_front_face_lock_screen.jpg",
+  "dibujo": "dibujos/gta/lb-f66b1d63fc.jpg",
   "etiquetas": [
    "media",
+   "movil",
    "objetos",
    "smartphone",
    "social"
   ],
   "fuente": "libre",
   "h": 3413,
+  "tema": "movil",
   "w": 1920
  },
  "lb-fbd2f4856f": {
   "archivo": "libres/objetos/car-keys-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "camion": 0.14,
+   "pareja": 0.517,
+   "policia": 0.142,
+   "puerto": 0.035,
+   "tecnologia": 0.038
+  },
+  "clip_v": 3,
   "consulta": "Car keys",
   "credito": "Car Key — mynameisharsha — CC BY-SA 2.0 — https://www.flickr.com/photos/27526538@N07/3595645301",
+  "dibujo": "dibujos/gta/lb-fbd2f4856f.jpg",
   "etiquetas": [
+   "camion",
    "car",
    "keys",
-   "objetos"
+   "objetos",
+   "pareja",
+   "policia"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "pareja",
   "w": 1023
  },
  "lb-fd3800d58b": {
   "archivo": "libres/objetos/smartphone-social-media-ov2.jpg",
   "categoria": "objetos",
+  "clip": {
+   "arma": 0.053,
+   "arte": 0.067,
+   "avion": 0.205,
+   "musica": 0.077,
+   "tren": 0.192
+  },
+  "clip_v": 3,
   "consulta": "Smartphone social media",
   "credito": "Business Traveller, and airport phones — MattHurst — CC BY-SA 2.0 — https://www.flickr.com/photos/22937701@N00/8107134068",
+  "dibujo": "dibujos/gta/lb-fd3800d58b.jpg",
   "etiquetas": [
+   "avion",
    "media",
    "objetos",
    "smartphone",
-   "social"
+   "social",
+   "tren"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "avion",
   "w": 1024
  }
 }

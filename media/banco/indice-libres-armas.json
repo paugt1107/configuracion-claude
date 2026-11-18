@@ -2,54 +2,100 @@
  "lb-008b817fa8": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov1.jpg",
   "categoria": "armas",
+  "clip": {
+   "accion": 0.001,
+   "arma": 0.593,
+   "caiman": 0.0,
+   "criminal": 0.405,
+   "militar": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Smith & Wesson British service revolver — quinet — CC BY 2.0 — https://www.flickr.com/photos/91994044@N00/49019521536",
+  "dibujo": "dibujos/gta/lb-008b817fa8.jpg",
   "etiquetas": [
+   "arma",
    "armas",
+   "criminal",
    "revolver",
    "smith",
    "wesson"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arma",
   "w": 1024
  },
  "lb-03edecb867": {
   "archivo": "libres/armas/pistol-museum-collection-ov2.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.033,
+   "ciencia": 0.023,
+   "helicoptero": 0.042,
+   "interior": 0.147,
+   "militar": 0.655
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "T-34/85 Hull machine gunner / driver's assistant seat. — wbaiv — CC BY-SA 2.0 — https://www.flickr.com/photos/9998127@N06/11513659635",
+  "dibujo": "dibujos/gta/lb-03edecb867.jpg",
   "etiquetas": [
    "armas",
    "collection",
+   "interior",
+   "militar",
    "museum",
    "pistol"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "militar",
   "w": 1023
  },
  "lb-2fe630a401": {
   "archivo": "libres/armas/pistol-museum-collection-ov1.jpg",
   "categoria": "armas",
+  "clip": {
+   "coche": 0.11,
+   "deportivo": 0.733,
+   "militar": 0.039,
+   "moto": 0.019,
+   "pareja": 0.03
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Beaulieu National Motor Museum 18-09-2012 — Karen Roe — CC BY 2.0 — https://www.flickr.com/photos/28752865@N08/8542047278",
+  "dibujo": "dibujos/gta/lb-2fe630a401.jpg",
   "etiquetas": [
    "armas",
+   "coche",
    "collection",
+   "deportivo",
    "museum",
    "pistol"
   ],
   "fuente": "libre",
   "h": 955,
+  "tema": "deportivo",
   "w": 1024
  },
  "lb-314d6bb373": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov5.jpg",
   "categoria": "armas",
+  "clip": {
+   "accion": 0.0,
+   "arma": 0.991,
+   "criminal": 0.007,
+   "militar": 0.0,
+   "tren": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "1875 Smith & Wesson Schofield .45 cal. revolver — quinet — CC BY 2.0 — https://www.flickr.com/photos/91994044@N00/52196160371",
+  "dibujo": "dibujos/gta/lb-314d6bb373.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -57,14 +103,25 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arma",
   "w": 1024
  },
  "lb-3165e83f61": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov6.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.912,
+   "ciencia": 0.0,
+   "criminal": 0.085,
+   "personas": 0.0,
+   "tecnologia": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "1871 Smith & Wesson .22 cal. revolver Model No. 1, 3rd Issue — quinet — CC BY 2.0 — https://www.flickr.com/photos/91994044@N00/52194295245",
+  "dibujo": "dibujos/gta/lb-3165e83f61.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -72,44 +129,79 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arma",
   "w": 1024
  },
  "lb-31fd7d96e6": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-6.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.456,
+   "cohete": 0.072,
+   "criminal": 0.345,
+   "militar": 0.046,
+   "musica": 0.032
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Revolver, Smith & Wesson No 3, New Model Turkish - Livrustkammaren - 45392.tif — desconocido — Public domain — https://commons.wikimedia.org/wiki/File:Revolver,_Smith_%26_Wesson_No_3,_New_Model_Turkish_-_Livrustkammaren_-_45392.tif",
+  "dibujo": "dibujos/gta/lb-31fd7d96e6.jpg",
   "etiquetas": [
+   "arma",
    "armas",
+   "criminal",
    "revolver",
    "smith",
    "wesson"
   ],
   "fuente": "libre",
   "h": 2513,
+  "tema": "arma",
   "w": 1920
  },
  "lb-3ba6b53821": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-5.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.091,
+   "ciencia": 0.067,
+   "cohete": 0.042,
+   "criminal": 0.155,
+   "musica": 0.324
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Revolver, Smith & Wesson No 3, New Model Turkish - Livrustkammaren - 36975.tif — desconocido — Public domain — https://commons.wikimedia.org/wiki/File:Revolver,_Smith_%26_Wesson_No_3,_New_Model_Turkish_-_Livrustkammaren_-_36975.tif",
+  "dibujo": "dibujos/gta/lb-3ba6b53821.jpg",
   "etiquetas": [
    "armas",
+   "criminal",
+   "musica",
    "revolver",
    "smith",
    "wesson"
   ],
   "fuente": "libre",
   "h": 2512,
+  "tema": "musica",
   "w": 1920
  },
  "lb-422f2bf9c3": {
   "archivo": "libres/armas/pistol-museum-collection-ov3.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.615,
+   "caiman": 0.058,
+   "militar": 0.052,
+   "movil": 0.073,
+   "musica": 0.054
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Spokeshave — edinburghcityofprint — CC BY 2.0 — https://www.flickr.com/photos/30239838@N04/4202912637",
+  "dibujo": "dibujos/gta/lb-422f2bf9c3.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
    "museum",
@@ -117,29 +209,52 @@
   ],
   "fuente": "libre",
   "h": 294,
+  "tema": "arma",
   "w": 1024
  },
  "lb-52eeee768a": {
   "archivo": "libres/armas/pistol-museum-collection-5.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.287,
+   "caiman": 0.031,
+   "helicoptero": 0.091,
+   "militar": 0.386,
+   "musica": 0.096
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Vihorlat Museum in Humenné - History and art history permanent exhibition - Andrássy arms, armour and metallurgy collections - Hungarian sabre, a hunting sword and a flintlock pistol (September 2026) 02.jpg — ZemplinTemplar — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Vihorlat_Museum_in_Humenn%C3%A9_-_History_and_art_history_permanent_exhibition_-_Andr%C3%A1ssy_arms,_armour_and_metallurgy_collections_-_Hungarian_sabre,_a_hunting_sword_and_a_flintlock_pistol_(September_2026)_02.jpg",
+  "dibujo": "dibujos/gta/lb-52eeee768a.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
+   "militar",
    "museum",
    "pistol"
   ],
   "fuente": "libre",
   "h": 1438,
+  "tema": "militar",
   "w": 1920
  },
  "lb-5309d93f4b": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov4.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.974,
+   "ciencia": 0.001,
+   "criminal": 0.021,
+   "musica": 0.001,
+   "personas": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "1865 Smith & Wesson Revolver Model No. 1 — quinet — CC BY 2.0 — https://www.flickr.com/photos/91994044@N00/52182294903",
+  "dibujo": "dibujos/gta/lb-5309d93f4b.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -147,14 +262,25 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arma",
   "w": 1024
  },
  "lb-5e7aec7ced": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-1.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.973,
+   "criminal": 0.026,
+   "desierto": 0.0,
+   "militar": 0.0,
+   "moto": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Smith & Wesson revolver used by Ha Thi Que to take over the Yen The regime, 1945 - Vietnamese Women's Museum - Hanoi, Vietnam - DSC04196.JPG — Daderot — CC0 — https://commons.wikimedia.org/wiki/File:Smith_%26_Wesson_revolver_used_by_Ha_Thi_Que_to_take_over_the_Yen_The_regime,_1945_-_Vietnamese_Women%27s_Museum_-_Hanoi,_Vietnam_-_DSC04196.JPG",
+  "dibujo": "dibujos/gta/lb-5e7aec7ced.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -162,14 +288,25 @@
   ],
   "fuente": "libre",
   "h": 1035,
+  "tema": "arma",
   "w": 1920
  },
  "lb-7021ccf081": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-2.jpg",
   "categoria": "armas",
+  "clip": {
+   "accion": 0.0,
+   "arma": 0.991,
+   "ciencia": 0.0,
+   "criminal": 0.007,
+   "militar": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Smith & Wesson revolver at Athens War Museum on November 22, 2022.jpg — George E. Koronaios — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Smith_%26_Wesson_revolver_at_Athens_War_Museum_on_November_22,_2022.jpg",
+  "dibujo": "dibujos/gta/lb-7021ccf081.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -177,14 +314,25 @@
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "arma",
   "w": 1920
  },
  "lb-76b190ad07": {
   "archivo": "libres/armas/pistol-museum-collection-1.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.972,
+   "caiman": 0.004,
+   "criminal": 0.008,
+   "militar": 0.004,
+   "musica": 0.007
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Puffer (wheellock pistol).jpg — anonymous — CC0 — https://commons.wikimedia.org/wiki/File:Puffer_(wheellock_pistol).jpg",
+  "dibujo": "dibujos/gta/lb-76b190ad07.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
    "museum",
@@ -192,29 +340,51 @@
   ],
   "fuente": "libre",
   "h": 1070,
+  "tema": "arma",
   "w": 1920
  },
  "lb-78070c97e0": {
   "archivo": "libres/armas/pistol-museum-collection-2.jpg",
   "categoria": "armas",
+  "clip": {
+   "ciencia": 0.742,
+   "interior": 0.085,
+   "musica": 0.013,
+   "tecnologia": 0.012,
+   "tienda": 0.082
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Pistol collection of the Beretta Family Firearms Museum.jpg — Mark Turney (IMCOM) — Public domain — https://commons.wikimedia.org/wiki/File:Pistol_collection_of_the_Beretta_Family_Firearms_Museum.jpg",
+  "dibujo": "dibujos/gta/lb-78070c97e0.jpg",
   "etiquetas": [
    "armas",
+   "ciencia",
    "collection",
    "museum",
    "pistol"
   ],
   "fuente": "libre",
   "h": 2880,
+  "tema": "ciencia",
   "w": 1920
  },
  "lb-7c18925705": {
   "archivo": "libres/armas/pistol-museum-collection-4.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.963,
+   "caiman": 0.0,
+   "criminal": 0.033,
+   "militar": 0.002,
+   "moto": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Kolibri Pistol, AM.059256, 02.jpg — Swedish Army Museum — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Kolibri_Pistol,_AM.059256,_02.jpg",
+  "dibujo": "dibujos/gta/lb-7c18925705.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
    "museum",
@@ -222,14 +392,25 @@
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "arma",
   "w": 1920
  },
  "lb-922da45a55": {
   "archivo": "libres/armas/pistol-museum-collection-ov6.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.982,
+   "ciencia": 0.0,
+   "criminal": 0.016,
+   "militar": 0.001,
+   "musica": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Mauser C96 AM.042018 (1) — Armémuseum (Swedish Army Museum) — CC BY 4.0 — https://commons.wikimedia.org/w/index.php?curid=81956682",
+  "dibujo": "dibujos/gta/lb-922da45a55.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
    "museum",
@@ -237,14 +418,25 @@
   ],
   "fuente": "libre",
   "h": 707,
+  "tema": "arma",
   "w": 1200
  },
  "lb-aa667f9afc": {
   "archivo": "libres/armas/pistol-museum-collection-6.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.944,
+   "caiman": 0.001,
+   "criminal": 0.049,
+   "militar": 0.003,
+   "musica": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Kolibri Pistol, AM.059256, 03.jpg — Swedish Army Museum — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Kolibri_Pistol,_AM.059256,_03.jpg",
+  "dibujo": "dibujos/gta/lb-aa667f9afc.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
    "museum",
@@ -252,29 +444,52 @@
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "arma",
   "w": 1920
  },
  "lb-af2fa818bc": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-4.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.672,
+   "caiman": 0.006,
+   "criminal": 0.294,
+   "militar": 0.006,
+   "musica": 0.014
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Variant Model Smith and Wesson Double Action First Model Revolver.jpg — Smith and Wesson — Public domain — https://commons.wikimedia.org/wiki/File:Variant_Model_Smith_and_Wesson_Double_Action_First_Model_Revolver.jpg",
+  "dibujo": "dibujos/gta/lb-af2fa818bc.jpg",
   "etiquetas": [
+   "arma",
    "armas",
+   "criminal",
    "revolver",
    "smith",
    "wesson"
   ],
   "fuente": "libre",
   "h": 909,
+  "tema": "arma",
   "w": 1920
  },
  "lb-b755edc2ad": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov3.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.992,
+   "ciencia": 0.002,
+   "criminal": 0.003,
+   "interior": 0.0,
+   "musica": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "1863 Smith & Wesson Revolver Model No. 2 32 cal. — quinet — CC BY 2.0 — https://www.flickr.com/photos/91994044@N00/52183190857",
+  "dibujo": "dibujos/gta/lb-b755edc2ad.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -282,14 +497,25 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arma",
   "w": 1024
  },
  "lb-c24c9800d3": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-3.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.939,
+   "ciencia": 0.019,
+   "criminal": 0.035,
+   "militar": 0.002,
+   "musica": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Model 1 First Issue Revolver, 1858, Smith & Wesson - Lyman & Merrie Wood Museum of Springfield History - DSC04186.JPG — Daderot — CC0 — https://commons.wikimedia.org/wiki/File:Model_1_First_Issue_Revolver,_1858,_Smith_%26_Wesson_-_Lyman_%26_Merrie_Wood_Museum_of_Springfield_History_-_DSC04186.JPG",
+  "dibujo": "dibujos/gta/lb-c24c9800d3.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -297,14 +523,25 @@
   ],
   "fuente": "libre",
   "h": 1440,
+  "tema": "arma",
   "w": 1920
  },
  "lb-c863097adf": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov2.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.989,
+   "criminal": 0.009,
+   "desierto": 0.0,
+   "joyas": 0.0,
+   "militar": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Smith & Wesson revolver museum",
   "credito": "Fancy Smith & Wesson revolver — quinet — CC BY 2.0 — https://www.flickr.com/photos/91994044@N00/52406572851",
+  "dibujo": "dibujos/gta/lb-c863097adf.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "revolver",
    "smith",
@@ -312,14 +549,25 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arma",
   "w": 1024
  },
  "lb-cf4a352692": {
   "archivo": "libres/armas/pistol-museum-collection-3.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.977,
+   "ciencia": 0.0,
+   "criminal": 0.015,
+   "militar": 0.004,
+   "tecnologia": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Kolibri Pistol, AM.059256, 01.jpg — Swedish Army Museum — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Kolibri_Pistol,_AM.059256,_01.jpg",
+  "dibujo": "dibujos/gta/lb-cf4a352692.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
    "museum",
@@ -327,36 +575,62 @@
   ],
   "fuente": "libre",
   "h": 975,
+  "tema": "arma",
   "w": 1920
  },
  "lb-e160e5b611": {
   "archivo": "libres/armas/pistol-museum-collection-ov4.jpg",
   "categoria": "armas",
+  "clip": {
+   "arma": 0.768,
+   "caiman": 0.0,
+   "criminal": 0.224,
+   "militar": 0.004,
+   "policia": 0.0
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Husqvarna m1907 003 — Swedish Air Force Museum — CC BY 4.0 — https://commons.wikimedia.org/w/index.php?curid=61566956",
+  "dibujo": "dibujos/gta/lb-e160e5b611.jpg",
   "etiquetas": [
+   "arma",
    "armas",
    "collection",
+   "criminal",
    "museum",
    "pistol"
   ],
   "fuente": "libre",
   "h": 618,
+  "tema": "arma",
   "w": 1004
  },
  "lb-e17f1066c0": {
   "archivo": "libres/armas/pistol-museum-collection-ov5.jpg",
   "categoria": "armas",
+  "clip": {
+   "carcel": 0.172,
+   "casa": 0.115,
+   "historia": 0.205,
+   "monumento": 0.214,
+   "tienda": 0.083
+  },
+  "clip_v": 3,
   "consulta": "Pistol museum collection",
   "credito": "Military Museum - Lisbon — Antónia Lobato — CC BY 2.0 — https://www.flickr.com/photos/25211209@N03/2612258277",
+  "dibujo": "dibujos/gta/lb-e17f1066c0.jpg",
   "etiquetas": [
    "armas",
+   "carcel",
    "collection",
+   "historia",
+   "monumento",
    "museum",
    "pistol"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "monumento",
   "w": 1024
  }
 }

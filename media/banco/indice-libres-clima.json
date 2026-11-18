@@ -2,601 +2,1087 @@
  "lb-018f77524d": {
   "archivo": "libres/clima/tropical-rain-2.jpg",
   "categoria": "clima",
+  "clip": {
+   "animal": 0.078,
+   "arma": 0.05,
+   "ave": 0.102,
+   "helicoptero": 0.073,
+   "militar": 0.227
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical kingbird in the rain (60154).jpg — Rhododendrites — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_kingbird_in_the_rain_(60154).jpg",
+  "dibujo": "dibujos/gta/lb-018f77524d.jpg",
   "etiquetas": [
+   "ave",
    "clima",
+   "militar",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 1359,
+  "tema": "militar",
   "w": 1920
  },
  "lb-01e99eee3d": {
   "archivo": "libres/clima/lightning-storm-night-4.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.061,
+   "ciencia": 0.02,
+   "monumento": 0.008,
+   "movil": 0.013,
+   "tormenta": 0.834
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Lightning NOAA.jpg — C. Clark — Public domain — https://commons.wikimedia.org/wiki/File:Lightning_NOAA.jpg",
+  "dibujo": "dibujos/gta/lb-01e99eee3d.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 1216,
+  "tema": "tormenta",
   "w": 1808
  },
  "lb-07b7722913": {
   "archivo": "libres/clima/lightning-storm-night-ov4.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.022,
+   "helicoptero": 0.024,
+   "movil": 0.036,
+   "tormenta": 0.8,
+   "tren": 0.01
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "CG lightning strike — Axel Rouvin — CC BY 2.0 — https://www.flickr.com/photos/39404234@N00/79050918",
+  "dibujo": "dibujos/gta/lb-07b7722913.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 768,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-090902bdb9": {
   "archivo": "libres/clima/tropical-rain-5.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.048,
+   "bosque": 0.55,
+   "caiman": 0.047,
+   "campo": 0.046,
+   "tormenta": 0.117
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Rain in a tropical garden.JPG — B.navez — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Rain_in_a_tropical_garden.JPG",
+  "dibujo": "dibujos/gta/lb-090902bdb9.jpg",
   "etiquetas": [
+   "bosque",
    "clima",
    "rain",
+   "tormenta",
    "tropical"
   ],
   "fuente": "libre",
   "h": 2868,
+  "tema": "bosque",
   "w": 1920
  },
  "lb-10457dc29a": {
   "archivo": "libres/clima/tropical-rain-4.jpg",
   "categoria": "clima",
+  "clip": {
+   "arte": 0.065,
+   "bosque": 0.079,
+   "ciencia": 0.279,
+   "comida": 0.132,
+   "musica": 0.106
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical rain forest in Nusantara city.jpg — Nusantara city municipal gov. — Public domain — https://commons.wikimedia.org/wiki/File:Tropical_rain_forest_in_Nusantara_city.jpg",
+  "dibujo": "dibujos/gta/lb-10457dc29a.jpg",
   "etiquetas": [
+   "ciencia",
    "clima",
+   "comida",
+   "musica",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "ciencia",
   "w": 1920
  },
  "lb-10b4939894": {
   "archivo": "libres/clima/tropical-rain-1.jpg",
   "categoria": "clima",
+  "clip": {
+   "animal": 0.068,
+   "ave": 0.227,
+   "helicoptero": 0.129,
+   "militar": 0.081,
+   "tormenta": 0.129
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical kingbird in the rain (60130).jpg — Rhododendrites — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_kingbird_in_the_rain_(60130).jpg",
+  "dibujo": "dibujos/gta/lb-10b4939894.jpg",
   "etiquetas": [
+   "ave",
    "clima",
+   "helicoptero",
    "rain",
+   "tormenta",
    "tropical"
   ],
   "fuente": "libre",
   "h": 1462,
+  "tema": "ave",
   "w": 1920
  },
  "lb-125f9c0726": {
   "archivo": "libres/clima/tornado-ov1.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.001,
+   "avion": 0.002,
+   "caiman": 0.0,
+   "cohete": 0.004,
+   "militar": 0.992
+  },
+  "clip_v": 3,
   "consulta": "Tornado",
   "credito": "Tornado - RIAT 2006 — Airwolfhound — CC BY-SA 2.0 — https://www.flickr.com/photos/24874528@N04/2493045598",
+  "dibujo": "dibujos/gta/lb-125f9c0726.jpg",
   "etiquetas": [
    "clima",
+   "militar",
    "tornado"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "militar",
   "w": 1024
  },
  "lb-15ca0f4d47": {
   "archivo": "libres/clima/tornado-ov6.jpg",
   "categoria": "clima",
+  "clip": {
+   "avion": 0.005,
+   "deportivo": 0.001,
+   "helicoptero": 0.004,
+   "militar": 0.985,
+   "tormenta": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Tornado",
   "credito": "Tornado - RIAT 2011 — Airwolfhound — CC BY-SA 2.0 — https://www.flickr.com/photos/24874528@N04/10841351143",
+  "dibujo": "dibujos/gta/lb-15ca0f4d47.jpg",
   "etiquetas": [
    "clima",
+   "militar",
    "tornado"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "militar",
   "w": 1024
  },
  "lb-295a983abf": {
   "archivo": "libres/clima/lightning-storm-night-ov1.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.047,
+   "deporte": 0.017,
+   "movil": 0.022,
+   "policia": 0.012,
+   "tormenta": 0.795
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Marden lightning — Elsie esq. — CC BY 2.0 — https://www.flickr.com/photos/61132483@N00/4537706",
+  "dibujo": "dibujos/gta/lb-295a983abf.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 810,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-29fd48ffc9": {
   "archivo": "libres/clima/lightning-storm-night-ov3.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.018,
+   "monumento": 0.01,
+   "movil": 0.019,
+   "noche": 0.067,
+   "tormenta": 0.782
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Lightning — Ricardo_F — CC BY-SA 2.0 — https://www.flickr.com/photos/81919516@N06/9673233959",
+  "dibujo": "dibujos/gta/lb-29fd48ffc9.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 660,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-2dbcd84ecd": {
   "archivo": "libres/clima/tropical-rain-ov1.jpg",
   "categoria": "clima",
+  "clip": {
+   "ave": 0.056,
+   "ciencia": 0.103,
+   "monumento": 0.047,
+   "retrato": 0.161,
+   "tormenta": 0.193
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "tropical rain flowers — shannonkringen — CC BY-SA 2.0 — https://www.flickr.com/photos/18161271@N00/10273113373",
+  "dibujo": "dibujos/gta/lb-2dbcd84ecd.jpg",
   "etiquetas": [
+   "ciencia",
    "clima",
    "rain",
+   "retrato",
+   "tormenta",
    "tropical"
   ],
   "fuente": "libre",
   "h": 745,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-3310b39a24": {
   "archivo": "libres/clima/lightning-storm-night-ov5.jpg",
   "categoria": "clima",
+  "clip": {
+   "bosque": 0.038,
+   "espacio": 0.306,
+   "mar": 0.013,
+   "movil": 0.024,
+   "tormenta": 0.516
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "moonstruck — Orangeadnan — CC BY 2.0 — https://www.flickr.com/photos/22707445@N00/3064626982",
+  "dibujo": "dibujos/gta/lb-3310b39a24.jpg",
   "etiquetas": [
    "clima",
+   "espacio",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-3750e2d414": {
   "archivo": "libres/clima/tornado-ov3.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.5,
+   "carretera": 0.059,
+   "ciencia": 0.073,
+   "espacio": 0.088,
+   "pantano": 0.056
+  },
+  "clip_v": 3,
   "consulta": "Tornado",
   "credito": "Tornado Track near Sturbridge, Massachusetts — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/5805753622",
+  "dibujo": "dibujos/gta/lb-3750e2d414.jpg",
   "etiquetas": [
+   "agua",
    "clima",
    "tornado"
   ],
   "fuente": "libre",
   "h": 397,
+  "tema": "agua",
   "w": 1024
  },
  "lb-4278eed1af": {
   "archivo": "libres/clima/lightning-storm-night-ov2.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.023,
+   "deporte": 0.011,
+   "militar": 0.011,
+   "noche": 0.035,
+   "tormenta": 0.851
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Lightning — Ricardo_F — CC BY-SA 2.0 — https://www.flickr.com/photos/81919516@N06/9676703321",
+  "dibujo": "dibujos/gta/lb-4278eed1af.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 680,
+  "tema": "tormenta",
   "w": 1023
  },
  "lb-45d5761618": {
   "archivo": "libres/clima/hurricane-satellite-image-ov5.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.002,
+   "ave": 0.002,
+   "retrato": 0.002,
+   "tormenta": 0.987,
+   "volcan": 0.002
+  },
+  "clip_v": 3,
   "consulta": "Hurricane satellite image",
   "credito": "NASA-NOAA's Suomi NPP Satellite Captures Night-time Look at Cyclone Felleng — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/8433747542",
+  "dibujo": "dibujos/gta/lb-45d5761618.jpg",
   "etiquetas": [
    "clima",
    "hurricane",
    "image",
-   "satellite"
+   "satellite",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 708,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-4c1ec33d37": {
   "archivo": "libres/clima/tropical-rain-ov2.jpg",
   "categoria": "clima",
+  "clip": {
+   "ciencia": 0.245,
+   "espacio": 0.062,
+   "movil": 0.292,
+   "retrato": 0.091,
+   "tormenta": 0.058
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical rain on glossy leaf — Yorick... — CC BY 2.0 — https://www.flickr.com/photos/43852314@N00/4991358631",
+  "dibujo": "dibujos/gta/lb-4c1ec33d37.jpg",
   "etiquetas": [
+   "ciencia",
    "clima",
+   "movil",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 342,
+  "tema": "movil",
   "w": 1023
  },
  "lb-6b37e562e6": {
   "archivo": "libres/clima/flooded-street-ov3.jpg",
   "categoria": "clima",
+  "clip": {
+   "campo": 0.084,
+   "carcel": 0.077,
+   "ciencia": 0.065,
+   "criminal": 0.13,
+   "gasolinera": 0.069
+  },
+  "clip_v": 3,
   "consulta": "Flooded street",
   "credito": "Flooded street in Cotonou, Benin, ca.1915 (IMP-YDS-RG101-011-0000-0102) — Fæ — CC BY 2.0 — https://www.flickr.com/photos/50398299@N08/16622373572",
+  "dibujo": "dibujos/gta/lb-6b37e562e6.jpg",
   "etiquetas": [
    "clima",
+   "criminal",
    "flooded",
    "street"
   ],
   "fuente": "libre",
   "h": 599,
+  "tema": "criminal",
   "w": 1024
  },
  "lb-717ef2136b": {
   "archivo": "libres/clima/tropical-rain-ov3.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.063,
+   "bosque": 0.726,
+   "campo": 0.09,
+   "misterio": 0.034,
+   "montana": 0.029
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "tropical rain — trepetnosinee — CC BY 2.0 — https://www.flickr.com/photos/49004288@N05/6093664184",
+  "dibujo": "dibujos/gta/lb-717ef2136b.jpg",
   "etiquetas": [
+   "bosque",
    "clima",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 685,
+  "tema": "bosque",
   "w": 1024
  },
  "lb-728f297211": {
   "archivo": "libres/clima/lightning-storm-night-ov6.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.019,
+   "helicoptero": 0.011,
+   "militar": 0.016,
+   "noche": 0.017,
+   "tormenta": 0.855
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Lightning — Ricardo_F — CC BY-SA 2.0 — https://www.flickr.com/photos/81919516@N06/9679937170",
+  "dibujo": "dibujos/gta/lb-728f297211.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 572,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-772fc0c5d6": {
   "archivo": "libres/clima/flooded-street-ov2.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.024,
+   "agua": 0.011,
+   "coche": 0.467,
+   "pareja": 0.049,
+   "tormenta": 0.387
+  },
+  "clip_v": 3,
   "consulta": "Flooded street",
   "credito": "Flooded street at Elliott and Denny, 1933 — Seattle Municipal Archives — CC BY 2.0 — https://www.flickr.com/photos/24256351@N04/4363265400",
+  "dibujo": "dibujos/gta/lb-772fc0c5d6.jpg",
   "etiquetas": [
    "clima",
+   "coche",
    "flooded",
-   "street"
+   "street",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 793,
+  "tema": "coche",
   "w": 1024
  },
  "lb-886aa05f1d": {
   "archivo": "libres/clima/flooded-street-ov4.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.26,
+   "arte": 0.621,
+   "deporte": 0.022,
+   "fiesta": 0.011,
+   "tormenta": 0.02
+  },
+  "clip_v": 3,
   "consulta": "Flooded street",
   "credito": "Flooded street after Hurricane Sandy — WarmSleepy — CC BY 2.0 — https://www.flickr.com/photos/33498942@N04/8143654219",
+  "dibujo": "dibujos/gta/lb-886aa05f1d.jpg",
   "etiquetas": [
+   "accion",
+   "arte",
    "clima",
    "flooded",
    "street"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "arte",
   "w": 1024
  },
  "lb-932591d5c0": {
   "archivo": "libres/clima/flooded-street-ov1.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.055,
+   "agua": 0.038,
+   "coche": 0.173,
+   "pareja": 0.033,
+   "tormenta": 0.466
+  },
+  "clip_v": 3,
   "consulta": "Flooded street",
   "credito": "Flooded street on Second Ave. Ext., 1936 — Seattle Municipal Archives — CC BY 2.0 — https://www.flickr.com/photos/24256351@N04/4363265410",
+  "dibujo": "dibujos/gta/lb-932591d5c0.jpg",
   "etiquetas": [
    "clima",
+   "coche",
    "flooded",
-   "street"
+   "street",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 816,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-9463efaa85": {
   "archivo": "libres/clima/hurricane-satellite-image-ov4.jpg",
   "categoria": "clima",
+  "clip": {
+   "lucia": 0.008,
+   "mar": 0.003,
+   "pez": 0.002,
+   "retrato": 0.005,
+   "tormenta": 0.966
+  },
+  "clip_v": 3,
   "consulta": "Hurricane satellite image",
   "credito": "Hurricane Matthew Hits Haiti — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/30024169472",
+  "dibujo": "dibujos/gta/lb-9463efaa85.jpg",
   "etiquetas": [
    "clima",
    "hurricane",
    "image",
-   "satellite"
+   "satellite",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-979bfbc579": {
   "archivo": "libres/clima/lightning-storm-night-3.jpg",
   "categoria": "clima",
+  "clip": {
+   "cohete": 0.029,
+   "desierto": 0.047,
+   "espacio": 0.227,
+   "montana": 0.021,
+   "tormenta": 0.476
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Night cloud lightning storm (4573825218).jpg — David DeHetre from Lawrence, KS, USA, United States — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Night_cloud_lightning_storm_(4573825218).jpg",
+  "dibujo": "dibujos/gta/lb-979bfbc579.jpg",
   "etiquetas": [
    "clima",
+   "espacio",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 1278,
+  "tema": "tormenta",
   "w": 1920
  },
  "lb-a3a9e4af60": {
   "archivo": "libres/clima/lightning-storm-night-5.jpg",
   "categoria": "clima",
+  "clip": {
+   "ciencia": 0.046,
+   "historia": 0.031,
+   "monumento": 0.175,
+   "tormenta": 0.569,
+   "volcan": 0.057
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "A Vintage Lightning Storm at Kitt Peak (iotw2102a).tiff — Gary Ladd/KPNO/NOIRLab/NSF/AURA — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:A_Vintage_Lightning_Storm_at_Kitt_Peak_(iotw2102a).tiff",
+  "dibujo": "dibujos/gta/lb-a3a9e4af60.jpg",
   "etiquetas": [
    "clima",
    "lightning",
+   "monumento",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 1201,
+  "tema": "tormenta",
   "w": 1920
  },
  "lb-a4d0fce775": {
   "archivo": "libres/clima/tornado-ov4.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.016,
+   "casa": 0.022,
+   "misterio": 0.002,
+   "tienda": 0.002,
+   "tormenta": 0.936
+  },
+  "clip_v": 3,
   "consulta": "Tornado",
   "credito": "Tornado Weather — mccun934 — CC BY 2.0 — https://www.flickr.com/photos/51035597937@N01/5262033742",
+  "dibujo": "dibujos/gta/lb-a4d0fce775.jpg",
   "etiquetas": [
    "clima",
+   "tormenta",
    "tornado"
   ],
   "fuente": "libre",
   "h": 678,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-aa804c16d4": {
   "archivo": "libres/clima/hurricane-satellite-image-ov3.jpg",
   "categoria": "clima",
+  "clip": {
+   "espacio": 0.007,
+   "mar": 0.004,
+   "personas": 0.003,
+   "pez": 0.002,
+   "tormenta": 0.975
+  },
+  "clip_v": 3,
   "consulta": "Hurricane satellite image",
   "credito": "NASA Satellite Captures Hurricane Danielle, Hurricane Earl and Developing Tropical Depression 8 — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4945288550",
+  "dibujo": "dibujos/gta/lb-aa804c16d4.jpg",
   "etiquetas": [
    "clima",
    "hurricane",
    "image",
-   "satellite"
+   "satellite",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 775,
+  "tema": "tormenta",
   "w": 1023
  },
  "lb-ac7e7ec820": {
   "archivo": "libres/clima/tornado-ov5.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.003,
+   "avion": 0.006,
+   "cohete": 0.004,
+   "militar": 0.973,
+   "tormenta": 0.004
+  },
+  "clip_v": 3,
   "consulta": "Tornado",
   "credito": "Tornado - RIAT 2011 — Airwolfhound — CC BY-SA 2.0 — https://www.flickr.com/photos/24874528@N04/6660728439",
+  "dibujo": "dibujos/gta/lb-ac7e7ec820.jpg",
   "etiquetas": [
    "clima",
+   "militar",
    "tornado"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "militar",
   "w": 1024
  },
  "lb-afd6c5e690": {
   "archivo": "libres/clima/tropical-rain-3.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.002,
+   "bosque": 0.901,
+   "misterio": 0.077,
+   "pantano": 0.011,
+   "tormenta": 0.001
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical rain forest.jpg — Rully Aan Firmansyah — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_rain_forest.jpg",
+  "dibujo": "dibujos/gta/lb-afd6c5e690.jpg",
   "etiquetas": [
+   "bosque",
    "clima",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 2891,
+  "tema": "bosque",
   "w": 1920
  },
  "lb-b1f51caf12": {
   "archivo": "libres/clima/hurricane-satellite-image-ov6.jpg",
   "categoria": "clima",
+  "clip": {
+   "deporte": 0.003,
+   "lucia": 0.018,
+   "retrato": 0.005,
+   "tienda": 0.003,
+   "tormenta": 0.95
+  },
+  "clip_v": 3,
   "consulta": "Hurricane satellite image",
   "credito": "NASA Sees Irma Strengthen to a Category 5 Hurricane — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/36653336600",
+  "dibujo": "dibujos/gta/lb-b1f51caf12.jpg",
   "etiquetas": [
    "clima",
    "hurricane",
    "image",
-   "satellite"
+   "satellite",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 639,
+  "tema": "tormenta",
   "w": 1023
  },
  "lb-bc5f668e86": {
   "archivo": "libres/clima/flooded-street-ov5.jpg",
   "categoria": "clima",
+  "clip": {
+   "barco": 0.071,
+   "carretera": 0.174,
+   "deporte": 0.058,
+   "puerto": 0.234,
+   "tormenta": 0.063
+  },
+  "clip_v": 3,
   "consulta": "Flooded street",
   "credito": "Thailand Flood - Street View — NIST School Shared Account — CC BY-SA 2.0 — https://www.flickr.com/photos/62642923@N07/6327927878",
+  "dibujo": "dibujos/gta/lb-bc5f668e86.jpg",
   "etiquetas": [
+   "carretera",
    "clima",
    "flooded",
+   "puerto",
    "street"
   ],
   "fuente": "libre",
   "h": 660,
+  "tema": "puerto",
   "w": 990
  },
  "lb-cba9570872": {
   "archivo": "libres/clima/lightning-storm-night-1.jpg",
   "categoria": "clima",
+  "clip": {
+   "carretera": 0.013,
+   "mar": 0.014,
+   "monumento": 0.007,
+   "puerto": 0.006,
+   "tormenta": 0.908
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Port and lighthouse overnight storm with lightning in Port-la-Nouvelle.jpg — Maxime Raynal from France — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg",
+  "dibujo": "dibujos/gta/lb-cba9570872.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 1080,
+  "tema": "tormenta",
   "w": 1920
  },
  "lb-cff23bf6bb": {
   "archivo": "libres/clima/tropical-rain-ov5.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.401,
+   "bosque": 0.131,
+   "historia": 0.013,
+   "misterio": 0.047,
+   "pantano": 0.378
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical rain forest and mosses everywhere — daveynin — CC BY 2.0 — https://www.flickr.com/photos/44124370018@N01/7206437930",
+  "dibujo": "dibujos/gta/lb-cff23bf6bb.jpg",
   "etiquetas": [
+   "agua",
+   "bosque",
    "clima",
+   "pantano",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "agua",
   "w": 1024
  },
  "lb-e1a4699bb5": {
   "archivo": "libres/clima/tropical-rain-ov6.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.034,
+   "bosque": 0.61,
+   "ciencia": 0.02,
+   "misterio": 0.058,
+   "pantano": 0.124
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical rain forest, man! — daveynin — CC BY 2.0 — https://www.flickr.com/photos/44124370018@N01/7206430966",
+  "dibujo": "dibujos/gta/lb-e1a4699bb5.jpg",
   "etiquetas": [
+   "bosque",
    "clima",
+   "pantano",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "bosque",
   "w": 1024
  },
  "lb-e3238c8fdb": {
   "archivo": "libres/clima/hurricane-satellite-image-ov2.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.001,
+   "espacio": 0.002,
+   "mar": 0.001,
+   "retrato": 0.002,
+   "tormenta": 0.986
+  },
+  "clip_v": 3,
   "consulta": "Hurricane satellite image",
   "credito": "Hurricane Irma 2017 09 08 version 2 — anttilipponen — CC BY 2.0 — https://www.flickr.com/photos/150411108@N06/36949383822",
+  "dibujo": "dibujos/gta/lb-e3238c8fdb.jpg",
   "etiquetas": [
    "clima",
    "hurricane",
    "image",
-   "satellite"
+   "satellite",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 568,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-e39fdb8f02": {
   "archivo": "libres/clima/flooded-street-ov6.jpg",
   "categoria": "clima",
+  "clip": {
+   "barco": 0.115,
+   "caiman": 0.039,
+   "pantano": 0.061,
+   "puerto": 0.043,
+   "tormenta": 0.528
+  },
+  "clip_v": 3,
   "consulta": "Flooded street",
   "credito": "Flooded Streets South Townsville — robstephaustralia — CC BY 2.0 — https://www.flickr.com/photos/59773274@N00/5413071408",
+  "dibujo": "dibujos/gta/lb-e39fdb8f02.jpg",
   "etiquetas": [
+   "barco",
    "clima",
    "flooded",
-   "street"
+   "street",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-e8037ba08e": {
   "archivo": "libres/clima/lightning-storm-night-2.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.075,
+   "barco": 0.059,
+   "noche": 0.143,
+   "puerto": 0.099,
+   "tormenta": 0.386
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "Sheet Lightning over Mt Wellington.jpg — JJ Harrison (https://www.jjharrison.com.au/) — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Sheet_Lightning_over_Mt_Wellington.jpg",
+  "dibujo": "dibujos/gta/lb-e8037ba08e.jpg",
   "etiquetas": [
    "clima",
    "lightning",
    "night",
-   "storm"
+   "noche",
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 1269,
+  "tema": "tormenta",
   "w": 1920
  },
  "lb-e90a057549": {
   "archivo": "libres/clima/hurricane-satellite-image-ov1.jpg",
   "categoria": "clima",
+  "clip": {
+   "jason": 0.004,
+   "lucia": 0.004,
+   "puerto": 0.002,
+   "retrato": 0.017,
+   "tormenta": 0.957
+  },
+  "clip_v": 3,
   "consulta": "Hurricane satellite image",
   "credito": "NASA's Aqua Satellite Captures Hurricane Danielle — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4931591817",
+  "dibujo": "dibujos/gta/lb-e90a057549.jpg",
   "etiquetas": [
    "clima",
    "hurricane",
    "image",
-   "satellite"
+   "satellite",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 683,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-e9aca9d992": {
   "archivo": "libres/clima/tornado-ov2.jpg",
   "categoria": "clima",
+  "clip": {
+   "accion": 0.011,
+   "interior": 0.001,
+   "militar": 0.007,
+   "monumento": 0.001,
+   "tormenta": 0.973
+  },
+  "clip_v": 3,
   "consulta": "Tornado",
   "credito": "Record Breaking Tornadoes — GDS Infographics — CC BY 2.0 — https://www.flickr.com/photos/43157614@N06/4554359577",
+  "dibujo": "dibujos/gta/lb-e9aca9d992.jpg",
   "etiquetas": [
    "clima",
+   "tormenta",
    "tornado"
   ],
   "fuente": "libre",
   "h": 639,
+  "tema": "tormenta",
   "w": 1024
  },
  "lb-f2e5b884c6": {
   "archivo": "libres/clima/tropical-rain-6.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.004,
+   "caiman": 0.006,
+   "campo": 0.125,
+   "historia": 0.007,
+   "pantano": 0.835
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Sihanoukville Province. Tropical rain season.jpg — Dmitry Makeev — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Sihanoukville_Province._Tropical_rain_season.jpg",
+  "dibujo": "dibujos/gta/lb-f2e5b884c6.jpg",
   "etiquetas": [
+   "campo",
    "clima",
+   "pantano",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 1280,
+  "tema": "pantano",
   "w": 1920
  },
  "lb-f52cd10010": {
   "archivo": "libres/clima/lightning-storm-night-6.jpg",
   "categoria": "clima",
+  "clip": {
+   "ciencia": 0.047,
+   "historia": 0.03,
+   "monumento": 0.192,
+   "tormenta": 0.513,
+   "volcan": 0.099
+  },
+  "clip_v": 3,
   "consulta": "Lightning storm night",
   "credito": "A Vintage Lightning Storm at Kitt Peak.jpg — Gary Ladd/KPNO/NOIRLab/NSF/AURA — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:A_Vintage_Lightning_Storm_at_Kitt_Peak.jpg",
+  "dibujo": "dibujos/gta/lb-f52cd10010.jpg",
   "etiquetas": [
    "clima",
    "lightning",
+   "monumento",
    "night",
-   "storm"
+   "storm",
+   "tormenta"
   ],
   "fuente": "libre",
   "h": 1201,
+  "tema": "tormenta",
   "w": 1920
  },
  "lb-f983b8f924": {
   "archivo": "libres/clima/tropical-rain-ov4.jpg",
   "categoria": "clima",
+  "clip": {
+   "agua": 0.069,
+   "bosque": 0.531,
+   "caiman": 0.04,
+   "misterio": 0.039,
+   "pantano": 0.182
+  },
+  "clip_v": 3,
   "consulta": "Tropical rain",
   "credito": "Tropical Rain Forests, North Eastern India — Ashwin Kumar — CC BY-SA 2.0 — https://www.flickr.com/photos/34501870@N00/7159000727",
+  "dibujo": "dibujos/gta/lb-f983b8f924.jpg",
   "etiquetas": [
+   "bosque",
    "clima",
+   "pantano",
    "rain",
    "tropical"
   ],
   "fuente": "libre",
   "h": 619,
+  "tema": "bosque",
   "w": 1024
  }
 }
