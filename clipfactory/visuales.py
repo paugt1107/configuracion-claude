@@ -1,7 +1,8 @@
 """TOMMY · Imágenes que aparecen JUSTO cuando la voz nombra algo (estilo edición de TikTok).
 
 1. detectar(): busca en las palabras de la locución (con tiempos) entidades conocidas: países → bandera, dinero → bolsa,
-   policía → estrellas, coche, mapa/lugares, móvil/redes, récord/ventas → trofeo, Lucía/Jason → recorte, lugares reales → foto libre.
+   policía → estrellas, coche, mapa/lugares, móvil/redes, récord/ventas → trofeo, horas → reloj, consola → mando, nota → nota,
+   juegos/marcas (Metacritic, Zelda, PS5, Rockstar, FPS…) → pegatina con nombre, Lucía/Jason → recorte, lugares reales → foto libre.
 2. planificar(): elige qué mostrar y cuándo (sin saturar: separación mínima y sin repetir lo mismo seguido).
 3. preparar(): convierte cada visual en un PNG listo para superponer (pop-in de ~1,3 s en el centro de la pantalla).
 Las reglas extra del canal se añaden en canal-youtube/fuentes/visuales.yaml.
