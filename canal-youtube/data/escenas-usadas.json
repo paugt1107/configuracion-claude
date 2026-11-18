@@ -1,1 +1,89 @@
-{ "_nota": "Registro de escenas ya animadas. El agente animacion NO puede repetir ninguna.", "escenas": [] }
+{
+ "_nota": "Registro de escenas ya animadas. El agente animacion NO puede repetir ninguna.",
+ "escenas": [
+  {
+   "id": "S001-E01",
+   "video": "S001",
+   "resumen": "Reloj digital naranja neón gigante 00:00 sobre mapamundi azul marino con husos",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E02",
+   "video": "S001",
+   "resumen": "Globo terráqueo oscuro visto desde el espacio",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E03",
+   "video": "S001",
+   "resumen": "Mapa plano cenital",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E04",
+   "video": "S001",
+   "resumen": "Silueta luminosa de Nueva Zelanda (dos islas) en el océano oscuro, reloj pequeño 00:00 a su lado",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E05",
+   "video": "S001",
+   "resumen": "Pantalla partida en vertical: arriba reloj digital 00:00 con luz cálida",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E06",
+   "video": "S001",
+   "resumen": "Silueta de España y la península en azul, reloj 00:00 sobre ella, mini etiqueta 23:00 UTC",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E07",
+   "video": "S001",
+   "resumen": "Línea de tiempo horizontal con marcas de hora",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E08",
+   "video": "S001",
+   "resumen": "Silueta de México con el centro resaltado en verde-lima",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E09",
+   "video": "S001",
+   "resumen": "Silueta de Argentina alargada en turquesa",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E10",
+   "video": "S001",
+   "resumen": "Tres relojes idénticos 00:00 en columna, cada uno con distinta etiqueta UTC que se enciende por turnos",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E11",
+   "video": "S001",
+   "resumen": "Barra de descarga llena al 100% con candado metálico cerrado encima, sin marcas de plataformas",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E12",
+   "video": "S001",
+   "resumen": "Televisor genérico en salón oscuro mostrando cuenta atrás en pantalla",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E13",
+   "video": "S001",
+   "resumen": "Ilustración de un comentario fijado con chincheta y flecha animada que baja",
+   "fecha": "2026-11-18"
+  },
+  {
+   "id": "S001-E14",
+   "video": "S001",
+   "resumen": "Cierre de bucle: la cámara se aleja desde la esfera hasta dejar el reloj 00:00 neón naranja sobre mapamundi en el encuadre exacto del fotogr",
+   "fecha": "2026-11-18"
+  }
+ ]
+}
