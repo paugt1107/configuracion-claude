@@ -1,7 +1,25 @@
-# Qué busca la gente · 18-11 23:05
+# Qué busca la gente · 18-11 23:08
 
 Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente YA escribe: úsala como tema y título.
 🆕 = no salía en la pasada anterior (está subiendo).
+
+## 🚀 En subida en Google Trends (7 días)
+
+- **a que hora sale el gta 6 en nueva zelanda** · 4300 · ES
+- **mandy gta 6** · 2500 · ES
+- **cuando sale gta 6 en nueva zelanda** · 2200 · ES
+- **rubius gta 6** · 1850 · ES
+- **hora nueva zelanda** · 1650 · ES
+- **gta 6 nueva zelanda** · 900 · ES
+- **metacritic** · 850 · ES
+- **metacritic gta 6** · 750 · ES
+- **analisis gta 6** · 650 · ES
+- **a q hora sale el gta 6** · 550 · ES
+- **gta 6 directo** · 500 · ES
+- **a que hora sale el gta 6 en españa** · 450 · ES
+- **gta 6 reviews** · 450 · ES
+- **sensor tower gta 6** · 450 · ES
+- **a que hora sale el gta 6** · 450 · ES
 
 ## guía (54)
 
@@ -91,9 +109,9 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 - **gta 6 cual edicion es mejor** · 29 pts ▶ `es` · 2 fuentes
 - **gta 6 best start** · 27 pts ▶ `en` · 1 fuentes
 - **gta 6 best settings xbox** · 26 pts ▶ `en` · 1 fuentes
-- **gta 6 mejor en ps5 o xbox** · 25 pts   `es` · 2 fuentes
+- **gta 6 best guns** · 25 pts ▶ `en` · 1 fuentes
 
-## historia (48)
+## historia (49)
 
 - **gta 6 final** · 68 pts ▶ `es` · 5 fuentes
 - **gta 6 primera mision** · 63 pts ▶ `es` · 5 fuentes
@@ -108,20 +126,20 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 - **gta 6 final boss** · 35 pts ▶ `es` · 2 fuentes
 - **gta 6 mision final** · 34 pts ▶ `es` · 2 fuentes
 
-## personaje (54)
+## personaje (56)
 
 - **gta 6 lucia** · 68 pts ▶ `es` · 5 fuentes
-- **gta 6 lucia bikini** · 66 pts ▶ `es` · 5 fuentes
 - **gta 6 jason** · 58 pts ▶ `es` · 4 fuentes
 - **gta 6 jason actor** · 56 pts ▶ `es` · 4 fuentes
-- **gta 6 lucia actress** · 45 pts ▶ `es` · 3 fuentes
-- **gta 6 jason voice actor** · 41 pts ▶ `es` · 3 fuentes
+- **gta 6 lucia bikini** · 54 pts ▶ `es` · 4 fuentes
+- **gta 6 jason voice actor** · 42 pts ▶ `es` · 3 fuentes
 - **gta 6 jason and mandy** · 38 pts ▶ `es` · 2 fuentes
 - **gta 6 lucia gameplay** · 37 pts ▶ `es` · 2 fuentes
 - **gta 6 jason leak** · 33 pts ▶ `es` · 2 fuentes
 - **gta 6 jason voice** · 32 pts ▶ `es` · 2 fuentes
 - **gta 6 lucia mods** · 30 pts ▶ `es` · 2 fuentes
 - **gta 6 lucia y jason** · 29 pts   `es` · 2 fuentes
+- **gta 6 lucia filtracion** · 29 pts   `es` · 2 fuentes
 
 ## online (22)
 
@@ -132,8 +150,8 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 - **gta 6 online trailer** · 35 pts ▶ `es` · 2 fuentes
 - **gta 6 online gameplay** · 34 pts ▶ `es` · 2 fuentes
 - **gta 6 online precio** · 28 pts   `es` · 2 fuentes
-- 🆕 **gta 6 tendra online** · 28 pts ▶ `es` · 1 fuentes
-- **gta 6 online release date** · 27 pts   `es` · 2 fuentes
+- **gta 6 online release date** · 28 pts   `es` · 2 fuentes
+- **gta 6 tendra online** · 28 pts ▶ `es` · 1 fuentes
 - **gta 6 online stream** · 27 pts ▶ `es` · 1 fuentes
 - **gta 6 online vivo** · 27 pts ▶ `es` · 1 fuentes
 - **gta 6 online tendra crossplay** · 26 pts   `es` · 2 fuentes
@@ -150,10 +168,10 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 - **gta sa gta 6 mods** · 32 pts ▶ `es` · 2 fuentes
 - **realistic gta 6 mods** · 29 pts ▶ `es` · 2 fuentes
 - **gta 6 mods meme** · 28 pts   `es` · 2 fuentes
-- 🆕 **gta 6 pc** · 28 pts ▶ `es` · 1 fuentes
+- **gta 6 pc** · 28 pts ▶ `es` · 1 fuentes
 - **gta 6 mods reddit** · 27 pts   `es` · 2 fuentes
 
-## otros (526)
+## otros (524)
 
 - **gta 6 secretos** · 68 pts ▶ `es` · 5 fuentes
 - **gta 6 coches** · 68 pts ▶ `es` · 5 fuentes
