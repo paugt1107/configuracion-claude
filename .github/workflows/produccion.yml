@@ -21,6 +21,9 @@ on:
       - "clipfactory/captions.py"
       - "clipfactory/thumbs.py"
       - "clipfactory/short_job.py"
+      - "clipfactory/visuales.py"
+      - "clipfactory/props.py"
+      - "clipfactory/calidad.py"
 permissions:
   contents: write
 concurrency:
