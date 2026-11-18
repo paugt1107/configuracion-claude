@@ -46,8 +46,9 @@ A las 72 h: exporta la retención (Studio → vídeo → Analítica → Interacc
 - `tests` en cada push (render real con vídeo sintético).
 - `radar-tendencias` cada día a las 07:17 (si hay `YOUTUBE_API_KEY`): guarda `canal-youtube/data/trends/*.md` y añade alarmas ≥10x a `alertas.md`.
 
-## Grabar y subir tu voz (S001)
-1. Grabadora del móvil, sitio silencioso, móvil a un palmo de la boca. Lee `canal-youtube/audio/S001-narracion.txt` a ritmo natural y alegre (~45 s). Si te equivocas, repite la frase y sigue: se recorta después. Un solo archivo.
-2. Guárdalo como `S001-voz.m4a` (o .mp3/.wav).
-3. GitHub (web) → repositorio → carpeta `canal-youtube/audio` → Add file → Upload files → arrastra el archivo → Commit changes.
-4. Dime "subida". Yo hago `git pull`, sincronizo subtítulos y escenas con tu voz y dejo el vídeo en `entregas/S001/S001-final.mp4`.
+## Voz IA automática (no grabas nada)
+1. El guion va en `canal-youtube/audio/<ID>-narracion.txt`, una frase por línea (= una escena).
+2. Al hacer push, GitHub Actions (`produccion`) genera la voz IA frase a frase, efectos, música y el vídeo, y lo sube a `entregas/<ID>/<ID>-final-ia.mp4`.
+3. Voz: gratis por defecto (es-ES-AlvaroNeural). Escúchalas en `entregas/voces/` y fija la tuya en GitHub → Settings → Secrets and variables → Actions → Variables → `TTS_VOICE`.
+4. Más calidad (opcional): secreto `OPENAI_API_KEY` (≈1,5 céntimos/min, voz dirigible por instrucciones) o `ELEVENLABS_API_KEY` (+ variable `ELEVENLABS_VOICE_ID`). Se usa sola la mejor disponible.
+5. Relanzar a mano: GitHub → Actions → produccion → Run workflow.

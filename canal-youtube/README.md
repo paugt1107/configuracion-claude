@@ -1,4 +1,4 @@
-# Oficina virtual del canal — 12 agentes, 1 función cada uno, 0 solapes
+# Oficina virtual del canal — 13 agentes, 1 función cada uno, 0 solapes
 
 Regla anti-solape: cada skill tiene UN dueño y cada tarea UN agente. Si dos hacen lo mismo, se elimina uno.
 Comandos: `/short <tema>` (Short original) y `/clip <ID> <fuente>` (clipping con política de fuentes). Código: `clipfactory/` (ver MANUAL.md). Memoria compartida: `data/aprendizajes.md`. Voz del canal: `voice.md` (rellenar primero).
@@ -8,7 +8,8 @@ Comandos: `/short <tema>` (Short original) y `/clip <ID> <fuente>` (clipping con
 | tendencias | sonnet | Elegir nicho, alarma 10x, ideas | yt-viral, viral-short-form-ideas | data/tendencias.md, alertas.md |
 | estratega | sonnet | Plan semanal y auditoría (1 arreglo) | yt-plan, yt-audit | data/plan-semanal.md |
 | guionista | opus | Gancho + guion (y reescritura) | yt-script (hookscore), viral-youtube-shorts, viral-tiktok-content | guiones/ |
-| voz-audio | haiku | Narración TTS + música/efectos | — | audio/ |
+| voz-audio | haiku | Locución IA frase a frase (sin grabar nada) | clipfactory voice | audio/, entregas/ |
+| sonido | haiku | Efectos, música sin derechos y mezcla -14 LUFS | clipfactory sfx | mezcla |
 | director-arte | sonnet | Personajes, paleta y fichas (identidad visual) | — (personajes.md) | personajes.md |
 | animacion | sonnet | Escenas 9:16 sin repetir | — | guiones/*-escenas.md |
 | packaging | sonnet | Título + miniatura/fotograma 1 | yt-package (title.py) | miniaturas/ |

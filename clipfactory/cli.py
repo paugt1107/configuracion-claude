@@ -53,6 +53,19 @@ def _cmd_voz(a):
     print(synthesize(text, a.salida, voice=a.voz, rate=a.velocidad))
 
 
+def _cmd_narrar(a):
+    from .voice import produce
+    lines = [l.strip() for l in Path(a.guion).read_text(encoding="utf-8").splitlines() if l.strip()]
+    r = produce(lines, a.salida, provider=a.proveedor)
+    print(f"{r['audio']} · {len(r['lines'])} frases · proveedor {r['provider']}")
+
+
+def _cmd_voces(a):
+    from .voice import samples
+    for p in samples(a.texto, a.salida):
+        print(p)
+
+
 def _cmd_render(a):
     from .render import render
     print(render(a.job, a.registro, dry_run=a.dry_run))
@@ -88,6 +101,10 @@ def main(argv=None):
     s.add_argument("--salida"); s.set_defaults(f=_cmd_candidatos)
     s = sub.add_parser("voz", help="voz en off con edge-tts + palabras"); s.add_argument("texto", nargs="?"); s.add_argument("--archivo")
     s.add_argument("--salida", required=True); s.add_argument("--voz", default="es-ES-AlvaroNeural"); s.add_argument("--velocidad", default="+8%"); s.set_defaults(f=_cmd_voz)
+    s = sub.add_parser("narrar", help="locución IA frase a frase (+ tiempos)"); s.add_argument("guion"); s.add_argument("--salida", required=True)
+    s.add_argument("--proveedor", default="auto", help="auto|edge|openai|elevenlabs|tono"); s.set_defaults(f=_cmd_narrar)
+    s = sub.add_parser("voces", help="muestras de voces gratuitas"); s.add_argument("--texto", default="¿Sabías que hay gente que juega GTA seis doce horas antes que tú?")
+    s.add_argument("--salida", default="entregas/voces"); s.set_defaults(f=_cmd_voces)
     s = sub.add_parser("render", help="renderiza un job YAML a 1080x1920"); s.add_argument("job"); s.add_argument("--dry-run", action="store_true"); s.set_defaults(f=_cmd_render)
     s = sub.add_parser("radar", help="radar de tendencias (YOUTUBE_API_KEY)"); s.add_argument("consulta")
     s.add_argument("--dias", type=int, default=7); s.add_argument("--region", default="ES"); s.add_argument("--idioma", default="es")

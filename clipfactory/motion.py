@@ -233,7 +233,7 @@ def estimate_words(text: str, total_s: float, lead: float = 0.2) -> list[dict]:
     return out
 
 
-def build(scenes: list[dict], words: list[dict], out: str | Path, audio: str | None = None) -> Path:
+def build(scenes: list[dict], words: list[dict], out: str | Path, audio: str | None = None, premixed: bool = False) -> Path:
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="motion-") as tmp:
@@ -256,7 +256,8 @@ def build(scenes: list[dict], words: list[dict], out: str | Path, audio: str | N
             cmd += ["-i", audio]
         cmd += ["-vf", f"subtitles='{esc}'", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart"]
         # voz: quita graves de ambiente, reduce ruido de fondo y normaliza a -14 LUFS (estándar de Shorts/TikTok)
-        cmd += (["-af", "highpass=f=80,afftdn=nf=-25,loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k",
+        af = [] if premixed else ["-af", "highpass=f=80,afftdn=nf=-25,loudnorm=I=-14:TP=-1.5:LRA=11"]
+        cmd += ([*af, "-c:a", "aac", "-b:a", "192k",
                  "-ar", "48000", "-shortest"] if audio else ["-an"]) + [str(out)]
         subprocess.run(cmd, check=True)
     return out

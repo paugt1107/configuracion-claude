@@ -1,0 +1,77 @@
+name: produccion
+# Producción automática con voz IA (la sesión de Claude no tiene acceso a servicios de voz; GitHub sí).
+# Se lanza al cambiar un guion (canal-youtube/audio/SXXX-narracion.txt) o un job, o a mano (Actions → produccion → Run).
+# Voz: auto = ElevenLabs si hay secreto ELEVENLABS_API_KEY, si no OpenAI (OPENAI_API_KEY), si no voces gratuitas (edge-tts).
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Script en canal-youtube/jobs (vacío = según cambios)"
+        default: "s001_motion.py"
+      proveedor:
+        description: "auto | edge | openai | elevenlabs"
+        default: "auto"
+  push:
+    branches: [main]
+    paths:
+      - "canal-youtube/audio/*-narracion.txt"
+      - "canal-youtube/jobs/*.py"
+      - "clipfactory/voice.py"
+      - "clipfactory/sfx.py"
+permissions:
+  contents: write
+concurrency:
+  group: produccion
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      TTS_VOICE: ${{ vars.TTS_VOICE || 'es-ES-AlvaroNeural' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          sudo apt-get install -y -qq fonts-inter || true
+          pip install -q pyyaml pillow edge-tts
+      - name: Producir
+        run: |
+          mkdir -p entregas/_logs
+          set -o pipefail
+          {
+            if [ ! -d entregas/voces ]; then python3 -m clipfactory voces --salida entregas/voces; fi
+            JOBS=""
+            if [ -n "${{ github.event.inputs.job }}" ]; then
+              JOBS="canal-youtube/jobs/${{ github.event.inputs.job }}"
+            else
+              for f in $(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" 2>/dev/null); do
+                case "$f" in
+                  canal-youtube/jobs/*.py) JOBS="$JOBS $f" ;;
+                  canal-youtube/audio/*-narracion.txt) id=$(basename "$f" -narracion.txt | tr 'A-Z' 'a-z'); JOBS="$JOBS canal-youtube/jobs/${id}_motion.py" ;;
+                  clipfactory/voice.py|clipfactory/sfx.py) JOBS="$JOBS canal-youtube/jobs/s001_motion.py" ;;
+                esac
+              done
+            fi
+            for j in $(echo $JOBS | tr ' ' '\n' | sort -u); do
+              [ -f "$j" ] && python3 "$j" --ia --proveedor "${{ github.event.inputs.proveedor || 'auto' }}"
+            done
+          } 2>&1 | tee entregas/_logs/produccion.log
+      - name: Guardar entregas
+        if: always()
+        run: |
+          git config user.name "produccion-bot"
+          git config user.email "produccion-bot@users.noreply.github.com"
+          git add entregas
+          git diff --cached --quiet && exit 0
+          git commit -m "Producción automática (${{ github.run_id }}) [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
