@@ -1,0 +1,380 @@
+"""TOMMY · Banco de imágenes del canal: descarga, etiqueta, anima en 3D y hace una galería.
+
+Fuentes (canal-youtube/fuentes/banco.yaml): capturas y artes OFICIALES de Rockstar + fotos LIBRES de Wikimedia Commons.
+Resultado en media/banco/:
+  oficial/<id>.jpg, libres/<categoria>/<id>.jpg   imágenes (máx. 1920 px)
+  animadas/<id>.mp4                               clip 3D de 3 s listo para meter en un vídeo (1080x1920)
+  miniaturas/<id>.jpg                             para la galería
+  indice.json                                     {id: {archivo, fuente, credito, categoria, etiquetas, w, h, clip}}
+  GALERIA.md                                      galería navegable en GitHub
+Uso:  python3 -m clipfactory.banco [descargar|etiquetar|animar|galeria|todo] [--max N]
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import io
+import json
+import re
+import subprocess
+import tempfile
+import urllib.request
+from pathlib import Path
+
+import yaml
+from PIL import Image
+
+from .. import rutas
+
+BANCO = rutas.MEDIA / "banco"
+INDICE = BANCO / "indice.json"
+CONFIG = rutas.FUENTES / "banco.yaml"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+CREDITO_OFICIAL = "Imagen oficial: Rockstar Games (Grand Theft Auto VI)"
+
+# Etiquetas por texto (nombre de archivo, alt, página)
+TEXTO_ETIQUETAS = {
+    "jason": r"jason|duval",
+    "lucia": r"lucia|caminos",
+    "vice-city": r"vice.?city",
+    "leonida": r"leonida",
+    "keys": r"\bkeys\b|leonida.?keys",
+    "grassrivers": r"grass.?rivers",
+    "port-gellhorn": r"gellhorn",
+    "ambrosia": r"ambrosia",
+    "mount-kalaga": r"kalaga",
+    "personaje": r"people|character|personaj|cal-hampton|boobie|dre|real-dimez|raul|brian",
+    "mapa": r"\bmap\b|mapa",
+    "logo": r"logo",
+}
+# Etiquetas por contenido (CLIP): etiqueta → descripción en inglés
+CLIP_ETIQUETAS = {
+    "lucia": "a photo of a young latina woman with brown hair",
+    "jason": "a photo of a man with long dark hair and a beard",
+    "pareja": "a man and a woman together",
+    "coche": "a car on the road",
+    "deportivo": "a fancy sports car",
+    "moto": "a motorcycle",
+    "barco": "a boat on the water",
+    "avion": "an airplane or helicopter",
+    "policia": "police officers or a police car",
+    "arma": "a person holding a gun",
+    "dinero": "a lot of cash money",
+    "playa": "a beach with sand and ocean",
+    "ciudad": "a city skyline with skyscrapers",
+    "noche": "a street at night with neon lights",
+    "pantano": "a swamp with wild animals",
+    "fiesta": "people partying in a club",
+    "tienda": "a store or gas station",
+    "atardecer": "a sunset",
+    "carretera": "a highway or a bridge",
+}
+
+
+def _get(url: str, timeout: int = 60) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Referer": "https://www.rockstargames.com/"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
+
+
+def cargar() -> dict:
+    return json.loads(INDICE.read_text(encoding="utf-8")) if INDICE.exists() else {}
+
+
+def guardar(ind: dict) -> None:
+    BANCO.mkdir(parents=True, exist_ok=True)
+    INDICE.write_text(json.dumps(ind, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+
+
+def _ahash(im: Image.Image) -> str:
+    g = im.convert("L").resize((16, 16))
+    px = list(g.getdata())
+    avg = sum(px) / len(px)
+    return "".join("1" if p > avg else "0" for p in px)
+
+
+def _cerca(a: str, b: str) -> bool:
+    return sum(x != y for x, y in zip(a, b)) <= 12
+
+
+def _guardar_imagen(data: bytes, dst: Path) -> tuple[int, int] | None:
+    im = Image.open(io.BytesIO(data))
+    im.load()
+    if im.width < 700 or im.height < 400:
+        return None
+    im = im.convert("RGB")
+    im.thumbnail((1920, 1920), Image.LANCZOS)
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    im.save(dst, "JPEG", quality=86, optimize=True)
+    return im.width, im.height
+
+
+def _etiquetas_texto(*textos: str) -> list[str]:
+    t = " ".join(textos).lower()
+    return sorted(k for k, pat in TEXTO_ETIQUETAS.items() if re.search(pat, t))
+
+
+def _limpia(url: str) -> str:
+    """Quita parámetros de tamaño para pedir la imagen original."""
+    return re.sub(r"\?.*$", "", url)
+
+
+def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
+    paginas = (cfg.get("oficial") or {}).get("paginas") or []
+    if not paginas:
+        return 0
+    with tempfile.TemporaryDirectory() as tmp:
+        lista = Path(tmp) / "urls.json"
+        subprocess.run(["node", str(Path(__file__).with_name("scrape.mjs")), str(lista), *paginas], check=False, timeout=1800)
+        items = json.loads(lista.read_text()) if lista.exists() else []
+    print(f"[banco] oficial: {len(items)} URLs candidatas")
+    hashes = {v["hash"]: k for k, v in ind.items() if v.get("hash")}
+    nuevas = 0
+    vistos = set()
+    for it in items:
+        if nuevas >= maximo:
+            break
+        url = _limpia(it["url"])
+        if url in vistos or any(v.get("url") == url for v in ind.values()):
+            continue
+        vistos.add(url)
+        try:
+            data = _get(url)
+        except Exception:
+            try:
+                data = _get(it["url"])
+            except Exception as e:
+                print(f"[banco] no baja {url[:90]}: {e}")
+                continue
+        try:
+            im = Image.open(io.BytesIO(data))
+            im.load()
+        except Exception:
+            continue
+        h = _ahash(im)
+        dup = next((k for hh, k in hashes.items() if _cerca(h, hh)), None)
+        if dup and ind[dup]["w"] >= im.width:
+            continue
+        iid = "of-" + hashlib.sha1(url.encode()).hexdigest()[:10]
+        dst = BANCO / "oficial" / f"{iid}.jpg"
+        wh = _guardar_imagen(data, dst)
+        if not wh:
+            continue
+        if dup:  # misma imagen en peor calidad: se sustituye
+            (BANCO / ind[dup]["archivo"]).unlink(missing_ok=True)
+            ind.pop(dup)
+        nombre = Path(url).stem
+        ind[iid] = {
+            "archivo": str(dst.relative_to(BANCO)),
+            "fuente": "oficial",
+            "url": url,
+            "pagina": it.get("pagina", ""),
+            "credito": CREDITO_OFICIAL,
+            "categoria": "oficial",
+            "etiquetas": _etiquetas_texto(nombre, it.get("alt", ""), it.get("pagina", "")),
+            "alt": it.get("alt", ""),
+            "w": wh[0],
+            "h": wh[1],
+            "hash": h,
+        }
+        hashes[h] = iid
+        nuevas += 1
+    print(f"[banco] oficial: {nuevas} nuevas")
+    return nuevas
+
+
+def descargar_libres(cfg: dict, ind: dict, maximo: int) -> int:
+    from .. import libres
+
+    lib = dict(cfg.get("libres") or {})
+    n = int(lib.pop("n", 3))
+    nuevas = 0
+    for cat, consultas in lib.items():
+        for q in consultas or []:
+            if nuevas >= maximo:
+                return nuevas
+            try:
+                res = libres.buscar_varias(q, n, BANCO / "libres" / cat)
+            except Exception as e:
+                print(f"[banco] Commons '{q}': {e}")
+                continue
+            for path, credit, w, h in res:
+                iid = "lb-" + hashlib.sha1(path.name.encode()).hexdigest()[:10]
+                if iid in ind:
+                    continue
+                ind[iid] = {
+                    "archivo": str(path.relative_to(BANCO)),
+                    "fuente": "libre",
+                    "credito": credit,
+                    "categoria": cat,
+                    "consulta": q,
+                    "etiquetas": sorted({cat, *libres.slug(q).split("-")[:3]}),
+                    "w": w,
+                    "h": h,
+                }
+                nuevas += 1
+    print(f"[banco] libres: {nuevas} nuevas")
+    return nuevas
+
+
+def etiquetar(ind: dict) -> int:
+    """Añade etiquetas por CONTENIDO con CLIP (si está instalado). Sobre todo para saber dónde salen Lucía y Jason."""
+    try:
+        import torch
+        from transformers import CLIPModel, CLIPProcessor
+    except ImportError:
+        print("[banco] CLIP no instalado: solo etiquetas por texto")
+        return 0
+    model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+    proc = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    keys = list(CLIP_ETIQUETAS)
+    txt = proc(text=[CLIP_ETIQUETAS[k] for k in keys], return_tensors="pt", padding=True)
+    with torch.no_grad():
+        tf = model.get_text_features(**txt)
+        tf = tf / tf.norm(dim=-1, keepdim=True)
+    hechos = 0
+    for v in ind.values():
+        if v.get("clip"):
+            continue
+        im = Image.open(BANCO / v["archivo"]).convert("RGB")
+        with torch.no_grad():
+            f = model.get_image_features(**proc(images=im, return_tensors="pt"))
+            f = f / f.norm(dim=-1, keepdim=True)
+            p = (100 * f @ tf.T).softmax(dim=-1)[0].tolist()
+        top = sorted(zip(keys, p), key=lambda x: -x[1])
+        auto = [k for k, s in top[:3] if s >= 0.12]
+        v["clip"] = {k: round(s, 3) for k, s in top[:5]}
+        v["etiquetas"] = sorted(set(v.get("etiquetas", [])) | set(auto))
+        hechos += 1
+    print(f"[banco] etiquetadas con CLIP: {hechos}")
+    return hechos
+
+
+def personajes(ind: dict) -> list[str]:
+    """Copia la mejor foto oficial de Lucía, de Jason y de los dos a media/oficial/ (para recortes y escenas 'foto')."""
+    rutas.OFICIAL.mkdir(parents=True, exist_ok=True)
+    hechos = []
+
+    def score(v, k):
+        return (v.get("clip") or {}).get(k, 0) + (0.5 if k in _etiquetas_texto(v.get("url", ""), v.get("alt", "")) else 0)
+
+    ofi = [v for v in ind.values() if v["fuente"] == "oficial"]
+    for nombre, quiere, evita in [("lucia", "lucia", "jason"), ("jason", "jason", "lucia")]:
+        cands = sorted((v for v in ofi if quiere in v["etiquetas"] and evita not in v["etiquetas"]), key=lambda v: -score(v, quiere))
+        if cands:
+            dst = rutas.OFICIAL / f"{nombre}.jpg"
+            if not dst.exists():
+                dst.write_bytes((BANCO / cands[0]["archivo"]).read_bytes())
+                hechos.append(dst.name)
+    pares = sorted(
+        (v for v in ofi if {"lucia", "jason"} <= set(v["etiquetas"]) or "pareja" in v["etiquetas"]), key=lambda v: -score(v, "pareja")
+    )
+    if pares and not (rutas.OFICIAL / "lucia-jason.jpg").exists():
+        (rutas.OFICIAL / "lucia-jason.jpg").write_bytes((BANCO / pares[0]["archivo"]).read_bytes())
+        hechos.append("lucia-jason.jpg")
+    print(f"[banco] personajes: {hechos}")
+    return hechos
+
+
+def animar(ind: dict, maximo: int, dur: float = 3.0) -> int:
+    """Clip 3D de cada imagen (alterna estilos) en media/banco/animadas/."""
+    from .. import escena3d
+
+    estilos = ["inclinada", "lleno", "inclinada", "lleno", "giro"]
+    hechos = 0
+    for i, (iid, v) in enumerate(sorted(ind.items())):
+        if hechos >= maximo:
+            break
+        out = BANCO / "animadas" / f"{iid}.mp4"
+        if out.exists():
+            v["animada"] = str(out.relative_to(BANCO))
+            continue
+        out.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            escena3d.clip(
+                {"tipo": "foto", "imagen": str(BANCO / v["archivo"]), "estilo": estilos[i % len(estilos)], "color": "gold"},
+                dur,
+                out,
+                crf=26,
+            )
+            v["animada"] = str(out.relative_to(BANCO))
+            hechos += 1
+        except Exception as e:
+            print(f"[banco] no se anima {iid}: {e}")
+    print(f"[banco] animadas: {hechos}")
+    return hechos
+
+
+def galeria(ind: dict) -> Path:
+    mini = BANCO / "miniaturas"
+    mini.mkdir(parents=True, exist_ok=True)
+    por_cat: dict[str, list] = {}
+    for iid, v in sorted(ind.items()):
+        m = mini / f"{iid}.jpg"
+        if not m.exists():
+            im = Image.open(BANCO / v["archivo"]).convert("RGB")
+            im.thumbnail((360, 360))
+            im.save(m, "JPEG", quality=78)
+        por_cat.setdefault(v["categoria"], []).append((iid, v))
+    lines = [
+        "# Galería del banco de imágenes (TOMMY)",
+        "",
+        f"{len(ind)} imágenes · {sum(1 for v in ind.values() if v.get('animada'))} animadas en 3D. "
+        "Pulsa la miniatura para la imagen; ▶ para el clip 3D (1080x1920, 3 s). "
+        "Úsalas en un guion con `{kind: 3d, tipo: foto, imagen: media/banco/<archivo>}` o pídeselo a Pedro por etiqueta.",
+        "",
+        "Créditos: oficiales → «Imagen oficial: Rockstar Games»; libres → ver `indice.json` (autor y licencia, van solos a publicacion.md).",
+        "",
+    ]
+    for cat, items in sorted(por_cat.items()):
+        lines += [f"## {cat} ({len(items)})", "", "| | | | |", "|---|---|---|---|"]
+        row = []
+        for iid, v in items:
+            clip = f" · [▶]({v['animada']})" if v.get("animada") else ""
+            et = ", ".join(v.get("etiquetas", [])[:4])
+            row.append(f"[![{iid}](miniaturas/{iid}.jpg)]({v['archivo']})<br>`{iid}`{clip}<br><sub>{et}</sub>")
+            if len(row) == 4:
+                lines.append("| " + " | ".join(row) + " |")
+                row = []
+        if row:
+            lines.append("| " + " | ".join(row + [""] * (4 - len(row))) + " |")
+        lines.append("")
+    out = BANCO / "GALERIA.md"
+    out.write_text("\n".join(lines), encoding="utf-8")
+    return out
+
+
+def buscar(etiqueta: str, fuente: str | None = None) -> list[Path]:
+    """Imágenes del banco con esa etiqueta (para Tommy y para los guiones)."""
+    ind = cargar()
+    return [BANCO / v["archivo"] for v in ind.values() if etiqueta in v.get("etiquetas", []) and (fuente is None or v["fuente"] == fuente)]
+
+
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(prog="clipfactory.banco")
+    ap.add_argument("paso", choices=["descargar", "etiquetar", "animar", "galeria", "todo"])
+    ap.add_argument("--max", type=int, default=400)
+    a = ap.parse_args(argv)
+    cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8")) or {}
+    ind = cargar()
+    if a.paso in ("descargar", "todo"):
+        descargar_oficial(cfg, ind, a.max)
+        guardar(ind)
+        descargar_libres(cfg, ind, a.max)
+        guardar(ind)
+    if a.paso in ("etiquetar", "todo"):
+        etiquetar(ind)
+        guardar(ind)
+        personajes(ind)
+    if a.paso in ("animar", "todo"):
+        animar(ind, a.max)
+        guardar(ind)
+    galeria(ind)
+    guardar(ind)
+    print(f"[banco] total {len(ind)} imágenes")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

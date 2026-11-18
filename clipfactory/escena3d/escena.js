@@ -202,8 +202,19 @@ if (T === "numero" || T === "texto") {
   const shine = new THREE.Mesh(new THREE.PlaneGeometry(0.8, hh * 1.6), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.18, blending: THREE.AdditiveBlending, depthWrite: false }));
   shine.rotation.z = 0.5; shine.position.z = 0.05;
   root.add(frameM, pic, shine);
-  upd.push((t) => { shine.position.x = -4 + ((t * 2.2) % 9); root.rotation.x = -0.08 + 0.05 * Math.sin(t * 0.7); });
   halo.material.color.set(0xffffff); giro = 0.2;
+  if (S.estilo === "lleno") {
+    // imagen a pantalla completa con zoom lento (Ken Burns) + destello; el marco 3D no se ve
+    root.visible = false; halo.visible = false;
+    const bgEl = document.getElementById("bg"), dir = (S.texto || S.imagen).length % 2 ? 1 : -1;
+    bgEl.style.background = `url(${S.imagen}) center/cover`;
+    upd.push((t) => { const k = t / S.dur; bgEl.style.transform = `scale(${1.06 + 0.16 * k}) translateX(${dir * (k - 0.5) * 40}px)`; });
+  } else if (S.estilo === "giro") {
+    upd.push((t) => { shine.position.x = -4 + ((t * 2.2) % 9); root.rotation.y = -1.6 * (1 - easeOut(t / 0.8)); });
+    giro = 0;
+  } else {
+    upd.push((t) => { shine.position.x = -4 + ((t * 2.2) % 9); root.rotation.x = -0.08 + 0.05 * Math.sin(t * 0.7); });
+  }
 } else if (T === "versus" || T === "foto") {
   const [a, b] = String(S.texto || "A|B").split("|").concat([""]);
   const A = fit(text3d(a, 1.2), 3.2), B = fit(text3d(b, 1.2, new THREE.MeshPhysicalMaterial({ color: 0xf2f4ff, metalness: 1, roughness: 0.25, clearcoat: 1 })), 3.2), vs = text3d("VS", 0.6);

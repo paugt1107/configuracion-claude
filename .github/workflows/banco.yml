@@ -1,0 +1,76 @@
+name: Tommy · Banco de imágenes (oficiales + libres, animadas en 3D)
+# Descarga capturas/artes OFICIALES de GTA VI y fotos LIBRES de Commons, las etiqueta (CLIP), saca Lucía/Jason para
+# recortes, anima cada imagen en 3D (clip de 3 s) y hace la galería media/banco/GALERIA.md. Guarda por tandas.
+on:
+  workflow_dispatch:
+    inputs:
+      maximo:
+        description: "Máximo de imágenes nuevas por fuente"
+        default: "400"
+  push:
+    branches: [main]
+    paths: ["canal-youtube/fuentes/banco.yaml", "clipfactory/banco/**"]
+  schedule:
+    - cron: "17 4 * * *"   # una vez al día: recoge las capturas nuevas que publique Rockstar
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: banco
+  cancel-in-progress: false
+jobs:
+  banco:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      MAXIMO: ${{ github.event.inputs.maximo || '400' }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q -e ".[banco,recortes]"
+          npm install -g playwright@1.63.0
+          npx -y playwright@1.63.0 install --with-deps chromium
+          echo "NODE_PATH=$(npm root -g)" >> "$GITHUB_ENV"
+      - name: Función guardar
+        run: |
+          cat > /tmp/guardar.sh <<'EOF'
+          git config user.name "banco-bot"
+          git config user.email "banco-bot@users.noreply.github.com"
+          git add media/banco media/oficial media/recortes
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Banco de imágenes: $1 [skip ci]"
+          for i in 1 2 3 4; do git pull --rebase -q -X ours && git push -q && break; sleep 5; done
+          EOF
+          chmod +x /tmp/guardar.sh
+      - name: 1 · Descargar (oficiales + libres)
+        run: python3 -m clipfactory.banco descargar --max "$MAXIMO" 2>&1 | tee -a /tmp/banco-log.txt
+      - run: /tmp/guardar.sh "descarga"
+      - name: 2 · Etiquetar (CLIP) y sacar Lucía/Jason
+        run: python3 -m clipfactory.banco etiquetar 2>&1 | tee -a /tmp/banco-log.txt
+      - name: 3 · Recortes de personajes
+        run: python3 -c "from clipfactory import recorte; print(recorte.process_all())"
+        continue-on-error: true
+      - run: /tmp/guardar.sh "etiquetas y personajes"
+      - name: 4 · Animar en 3D (por tandas de 30, guardando cada tanda)
+        run: |
+          for tanda in $(seq 1 30); do
+            python3 -m clipfactory.banco animar --max 30 2>&1 | tee /tmp/anim.txt
+            /tmp/guardar.sh "animadas (tanda $tanda)"
+            grep -q "animadas: 0" /tmp/anim.txt && break
+          done
+      - name: 5 · Rehacer vídeos que usan fotos de personajes
+        if: always()
+        run: |
+          for g in $(grep -l "media/oficial/\|media/banco/" canal-youtube/guiones/S*.yaml); do
+            gh workflow run produccion.yml -f job="$(basename "$g" .yaml)" || true
+          done

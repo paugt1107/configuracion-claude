@@ -75,10 +75,16 @@ def _data_urls(path: Path) -> tuple[str, str]:
     return out[0], out[1]
 
 
-def clip(spec: dict, dur: float, out: Path, fps: int = 30) -> Path:
+def clip(spec: dict, dur: float, out: Path, fps: int = 30, crf: int = 19) -> Path:
     """Renderiza la escena a un mp4 1080x1920 de `dur` segundos."""
     s = {k: v for k, v in spec.items() if k != "kind"}
     s["dur"] = float(dur)
+    if s.get("tipo") == "foto" and s.get("banco") and not s.get("imagen"):  # foto del banco por etiqueta
+        from . import banco
+
+        fotos = sorted(banco.buscar(str(s["banco"])))
+        if fotos:
+            s["imagen"] = str(fotos[sum(map(ord, str(s.get("texto", "")) + str(dur))) % len(fotos)])
     if s.get("tipo") == "foto":
         if not s.get("imagen") or not Path(s["imagen"]).exists():
             alt = s.get("alt") or {"tipo": "versus", "texto": s.get("texto") or "GTA|VI"}
@@ -97,7 +103,7 @@ def clip(spec: dict, dur: float, out: Path, fps: int = 30) -> Path:
             [
                 media.require("ffmpeg"), "-y", "-loglevel", "error", "-framerate", str(fps), "-i", str(tmp / "f" / "f%05d.jpg"),
                 "-vf", "noise=alls=4:allf=t,fade=t=in:st=0:d=0.12:color=white,format=yuv420p",
-                "-t", f"{dur}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-r", str(fps), str(out),
+                "-t", f"{dur}", "-c:v", "libx264", "-preset", "veryfast", "-crf", str(crf), "-r", str(fps), str(out),
             ],
             check=True,
         )  # fmt: skip

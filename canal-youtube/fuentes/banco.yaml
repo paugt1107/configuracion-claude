@@ -1,0 +1,75 @@
+# TOMMY · Banco de imágenes. El workflow "Tommy · Banco de imágenes" lo descarga TODO, lo etiqueta y lo deja
+# animado en 3D en media/banco/ (galería: media/banco/GALERIA.md). Solo fuentes que se pueden usar:
+#   - OFICIAL de Rockstar (galerías de capturas y artes de GTA VI; crédito "Imagen oficial: Rockstar Games")
+#   - LIBRES de Wikimedia Commons (CC0 / dominio público / CC BY / CC BY-SA, crédito automático)
+# Nada de imágenes de otros creadores o webs de fans (riesgo de reclamación y de "contenido reutilizado").
+
+oficial:
+  paginas:
+    - https://www.rockstargames.com/VI/downloads/screenshots
+    - https://www.rockstargames.com/VI/downloads/artwork-wallpapers
+    - https://www.rockstargames.com/VI/media/screenshots
+    - https://www.rockstargames.com/VI/media
+    - https://www.rockstargames.com/VI/people/jason-duval
+    - https://www.rockstargames.com/VI/people/lucia-caminos
+    - https://www.rockstargames.com/VI/places
+    - https://www.rockstargames.com/VI
+  # etiquetas que se buscan en nombre de archivo / texto alternativo / página
+  etiquetas: [jason, lucia, vice-city, leonida, keys, grassrivers, port-gellhorn, ambrosia, mount-kalaga, coche, moto, barco,
+              avion, policia, atraco, arma, playa, noche, club, gasolinera, tienda, mapa, logo, personaje]
+
+libres:  # categoría → consultas en Commons (n fotos por consulta)
+  n: 3
+  florida:
+    - Miami skyline night
+    - Ocean Drive Miami Beach Art Deco neon
+    - Miami Beach lifeguard tower
+    - Everglades airboat
+    - American alligator Everglades
+    - Florida Keys Seven Mile Bridge
+    - Key West sunset
+    - American flamingo Florida
+    - Palm trees sunset Florida
+    - Brickell Miami skyscrapers
+    - Florida swamp cypress
+    - Florida motel neon sign
+  coches:
+    - Lamborghini Countach
+    - Ferrari Testarossa
+    - Lamborghini Huracan
+    - Chevrolet Corvette
+    - Ford Mustang muscle car
+    - Dodge Charger
+    - Lowrider car
+    - Pickup truck Ford F-150
+    - Harley-Davidson motorcycle
+    - Speedboat Miami
+  policia:
+    - Miami-Dade police car
+    - Florida Highway Patrol car
+    - Police car lights night
+    - Police helicopter
+    - SWAT vehicle
+  atracos:
+    - Bank vault door
+    - Stack of United States dollar banknotes
+    - Gold bars
+    - Armored car Brinks
+    - Safe deposit boxes
+    - Jewelry store window diamonds
+  armas:
+    - Smith & Wesson revolver museum
+    - Pistol museum collection
+    - Shotgun museum
+  lugares:
+    - Gas station night United States
+    - Convenience store night
+    - Nightclub lights
+    - Strip club neon Miami
+    - Prison cell block
+    - Trailer park Florida
+    - Marina yachts Miami
+    - Airport runway Miami
+  juego:
+    - Video game controller
+    - Rockstar Games logo

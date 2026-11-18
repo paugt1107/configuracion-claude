@@ -68,3 +68,44 @@ def buscar(consulta: str) -> tuple[Path, str] | None:
         (CARPETA / "creditos.json").write_text(json.dumps(cred, ensure_ascii=False, indent=1), encoding="utf-8")
         return dst, credit
     return None
+
+
+def buscar_varias(consulta: str, n: int, carpeta: Path) -> list[tuple[Path, str, int, int]]:
+    """Hasta n imágenes libres (grandes) para la consulta en `carpeta`. Devuelve [(ruta, crédito, ancho, alto)]."""
+    carpeta.mkdir(parents=True, exist_ok=True)
+    data = _get(
+        {
+            "action": "query",
+            "format": "json",
+            "generator": "search",
+            "gsrsearch": f"filetype:bitmap {consulta}",
+            "gsrnamespace": 6,
+            "gsrlimit": max(10, n * 4),
+            "prop": "imageinfo",
+            "iiprop": "url|extmetadata|size",
+            "iiurlwidth": 1920,
+        }
+    )
+    pages = sorted((data.get("query") or {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+    out = []
+    for p in pages:
+        if len(out) >= n:
+            break
+        ii = (p.get("imageinfo") or [{}])[0]
+        meta = ii.get("extmetadata", {})
+        lic = meta.get("LicenseShortName", {}).get("value", "")
+        if not OK_LICENSES.match(lic) or not ii.get("thumburl") or ii.get("width", 0) < 900:
+            continue
+        dst = carpeta / f"{slug(consulta)}-{len(out) + 1}.jpg"
+        artist = re.sub(r"<[^>]+>", "", meta.get("Artist", {}).get("value", "desconocido")).strip()
+        credit = f"{p.get('title', '').replace('File:', '')} — {artist} — {lic} — {ii.get('descriptionurl', '')}"
+        if not dst.exists():
+            req = urllib.request.Request(ii["thumburl"], headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                dst.write_bytes(r.read())
+        from PIL import Image
+
+        with Image.open(dst) as im:
+            w, h = im.size
+        out.append((dst, credit, w, h))
+    return out

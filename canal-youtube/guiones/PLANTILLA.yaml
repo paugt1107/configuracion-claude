@@ -38,6 +38,7 @@ escenas:
 #   versus: texto "GTA V|GTA VI". El texto 3D va sin acentos (los acentos van en titulo/sub).
 #   piedra: lápida romana tallada cuyas letras se encienden (latín, historia). bombilla: se enciende (luz, idea).
 #   corazon: late con cruces de curación (sanar, vida). foto: {imagen: media/oficial/x.jpg, alt: {tipo: versus, texto: "A|B"}}
+#   foto del BANCO por etiqueta (ver media/banco/GALERIA.md): {kind: 3d, tipo: foto, banco: lucia|jason|policia|coche|florida|atracos…, estilo: lleno|inclinada|giro}
 #   REGLA: la animación CUENTA la frase (no la repite en texto). Poco texto: titulo solo si aporta; los subtítulos ya dicen la frase.
 # Tipos de tarjeta: clock (reloj grande), dato (texto grande), lista, imagen (foto a pantalla completa),
 # personaje (recorte con brillo), dinero (bolsa + cifra), busqueda (n estrellas), split, three, timeline, bar.

@@ -19,6 +19,21 @@ from PIL import Image, ImageDraw, ImageFilter
 
 from . import motion, props, rutas
 
+# Primero el BANCO (fotos reales/oficiales de media/banco); si no hay foto con esa etiqueta, el dibujo de `alt`.
+BANCO_REGLAS: list[tuple[str, dict]] = [
+    (r"\bvice city\b", {"banco": "vice-city", "alt": {"prop": "pin"}}),
+    (r"\bpolic[ií]as?\b|\bpoli\b|\bpatrulla\b", {"banco": "policia", "alt": {"prop": "estrellas", "n": 4}}),
+    (r"\bcoches?\b|\bdeportivos?\b|\bvehiculos?\b", {"banco": "coche", "alt": {"prop": "coche"}}),
+    (r"\bmotos?\b", {"banco": "moto", "alt": {"prop": "coche"}}),
+    (r"\bbarcos?\b|\byates?\b|\blancha", {"banco": "barco"}),
+    (r"\bplayas?\b", {"banco": "playa"}),
+    (r"\bmiami\b|\bflorida\b", {"banco": "florida"}),
+    (r"\bpantano|\bcaiman|\bcocodrilo|\beverglades\b", {"banco": "pantano"}),
+    (r"\batracos?\b|\brobos?\b|\bbanco\b|\bcaja fuerte\b", {"banco": "atracos", "alt": {"prop": "billetes"}}),
+    (r"\barmas?\b|\bpistolas?\b|\bdisparos?\b", {"banco": "arma", "alt": {"prop": "sirena"}}),
+    (r"\bdinero\b|\bdolares?\b|\bbilletes?\b", {"banco": "dinero", "alt": {"prop": "dinero"}}),
+]
+
 DEFAULTS: list[tuple[str, dict]] = [
     (r"\bespana\b|\bespanol(es|a)?\b", {"bandera": "es"}),
     (r"\bmexico\b|\bmexican", {"bandera": "mx"}),
@@ -51,8 +66,8 @@ DEFAULTS: list[tuple[str, dict]] = [
     (r"\btrailer\b", {"chip": "TRÁILER", "color": "magenta"}),
     (r"\bcomentarios?\b|\bcomenta\b", {"chip": "COMENTA", "color": "orange"}),
     (r"\bluz\b|\bilumina|\bbrilla", {"prop": "bombilla"}),
-    (r"\blucia\b", {"recorte": "media/recortes/lucia.png", "alt": {"prop": "estrellas", "n": 2}}),
-    (r"\bjason\b", {"recorte": "media/recortes/jason.png", "alt": {"prop": "estrellas", "n": 2}}),
+    (r"\blucia\b", {"recorte": "media/recortes/lucia.png", "alt": {"imagen": "media/oficial/lucia.jpg", "alt": {"prop": "estrellas", "n": 2}}}),
+    (r"\bjason\b", {"recorte": "media/recortes/jason.png", "alt": {"imagen": "media/oficial/jason.jpg", "alt": {"prop": "estrellas", "n": 2}}}),
 ]
 
 
@@ -65,7 +80,7 @@ def reglas(path: Path = rutas.FUENTES / "visuales.yaml") -> list[tuple[str, dict
     if Path(path).exists():
         cfg = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
         extra = [(r["patron"], r["visual"]) for r in cfg.get("extra") or []]
-    return extra + DEFAULTS  # las del canal tienen prioridad
+    return extra + BANCO_REGLAS + DEFAULTS  # las del canal tienen prioridad
 
 
 def detectar(words: list[dict], rules: list[tuple[str, dict]] | None = None) -> list[dict]:
@@ -119,7 +134,16 @@ def _marco(im: Image.Image, maxw: int = 640, maxh: int = 520, borde: int = 12) -
     return card
 
 
-def _render(vis: dict, creditos: list[str]) -> Image.Image | None:
+def _render(vis: dict, creditos: list[str], semilla: str = "") -> Image.Image | None:
+    if "banco" in vis:
+        from . import banco
+
+        ind = [v for v in banco.cargar().values() if vis["banco"] in v.get("etiquetas", []) or v.get("categoria") == vis["banco"]]
+        if ind:
+            v = sorted(ind, key=lambda x: x["archivo"])[sum(map(ord, semilla)) % len(ind)]
+            creditos.append(v["credito"])
+            return _marco(Image.open(banco.BANCO / v["archivo"]))
+        return _render(vis["alt"], creditos, semilla) if vis.get("alt") else None
     if "recorte" in vis:
         if Path(vis["recorte"]).exists():
             fig = Image.open(vis["recorte"]).convert("RGBA")
@@ -188,7 +212,7 @@ def preparar(plan: list[dict], workdir: Path) -> tuple[list[dict], list[str]]:
     workdir.mkdir(parents=True, exist_ok=True)
     overlays, creditos = [], []
     for i, p in enumerate(plan):
-        im = _render(p["visual"], creditos)
+        im = _render(p["visual"], creditos, f"{p['palabra']}{p['t']}")
         if im is None:
             continue
         png = workdir / f"pop{i:02d}.png"

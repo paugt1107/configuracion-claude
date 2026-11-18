@@ -11,6 +11,7 @@ transcripcion = ["faster-whisper>=1.0"]
 descargas = ["yt-dlp>=2025.1.1"]
 youtube = ["google-api-python-client>=2.100", "google-auth-oauthlib>=1.2"]
 recortes = ["rembg[cpu]>=2.0"]
+banco = ["transformers>=4.44", "torch>=2.3"]   # etiquetado automático de imágenes (CLIP)
 dev = ["pytest>=8.0", "ruff>=0.6"]
 
 [project.scripts]
