@@ -1,0 +1,42 @@
+id: S006
+formato: sabias-que
+estilo: diorama
+titulos:
+  - "GTA 6 ocupa 212 GB: esto es lo que tardas en bajarlo"
+  - "GTA 6 pesa 212 GB y casi no cabe en una Series S"
+  - "GTA 6: 212 GB = 45 DVD apilados"
+portada:
+  texto: "212 GB"
+  kind: dato
+  grande: "212"
+descripcion: "Rockstar confirma que GTA 6 necesita hasta 212 GB en PS5 y Xbox Series. Equivale a unos 45 DVD; en una Series S (unos 364 GB libres, según medios) ocupa más de la mitad. Tiempos de descarga: cálculo teórico a velocidad máxima constante."
+fuentes:
+  - "GamesRadar — Rockstar confirms GTA 6 is 212GB; pre-loading opens earlier for digital orders (nov-2026)"
+  - "TechRadar — GTA 6 digital pre-loads for PS5 and Xbox require 212GB of free space (nov-2026)"
+  - "HotHardware — GTA 6 Preload Guide: 212GB size (nov-2026); Series S de 512 GB con ~364 GB utilizables (según el medio)"
+  - "Cálculo propio: 212 GB / 4,7 GB por DVD ≈ 45; 212 GB a 100 Mb/s ≈ 4 h 43 min, a 600 Mb/s ≈ 47 min (teórico, estimado)"
+comentario: "¿Cuánto te tardó a ti? 👇"
+hashtags: ["#gta6", "#ps5", "#xbox"]
+musica: true
+escenas:
+  - texto: "¿Sabías que GTA seis ocupa doscientos doce gigas? Si no lo sabes, pierdes horas antes de jugar."
+    tarjeta: {kind: 3d, tipo: diorama, preset: consola, cielo: noche, titulo: "212 GB", etiquetas: [{titulo: "Descarga", texto: "212 GB", icono: "⬇"}]}
+  - texto: "Lo ha confirmado Rockstar: hasta doscientos doce gigas en PS cinco y Xbox."
+    tarjeta: {kind: 3d, tipo: numero, texto: "212 GB", titulo: "CONFIRMADO", color: gold}
+  - texto: "Para que te hagas una idea, son unos cuarenta y cinco DVD apilados."
+    tarjeta: {kind: 3d, tipo: diorama, preset: discos, n: 45, etiquetas: [{titulo: "Equivale a", texto: "45 DVD", icono: "💿"}]}
+  - texto: "En una Series S quedan libres unos trescientos sesenta y cuatro gigas."
+    tarjeta: {kind: 3d, tipo: diorama, preset: almacen, progreso: 0.58, etiquetas: [{titulo: "Libre", texto: "364 GB", icono: "▣"}, {titulo: "GTA 6", texto: "212 GB", icono: "🎮"}]}
+  - texto: "Así que GTA seis se come más de la mitad."
+    tarjeta: {kind: 3d, tipo: numero, texto: "58 %", color: orange}
+  - texto: "Pero ojo, que lo peor es la descarga…"
+    pausa: true
+    tarjeta: {kind: 3d, tipo: diorama, preset: red, cielo: noche, etiquetas: [{titulo: "Sale", texto: "De los servidores", icono: "⚡"}, {titulo: "Viaja", texto: "Por tu fibra", icono: "〰"}, {titulo: "Llega", texto: "A tu consola", icono: "🏠"}]}
+  - texto: "Con fibra de cien megas, tardarías casi cinco horas."
+    tarjeta: {kind: clock, reloj: "4 H 43", titulo: "CON 100 MEGAS", ty: 520, sub: "a tope y sin cortes", color: magenta}
+  - texto: "Con seiscientos megas, bajaría en unos cuarenta y siete minutos."
+    tarjeta: {kind: clock, reloj: "47 MIN", titulo: "CON 600 MEGAS", ty: 520, color: cyan}
+  - texto: "Por eso la versión digital se pudo precargar días antes."
+    tarjeta: {kind: 3d, tipo: diorama, preset: consola, progreso: 1, etiquetas: [{titulo: "Precarga", texto: "Días antes", icono: "✓"}]}
+  - texto: "¿Cuánto te tardó a ti? Te leo en comentarios."
+    tarjeta: {kind: 3d, tipo: texto, texto: "¿CUANTO?", titulo: "¿Y A TI?", color: orange}

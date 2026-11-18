@@ -15,7 +15,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-from . import captions, media
+from . import captions, media, numeros
 
 W, H = 1080, 1920
 NAVY, CHARCOAL = (11, 22, 48), (20, 22, 28)
@@ -410,7 +410,7 @@ def build(
             check=True,
         )
         ass = tmp / "subs.ass"
-        ass.write_text(captions.build_ass(words), encoding="utf-8")
+        ass.write_text(captions.build_ass(numeros.a_cifras(words)), encoding="utf-8")
         esc = str(ass).replace(":", r"\:")
         cmd = [media.require("ffmpeg"), "-y", "-loglevel", "error", "-i", str(base)]
         if audio:

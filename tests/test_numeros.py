@@ -1,0 +1,25 @@
+from clipfactory import numeros
+
+
+def _w(txt):
+    return [{"text": t, "start": i, "end": i + 0.5} for i, t in enumerate(txt.split())]
+
+
+def _txt(txt):
+    return " ".join(w["text"] for w in numeros.a_cifras(_w(txt)))
+
+
+def test_cifras_en_subtitulos():
+    assert _txt("¿Sabías que GTA seis ocupa doscientos doce gigas?") == "¿Sabías que GTA 6 ocupa 212 gigas?"
+    assert _txt("unos cuarenta y siete minutos.") == "unos 47 minutos."
+    assert _txt("más de cincuenta y ocho por ciento") == "más de 58 %"
+    assert _txt("en dos mil veintiséis") == "en 2026"
+    assert _txt("tiene un coche y una moto") == "tiene un coche y una moto"
+    assert _txt("trescientos sesenta y cuatro gigas") == "364 gigas"
+    assert _txt("ciento catorce reseñas") == "114 reseñas"
+    assert _txt("un millón de copias") == "1.000.000 de copias"
+
+
+def test_tiempos_unidos():
+    w = numeros.a_cifras(_w("son cuarenta y cinco DVD"))
+    assert w[1]["text"] == "45" and w[1]["start"] == 1 and w[1]["end"] == 3.5

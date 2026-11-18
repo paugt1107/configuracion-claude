@@ -215,6 +215,23 @@ if (T === "numero" || T === "texto") {
   } else {
     upd.push((t) => { shine.position.x = -4 + ((t * 2.2) % 9); root.rotation.x = -0.08 + 0.05 * Math.sin(t * 0.7); });
   }
+} else if (T === "diorama") {
+  // maqueta low-poly con etiquetas en secuencia (estilo vídeo explicativo viral)
+  const D = await import("./diorama.js");
+  const r = D.construir(S.preset || "isla", S, root, scene, ACC);
+  upd.push(...r.upd);
+  const pinta = D.etiquetas(S.etiquetas || [], r.anclas, cam, S);
+  upd.push((t) => { root.updateMatrixWorld(true); cam.updateMatrixWorld(); pinta(t, root); });
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x404060, 0.9));
+  renderer.toneMappingExposure = 0.95;
+  const sol = new THREE.DirectionalLight(0xfff1d6, 2.2); sol.position.set(4, 8, 5); scene.add(sol);
+  halo.visible = false; dust.visible = S.cielo === "noche"; giro = 0; flotar = 0.4;
+  const noche = S.cielo === "noche";
+  document.getElementById("bg").style.background = noche
+    ? "radial-gradient(ellipse at 50% 30%, #1d3b55 0%, #0f2236 55%, #081422 100%)"
+    : "linear-gradient(180deg, #6fd3ff 0%, #a9e7ff 55%, #e8f9ff 100%)";
+  document.getElementById("rays").style.display = "none";
+  document.getElementById("vig").style.opacity = noche ? 1 : 0.35;
 } else if (T === "versus" || T === "foto") {
   const [a, b] = String(S.texto || "A|B").split("|").concat([""]);
   const A = fit(text3d(a, 1.2), 3.2), B = fit(text3d(b, 1.2, new THREE.MeshPhysicalMaterial({ color: 0xf2f4ff, metalness: 1, roughness: 0.25, clearcoat: 1 })), 3.2), vs = text3d("VS", 0.6);
@@ -227,8 +244,14 @@ window.frame = (t) => {
   const D = S.dur;
   // cámara: entrada rápida + acercamiento lento + leve órbita
   const push = easeOut(t / 0.6);
-  cam.position.set(Math.sin(t * 0.35) * 0.9, 0.3 + Math.sin(t * 0.5) * 0.15, 13 - 3 * push - 0.35 * t);
-  cam.lookAt(0, 0, 0);
+  if (T === "diorama") {  // cámara alta tipo maqueta que gira despacio alrededor
+    const ang = -0.75 + 0.09 * t, rad = 13.2 - 1.6 * push;
+    cam.position.set(Math.sin(ang) * rad, 7.2 - 0.8 * push, Math.cos(ang) * rad);
+    cam.lookAt(0, 0.35, 0);
+  } else {
+    cam.position.set(Math.sin(t * 0.35) * 0.9, 0.3 + Math.sin(t * 0.5) * 0.15, 13 - 3 * push - 0.35 * t);
+    cam.lookAt(0, 0, 0);
+  }
   // objeto principal: pop con rebote, giro lento, flotación
   const pop = easeOutBack(t / 0.55);
   root.scale.setScalar(Math.max(0.001, T === "mapa" ? 1 : pop));

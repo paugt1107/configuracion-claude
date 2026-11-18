@@ -33,6 +33,8 @@ escenas:
     tarjeta: {kind: lista, items: ["uno", "dos", "tres"], titulo: "3 DETALLES", ty: 450}
   - texto: "Cierre que vuelve al gancho."
     tarjeta: {kind: dato, grande: "?", titulo: "¿LO SABÍAS?", ty: 520, color: magenta}
+# DIORAMA (estilo principal, como el vídeo de referencia): {kind: 3d, tipo: diorama, preset: consola|discos|almacen|red|isla|mapa_pin,
+#   cielo: dia|noche, n: 45, progreso: 0.58, etiquetas: [{titulo: "SALE", texto: "De los servidores", icono: "⚡"}, …]}  (máx. 4 etiquetas)
 # ESCENAS 3D (recomendado, mínimo 4 por vídeo, alternando con planas):
 #   {kind: 3d, tipo: numero|texto|orbe|moneda|estrellas|billetes|mapa|versus|piedra|bombilla|corazon|foto, texto: "99", titulo: "…", sub: "…", color: gold|orange|cyan|magenta|white|green|red, n: 4}
 #   versus: texto "GTA V|GTA VI". El texto 3D va sin acentos (los acentos van en titulo/sub).
