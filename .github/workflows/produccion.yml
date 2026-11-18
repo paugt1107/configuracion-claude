@@ -49,6 +49,11 @@ jobs:
         run: |
           npm install -g playwright@1.63.0
           npx -y playwright@1.63.0 install --with-deps chromium
+      - name: Caché de música (Kevin MacLeod, CC BY)
+        uses: actions/cache@v4
+        with:
+          path: media/musica
+          key: musica-${{ hashFiles('clipfactory/musica.py') }}
       - name: Producir
         run: |
           mkdir -p entregas/_logs

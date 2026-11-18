@@ -10,7 +10,7 @@ from pathlib import Path
 
 import yaml
 
-from . import calidad, hookscore_es, misterio, motion, rutas, sfx, thumbs, visuales, voice
+from . import calidad, hookscore_es, misterio, motion, musica, rutas, sfx, thumbs, visuales, voice
 
 TAGS_BASE = ["#gta6", "#gtavi", "#gta6espanol", "#sabiasque", "#shorts"]
 
@@ -101,7 +101,13 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
     cam = misterio.plan(spans, v["words"], estilos or voice.styles_for(len(lines)), end) if con_misterio else None
     if cam:
         cues += cam["cues"]
-    mixed = sfx.mix(v["audio"], cues, work / "mezcla.wav", music=spec.get("musica", True), silencios=cam["silencios"] if cam else None)
+    tema = musica.pista(spec) if spec.get("musica", True) else None
+    if tema:
+        spec = {**spec, "creditos": "\n".join(filter(None, [spec.get("creditos", ""), tema[1]]))}
+    mixed = sfx.mix(
+        v["audio"], cues, work / "mezcla.wav", music=spec.get("musica", True) is not False,
+        silencios=cam["silencios"] if cam else None, pista=tema[0] if tema else None,
+    )  # fmt: skip
     plan = visuales.planificar(visuales.detectar(v["words"])) if spec.get("imagenes_auto", True) else []
     # en las escenas 3D manda la animación: sin pegatinas encima (menos ruido en pantalla)
     zonas3d = [(starts[i], starts[i] + sc["dur"]) for i, sc in enumerate(scenes) if sc.get("kind") == "3d"]

@@ -21,3 +21,16 @@
 - Primeros 10 s sin violencia gráfica (anuncios); sin spoilers de historia las 2 primeras semanas; radio del juego apagada al grabar
 - Ganchos en español: `python3 -m clipfactory.hookscore_es` ≥55 para producir
 - Herramientas: `python3 -m clipfactory -h` (render, voz, candidatos, radar, subir). Manual: docs/manual.md
+
+## Subida programada a YouTube (workflow «Studio · Subir y programar en YouTube»)
+Una sola vez (15 min), con la cuenta del CANAL:
+1. https://console.cloud.google.com → crea un proyecto → «APIs y servicios» → habilita **YouTube Data API v3**.
+2. «Pantalla de consentimiento OAuth» → Externa → modo **Prueba** → añade tu Gmail del canal como usuario de prueba.
+3. «Credenciales» → Crear → **ID de cliente OAuth** → tipo «Aplicación web» → URI de redirección: `https://developers.google.com/oauthplayground`.
+   Copia el **Client ID** y el **Client secret**.
+4. https://developers.google.com/oauthplayground → engranaje → «Use your own OAuth credentials» → pega los dos.
+   En el paso 1 escribe el alcance `https://www.googleapis.com/auth/youtube.upload` → Authorize (con la cuenta del canal)
+   → «Exchange authorization code for tokens» → copia el **Refresh token**.
+5. GitHub → Settings → Secrets and variables → Actions → New secret: `YT_CLIENT_ID`, `YT_CLIENT_SECRET_VALUE`, `YT_REFRESH_TOKEN`.
+6. Actions → «Studio · Subir y programar en YouTube» → Run (primero con prueba = true; luego false).
+Los vídeos suben PRIVADOS con fecha de publicación (se publican solos a su hora) y con la etiqueta de contenido sintético (IA).

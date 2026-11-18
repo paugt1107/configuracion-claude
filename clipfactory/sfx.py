@@ -99,6 +99,7 @@ def mix(
     music: bool = True,
     tail: float = 0.6,
     silencios: list[tuple[float, float]] | None = None,
+    pista: str | Path | None = None,
 ) -> Path:
     """cues: [(segundo, 'whoosh'|'impacto'|'tic'|'latido'|'riser'|'dron'), ...].
     silencios: tramos [(desde, hasta)] en los que la música CAE casi a cero (la pausa dramática se nota más en silencio)."""
@@ -118,10 +119,13 @@ def mix(
         labels.append(f"[c{i}]")
     n = len(cues)
     if music:
-        pad(dur, work / "pad.wav")
-        inputs += ["-i", str(work / "pad.wav")]
+        if pista:  # música real: en bucle, recortada, con fundidos (empieza en un punto con energía: segundo 6)
+            inputs += ["-stream_loop", "-1", "-ss", "6", "-t", f"{dur}", "-i", str(pista)]
+        else:
+            pad(dur, work / "pad.wav")
+            inputs += ["-i", str(work / "pad.wav")]
         filters.append(
-            f"[0:a]asplit=2[vo][key];[{n + 1}:a]volume='{_volumen_cama(silencios)}':eval=frame[bed];"
+            f"[0:a]asplit=2[vo][key];[{n + 1}:a]volume='{_volumen_cama(silencios, 0.13 if pista else 0.22)}':eval=frame,afade=t=in:d=0.4,afade=t=out:st={max(0.0, dur - 1.2):.2f}:d=1.2[bed];"
             "[bed][key]sidechaincompress=threshold=0.02:ratio=10:attack=15:release=350[duck]"
         )
         voice_lbl, extra = "[vo]", ["[duck]"]

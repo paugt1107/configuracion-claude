@@ -83,6 +83,52 @@ def recoger(cfg: dict | None = None, pausa: float = 0.4, log=print) -> dict[str,
     return frases
 
 
+def sopa(cfg: dict | None = None, pausa: float = 0.3, log=print) -> dict[str, dict]:
+    """'Alphabet soup': «gta 6 a», «gta 6 b»… y «gta 6 como a»… en YouTube España: saca las colas largas que nadie ve."""
+    cfg = cfg or juego()
+    j = cfg.get("corto", "GTA 6").lower()
+    frases: dict[str, dict] = {}
+    raices = [j, f"{j} como", f"{j} donde"]
+    for raiz in raices:
+        for letra in "abcdefghijklmnopqrstuvwxyz":
+            try:
+                res = sugerencias(f"{raiz} {letra}", "es", "ES", True)
+            except Exception as e:
+                log(f"[demanda] sopa {raiz} {letra}: {e}")
+                continue
+            for pos, s in enumerate(res):
+                f = frases.setdefault(s.lower().strip(), {"fuentes": set(), "mejor_pos": 99, "idioma": "es"})
+                f["fuentes"].add("yt-ES-sopa")
+                f["mejor_pos"] = min(f["mejor_pos"], pos)
+            time.sleep(pausa)
+    for f in frases.values():
+        f["fuentes"] = sorted(f["fuentes"])
+    return frases
+
+
+def tendencias(cfg: dict | None = None, log=print) -> list[dict]:
+    """Búsquedas EN SUBIDA de Google Trends (España y mundo, últimos 7 días). Opcional: si Trends bloquea, se omite."""
+    cfg = cfg or juego()
+    try:
+        from pytrends.request import TrendReq
+    except ImportError:
+        log("[demanda] pytrends no instalado: sin Google Trends")
+        return []
+    out = []
+    for geo in ("ES", ""):
+        try:
+            tr = TrendReq(hl="es-ES", tz=60, retries=2, backoff_factor=0.5)
+            tr.build_payload([cfg.get("corto", "GTA 6")], timeframe="now 7-d", geo=geo)
+            rel = tr.related_queries().get(cfg.get("corto", "GTA 6"), {}) or {}
+            sube = rel.get("rising")
+            if sube is not None:
+                for _, fila in sube.head(15).iterrows():
+                    out.append({"frase": str(fila["query"]).lower(), "subida": str(fila["value"]), "geo": geo or "mundo"})
+        except Exception as e:
+            log(f"[demanda] Google Trends ({geo or 'mundo'}): {e}")
+    return out
+
+
 def puntuar(frases: dict[str, dict], historial: dict) -> list[dict]:
     """Más fuentes y más arriba en la lista = más demanda. 'nueva' si no estaba en la pasada anterior."""
     previas = set(historial.get("ultima", []))
@@ -102,11 +148,15 @@ def puntuar(frases: dict[str, dict], historial: dict) -> list[dict]:
     return sorted(out, key=lambda x: -x["puntos"])
 
 
-def escribir(lista: list[dict], historial: dict, now: dt.datetime | None = None) -> Path:
+def escribir(lista: list[dict], historial: dict, now: dt.datetime | None = None, subiendo: list[dict] | None = None) -> Path:
     now = now or dt.datetime.now(dt.timezone(dt.timedelta(hours=1)))
     lines = [f"# Qué busca la gente · {now:%d-%m %H:%M}", "",
              "Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente YA escribe: úsala como tema y título.",
              "🆕 = no salía en la pasada anterior (está subiendo).", ""]  # fmt: skip
+    if subiendo:
+        lines += ["## 🚀 En subida en Google Trends (7 días)", ""]
+        lines += [f"- **{x['frase']}** · {x['subida']} · {x['geo']}" for x in subiendo[:15]]
+        lines.append("")
     por = {}
     for x in lista:
         por.setdefault(x["intencion"], []).append(x)
@@ -135,11 +185,16 @@ def escribir(lista: list[dict], historial: dict, now: dt.datetime | None = None)
 def run() -> int:
     historial = json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else {}
     frases = recoger()
+    for k, v in sopa().items():  # colas largas
+        if k in frases:
+            frases[k]["fuentes"] = sorted(set(frases[k]["fuentes"]) | set(v["fuentes"]))
+        else:
+            frases[k] = v
     if not frases:
         print("[demanda] sin respuesta (¿sin red?): se conserva el informe anterior")
         return 0
     lista = puntuar(frases, historial)
-    escribir(lista, historial)
+    escribir(lista, historial, subiendo=tendencias())
     print(f"[demanda] {len(lista)} búsquedas; {sum(x['nueva'] for x in lista)} nuevas")
     return len(lista)
 

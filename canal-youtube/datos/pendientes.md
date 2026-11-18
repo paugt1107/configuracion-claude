@@ -10,3 +10,4 @@ Marca con [x] cuando lo hagas. Claude revisa esta lista al empezar cada sesión.
 - [ ] (Opcional) `YOUTUBE_API_KEY` en Secrets para el radar de vídeos que superan 10x su canal.
 - [ ] **Minutos de GitHub Actions:** el repo es privado (≈2.000 min/mes gratis). Valentín cada 15 min + producción puede pasarse. Elige: (a) Settings → Billing → poner método de pago y límite de gasto, o (b) hacer el repo público (minutos ilimitados; se vería tu estrategia). Si no, Valentín se parará a final de mes.
 - [ ] (Opcional) **X/Twitter:** secreto `X_BEARER_TOKEN` (API de pago) para que Valentín lea X.
+- [ ] (Recomendado) **Subida programada a YouTube:** 3 secretos (`YT_CLIENT_ID`, `YT_CLIENT_SECRET_VALUE`, `YT_REFRESH_TOKEN`). Pasos en `canal-youtube/docs/configuracion.md` → «Subida programada». Con eso el calendario sube y programa solo cuando lances el workflow.

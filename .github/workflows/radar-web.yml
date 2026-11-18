@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -q -e .
+      - run: pip install -q -e ".[demanda]"
       - name: Recoger
         run: python3 -c "from clipfactory import radar_web; radar_web.run()" 2>&1 | tee canal-youtube/datos/radar/log.txt
       - name: Qué busca la gente (autocompletado de Google y YouTube, cada hora)
