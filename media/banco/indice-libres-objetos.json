@@ -1,4 +1,32 @@
 {
+ "lb-0d3be10e6e": {
+  "archivo": "libres/objetos/cigar-smoke-ov4.jpg",
+  "categoria": "objetos",
+  "consulta": "Cigar smoke",
+  "credito": "Cigar, smoking tobacco, cut tobacco, cigarettes, Raleigh O&R [back] — Boston Public Library — CC BY 2.0 — https://www.flickr.com/photos/24029425@N06/9443177251",
+  "etiquetas": [
+   "cigar",
+   "objetos",
+   "smoke"
+  ],
+  "fuente": "libre",
+  "h": 529,
+  "w": 1024
+ },
+ "lb-12b5fdc554": {
+  "archivo": "libres/objetos/cigar-smoke-ov1.jpg",
+  "categoria": "objetos",
+  "consulta": "Cigar smoke",
+  "credito": "Annual cigar smoking day at the office — Myra's Journal by Myra Alberti — CC BY-SA 2.0 — https://www.flickr.com/photos/82930663@N08/10764978935",
+  "etiquetas": [
+   "cigar",
+   "objetos",
+   "smoke"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 1024
+ },
  "lb-143c20e9f0": {
   "archivo": "libres/objetos/smartphone-social-media-5.jpg",
   "categoria": "objetos",
@@ -27,6 +55,20 @@
   ],
   "fuente": "libre",
   "h": 721,
+  "w": 1024
+ },
+ "lb-364be4d764": {
+  "archivo": "libres/objetos/cigar-smoke-ov2.jpg",
+  "categoria": "objetos",
+  "consulta": "Cigar smoke",
+  "credito": "Cigar, smoking tobacco, cut tobacco, cigarettes, Raleigh O&R [front] — Boston Public Library — CC BY 2.0 — https://www.flickr.com/photos/24029425@N06/9443177243",
+  "etiquetas": [
+   "cigar",
+   "objetos",
+   "smoke"
+  ],
+  "fuente": "libre",
+  "h": 535,
   "w": 1024
  },
  "lb-3f7ce2f00a": {
@@ -149,6 +191,34 @@
   "h": 768,
   "w": 1024
  },
+ "lb-ad3cd2c594": {
+  "archivo": "libres/objetos/cigar-smoke-ov6.jpg",
+  "categoria": "objetos",
+  "consulta": "Cigar smoke",
+  "credito": "Beer Sellar cigar smoke — 5chw4r7z — CC BY-SA 2.0 — https://www.flickr.com/photos/21200741@N07/5980821533",
+  "etiquetas": [
+   "cigar",
+   "objetos",
+   "smoke"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-b71c0ad74a": {
+  "archivo": "libres/objetos/cigar-smoke-ov5.jpg",
+  "categoria": "objetos",
+  "consulta": "Cigar smoke",
+  "credito": "Cigar Smoking Dog — Jagz Mario — CC BY-SA 2.0 — https://www.flickr.com/photos/70196349@N00/6299303512",
+  "etiquetas": [
+   "cigar",
+   "objetos",
+   "smoke"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-cf317eee27": {
   "archivo": "libres/objetos/gold-chain-jewelry-ov3.jpg",
   "categoria": "objetos",
@@ -238,6 +308,20 @@
   "fuente": "libre",
   "h": 1440,
   "w": 1920
+ },
+ "lb-f4618927a3": {
+  "archivo": "libres/objetos/cigar-smoke-ov3.jpg",
+  "categoria": "objetos",
+  "consulta": "Cigar smoke",
+  "credito": "Cigar smoking guy — Amy Jeffries — CC BY 2.0 — https://www.flickr.com/photos/67998313@N00/3488918000",
+  "etiquetas": [
+   "cigar",
+   "objetos",
+   "smoke"
+  ],
+  "fuente": "libre",
+  "h": 685,
+  "w": 1023
  },
  "lb-f66b1d63fc": {
   "archivo": "libres/objetos/smartphone-social-media-6.jpg",
