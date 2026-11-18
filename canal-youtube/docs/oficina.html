@@ -1,0 +1,648 @@
+<title>Oficina ¿Sabías que…? GTA 6</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: consola de "estudio nocturno en Vice City" — barra superior, plantilla a la izquierda, oficina isométrica
+   en el centro (canvas pixel-art), ficha del trabajador a la derecha y teletipo + cifras abajo. Una sola estética oscura. */
+:root {
+  color-scheme: dark;
+  --noche: #0d0b17;        /* fondo general */
+  --panel: #161325;        /* paneles */
+  --panel-2: #1f1a33;      /* paneles elevados / hover */
+  --linea: #2e2748;        /* bordes */
+  --texto: #ece8f7;        /* texto principal */
+  --tenue: #9a93b8;        /* texto secundario */
+  --neon: #ff4fa3;         /* acento: neón rosa de Vice City */
+  --cian: #3fe0d0;         /* acento secundario: agua de Leonida */
+  --ok: #57d68d;
+  --trabajando: #ffc24b;
+  --fallo: #ff5d5d;
+  --esperando: #7f78a3;
+  --f-pixel: "Silkscreen", "Courier New", monospace;
+  --f-texto: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+html, body { height: 100%; }
+body {
+  background: var(--noche); color: var(--texto); font-family: var(--f-texto); font-size: 14px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 12px;
+}
+.app { display: grid; gap: 12px; grid-template-columns: 230px minmax(0, 1fr) 300px; grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas: "top top top" "equipo oficina ficha" "pie pie pie"; min-height: calc(100% - 4px); max-width: 1500px; margin: 0 auto; }
+header.top { grid-area: top; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.marca { display: flex; align-items: baseline; gap: 10px; }
+.marca h1 { font-family: var(--f-pixel); font-size: 18px; margin: 0; letter-spacing: 1px; color: var(--texto); text-wrap: balance; }
+.marca h1 b { color: var(--neon); font-weight: 700; }
+.marca small { font-family: var(--f-mono); color: var(--tenue); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; }
+.chip { font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--tenue);
+  border: 1px solid var(--linea); border-radius: 6px; padding: 5px 9px; background: var(--panel); display: inline-flex; gap: 6px; align-items: center; }
+.chip .p { width: 7px; height: 7px; border-radius: 50%; background: var(--esperando); }
+.chip.vivo .p { background: var(--ok); box-shadow: 0 0 8px var(--ok); }
+.chip.viejo .p { background: var(--trabajando); }
+button.chip { cursor: pointer; }
+button.chip:hover, button.chip[aria-pressed="true"] { color: var(--texto); border-color: var(--neon); }
+button:focus-visible, .persona:focus-visible, canvas:focus-visible { outline: 2px solid var(--cian); outline-offset: 2px; }
+
+aside.equipo { grid-area: equipo; background: var(--panel); border: 1px solid var(--linea); border-radius: 10px; padding: 10px; overflow: auto; min-width: 0; }
+.dep { margin-bottom: 10px; }
+.dep h3 { font-family: var(--f-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--tenue); margin: 6px 4px; font-weight: 500; }
+.persona { display: grid; grid-template-columns: 30px 1fr auto; gap: 8px; align-items: center; padding: 5px 6px; border-radius: 7px; cursor: pointer; border: 1px solid transparent; }
+.persona:hover { background: var(--panel-2); }
+.persona[aria-selected="true"] { background: var(--panel-2); border-color: var(--neon); }
+.persona canvas { width: 30px; height: 30px; image-rendering: pixelated; border-radius: 6px; background: #241f3b; }
+.persona .n { font-weight: 600; font-size: 13px; line-height: 1.1; }
+.persona .r { color: var(--tenue); font-size: 11px; line-height: 1.2; }
+.persona.jefe .n::after { content: " ★"; color: var(--trabajando); font-size: 10px; }
+.estado { width: 9px; height: 9px; border-radius: 50%; background: var(--esperando); }
+.estado.trabajando { background: var(--trabajando); box-shadow: 0 0 8px var(--trabajando); animation: lat 1s infinite; }
+.estado.ok { background: var(--ok); }
+.estado.fallo { background: var(--fallo); box-shadow: 0 0 8px var(--fallo); }
+@keyframes lat { 50% { opacity: .45; } }
+
+main.oficina { grid-area: oficina; position: relative; background: #0a0814; border: 1px solid var(--linea); border-radius: 10px; overflow: hidden; min-width: 0; min-height: 360px; }
+main.oficina canvas#mundo { display: block; width: 100%; height: 100%; image-rendering: pixelated; cursor: pointer; }
+.hud { position: absolute; left: 10px; top: 10px; display: flex; gap: 6px; flex-wrap: wrap; pointer-events: none; }
+.hud .chip { background: rgba(13, 11, 23, .82); pointer-events: auto; }
+.aviso { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); background: rgba(13, 11, 23, .9); border: 1px solid var(--linea);
+  border-radius: 8px; padding: 8px 12px; font-size: 12px; color: var(--tenue); max-width: min(90%, 520px); text-align: center; }
+
+aside.ficha { grid-area: ficha; background: var(--panel); border: 1px solid var(--linea); border-radius: 10px; padding: 14px; overflow: auto; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.ficha .cab { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; }
+.ficha .cab canvas { width: 64px; height: 64px; image-rendering: pixelated; border-radius: 10px; background: #241f3b; }
+.ficha h2 { font-family: var(--f-pixel); font-size: 16px; margin: 0; letter-spacing: .5px; }
+.ficha .rol { color: var(--tenue); font-size: 12px; margin-top: 2px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+  padding: 3px 8px; border-radius: 999px; border: 1px solid var(--linea); margin-top: 6px; }
+.pill.trabajando { color: var(--trabajando); border-color: var(--trabajando); }
+.pill.ok { color: var(--ok); border-color: var(--ok); }
+.pill.fallo { color: var(--fallo); border-color: var(--fallo); }
+.pill.esperando { color: var(--tenue); }
+.bloque h4 { font-family: var(--f-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--tenue); margin: 0 0 6px; font-weight: 500; }
+.tarea { font-size: 14px; line-height: 1.45; }
+.detalle { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+.detalle li { font-size: 12px; color: var(--tenue); border-left: 2px solid var(--linea); padding-left: 8px; line-height: 1.35; overflow-wrap: anywhere; }
+.cifras { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.cifra { background: var(--panel-2); border-radius: 8px; padding: 8px; }
+.cifra b { display: block; font-family: var(--f-pixel); font-size: 18px; font-variant-numeric: tabular-nums; color: var(--texto); }
+.cifra span { font-size: 11px; color: var(--tenue); }
+.skills { display: flex; flex-wrap: wrap; gap: 5px; }
+.skill { font-family: var(--f-mono); font-size: 11px; padding: 3px 7px; border-radius: 5px; background: #221d3a; border: 1px solid var(--linea); color: var(--texto); }
+.skill.code { color: var(--cian); }
+.skill.ia { color: var(--neon); }
+.equipo-de { font-size: 12px; color: var(--tenue); }
+
+footer.pie { grid-area: pie; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: stretch; }
+.teletipo { background: var(--panel); border: 1px solid var(--linea); border-radius: 10px; padding: 8px 12px; font-family: var(--f-mono); font-size: 12px; min-width: 0; overflow: hidden; }
+.teletipo .linea { display: flex; gap: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--tenue); line-height: 1.7; }
+.teletipo .linea b { color: var(--texto); font-weight: 500; }
+.teletipo .linea i { font-style: normal; color: var(--cian); }
+.contadores { display: flex; gap: 8px; flex-wrap: wrap; }
+.contador { background: var(--panel); border: 1px solid var(--linea); border-radius: 10px; padding: 8px 12px; min-width: 96px; }
+.contador b { display: block; font-family: var(--f-pixel); font-size: 20px; font-variant-numeric: tabular-nums; }
+.contador span { font-size: 11px; color: var(--tenue); }
+.pendientes { margin: 0; padding-left: 18px; color: var(--tenue); font-size: 12px; display: grid; gap: 3px; }
+
+@media (max-width: 1100px) {
+  .app { grid-template-columns: 210px minmax(0, 1fr); grid-template-areas: "top top" "equipo oficina" "ficha ficha" "pie pie"; }
+}
+@media (max-width: 720px) {
+  .app { grid-template-columns: minmax(0, 1fr); grid-template-areas: "top" "oficina" "ficha" "equipo" "pie"; }
+  main.oficina { min-height: 300px; aspect-ratio: 4 / 3; }
+  footer.pie { grid-template-columns: minmax(0, 1fr); }
+  .chips { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .estado.trabajando { animation: none; } }
+</style>
+
+<div class="app">
+  <header class="top">
+    <div class="marca">
+      <h1><b>¿Sabías que…?</b> GTA 6 · Oficina</h1>
+      <small>5 jefes · 13 especialistas</small>
+    </div>
+    <div class="chips">
+      <span class="chip" id="chip-datos"><span class="p"></span><span id="txt-datos">Conectando…</span></span>
+      <span class="chip" id="chip-activos"><span class="p"></span><span id="txt-activos">Equipo —</span></span>
+      <span class="chip" id="reloj">--:--</span>
+    </div>
+  </header>
+
+  <aside class="equipo" aria-label="Plantilla" id="equipo"></aside>
+
+  <main class="oficina" aria-label="Oficina">
+    <canvas id="mundo" tabindex="0" aria-label="Oficina isométrica: pulsa un trabajador para ver su ficha"></canvas>
+    <div class="hud">
+      <button class="chip" id="btn-noche" aria-pressed="true">Atardecer</button>
+      <button class="chip" id="btn-nombres" aria-pressed="true">Nombres</button>
+    </div>
+    <div class="aviso" id="aviso" hidden></div>
+  </main>
+
+  <aside class="ficha" id="ficha" aria-live="polite"></aside>
+
+  <footer class="pie">
+    <div class="teletipo" id="teletipo"><div class="linea">Esperando la primera foto del estado…</div></div>
+    <div class="contadores" id="contadores"></div>
+  </footer>
+</div>
+
+<script>
+"use strict";
+/* =====================================================================================================
+   PLANTILLA: quién es quién. Los 5 JEFES (los que nombró el dueño) y sus 13 especialistas (los agentes de
+   .claude/agents), cada uno con su departamento, su mesa en la oficina y sus skills/herramientas reales.
+   El ESTADO (trabajando, último resultado, cifras) llega de la base de datos de la página: doc oficina/estado.
+   ===================================================================================================== */
+const DEPARTAMENTOS = {
+  radar:      { nombre: "Radar",       color: "#3fe0d0", jefe: "valentin" },
+  guion:      { nombre: "Guion",       color: "#ff4fa3", jefe: "pedro" },
+  produccion: { nombre: "Producción",  color: "#ffc24b", jefe: "fernanda" },
+  imagen:     { nombre: "Imagen",      color: "#a07bff", jefe: "tommy" },
+  calidad:    { nombre: "Calidad y canal", color: "#57d68d", jefe: "irene" },
+};
+// pelo, piel, camiseta, pantalón (pixel-art procedural)
+const P = (pelo, piel, ropa, pant, larga = false, barba = false, gafas = false) => ({ pelo, piel, ropa, pant, larga, barba, gafas });
+const PLANTILLA = [
+  { id: "valentin", nombre: "Valentín", rol: "Radar GTA · cada 15 min, 14 idiomas", dep: "radar", jefe: true, look: P("#2b1b10", "#d9a37a", "#1f6f8b", "#2a2a3a", false, true),
+    skills: ["radar_web.py", "Google News ×14", "Bluesky", "Mastodon", "Reddit", "YouTube RSS", "X (API)", "yt-viral", "viral-short-form-ideas", "radar historia"],
+    equipo: ["tendencias", "documentalista"] },
+  { id: "tendencias", nombre: "Rocío", rol: "Tendencias · vídeos 10x", dep: "radar", look: P("#7a3b1d", "#f0c19b", "#2e8b7a", "#3a3150", true),
+    skills: ["yt-viral", "viral-short-form-ideas", "trends.py", "outliers 10x"] },
+  { id: "documentalista", nombre: "Bruno", rol: "Documentalista · verifica datos", dep: "radar", look: P("#111", "#a8774f", "#4a5a7a", "#26222f", false, false, true),
+    skills: ["WebSearch", "WebFetch", "investigacion/", "modo-historia.md", "fuentes con fecha"] },
+
+  { id: "pedro", nombre: "Pedro", rol: "Guionista jefe · solo con /guiones", dep: "guion", jefe: true, look: P("#3d2614", "#e8b48c", "#c2185b", "#22202e", false, true),
+    skills: ["/guiones", "yt-script", "viral-youtube-shorts", "viral-tiktok-content", "prompt-master", "hookscore_es", "ganchos.md"],
+    equipo: ["guionista", "estratega", "packaging"] },
+  { id: "guionista", nombre: "Marta", rol: "Guionista · gancho del segundo 1", dep: "guion", look: P("#d6a24a", "#f3cfb0", "#8e3d7a", "#2c2840", true),
+    skills: ["yt-script", "viral-youtube-shorts", "viral-tiktok-content", "hookscore_es"] },
+  { id: "estratega", nombre: "Hugo", rol: "Estratega · calendario", dep: "guion", look: P("#5a3a22", "#c98f64", "#38506e", "#1e1c28", false, false, true),
+    skills: ["yt-plan", "yt-audit", "estrategia.md"] },
+  { id: "packaging", nombre: "Sara", rol: "Títulos y portadas", dep: "guion", look: P("#1a1a1a", "#e0ad85", "#e0662d", "#2a2638", true),
+    skills: ["yt-package", "yt-seo", "thumbs.py", "3 portadas"] },
+
+  { id: "fernanda", nombre: "Fernanda", rol: "Fábrica · produce cada vídeo", dep: "produccion", jefe: true, look: P("#4b2414", "#d8a07a", "#d99a1e", "#26222f", true),
+    skills: ["short_job.py", "voice.py (ElevenLabs/OpenAI/edge)", "sfx.py", "motion.py", "escena3d (three.js)", "misterio.py", "captions.py", "Actions"],
+    equipo: ["voz-audio", "sonido", "animacion", "editor"] },
+  { id: "voz-audio", nombre: "Leo", rol: "Locución IA · frase a frase", dep: "produccion", look: P("#222", "#b98060", "#3c7a4a", "#25212f"),
+    skills: ["voice.py", "ElevenLabs", "pronunciacion.yaml", "voz-del-canal.md"] },
+  { id: "sonido", nombre: "Nora", rol: "Diseño sonoro · −14 LUFS", dep: "produccion", look: P("#9b2f2f", "#f1c6a3", "#2b2b45", "#1d1b27", true),
+    skills: ["sfx.py", "latido · riser · dron", "mezcla con ducking"] },
+  { id: "animacion", nombre: "Iker", rol: "Escenas 3D · nunca repetidas", dep: "produccion", look: P("#e8e3d6", "#d7a784", "#5b3fa0", "#24212e"),
+    skills: ["motion.py", "escena3d (12 tipos)", "zooms y pausas"] },
+  { id: "editor", nombre: "Dani", rol: "Editor / clipper", dep: "produccion", look: P("#3b2a1a", "#a06a45", "#7a2e2e", "#25222c", false, true),
+    skills: ["yt-edit", "yt-shorts", "yt-chapters", "render.py", "segments.py"] },
+
+  { id: "tommy", nombre: "Tommy", rol: "Imágenes · banco y recortes", dep: "imagen", jefe: true, look: P("#151515", "#c48b63", "#6c3fd1", "#201e2b", false, false, true),
+    skills: ["visuales.py", "banco/ (oficial + libres)", "CLIP (temas)", "libres.py (Commons, Openverse)", "recorte.py (rembg)", "props.py"],
+    equipo: ["director-arte"] },
+  { id: "director-arte", nombre: "Alba", rol: "Dirección de arte · identidad", dep: "imagen", look: P("#c0396b", "#f2cbb0", "#232338", "#1f1d29", true),
+    skills: ["identidad-visual.md", "marca.py", "paleta y fuentes"] },
+
+  { id: "irene", nombre: "Irene", rol: "Inspectora · la que cambia todo", dep: "calidad", jefe: true, look: P("#2a1a10", "#e2ad86", "#1f8a5c", "#24212d", true, false, true),
+    skills: ["calidad.py", "pytest (46)", "ruff", "control-calidad.md", "-14 LUFS", "1080x1920"],
+    equipo: ["retencion", "studio", "comunidad"] },
+  { id: "retencion", nombre: "Óscar", rol: "Retención · dónde se van", dep: "calidad", look: P("#4a4a4a", "#b88563", "#355c7d", "#22202b"),
+    skills: ["yt-retention", "retencion.md", "alerta al guionista"] },
+  { id: "studio", nombre: "Lola", rol: "Publicación · hora y textos", dep: "calidad", look: P("#e6b44a", "#f4d2b5", "#b33a3a", "#2a2636", true),
+    skills: ["yt-seo", "yt-chapters", "publicacion.md", "upload_youtube.py"] },
+  { id: "comunidad", nombre: "Gael", rol: "Comunidad · comentarios", dep: "calidad", look: P("#2d1d12", "#9d6a48", "#3f8f8f", "#23202c", false, true),
+    skills: ["yt-comment", "comentario fijado", "voz del canal"] },
+];
+const POR_ID = Object.fromEntries(PLANTILLA.map(p => [p.id, p]));
+
+/* =====================================================================================================
+   MUNDO ISOMÉTRICO (pixel-art dibujado por código). Rejilla de 22×16 baldosas; cada departamento tiene su
+   zona con alfombra, mesas y monitores. Se dibuja en un lienzo pequeño y se escala sin suavizado.
+   ===================================================================================================== */
+const TW = 24, TH = 12;           // baldosa isométrica 2:1
+const GW = 22, GH = 16;           // tamaño de la planta en baldosas
+const MURO = 74;                  // altura de las paredes en píxeles
+const LW = (GW + GH) * TW / 2 + 40, LH = (GW + GH) * TH / 2 + MURO + 50;
+const OX = GH * TW / 2 + 20, OY = MURO + 24;
+const iso = (x, y, z = 0) => [Math.round(OX + (x - y) * TW / 2), Math.round(OY + (x + y) * TH / 2 - z)];
+
+// zonas de departamento: [x0, y0, x1, y1] en baldosas
+const ZONAS = {
+  radar:      [1, 1, 6, 6],
+  guion:      [8, 1, 14, 6],
+  produccion: [15, 1, 21, 7],
+  imagen:     [1, 9, 7, 14],
+  calidad:    [9, 9, 15, 14],
+};
+// mesa de cada persona: baldosa de la mesa (la silla queda en y+1) — orden = PLANTILLA
+const MESAS = {
+  valentin: [3, 2], tendencias: [1.6, 4.2], documentalista: [4.4, 4.2],
+  pedro: [11, 2], guionista: [9, 4.2], estratega: [11.2, 4.2], packaging: [13.2, 4.2],
+  fernanda: [18, 2], "voz-audio": [15.6, 4.4], sonido: [17.6, 4.4], animacion: [19.6, 4.4], editor: [17.6, 6.2],
+  tommy: [4, 10], "director-arte": [2, 12.2],
+  irene: [12, 10], retencion: [9.8, 12.2], studio: [12, 12.2], comunidad: [14.2, 12.2],
+};
+// puntos a los que se acercan cuando descansan
+const DESCANSO = { cafe: [18.5, 10.5], sofa: [19.5, 13.2], pizarra: [8.6, 1.4], ventana: [6.6, 7.6], servidor: [16.6, 9.2], fuente: [20.2, 9.8] };
+
+const lienzo = document.getElementById("mundo");
+const vista = lienzo.getContext("2d");
+const capa = document.createElement("canvas"); capa.width = LW; capa.height = LH;
+const g = capa.getContext("2d");
+let mostrarNombres = true, atardecer = true, seleccionado = "valentin", t0 = performance.now();
+const reducir = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// ---------- primitivas ----------
+function baldosa(x, y, color, borde) {
+  const [a, b] = iso(x, y), [c, d] = iso(x + 1, y), [e, f] = iso(x + 1, y + 1), [h, i] = iso(x, y + 1);
+  g.beginPath(); g.moveTo(a, b); g.lineTo(c, d); g.lineTo(e, f); g.lineTo(h, i); g.closePath();
+  g.fillStyle = color; g.fill();
+  if (borde) { g.strokeStyle = borde; g.lineWidth = 1; g.stroke(); }
+}
+function caja(x, y, w, d, alto, cTop, cIzq, cDer, z = 0) {
+  // prisma isométrico con base en (x,y), ancho w (eje x), fondo d (eje y)
+  const p = (px, py, pz) => iso(px, py, pz);
+  const A = p(x, y + d, z), B = p(x + w, y + d, z), C = p(x + w, y, z);
+  const At = p(x, y + d, z + alto), Bt = p(x + w, y + d, z + alto), Ct = p(x + w, y, z + alto), Dt = p(x, y, z + alto);
+  g.fillStyle = cIzq; g.beginPath(); g.moveTo(...A); g.lineTo(...B); g.lineTo(...Bt); g.lineTo(...At); g.fill();
+  g.fillStyle = cDer; g.beginPath(); g.moveTo(...B); g.lineTo(...C); g.lineTo(...Ct); g.lineTo(...Bt); g.fill();
+  g.fillStyle = cTop; g.beginPath(); g.moveTo(...At); g.lineTo(...Bt); g.lineTo(...Ct); g.lineTo(...Dt); g.fill();
+}
+function sombra(x, y, r = 7) { const [sx, sy] = iso(x, y); g.fillStyle = "rgba(0,0,0,.35)"; g.beginPath(); g.ellipse(sx, sy, r, r / 2, 0, 0, 7); g.fill(); }
+
+// pared: transforma coordenadas locales (u = baldosas a lo largo, v = píxeles hacia arriba) a pantalla
+function enPared(lado, fn) {
+  g.save();
+  if (lado === "fondo") { const [x0, y0] = iso(0, 0); g.setTransform(TW / 2, TH / 2, 0, -1, x0, y0); }  // a lo largo de x
+  else { const [x0, y0] = iso(0, 0); g.setTransform(-TW / 2, TH / 2, 0, -1, x0, y0); }                   // a lo largo de y
+  fn(); g.restore();
+}
+
+// ---------- vista por las ventanas: atardecer de Vice City (se dibuja en coordenadas de pared) ----------
+const EDIFICIOS = Array.from({ length: 70 }, (_, i) => ({ u: i * 0.62 + (i * 7 % 5) * 0.08, w: 0.35 + (i * 13 % 7) * 0.07, h: 18 + (i * 37 % 29) + (i % 9 === 0 ? 18 : 0), luz: i * 17 % 11 }));
+const PALMERAS = [1.2, 4.7, 9.4, 13.1, 17.8, 20.6];
+function ventanal(u0, u1, v0, v1, t, idx) {
+  const cielo = g.createLinearGradient(0, v1, 0, v0);
+  if (atardecer) { cielo.addColorStop(0, "#2a1650"); cielo.addColorStop(0.45, "#c63d7d"); cielo.addColorStop(0.75, "#ff8a4c"); cielo.addColorStop(1, "#ffd27a"); }
+  else { cielo.addColorStop(0, "#05040c"); cielo.addColorStop(0.6, "#120d2a"); cielo.addColorStop(1, "#2a1a48"); }
+  g.fillStyle = cielo; g.fillRect(u0, v0, u1 - u0, v1 - v0);
+  // sol
+  if (atardecer) { g.fillStyle = "rgba(255,226,140,.9)"; g.beginPath(); g.ellipse((u0 + u1) / 2 + idx * 0.4, v0 + 14, 0.6, 7, 0, 0, 7); g.fill(); }
+  // edificios
+  for (const e of EDIFICIOS) {
+    if (e.u + e.w < u0 || e.u > u1) continue;
+    const a = Math.max(e.u, u0), b = Math.min(e.u + e.w, u1);
+    g.fillStyle = atardecer ? "#24163f" : "#0d0a1d"; g.fillRect(a, v0, b - a, Math.min(e.h, v1 - v0 - 4));
+    // ventanitas encendidas (parpadean muy lento)
+    g.fillStyle = "rgba(255,214,120,.75)";
+    for (let k = 4; k < e.h - 3; k += 5) if (((k + e.luz + Math.floor(t / 4)) % 7) < 2) g.fillRect(a + 0.08, v0 + k, 0.08, 1.2);
+  }
+  // palmeras en primer plano
+  g.fillStyle = atardecer ? "#160c26" : "#07060f";
+  for (const pu of PALMERAS) {
+    if (pu < u0 || pu > u1) continue;
+    g.fillRect(pu, v0, 0.07, 28);                                  // tronco
+    const viento = reducir ? 0 : Math.sin(t * 0.8 + pu) * 0.04;
+    for (let k = -3; k <= 3; k++) g.fillRect(pu + k * 0.16 - 0.1 + viento, v0 + 28 - Math.abs(k) * 1.6, 0.3, 2);   // copa
+    g.fillRect(pu - 0.12, v0 + 28, 0.3, 2.5);
+  }
+}
+
+function paredes(t) {
+  // pared del fondo (a lo largo de x) y pared izquierda (a lo largo de y)
+  enPared("fondo", () => {
+    g.fillStyle = "#1b1630"; g.fillRect(0, 0, GW, MURO);
+    g.fillStyle = "#231d3d"; g.fillRect(0, MURO - 6, GW, 6);
+    for (let i = 0; i < 5; i++) ventanal(1 + i * 4.2, 4.6 + i * 4.2, 10, MURO - 12, t, i);
+    g.fillStyle = "#2d2650"; for (let i = 0; i <= 5; i++) g.fillRect(0.6 + i * 4.2, 8, 0.25, MURO - 18);
+    g.fillStyle = "#120f22"; g.fillRect(0, 0, GW, 4);
+  });
+  enPared("lado", () => {
+    g.fillStyle = "#17132a"; g.fillRect(0, 0, GH, MURO);
+    g.fillStyle = "#1f1a36"; g.fillRect(0, MURO - 6, GH, 6);
+    ventanal(1, 6, 10, MURO - 12, t, 7);
+    // rótulo de neón del canal
+    const brillo = reducir ? 1 : 0.75 + 0.25 * Math.sin(t * 3) * (Math.sin(t * 17) > 0.96 ? 0 : 1);
+    g.save(); g.translate(11, 44); g.scale(-1 / (TW / 2), -1);
+    g.font = "bold 10px Silkscreen, monospace"; g.textAlign = "center";
+    g.shadowColor = "#ff4fa3"; g.shadowBlur = 8 * brillo; g.fillStyle = `rgba(255,120,190,${brillo})`;
+    g.fillText("¿SABÍAS QUE…?", 0, 0);
+    g.shadowColor = "#3fe0d0"; g.fillStyle = `rgba(110,240,225,${brillo})`; g.font = "bold 12px Silkscreen, monospace"; g.fillText("GTA 6", 0, 14);
+    g.restore();
+  });
+}
+
+function suelo() {
+  for (let x = 0; x < GW; x++) for (let y = 0; y < GH; y++) baldosa(x, y, (x + y) % 2 ? "#1c1830" : "#201b37");
+  for (const [dep, [x0, y0, x1, y1]] of Object.entries(ZONAS)) {
+    const c = DEPARTAMENTOS[dep].color;
+    for (let x = x0; x < x1; x++) for (let y = y0; y < y1; y++) baldosa(x, y, c + "1f");
+    // borde de la alfombra
+    const pts = [iso(x0, y0), iso(x1, y0), iso(x1, y1), iso(x0, y1)];
+    g.strokeStyle = c + "88"; g.lineWidth = 1; g.beginPath(); g.moveTo(...pts[0]); for (const q of pts.slice(1)) g.lineTo(...q); g.closePath(); g.stroke();
+  }
+  // zona de descanso
+  for (let x = 16; x < 21; x++) for (let y = 9; y < 15; y++) baldosa(x, y, "#2a2142");
+}
+
+/* ---------- objetos con profundidad: cada uno sabe su (x+y) para ordenarse con las personas ---------- */
+const OBJETOS = [];
+function objeto(x, y, dibujar) { OBJETOS.push({ x, y, prof: x + y, dibujar }); }
+
+function mesa(x, y, color, persona) {
+  objeto(x, y, (t) => {
+    caja(x, y, 1.6, 0.8, 14, "#3a3157", "#2a2342", "#231d38");
+    caja(x + 0.05, y + 0.05, 1.5, 0.7, 1, color + "66", color + "44", color + "33", 14);
+    // monitor: brilla y "teclea" si el departamento trabaja
+    const est = estadoDe(persona), activo = est === "trabajando";
+    const [mx, my] = iso(x + 0.8, y + 0.15, 16);
+    g.fillStyle = "#0c0a16"; g.fillRect(mx - 9, my - 13, 18, 12);
+    const pant = activo ? (reducir ? "#4fe3c9" : `hsl(${170 + 20 * Math.sin(t * 2 + x)},70%,${48 + 8 * Math.sin(t * 9 + y)}%)`) : est === "fallo" ? "#8a2b3a" : "#2c3a5a";
+    g.fillStyle = pant; g.fillRect(mx - 8, my - 12, 16, 10);
+    if (activo) { g.fillStyle = "rgba(255,255,255,.55)"; for (let k = 0; k < 3; k++) g.fillRect(mx - 6, my - 10 + k * 3, 4 + ((Math.floor(t * 6) + k * 3 + x) % 9), 1); }
+    g.fillStyle = "#0c0a16"; g.fillRect(mx - 1, my - 1, 2, 3);
+    // taza / papeles
+    const [px, py] = iso(x + 1.4, y + 0.55, 15); g.fillStyle = "#e9e4f5"; g.fillRect(px - 2, py - 3, 3, 3);
+  });
+}
+function planta(x, y) { objeto(x, y, () => { caja(x - 0.2, y - 0.2, 0.4, 0.4, 7, "#6b4a2f", "#4e3521", "#3f2a1a"); const [sx, sy] = iso(x, y, 10); g.fillStyle = "#2f8f55"; for (let i = 0; i < 5; i++) { g.beginPath(); g.ellipse(sx + (i - 2) * 2.5, sy - 4 - (i % 2) * 3, 3, 6, (i - 2) * 0.4, 0, 7); g.fill(); } }); }
+function estanteria(x, y) { objeto(x, y, () => { caja(x, y, 1.2, 0.4, 34, "#3b2c22", "#2c2019", "#241a14"); for (let k = 0; k < 4; k++) { const [sx, sy] = iso(x + 0.1, y + 0.4, 6 + k * 8); for (let b = 0; b < 6; b++) { g.fillStyle = ["#c2185b", "#3fe0d0", "#ffc24b", "#a07bff", "#57d68d", "#e0662d"][(b + k) % 6]; g.fillRect(sx + b * 2.4, sy - 6, 2, 6); } } }); }
+function servidor(x, y) {
+  objeto(x, y, (t) => {
+    caja(x, y, 0.8, 0.8, 38, "#1a1d2c", "#11131f", "#0c0e18");
+    const [sx, sy] = iso(x + 0.1, y + 0.8, 0);
+    for (let k = 0; k < 7; k++) for (let l = 0; l < 3; l++) {
+      const on = reducir ? (k + l) % 2 : (Math.sin(t * (3 + l) + k * 1.7) > 0.2);
+      g.fillStyle = on ? (l === 0 ? "#57d68d" : l === 1 ? "#3fe0d0" : "#ffc24b") : "#22273a"; g.fillRect(sx + 2 + l * 3, sy - 6 - k * 5, 2, 1);
+    }
+    etiqueta(x + 0.4, y + 0.4, 44, "GitHub Actions", "#9a93b8");
+  });
+}
+function cafetera(x, y) { objeto(x, y, (t) => { caja(x, y, 1, 0.6, 16, "#4a3f66", "#352d4d", "#2c2541"); caja(x + 0.3, y + 0.15, 0.4, 0.3, 10, "#20202a", "#18181f", "#121217", 16); const [sx, sy] = iso(x + 0.5, y + 0.3, 28); if (!reducir) { g.fillStyle = "rgba(255,255,255,.25)"; for (let k = 0; k < 3; k++) g.fillRect(sx + Math.sin(t * 2 + k) * 2, sy - k * 4 - ((t * 8) % 4), 1, 2); } }); }
+function sofa(x, y) { objeto(x, y, () => { caja(x, y, 2.2, 0.9, 6, "#5b3fa0", "#452f7c", "#3a2768"); caja(x, y, 2.2, 0.25, 14, "#6a4bb5", "#4e3690", "#41307a"); }); }
+function pizarra(x, y) {
+  objeto(x, y, () => {
+    caja(x, y, 1.8, 0.1, 30, "#e9e4f5", "#cfc9e0", "#bdb6d2", 8);
+    const [sx, sy] = iso(x + 0.15, y + 0.1, 34);
+    g.fillStyle = "#c2185b"; g.font = "6px Silkscreen, monospace"; g.fillText("GUIONES", sx, sy - 0);
+    const n = (estado?.trabajadores?.pedro?.cifras?.guiones) ?? "—";
+    g.fillStyle = "#2b2540"; g.font = "bold 10px Silkscreen, monospace"; g.fillText(String(n), sx + 8, sy + 12);
+  });
+}
+function pantallon(x, y) {
+  objeto(x, y, (t) => {
+    caja(x, y, 2.4, 0.12, 22, "#0b0913", "#08070e", "#06050b", 22);
+    const [sx, sy] = iso(x + 0.15, y + 0.12, 40);
+    g.fillStyle = "#ffc24b"; g.font = "6px Silkscreen, monospace"; g.fillText("VÍDEOS", sx, sy);
+    const v = estado?.videos?.filter(z => z.listo).length ?? "—";
+    g.fillStyle = "#ece8f7"; g.font = "bold 11px Silkscreen, monospace"; g.fillText(`${v} ✓`, sx + 6, sy + 13);
+  });
+}
+
+function montarObjetos() {
+  OBJETOS.length = 0;
+  for (const p of PLANTILLA) { const [x, y] = MESAS[p.id]; mesa(x, y, DEPARTAMENTOS[p.dep].color, p.id); }
+  [[0.6, 7.6], [7.4, 0.6], [14.6, 0.6], [21, 8], [8.2, 8.6], [15.6, 14.6], [0.6, 15]].forEach(([x, y]) => planta(x, y));
+  estanteria(5.6, 0.5); estanteria(1.2, 8.3); servidor(16.4, 8.4); cafetera(18, 9.4); sofa(18.2, 13.6); pizarra(8.2, 0.4); pantallon(16, 0.35);
+}
+
+/* ---------- personas: sprite procedural de 12×20, con caminar, teclear y respirar ---------- */
+function sprite(ctx, look, x, y, escala, pose, fase) {
+  const px = (cx, cy, w, h, c) => { ctx.fillStyle = c; ctx.fillRect(x + cx * escala, y + cy * escala, w * escala, h * escala); };
+  const paso = pose === "andar" ? Math.round(Math.sin(fase) * 1.5) : 0;
+  const resp = pose === "quieto" ? (Math.sin(fase) > 0.6 ? 1 : 0) : 0;
+  const tecla = pose === "teclear" ? (Math.sin(fase * 3) > 0 ? 1 : 0) : 0;
+  // piernas
+  px(3, 15, 2, 5 - Math.max(0, paso), look.pant); px(7, 15, 2, 5 - Math.max(0, -paso), look.pant);
+  px(3, 19 - Math.max(0, paso), 2, 1, "#111"); px(7, 19 - Math.max(0, -paso), 2, 1, "#111");
+  // cuerpo
+  px(2, 8 + resp, 8, 8 - resp, look.ropa); px(2, 8 + resp, 8, 1, "rgba(255,255,255,.18)");
+  // brazos
+  px(0, 9 + resp, 2, 5 - tecla, look.ropa); px(10, 9 + resp, 2, 5 - (1 - tecla), look.ropa);
+  px(0, 14 - tecla + resp, 2, 1, look.piel); px(10, 13 + tecla + resp, 2, 1, look.piel);
+  // cabeza
+  px(3, 2 + resp, 6, 6, look.piel);
+  px(3, 1 + resp, 6, 2, look.pelo); px(2, 2 + resp, 1, look.larga ? 8 : 3, look.pelo); px(9, 2 + resp, 1, look.larga ? 8 : 3, look.pelo);
+  if (look.barba) px(3, 6 + resp, 6, 2, look.pelo);
+  px(4, 4 + resp, 1, 1, "#16121f"); px(7, 4 + resp, 1, 1, "#16121f");
+  if (look.gafas) { px(3, 4 + resp, 3, 1, "rgba(20,20,30,.7)"); px(6, 4 + resp, 3, 1, "rgba(20,20,30,.7)"); }
+}
+function retrato(canvas, look) {
+  const c = canvas.getContext("2d"); canvas.width = 16; canvas.height = 16; c.imageSmoothingEnabled = false;
+  c.fillStyle = "#241f3b"; c.fillRect(0, 0, 16, 16);
+  const tmp = document.createElement("canvas"); tmp.width = 12; tmp.height = 20; sprite(tmp.getContext("2d"), look, 0, 0, 1, "quieto", 0);
+  c.drawImage(tmp, 0, 0, 12, 12, 2, 2, 12, 12);
+}
+
+const GENTE = PLANTILLA.map((p, i) => {
+  const [mx, my] = MESAS[p.id];
+  const silla = [mx + 0.8, my + 1.05];
+  return { ...p, x: silla[0], y: silla[1], silla, destino: null, espera: 2 + (i * 1.3) % 6, fase: i };
+});
+
+function estadoDe(id) {
+  const p = POR_ID[id]; if (!p) return "esperando";
+  const jefe = DEPARTAMENTOS[p.dep].jefe;
+  return estado?.trabajadores?.[jefe]?.estado || "esperando";
+}
+
+function moverGente(dt) {
+  for (const p of GENTE) {
+    const est = estadoDe(p.id);
+    if (est === "trabajando") {                     // a su mesa y a teclear
+      p.destino = p.silla;
+    } else if (!p.destino || (p.destino === p.silla && dist(p, p.silla) < 0.05)) {
+      p.espera -= dt;
+      if (p.espera <= 0) {
+        const opciones = Object.values(DESCANSO);
+        p.destino = Math.random() < 0.55 ? p.silla : opciones[Math.floor(Math.random() * opciones.length)];
+        p.espera = 4 + Math.random() * 8;
+      }
+    }
+    if (p.destino) {
+      const dx = p.destino[0] - p.x, dy = p.destino[1] - p.y, d = Math.hypot(dx, dy);
+      const v = 1.6 * dt;
+      if (d > 0.05) { p.x += dx / d * Math.min(v, d); p.y += dy / d * Math.min(v, d); p.andando = true; }
+      else { p.andando = false; if (p.destino !== p.silla) { p.espera -= dt; if (p.espera <= 0) { p.destino = p.silla; p.espera = 5 + Math.random() * 6; } } }
+    }
+    p.fase += dt * (p.andando ? 9 : 2);
+  }
+}
+const dist = (p, q) => Math.hypot(p.x - q[0], p.y - q[1]);
+
+function etiqueta(x, y, z, texto, color = "#ece8f7", fondo = "rgba(13,11,23,.85)") {
+  const [sx, sy] = iso(x, y, z);
+  g.font = "6px Silkscreen, monospace"; const w = Math.ceil(g.measureText(texto).width) + 6;
+  g.fillStyle = fondo; g.fillRect(sx - w / 2, sy - 8, w, 9);
+  g.fillStyle = color; g.textAlign = "center"; g.fillText(texto, sx, sy - 1.5); g.textAlign = "start";
+}
+function dibujarPersona(p, t) {
+  const est = estadoDe(p.id), enMesa = dist(p, p.silla) < 0.06;
+  const pose = p.andando ? "andar" : (est === "trabajando" && enMesa) ? "teclear" : "quieto";
+  sombra(p.x, p.y, 5);
+  const [sx, sy] = iso(p.x, p.y);
+  sprite(g, p.look, sx - 6, sy - 20, 1, pose, p.fase);
+  if (p.id === seleccionado) { g.strokeStyle = "#3fe0d0"; g.lineWidth = 1; g.beginPath(); g.ellipse(sx, sy, 8, 4, 0, 0, 7); g.stroke(); }
+  if (mostrarNombres || p.id === seleccionado) {
+    const col = { trabajando: "#ffc24b", ok: "#57d68d", fallo: "#ff5d5d" }[est] || "#c9c3e0";
+    etiqueta(p.x, p.y, 24 + (p.jefe ? 2 : 0), (p.jefe ? "★ " : "") + p.nombre, col);
+  }
+  // bocadillo: tecleando / hecho / fallo
+  if (p.jefe && est === "trabajando" && !reducir) { const [bx, by] = iso(p.x, p.y, 36); g.fillStyle = "#ece8f7"; for (let k = 0; k < 3; k++) if (Math.floor(t * 3) % 4 > k) g.fillRect(bx - 4 + k * 3, by, 2, 2); }
+  if (p.jefe && est === "fallo") etiqueta(p.x, p.y, 36, "!", "#ff5d5d");
+}
+
+/* ---------- Michi, el gato ---------- */
+const MICHI = { x: 19, y: 12.5, destino: [19, 12.5], espera: 3, fase: 0 };
+function moverGato(dt) {
+  const d = Math.hypot(MICHI.destino[0] - MICHI.x, MICHI.destino[1] - MICHI.y);
+  if (d < 0.05) { MICHI.espera -= dt; if (MICHI.espera < 0) { const m = GENTE[Math.floor(Math.random() * GENTE.length)]; MICHI.destino = Math.random() < 0.5 ? [19, 12.6] : [m.silla[0] + 0.6, m.silla[1] + 0.3]; MICHI.espera = 4 + Math.random() * 6; } }
+  else { MICHI.x += (MICHI.destino[0] - MICHI.x) / d * Math.min(d, 1.1 * dt); MICHI.y += (MICHI.destino[1] - MICHI.y) / d * Math.min(d, 1.1 * dt); MICHI.fase += dt * 10; }
+}
+function dibujarGato() {
+  sombra(MICHI.x, MICHI.y, 3); const [sx, sy] = iso(MICHI.x, MICHI.y);
+  g.fillStyle = "#f0a347"; g.fillRect(sx - 4, sy - 5, 7, 3); g.fillRect(sx + 2, sy - 7, 3, 3); g.fillRect(sx + 2, sy - 8, 1, 1); g.fillRect(sx + 4, sy - 8, 1, 1);
+  g.fillRect(sx - 5, sy - 7 + Math.round(Math.sin(MICHI.fase) * 0.6), 1, 3);
+  g.fillStyle = "#1a1220"; g.fillRect(sx + 3, sy - 6, 1, 1);
+  g.fillStyle = "#c97f2e"; g.fillRect(sx - 3, sy - 2, 1, 2); g.fillRect(sx + 1, sy - 2, 1, 2);
+  if (mostrarNombres) etiqueta(MICHI.x, MICHI.y, 12, "Michi", "#f0a347");
+}
+
+/* ---------- bucle ---------- */
+let ultimo = performance.now();
+function frame(ahora) {
+  const t = (ahora - t0) / 1000, dt = Math.min(0.1, (ahora - ultimo) / 1000); ultimo = ahora;
+  if (!reducir) { moverGente(dt); moverGato(dt); }
+  g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, LW, LH);
+  g.fillStyle = "#0a0814"; g.fillRect(0, 0, LW, LH);
+  paredes(t); suelo();
+  const cosas = [...OBJETOS.map(o => ({ prof: o.prof + 0.5, f: () => o.dibujar(t) })),
+    ...GENTE.map(p => ({ prof: p.x + p.y, f: () => dibujarPersona(p, t) })), { prof: MICHI.x + MICHI.y, f: dibujarGato }];
+  cosas.sort((a, b) => a.prof - b.prof).forEach(c => c.f());
+  // a pantalla, sin suavizado y centrado
+  const r = lienzo.getBoundingClientRect(), dpr = Math.min(2, devicePixelRatio || 1);
+  if (lienzo.width !== Math.round(r.width * dpr) || lienzo.height !== Math.round(r.height * dpr)) { lienzo.width = Math.round(r.width * dpr); lienzo.height = Math.round(r.height * dpr); }
+  const esc = Math.min(lienzo.width / LW, lienzo.height / LH);
+  escalaVista = esc; despX = (lienzo.width - LW * esc) / 2; despY = (lienzo.height - LH * esc) / 2;
+  vista.imageSmoothingEnabled = false; vista.fillStyle = "#0a0814"; vista.fillRect(0, 0, lienzo.width, lienzo.height);
+  vista.drawImage(capa, despX, despY, LW * esc, LH * esc);
+  if (!reducir || !frame.pintado) { frame.pintado = true; requestAnimationFrame(frame); }
+}
+let escalaVista = 1, despX = 0, despY = 0;
+
+lienzo.addEventListener("click", (e) => {
+  const r = lienzo.getBoundingClientRect(), dpr = lienzo.width / r.width;
+  const lx = ((e.clientX - r.left) * dpr - despX) / escalaVista, ly = ((e.clientY - r.top) * dpr - despY) / escalaVista;
+  let mejor = null, md = 14;
+  for (const p of GENTE) { const [sx, sy] = iso(p.x, p.y); const d = Math.hypot(lx - sx, ly - (sy - 10)); if (d < md) { md = d; mejor = p; } }
+  if (mejor) elegir(mejor.id);
+});
+document.getElementById("btn-nombres").addEventListener("click", (e) => { mostrarNombres = !mostrarNombres; e.currentTarget.setAttribute("aria-pressed", mostrarNombres); if (reducir) requestAnimationFrame(frame); });
+document.getElementById("btn-noche").addEventListener("click", (e) => { atardecer = !atardecer; e.currentTarget.textContent = atardecer ? "Atardecer" : "Noche"; e.currentTarget.setAttribute("aria-pressed", atardecer); if (reducir) requestAnimationFrame(frame); });
+
+/* =====================================================================================================
+   INTERFAZ: plantilla, ficha, teletipo y contadores. Todo se rehace al llegar una foto nueva del estado.
+   ===================================================================================================== */
+let estado = null;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const hace = (iso) => {
+  if (!iso) return "";
+  const m = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  return m < 1 ? "ahora" : m < 60 ? `hace ${m} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : `hace ${Math.round(m / 1440)} d`;
+};
+const ESTADO_TXT = { trabajando: "Trabajando", ok: "Terminado", fallo: "Con un fallo", esperando: "Esperando" };
+
+function pintarEquipo() {
+  const cont = $("equipo"); cont.innerHTML = "";
+  for (const [dep, d] of Object.entries(DEPARTAMENTOS)) {
+    const sec = document.createElement("div"); sec.className = "dep";
+    sec.innerHTML = `<h3 style="color:${d.color}">${esc(d.nombre)}</h3>`;
+    for (const p of PLANTILLA.filter(q => q.dep === dep)) {
+      const est = estadoDe(p.id);
+      const row = document.createElement("div");
+      row.className = "persona" + (p.jefe ? " jefe" : ""); row.tabIndex = 0; row.setAttribute("role", "button");
+      row.setAttribute("aria-selected", p.id === seleccionado); row.dataset.id = p.id;
+      row.innerHTML = `<canvas></canvas><div style="min-width:0"><div class="n">${esc(p.nombre)}</div><div class="r">${esc(p.rol)}</div></div><span class="estado ${est}" title="${ESTADO_TXT[est]}"></span>`;
+      retrato(row.querySelector("canvas"), p.look);
+      row.addEventListener("click", () => elegir(p.id));
+      row.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(p.id); } });
+      sec.appendChild(row);
+    }
+    cont.appendChild(sec);
+  }
+}
+
+function pintarFicha() {
+  const p = POR_ID[seleccionado], jefe = DEPARTAMENTOS[p.dep].jefe, dJefe = estado?.trabajadores?.[jefe], est = estadoDe(p.id);
+  const propio = p.jefe ? dJefe : null;
+  const f = $("ficha");
+  const cifras = propio?.cifras ? Object.entries(propio.cifras).map(([k, v]) => `<div class="cifra"><b>${esc(v)}</b><span>${esc(k)}</span></div>`).join("") : "";
+  const tipoSkill = (s) => /\.py|\.md|\/|yaml|Actions|three/.test(s) ? "code" : /^yt-|viral|prompt|hookscore|^\//.test(s) ? "ia" : "";
+  const agentes = estado?.equipo?.agentes || {};
+  const equipo = (p.equipo || []).map(id => `<span class="skill">${esc(POR_ID[id].nombre)} · ${esc(id)}</span>`).join("");
+  const todas = p.jefe && estado?.equipo?.skills ? estado.equipo.skills.filter(s => !p.skills.includes(s)).map(s => `<span class="skill ia">${esc(s)}</span>`).join("") : "";
+  f.innerHTML = `
+    <div class="cab"><canvas></canvas><div style="min-width:0">
+      <h2>${esc(p.nombre)}${p.jefe ? " ★" : ""}</h2>
+      <div class="rol">${esc(p.rol)} · ${esc(DEPARTAMENTOS[p.dep].nombre)}</div>
+      <span class="pill ${est}">${ESTADO_TXT[est]}${dJefe?.desde ? " · " + hace(dJefe.desde) : ""}</span>
+    </div></div>
+    <div class="bloque"><h4>${p.jefe ? "Ahora mismo" : "Su departamento"}</h4>
+      <div class="tarea">${esc(dJefe?.tarea || "Sin datos todavía: la oficina se llena con la próxima foto del estado.")}</div>
+      ${(dJefe?.detalle || []).length ? `<ul class="detalle">${dJefe.detalle.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+    </div>
+    ${cifras ? `<div class="bloque"><h4>Cifras</h4><div class="cifras">${cifras}</div></div>` : ""}
+    <div class="bloque"><h4>Skills y herramientas</h4><div class="skills">${p.skills.map(s => `<span class="skill ${tipoSkill(s)}">${esc(s)}</span>`).join("")}</div>
+      ${agentes[p.id] ? `<p class="equipo-de" style="margin:8px 0 0">${esc(agentes[p.id])}</p>` : ""}</div>
+    ${equipo ? `<div class="bloque"><h4>Su equipo</h4><div class="skills">${equipo}</div></div>` : ""}
+    ${todas ? `<div class="bloque"><h4>Además puede usar todas las skills del estudio</h4><div class="skills">${todas}</div></div>` : ""}
+    ${p.id === "irene" && estado?.pendientes?.length ? `<div class="bloque"><h4>Pendientes del dueño</h4><ol class="pendientes">${estado.pendientes.slice(0, 6).map(x => `<li>${esc(x)}</li>`).join("")}</ol></div>` : ""}
+  `;
+  retrato(f.querySelector("canvas"), p.look);
+}
+
+function pintarPie() {
+  const t = estado?.trabajadores || {}, b = estado?.banco || {};
+  const filas = (estado?.feed || []).slice(0, 4).map(e => `<div class="linea"><i>${esc(new Date(e.t).toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" }))}</i><b>${esc(POR_ID[e.quien]?.nombre || e.quien)}</b><span>${esc(e.texto)}</span></div>`).join("");
+  $("teletipo").innerHTML = filas || `<div class="linea">Sin actividad registrada todavía.</div>`;
+  const cont = [
+    [t.valentin?.cifras?.novedades, "novedades del radar"], [t.pedro?.cifras?.guiones, "guiones"], [t.fernanda?.cifras?.["vídeos"], "vídeos"],
+    [b.imagenes, "imágenes en el banco"], [b.animadas, "clips 3D"], [t.irene?.cifras?.aptos, "vídeos APTO"],
+  ];
+  $("contadores").innerHTML = cont.map(([v, k]) => `<div class="contador"><b>${v ?? "—"}</b><span>${k}</span></div>`).join("");
+  const activos = Object.values(t).filter(w => w.estado === "trabajando").length;
+  $("txt-activos").textContent = estado ? `${activos}/5 trabajando` : "Equipo —";
+  $("chip-activos").className = "chip" + (activos ? " vivo" : "");
+}
+
+function pintarTodo() { pintarEquipo(); pintarFicha(); pintarPie(); }
+function elegir(id) { seleccionado = id; pintarEquipo(); pintarFicha(); if (reducir) requestAnimationFrame(frame); }
+
+function reloj() { $("reloj").textContent = new Date().toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" }); if (estado) $("txt-datos").textContent = "Foto del estado · " + hace(estado.actualizado); }
+setInterval(reloj, 30000);
+
+/* =====================================================================================================
+   DATOS: la foto del estado vive en la base de datos de la página (doc oficina/estado). Claude la sube con
+   clipfactory/oficina.py cada vez que trabaja; la oficina no necesita estar encendida para tenerla al día.
+   ===================================================================================================== */
+async function conectar() {
+  const aviso = $("aviso");
+  const db = await window.claude?.use?.("db").catch(() => null);
+  if (!db) { aviso.hidden = false; aviso.textContent = "Esta vista no puede leer el estado. La oficina se ve, pero sin datos en directo."; $("txt-datos").textContent = "Sin conexión"; return; }
+  const espera = setTimeout(() => { aviso.hidden = false; aviso.textContent = "El estado tarda en llegar; lo que ves puede no estar al día."; }, 10000);
+  db.doc("oficina/estado").onSnapshot((snap) => {
+    if (!snap.metadata.fromCache) { clearTimeout(espera); aviso.hidden = true; }
+    if (!snap.exists) { aviso.hidden = false; aviso.textContent = "Todavía no hay ninguna foto del estado. Pídele a Claude «actualiza la oficina»."; $("txt-datos").textContent = "Sin datos"; return; }
+    estado = snap.data();
+    const viejo = Date.now() - new Date(estado.actualizado).getTime() > 6 * 3600e3;
+    $("chip-datos").className = "chip " + (viejo ? "viejo" : "vivo");
+    reloj(); pintarTodo();
+  }, () => { clearTimeout(espera); aviso.hidden = false; aviso.textContent = "No se pudo leer el estado en esta visita."; });
+}
+
+/* ---------- arranque ---------- */
+montarObjetos(); pintarTodo(); reloj();
+(document.fonts?.load ? Promise.all([document.fonts.load("6px Silkscreen"), document.fonts.load("bold 10px Silkscreen")]).catch(() => {}) : Promise.resolve())
+  .finally(() => requestAnimationFrame(frame));
+conectar();
+</script>
