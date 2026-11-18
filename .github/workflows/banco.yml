@@ -46,7 +46,7 @@ jobs:
           cat > /tmp/guardar.sh <<'EOF'
           git config user.name "banco-bot"
           git config user.email "banco-bot@users.noreply.github.com"
-          git add media/banco media/oficial media/recortes
+          for d in media/banco media/oficial media/recortes; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet && exit 0
           git commit -q -m "Banco de imágenes: $1 [skip ci]"
           for i in 1 2 3 4; do git pull --rebase -q -X ours && git push -q && break; sleep 5; done
@@ -61,7 +61,9 @@ jobs:
       - name: 3 · Recortes de personajes
         run: python3 -c "from clipfactory import recorte; print(recorte.process_all())"
         continue-on-error: true
+        timeout-minutes: 15
       - run: /tmp/guardar.sh "etiquetas y personajes"
+        if: always()
       - name: 4 · Animar en 3D (por tandas de 30, guardando cada tanda)
         run: |
           for tanda in $(seq 1 30); do

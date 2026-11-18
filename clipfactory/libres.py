@@ -17,10 +17,26 @@ OK_LICENSES = re.compile(r"^(cc0|public domain|pd|cc by(-sa)? [\d.]+)", re.I)
 CARPETA = rutas.MEDIA / "libres"
 
 
+def _abrir(url: str, timeout: int = 60) -> bytes:
+    """GET con pausa entre llamadas y reintentos si Commons pide calma (HTTP 429/503)."""
+    import time
+    import urllib.error
+
+    for intento in range(6):
+        time.sleep(1.2)
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or intento == 5:
+                raise
+            espera = int(e.headers.get("Retry-After") or 0) or 10 * 2**intento
+            time.sleep(min(espera, 120))
+    raise RuntimeError("sin respuesta")
+
+
 def _get(params: dict) -> dict:
-    req = urllib.request.Request(API + "?" + urllib.parse.urlencode(params), headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read())
+    return json.loads(_abrir(API + "?" + urllib.parse.urlencode(params), timeout=30))
 
 
 def slug(text: str) -> str:
@@ -60,9 +76,7 @@ def buscar(consulta: str) -> tuple[Path, str] | None:
         if not OK_LICENSES.match(lic) or not ii.get("thumburl"):
             continue
         artist = re.sub(r"<[^>]+>", "", meta.get("Artist", {}).get("value", "desconocido")).strip()
-        req = urllib.request.Request(ii["thumburl"], headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=60) as r:
-            dst.write_bytes(r.read())
+        dst.write_bytes(_abrir(ii["thumburl"]))
         credit = f"{p.get('title', '').replace('File:', '')} — {artist} — {lic} — {ii.get('descriptionurl', '')}"
         cred[dst.name] = credit
         (CARPETA / "creditos.json").write_text(json.dumps(cred, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -100,9 +114,7 @@ def buscar_varias(consulta: str, n: int, carpeta: Path) -> list[tuple[Path, str,
         artist = re.sub(r"<[^>]+>", "", meta.get("Artist", {}).get("value", "desconocido")).strip()
         credit = f"{p.get('title', '').replace('File:', '')} — {artist} — {lic} — {ii.get('descriptionurl', '')}"
         if not dst.exists():
-            req = urllib.request.Request(ii["thumburl"], headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=60) as r:
-                dst.write_bytes(r.read())
+            dst.write_bytes(_abrir(ii["thumburl"]))
         from PIL import Image
 
         with Image.open(dst) as im:

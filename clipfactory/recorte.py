@@ -14,12 +14,18 @@ from PIL import Image
 
 from . import rutas
 
+_SESION = None
+
 
 def cutout(src: str | Path, dst: str | Path) -> Path:
-    from rembg import remove  # pip install "rembg[cpu]"
+    from rembg import new_session, remove  # pip install "rembg[cpu]"
 
+    global _SESION
+    if _SESION is None:  # modelo ligero de personas (el de por defecto pesa ~1 GB y es muy lento en CPU)
+        _SESION = new_session("u2net_human_seg")
     im = Image.open(src).convert("RGBA")
-    out = remove(im)
+    im.thumbnail((1400, 1400))
+    out = remove(im, session=_SESION)
     bbox = out.split()[3].point(lambda v: 255 if v > 20 else 0).getbbox()
     if bbox:
         out = out.crop(bbox)
