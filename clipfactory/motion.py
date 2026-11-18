@@ -365,8 +365,10 @@ def build(
     audio: str | None = None,
     premixed: bool = False,
     overlays: list[dict] | None = None,
+    camara: str | None = None,
 ) -> Path:
-    """overlays: [{png, t, dur}] imágenes que aparecen con 'pop' en el segundo t (ver visuales.py)."""
+    """overlays: [{png, t, dur}] imágenes que aparecen con 'pop' en el segundo t (ver visuales.py).
+    camara: filtro de zooms/pausas de misterio.py, aplicado al fondo antes de imágenes y subtítulos."""
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="motion-") as tmp:
@@ -415,6 +417,9 @@ def build(
             cmd += ["-i", audio]
         first = 2 if audio else 1
         fc, prev = [], "0:v"
+        if camara:
+            fc.append(f"[0:v]{camara}[cam]")
+            prev = "cam"
         for k, ov in enumerate(overlays or []):
             cmd += ["-loop", "1", "-t", f"{ov['dur']}", "-i", ov["png"]]
             t0, d = float(ov["t"]), float(ov["dur"])

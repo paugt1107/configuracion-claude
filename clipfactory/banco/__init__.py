@@ -49,26 +49,59 @@ TEXTO_ETIQUETAS = {
     "logo": r"logo",
 }
 # Etiquetas por contenido (CLIP): etiqueta → descripción en inglés
+# TEMAS por contenido (CLIP). tema → descripción en inglés. El primero que mejor encaja es la CARPETA de la imagen
+# (media/banco/temas/<tema>/); los 3 mejores quedan como etiquetas. Cambiar la lista sube CLIP_VERSION y se re-etiqueta.
+CLIP_VERSION = 2
 CLIP_ETIQUETAS = {
-    "lucia": "a photo of a young latina woman with brown hair",
+    # personajes
+    "lucia": "a photo of a young latina woman with brown hair and bangs",
     "jason": "a photo of a man with long dark hair and a beard",
-    "pareja": "a man and a woman together",
+    "pareja": "a man and a woman together in a car",
+    "personas": "a group of people",
+    "policia": "police officers or a police car with lights",
+    "criminal": "a masked robber holding a gun",
+    # animales
+    "perro": "a dog",
+    "gato": "a cat",
+    "caiman": "an alligator or crocodile",
+    "ave": "a bird or a flamingo",
+    "animal": "a wild animal",
+    "pez": "fish or sea animals underwater",
+    # vehículos
     "coche": "a car on the road",
     "deportivo": "a fancy sports car",
     "moto": "a motorcycle",
-    "barco": "a boat on the water",
-    "avion": "an airplane or helicopter",
-    "policia": "police officers or a police car",
-    "arma": "a person holding a gun",
-    "dinero": "a lot of cash money",
-    "playa": "a beach with sand and ocean",
+    "camion": "a truck or a van",
+    "barco": "a boat or a yacht on the water",
+    "avion": "an airplane",
+    "helicoptero": "a helicopter",
+    # lugares
     "ciudad": "a city skyline with skyscrapers",
-    "noche": "a street at night with neon lights",
-    "pantano": "a swamp with wild animals",
-    "fiesta": "people partying in a club",
-    "tienda": "a store or gas station",
-    "atardecer": "a sunset",
+    "calle": "a city street with shops",
+    "playa": "a beach with sand and ocean",
+    "pantano": "a swamp with tall grass and water",
+    "campo": "the countryside with fields and trees",
     "carretera": "a highway or a bridge",
+    "gasolinera": "a gas station",
+    "tienda": "a store or supermarket",
+    "club": "a nightclub with lights",
+    "casa": "a house or a mansion",
+    "interior": "the inside of a room",
+    "carcel": "a prison",
+    "puerto": "a port or a marina",
+    # objetos
+    "dinero": "a lot of cash money",
+    "arma": "a gun",
+    "joyas": "jewelry and diamonds",
+    "movil": "a smartphone screen",
+    "comida": "food or drinks",
+    "cartel": "a neon sign",
+    # ambiente
+    "noche": "a city at night with neon lights",
+    "atardecer": "a sunset",
+    "tormenta": "a storm or a hurricane",
+    "fiesta": "people partying",
+    "accion": "an explosion or a car chase",
 }
 
 
@@ -255,7 +288,8 @@ def trailers(cfg: dict, ind: dict, maximo: int, por_video: int = 400) -> int:
     Acepta URLs de vídeo o búsquedas "ytsearchN:…" (solo se bajan los subidos por Rockstar Games)."""
     import shutil
 
-    urls = (cfg.get("oficial") or {}).get("trailers") or []
+    urls = list((cfg.get("oficial") or {}).get("trailers") or [])
+    urls += _videos_rockstar((cfg.get("oficial") or {}).get("paginas_video") or [])
     if not urls or not shutil.which("yt-dlp"):
         print("[banco] tráileres: sin URLs o sin yt-dlp")
         return 0
@@ -264,10 +298,15 @@ def trailers(cfg: dict, ind: dict, maximo: int, por_video: int = 400) -> int:
     for url in urls:
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
-            cmd = ["yt-dlp", "-q", "--no-warnings", "-f", "bv*[height<=2160][ext=mp4]/bv*[height<=2160]/best",
-                   "--match-filter", "uploader *= 'Rockstar Games' & duration < 900", "-o", str(tmp / "%(id)s.%(ext)s"), url]  # fmt: skip
+            if re.search(r"\.(m3u8|mp4|webm)(\?|$)", url):  # fichero/stream directo del CDN de Rockstar
+                cmd = ["ffmpeg", "-loglevel", "error", "-y", "-headers", "Referer: https://www.rockstargames.com/\r\n",
+                       "-i", url, "-t", "600", "-c", "copy", str(tmp / f"rs{hashlib.sha1(url.encode()).hexdigest()[:8]}.mp4")]  # fmt: skip
+            else:
+                filtro = [] if "rockstargames.com" in url else ["--match-filter", "uploader *= 'Rockstar Games' & duration < 900"]
+                cmd = ["yt-dlp", "-q", "--no-warnings", "-f", "bv*[height<=2160][ext=mp4]/bv*[height<=2160]/best/b",
+                       *filtro, "-o", str(tmp / "%(id)s.%(ext)s"), url]  # fmt: skip
             r = subprocess.run(cmd, capture_output=True, text=True, timeout=3600)
-            vids = [v for v in tmp.glob("*.*") if v.suffix in (".mp4", ".webm", ".mkv")]
+            vids = [v for v in tmp.glob("*.*") if v.suffix in (".mp4", ".webm", ".mkv") and v.stat().st_size > 100_000]
             if not vids:
                 print(f"[banco] vídeo {url}: no se pudo bajar ({(r.stderr or '').strip()[:200]})")
                 continue
@@ -277,6 +316,26 @@ def trailers(cfg: dict, ind: dict, maximo: int, por_video: int = 400) -> int:
                 nuevas += _fotogramas(vid, ind, hashes, min(por_video, maximo - nuevas))
     print(f"[banco] tráileres: {nuevas} fotogramas nuevos")
     return nuevas
+
+
+def _videos_rockstar(paginas: list[str]) -> list[str]:
+    """Vídeos OFICIALES alojados en rockstargames.com (no depende de YouTube, que bloquea a los servidores)."""
+    if not paginas:
+        return []
+    import os
+
+    with tempfile.TemporaryDirectory() as tmp:
+        lista = Path(tmp) / "videos.json"
+        env = {**os.environ, "SCRAPE_VIDEOS": "1"}
+        subprocess.run(["node", str(Path(__file__).with_name("scrape.mjs")), str(lista), *paginas], check=False, timeout=1800, env=env)
+        items = json.loads(lista.read_text()) if lista.exists() else []
+    urls = list(dict.fromkeys(it["url"] for it in items))
+    # primero las páginas de vídeo (yt-dlp tiene extractor de Rockstar), luego los streams sueltos
+    urls.sort(key=lambda u: 0 if "/videos/video/" in u else 1 if ".m3u8" in u else 2)
+    print(f"[banco] vídeos de rockstargames.com: {len(urls)}")
+    for u in urls[:10]:
+        print("[banco] vídeo:", u[:150])
+    return urls[:60]
 
 
 def _fotogramas(vid: Path, ind: dict, hashes: dict, tope: int) -> int:
@@ -339,7 +398,7 @@ def etiquetar(ind: dict) -> int:
     txt = proc(text=[CLIP_ETIQUETAS[k] for k in keys], return_tensors="pt", padding=True)
     hechos = 0
     for v in ind.values():
-        if v.get("clip"):
+        if v.get("clip") and v.get("clip_v") == CLIP_VERSION:
             continue
         im = Image.open(BANCO / v["archivo"]).convert("RGB")
         with torch.no_grad():  # forward completo: estable entre versiones de transformers
@@ -350,8 +409,10 @@ def etiquetar(ind: dict) -> int:
                 .tolist()
             )
         top = sorted(zip(keys, p), key=lambda x: -x[1])
-        auto = [k for k, s in top[:3] if s >= 0.12]
+        auto = [k for k, s in top[:3] if s >= 0.10]
         v["clip"] = {k: round(s, 3) for k, s in top[:5]}
+        v["clip_v"] = CLIP_VERSION
+        v["tema"] = top[0][0]
         v["etiquetas"] = sorted(set(v.get("etiquetas", [])) | set(auto))
         hechos += 1
     print(f"[banco] etiquetadas con CLIP: {hechos}")
@@ -415,10 +476,33 @@ def animar(ind: dict, maximo: int, dur: float = 3.0, parte: int = 0, partes: int
     return hechos
 
 
+def _tema(v: dict) -> str:
+    return v.get("tema") or {"trailer": "trailer", "oficial": "oficial"}.get(v.get("categoria", ""), v.get("categoria", "otros"))
+
+
+def _tabla(items: list, raiz: str = "") -> list[str]:
+    """Tabla de 4 columnas con miniatura → imagen, ▶ → clip 3D. `raiz` = prefijo relativo hasta media/banco/."""
+    lines, row = ["| | | | |", "|---|---|---|---|"], []
+    for iid, v in items:
+        clip = f" · [▶ 3D]({raiz}{v['animada']})" if v.get("animada") else ""
+        et = ", ".join(v.get("etiquetas", [])[:4])
+        src = "🎬 oficial" if v["fuente"] == "oficial" else "📷 libre"
+        row.append(f"[![{iid}]({raiz}miniaturas/{iid}.jpg)]({raiz}{v['archivo']})<br>`{iid}` {src}{clip}<br><sub>{et}</sub>")
+        if len(row) == 4:
+            lines.append("| " + " | ".join(row) + " |")
+            row = []
+    if row:
+        lines.append("| " + " | ".join(row + [""] * (4 - len(row))) + " |")
+    return lines
+
+
 def galeria(ind: dict) -> Path:
+    """Miniaturas + carpetas por TEMA (media/banco/temas/<tema>/: imagen, clip 3D y GALERIA.md) + índice general."""
+    import shutil
+
     mini = BANCO / "miniaturas"
     mini.mkdir(parents=True, exist_ok=True)
-    por_cat: dict[str, list] = {}
+    por_tema: dict[str, list] = {}
     for iid, v in sorted(ind.items()):
         clip = BANCO / "animadas" / f"{iid}.mp4"
         if clip.exists():
@@ -428,39 +512,53 @@ def galeria(ind: dict) -> Path:
             im = Image.open(BANCO / v["archivo"]).convert("RGB")
             im.thumbnail((360, 360))
             im.save(m, "JPEG", quality=78)
-        por_cat.setdefault(v["categoria"], []).append((iid, v))
-    lines = [
-        "# Galería del banco de imágenes (TOMMY)",
-        "",
-        f"{len(ind)} imágenes · {sum(1 for v in ind.values() if v.get('animada'))} animadas en 3D. "
-        "Pulsa la miniatura para la imagen; ▶ para el clip 3D (1080x1920, 3 s). "
-        "Úsalas en un guion con `{kind: 3d, tipo: foto, imagen: media/banco/<archivo>}` o pídeselo a Pedro por etiqueta.",
-        "",
-        "Créditos: oficiales → «Imagen oficial: Rockstar Games»; libres → ver `indice.json` (autor y licencia, van solos a publicacion.md).",
-        "",
-    ]
-    for cat, items in sorted(por_cat.items()):
-        lines += [f"## {cat} ({len(items)})", "", "| | | | |", "|---|---|---|---|"]
-        row = []
+        por_tema.setdefault(_tema(v), []).append((iid, v))
+    # carpetas por tema (git guarda una sola copia de cada archivo idéntico: no ocupa el doble)
+    temas_dir = BANCO / "temas"
+    if temas_dir.exists():
+        shutil.rmtree(temas_dir)
+    for tema, items in por_tema.items():
+        d = temas_dir / tema
+        d.mkdir(parents=True, exist_ok=True)
         for iid, v in items:
-            clip = f" · [▶]({v['animada']})" if v.get("animada") else ""
-            et = ", ".join(v.get("etiquetas", [])[:4])
-            row.append(f"[![{iid}](miniaturas/{iid}.jpg)]({v['archivo']})<br>`{iid}`{clip}<br><sub>{et}</sub>")
-            if len(row) == 4:
-                lines.append("| " + " | ".join(row) + " |")
-                row = []
-        if row:
-            lines.append("| " + " | ".join(row + [""] * (4 - len(row))) + " |")
-        lines.append("")
+            shutil.copy2(BANCO / v["archivo"], d / f"{iid}.jpg")
+            if v.get("animada"):
+                shutil.copy2(BANCO / v["animada"], d / f"{iid}.mp4")
+        (d / "GALERIA.md").write_text(
+            "\n".join([f"# Tema: {tema} ({len(items)})", "", "[← todas las carpetas](../../GALERIA.md)", "", *_tabla(items, "../../")])
+            + "\n",
+            encoding="utf-8",
+        )
+    n_anim = sum(1 for v in ind.values() if v.get("animada"))
+    lines = [
+        "# Banco de imágenes de TOMMY",
+        "",
+        f"**{len(ind)} imágenes** · **{n_anim} animadas en 3D** · **{len(por_tema)} carpetas por tema**. "
+        "Cada carpeta (`media/banco/temas/<tema>/`) tiene las fotos (.jpg) y sus clips 3D (.mp4, 1080x1920, 3 s) listos para editar.",
+        "",
+        "En un guion: `{kind: 3d, tipo: foto, banco: <tema>, estilo: lleno|inclinada|giro}` o `imagen: media/banco/temas/<tema>/<id>.jpg`.",
+        "Créditos: 🎬 oficiales → «Rockstar Games»; 📷 libres → autor y licencia en `indice-libres.json` (van solos a publicacion.md).",
+        "",
+        "| Carpeta | Imágenes | Clips 3D | Muestra |",
+        "|---|---|---|---|",
+    ]
+    for tema, items in sorted(por_tema.items(), key=lambda x: -len(x[1])):
+        muestra = " ".join(f"![{i}](miniaturas/{i}.jpg)" for i, _ in items[:3])
+        anim = sum(1 for _, v in items if v.get("animada"))
+        lines.append(f"| [{tema}](temas/{tema}/GALERIA.md) | {len(items)} | {anim} | {muestra} |")
     out = BANCO / "GALERIA.md"
-    out.write_text("\n".join(lines), encoding="utf-8")
+    out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return out
 
 
 def buscar(etiqueta: str, fuente: str | None = None) -> list[Path]:
     """Imágenes del banco con esa etiqueta (para Tommy y para los guiones)."""
     ind = cargar()
-    return [BANCO / v["archivo"] for v in ind.values() if etiqueta in v.get("etiquetas", []) and (fuente is None or v["fuente"] == fuente)]
+    return [
+        BANCO / v["archivo"]
+        for v in ind.values()
+        if (etiqueta in v.get("etiquetas", []) or etiqueta == v.get("tema")) and (fuente is None or v["fuente"] == fuente)
+    ]
 
 
 def main(argv=None) -> int:

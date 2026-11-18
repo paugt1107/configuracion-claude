@@ -7,9 +7,15 @@ const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const [out, ...pages] = process.argv.slice(2);
 const IMG = /\.(jpe?g|png|webp)(\?|$)/i;
+const VIDEOS = process.env.SCRAPE_VIDEOS === "1"; // modo vídeos: enlaces /videos/video/<id> y ficheros de vídeo/HLS
+const VID = /\/videos\/video\/\d+|\.(mp4|m3u8|webm)(\?|$)/i;
 const found = new Map();
 const add = (url, alt, pagina) => {
   try { url = new URL(url, pagina).href; } catch { return; }
+  if (VIDEOS) {
+    if (/rockstargames|akamaized/i.test(url) && VID.test(url) && !found.has(url)) found.set(url, { url, alt: alt || "", pagina });
+    return;
+  }
   if (!/rockstargames|akamaized/i.test(url) || !IMG.test(url)) return;
   if (/icon|logo-|favicon|sprite|avatar|badge|rating|esrb|pegi|flag/i.test(url) && !/vi|gta/i.test(alt)) return;
   if (!found.has(url)) found.set(url, { url, alt: alt || "", pagina });
@@ -20,13 +26,23 @@ const ctx = await browser.newContext({ viewport: { width: 1600, height: 1000 }, 
   userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36" });
 for (const pagina of pages) {
   const page = await ctx.newPage();
-  page.on("response", (r) => { const ct = r.headers()["content-type"] || ""; if (ct.startsWith("image/")) add(r.url(), "", pagina); });
+  page.on("response", (r) => {
+    const ct = r.headers()["content-type"] || "";
+    if (ct.startsWith("image/") || ct.startsWith("video/") || ct.includes("mpegurl")) add(r.url(), "", pagina);
+  });
   try {
     await page.goto(pagina, { waitUntil: "networkidle", timeout: 60000 });
     for (const sel of ["button:has-text('Accept')", "button:has-text('Aceptar')", "#onetrust-accept-btn-handler"]) {
       await page.locator(sel).first().click({ timeout: 1500 }).catch(() => {});
     }
     for (let i = 0; i < 25; i++) { await page.mouse.wheel(0, 1600); await page.waitForTimeout(400); }
+    if (VIDEOS) { // pulsa "play" para que el reproductor pida el vídeo
+      for (const sel of ["video", "button[aria-label*='lay']", "[class*='play']"]) {
+        await page.locator(sel).first().click({ timeout: 2000 }).catch(() => {});
+      }
+      await page.waitForTimeout(6000);
+      for (const m of (await page.content()).matchAll(/https?:[^"'\s]+?\.(?:mp4|m3u8)[^"'\s]*/gi)) add(m[0].replace(/\\u002F/g, "/"), "", pagina);
+    }
     const items = await page.evaluate(() => {
       const r = [];
       for (const im of document.querySelectorAll("img, source")) {

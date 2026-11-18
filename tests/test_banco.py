@@ -15,7 +15,7 @@ def test_galeria_y_personajes(tmp_path, monkeypatch):
                     "categoria": "oficial" if iid.startswith("of") else "florida", "etiquetas": et, "w": 1200, "h": 700}
     assert sorted(banco.personajes(ind)) == ["jason.jpg", "lucia-jason.jpg", "lucia.jpg"]
     g = banco.galeria(ind).read_text()
-    assert "## florida (1)" in g and "miniaturas/of-1.jpg" in g
+    assert "[florida](temas/florida/GALERIA.md)" in g and (banco.BANCO / "temas" / "florida" / "lb-1.jpg").exists()
 
 
 def test_etiquetas_por_texto():

@@ -14,6 +14,11 @@ oficial:
     - https://www.rockstargames.com/VI/people/lucia-caminos
     - https://www.rockstargames.com/VI/places
     - https://www.rockstargames.com/VI
+  paginas_video:  # vídeos oficiales alojados en la web de Rockstar (YouTube bloquea a los servidores de GitHub)
+    - https://www.rockstargames.com/VI/videos
+    - https://www.rockstargames.com/VI/media/videos
+    - https://www.rockstargames.com/VI
+    - https://www.rockstargames.com/videos
   trailers:  # tráileres OFICIALES de Rockstar en YouTube: se sacan fotogramas de cada cambio de plano
     - https://www.youtube.com/watch?v=QdBZY2fkU-0   # Tráiler 1 (dic-2023)
     - https://www.youtube.com/watch?v=VQRLujxTm3c   # Tráiler 2 (may-2025)
@@ -97,3 +102,49 @@ libres:  # categoría → consultas en Openverse + Commons (n fotos por consulta
     - Alligator closeup
     - Swamp boat sunset
     - Retro Miami 1980s
+  animales:
+    - Dog portrait
+    - Pit bull dog
+    - German shepherd police dog
+    - Cat portrait
+    - Parrot macaw
+    - Brown pelican Florida
+    - Manatee Florida
+    - Bull shark
+    - Burmese python Everglades
+    - Raccoon
+    - Horse ranch
+    - Iguana Florida
+  vida:
+    - Pool party mansion
+    - Gym bodybuilder
+    - Skatepark
+    - Hospital emergency room
+    - Church interior
+    - Motel room
+    - Mansion swimming pool
+    - Golf course Florida
+    - Stadium crowd
+    - Fireworks city night
+    - Tattoo parlor
+    - Barber shop
+    - Fast food restaurant neon
+    - Diner 1950s
+    - Pawn shop
+  objetos:
+    - Smartphone social media
+    - Gold chain jewelry
+    - Cigar smoke
+    - Sneakers collection
+    - Poker chips casino
+    - Briefcase cash
+    - Vintage television
+    - Neon open sign
+    - Car keys
+    - Police badge
+  clima:
+    - Lightning storm night
+    - Tornado
+    - Hurricane satellite image
+    - Flooded street
+    - Tropical rain

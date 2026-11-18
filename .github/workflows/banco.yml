@@ -42,7 +42,7 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install -q -e ".[descargas]"
-          if [ "${{ matrix.fuente }}" = oficial ]; then npm install -g playwright@1.63.0 && npx -y playwright@1.63.0 install --with-deps chromium; fi
+          if [ "${{ matrix.fuente }}" != libres ]; then npm install -g playwright@1.63.0 && npx -y playwright@1.63.0 install --with-deps chromium; fi
           echo "NODE_PATH=$(npm root -g)" >> "$GITHUB_ENV"
           cat > /tmp/guardar.sh <<'EOF'
           git config user.name "banco-bot"

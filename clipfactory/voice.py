@@ -24,18 +24,25 @@ from pathlib import Path
 from . import align, media
 
 EDGE_VOICE = os.environ.get("TTS_VOICE", "es-ES-AlvaroNeural")
-EDGE_STYLE = {"gancho": ("+14%", "+3Hz"), "narracion": ("+9%", "+0Hz"), "cierre": ("+4%", "+2Hz")}
+EDGE_STYLE = {"gancho": ("+14%", "+3Hz"), "narracion": ("+9%", "+0Hz"), "suspense": ("-4%", "-3Hz"), "cierre": ("+4%", "+2Hz")}
 OPENAI_VOICE = os.environ.get("OPENAI_TTS_VOICE", "ash")
 OPENAI_INSTR = {
     "gancho": "Eres el narrador de un canal de curiosidades de videojuegos en YouTube Shorts. Español de España, claro. "
     "Arranca con mucha energía y sorpresa, como contando un secreto que engancha. Ritmo rápido, sin sonar gritón.",
     "narracion": "Narrador de curiosidades de videojuegos en Shorts. Español de España claro, ritmo ágil, entusiasta y cercano; "
     "enfatiza nombres propios, horas y números. Pausas cortas.",
+    "suspense": "Baja el ritmo y la voz, casi en confidencia, como antes de revelar un secreto. Alarga un poco la última palabra "
+    "y deja la frase en el aire. Tono de misterio, sin teatro exagerado.",
     "cierre": "Cierra con intriga y una ligera sonrisa en la voz, dejando la pregunta en el aire.",
 }
 ELEVEN_VOICE = os.environ.get("ELEVENLABS_VOICE_ID", "pNInz6obpgDQGcFmaJgB")  # cámbiala por una voz española de la Voice Library
-ELEVEN_SETTINGS = {"gancho": (0.30, 0.55), "narracion": (0.40, 0.40), "cierre": (0.45, 0.35)}  # (stability, style)
-GAP = {"gancho": 0.28, "narracion": 0.14, "cierre": 0.0}
+ELEVEN_SETTINGS = {
+    "gancho": (0.30, 0.55),
+    "narracion": (0.40, 0.40),
+    "suspense": (0.50, 0.60),
+    "cierre": (0.45, 0.35),
+}  # (stability, style)
+GAP = {"gancho": 0.28, "narracion": 0.14, "suspense": 0.85, "cierre": 0.0}  # suspense = pausa dramática
 POST = "highpass=f=70,equalizer=f=3200:width_type=o:width=1.2:g=2.5,deesser=i=0.4,acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=2"
 
 
@@ -167,12 +174,14 @@ def provider_chain(provider: str = "auto") -> list[str]:
 KEYS = {"elevenlabs": "ELEVENLABS_API_KEY", "openai": "OPENAI_API_KEY"}
 
 
-def produce(lines: list[str], out_dir: str | Path, provider: str = "auto", lead: float = 0.15, log=print) -> dict:
+def produce(
+    lines: list[str], out_dir: str | Path, provider: str = "auto", lead: float = 0.15, log=print, styles: list[str] | None = None
+) -> dict:
     """Locución completa con respaldo automático de proveedor. Toda la pieza usa UNA sola voz (sin mezclar)."""
     errors = []
     for prov in provider_chain(provider):
         try:
-            return _produce(lines, out_dir, prov, lead)
+            return _produce(lines, out_dir, prov, lead, styles)
         except Exception as e:  # noqa: BLE001 - se informa y se pasa al siguiente proveedor
             errors.append(f"{prov}: {e}")
             log(f"[voz] {prov} falló ({e}); probando el siguiente proveedor")
@@ -214,11 +223,11 @@ def restaurar(words: list[dict], tabla: dict[str, str] | None = None) -> list[di
     return out
 
 
-def _produce(lines: list[str], out_dir: str | Path, provider: str, lead: float) -> dict:
+def _produce(lines: list[str], out_dir: str | Path, provider: str, lead: float, styles: list[str] | None = None) -> dict:
     """Devuelve {"audio": wav postproducido, "words": [...], "lines": [{"text","start","end"}], "provider": str}."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    styles = styles_for(len(lines))
+    styles = styles or styles_for(len(lines))
     words_all, spans, parts, t = [], [], [], lead
     with tempfile.TemporaryDirectory(prefix="voz-") as tmp:
         tmp = Path(tmp)

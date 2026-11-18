@@ -10,7 +10,7 @@ from pathlib import Path
 
 import yaml
 
-from . import calidad, hookscore_es, motion, rutas, sfx, thumbs, visuales, voice
+from . import calidad, hookscore_es, misterio, motion, rutas, sfx, thumbs, visuales, voice
 
 TAGS_BASE = ["#gta6", "#gtavi", "#gta6espanol", "#sabiasque", "#shorts"]
 
@@ -86,7 +86,9 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
     out_dir = Path(out_root) / sid
     out_dir.mkdir(parents=True, exist_ok=True)
     work = rutas.TRABAJO / f"{sid}-voz"
-    v = voice.produce(lines, work, provider=provider)
+    con_misterio = spec.get("misterio", True)
+    estilos = misterio.estilos(lines, escenas) if con_misterio else None
+    v = voice.produce(lines, work, provider=provider, styles=estilos)
     spans = v["lines"]
     starts = [0.0] + [s["start"] - 0.08 for s in spans[1:]]
     end = spans[-1]["end"] + 0.6
@@ -96,13 +98,24 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
         sc["dur"] = round((starts[i + 1] if i + 1 < len(starts) else end) - starts[i], 3)
         scenes.append(sc)
     cues = [(0.0, "impacto")] + [(s - 0.12, "whoosh") for s in starts[1:]] + [(starts[-1], "impacto")]
-    mixed = sfx.mix(v["audio"], cues, work / "mezcla.wav", music=spec.get("musica", True))
+    cam = misterio.plan(spans, v["words"], estilos or voice.styles_for(len(lines)), end) if con_misterio else None
+    if cam:
+        cues += cam["cues"]
+    mixed = sfx.mix(v["audio"], cues, work / "mezcla.wav", music=spec.get("musica", True), silencios=cam["silencios"] if cam else None)
     plan = visuales.planificar(visuales.detectar(v["words"])) if spec.get("imagenes_auto", True) else []
     # en las escenas 3D manda la animación: sin pegatinas encima (menos ruido en pantalla)
     zonas3d = [(starts[i], starts[i] + sc["dur"]) for i, sc in enumerate(scenes) if sc.get("kind") == "3d"]
     plan = [p for p in plan if not any(a <= p["t"] < b for a, b in zonas3d)]
     overlays, creditos_libres = visuales.preparar(plan, work / "pops")
-    video = motion.build(scenes, v["words"], out_dir / f"{sid}-final.mp4", str(mixed), premixed=True, overlays=overlays)
+    video = motion.build(
+        scenes,
+        v["words"],
+        out_dir / f"{sid}-final.mp4",
+        str(mixed),
+        premixed=True,
+        overlays=overlays,
+        camara=misterio.filtro(cam) if cam else None,
+    )
     if creditos_libres:
         spec = {**spec, "creditos": "\n".join(filter(None, [spec.get("creditos", ""), *("Imagen: " + c for c in creditos_libres)]))}
     if spec.get("portada"):
