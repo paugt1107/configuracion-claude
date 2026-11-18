@@ -25,11 +25,28 @@ jobs:
   # 1) tres recolectores A LA VEZ (cada uno escribe su propio índice)
   recoger:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 175
+    # con el repo PRIVADO no arranca (14 máquinas gastarían el cupo de minutos del mes); con el repo PÚBLICO es gratis
+    if: ${{ !github.event.repository.private }}
     strategy:
       fail-fast: false
+      max-parallel: 14
       matrix:
-        fuente: [oficial, trailers, libres]
+        # una máquina por fuente y por categoría de fotos libres (cada una con su IP: Commons no las frena juntas)
+        fuente: [oficial, trailers]
+        include:
+          - { fuente: libres, cat: florida }
+          - { fuente: libres, cat: coches }
+          - { fuente: libres, cat: policia }
+          - { fuente: libres, cat: atracos }
+          - { fuente: libres, cat: armas }
+          - { fuente: libres, cat: lugares }
+          - { fuente: libres, cat: juego }
+          - { fuente: libres, cat: ambiente }
+          - { fuente: libres, cat: animales }
+          - { fuente: libres, cat: vida }
+          - { fuente: libres, cat: objetos }
+          - { fuente: libres, cat: clima }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -53,16 +70,22 @@ jobs:
           for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((i * 6)); done
           EOF
           chmod +x /tmp/guardar.sh
-      - name: Recoger ${{ matrix.fuente }}
-        run: python3 -m clipfactory.banco ${{ matrix.fuente }} --max "$MAXIMO"
+      - name: Recoger ${{ matrix.fuente }} ${{ matrix.cat }} (guarda en git cada 6 min)
+        timeout-minutes: 160
         continue-on-error: true
-      - run: /tmp/guardar.sh "${{ matrix.fuente }}"
+        run: |
+          EXTRA=""; [ -n "${{ matrix.cat }}" ] && EXTRA="--cat ${{ matrix.cat }}"
+          python3 -m clipfactory.banco ${{ matrix.fuente }} --max "$MAXIMO" $EXTRA &
+          PID=$!
+          while kill -0 $PID 2>/dev/null; do sleep 360; /tmp/guardar.sh "${{ matrix.fuente }} ${{ matrix.cat }} (parcial)" || true; done
+          wait $PID
+      - run: /tmp/guardar.sh "${{ matrix.fuente }} ${{ matrix.cat }}"
         if: always()
 
   # 2) etiquetar con CLIP, sacar Lucía/Jason y recortes
   etiquetar:
     needs: recoger
-    if: always()
+    if: ${{ always() && !github.event.repository.private }}
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -97,7 +120,7 @@ jobs:
 
   animar:
     needs: etiquetar
-    if: always()
+    if: ${{ always() && !github.event.repository.private }}
     runs-on: ubuntu-latest
     timeout-minutes: 300
     strategy:
@@ -137,7 +160,7 @@ jobs:
 
   final:
     needs: animar
-    if: always()
+    if: ${{ always() && !github.event.repository.private }}
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}

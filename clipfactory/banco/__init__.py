@@ -111,28 +111,34 @@ def _get(url: str, timeout: int = 60) -> bytes:
         return r.read()
 
 
-GRUPOS = ("oficial", "trailers", "libres")
-
-
 def _grupo(v: dict) -> str:
-    return "trailers" if v.get("categoria") == "trailer" else "oficial" if v.get("fuente") == "oficial" else "libres"
+    """Archivo de índice de cada imagen: oficial, trailers o libres-<categoría> (una máquina por grupo, en paralelo)."""
+    if v.get("categoria") == "trailer":
+        return "trailers"
+    if v.get("fuente") == "oficial":
+        return "oficial"
+    return f"libres-{v.get('categoria', 'otros')}"
 
 
 def cargar() -> dict:
-    """Une indice-oficial/trailers/libres.json (cada máquina escribe el suyo, así pueden ir en paralelo)."""
+    """Une todos los indice-*.json (cada máquina escribe el suyo, así pueden ir en paralelo sin pisarse)."""
     ind = {}
-    for p in [INDICE, *(BANCO / f"indice-{g}.json" for g in GRUPOS)]:
+    for p in [INDICE, *sorted(BANCO.glob("indice-*.json"))]:
         if p.exists():
             ind.update(json.loads(p.read_text(encoding="utf-8")))
     return ind
 
 
-def guardar(ind: dict, grupos: tuple[str, ...] = GRUPOS) -> None:
+def guardar(ind: dict, grupos: tuple[str, ...] | None = None) -> None:
+    """Escribe el índice de los grupos pedidos (por defecto, todos los que hay)."""
     BANCO.mkdir(parents=True, exist_ok=True)
-    for g in grupos:
+    for g in grupos or tuple(sorted({_grupo(v) for v in ind.values()})):
         sub = {k: v for k, v in ind.items() if _grupo(v) == g}
         (BANCO / f"indice-{g}.json").write_text(json.dumps(sub, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     INDICE.unlink(missing_ok=True)
+    viejo = BANCO / "indice-libres.json"  # formato anterior (un solo archivo de libres)
+    if viejo.exists() and not json.loads(viejo.read_text(encoding="utf-8") or "{}"):
+        viejo.unlink()
 
 
 def _ahash(im: Image.Image) -> str:
@@ -248,13 +254,16 @@ def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
     return nuevas
 
 
-def descargar_libres(cfg: dict, ind: dict, maximo: int) -> int:
+def descargar_libres(cfg: dict, ind: dict, maximo: int, categorias: list[str] | None = None) -> int:
+    """Fotos libres por categoría. Guarda el índice tras CADA búsqueda (si la máquina se corta, no se pierde nada)."""
     from .. import libres
 
     lib = dict(cfg.get("libres") or {})
     n = int(lib.pop("n", 3))
     nuevas = 0
     for cat, consultas in lib.items():
+        if categorias and cat not in categorias:
+            continue
         for q in consultas or []:
             if nuevas >= maximo:
                 return nuevas
@@ -279,6 +288,8 @@ def descargar_libres(cfg: dict, ind: dict, maximo: int) -> int:
                     "h": h,
                 }
                 nuevas += 1
+            guardar(ind, (f"libres-{cat}",))
+            print(f"[banco] {cat} · '{q}': {len(res)} fotos (total nuevas {nuevas})", flush=True)
     print(f"[banco] libres: {nuevas} nuevas")
     return nuevas
 
@@ -537,7 +548,7 @@ def galeria(ind: dict) -> Path:
         "Cada carpeta (`media/banco/temas/<tema>/`) tiene las fotos (.jpg) y sus clips 3D (.mp4, 1080x1920, 3 s) listos para editar.",
         "",
         "En un guion: `{kind: 3d, tipo: foto, banco: <tema>, estilo: lleno|inclinada|giro}` o `imagen: media/banco/temas/<tema>/<id>.jpg`.",
-        "Créditos: 🎬 oficiales → «Rockstar Games»; 📷 libres → autor y licencia en `indice-libres.json` (van solos a publicacion.md).",
+        "Créditos: 🎬 oficiales → «Rockstar Games»; 📷 libres → autor y licencia en `indice-libres-*.json` (van solos a publicacion.md).",
         "",
         "| Carpeta | Imágenes | Clips 3D | Muestra |",
         "|---|---|---|---|",
@@ -565,6 +576,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="clipfactory.banco")
     ap.add_argument("paso", choices=["oficial", "libres", "trailers", "descargar", "etiquetar", "animar", "galeria", "todo"])
     ap.add_argument("--max", type=int, default=1000)
+    ap.add_argument("--cat", default="", help="categorías de libres separadas por comas (vacío = todas)")
     ap.add_argument("--parte", type=int, default=0)
     ap.add_argument("--partes", type=int, default=1)
     a = ap.parse_args(argv)
@@ -574,8 +586,7 @@ def main(argv=None) -> int:
         descargar_oficial(cfg, ind, a.max)
         guardar(ind, ("oficial",))
     if a.paso in ("libres", "descargar", "todo"):
-        descargar_libres(cfg, ind, a.max)
-        guardar(ind, ("libres",))
+        descargar_libres(cfg, ind, a.max, a.cat.split(",") if a.cat else None)
     if a.paso in ("trailers", "todo"):
         trailers(cfg, ind, a.max)
         guardar(ind, ("trailers",))

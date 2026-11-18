@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -17,18 +18,18 @@ OK_LICENSES = re.compile(r"^(cc0|public domain|pd|cc by(-sa)? [\d.]+)", re.I)
 CARPETA = rutas.MEDIA / "libres"
 
 
-def _abrir(url: str, timeout: int = 60) -> bytes:
-    """GET con pausa entre llamadas y reintentos si Commons pide calma (HTTP 429/503)."""
+def _abrir(url: str, timeout: int = 60, reintentos: int = 6) -> bytes:
+    """GET con pausa entre llamadas y reintentos si el servidor pide calma (HTTP 429/503)."""
     import time
     import urllib.error
 
-    for intento in range(6):
+    for intento in range(reintentos):
         time.sleep(1.2)
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=timeout) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            if e.code not in (429, 503) or intento == 5:
+            if e.code not in (429, 503) or intento == reintentos - 1:
                 raise
             espera = int(e.headers.get("Retry-After") or 0) or 10 * 2**intento
             time.sleep(min(espera, 120))
@@ -123,11 +124,24 @@ def buscar_varias(consulta: str, n: int, carpeta: Path) -> list[tuple[Path, str,
     return out
 
 
+_OPENVERSE_PARADO = False
+
+
 def openverse(consulta: str, n: int, carpeta: Path) -> list[tuple[Path, str, int, int]]:
     """Fotos libres de Openverse (Flickr y otros; licencias que permiten uso comercial y modificación)."""
+    global _OPENVERSE_PARADO
+    if _OPENVERSE_PARADO:
+        return []
     carpeta.mkdir(parents=True, exist_ok=True)
     q = urllib.parse.urlencode({"q": consulta, "license_type": "commercial,modification", "page_size": max(10, n * 3), "mature": "false"})
-    data = json.loads(_abrir("https://api.openverse.org/v1/images/?" + q, timeout=30))
+    try:
+        data = json.loads(_abrir("https://api.openverse.org/v1/images/?" + q, timeout=30, reintentos=2))
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403, 429):  # límite de la API sin clave: se deja Openverse para la próxima pasada
+            _OPENVERSE_PARADO = True
+            print(f"[libres] Openverse pide calma (HTTP {e.code}): sigo solo con Commons")
+            return []
+        raise
     out = []
     for r in data.get("results", []):
         if len(out) >= n:
