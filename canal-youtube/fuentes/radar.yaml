@@ -1,22 +1,36 @@
-google_news:
-- GTA 6
-- GTA 6 misión
-- GTA 6 secreto
-- GTA 6 easter egg
-- GTA 6 Lucia Jason
-- GTA 6 truco
-filtro_youtube: gta
-youtube_canales:
-- handle: '@RockstarGames'
-  id: UCULwHhkI31JHAKe57LZdzcA
-- handle: '@DjMaRiiO'
-  id: UCEhV7Kms52H2HrdwthU2QmA
-- handle: '@TheGrefg'
-  id: UCnmlCrWnJZ-YdDFcVKOnjhA
-- handle: '@Willyrex'
-  id: UC8rNKrqBxJqL9izOOMxBJtw
-- handle: '@vegetta777'
-  id: UC4LHNX8d8RqnDX0OezgmCTg
-reddit:
-- GTA6
-- GTA
+# VALENTÍN (radar) — qué vigila cada 15 min en GitHub Actions. Edita libremente.
+# Solo recoge títulos/textos y enlaces para investigar. Para usar imágenes o clips de alguien hace falta su permiso.
+google_news: [GTA 6, GTA VI]            # búsquedas por defecto para cada idioma
+idiomas:                                # Google Noticias en varios idiomas/países
+  - {hl: es, gl: ES, busquedas: [GTA 6, GTA 6 misión, GTA 6 secreto, GTA 6 truco, GTA 6 Lucia Jason, GTA 6 easter egg]}
+  - {hl: es-419, gl: MX, busquedas: [GTA 6, GTA 6 trucos, GTA 6 secretos]}
+  - {hl: es-419, gl: AR}
+  - {hl: en-US, gl: US, busquedas: [GTA 6, GTA 6 secret, GTA 6 easter egg, GTA 6 mission, GTA 6 tips, GTA 6 hidden]}
+  - {hl: en-GB, gl: GB}
+  - {hl: pt-BR, gl: BR, busquedas: [GTA 6, GTA 6 segredo, GTA 6 dicas]}
+  - {hl: fr, gl: FR, busquedas: [GTA 6, GTA 6 secret, GTA 6 astuce]}
+  - {hl: de, gl: DE, busquedas: [GTA 6, GTA 6 Geheimnis]}
+  - {hl: it, gl: IT, busquedas: [GTA 6, GTA 6 segreto]}
+  - {hl: ja, gl: JP, busquedas: [GTA 6, グランド・セフト・オートVI]}
+  - {hl: ko, gl: KR, busquedas: [GTA 6]}
+  - {hl: ru, gl: RU, busquedas: [GTA 6]}
+  - {hl: pl, gl: PL, busquedas: [GTA 6]}
+  - {hl: tr, gl: TR, busquedas: [GTA 6]}
+bluesky: [GTA 6, GTA VI, gta6 secret, gta6 easter egg]
+mastodon:
+  - {instancia: mastodon.social, etiqueta: GTA6}
+  - {instancia: mastodon.social, etiqueta: GTAVI}
+x: [GTA 6 secret, GTA 6 easter egg, GTA 6 truco, GTA 6 secreto]   # solo si existe el secreto X_BEARER_TOKEN (API de pago)
+filtro_youtube: "gta"
+youtube_canales:   # handle de YouTube (con @). El id se rellena solo la primera vez.
+  - handle: "@RockstarGames"
+    id: UCULwHhkI31JHAKe57LZdzcA
+  - handle: "@DjMaRiiO"
+    id: UCEhV7Kms52H2HrdwthU2QmA
+  - handle: "@TheGrefg"
+    id: UCnmlCrWnJZ-YdDFcVKOnjhA
+  - handle: "@Willyrex"
+    id: UC8rNKrqBxJqL9izOOMxBJtw
+  - handle: "@vegetta777"
+    id: UC4LHNX8d8RqnDX0OezgmCTg
+reddit: [GTA6, GTA, gtaonline, GrandTheftAutoV]

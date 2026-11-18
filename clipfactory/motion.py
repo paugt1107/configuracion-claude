@@ -104,7 +104,7 @@ def _star(draw, cx, cy, r, fill, outline=None, ow=0):
 def flag(code: str, w: int = 480) -> Image.Image:
     """Bandera RGBA de ancho w. Códigos: nz, es, mx, ar. Dibujo a 3x y reducción (bordes suaves)."""
     k = 3
-    ratios = {"nz": 0.5, "es": 2 / 3, "mx": 4 / 7, "ar": 5 / 8}
+    ratios = {"nz": 0.5, "es": 2 / 3, "mx": 4 / 7, "ar": 5 / 8, "us": 10 / 19}
     h = int(w * ratios[code])
     W2, H2 = w * k, h * k
     im = Image.new("RGB", (W2, H2), (255, 255, 255))
@@ -137,6 +137,14 @@ def flag(code: str, w: int = 480) -> Image.Image:
                 fill=(246, 180, 14),
             )
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(246, 180, 14))
+    elif code == "us":
+        for i in range(13):
+            d.rectangle([0, H2 * i / 13, W2, H2 * (i + 1) / 13], fill=(178, 34, 52) if i % 2 == 0 else (255, 255, 255))
+        cw, ch = W2 * 0.4, H2 * 7 / 13
+        d.rectangle([0, 0, cw, ch], fill=(60, 59, 110))
+        for r in range(5):
+            for c in range(6):
+                _star(d, cw * (c + 0.5) / 6, ch * (r + 0.5) / 5, ch * 0.06, (255, 255, 255))
     elif code == "nz":
         d.rectangle([0, 0, W2, H2], fill=(0, 36, 125))
         cw, ch = W2 // 2, H2 // 2  # cantón (Union Jack simplificada)
@@ -350,7 +358,15 @@ def estimate_words(text: str, total_s: float, lead: float = 0.2) -> list[dict]:
     return out
 
 
-def build(scenes: list[dict], words: list[dict], out: str | Path, audio: str | None = None, premixed: bool = False) -> Path:
+def build(
+    scenes: list[dict],
+    words: list[dict],
+    out: str | Path,
+    audio: str | None = None,
+    premixed: bool = False,
+    overlays: list[dict] | None = None,
+) -> Path:
+    """overlays: [{png, t, dur}] imágenes que aparecen con 'pop' en el segundo t (ver visuales.py)."""
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="motion-") as tmp:
@@ -387,9 +403,22 @@ def build(scenes: list[dict], words: list[dict], out: str | Path, audio: str | N
         cmd = [media.require("ffmpeg"), "-y", "-loglevel", "error", "-i", str(base)]
         if audio:
             cmd += ["-i", audio]
+        first = 2 if audio else 1
+        fc, prev = [], "0:v"
+        for k, ov in enumerate(overlays or []):
+            cmd += ["-loop", "1", "-t", f"{ov['dur']}", "-i", ov["png"]]
+            t0, d = float(ov["t"]), float(ov["dur"])
+            fc.append(
+                f"[{first + k}:v]format=rgba,scale=w='iw*min(1,0.6+4*t)':h=-1:eval=frame,"
+                f"fade=t=in:st=0:d=0.1:alpha=1,fade=t=out:st={max(0.0, d - 0.18):.2f}:d=0.18:alpha=1,setpts=PTS-STARTPTS+{t0}/TB[o{k}]"
+            )
+            fc.append(f"[{prev}][o{k}]overlay=x=(W-w)/2:y=H*0.42-h/2:eof_action=pass:enable='between(t,{t0},{t0 + d})'[v{k}]")
+            prev = f"v{k}"
+        fc.append(f"[{prev}]subtitles='{esc}'[vout]")
+        cmd += ["-filter_complex", ";".join(fc), "-map", "[vout]"]
+        if audio:
+            cmd += ["-map", "1:a"]
         cmd += [
-            "-vf",
-            f"subtitles='{esc}'",
             "-c:v",
             "libx264",
             "-preset",

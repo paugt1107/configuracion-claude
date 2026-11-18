@@ -2,12 +2,15 @@
 
 Canal **"¿Sabías que…?"** de GTA VI para **YouTube Shorts y TikTok**. Un equipo de 13 agentes de IA (Claude Code) investiga, escribe y produce vídeos verticales con **voz IA**, subtítulos animados, efectos y música, sin grabar nada. Tú revisas y publicas.
 
-## Cómo funciona (en 1 minuto)
-```
- Radar (cada 30 min)  →  Guionista automático (3 veces/día)  →  Producción (GitHub Actions)  →  entregas/<ID>/  →  Tú publicas
- noticias, canales,       verifica datos y escribe              voz IA + vídeo 1080x1920 +       vídeo, 3 portadas,
- Reddit sobre GTA VI      canal-youtube/guiones/<ID>.yaml       portadas + textos                 publicacion.md
-```
+## El equipo automático
+| Nombre | Qué hace | Cuándo | Dónde |
+|---|---|---|---|
+| **Valentín** · radar | Recoge lo que se dice de GTA VI en Google Noticias (14 idiomas/países), Bluesky, Mastodon, Reddit, YouTube y X (si hay API) → `canal-youtube/datos/radar/ultimo.md` | Cada 15 min | GitHub Actions |
+| **Pedro** · guionista | Convierte lo de Valentín en guiones "¿Sabías que…?" con gancho, verificados → `canal-youtube/guiones/SXXX.yaml` | Cuando tú lo pidas: `/guiones` | Esta conversación |
+| **Fernanda** · producción | Voz IA, escenas, efectos, música, subtítulos, portadas y textos → `entregas/SXXX/` | Al llegar un guion | GitHub Actions |
+| **Tommy** · imágenes | Pone la imagen justo cuando la voz nombra algo (banderas, dinero, policía, coches, mapa, Lucía/Jason, fotos libres de lugares reales) y recorta personajes | En cada vídeo + al subir imágenes | GitHub Actions |
+| **Irene** · calidad | Revisa cada vídeo (formato, duración, volumen, silencios, gancho, imágenes, fuentes) → `control-calidad.md` APTO/REVISAR; y el código en cada cambio | Siempre | GitHub Actions |
+Detrás hay 13 agentes especialistas (`.claude/agents/`) que Pedro y Claude usan para cada tarea.
 
 ## Mapa de carpetas
 | Carpeta | Qué hay | ¿Lo tocas tú? |

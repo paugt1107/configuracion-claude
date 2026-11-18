@@ -1,4 +1,4 @@
-name: Recortes de personajes
+name: Tommy · Recortes de personajes
 # Descarga imágenes oficiales listadas en canal-youtube/fuentes/imagenes.yaml y/o recorta las de media/oficial/ (quita el fondo).
 on:
   workflow_dispatch:

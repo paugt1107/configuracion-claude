@@ -11,6 +11,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import json
+import os
 import re
 import urllib.parse
 import urllib.request
@@ -24,10 +25,16 @@ from . import rutas
 UA = "Mozilla/5.0 (radar-gta; uso personal de investigacion)"
 OUT = rutas.RADAR
 CATEGORIES = [
-    ("misión", r"misi[oó]n|mission|golpe|heist|atraco"),
+    ("misión", r"misi[oó]n|miss[aã]o|mission|missione|golpe|heist|atraco|braquage|raub"),
     ("personaje", r"lucia|jason|cal hampton|boobie|dre'?quan|real dimez|raul bautista|brian heder|personaje|character"),
-    ("secreto", r"secret|easter ?egg|oculto|escondid|hidden|detalle|curiosidad|sab[ií]as"),
-    ("truco", r"truco|trick|tip|consejo|gu[ií]a|guide|c[oó]mo (conseguir|desbloquear|hacer)|how to|dinero|money|coche|car"),
+    (
+        "secreto",
+        r"secret|segredo|segreto|geheim|easter ?egg|oculto|escondid|hidden|cach[ée]|detalle|detail|curiosi|sab[ií]as|did you know|sabia que|saviez",
+    ),
+    (
+        "truco",
+        r"truco|trick|tip|astuce|trucco|tipp|consejo|gu[ií]a|guide|c[oó]mo (conseguir|desbloquear|hacer)|how to|dinero|dinheiro|money|argent|coche|car|carro|voiture",
+    ),
     ("mapa", r"mapa|map|vice city|leonida|keys|grassrivers|port gellhorn|ambrosia|kalaga|ubicaci[oó]n|location"),
     ("polémica/bug", r"bug|glitch|error|crash|pol[eé]mic|cr[ií]tica|review|nota|metacritic|ventas|sales|r[eé]cord"),
 ]
@@ -86,12 +93,16 @@ def resolve_channel(handle: str) -> str | None:
 
 def collect(cfg: dict, log=print) -> list[dict]:
     items: list[dict] = []
-    for q in cfg.get("google_news", []):
-        url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q, "hl": "es", "gl": "ES", "ceid": "ES:es"})
-        try:
-            items += parse_feed(fetch(url), f"Noticias: {q}")
-        except Exception as e:  # una fuente caída no para el radar
-            log(f"[aviso] Google News '{q}': {e}")
+    for loc in cfg.get("idiomas", [{"hl": "es", "gl": "ES"}]):
+        hl, gl = loc["hl"], loc["gl"]
+        for q in loc.get("busquedas") or cfg.get("google_news", []):
+            url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
+                {"q": q, "hl": hl, "gl": gl, "ceid": f"{gl}:{hl.split('-')[0]}"}
+            )
+            try:
+                items += [{**i, "lang": hl} for i in parse_feed(fetch(url), f"Google {hl}-{gl}: {q}")]
+            except Exception as e:  # una fuente caída no para el radar
+                log(f"[aviso] Google News {hl}-{gl} '{q}': {e}")
     for ch in cfg.get("youtube_canales", []):
         try:
             cid = ch.get("id") or resolve_channel(ch["handle"])
@@ -108,7 +119,100 @@ def collect(cfg: dict, log=print) -> list[dict]:
             items += parse_feed(fetch(f"https://www.reddit.com/r/{sub}/top/.rss?t=day"), f"Reddit r/{sub}")
         except Exception as e:
             log(f"[aviso] reddit {sub}: {e}")
+    for q in cfg.get("bluesky", []):
+        try:
+            data = json.loads(
+                fetch(
+                    "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?"
+                    + urllib.parse.urlencode({"q": q, "limit": 40, "sort": "top"})
+                )
+            )
+            items += parse_bluesky(data, q)
+        except Exception as e:
+            log(f"[aviso] Bluesky '{q}': {e}")
+    for inst, tag in [(m["instancia"], m["etiqueta"]) for m in cfg.get("mastodon", [])]:
+        try:
+            items += parse_mastodon(json.loads(fetch(f"https://{inst}/api/v1/timelines/tag/{tag}?limit=40")), f"Mastodon #{tag}")
+        except Exception as e:
+            log(f"[aviso] Mastodon {inst} #{tag}: {e}")
+    token = os.environ.get("X_BEARER_TOKEN")
+    if token:  # X/Twitter: solo con API de pago (recent search)
+        for q in cfg.get("x", []):
+            try:
+                req = urllib.request.Request(
+                    "https://api.x.com/2/tweets/search/recent?"
+                    + urllib.parse.urlencode(
+                        {"query": f"{q} -is:retweet", "max_results": 50, "tweet.fields": "lang,public_metrics,created_at"}
+                    ),
+                    headers={"Authorization": f"Bearer {token}", "User-Agent": UA},
+                )
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    items += parse_x(json.loads(r.read()), q)
+            except Exception as e:
+                log(f"[aviso] X '{q}': {e}")
     return items
+
+
+def _clip_text(text: str, n: int = 140) -> str:
+    text = " ".join(text.split())
+    return text if len(text) <= n else text[: n - 1] + "…"
+
+
+def parse_bluesky(data: dict, q: str) -> list[dict]:
+    out = []
+    for p in data.get("posts", []):
+        uri, handle = p.get("uri", ""), p.get("author", {}).get("handle", "")
+        rkey = uri.rsplit("/", 1)[-1]
+        txt = p.get("record", {}).get("text", "")
+        likes = p.get("likeCount", 0) + 2 * p.get("repostCount", 0)
+        if txt and rkey:
+            out.append(
+                {
+                    "title": _clip_text(txt),
+                    "url": f"https://bsky.app/profile/{handle}/post/{rkey}",
+                    "date": p.get("indexedAt", ""),
+                    "source": f"Bluesky ({likes}❤)",
+                    "lang": (p.get("record", {}).get("langs") or ["?"])[0],
+                    "eng": likes,
+                }
+            )
+    return out
+
+
+def parse_mastodon(data: list, source: str) -> list[dict]:
+    out = []
+    for s in data:
+        txt = re.sub(r"<[^>]+>", " ", s.get("content", ""))
+        if txt.strip():
+            out.append(
+                {
+                    "title": _clip_text(txt),
+                    "url": s.get("url", ""),
+                    "date": s.get("created_at", ""),
+                    "source": source,
+                    "lang": s.get("language") or "?",
+                    "eng": s.get("favourites_count", 0) + 2 * s.get("reblogs_count", 0),
+                }
+            )
+    return [i for i in out if i["url"]]
+
+
+def parse_x(data: dict, q: str) -> list[dict]:
+    out = []
+    for tw in data.get("data", []):
+        m = tw.get("public_metrics", {})
+        eng = m.get("like_count", 0) + 2 * m.get("retweet_count", 0)
+        out.append(
+            {
+                "title": _clip_text(tw.get("text", "")),
+                "url": f"https://x.com/i/web/status/{tw['id']}",
+                "date": tw.get("created_at", ""),
+                "source": f"X ({eng}❤)",
+                "lang": tw.get("lang", "?"),
+                "eng": eng,
+            }
+        )
+    return out
 
 
 def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = None) -> list[dict]:
@@ -126,7 +230,8 @@ def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = Non
         seen_set.add(k)
         seen.append(k)
         cat, score = classify(it["title"])
-        new.append({**it, "categoria": cat, "potencial": score})
+        score += min(3, int(it.get("eng", 0)) // 200)  # interacción en redes
+        new.append({**it, "categoria": cat, "potencial": score, "lang": it.get("lang", "es")})
     seen_p.write_text(json.dumps(seen[-3000:]))
     new.sort(key=lambda x: -x["potencial"])
     stamp = now.strftime("%H:%M")
@@ -134,23 +239,26 @@ def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = Non
     if not day.exists():
         day.write_text(
             f"# Radar GTA VI · {now:%d-%m-%Y} (hora de España)\nSolo títulos y enlaces para investigar: no descargar ni reutilizar material ajeno sin permiso.\n\n"
-            "| Hora | Potencial | Categoría | Título | Fuente |\n|---|---|---|---|---|\n",
+            "| Hora | Potencial | Idioma | Categoría | Título | Fuente |\n|---|---|---|---|---|---|\n",
             encoding="utf-8",
         )
     with open(day, "a", encoding="utf-8") as fh:
         for i in new:
             title = i["title"].replace("|", "/")[:140]
-            fh.write(f"| {stamp} | {'★' * min(i['potencial'], 5) or '·'} | {i['categoria']} | [{title}]({i['url']}) | {i['source']} |\n")
+            fh.write(
+                f"| {stamp} | {'★' * min(i['potencial'], 5) or '·'} | {i['lang']} | {i['categoria']} | [{title}]({i['url']}) | {i['source']} |\n"
+            )
     if not new:  # sin novedades: se conserva la lista anterior
         return new
-    top = new[:15]
+    top = new[:25]
     lines = [
         f"# Última pasada del radar: {now:%d-%m %H:%M}",
-        f"{len(new)} novedades. Las 15 con más potencial para un '¿Sabías que…?':",
+        f"{len(new)} novedades. Las 25 con más potencial para un '¿Sabías que…?':",
         "",
     ]
     lines += [
-        f"- {'★' * min(i['potencial'], 5) or '·'} **{i['categoria']}** · [{i['title'][:120]}]({i['url']}) · {i['source']}" for i in top
+        f"- {'★' * min(i['potencial'], 5) or '·'} `{i['lang']}` **{i['categoria']}** · [{i['title'][:120]}]({i['url']}) · {i['source']}"
+        for i in top
     ]
     (out_dir / "ultimo.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return new

@@ -1,0 +1,12 @@
+# TOMMY · Qué imagen aparece cuando la voz dice una palabra (además de las de serie del código).
+# patron: expresión regular (sin mayúsculas/acentos importa poco). visual: uno de
+#   {prop: dinero|billetes|estrellas|sirena|pin|movil|coche|trofeo, n: 1-5}
+#   {bandera: es|mx|ar|nz|us}
+#   {imagen: media/oficial/archivo.jpg}      (imagen oficial o captura propia; con crédito)
+#   {recorte: media/recortes/lucia.png}      (personaje sin fondo)
+#   {libre: "consulta en Wikimedia Commons"}  (foto real con licencia libre, crédito automático)
+extra:
+  - {patron: "\\bmiami\\b", visual: {libre: "Miami Beach skyline"}}
+  - {patron: "\\bflorida\\b", visual: {libre: "Florida Everglades airboat"}}
+  - {patron: "\\beverglades\\b", visual: {libre: "Everglades alligator"}}
+  - {patron: "\\bcayos\\b|florida keys", visual: {libre: "Florida Keys Overseas Highway"}}

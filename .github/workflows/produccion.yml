@@ -1,4 +1,4 @@
-name: Producción de vídeos
+name: Fernanda · Producción de vídeos
 # Producción automática con voz IA (la sesión de Claude no tiene acceso a servicios de voz; GitHub sí).
 # Se lanza al cambiar un guion (canal-youtube/audio/SXXX-narracion.txt) o un job, o a mano (Actions → produccion → Run).
 # Voz: auto = ElevenLabs si hay secreto ELEVENLABS_API_KEY, si no OpenAI (OPENAI_API_KEY), si no voces gratuitas (edge-tts).
@@ -61,12 +61,12 @@ jobs:
               for f in $(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" 2>/dev/null); do
                 case "$f" in
                   canal-youtube/guiones/S*.yaml) JOBS="$JOBS $f" ;;
-                  clipfactory/*.py) JOBS="$JOBS canal-youtube/guiones/S001.yaml" ;;
+                  clipfactory/*.py) JOBS="$JOBS $(ls canal-youtube/guiones/S*.yaml | tr '\n' ' ')" ;;
                 esac
               done
             fi
             for j in $(echo $JOBS | tr ' ' '\n' | sort -u); do
-              [ -f "$j" ] && python3 -m clipfactory producir "$j" --proveedor "${{ github.event.inputs.proveedor || 'auto' }}"
+              if [ -f "$j" ]; then python3 -m clipfactory producir "$j" --proveedor "${{ github.event.inputs.proveedor || 'auto' }}" || echo "FALLO en $j (sigo con el resto)"; fi
             done
           } 2>&1 | tee entregas/_logs/produccion.log
       - name: Guardar entregas
@@ -74,7 +74,7 @@ jobs:
         run: |
           git config user.name "produccion-bot"
           git config user.email "produccion-bot@users.noreply.github.com"
-          git add entregas
+          git add entregas media/libres 2>/dev/null || git add entregas
           git diff --cached --quiet && exit 0
           git commit -m "Producción automática (${{ github.run_id }}) [skip ci]"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done

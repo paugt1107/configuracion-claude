@@ -10,7 +10,7 @@ from pathlib import Path
 
 import yaml
 
-from . import hookscore_es, motion, rutas, sfx, thumbs, voice
+from . import calidad, hookscore_es, motion, rutas, sfx, thumbs, visuales, voice
 
 TAGS_BASE = ["#gta6", "#gtavi", "#gta6espanol", "#sabiasque", "#shorts"]
 
@@ -97,8 +97,13 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
         scenes.append(sc)
     cues = [(0.0, "impacto")] + [(s - 0.12, "whoosh") for s in starts[1:]] + [(starts[-1], "impacto")]
     mixed = sfx.mix(v["audio"], cues, work / "mezcla.wav", music=spec.get("musica", True))
-    video = motion.build(scenes, v["words"], out_dir / f"{sid}-final.mp4", str(mixed), premixed=True)
+    plan = visuales.planificar(visuales.detectar(v["words"])) if spec.get("imagenes_auto", True) else []
+    overlays, creditos_libres = visuales.preparar(plan, work / "pops")
+    video = motion.build(scenes, v["words"], out_dir / f"{sid}-final.mp4", str(mixed), premixed=True, overlays=overlays)
+    if creditos_libres:
+        spec = {**spec, "creditos": "\n".join(filter(None, [spec.get("creditos", ""), *("Imagen: " + c for c in creditos_libres)]))}
     if spec.get("portada"):
         thumbs.make_covers(spec["portada"], out_dir)
     (out_dir / "publicacion.md").write_text(publication(spec, lines, v["provider"]), encoding="utf-8")
+    calidad.informe(video, spec, lines, overlays, out_dir / "control-calidad.md")
     return video

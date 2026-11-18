@@ -8,3 +8,5 @@ Marca con [x] cuando lo hagas. Claude revisa esta lista al empezar cada sesión.
 - [ ] **Imágenes oficiales de Lucía y Jason** en `media/oficial/` (se recortan solas).
 - [ ] **Revisar y publicar S001** (`entregas/S001/`).
 - [ ] (Opcional) `YOUTUBE_API_KEY` en Secrets para el radar de vídeos que superan 10x su canal.
+- [ ] **Minutos de GitHub Actions:** el repo es privado (≈2.000 min/mes gratis). Valentín cada 15 min + producción puede pasarse. Elige: (a) Settings → Billing → poner método de pago y límite de gasto, o (b) hacer el repo público (minutos ilimitados; se vería tu estrategia). Si no, Valentín se parará a final de mes.
+- [ ] (Opcional) **X/Twitter:** secreto `X_BEARER_TOKEN` (API de pago) para que Valentín lea X.

@@ -33,3 +33,36 @@ def test_update_dedupes_and_writes(tmp_path):
     assert len(new1) == 2 and new2 == []
     assert "secreto" in (tmp_path / "ultimo.md").read_text()
     assert (tmp_path / "2026-11-19.md").read_text().count("| 10:30 |") == 2
+
+
+def test_social_parsers():
+    bs = {
+        "posts": [
+            {
+                "uri": "at://did/app.bsky.feed.post/abc",
+                "author": {"handle": "x.bsky.social"},
+                "record": {"text": "GTA 6 secret found", "langs": ["en"]},
+                "likeCount": 500,
+                "repostCount": 100,
+            }
+        ]
+    }
+    b = rw.parse_bluesky(bs, "GTA 6")
+    assert b[0]["url"].endswith("/post/abc") and b[0]["lang"] == "en" and b[0]["eng"] == 700
+    m = rw.parse_mastodon(
+        [
+            {
+                "content": "<p>Easter egg en <b>GTA 6</b></p>",
+                "url": "https://m/1",
+                "language": "es",
+                "favourites_count": 3,
+                "reblogs_count": 1,
+            }
+        ],
+        "M",
+    )
+    assert m[0]["title"].startswith("Easter egg") and m[0]["eng"] == 5
+    x = rw.parse_x(
+        {"data": [{"id": "9", "text": "GTA 6 tip", "lang": "en", "public_metrics": {"like_count": 10, "retweet_count": 2}}]}, "q"
+    )
+    assert x[0]["url"].endswith("/9") and x[0]["eng"] == 14
