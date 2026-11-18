@@ -14,6 +14,36 @@
   "h": 683,
   "w": 1024
  },
+ "lb-03edecb867": {
+  "archivo": "libres/armas/pistol-museum-collection-ov2.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "T-34/85 Hull machine gunner / driver's assistant seat. — wbaiv — CC BY-SA 2.0 — https://www.flickr.com/photos/9998127@N06/11513659635",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 685,
+  "w": 1023
+ },
+ "lb-2fe630a401": {
+  "archivo": "libres/armas/pistol-museum-collection-ov1.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Beaulieu National Motor Museum 18-09-2012 — Karen Roe — CC BY 2.0 — https://www.flickr.com/photos/28752865@N08/8542047278",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 955,
+  "w": 1024
+ },
  "lb-314d6bb373": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov5.jpg",
   "categoria": "armas",
@@ -74,6 +104,36 @@
   "h": 2512,
   "w": 1920
  },
+ "lb-422f2bf9c3": {
+  "archivo": "libres/armas/pistol-museum-collection-ov3.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Spokeshave — edinburghcityofprint — CC BY 2.0 — https://www.flickr.com/photos/30239838@N04/4202912637",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 294,
+  "w": 1024
+ },
+ "lb-52eeee768a": {
+  "archivo": "libres/armas/pistol-museum-collection-5.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Vihorlat Museum in Humenné - History and art history permanent exhibition - Andrássy arms, armour and metallurgy collections - Hungarian sabre, a hunting sword and a flintlock pistol (September 2026) 02.jpg — ZemplinTemplar — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Vihorlat_Museum_in_Humenn%C3%A9_-_History_and_art_history_permanent_exhibition_-_Andr%C3%A1ssy_arms,_armour_and_metallurgy_collections_-_Hungarian_sabre,_a_hunting_sword_and_a_flintlock_pistol_(September_2026)_02.jpg",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 1438,
+  "w": 1920
+ },
  "lb-5309d93f4b": {
   "archivo": "libres/armas/smith-wesson-revolver-museum-ov4.jpg",
   "categoria": "armas",
@@ -117,6 +177,81 @@
   ],
   "fuente": "libre",
   "h": 1280,
+  "w": 1920
+ },
+ "lb-76b190ad07": {
+  "archivo": "libres/armas/pistol-museum-collection-1.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Puffer (wheellock pistol).jpg — anonymous — CC0 — https://commons.wikimedia.org/wiki/File:Puffer_(wheellock_pistol).jpg",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 1070,
+  "w": 1920
+ },
+ "lb-78070c97e0": {
+  "archivo": "libres/armas/pistol-museum-collection-2.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Pistol collection of the Beretta Family Firearms Museum.jpg — Mark Turney (IMCOM) — Public domain — https://commons.wikimedia.org/wiki/File:Pistol_collection_of_the_Beretta_Family_Firearms_Museum.jpg",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 2880,
+  "w": 1920
+ },
+ "lb-7c18925705": {
+  "archivo": "libres/armas/pistol-museum-collection-4.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Kolibri Pistol, AM.059256, 02.jpg — Swedish Army Museum — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Kolibri_Pistol,_AM.059256,_02.jpg",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 1080,
+  "w": 1920
+ },
+ "lb-922da45a55": {
+  "archivo": "libres/armas/pistol-museum-collection-ov6.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Mauser C96 AM.042018 (1) — Armémuseum (Swedish Army Museum) — CC BY 4.0 — https://commons.wikimedia.org/w/index.php?curid=81956682",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 707,
+  "w": 1200
+ },
+ "lb-aa667f9afc": {
+  "archivo": "libres/armas/pistol-museum-collection-6.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Kolibri Pistol, AM.059256, 03.jpg — Swedish Army Museum — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Kolibri_Pistol,_AM.059256,_03.jpg",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 1080,
   "w": 1920
  },
  "lb-af2fa818bc": {
@@ -177,6 +312,51 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "w": 1024
+ },
+ "lb-cf4a352692": {
+  "archivo": "libres/armas/pistol-museum-collection-3.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Kolibri Pistol, AM.059256, 01.jpg — Swedish Army Museum — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Kolibri_Pistol,_AM.059256,_01.jpg",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 975,
+  "w": 1920
+ },
+ "lb-e160e5b611": {
+  "archivo": "libres/armas/pistol-museum-collection-ov4.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Husqvarna m1907 003 — Swedish Air Force Museum — CC BY 4.0 — https://commons.wikimedia.org/w/index.php?curid=61566956",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 618,
+  "w": 1004
+ },
+ "lb-e17f1066c0": {
+  "archivo": "libres/armas/pistol-museum-collection-ov5.jpg",
+  "categoria": "armas",
+  "consulta": "Pistol museum collection",
+  "credito": "Military Museum - Lisbon — Antónia Lobato — CC BY 2.0 — https://www.flickr.com/photos/25211209@N03/2612258277",
+  "etiquetas": [
+   "armas",
+   "collection",
+   "museum",
+   "pistol"
+  ],
+  "fuente": "libre",
+  "h": 768,
   "w": 1024
  }
 }
