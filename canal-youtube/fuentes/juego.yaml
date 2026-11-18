@@ -1,0 +1,18 @@
+# EL JUEGO DEL CANAL. Cambia esto y todo el sistema (radar, demanda, guiones, títulos, calendario) trabaja para otro juego.
+# Ejemplo para el próximo: nombre: "Red Dead Redemption 3", corto: "RDR3", dicho: "Red Dead tres", ...
+nombre: "Grand Theft Auto VI"
+corto: "GTA 6"                 # cómo se escribe en títulos y búsquedas
+dicho: "GTA seis"              # cómo lo dice la voz
+variantes: ["GTA 6", "GTA VI", "GTA6", "Grand Theft Auto 6"]
+lanzamiento: "2026-11-19"
+canal: "¿Sabías que…? GTA 6"
+hashtags: ["#gta6", "#gtavi", "#vicecity"]
+# semillas para saber QUÉ BUSCA LA GENTE (autocompletado de Google y YouTube)
+semillas_es: ["{j} como", "{j} donde", "{j} truco", "{j} secreto", "{j} dinero", "{j} coche", "{j} mision", "{j} mapa",
+              "{j} lucia", "{j} jason", "{j} final", "{j} online", "{j} mods", "{j} ps5", "{j} mejor", "{j} cuanto"]
+semillas_en: ["{j} how to", "{j} where", "{j} secret", "{j} money", "{j} best", "{j} car", "{j} mission", "{j} easter egg"]
+# calendario de publicación (hora de España). TikTok/Reels/Shorts: picos de tarde-noche; jueves = día fuerte del canal.
+calendario:
+  dias: ["jueves", "viernes", "sabado", "domingo", "lunes", "martes", "miercoles"]
+  por_dia: 2
+  horas: ["14:00", "20:30"]

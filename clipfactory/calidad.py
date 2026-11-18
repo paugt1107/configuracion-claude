@@ -6,7 +6,7 @@ import re
 import subprocess
 from pathlib import Path
 
-from . import hookscore_es, media
+from . import hookscore_es, media, rutas
 
 
 def _ffmpeg_stats(video: str) -> dict:
@@ -53,12 +53,79 @@ def comprobar(video: str | Path, spec: dict, lines: list[str], overlays: list[di
         (st["silencios"] == 0, f"Sin silencios largos ({st['silencios']})"),
         (hook["veredicto"] >= 55, f"Gancho ≥ 55 ({hook['veredicto']} {hook['banda']})"),
         (90 <= words <= 140, f"Guion 90-140 palabras ({words})"),
-        (len(overlays) + n3d >= max(2, int(dur // 10)), f"Imágenes al nombrar cosas o escenas 3D ≥ 1 cada 10 s ({len(overlays)} + {n3d} 3D)"),
+        (
+            len(overlays) + n3d >= max(2, int(dur // 10)),
+            f"Imágenes al nombrar cosas o escenas 3D ≥ 1 cada 10 s ({len(overlays)} + {n3d} 3D)",
+        ),
         (len(spec.get("titulos", [])) >= 3, f"3 títulos propuestos ({len(spec.get('titulos', []))})"),
         (bool(spec.get("portada")), "Portada definida"),
         (bool(spec.get("fuentes")), "Fuentes citadas"),
     ]
+    rep = gancho_repetido(lines[0], spec.get("id", ""))
+    checks.append(
+        (
+            rep is None,
+            "Gancho nuevo (no se parece a otro del canal)" if rep is None else f"Gancho demasiado parecido al de {rep[0]} ({rep[1]:.0%})",
+        )
+    )
     return checks
+
+
+VACIAS = {
+    "sabias",
+    "que",
+    "gta",
+    "seis",
+    "6",
+    "el",
+    "la",
+    "los",
+    "las",
+    "de",
+    "del",
+    "en",
+    "y",
+    "a",
+    "un",
+    "una",
+    "tu",
+    "te",
+    "es",
+    "lo",
+    "se",
+    "por",
+    "con",
+    "no",
+    "mas",
+}
+
+
+def _bolsa(t: str) -> set[str]:
+    import unicodedata
+
+    t = "".join(c for c in unicodedata.normalize("NFD", t.lower()) if unicodedata.category(c) != "Mn")
+    return {w for w in re.findall(r"[a-z0-9]+", t) if w not in VACIAS and len(w) > 2}
+
+
+def gancho_repetido(gancho: str, propio: str = "", umbral: float = 0.5) -> tuple[str, float] | None:
+    """¿Se parece este gancho a otro ya escrito? (Jaccard de palabras con significado). Devuelve (ID, parecido) o None."""
+    import yaml
+
+    a = _bolsa(gancho)
+    peor = None
+    for g in sorted(rutas.GUIONES.glob("S[0-9]*.yaml")):
+        if g.stem == propio:
+            continue
+        esc = (yaml.safe_load(g.read_text(encoding="utf-8")) or {}).get("escenas") or []
+        if not esc:
+            continue
+        b = _bolsa(esc[0].get("texto", ""))
+        if not a or not b:
+            continue
+        j = len(a & b) / len(a | b)
+        if j >= umbral and (peor is None or j > peor[1]):
+            peor = (g.stem, j)
+    return peor
 
 
 def informe(video, spec, lines, overlays, out: Path) -> bool:

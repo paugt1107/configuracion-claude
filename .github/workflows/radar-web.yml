@@ -26,6 +26,10 @@ jobs:
       - run: pip install -q -e .
       - name: Recoger
         run: python3 -c "from clipfactory import radar_web; radar_web.run()" 2>&1 | tee canal-youtube/datos/radar/log.txt
+      - name: Qué busca la gente (autocompletado de Google y YouTube, cada hora)
+        run: |
+          # en las pasadas automáticas solo una vez por hora (minuto 0-14); a mano, siempre
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%M)" -lt 15 ]; then python3 -m clipfactory.demanda || true; fi
       - name: Vídeos que superan 10x su canal (solo con YOUTUBE_API_KEY)
         if: env.YOUTUBE_API_KEY != ''
         run: python3 -m clipfactory radar "GTA 6" --dias 2 --region ES || true

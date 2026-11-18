@@ -69,12 +69,16 @@ jobs:
               if [ -f "$j" ]; then python3 -m clipfactory producir "$j" --proveedor "${{ github.event.inputs.proveedor || 'auto' }}" || echo "FALLO en $j (sigo con el resto)"; fi
             done
           } 2>&1 | tee entregas/_logs/produccion.log
+      - name: Calendario de publicación (reparte los vídeos APTO desde el próximo jueves)
+        if: always()
+        run: python3 -m clipfactory.calendario || true
       - name: Guardar entregas
         if: always()
         run: |
           git config user.name "produccion-bot"
           git config user.email "produccion-bot@users.noreply.github.com"
-          git add entregas media/libres 2>/dev/null || git add entregas
+          git add entregas canal-youtube/datos/calendario.md canal-youtube/datos/calendario.ics
+          [ -d media/libres ] && git add media/libres
           git diff --cached --quiet && exit 0
           git commit -m "Producción automática (${{ github.run_id }}) [skip ci]"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
