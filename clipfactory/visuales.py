@@ -32,6 +32,23 @@ DEFAULTS: list[tuple[str, dict]] = [
     (r"\bmapa\b|\bubicacion\b|\blugar\b|\bvice city\b|\bleonida\b|\bdonde\b", {"prop": "pin"}),
     (r"\bmovil\b|\btelefono\b|\bredes\b|\binternet\b|\btiktok\b|\binstagram\b|\bapp\b", {"prop": "movil"}),
     (r"\brecord\b|\bventas\b|\bpremio\b|\bnumero uno\b|\bel mejor\b|\btrofeo\b", {"prop": "trofeo"}),
+    (r"\bhoras?\b|\bminutos\b|\bduracion\b|\bdura\b|\btiempo\b|\bmilisegundos\b", {"prop": "reloj"}),
+    (r"\bconsolas?\b|\bmando\b|\bjugadores?\b|\bpartida\b", {"prop": "mando"}),
+    (r"\bnota\b|\bresenas?\b|\bcriticas?\b|\bpuntuacion\b|\bcalificacion\b", {"prop": "nota"}),
+    (r"\bmetacritic\b", {"chip": "METACRITIC", "color": "gold"}),
+    (r"\bzelda\b|\bocarina\b", {"chip": "ZELDA", "color": "cyan"}),
+    (r"\bps ?(cinco|5)\b|\bplaystation\b", {"chip": "PS5", "color": "cyan"}),
+    (r"\bxbox\b", {"chip": "XBOX", "color": "cyan"}),
+    (r"\bpc\b|\bordenador\b", {"chip": "PC", "color": "white"}),
+    (r"\bfps\b|\bfotogramas\b|imagenes por segundo", {"chip": "FPS", "color": "orange"}),
+    (r"\bprocesador\b|\bcpu\b", {"chip": "CPU", "color": "magenta"}),
+    (r"\brockstar\b", {"chip": "ROCKSTAR", "color": "gold"}),
+    (r"\bred dead\b", {"chip": "RED DEAD 2", "color": "magenta"}),
+    (r"\bgta (cuatro|4|iv)\b", {"chip": "GTA IV", "color": "white"}),
+    (r"\bgta (cinco|5|v)\b", {"chip": "GTA V", "color": "white"}),
+    (r"new york times|\bperiodico\b|\bentrevista\b", {"chip": "PRENSA", "color": "white"}),
+    (r"\btrailer\b", {"chip": "TRÁILER", "color": "magenta"}),
+    (r"\bcomentarios?\b|\bcomenta\b", {"chip": "COMENTA", "color": "orange"}),
     (r"\blucia\b", {"recorte": "media/recortes/lucia.png", "alt": {"prop": "estrellas", "n": 2}}),
     (r"\bjason\b", {"recorte": "media/recortes/jason.png", "alt": {"prop": "estrellas", "n": 2}}),
 ]
@@ -120,6 +137,21 @@ def _render(vis: dict, creditos: list[str]) -> Image.Image | None:
             creditos.append(r[1])
             return _marco(Image.open(r[0]))
         return None
+    if "chip" in vis:
+        acc = motion.COLORS.get(vis.get("color", "orange"), motion.ORANGE)
+        f = motion._font(120)
+        txt = vis["chip"]
+        tw = int(ImageDraw.Draw(Image.new("RGBA", (1, 1))).textlength(txt, font=f))
+        w, h = min(900, tw + 120), 200
+        canvas = Image.new("RGBA", (w + 60, h + 60), (0, 0, 0, 0))
+        sh = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sh).rounded_rectangle([30, 38, w + 30, h + 38], 34, fill=(0, 0, 0, 160))
+        canvas.alpha_composite(sh.filter(ImageFilter.GaussianBlur(12)))
+        d = ImageDraw.Draw(canvas)
+        d.rounded_rectangle([30, 30, w + 30, h + 30], 34, fill=(15, 15, 22, 240), outline=acc + (255,), width=10)
+        txt, sz = motion._fit(d, txt, 120, w - 60)
+        d.multiline_text((30 + w / 2, 30 + h / 2), txt, font=motion._font(sz), fill=acc, anchor="mm", align="center")
+        return canvas.rotate(-4, resample=Image.BICUBIC, expand=True)
     if "bandera" in vis:
         fl = motion.flag(vis["bandera"], 480)
         canvas = Image.new("RGBA", (fl.width + 40, fl.height + 40), (0, 0, 0, 0))

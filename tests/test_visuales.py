@@ -27,3 +27,15 @@ def test_preparar_offline(tmp_path):
     ]
     ovs, cred = visuales.preparar(plan, tmp_path)
     assert len(ovs) == 3 and cred == []
+
+
+def test_tommy_nombra_juegos_y_consolas(tmp_path):
+    from clipfactory import visuales
+
+    txt = "su media en Metacritic iguala a Zelda y en PS cinco va a treinta FPS en unas ochenta horas"
+    words = [{"text": w, "start": i * 0.5, "end": i * 0.5 + 0.4} for i, w in enumerate(txt.split())]
+    hits = visuales.detectar(words)
+    vis = [h["visual"] for h in hits]
+    assert {"chip": "METACRITIC", "color": "gold"} in vis and {"chip": "PS5", "color": "cyan"} in vis and {"prop": "reloj"} in vis
+    ov, _ = visuales.preparar([{**h, "dur": 1.3} for h in hits], tmp_path)
+    assert len(ov) == len(hits)

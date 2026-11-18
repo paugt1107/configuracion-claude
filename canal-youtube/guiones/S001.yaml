@@ -130,7 +130,7 @@ escenas:
     titulo: ¿DESDE QUÉ PAÍS JUEGAS?
     ty: 520
     tsize: 70
-- texto: Y mientras tanto, en Nueva Zelanda, ya están jugando.
+- texto: Mientras, en Nueva Zelanda ya juegan.
   tarjeta:
     kind: clock
     reloj: 00:00

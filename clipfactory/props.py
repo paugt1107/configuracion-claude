@@ -1,6 +1,7 @@
 """Objetos gráficos originales de "estilo GTA" dibujados por código (sin material de Rockstar).
 
-Tipos: dinero (bolsa con $), billetes (fajos), estrellas (nivel de búsqueda), sirena, pin (mapa), movil, coche, trofeo.
+Tipos: dinero (bolsa con $), billetes (fajos), estrellas (nivel de búsqueda), sirena, pin (mapa), movil, coche, trofeo,
+reloj (horas/tiempo), mando (consola), nota (calificación).
 Uso en una tarjeta del guion:  props: [{tipo: dinero, x: 0.8, y: 0.3, tam: 260}, {tipo: estrellas, n: 4, y: 0.25}]
 """
 
@@ -92,6 +93,27 @@ def draw(tipo: str, tam: int = 240, n: int = 3) -> Image.Image:
         d.arc([s * 0.64, s * 0.10, s * 0.92, s * 0.40], 270, 90, fill=GOLD, width=s // 25)
         d.rectangle([s * 0.44, s * 0.6, s * 0.56, s * 0.78], fill=GOLD)
         d.rectangle([s * 0.28, s * 0.78, s * 0.72, s * 0.9], fill=GOLD)
+    elif tipo == "reloj":
+        d.ellipse([s * 0.08, s * 0.08, s * 0.92, s * 0.92], fill=WHITE, outline=GOLD, width=s // 18)
+        for i in range(12):
+            a = i * math.pi / 6
+            r1, r2 = s * 0.33, s * 0.38
+            d.line([(s / 2 + r1 * math.cos(a), s / 2 + r1 * math.sin(a)), (s / 2 + r2 * math.cos(a), s / 2 + r2 * math.sin(a))], fill=(30, 30, 35), width=s // 50)
+        d.line([(s / 2, s / 2), (s / 2, s * 0.22)], fill=(30, 30, 35), width=s // 28)
+        d.line([(s / 2, s / 2), (s * 0.72, s * 0.6)], fill=RED, width=s // 40)
+        d.ellipse([s * 0.46, s * 0.46, s * 0.54, s * 0.54], fill=(30, 30, 35))
+    elif tipo == "mando":
+        d.rounded_rectangle([s * 0.08, s * 0.3, s * 0.92, s * 0.72], s // 8, fill=(35, 38, 48), outline=WHITE, width=s // 60)
+        d.ellipse([s * 0.04, s * 0.45, s * 0.34, s * 0.88], fill=(35, 38, 48))
+        d.ellipse([s * 0.66, s * 0.45, s * 0.96, s * 0.88], fill=(35, 38, 48))
+        d.rectangle([s * 0.2, s * 0.44, s * 0.24, s * 0.58], fill=WHITE)
+        d.rectangle([s * 0.15, s * 0.49, s * 0.29, s * 0.53], fill=WHITE)
+        for (cx, cy), c in zip([(0.74, 0.42), (0.8, 0.5), (0.74, 0.58), (0.68, 0.5)], [GREEN, RED, BLUE, GOLD]):
+            d.ellipse([s * (cx - 0.035), s * (cy - 0.035), s * (cx + 0.035), s * (cy + 0.035)], fill=c)
+    elif tipo == "nota":
+        d.rounded_rectangle([s * 0.1, s * 0.1, s * 0.9, s * 0.9], s // 10, fill=GREEN, outline=WHITE, width=s // 30)
+        for i in range(5):
+            _star(d, s * (0.22 + i * 0.14), s * 0.5, s * 0.07, GOLD)
     else:
         raise ValueError(f"Objeto desconocido: {tipo}")
     return im.resize((w // k, s // k), Image.LANCZOS)
