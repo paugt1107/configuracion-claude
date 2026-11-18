@@ -1,4 +1,18 @@
 {
+ "lb-018f77524d": {
+  "archivo": "libres/clima/tropical-rain-2.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical kingbird in the rain (60154).jpg — Rhododendrites — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_kingbird_in_the_rain_(60154).jpg",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 1359,
+  "w": 1920
+ },
  "lb-01e99eee3d": {
   "archivo": "libres/clima/lightning-storm-night-4.jpg",
   "categoria": "clima",
@@ -28,6 +42,48 @@
   "fuente": "libre",
   "h": 768,
   "w": 1024
+ },
+ "lb-090902bdb9": {
+  "archivo": "libres/clima/tropical-rain-5.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Rain in a tropical garden.JPG — B.navez — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Rain_in_a_tropical_garden.JPG",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 2868,
+  "w": 1920
+ },
+ "lb-10457dc29a": {
+  "archivo": "libres/clima/tropical-rain-4.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical rain forest in Nusantara city.jpg — Nusantara city municipal gov. — Public domain — https://commons.wikimedia.org/wiki/File:Tropical_rain_forest_in_Nusantara_city.jpg",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
+ "lb-10b4939894": {
+  "archivo": "libres/clima/tropical-rain-1.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical kingbird in the rain (60130).jpg — Rhododendrites — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_kingbird_in_the_rain_(60130).jpg",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 1462,
+  "w": 1920
  },
  "lb-125f9c0726": {
   "archivo": "libres/clima/tornado-ov1.jpg",
@@ -83,6 +139,20 @@
   ],
   "fuente": "libre",
   "h": 660,
+  "w": 1024
+ },
+ "lb-2dbcd84ecd": {
+  "archivo": "libres/clima/tropical-rain-ov1.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "tropical rain flowers — shannonkringen — CC BY-SA 2.0 — https://www.flickr.com/photos/18161271@N00/10273113373",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 745,
   "w": 1024
  },
  "lb-3310b39a24": {
@@ -143,6 +213,48 @@
   "h": 708,
   "w": 1024
  },
+ "lb-4c1ec33d37": {
+  "archivo": "libres/clima/tropical-rain-ov2.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical rain on glossy leaf — Yorick... — CC BY 2.0 — https://www.flickr.com/photos/43852314@N00/4991358631",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 342,
+  "w": 1023
+ },
+ "lb-6b37e562e6": {
+  "archivo": "libres/clima/flooded-street-ov3.jpg",
+  "categoria": "clima",
+  "consulta": "Flooded street",
+  "credito": "Flooded street in Cotonou, Benin, ca.1915 (IMP-YDS-RG101-011-0000-0102) — Fæ — CC BY 2.0 — https://www.flickr.com/photos/50398299@N08/16622373572",
+  "etiquetas": [
+   "clima",
+   "flooded",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 599,
+  "w": 1024
+ },
+ "lb-717ef2136b": {
+  "archivo": "libres/clima/tropical-rain-ov3.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "tropical rain — trepetnosinee — CC BY 2.0 — https://www.flickr.com/photos/49004288@N05/6093664184",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 685,
+  "w": 1024
+ },
  "lb-728f297211": {
   "archivo": "libres/clima/lightning-storm-night-ov6.jpg",
   "categoria": "clima",
@@ -156,6 +268,48 @@
   ],
   "fuente": "libre",
   "h": 572,
+  "w": 1024
+ },
+ "lb-772fc0c5d6": {
+  "archivo": "libres/clima/flooded-street-ov2.jpg",
+  "categoria": "clima",
+  "consulta": "Flooded street",
+  "credito": "Flooded street at Elliott and Denny, 1933 — Seattle Municipal Archives — CC BY 2.0 — https://www.flickr.com/photos/24256351@N04/4363265400",
+  "etiquetas": [
+   "clima",
+   "flooded",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 793,
+  "w": 1024
+ },
+ "lb-886aa05f1d": {
+  "archivo": "libres/clima/flooded-street-ov4.jpg",
+  "categoria": "clima",
+  "consulta": "Flooded street",
+  "credito": "Flooded street after Hurricane Sandy — WarmSleepy — CC BY 2.0 — https://www.flickr.com/photos/33498942@N04/8143654219",
+  "etiquetas": [
+   "clima",
+   "flooded",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-932591d5c0": {
+  "archivo": "libres/clima/flooded-street-ov1.jpg",
+  "categoria": "clima",
+  "consulta": "Flooded street",
+  "credito": "Flooded street on Second Ave. Ext., 1936 — Seattle Municipal Archives — CC BY 2.0 — https://www.flickr.com/photos/24256351@N04/4363265410",
+  "etiquetas": [
+   "clima",
+   "flooded",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 816,
   "w": 1024
  },
  "lb-9463efaa85": {
@@ -244,6 +398,20 @@
   "h": 683,
   "w": 1024
  },
+ "lb-afd6c5e690": {
+  "archivo": "libres/clima/tropical-rain-3.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical rain forest.jpg — Rully Aan Firmansyah — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_rain_forest.jpg",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 2891,
+  "w": 1920
+ },
  "lb-b1f51caf12": {
   "archivo": "libres/clima/hurricane-satellite-image-ov6.jpg",
   "categoria": "clima",
@@ -258,6 +426,20 @@
   "fuente": "libre",
   "h": 639,
   "w": 1023
+ },
+ "lb-bc5f668e86": {
+  "archivo": "libres/clima/flooded-street-ov5.jpg",
+  "categoria": "clima",
+  "consulta": "Flooded street",
+  "credito": "Thailand Flood - Street View — NIST School Shared Account — CC BY-SA 2.0 — https://www.flickr.com/photos/62642923@N07/6327927878",
+  "etiquetas": [
+   "clima",
+   "flooded",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 660,
+  "w": 990
  },
  "lb-cba9570872": {
   "archivo": "libres/clima/lightning-storm-night-1.jpg",
@@ -274,6 +456,34 @@
   "h": 1080,
   "w": 1920
  },
+ "lb-cff23bf6bb": {
+  "archivo": "libres/clima/tropical-rain-ov5.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical rain forest and mosses everywhere — daveynin — CC BY 2.0 — https://www.flickr.com/photos/44124370018@N01/7206437930",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-e1a4699bb5": {
+  "archivo": "libres/clima/tropical-rain-ov6.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical rain forest, man! — daveynin — CC BY 2.0 — https://www.flickr.com/photos/44124370018@N01/7206430966",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
  "lb-e3238c8fdb": {
   "archivo": "libres/clima/hurricane-satellite-image-ov2.jpg",
   "categoria": "clima",
@@ -287,6 +497,20 @@
   ],
   "fuente": "libre",
   "h": 568,
+  "w": 1024
+ },
+ "lb-e39fdb8f02": {
+  "archivo": "libres/clima/flooded-street-ov6.jpg",
+  "categoria": "clima",
+  "consulta": "Flooded street",
+  "credito": "Flooded Streets South Townsville — robstephaustralia — CC BY 2.0 — https://www.flickr.com/photos/59773274@N00/5413071408",
+  "etiquetas": [
+   "clima",
+   "flooded",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 683,
   "w": 1024
  },
  "lb-e8037ba08e": {
@@ -332,6 +556,20 @@
   "h": 639,
   "w": 1024
  },
+ "lb-f2e5b884c6": {
+  "archivo": "libres/clima/tropical-rain-6.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Sihanoukville Province. Tropical rain season.jpg — Dmitry Makeev — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Sihanoukville_Province._Tropical_rain_season.jpg",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
  "lb-f52cd10010": {
   "archivo": "libres/clima/lightning-storm-night-6.jpg",
   "categoria": "clima",
@@ -346,5 +584,19 @@
   "fuente": "libre",
   "h": 1201,
   "w": 1920
+ },
+ "lb-f983b8f924": {
+  "archivo": "libres/clima/tropical-rain-ov4.jpg",
+  "categoria": "clima",
+  "consulta": "Tropical rain",
+  "credito": "Tropical Rain Forests, North Eastern India — Ashwin Kumar — CC BY-SA 2.0 — https://www.flickr.com/photos/34501870@N00/7159000727",
+  "etiquetas": [
+   "clima",
+   "rain",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 619,
+  "w": 1024
  }
 }
