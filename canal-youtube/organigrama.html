@@ -1,0 +1,294 @@
+<title>Organigrama Estudio GTA VI</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: organigrama vertical — dirección arriba, 5 departamentos en rejilla, flujo de un vídeo y servicios comunes abajo. Estética neón de atardecer (Vice City) sobre azul marino, tema oscuro único a propósito. */
+:root {
+  color-scheme: dark;
+  --bg: #0B1630;
+  --panel: #111F3F;
+  --panel-2: #16264B;
+  --line: #2A3D6B;
+  --fg: #EEF2FB;
+  --muted: #A3B1D1;
+  --orange: #FF7A1A;
+  --cyan: #19D3FF;
+  --magenta: #FF2E93;
+  --gold: #FFC24B;
+  --lime: #7CE38B;
+  --font-display: "Unbounded", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 56px;
+  background-image: radial-gradient(1200px 500px at 50% -120px, rgba(255,122,26,.18), transparent 70%),
+                    radial-gradient(900px 400px at 100% 0, rgba(255,46,147,.10), transparent 70%);
+  background-repeat: no-repeat;
+}
+.wrap { max-width: 1240px; margin: 0 auto; display: grid; gap: 40px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(26px, 4.4vw, 44px); line-height: 1.1; letter-spacing: -.01em; }
+h1 span { color: var(--orange); }
+h2 { font-size: 18px; letter-spacing: .02em; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); }
+.lede { color: var(--muted); max-width: 68ch; margin: 10px 0 0; }
+header { display: grid; gap: 6px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; font-size: 13px; color: var(--muted); align-items: center; }
+.pill { font-family: var(--font-mono); font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.m-opus { color: var(--magenta); }
+.m-sonnet { color: var(--cyan); }
+.m-haiku { color: var(--lime); }
+
+/* Dirección */
+.top { display: grid; gap: 14px; justify-items: center; }
+.boss { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; width: 100%; max-width: 760px; }
+.bosscard { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: grid; gap: 6px; }
+.bosscard.you { border-color: var(--orange); box-shadow: 0 0 0 1px rgba(255,122,26,.25), 0 10px 40px -20px rgba(255,122,26,.6); }
+.bosscard h3 { font-size: 15px; }
+.bosscard p { margin: 0; color: var(--muted); font-size: 13.5px; }
+.cmd { font-family: var(--font-mono); font-size: 12.5px; color: var(--gold); }
+.trunk { width: 2px; height: 26px; background: linear-gradient(var(--orange), var(--line)); }
+
+/* Departamentos */
+.depts { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; position: relative; padding-top: 18px; }
+.depts::before { content: ""; position: absolute; top: 0; left: 10%; right: 10%; height: 2px; background: var(--line); }
+.dept { display: grid; align-content: start; gap: 10px; position: relative; min-width: 0; }
+.dept::before { content: ""; position: absolute; top: -18px; left: 50%; width: 2px; height: 18px; background: var(--line); }
+.dhead { border-radius: 12px; padding: 12px 14px; background: var(--panel-2); border-top: 3px solid var(--c); }
+.dhead h2 { font-size: 14px; color: var(--c); }
+.dhead p { margin: 4px 0 0; font-size: 12.5px; color: var(--muted); }
+.agent { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 7px; min-width: 0; }
+.arow { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.aname { font-family: var(--font-mono); font-size: 13.5px; color: var(--fg); }
+.arole { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--c); }
+.agent p { margin: 0; font-size: 13.5px; }
+.kv { display: grid; gap: 3px; font-size: 12.5px; color: var(--muted); }
+.kv b { color: var(--fg); font-weight: 600; }
+.kv code { font-family: var(--font-mono); font-size: 11.5px; color: var(--gold); overflow-wrap: anywhere; }
+.no { font-size: 12px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 6px; }
+
+/* Flujo */
+.section { display: grid; gap: 14px; }
+.flow { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; }
+.step { flex: 0 0 auto; min-width: 128px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 2px; }
+.step .n { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+.step .who { font-family: var(--font-mono); font-size: 13px; }
+.step .what { font-size: 12px; color: var(--muted); }
+.step.gate { border-color: var(--orange); background: rgba(255,122,26,.08); }
+.step.gate .who { color: var(--orange); }
+.arrow { flex: 0 0 auto; align-self: center; color: var(--muted); font-family: var(--font-mono); }
+.loops { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.loop { border-left: 3px solid var(--magenta); background: var(--panel); border-radius: 0 10px 10px 0; padding: 10px 14px; font-size: 13.5px; }
+.loop b { font-family: var(--font-mono); font-weight: 500; color: var(--magenta); }
+
+/* Servicios comunes */
+.infra { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.svc { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: grid; gap: 6px; }
+.svc h3 { font-size: 13.5px; color: var(--cyan); }
+.svc p { margin: 0; font-size: 13px; color: var(--muted); }
+.svc code { font-family: var(--font-mono); font-size: 11.5px; color: var(--gold); }
+footer { color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--line); padding-top: 14px; }
+
+@media (max-width: 1080px) {
+  .depts { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-top: 0; }
+  .depts::before, .dept::before { display: none; }
+}
+@media (max-width: 560px) {
+  .depts { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Organigrama · paugt1107/configuracion-claude</div>
+    <h1>Estudio <span>GTA VI</span>: 12 agentes, 5 departamentos</h1>
+    <p class="lede">Una empresa de vídeos cortos para YouTube Shorts y TikTok. Cada agente tiene una sola función y cada skill un solo dueño. Nada se publica sin tu aprobación.</p>
+    <div class="legend">
+      <span>Modelo de cada agente:</span>
+      <span class="pill m-opus">opus · más calidad</span>
+      <span class="pill m-sonnet">sonnet · equilibrio</span>
+      <span class="pill m-haiku">haiku · rápido y barato</span>
+    </div>
+  </header>
+
+  <section class="top" aria-label="Dirección">
+    <div class="boss">
+      <div class="bosscard you">
+        <div class="eyebrow" style="color:var(--orange)">Dirección general</div>
+        <h3>Tú (dueño del canal)</h3>
+        <p>Graba el gameplay, aprueba el guion y aprueba la subida. Sube a TikTok y decide qué se publica.</p>
+      </div>
+      <div class="bosscard">
+        <div class="eyebrow">Jefe de producción</div>
+        <h3>Claude (sesión principal)</h3>
+        <p>Coordina el equipo en orden y se para en los dos puntos de aprobación.</p>
+        <div class="cmd">/short &lt;tema&gt; · /clip &lt;ID&gt; &lt;fuente&gt;</div>
+      </div>
+    </div>
+    <div class="trunk" aria-hidden="true"></div>
+  </section>
+
+  <section class="depts" aria-label="Departamentos">
+    <!-- Estrategia -->
+    <div class="dept" style="--c: var(--cyan)">
+      <div class="dhead"><h2>Estrategia e inteligencia</h2><p>Qué hacer, cuándo y con qué datos.</p></div>
+      <article class="agent" style="--c: var(--cyan)">
+        <div class="arow"><span class="aname">tendencias</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Investigador</div>
+        <p>Elige el ángulo del día y avisa si un vídeo hace 10 veces la mediana de su canal.</p>
+        <div class="kv"><span><b>Skills:</b> yt-viral, viral-short-form-ideas</span><span><b>Entrega:</b> <code>tendencias.md · alertas.md · trends/</code></span></div>
+        <div class="no">No escribe guiones ni hace el calendario.</div>
+      </article>
+      <article class="agent" style="--c: var(--cyan)">
+        <div class="arow"><span class="aname">estratega</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Planificador</div>
+        <p>Calendario semanal según tus horas reales. Audita el canal y propone un solo arreglo.</p>
+        <div class="kv"><span><b>Skills:</b> yt-plan, yt-audit</span><span><b>Entrega:</b> <code>plan-semanal.md</code></span></div>
+        <div class="no">No elige temas.</div>
+      </article>
+      <article class="agent" style="--c: var(--cyan)">
+        <div class="arow"><span class="aname">documentalista</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Verificador de datos</div>
+        <p>Misiones, personajes, lugares y curiosidades de GTA VI, siempre con fuente. Nunca usa filtraciones.</p>
+        <div class="kv"><span><b>Base:</b> fuentes oficiales y prensa</span><span><b>Entrega:</b> <code>gta-vi-base.md · investigacion/gta/</code></span></div>
+        <div class="no">No escribe guiones.</div>
+      </article>
+    </div>
+
+    <!-- Creativo -->
+    <div class="dept" style="--c: var(--magenta)">
+      <div class="dhead"><h2>Creativo</h2><p>La idea, las palabras y la identidad.</p></div>
+      <article class="agent" style="--c: var(--magenta)">
+        <div class="arow"><span class="aname">guionista</span><span class="pill m-opus">opus</span></div>
+        <div class="arole">Guionista jefe</div>
+        <p>Gancho en el primer fotograma, guion o comentario propio, y reescritura cuando falla la retención.</p>
+        <div class="kv"><span><b>Skills:</b> yt-script, viral-youtube-shorts, viral-tiktok-content</span><span><b>Herramienta:</b> <code>hookscore_es</code> (≥55 para producir)</span><span><b>Entrega:</b> <code>guiones/</code></span></div>
+        <div class="no">No escribe títulos ni descripciones.</div>
+      </article>
+      <article class="agent" style="--c: var(--magenta)">
+        <div class="arow"><span class="aname">director-arte</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Identidad visual</div>
+        <p>Paleta, estilo de subtítulos y gancho, mascota del canal y fichas de personaje.</p>
+        <div class="kv"><span><b>Entrega:</b> <code>personajes.md</code></span></div>
+        <div class="no">No compone escenas ni miniaturas.</div>
+      </article>
+    </div>
+
+    <!-- Producción -->
+    <div class="dept" style="--c: var(--orange)">
+      <div class="dhead"><h2>Producción</h2><p>Convierte el guion en un vídeo 1080x1920.</p></div>
+      <article class="agent" style="--c: var(--orange)">
+        <div class="arow"><span class="aname">editor</span><span class="pill m-haiku">haiku</span></div>
+        <div class="arole">Clipper</div>
+        <p>Encuentra los mejores momentos de fuentes autorizadas, prepara el trabajo de render y genera el vídeo.</p>
+        <div class="kv"><span><b>Skills:</b> yt-edit, yt-chapters, yt-shorts</span><span><b>Herramienta:</b> <code>clipfactory candidatos · render</code></span><span><b>Entrega:</b> <code>jobs/ · salida/*.mp4</code></span></div>
+        <div class="no">Sin permiso registrado, no corta nada.</div>
+      </article>
+      <article class="agent" style="--c: var(--orange)">
+        <div class="arow"><span class="aname">voz-audio</span><span class="pill m-haiku">haiku</span></div>
+        <div class="arole">Locución</div>
+        <p>Texto listo para voz, voz neuronal gratis y hoja de música y efectos.</p>
+        <div class="kv"><span><b>Herramienta:</b> <code>clipfactory voz</code></span><span><b>Entrega:</b> <code>audio/</code></span></div>
+        <div class="no">No cambia el guion aprobado.</div>
+      </article>
+      <article class="agent" style="--c: var(--orange)">
+        <div class="arow"><span class="aname">animacion</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Escenas</div>
+        <p>Escenas verticales con prompt para cada una. Ninguna se repite gracias a un registro.</p>
+        <div class="kv"><span><b>Entrega:</b> <code>*-escenas.md · escenas-usadas.json</code></span></div>
+        <div class="no">No inventa personajes.</div>
+      </article>
+    </div>
+
+    <!-- Lanzamiento -->
+    <div class="dept" style="--c: var(--gold)">
+      <div class="dhead"><h2>Lanzamiento</h2><p>Lo que ve la gente antes de pulsar.</p></div>
+      <article class="agent" style="--c: var(--gold)">
+        <div class="arow"><span class="aname">packaging</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Título y miniatura</div>
+        <p>Título y fotograma 1 como una sola pieza. Máximo 3 palabras y sin repetir el título.</p>
+        <div class="kv"><span><b>Skill:</b> yt-package (<code>title.py</code>)</span><span><b>Entrega:</b> <code>miniaturas/</code></span></div>
+        <div class="no">No escribe descripciones.</div>
+      </article>
+      <article class="agent" style="--c: var(--gold)">
+        <div class="arow"><span class="aname">studio</span><span class="pill m-haiku">haiku</span></div>
+        <div class="arole">Publicación</div>
+        <p>Descripción, etiquetas, crédito de la fuente, comentario fijado y hora de subida, para YouTube y TikTok.</p>
+        <div class="kv"><span><b>Skill:</b> yt-seo</span><span><b>Herramienta:</b> <code>clipfactory subir</code> (privado)</span><span><b>Entrega:</b> <code>publicacion-*.md</code></span></div>
+        <div class="no">No sube nada sin tu “sí”.</div>
+      </article>
+    </div>
+
+    <!-- Crecimiento -->
+    <div class="dept" style="--c: var(--lime)">
+      <div class="dhead"><h2>Crecimiento y datos</h2><p>Aprender de cada vídeo publicado.</p></div>
+      <article class="agent" style="--c: var(--lime)">
+        <div class="arow"><span class="aname">retencion</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Analista</div>
+        <p>A las 72 h lee la curva de retención y el porcentaje que no desliza (VVSA). Encuentra la fuga principal y avisa.</p>
+        <div class="kv"><span><b>Skill:</b> yt-retention (<code>retention.py</code>)</span><span><b>Entrega:</b> <code>retencion.md</code></span></div>
+        <div class="no">No reescribe guiones: avisa al guionista.</div>
+      </article>
+      <article class="agent" style="--c: var(--lime)">
+        <div class="arow"><span class="aname">comunidad</span><span class="pill m-sonnet">sonnet</span></div>
+        <div class="arole">Comentarios</div>
+        <p>Clasifica comentarios, redacta respuestas con tu voz y elige cuál fijar.</p>
+        <div class="kv"><span><b>Skill:</b> yt-comment</span><span><b>Entrega:</b> <code>ideas-comunidad.md</code></span></div>
+        <div class="no">Las respuestas las publicas tú.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Flujo de un vídeo">
+    <div>
+      <div class="eyebrow">Cadena de producción · /clip</div>
+      <h2>Cómo viaja un vídeo por la empresa</h2>
+    </div>
+    <div class="flow">
+      <div class="step"><span class="n">1</span><span class="who">fuentes</span><span class="what">¿permiso válido?</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">2</span><span class="who">editor</span><span class="what">momentos</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">3</span><span class="who">documentalista</span><span class="what">verifica datos</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">4</span><span class="who">guionista</span><span class="what">gancho y comentario</span></div><span class="arrow">→</span>
+      <div class="step gate"><span class="n">5</span><span class="who">TÚ apruebas</span><span class="what">guion</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">6</span><span class="who">voz-audio</span><span class="what">voz</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">7</span><span class="who">editor</span><span class="what">render 9:16</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">8</span><span class="who">packaging</span><span class="what">título y fotograma</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">9</span><span class="who">studio</span><span class="what">paquete</span></div><span class="arrow">→</span>
+      <div class="step gate"><span class="n">10</span><span class="who">TÚ apruebas</span><span class="what">y subes</span></div><span class="arrow">→</span>
+      <div class="step"><span class="n">+72 h</span><span class="who">retencion</span><span class="what">diagnóstico</span></div>
+    </div>
+    <div class="loops">
+      <div class="loop"><b>retencion → guionista</b><br>Si la gente se va en los 3 primeros segundos, se reescribe el gancho.</div>
+      <div class="loop"><b>retencion → packaging</b><br>Si el gancho aguanta pero nadie entra, el problema está en el título o el fotograma.</div>
+      <div class="loop"><b>comunidad → tendencias</b><br>Las preguntas repetidas en comentarios se convierten en vídeos.</div>
+      <div class="loop"><b>todos → aprendizajes.md</b><br>Cada agente lee las lecciones al empezar y añade las suyas al terminar.</div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Servicios comunes">
+    <div>
+      <div class="eyebrow">Servicios comunes</div>
+      <h2>Lo que comparte toda la empresa</h2>
+    </div>
+    <div class="infra">
+      <div class="svc"><h3>Taller: clipfactory</h3><p>Código que corta, subtitula, pone voz, renderiza, vigila tendencias y sube. 20 tests en cada push.</p><code>python3 -m clipfactory -h</code></div>
+      <div class="svc"><h3>Departamento legal</h3><p>Política de fuentes: tu grabación, tráiler oficial de 15 s como máximo, o permiso escrito. El código lo hace cumplir.</p><code>politica-fuentes.md · fuentes.yaml</code></div>
+      <div class="svc"><h3>Memoria de la empresa</h3><p>Lecciones con evidencia, registro de Shorts y alertas.</p><code>aprendizajes.md · shorts-log.md</code></div>
+      <div class="svc"><h3>Manual de estilo</h3><p>Tu voz, la estrategia de GTA VI, el banco de ganchos y la configuración.</p><code>voice.md · estrategia-gta.md · ganchos-gta.md</code></div>
+      <div class="svc"><h3>Radar automático</h3><p>GitHub Actions busca cada día a las 07:17 los vídeos que más destacan (cuando añadas la clave).</p><code>.github/workflows/radar.yml</code></div>
+    </div>
+  </section>
+
+  <footer>Archivos de cada agente: <code style="font-family:var(--font-mono)">.claude/agents/*.md</code>. Para cambiar el modelo de un agente, edita su línea <code style="font-family:var(--font-mono)">model:</code>.</footer>
+</div>
