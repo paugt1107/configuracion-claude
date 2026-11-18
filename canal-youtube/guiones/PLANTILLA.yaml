@@ -44,3 +44,11 @@ escenas:
 # personaje (recorte con brillo), dinero (bolsa + cifra), busqueda (n estrellas), split, three, timeline, bar.
 # Banderas: bandera: nz|es|mx|ar. Objetos en cualquier tarjeta:
 #   props: [{tipo: dinero|billetes|estrellas|sirena|pin|movil|coche|trofeo, x: 0-1, y: 0-1, tam: px, n: estrellas}]
+
+# FORMATO GUÍA (fase 2, ver docs/fases.md): formato: guia
+#   1 gancho con el premio  → {kind: 3d, tipo: foto, banco: deportivo, estilo: lleno} "Este coche está escondido y casi nadie lo ha visto."
+#   2 dónde                 → {kind: 3d, tipo: mapa, texto: "VICE CITY"}            "Está en el puerto de Vice City, al sur."
+#   3-5 pasos               → {kind: lista, items: ["1 · …", "2 · …", "3 · …"]}       un paso por frase, con nombres de calles/lugares
+#   6 el truco o el peligro → {kind: 3d, tipo: estrellas, n: 3} + pausa: true         "Pero ojo…" (pausa dramática automática)
+#   7 el premio             → {kind: 3d, tipo: numero, texto: "320 KM/H"}
+#   8 cierre                → "Guárdalo para cuando juegues." (los guardados empujan el vídeo)

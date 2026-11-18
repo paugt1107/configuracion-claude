@@ -15,3 +15,4 @@ Código: rutas centralizadas en `clipfactory/rutas.py`; antes de commit `ruff ch
 Pendientes del usuario: `canal-youtube/datos/pendientes.md` (revísalo al empezar y recuérdale lo que falte, en una línea).
 Trabajadores: VALENTÍN (radar, 15 min) · PEDRO (guiones, SOLO cuando el usuario lo pida: /guiones) · FERNANDA (producción) · TOMMY (imágenes sincronizadas y recortes) · IRENE (calidad). Ver README.md.
 Oficina virtual: https://claude.ai/artifact/WpekPno864dqoiPW63BjzQ (canal-youtube/docs/oficina.html). Al acabar cada tarea, actualízala: `python3 -m clipfactory.oficina <json>` y súbelo con ArtifactData set (colección oficina, doc estado).
+Fases del canal: `canal-youtube/docs/fases.md` (fase activa: 2 = guías desde el lanzamiento; 3 = mods y GTA Online).
