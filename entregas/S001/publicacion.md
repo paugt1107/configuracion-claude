@@ -24,6 +24,15 @@ Voz generada con IA.
 ¿Sabías que hay gente que juega GTA seis doce horas antes que tú? #gta6 #gtavi #gta6espanol #sabiasque #shorts
 ```
 
+## Instagram Reels (copiar)
+```
+¿Sabías que hay gente que juega GTA seis doce horas antes que tú?
+
+¿Sabías que en Nueva Zelanda juegan a GTA 6 doce horas antes que en España? Horario de desbloqueo por país, según varios medios. Comprueba siempre el contador de tu tienda PlayStat
+
+#gta6 #gtavi #gta6espanol #sabiasque #shorts #reels
+```
+
 ## Comentario fijado
 ¿Desde qué país juegas y a qué hora lo desbloqueas? 👇
 
