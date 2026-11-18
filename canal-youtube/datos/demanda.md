@@ -1,24 +1,24 @@
-# Qué busca la gente · 18-11 23:08
+# Qué busca la gente · 18-11 23:18
 
 Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente YA escribe: úsala como tema y título.
 🆕 = no salía en la pasada anterior (está subiendo).
 
 ## 🚀 En subida en Google Trends (7 días)
 
-- **a que hora sale el gta 6 en nueva zelanda** · 4300 · ES
-- **mandy gta 6** · 2500 · ES
-- **cuando sale gta 6 en nueva zelanda** · 2200 · ES
-- **rubius gta 6** · 1850 · ES
-- **hora nueva zelanda** · 1650 · ES
-- **gta 6 nueva zelanda** · 900 · ES
+- **cuando sale gta 6 en nueva zelanda** · 1950 · ES
+- **a que hora sale el gta 6 en nueva zelanda** · 1650 · ES
+- **rubius gta 6** · 1600 · ES
+- **hora nueva zelanda** · 1600 · ES
+- **sensor tower gta 6** · 1200 · ES
+- **mandy gta 6** · 1100 · ES
+- **gta 6 nueva zelanda** · 850 · ES
 - **metacritic** · 850 · ES
-- **metacritic gta 6** · 750 · ES
-- **analisis gta 6** · 650 · ES
-- **a q hora sale el gta 6** · 550 · ES
+- **gta 6 metacritic** · 800 · ES
+- **a q hora sale el gta 6** · 800 · ES
+- **gta 6 analisis** · 600 · ES
+- **a que hora se puede jugar gta 6 en españa** · 600 · ES
+- **gta 6 reviews** · 500 · ES
 - **gta 6 directo** · 500 · ES
-- **a que hora sale el gta 6 en españa** · 450 · ES
-- **gta 6 reviews** · 450 · ES
-- **sensor tower gta 6** · 450 · ES
 - **a que hora sale el gta 6** · 450 · ES
 
 ## guía (54)
@@ -26,10 +26,10 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 - **gta 6 como sera** · 67 pts ▶ `es` · 5 fuentes
 - **gta 6 como se ve** · 66 pts ▶ `es` · 5 fuentes
 - **gta 6 como comprar** · 58 pts ▶ `es` · 4 fuentes
-- **gta 6 como se juega** · 57 pts ▶ `es` · 4 fuentes
+- **gta 6 como es** · 57 pts ▶ `es` · 4 fuentes
 - **gta 6 como jugar antes** · 48 pts ▶ `es` · 3 fuentes
-- **gta 6 como es** · 47 pts ▶ `es` · 3 fuentes
-- **gta 6 como va a ser** · 43 pts ▶ `es` · 3 fuentes
+- **gta 6 como se juega** · 47 pts ▶ `es` · 3 fuentes
+- **gta 6 como va a ser** · 42 pts ▶ `es` · 3 fuentes
 - **gta 6 how to play early ps5** · 38 pts ▶ `en` · 2 fuentes
 - **gta 6 how to play early** · 37 pts ▶ `en` · 2 fuentes
 - **gta 6 how to make money** · 37 pts ▶ `en` · 2 fuentes
@@ -98,18 +98,18 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 
 ## lo mejor (28)
 
-- **gta 6 mejor consola** · 58 pts ▶ `es` · 4 fuentes
-- **gta 6 mejor en ps5** · 57 pts ▶ `es` · 4 fuentes
+- **gta 6 mejor consola** · 57 pts ▶ `es` · 4 fuentes
+- **gta 6 mejor en ps5** · 56 pts ▶ `es` · 4 fuentes
 - **gta 6 best settings** · 38 pts ▶ `en` · 2 fuentes
 - **gta 6 cual es mejor** · 32 pts ▶ `es` · 2 fuentes
 - **gta 6 se juega mejor en ps5** · 31 pts ▶ `es` · 2 fuentes
 - **gta 6 mejor precio** · 30 pts   `es` · 2 fuentes
 - **gta 6 cual version es mejor** · 30 pts ▶ `es` · 2 fuentes
 - **gta 6 mejor version** · 29 pts   `es` · 2 fuentes
-- **gta 6 cual edicion es mejor** · 29 pts ▶ `es` · 2 fuentes
 - **gta 6 best start** · 27 pts ▶ `en` · 1 fuentes
 - **gta 6 best settings xbox** · 26 pts ▶ `en` · 1 fuentes
 - **gta 6 best guns** · 25 pts ▶ `en` · 1 fuentes
+- **gta 6 mejor en ps5 o xbox** · 24 pts   `es` · 2 fuentes
 
 ## historia (49)
 
@@ -132,11 +132,11 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 - **gta 6 jason** · 58 pts ▶ `es` · 4 fuentes
 - **gta 6 jason actor** · 56 pts ▶ `es` · 4 fuentes
 - **gta 6 lucia bikini** · 54 pts ▶ `es` · 4 fuentes
-- **gta 6 jason voice actor** · 42 pts ▶ `es` · 3 fuentes
+- **gta 6 jason y lucia** · 47 pts ▶ `es` · 3 fuentes
 - **gta 6 jason and mandy** · 38 pts ▶ `es` · 2 fuentes
 - **gta 6 lucia gameplay** · 37 pts ▶ `es` · 2 fuentes
+- **gta 6 jason shower** · 35 pts ▶ `es` · 2 fuentes
 - **gta 6 jason leak** · 33 pts ▶ `es` · 2 fuentes
-- **gta 6 jason voice** · 32 pts ▶ `es` · 2 fuentes
 - **gta 6 lucia mods** · 30 pts ▶ `es` · 2 fuentes
 - **gta 6 lucia y jason** · 29 pts   `es` · 2 fuentes
 - **gta 6 lucia filtracion** · 29 pts   `es` · 2 fuentes
@@ -156,7 +156,7 @@ Autocompletado de Google y YouTube (ES, MX, US). Cada frase es algo que la gente
 - **gta 6 online vivo** · 27 pts ▶ `es` · 1 fuentes
 - **gta 6 online tendra crossplay** · 26 pts   `es` · 2 fuentes
 
-## mods (22)
+## mods (23)
 
 - **gta 6 mods** · 58 pts ▶ `es` · 4 fuentes
 - **gta 6 car mods** · 51 pts ▶ `es` · 4 fuentes
