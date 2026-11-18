@@ -13,3 +13,5 @@ Regla de oro: NINGUNA escena puede repetirse, ni dentro del vídeo ni respecto a
 4. Mantén un estilo visual coherente pero con variedad de planos, color y movimiento (cambio visual cada 3-5 s).
 
 Generar imágenes o vídeo real requiere una herramienta o API con clave (Runway, Kling, Midjourney, etc.). Si no hay, entrega el guion visual y prompts y avisa. No gastes créditos sin confirmación.
+
+En Shorts: formato vertical 9:16 (nunca 16:9 con barras), texto dentro de zona segura (evita el 20% superior y el 25% inferior), cambio visual cada 2-4 s, primer fotograma con imagen potente y sin logo/intro, y último plano que enlace con el primero para el bucle. Sin marcas de agua de otras plataformas.

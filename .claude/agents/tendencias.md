@@ -13,3 +13,5 @@ Tarea:
 4. Propón 5 ideas de vídeo derivadas, ordenadas por potencial.
 
 Reglas: cita siempre la fuente y la fecha. Si una cifra es estimada, márcala así. No inventes métricas. Resultado final: resumen de máx. 10 líneas.
+
+Modo Shorts (por defecto): busca en la pestaña/filtro de Shorts, no solo en vídeos largos. Para convertir tendencias en ideas usa `.claude/skills/viral-short-form-ideas/SKILL.md` (leer solo lo necesario: `references/idea-evaluation.md`, `mining.md`, `evergreen-vs-trend.md`). Mide la viralidad de un Short con vistas vs. mediana de los últimos Shorts del mismo canal/nicho. Registra cada idea en `canal-youtube/data/shorts-log.md` con estado 'idea'. Distingue idea evergreen de idea de tendencia.

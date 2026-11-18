@@ -1,9 +1,14 @@
 # Configuración del canal (editable)
-- Nicho activo: (lo decide el agente `tendencias`; ver data/tendencias.md)
+- Formato principal: YouTube Shorts, vertical 9:16, 30-45 s (máx. 60 s salvo que la historia lo pida)
+- Nicho activo: lo decide `tendencias` (ver data/tendencias.md)
 - Idioma del canal: español
-- Alarma de viral: un vídeo con >= 10x las vistas de la mediana del nicho (últimos 30 vídeos comparables)
-- Gancho: máx. 12 palabras, impacto visual + verbal en el primer segundo
-- Alerta de retención: abandono >= 25% antes del segundo 3 (o caída fuerte en los primeros 30 s)
-- Miniaturas por vídeo: 10 variantes, se elige 1
-- Privacidad de subida por defecto: private (hasta que el usuario apruebe)
+- Cadencia: 1 Short al día (cambiar aquí). Calidad > cantidad; nada de contenido repetitivo en masa
+- Alarma de viral: Short con >= 10x las vistas de la mediana de su nicho (últimos 30 Shorts comparables)
+- Gancho: máx. 12 palabras, impacto visual + verbal en el fotograma 1; sin saludo, logo ni intro
+- Retención: objetivo VVSA >= 70%; alerta si VVSA < 60% o si retención seg. 0-3 < 80%; revisar a las 72 h
+- Bucle: el final debe encajar con el principio
+- Embudo: todo Short con vídeo largo relacionado enlaza a él (llamada en vídeo + comentario fijado)
+- Audio: original; evitar música con licencia
+- Miniaturas: 3 variantes para Shorts, 10 para vídeos largos
+- Privacidad de subida por defecto: private/programado hasta aprobación del usuario
 - Zona horaria de publicación: Europe/Madrid

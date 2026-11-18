@@ -1,21 +1,21 @@
-# Oficina virtual del canal de YouTube
+# Oficina virtual — sistema de Shorts virales
 
-| # | Agente | Qué hace | Entrada → Salida |
-|---|--------|----------|------------------|
-| 1 | tendencias | Elige el nicho con más tendencia; alarma si un vídeo hace 10x la mediana | web → data/tendencias.md, alertas.md |
-| 2 | guionista | Guion con gancho en el 1er segundo; reescribe con feedback | tendencias + retención → guiones/ |
-| 3 | voz-audio | Narración lista para TTS + música/efectos | guion → audio/ |
-| 4 | animacion | Escenas visuales, ninguna repetida | guion → escenas + registro |
-| 5 | miniaturas | 10 versiones, puntúa y elige | guion → miniaturas/ |
-| 6 | studio | Título, descripción y subida a la hora pico | todo → publicación |
-| 7 | retencion | Detecta abandono (seg. 3) y avisa al guionista | analytics → retencion.md |
+Ciclo: `/short <tema>` (o `/short` solo) → tendencias → guionista → [aprobación] → voz-audio → animacion → miniaturas → studio → [aprobación] → subir.
+72 h después: "usa el agente retencion sobre el Short X" → si hay fallo, reabre al guionista.
 
-## Cómo se usa
-Dile a Claude: "Ejecuta un ciclo del canal" o llama a un agente: "usa el agente tendencias".
-Ciclo: 1→2→3→4→5→6, y 7 después de publicar; 7 reabre el 2.
+| Agente | Función | Skills que usa |
+|---|---|---|
+| tendencias | Nicho en auge, alarma 10x, ideas | viral-short-form-ideas |
+| guionista | Guion + gancho en el fotograma 1, reescribe con feedback | viral-youtube-shorts, viral-hooks |
+| voz-audio | Narración TTS, música libre, bucle | viral-youtube-shorts (monetización) |
+| animacion | Escenas 9:16, sin repetir ninguna | registro escenas-usadas.json |
+| miniaturas | Mejor fotograma 1 (Shorts) / 10 variantes (largos) | — |
+| studio | Título, descripción, puente a vídeo largo, programación | shorts-to-longform-bridge |
+| retencion | VVSA y curva; avisa al guionista | shorts-retention |
 
-## Qué necesita tu aprobación o claves (nada se hace solo)
-- **YouTube Data/Analytics API** (OAuth del canal): para subir y leer retención.
-- **TTS** (voz) y **generador de imagen/vídeo**: servicios de pago con clave API.
-- Sin esas claves, cada agente entrega el material listo para hacerlo a mano. Las claves se piden de forma segura, nunca por chat.
-- Las subidas son siempre privadas/programadas hasta que tú lo apruebes.
+Archivos: `config.md` (umbrales), `data/shorts-log.md` (registro y aprendizaje), `data/alertas.md`, `data/retencion.md`.
+
+## Necesita claves o tu aprobación
+- YouTube Data/Analytics API (OAuth): subir y leer retención. Sin ella, `studio` y `retencion` trabajan con paquetes/CSV manuales.
+- Voz (TTS) y generador de imagen/vídeo: servicios de pago con clave.
+- Subidas siempre privadas/programadas hasta que apruebes. Nadie promete viralidad: se mide, se aprende y se repite lo que funciona.

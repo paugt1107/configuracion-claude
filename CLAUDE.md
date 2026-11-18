@@ -7,5 +7,5 @@
 # Oficina del canal de YouTube
 Proyecto en `canal-youtube/`. Equipo = subagentes en `.claude/agents/`.
 Lee `canal-youtube/README.md` solo cuando trabajes en el canal.
-Flujo: tendencias → guionista → voz-audio → animacion → miniaturas → studio → retencion → (vuelta al guionista).
+Formato: YouTube Shorts. Comando principal: `/short <tema>`. Flujo: tendencias → guionista → voz-audio → animacion → miniaturas → studio → retencion → (vuelta al guionista).
 Config y umbrales: `canal-youtube/config.md`. Los agentes se comunican por archivos en `canal-youtube/data/`.
