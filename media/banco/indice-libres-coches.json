@@ -1,0 +1,674 @@
+{
+ "lb-00aabeafb9": {
+  "archivo": "libres/coches/ferrari-testarossa-6.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa IAA 2019 JM 0957.jpg — Johannes Maximilian — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_IAA_2019_JM_0957.jpg",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
+ "lb-00f7192f01": {
+  "archivo": "libres/coches/ferrari-testarossa-ov2.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa (MOD) — ER0L — CC BY 2.0 — https://www.flickr.com/photos/61030174@N03/22788811371",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-01cecdb816": {
+  "archivo": "libres/coches/chevrolet-corvette-ov3.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "1960 Chevrolet Corvette — Hugo-90 — CC BY 2.0 — https://www.flickr.com/photos/32109282@N00/4139829768",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 717,
+  "w": 1024
+ },
+ "lb-040f5f0a9e": {
+  "archivo": "libres/coches/lamborghini-countach-4.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach LPI 800-4 IMG 8034.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LPI_800-4_IMG_8034.jpg",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 1278,
+  "w": 1920
+ },
+ "lb-0e02fdcaf0": {
+  "archivo": "libres/coches/lamborghini-huracan-ov5.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Alfa Romeo Giulia Quadrifoglio Carabinieri & Lamborghini Huracan Polizia & Ford Mustang Polizei — crash71100 — CC0 1.0 — https://www.flickr.com/photos/152930510@N02/32611655817",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 589,
+  "w": 1024
+ },
+ "lb-11492a0a2e": {
+  "archivo": "libres/coches/ferrari-testarossa-4.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa-20190419.jpg — JoachimKohler-HB — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa-20190419.jpg",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 1080,
+  "w": 1920
+ },
+ "lb-1718af2471": {
+  "archivo": "libres/coches/lamborghini-countach-ov4.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach, Diablo SV and Murciélago — exfordy — CC BY 2.0 — https://www.flickr.com/photos/32659528@N00/2557314710",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 571,
+  "w": 1023
+ },
+ "lb-1bece2a897": {
+  "archivo": "libres/coches/lamborghini-countach-3.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach, BAS 24, Brussels (P1170237-RR).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach,_BAS_24,_Brussels_(P1170237-RR).jpg",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
+ "lb-21daa0114c": {
+  "archivo": "libres/coches/lamborghini-huracan-ov2.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan — Benoit cars — CC BY-SA 2.0 — https://www.flickr.com/photos/67847534@N03/15328034899",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 697,
+  "w": 1024
+ },
+ "lb-45fea10cfc": {
+  "archivo": "libres/coches/lamborghini-huracan-1.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan Performante, IAA 2017, Frankfurt (1Y7A2827).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan_Performante,_IAA_2017,_Frankfurt_(1Y7A2827).jpg",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
+ "lb-485a102bc7": {
+  "archivo": "libres/coches/ferrari-testarossa-ov6.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa, Jersey — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/9266764188",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 554,
+  "w": 1023
+ },
+ "lb-48c41752eb": {
+  "archivo": "libres/coches/ferrari-testarossa-ov1.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "1986 Ferrari Testarossa — aldenjewell — CC BY 2.0 — https://www.flickr.com/photos/31411679@N08/33561376418",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 780,
+  "w": 1024
+ },
+ "lb-4ac3c9d9ca": {
+  "archivo": "libres/coches/chevrolet-corvette-2.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Auberge Du Tresor.jpg — Wilfredor — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Auberge_Du_Tresor.jpg",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 1027,
+  "w": 1920
+ },
+ "lb-4c7bad61e6": {
+  "archivo": "libres/coches/ferrari-testarossa-ov4.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa (MOD) — ER0L — CC BY 2.0 — https://www.flickr.com/photos/61030174@N03/22788786781",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 796,
+  "w": 1024
+ },
+ "lb-572f08ae0f": {
+  "archivo": "libres/coches/lamborghini-huracan-ov6.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan — Benoit cars — CC BY-SA 2.0 — https://www.flickr.com/photos/67847534@N03/17640581108",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-59a8dcd2e9": {
+  "archivo": "libres/coches/lamborghini-huracan-ov4.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan — Benoit cars — CC BY-SA 2.0 — https://www.flickr.com/photos/67847534@N03/18503486581",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-5a73ae1dbe": {
+  "archivo": "libres/coches/lamborghini-huracan-6.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Салоники, Lamborghini Huracan 2015 возле Grand Hotel Palace (2).jpg — Nikolai Bulykin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%BB%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8,_Lamborghini_Huracan_2015_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_Grand_Hotel_Palace_(2).jpg",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 1080,
+  "w": 1920
+ },
+ "lb-5ee63ccd0d": {
+  "archivo": "libres/coches/chevrolet-corvette-ov6.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "1961 Chevrolet Corvette — aldenjewell — CC BY 2.0 — https://www.flickr.com/photos/31411679@N08/51297359149",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 616,
+  "w": 1023
+ },
+ "lb-5f2393eb5d": {
+  "archivo": "libres/coches/chevrolet-corvette-ov5.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "24 Hours of Le Mans 2011 - Race - Chevrolet Corvette C6-ZR1 #74 — bibendum84 — CC BY-SA 2.0 — https://www.flickr.com/photos/14246531@N04/5834058428",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 576,
+  "w": 1023
+ },
+ "lb-6434db3081": {
+  "archivo": "libres/coches/lamborghini-countach-ov1.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach, Diablo SV and Murciélago — exfordy — CC BY 2.0 — https://www.flickr.com/photos/32659528@N00/2556493273",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 639,
+  "w": 1024
+ },
+ "lb-65feab0ea8": {
+  "archivo": "libres/coches/ferrari-testarossa-3.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa-20190419-2.jpg — JoachimKohler-HB — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa-20190419-2.jpg",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 1200,
+  "w": 1920
+ },
+ "lb-6cec70858b": {
+  "archivo": "libres/coches/chevrolet-corvette-1.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Chevrolet Corvette C1, Bj. 1962, Cockpit.JPG — Lothar Spurzem — CC BY-SA 2.0 de — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C1,_Bj._1962,_Cockpit.JPG",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
+ "lb-6cee8efeee": {
+  "archivo": "libres/coches/lamborghini-countach-ov6.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach — allenthepostman — CC BY-SA 2.0 — https://www.flickr.com/photos/28448204@N00/1904189666",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 685,
+  "w": 1023
+ },
+ "lb-6e60049795": {
+  "archivo": "libres/coches/lamborghini-huracan-3.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracán Tecnica 1X7A7432.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_Tecnica_1X7A7432.jpg",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 912,
+  "w": 1920
+ },
+ "lb-716c4034f5": {
+  "archivo": "libres/coches/ferrari-testarossa-ov3.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa, Jersey — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/9263984267",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 734,
+  "w": 1024
+ },
+ "lb-7235f5f6ff": {
+  "archivo": "libres/coches/ferrari-testarossa-ov5.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa (MOD) - Minifig scale — ER0L — CC BY 2.0 — https://www.flickr.com/photos/61030174@N03/22381625227",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-732966a5ae": {
+  "archivo": "libres/coches/lamborghini-huracan-ov1.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan — Yes, This Is Mine! — CC BY-SA 2.0 — https://www.flickr.com/photos/123927290@N04/14451697668",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-7a68bd8e61": {
+  "archivo": "libres/coches/lamborghini-countach-1.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach LP 5000S 1983.jpg — Palauenc05 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_5000S_1983.jpg",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 1016,
+  "w": 1920
+ },
+ "lb-865e82220f": {
+  "archivo": "libres/coches/lamborghini-countach-2.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach LPI 800-4 IMG 8019.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LPI_800-4_IMG_8019.jpg",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 869,
+  "w": 1920
+ },
+ "lb-8dd6d728dd": {
+  "archivo": "libres/coches/lamborghini-huracan-2.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracán Tecnica 1X7A7430.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Hurac%C3%A1n_Tecnica_1X7A7430.jpg",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 814,
+  "w": 1920
+ },
+ "lb-97ed5fb7f1": {
+  "archivo": "libres/coches/lamborghini-huracan-ov3.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan Polizia Police — crash71100 — CC0 1.0 — https://www.flickr.com/photos/152930510@N02/47742402012",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 643,
+  "w": 1024
+ },
+ "lb-985ae881b2": {
+  "archivo": "libres/coches/lamborghini-countach-6.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach LPI 800-4 IMG 8009.jpg — Alexander-93 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LPI_800-4_IMG_8009.jpg",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 1089,
+  "w": 1920
+ },
+ "lb-9a45286ddd": {
+  "archivo": "libres/coches/lamborghini-countach-5.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach LP500S IMG 4464.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP500S_IMG_4464.jpg",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 817,
+  "w": 1920
+ },
+ "lb-b1ac5234b9": {
+  "archivo": "libres/coches/chevrolet-corvette-ov4.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "1970 Chevrolet Corvette Stingray Convertible V8 — Rutger van der Maar — CC BY 2.0 — https://www.flickr.com/photos/83468718@N06/52602331525",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 724,
+  "w": 1024
+ },
+ "lb-b23f11dbc9": {
+  "archivo": "libres/coches/ferrari-testarossa-1.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa 01.jpg — TTTNIS — Public domain — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_01.jpg",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 880,
+  "w": 1920
+ },
+ "lb-b2b23972b0": {
+  "archivo": "libres/coches/lamborghini-huracan-4.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan, EMS 2024, Essen (P1032274).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan,_EMS_2024,_Essen_(P1032274).jpg",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 1440,
+  "w": 1920
+ },
+ "lb-b3f2b31692": {
+  "archivo": "libres/coches/chevrolet-corvette-ov2.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Old/new Chevrolet Corvette rear — dave_7 — CC BY 2.0 — https://www.flickr.com/photos/21612624@N00/15123956336",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 576,
+  "w": 1024
+ },
+ "lb-b540ef38e8": {
+  "archivo": "libres/coches/chevrolet-corvette-6.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Chevrolet Corvette C3 Stingray IMG 3199.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C3_Stingray_IMG_3199.jpg",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 1276,
+  "w": 1920
+ },
+ "lb-bbbd9d325a": {
+  "archivo": "libres/coches/chevrolet-corvette-4.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Chevrolet Corvette, Bj. 1963 (2017-06-11 Sp).JPG — Lothar Spurzem — CC BY-SA 2.0 de — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette,_Bj._1963_(2017-06-11_Sp).JPG",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
+ "lb-bfac89b8d8": {
+  "archivo": "libres/coches/lamborghini-countach-ov3.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "1988 Lamborghini Countach 5000QV, federal spec — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/11919400493",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 562,
+  "w": 1024
+ },
+ "lb-cf3901c20c": {
+  "archivo": "libres/coches/chevrolet-corvette-3.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Chevrolet Corvette, BAS 24, Brussels (P1170425-RR).jpg — Matti Blume — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette,_BAS_24,_Brussels_(P1170425-RR).jpg",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1920
+ },
+ "lb-d258718d87": {
+  "archivo": "libres/coches/chevrolet-corvette-ov1.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Old/New Chevrolet Corvette — dave_7 — CC BY 2.0 — https://www.flickr.com/photos/21612624@N00/14955217369",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 576,
+  "w": 1024
+ },
+ "lb-d3cd5d7b6a": {
+  "archivo": "libres/coches/lamborghini-huracan-5.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Huracan",
+  "credito": "Lamborghini Huracan STO 1X7A0297.jpg — Alexander Migl — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan_STO_1X7A0297.jpg",
+  "etiquetas": [
+   "coches",
+   "huracan",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 945,
+  "w": 1920
+ },
+ "lb-dd19f38816": {
+  "archivo": "libres/coches/lamborghini-countach-ov5.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach interior — vetaturfumare - thanks for 4 MILLION views!!! — CC BY-SA 2.0 — https://www.flickr.com/photos/10047629@N04/9279572324",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 685,
+  "w": 1024
+ },
+ "lb-f136e1864c": {
+  "archivo": "libres/coches/ferrari-testarossa-2.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa Toulouse.jpg — Handelsgeselschaft — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_Toulouse.jpg",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 1440,
+  "w": 1920
+ },
+ "lb-f62824a720": {
+  "archivo": "libres/coches/lamborghini-countach-ov2.jpg",
+  "categoria": "coches",
+  "consulta": "Lamborghini Countach",
+  "credito": "Lamborghini Countach — contri — CC BY-SA 2.0 — https://www.flickr.com/photos/8179007@N02/8014529631",
+  "etiquetas": [
+   "coches",
+   "countach",
+   "lamborghini"
+  ],
+  "fuente": "libre",
+  "h": 680,
+  "w": 1024
+ },
+ "lb-f73b177702": {
+  "archivo": "libres/coches/ferrari-testarossa-5.jpg",
+  "categoria": "coches",
+  "consulta": "Ferrari Testarossa",
+  "credito": "Ferrari Testarossa 2.jpg — Calreyn88 — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_2.jpg",
+  "etiquetas": [
+   "coches",
+   "ferrari",
+   "testarossa"
+  ],
+  "fuente": "libre",
+  "h": 1158,
+  "w": 1920
+ },
+ "lb-fd57149596": {
+  "archivo": "libres/coches/chevrolet-corvette-5.jpg",
+  "categoria": "coches",
+  "consulta": "Chevrolet Corvette",
+  "credito": "Chevrolet Corvette Kulmbach -20220626-RM-122539.jpg — Ermell — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_Kulmbach_-20220626-RM-122539.jpg",
+  "etiquetas": [
+   "chevrolet",
+   "coches",
+   "corvette"
+  ],
+  "fuente": "libre",
+  "h": 1079,
+  "w": 1920
+ }
+}
