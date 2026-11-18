@@ -44,6 +44,34 @@
   "h": 683,
   "w": 1024
  },
+ "lb-208d57e03e": {
+  "archivo": "libres/ambiente/hurricane-florida-ov6.jpg",
+  "categoria": "ambiente",
+  "consulta": "Hurricane Florida",
+  "credito": "Hurricane Irma 2017 09 08 — anttilipponen — CC BY 2.0 — https://www.flickr.com/photos/150411108@N06/36967049551",
+  "etiquetas": [
+   "ambiente",
+   "florida",
+   "hurricane"
+  ],
+  "fuente": "libre",
+  "h": 599,
+  "w": 1024
+ },
+ "lb-22354f4432": {
+  "archivo": "libres/ambiente/hurricane-florida-ov3.jpg",
+  "categoria": "ambiente",
+  "consulta": "Hurricane Florida",
+  "credito": "091617 DryTortugas NP — Eastern Incident Management Team — Dominio público 1.0 — https://www.flickr.com/photos/152181634@N06/36434399814",
+  "etiquetas": [
+   "ambiente",
+   "florida",
+   "hurricane"
+  ],
+  "fuente": "libre",
+  "h": 756,
+  "w": 1008
+ },
  "lb-2ee581fdb7": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov1.jpg",
   "categoria": "ambiente",
@@ -57,6 +85,20 @@
   ],
   "fuente": "libre",
   "h": 862,
+  "w": 1024
+ },
+ "lb-420fd39876": {
+  "archivo": "libres/ambiente/hurricane-florida-ov5.jpg",
+  "categoria": "ambiente",
+  "consulta": "Hurricane Florida",
+  "credito": "GRIP Experiment 2010 — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4898977898",
+  "etiquetas": [
+   "ambiente",
+   "florida",
+   "hurricane"
+  ],
+  "fuente": "libre",
+  "h": 797,
   "w": 1024
  },
  "lb-516ce66520": {
@@ -179,6 +221,20 @@
   "h": 769,
   "w": 1024
  },
+ "lb-7abeebc7ce": {
+  "archivo": "libres/ambiente/hurricane-florida-ov4.jpg",
+  "categoria": "ambiente",
+  "consulta": "Hurricane Florida",
+  "credito": "GOES-13 Sees New Tropical Storm Bonnie Raining on South Florida — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4820683377",
+  "etiquetas": [
+   "ambiente",
+   "florida",
+   "hurricane"
+  ],
+  "fuente": "libre",
+  "h": 726,
+  "w": 1023
+ },
  "lb-9624dbc534": {
   "archivo": "libres/ambiente/neon-lights-night-city-6.jpg",
   "categoria": "ambiente",
@@ -238,6 +294,34 @@
   "fuente": "libre",
   "h": 1280,
   "w": 1920
+ },
+ "lb-be00d8f6bc": {
+  "archivo": "libres/ambiente/hurricane-florida-ov1.jpg",
+  "categoria": "ambiente",
+  "consulta": "Hurricane Florida",
+  "credito": "Hurricane Irma 2017 09 08 version 2 — anttilipponen — CC BY 2.0 — https://www.flickr.com/photos/150411108@N06/36949383822",
+  "etiquetas": [
+   "ambiente",
+   "florida",
+   "hurricane"
+  ],
+  "fuente": "libre",
+  "h": 568,
+  "w": 1024
+ },
+ "lb-c4531988a2": {
+  "archivo": "libres/ambiente/hurricane-florida-ov2.jpg",
+  "categoria": "ambiente",
+  "consulta": "Hurricane Florida",
+  "credito": "Hurricane Katrina August 28, 2005 — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4923512256",
+  "etiquetas": [
+   "ambiente",
+   "florida",
+   "hurricane"
+  ],
+  "fuente": "libre",
+  "h": 877,
+  "w": 1024
  },
  "lb-c9b570692d": {
   "archivo": "libres/ambiente/neon-lights-night-city-3.jpg",
