@@ -56,10 +56,9 @@ jobs:
           key: musica-${{ hashFiles('clipfactory/musica.py') }}
       - name: Producir
         run: |
-          mkdir -p entregas/_logs
+          mkdir -p /tmp/logs
           set -o pipefail
           {
-            if [ ! -d entregas/voces ]; then python3 -m clipfactory voces --salida entregas/voces; fi
             JOBS=""
             if [ -n "${{ github.event.inputs.job }}" ]; then
               JOBS="canal-youtube/guiones/${{ github.event.inputs.job }}.yaml"
@@ -73,7 +72,7 @@ jobs:
             for j in $(echo $JOBS | tr ' ' '\n' | sort -u); do
               if [ -f "$j" ]; then python3 -m clipfactory producir "$j" --proveedor "${{ github.event.inputs.proveedor || 'auto' }}" || echo "FALLO en $j (sigo con el resto)"; fi
             done
-          } 2>&1 | tee entregas/_logs/produccion.log
+          } 2>&1 | tee /tmp/logs/produccion.log
       - name: Calendario de publicación (reparte los vídeos APTO desde el próximo jueves)
         if: always()
         run: python3 -m clipfactory.calendario || true

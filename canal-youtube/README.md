@@ -15,13 +15,13 @@
 | Escribir un guion nuevo | `guiones/PLANTILLA.yaml` |
 | Datos verificados de GTA VI | `investigacion/gta-vi-base.md` |
 
-## Equipo (13 agentes, una función cada uno)
+## Equipo (5 trabajadores)
 | Departamento | Agentes |
 |---|---|
-| Estrategia e inteligencia | tendencias, estratega, documentalista |
-| Creativo | guionista, director-arte |
-| Producción | editor (clipper), voz-audio (locución IA), sonido, animacion |
-| Lanzamiento | packaging (títulos y portadas), studio (publicación) |
-| Crecimiento | retencion, comunidad |
+| Radar y datos | **Valentín** (`valentin`) |
+| Guiones, títulos, calendario | **Pedro** (`pedro`) |
+| Producción (voz, sonido, 3D, montaje) | **Fernanda** (`fernanda`) |
+| Imágenes y marca | **Tommy** (`tommy`) · banco en pausa |
+| Calidad, publicación, retención, comentarios | **Irene** (`irene`) |
 
-Detalle de cada agente: `.claude/agents/<nombre>.md`. Comandos: `/short <tema>` (Short original) y `/clip <ID> <fuente>` (clip de tu grabación).
+Detalle de cada agente: `.claude/agents/<nombre>.md`. Comandos: `/canal N` (todo), `/guiones N` y `/clip <ID> <fuente>`.

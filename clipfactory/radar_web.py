@@ -251,6 +251,8 @@ def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = Non
         )
     with open(day, "a", encoding="utf-8") as fh:
         for i in new:
+            if i["potencial"] < 3:  # el archivo del día solo guarda lo que tiene potencial (antes crecía ~3,5 MB/día)
+                continue
             title = i["title"].replace("|", "/")[:140]
             fh.write(
                 f"| {stamp} | {'★' * min(i['potencial'], 5) or '·'} | {i['lang']} | {i['categoria']} | [{title}]({i['url']}) | {i['source']} |\n"
@@ -269,6 +271,11 @@ def update(items: list[dict], out_dir: Path = OUT, now: dt.datetime | None = Non
         with open(hp, "a", encoding="utf-8") as fh:
             for i in hist:
                 fh.write(f"| {now:%d-%m %H:%M} | {i['lang']} | [{i['title'].replace('|', '/')[:140]}]({i['url']}) | {i['source']} |\n")
+        lineas = hp.read_text(encoding="utf-8").splitlines()
+        if len(lineas) > 205:  # solo los 200 titulares más recientes (lo que se lee tiene que ser corto)
+            hp.write_text("\n".join(lineas[:5] + lineas[-200:]) + "\n", encoding="utf-8")
+    for viejo in sorted(out_dir.glob("20??-??-??.md"))[:-2]:  # solo hoy y ayer
+        viejo.unlink()
     if not new:  # sin novedades: se conserva la lista anterior
         return new
     top = new[:25]

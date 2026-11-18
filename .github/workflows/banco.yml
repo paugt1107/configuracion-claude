@@ -8,11 +8,9 @@ on:
       maximo:
         description: "Máximo de imágenes nuevas por fuente"
         default: "1000"
-  push:
-    branches: [main]
-    paths: ["canal-youtube/fuentes/banco.yaml", "clipfactory/banco/**"]
-  schedule:
-    - cron: "17 4 * * *"   # una vez al día: recoge lo nuevo que publique Rockstar
+  # EN PAUSA (standby por decisión del dueño): para reactivar, quita el # de las dos líneas siguientes
+  # schedule:
+  #   - cron: "17 4 * * *"
 permissions:
   contents: write
   actions: write
