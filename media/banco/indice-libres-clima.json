@@ -29,6 +29,32 @@
   "h": 768,
   "w": 1024
  },
+ "lb-125f9c0726": {
+  "archivo": "libres/clima/tornado-ov1.jpg",
+  "categoria": "clima",
+  "consulta": "Tornado",
+  "credito": "Tornado - RIAT 2006 — Airwolfhound — CC BY-SA 2.0 — https://www.flickr.com/photos/24874528@N04/2493045598",
+  "etiquetas": [
+   "clima",
+   "tornado"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-15ca0f4d47": {
+  "archivo": "libres/clima/tornado-ov6.jpg",
+  "categoria": "clima",
+  "consulta": "Tornado",
+  "credito": "Tornado - RIAT 2011 — Airwolfhound — CC BY-SA 2.0 — https://www.flickr.com/photos/24874528@N04/10841351143",
+  "etiquetas": [
+   "clima",
+   "tornado"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
  "lb-295a983abf": {
   "archivo": "libres/clima/lightning-storm-night-ov1.jpg",
   "categoria": "clima",
@@ -72,6 +98,19 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "w": 1024
+ },
+ "lb-3750e2d414": {
+  "archivo": "libres/clima/tornado-ov3.jpg",
+  "categoria": "clima",
+  "consulta": "Tornado",
+  "credito": "Tornado Track near Sturbridge, Massachusetts — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/5805753622",
+  "etiquetas": [
+   "clima",
+   "tornado"
+  ],
+  "fuente": "libre",
+  "h": 397,
   "w": 1024
  },
  "lb-4278eed1af": {
@@ -134,6 +173,32 @@
   "h": 1201,
   "w": 1920
  },
+ "lb-a4d0fce775": {
+  "archivo": "libres/clima/tornado-ov4.jpg",
+  "categoria": "clima",
+  "consulta": "Tornado",
+  "credito": "Tornado Weather — mccun934 — CC BY 2.0 — https://www.flickr.com/photos/51035597937@N01/5262033742",
+  "etiquetas": [
+   "clima",
+   "tornado"
+  ],
+  "fuente": "libre",
+  "h": 678,
+  "w": 1024
+ },
+ "lb-ac7e7ec820": {
+  "archivo": "libres/clima/tornado-ov5.jpg",
+  "categoria": "clima",
+  "consulta": "Tornado",
+  "credito": "Tornado - RIAT 2011 — Airwolfhound — CC BY-SA 2.0 — https://www.flickr.com/photos/24874528@N04/6660728439",
+  "etiquetas": [
+   "clima",
+   "tornado"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
  "lb-cba9570872": {
   "archivo": "libres/clima/lightning-storm-night-1.jpg",
   "categoria": "clima",
@@ -163,6 +228,19 @@
   "fuente": "libre",
   "h": 1269,
   "w": 1920
+ },
+ "lb-e9aca9d992": {
+  "archivo": "libres/clima/tornado-ov2.jpg",
+  "categoria": "clima",
+  "consulta": "Tornado",
+  "credito": "Record Breaking Tornadoes — GDS Infographics — CC BY 2.0 — https://www.flickr.com/photos/43157614@N06/4554359577",
+  "etiquetas": [
+   "clima",
+   "tornado"
+  ],
+  "fuente": "libre",
+  "h": 639,
+  "w": 1024
  },
  "lb-f52cd10010": {
   "archivo": "libres/clima/lightning-storm-night-6.jpg",
