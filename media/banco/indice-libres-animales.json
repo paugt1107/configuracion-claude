@@ -1,4 +1,34 @@
 {
+ "lb-0dd34ba022": {
+  "archivo": "libres/animales/german-shepherd-police-dog-1.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Police dog, belgian shepherd.jpg — Biodiversity Heritage Library — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Police_dog,_belgian_shepherd.jpg",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 1291,
+  "w": 1920
+ },
+ "lb-18fe1a9421": {
+  "archivo": "libres/animales/pit-bull-dog-ov5.jpg",
+  "categoria": "animales",
+  "consulta": "Pit bull dog",
+  "credito": "Pit bull dog drawing, animal — None — CC0 1.0 — https://www.rawpixel.com/image/6436855/image-public-domain-black-illustrations",
+  "etiquetas": [
+   "animales",
+   "bull",
+   "dog",
+   "pit"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 1024
+ },
  "lb-1952576d1e": {
   "archivo": "libres/animales/dog-portrait-ov3.jpg",
   "categoria": "animales",
@@ -13,6 +43,21 @@
   "h": 874,
   "w": 1000
  },
+ "lb-197dbf0a50": {
+  "archivo": "libres/animales/pit-bull-dog-ov6.jpg",
+  "categoria": "animales",
+  "consulta": "Pit bull dog",
+  "credito": "Pit bull dog drawing, animal — None — CC0 1.0 — https://www.rawpixel.com/image/6436963/vector-sticker-public-domain-black",
+  "etiquetas": [
+   "animales",
+   "bull",
+   "dog",
+   "pit"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 1024
+ },
  "lb-1a43e89782": {
   "archivo": "libres/animales/dog-portrait-ov1.jpg",
   "categoria": "animales",
@@ -26,6 +71,51 @@
   "fuente": "libre",
   "h": 682,
   "w": 1023
+ },
+ "lb-2d94adc9b2": {
+  "archivo": "libres/animales/german-shepherd-police-dog-2.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "German police dog used to trace bootleggers LCCN2016891965.jpg — Harris &amp; Ewing, photographer — Public domain — https://commons.wikimedia.org/wiki/File:German_police_dog_used_to_trace_bootleggers_LCCN2016891965.jpg",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 2479,
+  "w": 1920
+ },
+ "lb-34e99f86e3": {
+  "archivo": "libres/animales/german-shepherd-police-dog-ov2.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "German Shepherd -- 2011 — Ron Cogswell — CC BY 2.0 — https://www.flickr.com/photos/22711505@N05/6083332153",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 986,
+  "w": 1024
+ },
+ "lb-37e107838f": {
+  "archivo": "libres/animales/german-shepherd-police-dog-ov6.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Guard dog outside — localpups — CC BY 2.0 — https://www.flickr.com/photos/133374862@N02/20474454906",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 680,
+  "w": 1024
  },
  "lb-4116a049bc": {
   "archivo": "libres/animales/dog-portrait-ov2.jpg",
@@ -55,6 +145,111 @@
   "h": 898,
   "w": 1024
  },
+ "lb-6d800c8135": {
+  "archivo": "libres/animales/german-shepherd-police-dog-3.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Police Dog at Toronto Open House 03.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_03.jpg",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 1440,
+  "w": 1920
+ },
+ "lb-733da8766e": {
+  "archivo": "libres/animales/pit-bull-dog-ov3.jpg",
+  "categoria": "animales",
+  "consulta": "Pit bull dog",
+  "credito": "Pit Bull Dog with Halloween Decorations — Found Animals — CC BY-SA 2.0 — https://www.flickr.com/photos/61545668@N08/8557041541",
+  "etiquetas": [
+   "animales",
+   "bull",
+   "dog",
+   "pit"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-811e8d6947": {
+  "archivo": "libres/animales/german-shepherd-police-dog-ov5.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "'Semper Fi', sculpter Patsy Davis — Ferlinka Borzoi (Deb West) — CC BY 2.0 — https://www.flickr.com/photos/62631588@N00/6145169775",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-8310084855": {
+  "archivo": "libres/animales/german-shepherd-police-dog-6.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Police Dog at Toronto Open House 01.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_01.jpg",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 2560,
+  "w": 1920
+ },
+ "lb-894c259f34": {
+  "archivo": "libres/animales/german-shepherd-police-dog-ov1.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "German Shepherd, police dog — usdhs — CC0 1.0 — https://www.rawpixel.com/image/10995751/german-shepherd-police-dog",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-9999fb7b77": {
+  "archivo": "libres/animales/german-shepherd-police-dog-4.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Police Dog at Toronto Open House 04.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_04.jpg",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 1440,
+  "w": 1920
+ },
+ "lb-a0c6fd4fbc": {
+  "archivo": "libres/animales/pit-bull-dog-ov4.jpg",
+  "categoria": "animales",
+  "consulta": "Pit bull dog",
+  "credito": "Halloween Pit Bull Dog — Found Animals — CC BY-SA 2.0 — https://www.flickr.com/photos/61545668@N08/8558150566",
+  "etiquetas": [
+   "animales",
+   "bull",
+   "dog",
+   "pit"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
  "lb-a600b4134a": {
   "archivo": "libres/animales/dog-portrait-ov5.jpg",
   "categoria": "animales",
@@ -68,6 +263,81 @@
   "fuente": "libre",
   "h": 754,
   "w": 1000
+ },
+ "lb-caa9ed7a53": {
+  "archivo": "libres/animales/pit-bull-dog-ov2.jpg",
+  "categoria": "animales",
+  "consulta": "Pit bull dog",
+  "credito": "Happy St. Patrick's Day, Pit Bull Dog — Beverly & Pack — CC BY 2.0 — https://www.flickr.com/photos/10101046@N06/4433368233",
+  "etiquetas": [
+   "animales",
+   "bull",
+   "dog",
+   "pit"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 1024
+ },
+ "lb-cd8dd7ba67": {
+  "archivo": "libres/animales/german-shepherd-police-dog-ov3.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Shacco — Kyler Barrett — CC BY 2.0 — https://www.flickr.com/photos/60122625@N07/7648063248",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 680,
+  "w": 1024
+ },
+ "lb-daa284dfec": {
+  "archivo": "libres/animales/pit-bull-dog-ov1.jpg",
+  "categoria": "animales",
+  "consulta": "Pit bull dog",
+  "credito": "Breed Specific Legislation, BSL, kills innocent bully breeds, aka Pit Bull dogs — Beverly & Pack — CC BY 2.0 — https://www.flickr.com/photos/10101046@N06/12878984974",
+  "etiquetas": [
+   "animales",
+   "bull",
+   "dog",
+   "pit"
+  ],
+  "fuente": "libre",
+  "h": 713,
+  "w": 1024
+ },
+ "lb-eb4029121f": {
+  "archivo": "libres/animales/german-shepherd-police-dog-ov4.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Hattie 8 months old — Richard Elzey — CC BY 2.0 — https://www.flickr.com/photos/54602205@N00/29197062920",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-ed25804402": {
+  "archivo": "libres/animales/german-shepherd-police-dog-5.jpg",
+  "categoria": "animales",
+  "consulta": "German shepherd police dog",
+  "credito": "Police Dog at Toronto Open House 06.jpg — PvOberstein — CC0 — https://commons.wikimedia.org/wiki/File:Police_Dog_at_Toronto_Open_House_06.jpg",
+  "etiquetas": [
+   "animales",
+   "german",
+   "police",
+   "shepherd"
+  ],
+  "fuente": "libre",
+  "h": 1440,
+  "w": 1920
  },
  "lb-faefe62058": {
   "archivo": "libres/animales/dog-portrait-ov6.jpg",
