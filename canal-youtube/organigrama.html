@@ -112,7 +112,7 @@ footer { color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--lin
 <div class="wrap">
   <header>
     <div class="eyebrow">Organigrama · paugt1107/configuracion-claude</div>
-    <h1>Estudio <span>GTA VI</span>: 12 agentes, 5 departamentos</h1>
+    <h1>Estudio <span>GTA VI</span>: 13 agentes, 5 departamentos</h1>
     <p class="lede">Una empresa de vídeos cortos para YouTube Shorts y TikTok. Cada agente tiene una sola función y cada skill un solo dueño. Nada se publica sin tu aprobación.</p>
     <div class="legend">
       <span>Modelo de cada agente:</span>
@@ -197,10 +197,17 @@ footer { color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--lin
       </article>
       <article class="agent" style="--c: var(--orange)">
         <div class="arow"><span class="aname">voz-audio</span><span class="pill m-haiku">haiku</span></div>
-        <div class="arole">Locución</div>
-        <p>Texto listo para voz, voz neuronal gratis y hoja de música y efectos.</p>
-        <div class="kv"><span><b>Herramienta:</b> <code>clipfactory voz</code></span><span><b>Entrega:</b> <code>audio/</code></span></div>
+        <div class="arole">Locución IA</div>
+        <p>Voz de IA frase a frase, con más energía en el gancho. Tú no grabas nada: la genera GitHub Actions.</p>
+        <div class="kv"><span><b>Herramienta:</b> <code>clipfactory narrar</code> (ElevenLabs › OpenAI › gratis)</span><span><b>Entrega:</b> <code>entregas/&lt;ID&gt;/</code></span></div>
         <div class="no">No cambia el guion aprobado.</div>
+      </article>
+      <article class="agent" style="--c: var(--orange)">
+        <div class="arow"><span class="aname">sonido</span><span class="pill m-haiku">haiku</span></div>
+        <div class="arole">Diseño sonoro</div>
+        <p>Impacto en el gancho, whoosh en cada cambio de escena, música de fondo sin derechos y mezcla final a -14 LUFS.</p>
+        <div class="kv"><span><b>Herramienta:</b> <code>clipfactory sfx</code></span></div>
+        <div class="no">No hace la locución.</div>
       </article>
       <article class="agent" style="--c: var(--orange)">
         <div class="arow"><span class="aname">animacion</span><span class="pill m-sonnet">sonnet</span></div>
