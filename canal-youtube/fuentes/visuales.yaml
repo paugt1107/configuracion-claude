@@ -11,3 +11,4 @@ extra:
   - {patron: "\\bflorida\\b", visual: {libre: "Florida Everglades airboat"}}
   - {patron: "\\beverglades\\b", visual: {libre: "Everglades alligator"}}
   - {patron: "\\bcayos\\b|florida keys", visual: {libre: "Florida Keys Overseas Highway"}}
+  - {patron: "\\bcarcel\\b|\\bprision\\b|\\bcrimen\\b", visual: {prop: sirena}}

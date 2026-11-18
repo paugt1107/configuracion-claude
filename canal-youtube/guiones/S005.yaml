@@ -1,0 +1,43 @@
+id: S005
+formato: sabias-que
+titulos:
+  - "GTA 6: el significado oculto de Lucía y Jason"
+  - "GTA 6: Lucía y Jason no se llaman así por casualidad"
+  - "GTA 6: lo que significan los nombres de Lucía y Jason"
+portada:
+  texto: "LUZ Y SANAR"
+  kind: personaje
+  recorte: media/recortes/lucia.png
+  nombre: LUCÍA
+descripcion: "Lucía viene del latín 'lux' (luz) y Jason del griego, asociado a 'sanar'. Apellidos oficiales según Rockstar: Caminos y Duval. La relación con la historia es teoría de fans, no confirmada."
+fuentes:
+  - "Rockstar Games — fichas oficiales de Jason Duval y Lucia Caminos (web de GTA VI, mayo de 2025)"
+  - "Red Bull Gaming — Jason Duval en GTA 6: Lucía del latín lux, Jason del griego iaomai, 'sanar' (2025)"
+  - "GAMINGbible — Fans destapan el significado 'sutil' de los nombres de Jason y Lucía (nov-2026)"
+  - "Etimología de Caminos (español) y Duval (francés, 'del valle'): diccionarios de apellidos (estimado)"
+comentario: "¿Casualidad o Rockstar lo pensó todo? 👇"
+hashtags: ["#lucia", "#jason", "#vicecity"]
+musica: true
+escenas:
+  - texto: "¿Sabías que Lucía y Jason esconden un mensaje oculto en sus nombres? Nunca lo vas a oír igual."
+    tarjeta: {kind: personaje, recorte: media/recortes/lucia.png, nombre: "LUCÍA + JASON", titulo: "¿SABÍAS QUE…?", ty: 380, color: magenta}
+  - texto: "Lucía viene del latín lux, que significa luz."
+    tarjeta: {kind: dato, grande: "LUX", titulo: "LUCÍA = LUZ", ty: 520, sub: "del latín", color: gold}
+  - texto: "Y Jason viene del griego, de una palabra asociada a sanar."
+    tarjeta: {kind: dato, grande: "SANAR", titulo: "JASON", ty: 520, sub: "del griego iaomai", color: cyan}
+  - texto: "Luz y sanar, para una pareja metida en el crimen en Vice City."
+    tarjeta: {kind: split, reloj: "LUZ", sub: "LUCÍA", reloj2: "SANAR", sub2: "JASON", color: orange, titulo: "EL CONTRASTE", ty: 330}
+  - texto: "Pero los apellidos también hablan."
+    tarjeta: {kind: dato, grande: "OJO", titulo: "LOS APELLIDOS", ty: 520, color: magenta, props: [{tipo: pin, x: 0.5, y: 0.3, tam: 220}]}
+  - texto: "Lucía Caminos: en español, alguien que siempre está en movimiento."
+    tarjeta: {kind: dato, grande: "CAMINOS", titulo: "LUCÍA CAMINOS", ty: 520, sub: "apellido oficial", color: gold}
+  - texto: "Jason Duval: un apellido francés que significa del valle."
+    tarjeta: {kind: dato, grande: "DUVAL", titulo: "JASON DUVAL", ty: 520, sub: "'del valle' en francés", color: cyan}
+  - texto: "Ella sale de la cárcel buscando una vida mejor; él quiere dejar de trabajar para otros."
+    tarjeta: {kind: busqueda, n: 3, titulo: "SEGÚN ROCKSTAR", ty: 380, sub: "fichas oficiales de 2025", color: orange, props: [{tipo: sirena, x: 0.5, y: 0.25, tam: 200}]}
+  - texto: "Rockstar no ha confirmado que sea a propósito: es una teoría de los fans."
+    tarjeta: {kind: dato, grande: "¿TEORÍA?", titulo: "SIN CONFIRMAR", ty: 520, color: magenta}
+  - texto: "Pero en un juego con chistes en cada cartel, ¿casualidad?"
+    tarjeta: {kind: lista, items: ["Carteles con chiste", "Marcas inventadas", "Nombres con mensaje"], titulo: "ESTILO ROCKSTAR", ty: 450, color: gold}
+  - texto: "¿Casualidad o Rockstar lo pensó todo? Te leo en comentarios."
+    tarjeta: {kind: split, reloj: "SÍ", sub: "A PROPÓSITO", reloj2: "NO", sub2: "CASUALIDAD", color: orange, titulo: "¿TÚ QUÉ CREES?", ty: 330}
