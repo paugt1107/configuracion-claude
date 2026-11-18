@@ -1,0 +1,5 @@
+# Cómo debe SONAR cada palabra en la voz IA (los subtítulos mantienen la grafía original).
+# Añade aquí cualquier nombre que la IA pronuncie mal (una palabra → una palabra).
+palabras:
+  Jason: Yeison
+  Rockstar: Rocstar

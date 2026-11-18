@@ -5,7 +5,7 @@ Marca con [x] cuando lo hagas. Claude revisa esta lista al empezar cada sesión.
 - [ ] **Crear canal de YouTube aparte** (cuenta de marca) y subir `entregas/marca/banner-youtube-2560x1440.png` y `avatar-800x800.png`. Guía: `canal-youtube/docs/crear-canales.md`.
 - [ ] **Crear TikTok e Instagram** con el mismo nombre y avatar.
 - [ ] **Capturas del juego** (desde el 19-nov 00:00) en `media/capturas/`.
-- [ ] **Imágenes oficiales de Lucía y Jason** en `media/oficial/` (se recortan solas).
+- [ ] **Imágenes oficiales** en `media/oficial/` con estos nombres: `lucia-jason.jpg` (la foto de los dos en el coche que me enseñaste), `lucia.jpg`, `jason.jpg`, `rockstar-logo.png` (logo con fondo transparente). GitHub app → repo → media/oficial → Add file → Upload (fotos). Se usan solas en los vídeos.
 - [ ] **Revisar y publicar S001** (`entregas/S001/`).
 - [ ] (Opcional) `YOUTUBE_API_KEY` en Secrets para el radar de vídeos que superan 10x su canal.
 - [ ] **Minutos de GitHub Actions:** el repo es privado (≈2.000 min/mes gratis). Valentín cada 15 min + producción puede pasarse. Elige: (a) Settings → Billing → poner método de pago y límite de gasto, o (b) hacer el repo público (minutos ilimitados; se vería tu estrategia). Si no, Valentín se parará a final de mes.

@@ -37,6 +37,7 @@ def _ffmpeg_stats(video: str) -> dict:
 
 
 def comprobar(video: str | Path, spec: dict, lines: list[str], overlays: list[dict]) -> list[tuple[bool, str]]:
+    n3d = sum(1 for e in spec.get("escenas") or [] if (e.get("tarjeta") or {}).get("kind") == "3d")
     video = str(video)
     w, h = media.video_size(video)
     dur = media.duration(video)
@@ -52,7 +53,7 @@ def comprobar(video: str | Path, spec: dict, lines: list[str], overlays: list[di
         (st["silencios"] == 0, f"Sin silencios largos ({st['silencios']})"),
         (hook["veredicto"] >= 55, f"Gancho ≥ 55 ({hook['veredicto']} {hook['banda']})"),
         (90 <= words <= 140, f"Guion 90-140 palabras ({words})"),
-        (len(overlays) >= max(2, int(dur // 10)), f"Imágenes al nombrar cosas ≥ 1 cada 10 s ({len(overlays)})"),
+        (len(overlays) + n3d >= max(2, int(dur // 10)), f"Imágenes al nombrar cosas o escenas 3D ≥ 1 cada 10 s ({len(overlays)} + {n3d} 3D)"),
         (len(spec.get("titulos", [])) >= 3, f"3 títulos propuestos ({len(spec.get('titulos', []))})"),
         (bool(spec.get("portada")), "Portada definida"),
         (bool(spec.get("fuentes")), "Fuentes citadas"),

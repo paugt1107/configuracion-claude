@@ -179,6 +179,41 @@ def produce(lines: list[str], out_dir: str | Path, provider: str = "auto", lead:
     raise RuntimeError("Ningún proveedor de voz funcionó: " + " | ".join(errors))
 
 
+def _pronunciacion() -> dict[str, str]:
+    from . import rutas
+
+    p = rutas.FUENTES / "pronunciacion.yaml"
+    if not p.exists():
+        return {}
+    import yaml
+
+    return {str(k): str(v) for k, v in (yaml.safe_load(p.read_text(encoding="utf-8")) or {}).get("palabras", {}).items()}
+
+
+def pronunciar(text: str, tabla: dict[str, str] | None = None) -> str:
+    """Cambia palabras por cómo deben SONAR (Jason → Yeison). Los subtítulos siguen con la grafía original."""
+    import re
+
+    for orig, dicho in (tabla if tabla is not None else _pronunciacion()).items():
+        text = re.sub(rf"(?<!\w){re.escape(orig)}(?!\w)", dicho, text, flags=re.I)
+    return text
+
+
+def restaurar(words: list[dict], tabla: dict[str, str] | None = None) -> list[dict]:
+    """Vuelve a poner la grafía original en las palabras con tiempos (para los subtítulos)."""
+    import re
+
+    tabla = tabla if tabla is not None else _pronunciacion()
+    out = []
+    for w in words:
+        txt = w["text"]
+        for orig, dicho in tabla.items():
+            if " " not in dicho:
+                txt = re.sub(rf"(?<!\w){re.escape(dicho)}(?!\w)", orig, txt, flags=re.I)
+        out.append({**w, "text": txt})
+    return out
+
+
 def _produce(lines: list[str], out_dir: str | Path, provider: str, lead: float) -> dict:
     """Devuelve {"audio": wav postproducido, "words": [...], "lines": [{"text","start","end"}], "provider": str}."""
     out_dir = Path(out_dir)
@@ -207,7 +242,9 @@ def _produce(lines: list[str], out_dir: str | Path, provider: str, lead: float) 
         parts.append(sil)
         for i, (text, style) in enumerate(zip(lines, styles)):
             raw = tmp / f"l{i:02d}.mp3"
-            ws = synth_line(provider, text, style, raw)
+            ws = synth_line(provider, pronunciar(text), style, raw)
+            if ws:
+                ws = restaurar(ws)
             wav = tmp / f"l{i:02d}.wav"
             gap = GAP[style]
             # recorta silencios del principio/fin de cada frase y añade la pausa deseada

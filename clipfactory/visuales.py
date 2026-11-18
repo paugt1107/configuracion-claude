@@ -43,13 +43,14 @@ DEFAULTS: list[tuple[str, dict]] = [
     (r"\bpc\b|\bordenador\b", {"chip": "PC", "color": "white"}),
     (r"\bfps\b|\bfotogramas\b|imagenes por segundo", {"chip": "FPS", "color": "orange"}),
     (r"\bprocesador\b|\bcpu\b", {"chip": "CPU", "color": "magenta"}),
-    (r"\brockstar\b", {"chip": "ROCKSTAR", "color": "gold"}),
+    (r"\brockstar\b", {"imagen": "media/oficial/rockstar-logo.png", "alt": {"libre": "Rockstar Games logo", "alt": {"chip": "ROCKSTAR", "color": "gold"}}}),
     (r"\bred dead\b", {"chip": "RED DEAD 2", "color": "magenta"}),
     (r"\bgta (cuatro|4|iv)\b", {"chip": "GTA IV", "color": "white"}),
     (r"\bgta (cinco|5|v)\b", {"chip": "GTA V", "color": "white"}),
     (r"new york times|\bperiodico\b|\bentrevista\b", {"chip": "PRENSA", "color": "white"}),
     (r"\btrailer\b", {"chip": "TRÁILER", "color": "magenta"}),
     (r"\bcomentarios?\b|\bcomenta\b", {"chip": "COMENTA", "color": "orange"}),
+    (r"\bluz\b|\bilumina|\bbrilla", {"prop": "bombilla"}),
     (r"\blucia\b", {"recorte": "media/recortes/lucia.png", "alt": {"prop": "estrellas", "n": 2}}),
     (r"\bjason\b", {"recorte": "media/recortes/jason.png", "alt": {"prop": "estrellas", "n": 2}}),
 ]
@@ -125,8 +126,15 @@ def _render(vis: dict, creditos: list[str]) -> Image.Image | None:
             k = 620 / fig.height
             return fig.resize((int(fig.width * k), 620), Image.LANCZOS)
         vis = vis.get("alt") or {}
-    if "imagen" in vis and Path(vis["imagen"]).exists():
-        return _marco(Image.open(vis["imagen"]))
+    if "imagen" in vis:
+        if Path(vis["imagen"]).exists():
+            im = Image.open(vis["imagen"])
+            if im.mode in ("RGBA", "LA", "P") and vis["imagen"].endswith(".png"):  # logo con transparencia: sin marco
+                im = im.convert("RGBA")
+                im.thumbnail((620, 420))
+                return im
+            return _marco(im)
+        vis = vis.get("alt") or {}
     if "libre" in vis:
         try:
             from . import libres
@@ -137,7 +145,7 @@ def _render(vis: dict, creditos: list[str]) -> Image.Image | None:
         if r:
             creditos.append(r[1])
             return _marco(Image.open(r[0]))
-        return None
+        return _render(vis["alt"], creditos) if vis.get("alt") else None
     if "chip" in vis:
         acc = motion.COLORS.get(vis.get("color", "orange"), motion.ORANGE)
         f = motion._font(120)

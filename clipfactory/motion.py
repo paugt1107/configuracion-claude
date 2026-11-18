@@ -374,6 +374,16 @@ def build(
         lst = []
         for i, sc in enumerate(scenes):
             png, clip = tmp / f"s{i:02d}.png", tmp / f"s{i:02d}.mp4"
+            if sc.get("kind") == "3d":
+                from . import escena3d
+
+                try:
+                    escena3d.clip(sc, float(sc["dur"]), clip)
+                    lst.append(f"file '{clip}'")
+                    continue
+                except Exception as e:  # sin navegador o fallo de WebGL: tarjeta plana equivalente
+                    print(f"[3d] escena {i} en plano ({e})")
+                    sc = {**escena3d.plana(sc), "dur": sc["dur"]}
             card(sc).save(png)
             _clip(png, float(sc["dur"]), clip, i)
             lst.append(f"file '{clip}'")

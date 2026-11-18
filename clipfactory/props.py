@@ -1,7 +1,7 @@
 """Objetos gráficos originales de "estilo GTA" dibujados por código (sin material de Rockstar).
 
 Tipos: dinero (bolsa con $), billetes (fajos), estrellas (nivel de búsqueda), sirena, pin (mapa), movil, coche, trofeo,
-reloj (horas/tiempo), mando (consola), nota (calificación).
+reloj (horas/tiempo), mando (consola), nota (calificación), bombilla (luz/idea).
 Uso en una tarjeta del guion:  props: [{tipo: dinero, x: 0.8, y: 0.3, tam: 260}, {tipo: estrellas, n: 4, y: 0.25}]
 """
 
@@ -114,6 +114,15 @@ def draw(tipo: str, tam: int = 240, n: int = 3) -> Image.Image:
         d.rounded_rectangle([s * 0.1, s * 0.1, s * 0.9, s * 0.9], s // 10, fill=GREEN, outline=WHITE, width=s // 30)
         for i in range(5):
             _star(d, s * (0.22 + i * 0.14), s * 0.5, s * 0.07, GOLD)
+    elif tipo == "bombilla":
+        for i in range(5):
+            a = math.pi * (1.1 + i * 0.2)
+            d.line([(s / 2 + s * 0.36 * math.cos(a), s * 0.4 + s * 0.36 * math.sin(a)), (s / 2 + s * 0.47 * math.cos(a), s * 0.4 + s * 0.47 * math.sin(a))], fill=GOLD, width=s // 28)
+        d.ellipse([s * 0.24, s * 0.14, s * 0.76, s * 0.66], fill=GOLD)
+        d.polygon([(s * 0.36, s * 0.58), (s * 0.64, s * 0.58), (s * 0.6, s * 0.76), (s * 0.4, s * 0.76)], fill=GOLD)
+        d.polygon([(s * 0.52, s * 0.24), (s * 0.4, s * 0.44), (s * 0.5, s * 0.44), (s * 0.46, s * 0.6), (s * 0.6, s * 0.38), (s * 0.5, s * 0.38)], fill=(255, 236, 190))
+        for k in range(3):
+            d.rounded_rectangle([s * (0.4 + k * 0.02), s * (0.79 + k * 0.06), s * (0.6 - k * 0.02), s * (0.83 + k * 0.06)], s // 60, fill=(200, 200, 205))
     else:
         raise ValueError(f"Objeto desconocido: {tipo}")
     return im.resize((w // k, s // k), Image.LANCZOS)

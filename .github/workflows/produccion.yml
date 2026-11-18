@@ -24,6 +24,8 @@ on:
       - "clipfactory/visuales.py"
       - "clipfactory/props.py"
       - "clipfactory/calidad.py"
+      - "clipfactory/escena3d.py"
+      - "clipfactory/escena3d/**"
 permissions:
   contents: write
 concurrency:
@@ -51,6 +53,13 @@ jobs:
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
           sudo apt-get install -y -qq fonts-inter || true
           pip install -q -e ".[voz]"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Motor 3D (three.js + Chromium)
+        run: |
+          npm install -g playwright@1.63.0
+          npx -y playwright@1.63.0 install --with-deps chromium
       - name: Producir
         run: |
           mkdir -p entregas/_logs

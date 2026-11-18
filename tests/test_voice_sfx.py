@@ -29,3 +29,12 @@ def test_provider_chain_fallbacks(monkeypatch):
     monkeypatch.delenv("ELEVENLABS_API_KEY")
     assert voice.provider_chain("auto") == ["edge"]
     assert voice.provider_chain("tono") == ["tono"]
+
+
+def test_pronunciacion_jason_suena_yeison_pero_se_lee_jason():
+    from clipfactory import voice
+
+    tabla = {"Jason": "Yeison"}
+    assert voice.pronunciar("Lucía y Jason, ¿Jason?", tabla) == "Lucía y Yeison, ¿Yeison?"
+    ws = voice.restaurar([{"text": "Yeison,", "start": 0, "end": 1}], tabla)
+    assert ws[0]["text"] == "Jason,"

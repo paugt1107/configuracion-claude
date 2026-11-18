@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>escena 3D</title>
+<style>
+  @font-face { font-family: Inter; src: url("vendor/Inter-Black.otf"); font-weight: 900; }
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #05060a; }
+  #bg { position: absolute; inset: 0; }
+  #rays { position: absolute; left: 50%; top: -10%; width: 900px; height: 1500px; transform: translateX(-50%);
+          background: repeating-linear-gradient(90deg, rgba(255,255,255,.0) 0 14px, rgba(255,255,255,.10) 14px 18px);
+          -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.6) 45%, transparent 85%);
+          filter: blur(3px); mix-blend-mode: screen; }
+  canvas { position: absolute; inset: 0; }
+  #vig { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, transparent 45%, rgba(0,0,0,.75) 100%); }
+  .txt { position: absolute; left: 60px; right: 60px; text-align: center; font-family: Inter, sans-serif; font-weight: 900;
+         color: #fff; letter-spacing: 1px; line-height: 1.02; }
+  #titulo { top: 230px; font-size: 92px; }
+  #sub { top: 370px; font-size: 50px; color: #e9ecf5; }
+  .chip { display: inline-block; padding: 10px 30px; border-radius: 22px; background: rgba(10,12,20,.72); }
+</style>
+<script type="importmap">{"imports": {"three": "./vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<div id="bg"></div><div id="rays"></div>
+<div id="vig"></div>
+<div class="txt" id="titulo"></div>
+<div class="txt" id="sub"></div>
+<script type="module" src="escena.js"></script>
+</body>
+</html>

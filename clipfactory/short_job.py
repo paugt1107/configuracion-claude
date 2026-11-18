@@ -98,6 +98,9 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
     cues = [(0.0, "impacto")] + [(s - 0.12, "whoosh") for s in starts[1:]] + [(starts[-1], "impacto")]
     mixed = sfx.mix(v["audio"], cues, work / "mezcla.wav", music=spec.get("musica", True))
     plan = visuales.planificar(visuales.detectar(v["words"])) if spec.get("imagenes_auto", True) else []
+    # en las escenas 3D manda la animación: sin pegatinas encima (menos ruido en pantalla)
+    zonas3d = [(starts[i], starts[i] + sc["dur"]) for i, sc in enumerate(scenes) if sc.get("kind") == "3d"]
+    plan = [p for p in plan if not any(a <= p["t"] < b for a, b in zonas3d)]
     overlays, creditos_libres = visuales.preparar(plan, work / "pops")
     video = motion.build(scenes, v["words"], out_dir / f"{sid}-final.mp4", str(mixed), premixed=True, overlays=overlays)
     if creditos_libres:
