@@ -128,6 +128,21 @@
   "h": 680,
   "w": 1023
  },
+ "lb-45d5761618": {
+  "archivo": "libres/clima/hurricane-satellite-image-ov5.jpg",
+  "categoria": "clima",
+  "consulta": "Hurricane satellite image",
+  "credito": "NASA-NOAA's Suomi NPP Satellite Captures Night-time Look at Cyclone Felleng — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/8433747542",
+  "etiquetas": [
+   "clima",
+   "hurricane",
+   "image",
+   "satellite"
+  ],
+  "fuente": "libre",
+  "h": 708,
+  "w": 1024
+ },
  "lb-728f297211": {
   "archivo": "libres/clima/lightning-storm-night-ov6.jpg",
   "categoria": "clima",
@@ -141,6 +156,21 @@
   ],
   "fuente": "libre",
   "h": 572,
+  "w": 1024
+ },
+ "lb-9463efaa85": {
+  "archivo": "libres/clima/hurricane-satellite-image-ov4.jpg",
+  "categoria": "clima",
+  "consulta": "Hurricane satellite image",
+  "credito": "Hurricane Matthew Hits Haiti — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/30024169472",
+  "etiquetas": [
+   "clima",
+   "hurricane",
+   "image",
+   "satellite"
+  ],
+  "fuente": "libre",
+  "h": 683,
   "w": 1024
  },
  "lb-979bfbc579": {
@@ -186,6 +216,21 @@
   "h": 678,
   "w": 1024
  },
+ "lb-aa804c16d4": {
+  "archivo": "libres/clima/hurricane-satellite-image-ov3.jpg",
+  "categoria": "clima",
+  "consulta": "Hurricane satellite image",
+  "credito": "NASA Satellite Captures Hurricane Danielle, Hurricane Earl and Developing Tropical Depression 8 — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4945288550",
+  "etiquetas": [
+   "clima",
+   "hurricane",
+   "image",
+   "satellite"
+  ],
+  "fuente": "libre",
+  "h": 775,
+  "w": 1023
+ },
  "lb-ac7e7ec820": {
   "archivo": "libres/clima/tornado-ov5.jpg",
   "categoria": "clima",
@@ -198,6 +243,21 @@
   "fuente": "libre",
   "h": 683,
   "w": 1024
+ },
+ "lb-b1f51caf12": {
+  "archivo": "libres/clima/hurricane-satellite-image-ov6.jpg",
+  "categoria": "clima",
+  "consulta": "Hurricane satellite image",
+  "credito": "NASA Sees Irma Strengthen to a Category 5 Hurricane — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/36653336600",
+  "etiquetas": [
+   "clima",
+   "hurricane",
+   "image",
+   "satellite"
+  ],
+  "fuente": "libre",
+  "h": 639,
+  "w": 1023
  },
  "lb-cba9570872": {
   "archivo": "libres/clima/lightning-storm-night-1.jpg",
@@ -214,6 +274,21 @@
   "h": 1080,
   "w": 1920
  },
+ "lb-e3238c8fdb": {
+  "archivo": "libres/clima/hurricane-satellite-image-ov2.jpg",
+  "categoria": "clima",
+  "consulta": "Hurricane satellite image",
+  "credito": "Hurricane Irma 2017 09 08 version 2 — anttilipponen — CC BY 2.0 — https://www.flickr.com/photos/150411108@N06/36949383822",
+  "etiquetas": [
+   "clima",
+   "hurricane",
+   "image",
+   "satellite"
+  ],
+  "fuente": "libre",
+  "h": 568,
+  "w": 1024
+ },
  "lb-e8037ba08e": {
   "archivo": "libres/clima/lightning-storm-night-2.jpg",
   "categoria": "clima",
@@ -228,6 +303,21 @@
   "fuente": "libre",
   "h": 1269,
   "w": 1920
+ },
+ "lb-e90a057549": {
+  "archivo": "libres/clima/hurricane-satellite-image-ov1.jpg",
+  "categoria": "clima",
+  "consulta": "Hurricane satellite image",
+  "credito": "NASA's Aqua Satellite Captures Hurricane Danielle — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4931591817",
+  "etiquetas": [
+   "clima",
+   "hurricane",
+   "image",
+   "satellite"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
  },
  "lb-e9aca9d992": {
   "archivo": "libres/clima/tornado-ov2.jpg",
