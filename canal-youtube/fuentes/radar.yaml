@@ -1,0 +1,19 @@
+# Qué vigila el radar (cada 30 min en GitHub Actions). Edita libremente.
+# OJO: solo se recogen títulos y enlaces para investigar. Para usar imágenes o clips de alguien hace falta su permiso.
+google_news:
+  - GTA 6
+  - GTA 6 misión
+  - GTA 6 secreto
+  - GTA 6 easter egg
+  - GTA 6 Lucia Jason
+  - GTA 6 truco
+filtro_youtube: "gta"
+youtube_canales:   # handle de YouTube (con @). El id se rellena solo la primera vez.
+  - handle: "@RockstarGames"
+  - handle: "@DjMaRiiO"
+  - handle: "@TheGrefg"
+  - handle: "@Willyrex"
+  - handle: "@vegetta777"
+reddit:
+  - GTA6
+  - GTA

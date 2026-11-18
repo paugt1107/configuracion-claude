@@ -52,3 +52,6 @@ A las 72 h: exporta la retención (Studio → vídeo → Analítica → Interacc
 3. Voz: gratis por defecto (es-ES-AlvaroNeural). Escúchalas en `entregas/voces/` y fija la tuya en GitHub → Settings → Secrets and variables → Actions → Variables → `TTS_VOICE`.
 4. Más calidad (opcional): secreto `OPENAI_API_KEY` (≈1,5 céntimos/min, voz dirigible por instrucciones) o `ELEVENLABS_API_KEY` (+ variable `ELEVENLABS_VOICE_ID`). Se usa sola la mejor disponible.
 5. Relanzar a mano: GitHub → Actions → produccion → Run workflow.
+
+## Radar cada 30 minutos (automático)
+GitHub Actions `radar-web` recoge noticias, vídeos de canales vigilados y posts de Reddit sobre GTA VI (solo títulos y enlaces) y actualiza `canal-youtube/data/radar/ultimo.md` (top 15 con más potencial) y el acumulado del día. Canales y búsquedas: `canal-youtube/fuentes/radar.yaml`.
