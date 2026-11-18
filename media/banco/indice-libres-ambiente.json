@@ -161,6 +161,21 @@
   "h": 1277,
   "w": 1920
  },
+ "lb-60b57afc3b": {
+  "archivo": "libres/ambiente/helicopter-city-night-ov6.jpg",
+  "categoria": "ambiente",
+  "consulta": "Helicopter city night",
+  "credito": "RAF Tornado GR4 in Afghanistan — Defence Images — CC BY-SA 2.0 — https://www.flickr.com/photos/48399297@N04/8670953317",
+  "etiquetas": [
+   "ambiente",
+   "city",
+   "helicopter",
+   "night"
+  ],
+  "fuente": "libre",
+  "h": 472,
+  "w": 1000
+ },
  "lb-642d36f97c": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov5.jpg",
   "categoria": "ambiente",
@@ -204,6 +219,51 @@
   ],
   "fuente": "libre",
   "h": 768,
+  "w": 1024
+ },
+ "lb-6b600b42c3": {
+  "archivo": "libres/ambiente/helicopter-city-night-ov3.jpg",
+  "categoria": "ambiente",
+  "consulta": "Helicopter city night",
+  "credito": "colourful toronto — 416style — CC BY 2.0 — https://www.flickr.com/photos/20532289@N00/33483719",
+  "etiquetas": [
+   "ambiente",
+   "city",
+   "helicopter",
+   "night"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-6faa6e6b09": {
+  "archivo": "libres/ambiente/helicopter-city-night-ov1.jpg",
+  "categoria": "ambiente",
+  "consulta": "Helicopter city night",
+  "credito": "Phoenix Arizona Downtown Night Aerial Photo from Helicopter — jerryfergusonphotography — CC BY 2.0 — https://www.flickr.com/photos/17445097@N03/14418477124",
+  "etiquetas": [
+   "ambiente",
+   "city",
+   "helicopter",
+   "night"
+  ],
+  "fuente": "libre",
+  "h": 576,
+  "w": 1024
+ },
+ "lb-71af0b2c7f": {
+  "archivo": "libres/ambiente/helicopter-city-night-ov5.jpg",
+  "categoria": "ambiente",
+  "consulta": "Helicopter city night",
+  "credito": "Lockheed AC-130A Spectre — ksr8s — CC BY-SA 2.0 — https://www.flickr.com/photos/54825391@N00/5570893763",
+  "etiquetas": [
+   "ambiente",
+   "city",
+   "helicopter",
+   "night"
+  ],
+  "fuente": "libre",
+  "h": 680,
   "w": 1024
  },
  "lb-73645ac5a8": {
@@ -295,6 +355,21 @@
   "h": 680,
   "w": 1024
  },
+ "lb-a314457f9a": {
+  "archivo": "libres/ambiente/helicopter-city-night-ov4.jpg",
+  "categoria": "ambiente",
+  "consulta": "Helicopter city night",
+  "credito": "Patrolling the Rio Grande from the Air — Georgia National Guard — CC BY 2.0 — https://www.flickr.com/photos/40994485@N04/8242455642",
+  "etiquetas": [
+   "ambiente",
+   "city",
+   "helicopter",
+   "night"
+  ],
+  "fuente": "libre",
+  "h": 732,
+  "w": 1024
+ },
  "lb-a3b3d00386": {
   "archivo": "libres/ambiente/neon-lights-night-city-ov6.jpg",
   "categoria": "ambiente",
@@ -324,6 +399,21 @@
   "fuente": "libre",
   "h": 1280,
   "w": 1920
+ },
+ "lb-b13fb0b923": {
+  "archivo": "libres/ambiente/helicopter-city-night-ov2.jpg",
+  "categoria": "ambiente",
+  "consulta": "Helicopter city night",
+  "credito": "RAF Tornado GR4 in Afghanistan — Defence Images — CC BY-SA 2.0 — https://www.flickr.com/photos/48399297@N04/8670953411",
+  "etiquetas": [
+   "ambiente",
+   "city",
+   "helicopter",
+   "night"
+  ],
+  "fuente": "libre",
+  "h": 613,
+  "w": 1000
  },
  "lb-b15704636f": {
   "archivo": "libres/ambiente/rain-night-street-neon-ov6.jpg",
