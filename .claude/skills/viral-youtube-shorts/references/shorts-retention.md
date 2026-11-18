@@ -88,7 +88,7 @@ The opening has to do three things at once:
   of the screen). Roughly 70% of Shorts viewing is muted, so the on-screen
   text is doing real work, not just reinforcement.
 
-See `viral-hooks` for hook archetypes. The YouTube-specific delivery
+See `yt-script` for hook archetypes. The YouTube-specific delivery
 constraint is the 3-second window and the safe-zone caption.
 
 ## Diagnosing a flopping Short

@@ -26,7 +26,7 @@ thumbnail (the hook equivalent) validity inside the idea-evaluation
 phase, not the production phase. The order matters: evaluate the
 package first, build the video to deliver it second.
 
-For hook writing itself, see the `viral-hooks` skill or
+For hook writing itself, see the `yt-script` skill or
 `viral-short-form/references/hooks.md`.
 
 ## CCN fit (does the idea serve all three audiences)

@@ -18,7 +18,7 @@ ideas without burning out or repeating themselves. It doesn't predict which
 idea wins. It makes sure there are enough strong candidates that win-rate
 matters.
 
-For hook writing itself, see `viral-hooks`. For platform algorithm
+For hook writing itself, see `yt-script`. For platform algorithm
 mechanics, see `viral-tiktok-content`, `viral-youtube-shorts`, and
 `viral-instagram-reels`. For captions, CTAs, and on-screen text, see
 `viral-captions-and-ctas`. For script structure and retention, see the

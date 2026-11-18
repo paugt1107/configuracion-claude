@@ -1,21 +1,28 @@
-# Oficina virtual — sistema de Shorts virales
+# Oficina virtual del canal — 10 agentes, 1 función cada uno, 0 solapes
 
-Ciclo: `/short <tema>` (o `/short` solo) → tendencias → guionista → [aprobación] → voz-audio → animacion → miniaturas → studio → [aprobación] → subir.
-72 h después: "usa el agente retencion sobre el Short X" → si hay fallo, reabre al guionista.
+Regla anti-solape: cada skill tiene UN dueño y cada tarea UN agente. Si dos hacen lo mismo, se elimina uno.
+Comando: `/short <tema>`. Memoria compartida: `data/aprendizajes.md`. Voz del canal: `voice.md` (rellenar primero).
 
-| Agente | Función | Skills que usa |
-|---|---|---|
-| tendencias | Nicho en auge, alarma 10x, ideas | viral-short-form-ideas |
-| guionista | Guion + gancho en el fotograma 1, reescribe con feedback | viral-youtube-shorts, viral-hooks |
-| voz-audio | Narración TTS, música libre, bucle | viral-youtube-shorts (monetización) |
-| animacion | Escenas 9:16, sin repetir ninguna | registro escenas-usadas.json |
-| miniaturas | Mejor fotograma 1 (Shorts) / 10 variantes (largos) | — |
-| studio | Título, descripción, puente a vídeo largo, programación | shorts-to-longform-bridge |
-| retencion | VVSA y curva; avisa al guionista | shorts-retention |
+| Agente | Modelo | Única función | Skills (dueño exclusivo) | Entrega |
+|---|---|---|---|---|
+| tendencias | sonnet | Elegir nicho, alarma 10x, ideas | yt-viral, viral-short-form-ideas | data/tendencias.md, alertas.md |
+| estratega | sonnet | Plan semanal y auditoría (1 arreglo) | yt-plan, yt-audit | data/plan-semanal.md |
+| guionista | opus | Gancho + guion (y reescritura) | yt-script (hookscore), viral-youtube-shorts | guiones/ |
+| voz-audio | haiku | Narración TTS + música/efectos | — | audio/ |
+| animacion | sonnet | Escenas 9:16 sin repetir | — | guiones/*-escenas.md |
+| packaging | sonnet | Título + miniatura/fotograma 1 | yt-package (title.py) | miniaturas/ |
+| editor | haiku | Cortes, capítulos y Shorts desde transcripción | yt-edit, yt-chapters, yt-shorts | data/edicion-*.md |
+| studio | haiku | Descripción, etiquetas, comentario fijado, hora | yt-seo | data/publicacion-*.md |
+| retencion | sonnet | Datos de retención/VVSA → aviso | yt-retention | data/retencion.md |
+| comunidad | sonnet | Comentarios y comentario fijado | yt-comment | respuestas listas |
 
-Archivos: `config.md` (umbrales), `data/shorts-log.md` (registro y aprendizaje), `data/alertas.md`, `data/retencion.md`.
+Skills de apoyo sin dueño-agente: `prompt-master` (optimiza prompts para Runway/Kling/Midjourney/ElevenLabs cuando se pida). Eliminado por solapar con yt-script: `viral-hooks`.
+Ciclo Short: tendencias → guionista → [aprobación] → voz-audio → animacion → packaging → studio → [aprobación] → (72 h) retencion → (reabre guionista). Largos: + editor.
 
-## Necesita claves o tu aprobación
-- YouTube Data/Analytics API (OAuth): subir y leer retención. Sin ella, `studio` y `retencion` trabajan con paquetes/CSV manuales.
-- Voz (TTS) y generador de imagen/vídeo: servicios de pago con clave.
-- Subidas siempre privadas/programadas hasta que apruebes. Nadie promete viralidad: se mide, se aprende y se repite lo que funciona.
+## Quién usa qué dato (flujo)
+tendencias→ideas | guionista→guion | voz-audio/animacion/packaging←guion | studio←título(packaging)+capítulos(editor) | retencion→aviso→guionista/packaging | comunidad→ideas→tendencias.
+
+## Límites honestos
+- Nadie sube a YouTube: tú subes. Las claves API (voz, vídeo) solo si decides usarlas; sin ellas todo queda listo para hacer a mano.
+- hookscore.py es una heurística, no un predictor; la puntuación de miniaturas es predicción hasta tener CTR real.
+- Todo se aprende de los datos reales: `retencion` y `aprendizajes.md` cierran el ciclo.

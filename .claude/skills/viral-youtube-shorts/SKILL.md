@@ -17,7 +17,7 @@ scrollers into long-form watchers. This skill is YouTube Shorts only. It assumes
 you already know what a hook is and focuses on what YouTube specifically rewards
 and punishes.
 
-For cross-platform hook craft, see `viral-hooks`. For ideation systems, see
+For cross-platform hook craft, see `yt-script`. For ideation systems, see
 `viral-short-form-ideas`. For caption and on-screen text craft, see
 `viral-captions-and-ctas`. For TikTok or Reels, see those skills.
 
@@ -62,7 +62,7 @@ to step 3 and infer the rest.
    long-form and never enters the Shorts Feed.
 3. **Write the first 3 seconds first.** No logo, no welcome-back, no animated
    intro. The hook starts on frame 1, with a visual that earns the next second
-   and a first line that promises a specific payoff. See `viral-hooks` for the
+   and a first line that promises a specific payoff. See `yt-script` for the
    archetypes; this skill enforces the YouTube-specific delivery constraints.
 4. **Structure for the retention curve.** Open with the promise, escalate with
    a turn or a stakes raise around the 5 to 8s mark, land the payoff before

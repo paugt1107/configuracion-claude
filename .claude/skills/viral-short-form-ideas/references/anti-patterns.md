@@ -146,7 +146,7 @@ production effort to an idea whose viability is unknown.
 **Fix.** Write the hook first, always. If the hook is strong, build
 the script to deliver it. If you can't write a strong hook, kill the
 idea before the script. See `idea-evaluation.md` for the full
-hook-conception test and the `viral-hooks` skill for the hook writing
+hook-conception test and the `yt-script` skill for the hook writing
 itself.
 
 ## Over-tooling (productivity theater)
