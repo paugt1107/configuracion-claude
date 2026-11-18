@@ -1,3 +1,5 @@
+📅 Publicar: Viernes 20-11 20:30 (hora de España) en YouTube Shorts, TikTok y Reels
+
 # Publicación S004
 
 Gancho (frase 1): «¿Sabías que GTA seis te puede costar ochenta horas? Y nunca un GTA duró tanto.» → 70 VALE (ESPECIFICIDAD: cambia un adjetivo por un número, un nombre o un lugar)

@@ -1,3 +1,5 @@
+📅 Publicar: Jueves 19-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
+
 # Publicación S001
 
 Gancho (frase 1): «¿Sabías que hay gente que juega GTA seis doce horas antes que tú?» → 62 VALE (ESPECIFICIDAD: cambia un adjetivo por un número, un nombre o un lugar)

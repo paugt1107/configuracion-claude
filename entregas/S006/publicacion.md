@@ -1,3 +1,5 @@
+📅 Publicar: Sabado 21-11 20:30 (hora de España) en YouTube Shorts, TikTok y Reels
+
 # Publicación S006
 
 Gancho (frase 1): «¿Sabías que GTA seis ocupa doscientos doce gigas? Si no lo sabes, pierdes horas antes de jugar.» → 62 VALE (ESPECIFICIDAD: cambia un adjetivo por un número, un nombre o un lugar)

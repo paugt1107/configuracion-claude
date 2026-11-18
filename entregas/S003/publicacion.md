@@ -1,3 +1,5 @@
+📅 Publicar: Viernes 20-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
+
 # Publicación S003
 
 Gancho (frase 1): «¿Sabías que tu GTA seis va a treinta FPS? Antes de quejarte, mira esto.» → 67 VALE (EN_JUEGO: di qué pierde si no lo ve (tiempo, dinero, la misión))

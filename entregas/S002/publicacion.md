@@ -1,3 +1,5 @@
+📅 Publicar: Jueves 19-11 20:30 (hora de España) en YouTube Shorts, TikTok y Reels
+
 # Publicación S002
 
 Gancho (frase 1): «¿Sabías que GTA seis tiene un noventa y nueve? Nunca un GTA llegó tan alto.» → 61 VALE (EN_JUEGO: di qué pierde si no lo ve (tiempo, dinero, la misión))

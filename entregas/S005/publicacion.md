@@ -1,3 +1,5 @@
+📅 Publicar: Sabado 21-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
+
 # Publicación S005
 
 Gancho (frase 1): «¿Sabías que Lucía y Jason esconden un mensaje oculto en sus nombres? Nunca lo vas a oír igual.» → 62 VALE (EN_JUEGO: di qué pierde si no lo ve (tiempo, dinero, la misión))
