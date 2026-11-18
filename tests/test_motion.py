@@ -3,7 +3,7 @@ from clipfactory import motion
 
 def test_estimate_words_fits_duration_and_is_monotonic():
     w = motion.estimate_words("GTA seis sale mañana pero no a la misma hora", 10.0)
-    assert len(w) == 9
+    assert len(w) == 10
     assert all(a["end"] <= b["start"] + 1e-6 or a["start"] < b["start"] for a, b in zip(w, w[1:]))
     assert w[-1]["end"] <= 10.0
 
