@@ -32,3 +32,15 @@ def test_produce_from_yaml_offline(tmp_path, monkeypatch):
     assert media.video_size(str(video)) == (1080, 1920) and media.has_audio(str(video))
     d = tmp_path / "entregas" / "T1"
     assert (d / "portada-1.png").exists() and "Títulos" in (d / "publicacion.md").read_text()
+
+
+def test_props_and_brand(tmp_path):
+    from clipfactory import marca, motion, props
+
+    for t in ["dinero", "billetes", "estrellas", "sirena", "pin", "movil", "coche", "trofeo"]:
+        assert props.draw(t, 120).getbbox() is not None
+    assert motion.card({"kind": "busqueda", "n": 3, "props": [{"tipo": "dinero", "x": 0.2, "y": 0.2, "tam": 150}]}).size == (1080, 1920)
+    from PIL import Image
+
+    assert Image.open(marca.banner(out=tmp_path / "b.png")).size == (2560, 1440)
+    assert Image.open(marca.avatar(out=tmp_path / "a.png")).size == (800, 800)

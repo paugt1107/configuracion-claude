@@ -285,6 +285,24 @@ def card(spec: dict) -> Image.Image:
             _label(img, (W // 2, 1150), spec["sub"], 50, accent)
         if spec.get("credito"):
             _label(img, (W // 2, 410), spec["credito"], 34, WHITE)
+    elif kind == "dinero":
+        from . import props as _props
+
+        img = _props.paste(img, {"tipo": "dinero", "x": 0.5, "y": 0.36, "tam": 380}, GOLD)
+        _big(img, (W // 2, 1000), spec.get("grande", "$"), GOLD)
+        if spec.get("sub"):
+            _label(img, (W // 2, 1170), spec["sub"], 48, WHITE, box=False)
+    elif kind == "busqueda":
+        from . import props as _props
+
+        img = _props.paste(img, {"tipo": "estrellas", "n": spec.get("n", 3), "x": 0.5, "y": 0.42, "tam": 170}, (255, 46, 147))
+        if spec.get("sub"):
+            _label(img, (W // 2, 1000), spec["sub"], 52, CYAN, box=False)
+    if spec.get("props"):
+        from . import props as _props
+
+        for p in spec["props"]:
+            img = _props.paste(img, p, accent)
     if spec.get("titulo"):
         _label(img, (W // 2, spec.get("ty", 500)), spec["titulo"], spec.get("tsize", 84), WHITE)
     if spec.get("pie"):

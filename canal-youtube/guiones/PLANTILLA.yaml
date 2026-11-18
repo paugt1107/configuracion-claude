@@ -27,9 +27,13 @@ escenas:
     tarjeta: {kind: personaje, recorte: media/recortes/lucia.png, nombre: LUCÍA, titulo: "LUCÍA CAMINOS", ty: 380, sub: "protagonista", credito: "Imagen oficial: Rockstar Games", color: magenta}
   - texto: "Otra frase."
     tarjeta: {kind: imagen, imagen: media/oficial/vice-city.jpg, titulo: "VICE CITY", ty: 520, sub: "dato corto", credito: "Imagen oficial: Rockstar Games"}
+  - texto: "Truco de dinero."
+    tarjeta: {kind: dinero, grande: "100.000 $", titulo: "TRUCO DE DINERO", ty: 380, sub: "en 10 minutos"}
   - texto: "Lista de cosas."
     tarjeta: {kind: lista, items: ["uno", "dos", "tres"], titulo: "3 DETALLES", ty: 450}
   - texto: "Cierre que vuelve al gancho."
     tarjeta: {kind: dato, grande: "?", titulo: "¿LO SABÍAS?", ty: 520, color: magenta}
 # Tipos de tarjeta: clock (reloj grande), dato (texto grande), lista, imagen (foto a pantalla completa),
-# personaje (recorte con brillo), split, three, timeline, bar. Banderas: bandera: nz|es|mx|ar
+# personaje (recorte con brillo), dinero (bolsa + cifra), busqueda (n estrellas), split, three, timeline, bar.
+# Banderas: bandera: nz|es|mx|ar. Objetos en cualquier tarjeta:
+#   props: [{tipo: dinero|billetes|estrellas|sirena|pin|movil|coche|trofeo, x: 0-1, y: 0-1, tam: px, n: estrellas}]

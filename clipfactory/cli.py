@@ -95,6 +95,13 @@ def _cmd_recortar(a):
     print(cutout(a.imagen, a.salida))
 
 
+def _cmd_marca(a):
+    from .marca import avatar, banner
+
+    print(banner(a.nombre, a.acento, a.lema))
+    print(avatar(acento=a.acento))
+
+
 def _cmd_render(a):
     from .render import render
 
@@ -177,6 +184,11 @@ def main(argv=None):
     s.add_argument("imagen")
     s.add_argument("--salida", required=True)
     s.set_defaults(f=_cmd_recortar)
+    s = sub.add_parser("marca", help="banner de YouTube y avatar del canal")
+    s.add_argument("--nombre", default="¿SABÍAS QUE…?")
+    s.add_argument("--acento", default="GTA 6")
+    s.add_argument("--lema", default="Secretos · Trucos · Curiosidades — un Short nuevo cada día")
+    s.set_defaults(f=_cmd_marca)
     s = sub.add_parser("render", help="renderiza un job YAML a 1080x1920")
     s.add_argument("job")
     s.add_argument("--dry-run", action="store_true")

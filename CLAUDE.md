@@ -12,3 +12,4 @@ Nicho: GTA VI en español (Shorts + TikTok). Comandos: `/short <tema>` y `/clip 
 Config y umbrales: `canal-youtube/docs/configuracion.md`. Los agentes se comunican por archivos en `canal-youtube/datos/`.
 Producción: guion = `canal-youtube/guiones/<ID>.yaml` (ver PLANTILLA.yaml). Push → GitHub Actions `produccion` genera voz IA (el usuario NUNCA graba), vídeo, 3 portadas y publicacion.md en `entregas/<ID>/` (log en `entregas/_logs/`). Radar cada 30 min: `canal-youtube/datos/radar/ultimo.md`. Recortes de personajes: workflow `recortes` → `media/recortes/`.
 Código: rutas centralizadas en `clipfactory/rutas.py`; antes de commit `ruff check clipfactory tests && python -m pytest`.
+Pendientes del usuario: `canal-youtube/datos/pendientes.md` (revísalo al empezar y recuérdale lo que falte, en una línea).
