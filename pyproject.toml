@@ -3,7 +3,7 @@ name = "clipfactory"
 version = "0.2.0"
 description = "Fábrica de Shorts/TikToks de GTA VI en español: voz IA, vídeo vertical, portadas, radar y política de fuentes."
 requires-python = ">=3.10"
-dependencies = ["PyYAML>=6.0", "Pillow>=10.0"]
+dependencies = ["PyYAML>=6.0", "Pillow>=10.0", "numpy>=1.26"]
 
 [project.optional-dependencies]
 voz = ["edge-tts>=7.0"]                       # voz gratis; OpenAI/ElevenLabs van por API sin librería
