@@ -1,6 +1,7 @@
-name: Tommy · Banco de imágenes (oficiales + libres, animadas en 3D)
-# Descarga capturas/artes OFICIALES de GTA VI y fotos LIBRES de Commons, las etiqueta (CLIP), saca Lucía/Jason para
-# recortes, anima cada imagen en 3D (clip de 3 s) y hace la galería media/banco/GALERIA.md. Guarda por tandas.
+name: Tommy · Banco de imágenes (oficiales + tráileres + libres, animadas en 3D)
+# 1) recoger: capturas/artes OFICIALES de GTA VI, fotogramas de los TRÁILERES oficiales, fotos LIBRES (Openverse + Commons),
+#    etiquetas con CLIP, Lucía/Jason a media/oficial y recortes.  2) animar: 6 máquinas EN PARALELO hacen los clips 3D.
+# 3) final: galería media/banco/GALERIA.md y rehace los vídeos que usan fotos de personajes.
 on:
   workflow_dispatch:
     inputs:
@@ -11,20 +12,19 @@ on:
     branches: [main]
     paths: ["canal-youtube/fuentes/banco.yaml", "clipfactory/banco/**"]
   schedule:
-    - cron: "17 4 * * *"   # una vez al día: recoge las capturas nuevas que publique Rockstar
+    - cron: "17 4 * * *"   # una vez al día: recoge lo nuevo que publique Rockstar
 permissions:
   contents: write
   actions: write
 concurrency:
   group: banco
   cancel-in-progress: false
+env:
+  MAXIMO: ${{ github.event.inputs.maximo || '400' }}
 jobs:
-  banco:
+  recoger:
     runs-on: ubuntu-latest
-    timeout-minutes: 340
-    env:
-      MAXIMO: ${{ github.event.inputs.maximo || '400' }}
-      GH_TOKEN: ${{ github.token }}
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,45 +35,101 @@ jobs:
           node-version: "22"
       - name: Dependencias
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install -q torch --index-url https://download.pytorch.org/whl/cpu
-          pip install -q -e ".[banco,recortes]"
+          pip install -q -e ".[banco,recortes,descargas]"
           npm install -g playwright@1.63.0
           npx -y playwright@1.63.0 install --with-deps chromium
           echo "NODE_PATH=$(npm root -g)" >> "$GITHUB_ENV"
-      - name: Función guardar
-        run: |
           cat > /tmp/guardar.sh <<'EOF'
           git config user.name "banco-bot"
           git config user.email "banco-bot@users.noreply.github.com"
           for d in media/banco media/oficial media/recortes; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet && exit 0
           git commit -q -m "Banco de imágenes: $1 [skip ci]"
-          for i in 1 2 3 4; do git pull --rebase -q -X ours && git push -q && break; sleep 5; done
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
           EOF
           chmod +x /tmp/guardar.sh
-      - name: 1 · Descargar (oficiales + libres)
-        run: set -o pipefail; python3 -m clipfactory.banco descargar --max "$MAXIMO" 2>&1 | tee -a /tmp/banco-log.txt
+      - name: Descargar oficiales y libres
+        run: set -o pipefail; python3 -m clipfactory.banco descargar --max "$MAXIMO"
+        continue-on-error: true
       - run: /tmp/guardar.sh "descarga"
-        if: always()
-      - name: 2 · Etiquetar (CLIP) y sacar Lucía/Jason
-        run: set -o pipefail; python3 -m clipfactory.banco etiquetar 2>&1 | tee -a /tmp/banco-log.txt
-      - name: 3 · Recortes de personajes
+      - name: Fotogramas de los tráileres oficiales
+        run: set -o pipefail; python3 -m clipfactory.banco trailers --max "$MAXIMO"
+        continue-on-error: true
+      - run: /tmp/guardar.sh "tráileres"
+      - name: Etiquetar (CLIP) y sacar Lucía/Jason
+        run: set -o pipefail; python3 -m clipfactory.banco etiquetar
+        continue-on-error: true
+      - name: Recortes de personajes
         run: python3 -c "from clipfactory import recorte; print(recorte.process_all())"
         continue-on-error: true
         timeout-minutes: 15
-      - run: /tmp/guardar.sh "etiquetas y personajes"
-        if: always()
-      - name: 4 · Animar en 3D (por tandas de 30, guardando cada tanda)
+      - run: /tmp/guardar.sh "etiquetas, personajes y recortes"
+
+  animar:
+    needs: recoger
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        parte: [0, 1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Dependencias
         run: |
-          for tanda in $(seq 1 30); do
-            python3 -m clipfactory.banco animar --max 30 2>&1 | tee /tmp/anim.txt
-            /tmp/guardar.sh "animadas (tanda $tanda)"
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q -e .
+          npm install -g playwright@1.63.0
+          npx -y playwright@1.63.0 install --with-deps chromium
+          echo "NODE_PATH=$(npm root -g)" >> "$GITHUB_ENV"
+      - name: Animar en 3D (parte ${{ matrix.parte }} de 6, guardando cada 15)
+        run: |
+          git config user.name "banco-bot"
+          git config user.email "banco-bot@users.noreply.github.com"
+          for tanda in $(seq 1 40); do
+            python3 -m clipfactory.banco animar --max 15 --parte ${{ matrix.parte }} --partes 6 | tee /tmp/anim.txt
+            git add media/banco/animadas 2>/dev/null || true
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Banco: clips 3D parte ${{ matrix.parte }} tanda $tanda [skip ci]"
+              for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((i * 4 + ${{ matrix.parte }})); done
+            fi
             grep -q "animadas: 0" /tmp/anim.txt && break
           done
-      - name: 5 · Rehacer vídeos que usan fotos de personajes
-        if: always()
+
+  final:
+    needs: animar
+    if: always()
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -e .
+      - name: Galería e índice
         run: |
-          for g in $(grep -l "media/oficial/\|media/banco/" canal-youtube/guiones/S*.yaml); do
+          python3 -m clipfactory.banco galeria
+          git config user.name "banco-bot"
+          git config user.email "banco-bot@users.noreply.github.com"
+          git add media/banco
+          git diff --cached --quiet || git commit -q -m "Banco: galería [skip ci]"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
+      - name: Rehacer vídeos que usan fotos de personajes o del banco
+        run: |
+          for g in $(grep -l "media/oficial/\|media/banco/\|banco:" canal-youtube/guiones/S*.yaml); do
             gh workflow run produccion.yml -f job="$(basename "$g" .yaml)" || true
           done

@@ -121,3 +121,35 @@ def buscar_varias(consulta: str, n: int, carpeta: Path) -> list[tuple[Path, str,
             w, h = im.size
         out.append((dst, credit, w, h))
     return out
+
+
+def openverse(consulta: str, n: int, carpeta: Path) -> list[tuple[Path, str, int, int]]:
+    """Fotos libres de Openverse (Flickr y otros; licencias que permiten uso comercial y modificación)."""
+    carpeta.mkdir(parents=True, exist_ok=True)
+    q = urllib.parse.urlencode({"q": consulta, "license_type": "commercial,modification", "page_size": max(10, n * 3), "mature": "false"})
+    data = json.loads(_abrir("https://api.openverse.org/v1/images/?" + q, timeout=30))
+    out = []
+    for r in data.get("results", []):
+        if len(out) >= n:
+            break
+        if (r.get("width") or 0) < 900 or not r.get("url"):
+            continue
+        lic = f"CC {r.get('license', '').upper()} {r.get('license_version', '')}".replace("CC CC0", "CC0").replace(
+            "CC PDM", "Dominio público"
+        )
+        credit = f"{r.get('title', '')} — {r.get('creator', 'desconocido')} — {lic.strip()} — {r.get('foreign_landing_url', '')}"
+        dst = carpeta / f"{slug(consulta)}-ov{len(out) + 1}.jpg"
+        try:
+            if not dst.exists():
+                dst.write_bytes(_abrir(r["url"]))
+            from PIL import Image
+
+            with Image.open(dst) as im:
+                im.thumbnail((1920, 1920))
+                im.convert("RGB").save(dst, "JPEG", quality=86)
+                w, h = im.size
+        except Exception:
+            dst.unlink(missing_ok=True)
+            continue
+        out.append((dst, credit, w, h))
+    return out

@@ -210,11 +210,12 @@ def descargar_libres(cfg: dict, ind: dict, maximo: int) -> int:
         for q in consultas or []:
             if nuevas >= maximo:
                 return nuevas
-            try:
-                res = libres.buscar_varias(q, n, BANCO / "libres" / cat)
-            except Exception as e:
-                print(f"[banco] Commons '{q}': {e}")
-                continue
+            res = []
+            for nombre, fn in (("Openverse", libres.openverse), ("Commons", libres.buscar_varias)):
+                try:
+                    res += fn(q, n, BANCO / "libres" / cat)
+                except Exception as e:
+                    print(f"[banco] {nombre} '{q}': {e}")
             for path, credit, w, h in res:
                 iid = "lb-" + hashlib.sha1(path.name.encode()).hexdigest()[:10]
                 if iid in ind:
@@ -231,6 +232,84 @@ def descargar_libres(cfg: dict, ind: dict, maximo: int) -> int:
                 }
                 nuevas += 1
     print(f"[banco] libres: {nuevas} nuevas")
+    return nuevas
+
+
+def trailers(cfg: dict, ind: dict, maximo: int, por_trailer: int = 160) -> int:
+    """Fotogramas de los TRÁILERES OFICIALES (cambios de plano), sin negros ni rótulos, sin duplicados."""
+    import shutil
+
+    urls = (cfg.get("oficial") or {}).get("trailers") or []
+    if not urls or not shutil.which("yt-dlp"):
+        print("[banco] tráileres: sin URLs o sin yt-dlp")
+        return 0
+    hashes = {v["hash"]: k for k, v in ind.items() if v.get("hash")}
+    nuevas = 0
+    for n_t, url in enumerate(urls, 1):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            r = subprocess.run(
+                [
+                    "yt-dlp",
+                    "-q",
+                    "--no-warnings",
+                    "-f",
+                    "bv*[height<=2160][ext=mp4]/bv*[height<=2160]/best",
+                    "-o",
+                    str(tmp / "t.%(ext)s"),
+                    url,
+                ],
+                capture_output=True,
+                text=True,
+                timeout=1200,
+            )
+            vids = list(tmp.glob("t.*"))
+            if r.returncode or not vids:
+                print(f"[banco] tráiler {url}: no se pudo bajar ({(r.stderr or '').strip()[:160]})")
+                continue
+            (tmp / "f").mkdir()
+            subprocess.run(
+                ["ffmpeg", "-loglevel", "error", "-i", str(vids[0]), "-vf", "select='gt(scene,0.28)',scale='min(1920,iw)':-2",
+                 "-vsync", "vfr", "-q:v", "3", str(tmp / "f" / "%04d.jpg")],
+                check=False,
+                timeout=1800,
+            )  # fmt: skip
+            frames = sorted((tmp / "f").glob("*.jpg"))
+            print(f"[banco] tráiler {n_t}: {len(frames)} cambios de plano")
+            hechos = 0
+            for f in frames:
+                if nuevas >= maximo or hechos >= por_trailer:
+                    break
+                im = Image.open(f)
+                g = im.convert("L").resize((64, 36))
+                px = list(g.getdata())
+                media_l = sum(px) / len(px)
+                var = sum((x - media_l) ** 2 for x in px) / len(px)
+                if media_l < 28 or var < 250:  # negro, fundido o rótulo plano
+                    continue
+                h = _ahash(im)
+                if any(_cerca(h, hh) for hh in hashes):
+                    continue
+                iid = f"tr{n_t}-{f.stem}"
+                dst = BANCO / "oficial" / f"{iid}.jpg"
+                wh = _guardar_imagen(f.read_bytes(), dst)
+                if not wh:
+                    continue
+                ind[iid] = {
+                    "archivo": str(dst.relative_to(BANCO)),
+                    "fuente": "oficial",
+                    "url": url,
+                    "credito": "Fotograma del tráiler oficial de Grand Theft Auto VI (Rockstar Games)",
+                    "categoria": "trailer",
+                    "etiquetas": [],
+                    "w": wh[0],
+                    "h": wh[1],
+                    "hash": h,
+                }
+                hashes[h] = iid
+                hechos += 1
+                nuevas += 1
+    print(f"[banco] tráileres: {nuevas} fotogramas nuevos")
     return nuevas
 
 
@@ -293,8 +372,8 @@ def personajes(ind: dict) -> list[str]:
     return hechos
 
 
-def animar(ind: dict, maximo: int, dur: float = 3.0) -> int:
-    """Clip 3D de cada imagen (alterna estilos) en media/banco/animadas/."""
+def animar(ind: dict, maximo: int, dur: float = 3.0, parte: int = 0, partes: int = 1) -> int:
+    """Clip 3D de cada imagen (alterna estilos) en media/banco/animadas/. Con partes>1 cada máquina hace su trozo."""
     from .. import escena3d
 
     estilos = ["inclinada", "lleno", "inclinada", "lleno", "giro"]
@@ -302,6 +381,8 @@ def animar(ind: dict, maximo: int, dur: float = 3.0) -> int:
     for i, (iid, v) in enumerate(sorted(ind.items())):
         if hechos >= maximo:
             break
+        if i % partes != parte:
+            continue
         out = BANCO / "animadas" / f"{iid}.mp4"
         if out.exists():
             v["animada"] = str(out.relative_to(BANCO))
@@ -327,6 +408,9 @@ def galeria(ind: dict) -> Path:
     mini.mkdir(parents=True, exist_ok=True)
     por_cat: dict[str, list] = {}
     for iid, v in sorted(ind.items()):
+        clip = BANCO / "animadas" / f"{iid}.mp4"
+        if clip.exists():
+            v["animada"] = str(clip.relative_to(BANCO))
         m = mini / f"{iid}.jpg"
         if not m.exists():
             im = Image.open(BANCO / v["archivo"]).convert("RGB")
@@ -369,8 +453,10 @@ def buscar(etiqueta: str, fuente: str | None = None) -> list[Path]:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="clipfactory.banco")
-    ap.add_argument("paso", choices=["descargar", "etiquetar", "animar", "galeria", "todo"])
+    ap.add_argument("paso", choices=["descargar", "trailers", "etiquetar", "animar", "galeria", "todo"])
     ap.add_argument("--max", type=int, default=400)
+    ap.add_argument("--parte", type=int, default=0)
+    ap.add_argument("--partes", type=int, default=1)
     a = ap.parse_args(argv)
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8")) or {}
     ind = cargar()
@@ -379,12 +465,17 @@ def main(argv=None) -> int:
         guardar(ind)
         descargar_libres(cfg, ind, a.max)
         guardar(ind)
+    if a.paso in ("trailers", "todo"):
+        trailers(cfg, ind, a.max)
+        guardar(ind)
     if a.paso in ("etiquetar", "todo"):
         etiquetar(ind)
         guardar(ind)
         personajes(ind)
     if a.paso in ("animar", "todo"):
-        animar(ind, a.max)
+        animar(ind, a.max, parte=a.parte, partes=a.partes)
+        if a.partes > 1:  # en paralelo no se toca el índice (lo rehace el paso final)
+            return 0
         guardar(ind)
     galeria(ind)
     guardar(ind)

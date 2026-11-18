@@ -14,6 +14,9 @@ oficial:
     - https://www.rockstargames.com/VI/people/lucia-caminos
     - https://www.rockstargames.com/VI/places
     - https://www.rockstargames.com/VI
+  trailers:  # tráileres OFICIALES de Rockstar en YouTube: se sacan fotogramas de cada cambio de plano
+    - https://www.youtube.com/watch?v=QdBZY2fkU-0   # Tráiler 1 (dic-2023)
+    - https://www.youtube.com/watch?v=VQRLujxTm3c   # Tráiler 2 (may-2025)
   # etiquetas que se buscan en nombre de archivo / texto alternativo / página
   etiquetas: [jason, lucia, vice-city, leonida, keys, grassrivers, port-gellhorn, ambrosia, mount-kalaga, coche, moto, barco,
               avion, policia, atraco, arma, playa, noche, club, gasolinera, tienda, mapa, logo, personaje]
