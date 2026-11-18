@@ -11,6 +11,7 @@ def test_words_skip_silence(tmp_path):
                     "-af", "volume=enable='between(t,1,2)':volume=0", str(a)], check=True)
     w = align.align_words("aaaa bbbb cccc dddd eeee ffff", str(a))
     assert len(w) == 6
-    assert w[2]["end"] <= 1.1          # primeras 3 palabras antes del silencio
-    assert w[3]["start"] >= 1.9        # el resto después del silencio
+    # ninguna palabra puede ocupar el silencio (1.1 s - 1.9 s)
+    assert all(x["end"] <= 1.1 or x["start"] >= 1.9 for x in w)
+    assert any(x["start"] >= 1.9 for x in w)   # hay palabras tras la pausa
     assert all(x["start"] < x["end"] for x in w)

@@ -49,6 +49,8 @@ def align_words(text: str, audio: str, **kw) -> list[dict]:
     for w, wt in zip(words, weights):
         s = _at(ranges, acc / total_w * speech, start=True)
         e = _at(ranges, (acc + wt * 0.9) / total_w * speech)
+        seg_end = next((b for a, b in ranges if a - 1e-6 <= s < b), ranges[-1][1])
+        e = min(e, seg_end)  # una palabra nunca se queda encendida durante una pausa
         out.append({"text": w, "start": round(s, 3), "end": round(max(e, s + 0.05), 3)})
         acc += wt
     return out
