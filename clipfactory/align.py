@@ -29,11 +29,13 @@ def speech_ranges(audio: str, noise_db: float = -35.0, min_silence: float = 0.22
     return ranges or [(0.0, total)]
 
 
-def _at(ranges, u):
+def _at(ranges, u, start=False):
+    """Tiempo real para u segundos de habla acumulada. start=True: en un borde, salta al siguiente tramo."""
     for a, b in ranges:
-        if u <= b - a + 1e-9:
+        length = b - a
+        if (u < length - 1e-9) if start else (u <= length + 1e-9):
             return a + u
-        u -= b - a
+        u -= length
     return ranges[-1][1]
 
 
@@ -45,7 +47,7 @@ def align_words(text: str, audio: str, **kw) -> list[dict]:
     total_w = sum(weights)
     out, acc = [], 0.0
     for w, wt in zip(words, weights):
-        s = _at(ranges, acc / total_w * speech)
+        s = _at(ranges, acc / total_w * speech, start=True)
         e = _at(ranges, (acc + wt * 0.9) / total_w * speech)
         out.append({"text": w, "start": round(s, 3), "end": round(max(e, s + 0.05), 3)})
         acc += wt
