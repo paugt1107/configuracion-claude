@@ -1,0 +1,45 @@
+# Guion S004 (auto, 2026-11-18). Push → GitHub Actions genera voz IA, vídeo, portadas y publicación en entregas/S004/
+id: S004
+formato: sabias-que
+titulos:
+  - "GTA 6: 80 horas, según un jefe de Rockstar"
+  - "GTA 6 casi dobla la historia de GTA 5"
+  - "GTA 6: ¿cuánto dura de verdad?"
+portada:
+  texto: "¿Y TÚ, CUÁNTAS?"
+  kind: clock
+  reloj: "80 H"
+descripcion: "Rob Nelson (Rockstar North) contó a The New York Times que su partida de GTA 6 duró unas 80 horas, con historia y objetivos opcionales. Es su experiencia, no una duración oficial."
+fuentes:
+  - "TechRadar — GTA 6 will be Rockstar's longest yet, up to 80 hours to beat (2026)"
+  - "GamesRadar — How long is GTA 6? About 80 hours according to one Rockstar dev's playthrough (2026)"
+  - "Xataka México — Alguien de Rockstar ya jugó GTA 6 de principio a fin (2026); entrevista original en The New York Times"
+  - "Comparativas de duración GTA V (30-45 h) y RDR2 (50-60 h) según medios (estimado)"
+comentario: "¿Cuántas horas le vas a echar tú? 👇"
+hashtags: ["#vicecity", "#rockstar"]
+musica: true
+escenas:
+  - texto: "¿Sabías que GTA seis te puede costar ochenta horas? Y nunca un GTA duró tanto."
+    tarjeta: {kind: clock, reloj: "80 H", titulo: "¿SABÍAS QUE…?", ty: 520, color: orange}
+  - texto: "Lo dijo Rob Nelson, de Rockstar North, al New York Times."
+    tarjeta: {kind: dato, grande: "NYT", titulo: "ROB NELSON · ROCKSTAR", ty: 520, sub: "entrevista en The New York Times", color: cyan}
+  - texto: "Su partida completa le llevó unas ochenta horas."
+    tarjeta: {kind: clock, reloj: "80:00", titulo: "SU PARTIDA", ty: 520, color: gold}
+  - texto: "Contando la historia y algunos objetivos opcionales con consecuencias."
+    tarjeta: {kind: lista, items: ["Historia principal", "Objetivos opcionales", "Con consecuencias"], titulo: "QUÉ INCLUYE", ty: 450, color: cyan}
+  - texto: "La historia de GTA cinco ronda entre treinta y cuarenta y cinco horas."
+    tarjeta: {kind: split, reloj: "30-45 H", sub: "GTA V", reloj2: "80 H", sub2: "GTA VI", color: orange, titulo: "GTA V VS GTA VI", ty: 330}
+  - texto: "Y Red Dead dos, entre cincuenta y sesenta."
+    tarjeta: {kind: three, relojes: [["30-45", "GTA V"], ["50-60", "RDR 2"], ["80", "GTA VI"]], titulo: "HORAS DE HISTORIA", ty: 330, tsize: 70}
+  - texto: "Pero ojo, que aquí viene el matiz."
+    tarjeta: {kind: dato, grande: "OJO", titulo: "EL MATIZ", ty: 520, color: magenta, props: [{tipo: sirena, x: 0.5, y: 0.3, tam: 240}]}
+  - texto: "Son las horas de un desarrollador, no una duración oficial."
+    tarjeta: {kind: dato, grande: "1 PARTIDA", titulo: "NO ES OFICIAL", ty: 520, sub: "experiencia de un desarrollador", color: cyan}
+  - texto: "Tú puedes tardar menos si vas directo, o mucho más si exploras."
+    tarjeta: {kind: split, reloj: "-", sub: "VAS DIRECTO", reloj2: "+", sub2: "EXPLORAS TODO", color: gold, titulo: "DEPENDE DE TI", ty: 330}
+  - texto: "Y completarlo al cien por cien, más todavía."
+    tarjeta: {kind: dato, grande: "100 %", titulo: "AL COMPLETO", ty: 520, color: orange, props: [{tipo: trofeo, x: 0.5, y: 0.3, tam: 240}]}
+  - texto: "¿Cuántas horas crees que le vas a echar tú? Comenta."
+    tarjeta: {kind: clock, reloj: "?? H", titulo: "¿Y TÚ CUÁNTAS?", ty: 520, color: magenta}
+  - texto: "Porque nunca un GTA había durado tanto."
+    tarjeta: {kind: clock, reloj: "80 H", titulo: "NUNCA UN GTA DURÓ TANTO", ty: 520, color: orange, tsize: 70}

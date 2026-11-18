@@ -1,0 +1,41 @@
+# Guion S003 (auto, 2026-11-18). Push → GitHub Actions genera voz IA, vídeo, portadas y publicación en entregas/S003/
+id: S003
+formato: sabias-que
+titulos:
+  - "GTA 6 va a 30 FPS en consola: este es el motivo"
+  - "GTA 6 a 30 FPS: ¿ni en PS5 Pro hay 60?"
+  - "GTA 6 y los 30 FPS: no es la primera vez"
+portada:
+  texto: "SOLO 33 MS"
+  kind: dato
+  grande: "30"
+descripcion: "GTA 6 va a 30 imágenes por segundo en PS5 y Xbox Series, según Rob Nelson (Rockstar); un modo a 60 no está confirmado. Digital Foundry explica por qué y ve más realista un modo a 40."
+fuentes:
+  - "VideoGamesChronicle — GTA 6 is confirmed to run at 30 frames per second (2026)"
+  - "Tom's Hardware — GTA 6 will run at only 30 fps on consoles at launch, no performance mode promised (2026)"
+  - "TechRadar / Digital Foundry — GTA 6 likely 30fps on PS5 due to CPU limits; 40fps mode as option (2026)"
+  - "Notebookcheck / Digital Foundry — PS5 Pro CPU ~7 % faster in CPU-limited scenarios (2026)"
+comentario: "¿30 con más detalle o 60 con menos? 👇"
+hashtags: ["#ps5", "#vicecity"]
+musica: true
+escenas:
+  - texto: "¿Sabías que tu GTA seis va a treinta FPS? Antes de quejarte, mira esto."
+    tarjeta: {kind: dato, grande: "30 FPS", titulo: "¿SABÍAS QUE…?", ty: 520, color: orange}
+  - texto: "Según Rob Nelson, de Rockstar, en consolas va a treinta imágenes por segundo."
+    tarjeta: {kind: dato, grande: "30", titulo: "PS5 Y XBOX SERIES", ty: 520, sub: "según Rob Nelson (Rockstar)", color: cyan}
+  - texto: "Un modo a sesenta no está confirmado, ni al salir ni más adelante."
+    tarjeta: {kind: dato, grande: "60 = ?", titulo: "SIN CONFIRMAR", ty: 520, color: magenta}
+  - texto: "GTA cuatro, GTA cinco y Red Dead dos también salieron a treinta en consola."
+    tarjeta: {kind: lista, items: ["GTA IV · 30", "GTA V · 30", "RDR 2 · 30"], titulo: "NO ES NUEVO", ty: 450, color: gold}
+  - texto: "A treinta, cada imagen tiene treinta y tres milisegundos; a sesenta, la mitad."
+    tarjeta: {kind: split, reloj: "33 ms", sub: "A 30 FPS", reloj2: "16 ms", sub2: "A 60 FPS", color: orange, titulo: "TIEMPO POR IMAGEN", ty: 330}
+  - texto: "En una ciudad tan llena, el procesador no da para más."
+    tarjeta: {kind: dato, grande: "CPU", titulo: "EL CUELLO DE BOTELLA", ty: 520, sub: "según Digital Foundry", color: magenta, props: [{tipo: coche, x: 0.5, y: 0.3, tam: 260}]}
+  - texto: "Ni en PS cinco Pro: su procesador rinde solo un siete por ciento más."
+    tarjeta: {kind: dato, grande: "+7 %", titulo: "CPU DE PS5 PRO", ty: 520, sub: "según Digital Foundry", color: cyan}
+  - texto: "Digital Foundry ve más realista un modo a cuarenta, aún sin confirmar."
+    tarjeta: {kind: three, relojes: [["30", "CONFIRMADO"], ["40", "POSIBLE"], ["60", "SIN CONFIRMAR"]], titulo: "¿Y LOS 40 FPS?", ty: 330, tsize: 70}
+  - texto: "¿Prefieres treinta con más detalle o sesenta con menos? Comenta."
+    tarjeta: {kind: split, reloj: "30", sub: "MÁS DETALLE", reloj2: "60", sub2: "MÁS FLUIDO", color: magenta, titulo: "¿CUÁL ELIGES?", ty: 330}
+  - texto: "Ahora ya sabes por qué tu GTA seis va a treinta."
+    tarjeta: {kind: dato, grande: "30 FPS", titulo: "AHORA YA LO SABES", ty: 520, color: orange}

@@ -1,0 +1,43 @@
+# Guion S002 (auto, 2026-11-18). Push → GitHub Actions genera voz IA, vídeo, portadas y publicación en entregas/S002/
+id: S002
+formato: sabias-que
+titulos:
+  - "GTA 6 saca un 99 en Metacritic: récord de la saga"
+  - "GTA 6 iguala la nota más alta de la historia"
+  - "GTA 6 tiene un 99 y ninguna crítica negativa"
+portada:
+  texto: "ZELDA VS GTA"
+  kind: dato
+  grande: "99"
+descripcion: "GTA 6 debuta con un 99 de media en Metacritic, el récord de la saga, y empata con Zelda: Ocarina of Time. Datos de la prensa a 18-nov-2026; la cifra de reseñas puede cambiar."
+fuentes:
+  - "Infobae — GTA VI llegó con casi la nota máxima de la crítica: 99 con 114 críticas (18-nov-2026)"
+  - "Que.es — GTA VI hace historia con su nota media en Metacritic; Ocarina of Time, 99 con 22 críticas (18-nov-2026)"
+  - "Nintenduo — GTA 6 logra un 99 en Metacritic: 100 % de críticas positivas (nov-2026)"
+  - "GTA IV, 98 en Metacritic (récord previo de la saga), citado por GTA6 Life vía prensa (2026)"
+comentario: "¿Tú le darías un 99? 👇"
+hashtags: ["#metacritic", "#vicecity"]
+musica: true
+escenas:
+  - texto: "¿Sabías que GTA seis tiene un noventa y nueve? Nunca un GTA llegó tan alto."
+    tarjeta: {kind: dato, grande: "99", titulo: "¿SABÍAS QUE…?", ty: 520, color: orange}
+  - texto: "Es su media en Metacritic, con más de cien reseñas."
+    tarjeta: {kind: dato, grande: "+100", titulo: "RESEÑAS DE PRENSA", ty: 520, sub: "media en Metacritic", color: cyan}
+  - texto: "El récord anterior de la saga era el noventa y ocho de GTA cuatro."
+    tarjeta: {kind: lista, items: ["GTA IV · 98", "GTA VI · 99"], titulo: "RÉCORD DE LA SAGA", ty: 450, color: gold}
+  - texto: "Y es la nota más alta de la historia de la web."
+    tarjeta: {kind: dato, grande: "TOP 1", titulo: "LA MÁS ALTA DE LA WEB", ty: 520, color: magenta, props: [{tipo: trofeo, x: 0.5, y: 0.3, tam: 260}]}
+  - texto: "Hasta ahora solo lo tenía Zelda Ocarina of Time, de mil novecientos noventa y ocho."
+    tarjeta: {kind: split, reloj: "99", sub: "OCARINA OF TIME · 1998", reloj2: "99", sub2: "GTA VI · 2026", color: cyan, titulo: "EMPATE HISTÓRICO", ty: 330}
+  - texto: "Zelda sostiene esa nota con apenas veintidós reseñas."
+    tarjeta: {kind: dato, grande: "22", titulo: "RESEÑAS DE ZELDA", ty: 520, color: cyan}
+  - texto: "GTA seis la iguala con unas ciento catorce, cinco veces más."
+    tarjeta: {kind: dato, grande: "114", titulo: "RESEÑAS DE GTA VI", ty: 520, sub: "x5 más que Zelda", color: orange}
+  - texto: "Y todas sus críticas son positivas: ninguna mixta, ninguna negativa."
+    tarjeta: {kind: lista, items: ["Positivas · 100 %", "Mixtas · 0", "Negativas · 0"], titulo: "SIN NOTAS MALAS", ty: 450, color: magenta}
+  - texto: "La nota de los jugadores llegará después."
+    tarjeta: {kind: clock, reloj: "19 NOV", titulo: "FALTA LA DE LOS JUGADORES", ty: 520, color: gold, tsize: 70}
+  - texto: "¿Tú le darías un noventa y nueve? Te leo en comentarios."
+    tarjeta: {kind: dato, grande: "¿99?", titulo: "¿Y TU NOTA?", ty: 520, color: orange}
+  - texto: "Porque nunca un GTA llegó tan alto."
+    tarjeta: {kind: dato, grande: "99", titulo: "NUNCA TAN ALTO", ty: 520, color: magenta, props: [{tipo: estrellas, n: 5, x: 0.5, y: 0.3, tam: 140}]}
