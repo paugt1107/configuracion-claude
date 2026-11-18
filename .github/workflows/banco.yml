@@ -7,7 +7,7 @@ on:
     inputs:
       maximo:
         description: "Máximo de imágenes nuevas por fuente"
-        default: "400"
+        default: "1000"
   push:
     branches: [main]
     paths: ["canal-youtube/fuentes/banco.yaml", "clipfactory/banco/**"]
@@ -20,11 +20,16 @@ concurrency:
   group: banco
   cancel-in-progress: false
 env:
-  MAXIMO: ${{ github.event.inputs.maximo || '400' }}
+  MAXIMO: ${{ github.event.inputs.maximo || '1000' }}
 jobs:
+  # 1) tres recolectores A LA VEZ (cada uno escribe su propio índice)
   recoger:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        fuente: [oficial, trailers, libres]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,10 +41,8 @@ jobs:
       - name: Dependencias
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
-          pip install -q -e ".[banco,recortes,descargas]"
-          npm install -g playwright@1.63.0
-          npx -y playwright@1.63.0 install --with-deps chromium
+          pip install -q -e ".[descargas]"
+          if [ "${{ matrix.fuente }}" = oficial ]; then npm install -g playwright@1.63.0 && npx -y playwright@1.63.0 install --with-deps chromium; fi
           echo "NODE_PATH=$(npm root -g)" >> "$GITHUB_ENV"
           cat > /tmp/guardar.sh <<'EOF'
           git config user.name "banco-bot"
@@ -47,28 +50,54 @@ jobs:
           for d in media/banco media/oficial media/recortes; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet && exit 0
           git commit -q -m "Banco de imágenes: $1 [skip ci]"
-          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((i * 6)); done
           EOF
           chmod +x /tmp/guardar.sh
-      - name: Descargar oficiales y libres
-        run: set -o pipefail; python3 -m clipfactory.banco descargar --max "$MAXIMO"
+      - name: Recoger ${{ matrix.fuente }}
+        run: python3 -m clipfactory.banco ${{ matrix.fuente }} --max "$MAXIMO"
         continue-on-error: true
-      - run: /tmp/guardar.sh "descarga"
-      - name: Fotogramas de los tráileres oficiales
-        run: set -o pipefail; python3 -m clipfactory.banco trailers --max "$MAXIMO"
-        continue-on-error: true
-      - run: /tmp/guardar.sh "tráileres"
+      - run: /tmp/guardar.sh "${{ matrix.fuente }}"
+        if: always()
+
+  # 2) etiquetar con CLIP, sacar Lucía/Jason y recortes
+  etiquetar:
+    needs: recoger
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependencias
+        run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q -e ".[banco,recortes]"
+          cat > /tmp/guardar.sh <<'EOF'
+          git config user.name "banco-bot"
+          git config user.email "banco-bot@users.noreply.github.com"
+          for d in media/banco media/oficial media/recortes; do [ -e "$d" ] && git add "$d"; done
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Banco de imágenes: $1 [skip ci]"
+          for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((i * 6)); done
+          EOF
+          chmod +x /tmp/guardar.sh
       - name: Etiquetar (CLIP) y sacar Lucía/Jason
-        run: set -o pipefail; python3 -m clipfactory.banco etiquetar
+        run: python3 -m clipfactory.banco etiquetar
         continue-on-error: true
       - name: Recortes de personajes
         run: python3 -c "from clipfactory import recorte; print(recorte.process_all())"
         continue-on-error: true
         timeout-minutes: 15
       - run: /tmp/guardar.sh "etiquetas, personajes y recortes"
+        if: always()
 
   animar:
-    needs: recoger
+    needs: etiquetar
+    if: always()
     runs-on: ubuntu-latest
     timeout-minutes: 300
     strategy:
@@ -128,8 +157,3 @@ jobs:
           git add media/banco
           git diff --cached --quiet || git commit -q -m "Banco: galería [skip ci]"
           for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
-      - name: Rehacer vídeos que usan fotos de personajes o del banco
-        run: |
-          for g in $(grep -l "media/oficial/\|media/banco/\|banco:" canal-youtube/guiones/S*.yaml); do
-            gh workflow run produccion.yml -f job="$(basename "$g" .yaml)" || true
-          done

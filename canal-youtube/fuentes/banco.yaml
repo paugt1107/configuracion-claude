@@ -17,12 +17,14 @@ oficial:
   trailers:  # tráileres OFICIALES de Rockstar en YouTube: se sacan fotogramas de cada cambio de plano
     - https://www.youtube.com/watch?v=QdBZY2fkU-0   # Tráiler 1 (dic-2023)
     - https://www.youtube.com/watch?v=VQRLujxTm3c   # Tráiler 2 (may-2025)
+    - "ytsearch25:Grand Theft Auto VI Rockstar Games official"   # resto de vídeos oficiales (solo canal Rockstar Games)
+    - "ytsearch15:GTA VI trailer Rockstar Games"
   # etiquetas que se buscan en nombre de archivo / texto alternativo / página
   etiquetas: [jason, lucia, vice-city, leonida, keys, grassrivers, port-gellhorn, ambrosia, mount-kalaga, coche, moto, barco,
               avion, policia, atraco, arma, playa, noche, club, gasolinera, tienda, mapa, logo, personaje]
 
-libres:  # categoría → consultas en Commons (n fotos por consulta)
-  n: 3
+libres:  # categoría → consultas en Openverse + Commons (n fotos por consulta y por buscador)
+  n: 6
   florida:
     - Miami skyline night
     - Ocean Drive Miami Beach Art Deco neon
@@ -76,3 +78,22 @@ libres:  # categoría → consultas en Commons (n fotos por consulta)
   juego:
     - Video game controller
     - Rockstar Games logo
+  ambiente:
+    - Neon lights night city
+    - Miami Vice style sunset car
+    - Palm trees neon
+    - Hurricane Florida
+    - Rain night street neon
+    - Helicopter city night
+    - Sports car night city
+    - Money briefcase
+    - Handcuffs police arrest
+    - Mugshot board
+    - Courtroom
+    - Casino lights
+    - Nightlife Miami
+    - Yacht party
+    - Drug enforcement DEA raid
+    - Alligator closeup
+    - Swamp boat sunset
+    - Retro Miami 1980s
