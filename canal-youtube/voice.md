@@ -1,20 +1,20 @@
-# voice.md — voz del canal (RELLENAR; lo leen guionista, packaging, studio y comunidad)
-Si esto sigue vacío, el agente debe pedirte 3 vídeos o transcripciones tuyas y proponer el borrador. Un guion con voz ajena es peor que ninguno, porque hay que decirlo en voz alta.
+# voice.md — BORRADOR v0 (hipótesis; corregir con 3 vídeos/textos reales del usuario)
+Estado: escrito por Claude a partir de la estrategia del canal; NO es aún tu voz real. En cuanto me pases 3 vídeos o textos tuyos, lo reescribo.
 
 ## A quién le hablo
-Una sola persona, descrita con precisión (no "gamers": "alguien de 16-25 años que sigue las noticias de GTA y odia el clickbait").
+Una persona: 16-30 años, hispanohablante (España y Latam), sigue las noticias de videojuegos, quiere saber qué es real y qué es rumor, y está harta del clickbait.
 
-## Cómo hablo de verdad
-(Pega aquí 1-3 transcripciones de lo que mejor te ha funcionado, o cómo hablas en la vida real.)
+## Cómo hablo
+Directo y claro, como contárselo a un amigo en 30 segundos. Frases cortas, una idea por frase, datos antes que adjetivos. Humor seco y puntual, nunca chillón. Español neutro que entienden en España y Latam (sin jerga regional fuerte). Tuteo. Primera frase = el dato o la pregunta, sin saludo.
 
 ## Palabras que NO uso
-(Las que no son tuyas: "increíble", "brutal", "te lo juro"…)
+"increíble", "brutal", "locura", "te lo juro", "no te lo vas a creer", "antes de empezar", "dale like", "hola chicos".
 
 ## Palabras que SÍ uso
-(Tus coletillas y expresiones propias.)
+"según [fuente]", "confirmado", "rumor", "lo que sabemos", "lo que NO sabemos", "ojo".
 
 ## Lo que NO afirmaré
-(Datos que no pueda demostrar, filtraciones sin fuente, resultados que no sean míos.)
+Nada sin fuente: lo no confirmado se dice "según medios" o "rumor". Ni cifras inventadas, ni filtraciones como hechos, ni "oficial" si no lo ha dicho la compañía.
 
 ## Mi formato
-(Duración, cómo abro, si salgo en cámara, si uso voz sintética, tono: serio / humor / informativo…)
+Shorts verticales de 30-45 s, sin cara (personaje/ilustración + voz), subtítulos palabra a palabra, final en bucle, cierre con una sola acción. Voz sintética de ritmo vivo y tono neutro-informativo.

@@ -12,3 +12,8 @@
 - Miniaturas: 3 variantes para Shorts, 10 para vídeos largos
 - Privacidad de subida por defecto: private/programado hasta aprobación del usuario
 - Zona horaria de publicación: Europe/Madrid
+- Plataformas: YouTube Shorts + TikTok (mismo contenido base, texto y hashtags propios de cada una)
+- Re-gancho cada 5-8 s; primer fotograma legible sin sonido; subtítulos palabra a palabra; música CC0 con ducking, -14 LUFS
+- Anti contenido masivo: cada vídeo aporta algo propio verificable; ritmo sostenible; nunca clones del mismo formato en serie
+- IA: marcar contenido sintético realista con la etiqueta de cada plataforma; verificar política oficial antes de monetizar
+- Personajes y paleta: ver `personajes.md` (director-arte)

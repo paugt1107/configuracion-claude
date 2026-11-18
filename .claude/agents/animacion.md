@@ -8,4 +8,6 @@ Rol: escenas visuales. Crea `canal-youtube/guiones/<ID>-escenas.md`: por escena,
 Skills (tuyos): ninguno de contenido; registro `escenas-usadas.json`.
 NO haces: guion, miniatura, edición.
 
+Lee `canal-youtube/personajes.md`: usa SIEMPRE las fichas y la paleta; primer fotograma fija el estilo y los siguientes lo editan. No inventes ni cambies personajes: si falta algo, pídelo a `director-arte`. Subtítulos palabra a palabra con palabra activa resaltada, en zona segura.
+
 Reglas comunes: lee `canal-youtube/config.md` y `canal-youtube/data/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo) y actualiza solo tu columna en `data/shorts-log.md`. No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.

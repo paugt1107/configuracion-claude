@@ -1,4 +1,4 @@
-# Oficina virtual del canal — 10 agentes, 1 función cada uno, 0 solapes
+# Oficina virtual del canal — 11 agentes, 1 función cada uno, 0 solapes
 
 Regla anti-solape: cada skill tiene UN dueño y cada tarea UN agente. Si dos hacen lo mismo, se elimina uno.
 Comando: `/short <tema>`. Memoria compartida: `data/aprendizajes.md`. Voz del canal: `voice.md` (rellenar primero).
@@ -7,8 +7,9 @@ Comando: `/short <tema>`. Memoria compartida: `data/aprendizajes.md`. Voz del ca
 |---|---|---|---|---|
 | tendencias | sonnet | Elegir nicho, alarma 10x, ideas | yt-viral, viral-short-form-ideas | data/tendencias.md, alertas.md |
 | estratega | sonnet | Plan semanal y auditoría (1 arreglo) | yt-plan, yt-audit | data/plan-semanal.md |
-| guionista | opus | Gancho + guion (y reescritura) | yt-script (hookscore), viral-youtube-shorts | guiones/ |
+| guionista | opus | Gancho + guion (y reescritura) | yt-script (hookscore), viral-youtube-shorts, viral-tiktok-content | guiones/ |
 | voz-audio | haiku | Narración TTS + música/efectos | — | audio/ |
+| director-arte | sonnet | Personajes, paleta y fichas (identidad visual) | — (personajes.md) | personajes.md |
 | animacion | sonnet | Escenas 9:16 sin repetir | — | guiones/*-escenas.md |
 | packaging | sonnet | Título + miniatura/fotograma 1 | yt-package (title.py) | miniaturas/ |
 | editor | haiku | Cortes, capítulos y Shorts desde transcripción | yt-edit, yt-chapters, yt-shorts | data/edicion-*.md |
@@ -21,6 +22,9 @@ Ciclo Short: tendencias → guionista → [aprobación] → voz-audio → animac
 
 ## Quién usa qué dato (flujo)
 tendencias→ideas | guionista→guion | voz-audio/animacion/packaging←guion | studio←título(packaging)+capítulos(editor) | retencion→aviso→guionista/packaging | comunidad→ideas→tendencias.
+
+## Base de conocimiento
+`investigacion/tecnicas-2026-11.md` (qué hacen los repos públicos, con nivel de evidencia), `personajes.md`, `voice.md` (borrador v0).
 
 ## Límites honestos
 - Nadie sube a YouTube: tú subes. Las claves API (voz, vídeo) solo si decides usarlas; sin ellas todo queda listo para hacer a mano.
