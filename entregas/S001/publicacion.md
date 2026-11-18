@@ -15,6 +15,7 @@ Fuentes:
 - mp1st.com — GTA 6 unlock times (Nueva Zelanda 11:00 UTC)
 - godisageek.com — GTA 6 release times by region
 - Rockstar Newswire — lanzamiento 19-nov-2026
+Imagen: Grand Theft Auto VI trailer 1 date.png — Rockstar Games — Public domain — https://commons.wikimedia.org/wiki/File:Grand_Theft_Auto_VI_trailer_1_date.png
 Voz generada con IA.
 #gta6 #gtavi #gta6espanol #sabiasque #shorts
 ```

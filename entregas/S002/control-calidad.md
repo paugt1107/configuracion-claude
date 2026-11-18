@@ -8,7 +8,7 @@
 - ✅ Sin silencios largos (0)
 - ✅ Gancho ≥ 55 (61 VALE)
 - ✅ Guion 90-140 palabras (120)
-- ✅ Imágenes al nombrar cosas ≥ 1 cada 10 s (7)
+- ✅ Imágenes al nombrar cosas o escenas 3D ≥ 1 cada 10 s (7 + 0 3D)
 - ✅ 3 títulos propuestos (3)
 - ✅ Portada definida
 - ✅ Fuentes citadas

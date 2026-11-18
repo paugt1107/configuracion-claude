@@ -16,6 +16,7 @@ Fuentes:
 - GamesRadar — How long is GTA 6? About 80 hours according to one Rockstar dev's playthrough (2026)
 - Xataka México — Alguien de Rockstar ya jugó GTA 6 de principio a fin (2026); entrevista original en The New York Times
 - Comparativas de duración GTA V (30-45 h) y RDR2 (50-60 h) según medios (estimado)
+Imagen: Grand Theft Auto VI trailer 1 date.png — Rockstar Games — Public domain — https://commons.wikimedia.org/wiki/File:Grand_Theft_Auto_VI_trailer_1_date.png
 Voz generada con IA.
 #gta6 #gtavi #gta6espanol #sabiasque #shorts
 ```

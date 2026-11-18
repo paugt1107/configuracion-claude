@@ -16,6 +16,7 @@ Fuentes:
 - Tom's Hardware — GTA 6 will run at only 30 fps on consoles at launch, no performance mode promised (2026)
 - TechRadar / Digital Foundry — GTA 6 likely 30fps on PS5 due to CPU limits; 40fps mode as option (2026)
 - Notebookcheck / Digital Foundry — PS5 Pro CPU ~7 % faster in CPU-limited scenarios (2026)
+Imagen: Grand Theft Auto VI trailer 1 date.png — Rockstar Games — Public domain — https://commons.wikimedia.org/wiki/File:Grand_Theft_Auto_VI_trailer_1_date.png
 Voz generada con IA.
 #gta6 #gtavi #gta6espanol #sabiasque #shorts
 ```
