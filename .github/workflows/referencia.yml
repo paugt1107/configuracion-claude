@@ -1,0 +1,39 @@
+name: Referencia · Analizar un vídeo de ejemplo
+# Saca título, canal, duración, descripción, miniatura y (si YouTube deja) una hoja de fotogramas cada 1,5 s
+# para que el equipo copie el ESTILO (no el contenido) de un vídeo que le gusta al dueño.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL del vídeo (YouTube/TikTok)"
+        required: true
+permissions:
+  contents: write
+jobs:
+  analizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q yt-dlp
+      - name: Datos, miniatura y fotogramas
+        run: |
+          URL="${{ github.event.inputs.url }}"
+          ID=$(echo "$URL" | sed -E 's#.*(v=|shorts/|youtu.be/)([A-Za-z0-9_-]{11}).*#\2#')
+          D=canal-youtube/investigacion/referencias/$ID; mkdir -p $D
+          curl -s "https://www.youtube.com/oembed?url=$URL&format=json" -o $D/oembed.json || true
+          curl -s "https://i.ytimg.com/vi/$ID/maxresdefault.jpg" -o $D/miniatura.jpg || true
+          yt-dlp --skip-download --dump-json "$URL" > $D/info.json 2> $D/yt-dlp.log || true
+          yt-dlp -q -f "worst[height>=360]/worst" -o "/tmp/v.%(ext)s" "$URL" 2>> $D/yt-dlp.log || true
+          V=$(ls /tmp/v.* 2>/dev/null | head -1)
+          if [ -n "$V" ]; then
+            ffmpeg -loglevel error -i "$V" -vf "fps=1/1.5,scale=180:-2,tile=8x5" -frames:v 3 $D/hoja-%d.jpg || true
+            ffprobe -v error -show_entries format=duration -of csv=p=0 "$V" > $D/duracion.txt || true
+          fi
+          ls -la $D
+      - name: Guardar
+        run: |
+          git config user.name "referencia-bot"; git config user.email "referencia-bot@users.noreply.github.com"
+          git add canal-youtube/investigacion/referencias
+          git diff --cached --quiet || git commit -q -m "Referencia de estilo [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
