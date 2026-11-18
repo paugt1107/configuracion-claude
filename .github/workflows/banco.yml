@@ -32,21 +32,21 @@ jobs:
       fail-fast: false
       max-parallel: 14
       matrix:
-        # una máquina por fuente y por categoría de fotos libres (cada una con su IP: Commons no las frena juntas)
+        # una máquina por fuente y 12 para las fotos libres (se reparten las categorías; cada una con su IP)
         fuente: [oficial, trailers]
         include:
-          - { fuente: libres, cat: florida }
-          - { fuente: libres, cat: coches }
-          - { fuente: libres, cat: policia }
-          - { fuente: libres, cat: atracos }
-          - { fuente: libres, cat: armas }
-          - { fuente: libres, cat: lugares }
-          - { fuente: libres, cat: juego }
-          - { fuente: libres, cat: ambiente }
-          - { fuente: libres, cat: animales }
-          - { fuente: libres, cat: vida }
-          - { fuente: libres, cat: objetos }
-          - { fuente: libres, cat: clima }
+          - { fuente: libres, parte: 0 }
+          - { fuente: libres, parte: 1 }
+          - { fuente: libres, parte: 2 }
+          - { fuente: libres, parte: 3 }
+          - { fuente: libres, parte: 4 }
+          - { fuente: libres, parte: 5 }
+          - { fuente: libres, parte: 6 }
+          - { fuente: libres, parte: 7 }
+          - { fuente: libres, parte: 8 }
+          - { fuente: libres, parte: 9 }
+          - { fuente: libres, parte: 10 }
+          - { fuente: libres, parte: 11 }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -70,16 +70,16 @@ jobs:
           for i in 1 2 3 4 5 6; do git pull --rebase -q && git push -q && break; sleep $((i * 6)); done
           EOF
           chmod +x /tmp/guardar.sh
-      - name: Recoger ${{ matrix.fuente }} ${{ matrix.cat }} (guarda en git cada 6 min)
+      - name: Recoger ${{ matrix.fuente }} ${{ matrix.parte }} (guarda en git cada 6 min)
         timeout-minutes: 160
         continue-on-error: true
         run: |
-          EXTRA=""; [ -n "${{ matrix.cat }}" ] && EXTRA="--cat ${{ matrix.cat }}"
+          EXTRA=""; [ -n "${{ matrix.parte }}" ] && EXTRA="--parte ${{ matrix.parte }} --partes 12"
           python3 -m clipfactory.banco ${{ matrix.fuente }} --max "$MAXIMO" $EXTRA &
           PID=$!
-          while kill -0 $PID 2>/dev/null; do sleep 360; /tmp/guardar.sh "${{ matrix.fuente }} ${{ matrix.cat }} (parcial)" || true; done
+          while kill -0 $PID 2>/dev/null; do sleep 360; /tmp/guardar.sh "${{ matrix.fuente }} ${{ matrix.parte }} (parcial)" || true; done
           wait $PID
-      - run: /tmp/guardar.sh "${{ matrix.fuente }} ${{ matrix.cat }}"
+      - run: /tmp/guardar.sh "${{ matrix.fuente }} ${{ matrix.parte }}"
         if: always()
 
   # 2) etiquetar con CLIP, sacar Lucía/Jason y recortes

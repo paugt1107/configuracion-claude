@@ -148,3 +148,154 @@ libres:  # categoría → consultas en Openverse + Commons (n fotos por consulta
     - Hurricane satellite image
     - Flooded street
     - Tropical rain
+  # ---------------- DE TODO (para vídeos de cualquier tema) ----------------
+  naturaleza:
+    - Mountain landscape
+    - Forest fog
+    - Waterfall
+    - Desert dunes
+    - Volcano eruption
+    - Glacier ice
+    - Canyon
+    - Tropical island aerial
+    - Northern lights aurora
+    - Cave interior
+  espacio:
+    - Earth from space
+    - Moon surface
+    - Mars surface
+    - Galaxy Hubble
+    - Nebula
+    - Rocket launch
+    - Astronaut spacewalk
+    - Saturn rings
+    - Solar eclipse
+    - International Space Station
+  oceano:
+    - Coral reef
+    - Whale breaching
+    - Octopus
+    - Jellyfish
+    - Deep sea fish
+    - Shipwreck underwater
+    - Dolphin
+    - Sea turtle
+  historia:
+    - Egyptian pyramids
+    - Roman Colosseum
+    - Ancient Greek temple
+    - Medieval castle
+    - Viking ship
+    - Samurai armor
+    - Machu Picchu
+    - Great Wall of China
+    - Ancient ruins jungle
+    - Old map
+  misterio:
+    - Abandoned building
+    - Foggy road night
+    - Old cemetery
+    - Haunted house
+    - Stonehenge
+    - Easter Island moai
+    - Ancient manuscript
+    - Dark corridor
+    - Crop circle
+    - Lighthouse storm
+  ciencia:
+    - Laboratory scientist
+    - Microscope
+    - DNA model
+    - Bacteria microscopy
+    - Brain MRI
+    - Chemistry experiment
+    - Particle accelerator
+    - Dinosaur skeleton museum
+    - Meteorite
+    - Telescope observatory
+  tecnologia:
+    - Computer circuit board
+    - Robot
+    - Server room
+    - Old computer 1980s
+    - Video game arcade
+    - Virtual reality headset
+    - Drone flying
+    - Smartphone factory
+    - Electric car charging
+    - Satellite dish
+  deportes:
+    - Football stadium
+    - Basketball dunk
+    - Boxing match
+    - Formula 1 car
+    - Skateboarding trick
+    - Surfing big wave
+    - Olympic sprint
+    - Tennis match
+    - Motocross jump
+    - Golf swing
+  gente:
+    - Crowd street
+    - Portrait old man
+    - Portrait woman smiling
+    - Children playing
+    - Business meeting
+    - Chef cooking
+    - Firefighters
+    - Doctor hospital
+    - Construction worker
+    - Musician concert
+  comida:
+    - Pizza
+    - Hamburger
+    - Sushi
+    - Tacos
+    - Ice cream
+    - Coffee cup
+    - Fruit market
+    - Chocolate
+    - Street food
+    - Birthday cake
+  ciudades:
+    - New York skyline
+    - Tokyo street night
+    - Paris Eiffel Tower
+    - London Big Ben
+    - Dubai skyline
+    - Madrid Gran Via
+    - Barcelona Sagrada Familia
+    - Mexico City Zocalo
+    - Buenos Aires Obelisco
+    - Las Vegas Strip night
+    - Hong Kong skyline
+    - Rio de Janeiro Christ the Redeemer
+  transporte:
+    - Steam locomotive
+    - Bullet train
+    - Airplane cockpit
+    - Cargo ship
+    - Submarine
+    - Hot air balloon
+    - Vintage car
+    - Monster truck
+    - Tank military
+    - Fighter jet
+  dinero_mundo:
+    - Stock market screen
+    - Bitcoin coin
+    - Bank building
+    - Euro banknotes
+    - Gold coins treasure
+    - Shopping mall
+    - Factory workers
+    - Lottery ticket
+  arte:
+    - Museum painting gallery
+    - Street art graffiti
+    - Sculpture marble
+    - Cinema theater
+    - Film camera vintage
+    - Vinyl records
+    - Guitar concert
+    - Theater stage

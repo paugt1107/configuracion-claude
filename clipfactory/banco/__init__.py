@@ -51,7 +51,7 @@ TEXTO_ETIQUETAS = {
 # Etiquetas por contenido (CLIP): etiqueta → descripción en inglés
 # TEMAS por contenido (CLIP). tema → descripción en inglés. El primero que mejor encaja es la CARPETA de la imagen
 # (media/banco/temas/<tema>/); los 3 mejores quedan como etiquetas. Cambiar la lista sube CLIP_VERSION y se re-etiqueta.
-CLIP_VERSION = 2
+CLIP_VERSION = 3
 CLIP_ETIQUETAS = {
     # personajes
     "lucia": "a photo of a young latina woman with brown hair and bangs",
@@ -96,6 +96,28 @@ CLIP_ETIQUETAS = {
     "movil": "a smartphone screen",
     "comida": "food or drinks",
     "cartel": "a neon sign",
+    # de todo (vídeos de cualquier tema)
+    "montana": "mountains and a landscape",
+    "bosque": "a forest",
+    "agua": "a waterfall, a lake or a river",
+    "desierto": "a desert",
+    "volcan": "a volcano",
+    "espacio": "outer space, planets or stars",
+    "cohete": "a rocket or an astronaut",
+    "mar": "the ocean or underwater sea life",
+    "historia": "ancient ruins, a castle or a historic monument",
+    "misterio": "an abandoned, foggy or creepy place",
+    "ciencia": "a laboratory, a microscope or science",
+    "tecnologia": "computers, robots or electronics",
+    "deporte": "people playing a sport",
+    "estadio": "a stadium full of people",
+    "comida_rica": "a delicious dish of food",
+    "monumento": "a famous landmark or tower",
+    "tren": "a train",
+    "militar": "a military tank or fighter jet",
+    "arte": "a painting, a sculpture or street art",
+    "musica": "musicians or musical instruments",
+    "retrato": "a close portrait of a person's face",
     # ambiente
     "noche": "a city at night with neon lights",
     "atardecer": "a sunset",
@@ -254,15 +276,17 @@ def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
     return nuevas
 
 
-def descargar_libres(cfg: dict, ind: dict, maximo: int, categorias: list[str] | None = None) -> int:
+def descargar_libres(cfg: dict, ind: dict, maximo: int, categorias: list[str] | None = None, parte: int = 0, partes: int = 1) -> int:
     """Fotos libres por categoría. Guarda el índice tras CADA búsqueda (si la máquina se corta, no se pierde nada)."""
     from .. import libres
 
     lib = dict(cfg.get("libres") or {})
     n = int(lib.pop("n", 3))
     nuevas = 0
-    for cat, consultas in lib.items():
+    for k, (cat, consultas) in enumerate(sorted(lib.items())):
         if categorias and cat not in categorias:
+            continue
+        if not categorias and k % partes != parte:  # reparto entre máquinas: cada una se queda sus categorías
             continue
         for q in consultas or []:
             if nuevas >= maximo:
@@ -620,7 +644,7 @@ def main(argv=None) -> int:
         descargar_oficial(cfg, ind, a.max)
         guardar(ind, ("oficial",))
     if a.paso in ("libres", "descargar", "todo"):
-        descargar_libres(cfg, ind, a.max, a.cat.split(",") if a.cat else None)
+        descargar_libres(cfg, ind, a.max, a.cat.split(",") if a.cat else None, a.parte, a.partes)
     if a.paso in ("trailers", "todo"):
         trailers(cfg, ind, a.max)
         guardar(ind, ("trailers",))
