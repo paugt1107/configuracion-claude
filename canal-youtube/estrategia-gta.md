@@ -1,5 +1,5 @@
 # Estrategia: canal de GTA VI en español (Shorts + TikTok)
-Posicionamiento: **"GTA VI explicado en 45 segundos"** — cómo se hizo, misiones, curiosidades de personajes, detalles ocultos y vida real vs juego. En español neutro (España + Latam). Diferencia frente a la competencia: datos verificados (nada de "filtraciones" falsas), gancho en el fotograma 1, edición propia y voz reconocible.
+Concepto del canal: **"¿Sabías que…?" de GTA** — una curiosidad o dato por vídeo, con gancho en el primer fotograma, explicada en 30-45 segundos y siempre con prueba. Posicionamiento: **"GTA VI explicado en 45 segundos"** — cómo se hizo, misiones, curiosidades de personajes, detalles ocultos y vida real vs juego. En español neutro (España + Latam). Diferencia frente a la competencia: datos verificados (nada de "filtraciones" falsas), gancho en el fotograma 1, edición propia y voz reconocible.
 
 ## Por qué este nicho ahora
 Mayor lanzamiento del año (≈15 M reservas; tráiler 2 con >475 M visualizaciones en 24 h). La demanda de "cómo hago X / dónde está Y / ¿sabías que…?" explota en las 2-6 semanas tras el lanzamiento. Riesgo: saturación en inglés → ventaja en español con calidad.

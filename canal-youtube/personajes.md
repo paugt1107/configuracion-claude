@@ -29,3 +29,5 @@ El protagonista visual es el juego (capturas propias). La marca del canal va en 
 - Crédito: texto pequeño en caja negra 45 % al 21 % de altura ("Clip: @canal" / "Tráiler oficial: Rockstar Games").
 - Señalización: círculos y flechas en cian #19D3FF. Esquina opcional con "Tic" (mascota) si se aprueba.
 - Personajes del juego (Lucia, Jason…): solo como aparecen en capturas propias o material oficial con crédito; sus datos los mantiene `documentalista`.
+
+- Banderas: cuando un dato habla de un país, se muestra su bandera dibujada (`motion.flag('nz'|'es'|'mx'|'ar')`; simplificada, sin escudos). Para más países, añadir su función en `clipfactory/motion.py`.

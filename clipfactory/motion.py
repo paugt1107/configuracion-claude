@@ -86,27 +86,112 @@ def _label(img, xy, text, size, color=WHITE, anchor="mm", box=True, maxw=900):
     d.multiline_text(xy, text, font=f, fill=color, anchor=anchor, **kw)
 
 
+# ---------- Banderas dibujadas (simplificadas, sin escudos) ----------
+def _star(draw, cx, cy, r, fill, outline=None, ow=0):
+    import math
+    pts = []
+    for i in range(10):
+        ang = -math.pi / 2 + i * math.pi / 5
+        rad = r if i % 2 == 0 else r * 0.42
+        pts.append((cx + rad * math.cos(ang), cy + rad * math.sin(ang)))
+    draw.polygon(pts, fill=fill, outline=outline, width=ow)
+
+
+def flag(code: str, w: int = 480) -> Image.Image:
+    """Bandera RGBA de ancho w. Códigos: nz, es, mx, ar. Dibujo a 3x y reducción (bordes suaves)."""
+    k = 3
+    ratios = {"nz": 0.5, "es": 2 / 3, "mx": 4 / 7, "ar": 5 / 8}
+    h = int(w * ratios[code])
+    W2, H2 = w * k, h * k
+    im = Image.new("RGB", (W2, H2), (255, 255, 255))
+    d = ImageDraw.Draw(im)
+    if code == "es":
+        d.rectangle([0, 0, W2, H2 // 4], fill=(170, 21, 27))
+        d.rectangle([0, H2 // 4, W2, H2 * 3 // 4], fill=(241, 191, 0))
+        d.rectangle([0, H2 * 3 // 4, W2, H2], fill=(170, 21, 27))
+    elif code == "mx":
+        t3 = W2 // 3
+        d.rectangle([0, 0, t3, H2], fill=(0, 104, 71))
+        d.rectangle([2 * t3, 0, W2, H2], fill=(206, 17, 38))
+        cx, cy, r = W2 // 2, H2 // 2, H2 // 7
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(140, 100, 40))
+        d.ellipse([cx - r * 0.7, cy - r * 0.7, cx + r * 0.7, cy + r * 0.7], fill=(110, 140, 70))
+    elif code == "ar":
+        d.rectangle([0, 0, W2, H2], fill=(116, 172, 223))
+        d.rectangle([0, H2 // 3, W2, H2 * 2 // 3], fill=(255, 255, 255))
+        import math
+        cx, cy, r = W2 // 2, H2 // 2, H2 // 10
+        for i in range(16):
+            a = i * math.pi / 8
+            d.polygon([(cx + (r * 1.0) * math.cos(a - .09), cy + (r * 1.0) * math.sin(a - .09)),
+                       (cx + (r * 1.75) * math.cos(a), cy + (r * 1.75) * math.sin(a)),
+                       (cx + (r * 1.0) * math.cos(a + .09), cy + (r * 1.0) * math.sin(a + .09))], fill=(246, 180, 14))
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(246, 180, 14))
+    elif code == "nz":
+        d.rectangle([0, 0, W2, H2], fill=(0, 36, 125))
+        cw, ch = W2 // 2, H2 // 2  # cantón (Union Jack simplificada)
+        d.rectangle([0, 0, cw, ch], fill=(1, 33, 105))
+        d.line([(0, 0), (cw, ch)], fill=(255, 255, 255), width=int(ch * 0.2))
+        d.line([(0, ch), (cw, 0)], fill=(255, 255, 255), width=int(ch * 0.2))
+        d.line([(0, 0), (cw, ch)], fill=(200, 16, 46), width=int(ch * 0.07))
+        d.line([(0, ch), (cw, 0)], fill=(200, 16, 46), width=int(ch * 0.07))
+        d.rectangle([cw // 2 - ch * 0.17, 0, cw // 2 + ch * 0.17, ch], fill=(255, 255, 255))
+        d.rectangle([0, ch // 2 - ch * 0.17, cw, ch // 2 + ch * 0.17], fill=(255, 255, 255))
+        d.rectangle([cw // 2 - ch * 0.09, 0, cw // 2 + ch * 0.09, ch], fill=(200, 16, 46))
+        d.rectangle([0, ch // 2 - ch * 0.09, cw, ch // 2 + ch * 0.09], fill=(200, 16, 46))
+        for fx, fy, fr in ((0.775, 0.22, 0.095), (0.775, 0.80, 0.11), (0.655, 0.50, 0.085), (0.89, 0.43, 0.085)):
+            _star(d, W2 * fx, H2 * fy, H2 * fr * 1.28, (255, 255, 255))
+            _star(d, W2 * fx, H2 * fy, H2 * fr, (200, 16, 46))
+    im = im.resize((w, h), Image.LANCZOS)
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, w - 1, h - 1], int(h * 0.07), fill=255)
+    out = im.convert("RGBA")
+    out.putalpha(mask)
+    return out
+
+
+def _paste_flag(img, code, cx, cy, w):
+    fl = flag(code, w)
+    sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rounded_rectangle([cx - w // 2 - 8, cy - fl.height // 2 - 8, cx + w // 2 + 8, cy + fl.height // 2 + 8], 18, fill=(255, 255, 255, 40))
+    base = Image.alpha_composite(img.convert("RGBA"), sh.filter(ImageFilter.GaussianBlur(14)))
+    base.alpha_composite(fl, (cx - fl.width // 2, cy - fl.height // 2))
+    img.paste(base.convert("RGB"))
+
+
 def card(spec: dict) -> Image.Image:
     """spec: {fondo, reloj, reloj_color, titulo, sub, extra:[(texto, color)], barra, kind}"""
     accent = COLORS.get(spec.get("color", "orange"), ORANGE)
     img = _bg(accent)
     kind = spec.get("kind", "clock")
     d = ImageDraw.Draw(img)
-    if kind == "clock":
+    if kind == "clock" and spec.get("bandera"):
+        _paste_flag(img, spec["bandera"], W // 2, 700, 520)
+        _glow_text(img, (W // 2, 1010), spec["reloj"], 250, accent)
+        if spec.get("sub"):
+            _label(img, (W // 2, 1190), spec["sub"], 46, CYAN, box=False)
+    elif kind == "clock":
         _glow_text(img, (W // 2, 800), spec["reloj"], 300, accent)
         if spec.get("sub"):
             _label(img, (W // 2, 1010), spec["sub"], 52, CYAN)
     elif kind == "three":
-        for i, (t, tag) in enumerate(spec["relojes"]):
-            y = 620 + i * 330
-            _glow_text(img, (W // 2, y), t, 190, CYAN, spread=16)
-            _label(img, (W // 2, y + 125), tag, 42, WHITE, box=False)
+        for i, row in enumerate(spec["relojes"]):
+            t, tag = row[0], row[1]
+            y = 520 + i * 250
+            if len(row) > 2:
+                _paste_flag(img, row[2], 190, y, 220)
+            _glow_text(img, (W // 2 + (110 if len(row) > 2 else 0), y), t, 170, CYAN, spread=16)
+            _label(img, (W // 2 + (110 if len(row) > 2 else 0), y + 118), tag, 40, WHITE, box=False)
     elif kind == "split":
         d.line([(120, 880), (W - 120, 880)], fill=(60, 80, 130), width=4)
-        _glow_text(img, (W // 2, 640), spec["reloj"], 210, accent)
-        _label(img, (W // 2, 780), spec["sub"], 44, CYAN, box=False)
-        _glow_text(img, (W // 2, 1010), spec["reloj2"], 210, GOLD)
-        _label(img, (W // 2, 1150), spec["sub2"], 44, GOLD, box=False)
+        ox = 130 if spec.get("bandera") else 0
+        if spec.get("bandera"):
+            _paste_flag(img, spec["bandera"], 190, 640, 220)
+            _paste_flag(img, spec["bandera2"], 190, 1010, 220)
+        _glow_text(img, (W // 2 + ox, 640), spec["reloj"], 210, accent)
+        _label(img, (W // 2 + ox, 780), spec["sub"], 44, CYAN, box=False)
+        _glow_text(img, (W // 2 + ox, 1010), spec["reloj2"], 210, GOLD)
+        _label(img, (W // 2 + ox, 1150), spec["sub2"], 44, GOLD, box=False)
     elif kind == "timeline":
         y = 960
         d.line([(110, y), (W - 110, y)], fill=(80, 105, 160), width=8)
