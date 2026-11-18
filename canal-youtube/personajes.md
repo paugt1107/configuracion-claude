@@ -21,3 +21,11 @@ Estado: propuesta de Claude, pendiente de aprobación. No hay imágenes generada
 A. Ilustración vectorial (SVG) hecha por Claude + movimiento en el editor: coste 0, coherencia total.
 B. Imágenes con modelo + referencia (p. ej. FLUX Kontext/Nano Banana vía API o app): coste bajo, ficha como entrada.
 C. Identidad entrenada (Higgsfield Soul ID u otra) + vídeo corto: coste mayor; probar con 1 personaje y comparar con B antes de contratar plan.
+
+## Identidad visual del canal de clipping GTA (v1)
+El protagonista visual es el juego (capturas propias). La marca del canal va en los elementos superpuestos:
+- Subtítulos: blanco con contorno negro, palabra activa naranja #FF7A1A, Inter Bold, en el tercio central.
+- Gancho: caja negra 60 % con texto blanco en mayúsculas, centrado, a la altura del 27 % de la pantalla, primeros 2-3 s.
+- Crédito: texto pequeño en caja negra 45 % al 21 % de altura ("Clip: @canal" / "Tráiler oficial: Rockstar Games").
+- Señalización: círculos y flechas en cian #19D3FF. Esquina opcional con "Tic" (mascota) si se aprueba.
+- Personajes del juego (Lucia, Jason…): solo como aparecen en capturas propias o material oficial con crédito; sus datos los mantiene `documentalista`.

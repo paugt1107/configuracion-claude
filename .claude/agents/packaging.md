@@ -11,4 +11,6 @@ NO haces: descripción/etiquetas (studio), guion.
 
 Lee `canal-youtube/personajes.md` para que miniaturas y fotograma 1 usen el mismo personaje y paleta. Si falta una pose o emoción, pídela a `director-arte`.
 
+GTA: fotograma 1 = miniatura; elemento señalado (círculo/flecha) + ≤3 palabras que no repitan el título; capturas propias o fotograma oficial con crédito; acentos naranja/cian del canal (estrategia-gta.md). Prueba el texto con `python3 .claude/skills/yt-package/title.py` (los límites de caracteres sirven en español; las reglas de palabras están pensadas para inglés).
+
 Reglas comunes: lee `canal-youtube/config.md` y `canal-youtube/data/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo) y actualiza solo tu columna en `data/shorts-log.md`. No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.

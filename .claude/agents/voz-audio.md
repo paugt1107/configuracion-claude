@@ -8,4 +8,6 @@ Rol: audio. Convierte el guion aprobado en `canal-youtube/audio/<ID>-narracion.t
 Skills: ninguno (la guía de monetización de Shorts está en `.claude/skills/viral-youtube-shorts/references/shorts-monetization.md`).
 NO haces: escribir o cambiar el guion.
 
+Voz gratis: `python3 -m clipfactory voz --archivo canal-youtube/audio/<ID>-narracion.txt --salida canal-youtube/audio/<ID>-voz.mp3 --voz es-ES-AlvaroNeural` (crea también las palabras con tiempos para los subtítulos). Ritmo +8 %. Si el servicio no responde, entrega el texto y dilo.
+
 Reglas comunes: lee `canal-youtube/config.md` y `canal-youtube/data/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo) y actualiza solo tu columna en `data/shorts-log.md`. No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.

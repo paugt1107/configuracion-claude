@@ -1,0 +1,16 @@
+# Job de render. Copia como SXXX.yaml. Rutas relativas a la raíz del repositorio.
+id: S000
+fuente: ejemplo-propia            # id en canal-youtube/fuentes/fuentes.yaml
+inicio: 12.5                       # segundos en el vídeo fuente
+fin: 44.0
+layout: blur                       # blur (gameplay 16:9 con fondo desenfocado) | crop (recorte vertical)
+crop_x: 0.5                        # solo layout crop: 0 = izquierda, 1 = derecha
+gancho: "Tú pasaste por aquí 5 veces y no viste esto"
+gancho_segundos: 2.5
+voz: canal-youtube/audio/S000-voz.mp3          # obligatoria si la fuente no es propia
+palabras_voz: canal-youtube/audio/S000-voz.words.json
+subtitulos: voz                    # voz | original | ninguno
+# palabras_original: canal-youtube/transcripciones/fuente.words.json   # si subtitulos: original
+volumen_original: 0.25             # audio del juego bajo la voz (ducking automático)
+silenciar_original: false          # true si suena música con licencia (radio)
+salida: salida/S000.mp4
