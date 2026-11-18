@@ -117,7 +117,7 @@ def tendencias(cfg: dict | None = None, log=print) -> list[dict]:
     out = []
     for geo in ("ES", ""):
         try:
-            tr = TrendReq(hl="es-ES", tz=60, retries=2, backoff_factor=0.5)
+            tr = TrendReq(hl="es-ES", tz=60)  # sin retries: pytrends choca con urllib3 2 (method_whitelist)
             tr.build_payload([cfg.get("corto", "GTA 6")], timeframe="now 7-d", geo=geo)
             rel = tr.related_queries().get(cfg.get("corto", "GTA 6"), {}) or {}
             sube = rel.get("rising")
