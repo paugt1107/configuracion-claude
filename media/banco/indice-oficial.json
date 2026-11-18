@@ -1291,26 +1291,14 @@
  },
  "of-2a22a56fea": {
   "alt": "",
-  "animada": "animadas/of-2a22a56fea.mp4",
   "archivo": "oficial/of-2a22a56fea.jpg",
   "categoria": "oficial",
-  "clip": {
-   "avion": 0.085,
-   "caiman": 0.328,
-   "gato": 0.082,
-   "pantano": 0.089,
-   "perro": 0.056
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "caiman"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000001111000000000000111100000000000011110000000000001011000000000000101100000000000011110000000000001001000000000000100100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard3.0ip~4n1dqh9g2.png",
   "w": 1920
  },
@@ -1745,26 +1733,14 @@
  },
  "of-3a33d68ef6": {
   "alt": "",
-  "animada": "animadas/of-3a33d68ef6.mp4",
   "archivo": "oficial/of-3a33d68ef6.jpg",
   "categoria": "oficial",
-  "clip": {
-   "avion": 0.085,
-   "caiman": 0.328,
-   "gato": 0.082,
-   "pantano": 0.089,
-   "perro": 0.056
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "caiman"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "1100000000000000111100000000000011110000000000001111000000000000111100000000000011110000000000001111000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard0.05mjizbf5hj_f.png",
   "w": 1920
  },
@@ -2033,27 +2009,14 @@
  },
  "of-4545726c21": {
   "alt": "",
-  "animada": "animadas/of-4545726c21.mp4",
   "archivo": "oficial/of-4545726c21.jpg",
   "categoria": "oficial",
-  "clip": {
-   "arma": 0.072,
-   "atardecer": 0.151,
-   "avion": 0.071,
-   "caiman": 0.106,
-   "movil": 0.061
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "atardecer",
-   "caiman"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000011100000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "atardecer",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard9.0jh6qrro1q9gf.png",
   "w": 1920
  },
@@ -2270,28 +2233,16 @@
  },
  "of-53d1e6b81a": {
   "alt": "",
-  "animada": "animadas/of-53d1e6b81a.mp4",
   "archivo": "oficial/of-53d1e6b81a.jpg",
   "categoria": "oficial",
-  "clip": {
-   "arma": 0.028,
-   "barco": 0.052,
-   "camion": 0.113,
-   "cartel": 0.592,
-   "tormenta": 0.023
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "etiquetas": [
-   "camion",
-   "cartel",
    "logo"
   ],
   "fuente": "oficial",
   "h": 1080,
   "hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000111111111000000011111111100000001111111110000000111111111000000011111111100000001111111111000000111111111110000011111111111111111111111111111111111111111111111111111",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "cartel",
   "url": "https://www.rockstargames.com/VI/_next/static/media/logo_vi.02gnpy7k4ozcz.png",
   "w": 1920
  },
@@ -2458,23 +2409,12 @@
   "alt": "",
   "archivo": "oficial/of-570abd8d4f.jpg",
   "categoria": "oficial",
-  "clip": {
-   "animal": 0.001,
-   "caiman": 0.994,
-   "pantano": 0.0,
-   "perro": 0.0,
-   "pez": 0.004
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "caiman"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011100000000000011110000000000001110000000000000110000000000000011110000000000001111000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard6.0ir_.4rvxg_vg.png",
   "w": 1920
  },
@@ -4044,6 +3984,19 @@
   "url": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_BUGGY_03.0s2rbkg98-0ac.jpg",
   "w": 1920
  },
+ "of-80e92c3993": {
+  "alt": "",
+  "archivo": "oficial/of-80e92c3993.jpg",
+  "categoria": "oficial",
+  "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
+  "etiquetas": [],
+  "fuente": "oficial",
+  "h": 1548,
+  "hash": "1111111111111111111111111111111110011111111111110001111111111111000111111111111100011111111111110000001111111111000000111111111100001011111111110000000000011111000000000000111100000000000011110000000000000000000000000000000000000000000000000000000000000000",
+  "pagina": "https://www.rockstargames.com/VI/places",
+  "url": "https://www.rockstargames.com/VI/_next/static/media/background.0n134dm1nwylt.png",
+  "w": 1920
+ },
  "of-842ed51cbf": {
   "alt": "",
   "archivo": "oficial/of-842ed51cbf.jpg",
@@ -4730,26 +4683,14 @@
  },
  "of-a22211a310": {
   "alt": "",
-  "animada": "animadas/of-a22211a310.mp4",
   "archivo": "oficial/of-a22211a310.jpg",
   "categoria": "oficial",
-  "clip": {
-   "avion": 0.085,
-   "caiman": 0.328,
-   "gato": 0.082,
-   "pantano": 0.089,
-   "perro": 0.056
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "caiman"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000000000001111000000000000111100000000000010110000000000001111000000000000111000000000000011110000000000001111",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard8.0l9y_pmj~t8yt.png",
   "w": 1920
  },
@@ -4809,24 +4750,12 @@
   "alt": "",
   "archivo": "oficial/of-a3610abf4c.jpg",
   "categoria": "oficial",
-  "clip": {
-   "accion": 0.068,
-   "avion": 0.352,
-   "barco": 0.06,
-   "deportivo": 0.071,
-   "helicoptero": 0.275
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "avion",
-   "helicoptero"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000011111000000000001111100000000000111110000000000011111000000000001101100000000000111110000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "avion",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard2.05al8-ha_.0q1.png",
   "w": 1920
  },
@@ -5015,24 +4944,12 @@
   "alt": "",
   "archivo": "oficial/of-ae50b3bd1b.jpg",
   "categoria": "oficial",
-  "clip": {
-   "accion": 0.3,
-   "arma": 0.083,
-   "dinero": 0.089,
-   "helicoptero": 0.067,
-   "pareja": 0.185
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "accion",
-   "pareja"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000011000000011111111111101110110011101110111100011110111000111001111101100111111000000110001111101111000000011100111110000000110011110000000010001111100100001001111110001101100111110000100111110100000000000110010000010010100001110001000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "accion",
   "url": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg",
   "w": 1920
  },
@@ -5115,24 +5032,12 @@
   "alt": "",
   "archivo": "oficial/of-b01a2c2058.jpg",
   "categoria": "oficial",
-  "clip": {
-   "accion": 0.041,
-   "camion": 0.152,
-   "coche": 0.06,
-   "deportivo": 0.559,
-   "pareja": 0.076
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "camion",
-   "deportivo"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000001011000000000000111110000000000011110000000000001111000000000000111100000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "deportivo",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard5.0sr0ukcy.u788.png",
   "w": 1920
  },
@@ -5753,23 +5658,12 @@
   "alt": "",
   "archivo": "oficial/of-c2a0a74b8a.jpg",
   "categoria": "oficial",
-  "clip": {
-   "avion": 0.085,
-   "caiman": 0.328,
-   "gato": 0.082,
-   "pantano": 0.089,
-   "perro": 0.056
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "caiman"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111100000000000011110000000000001011000000000000101100000000000011110000000000001111000000000000111100000000000011110000000000001111000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "caiman",
   "url": "https://www.rockstargames.com/VI/_next/static/media/shard4.0c84culhxxr-b.png",
   "w": 1920
  },
@@ -6475,24 +6369,12 @@
   "alt": "",
   "archivo": "oficial/of-d4babc2bf3.jpg",
   "categoria": "oficial",
-  "clip": {
-   "accion": 0.058,
-   "arma": 0.248,
-   "camion": 0.062,
-   "gasolinera": 0.037,
-   "pareja": 0.366
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "arma",
-   "pareja"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000000000000000000000000000001111100010000001111110000100011111111111111001100111111111100110011111111100011011111011110001011111111111000000001110110000000000010000010001100111000011000110011111011100000001111110010000000111111001000110000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "pareja",
   "url": "https://www.rockstargames.com/VI/_next/static/media/89834o94713o21.04n287k6o2lh9.jpg",
   "w": 1920
  },
@@ -6860,23 +6742,12 @@
   "alt": "",
   "archivo": "oficial/of-e703a9b2dc.jpg",
   "categoria": "oficial",
-  "clip": {
-   "accion": 0.003,
-   "avion": 0.001,
-   "coche": 0.001,
-   "deportivo": 0.001,
-   "pareja": 0.99
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
-  "etiquetas": [
-   "pareja"
-  ],
+  "etiquetas": [],
   "fuente": "oficial",
   "h": 1080,
   "hash": "0000000000011000000000010001110000111111001100000111110110010000011111111111000001111111111100011111111111101111111110001100111111101110010011111100111100100111100111100010001110011111000100110001111100000011000011000000001000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "pareja",
   "url": "https://www.rockstargames.com/VI/_next/static/media/39ak81277255o9.0lmk9f~r~10.x.jpg",
   "w": 1920
  },
@@ -7089,24 +6960,14 @@
   "alt": "",
   "archivo": "oficial/of-eede6f70f5.jpg",
   "categoria": "oficial",
-  "clip": {
-   "accion": 0.097,
-   "arma": 0.515,
-   "camion": 0.072,
-   "coche": 0.071,
-   "deportivo": 0.049
-  },
-  "clip_v": 2,
   "credito": "Imagen oficial: Rockstar Games (Grand Theft Auto VI)",
   "etiquetas": [
-   "arma",
    "logo"
   ],
   "fuente": "oficial",
   "h": 810,
   "hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000000000001111000000000000111100000000000001110000000000001111000000000000111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "pagina": "https://www.rockstargames.com/VI",
-  "tema": "arma",
   "url": "https://www.rockstargames.com/VI/_next/static/media/logo_gta.0-hc15s02t_zg.png",
   "w": 1920
  },
