@@ -1,0 +1,7 @@
+# Imágenes OFICIALES (p. ej. sección de descargas/arte de rockstargames.com/VI) para recortar personajes.
+# Al hacer push, GitHub Actions descarga, quita el fondo (rembg) y deja media/recortes/<nombre>.png
+# También puedes subir tú las imágenes directamente a media/oficial/.
+imagenes:
+  # - url: "https://...imagen-oficial-lucia.jpg"
+  #   nombre: lucia.jpg
+  #   credito: "Imagen oficial: Rockstar Games"

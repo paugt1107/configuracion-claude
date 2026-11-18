@@ -13,4 +13,6 @@ Lee también `canal-youtube/investigacion/tecnicas-2026-11.md` (gancho 0-3 s, pr
 
 Español: puntúa los ganchos con `python3 -m clipfactory.hookscore_es` (hookscore.py de yt-script solo vale para inglés). Usa `canal-youtube/ganchos-gta.md` y `canal-youtube/estrategia-gta.md` (formatos F1-F8). En clips de fuentes ajenas el guion es COMENTARIO que aporta (explica, contextualiza, compara) y cubre ≥50 % del clip. Cada dato del guion debe estar en `investigacion/gta-vi-base.md` o en captura propia; si no, pídeselo a `documentalista`. Nada de spoilers de historia en las 2 primeras semanas.
 
+FORMATO DE ENTREGA: el guion final es `canal-youtube/guiones/<ID>.yaml` según `canal-youtube/guiones/PLANTILLA.yaml` (una frase de voz por escena + su tarjeta visual). Al hacer push se produce solo (voz IA, vídeo, portadas, publicación) en `entregas/<ID>/`.
+
 Reglas comunes: lee `canal-youtube/config.md` y `canal-youtube/data/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo) y actualiza solo tu columna en `data/shorts-log.md`. No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.

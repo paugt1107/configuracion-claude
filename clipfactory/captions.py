@@ -50,6 +50,7 @@ def build_ass(
     margin_v: int | None = None,
     uppercase: bool = True,
     max_words: int = 3,
+    pop: bool = True,
 ) -> str:
     if margin_v is None:
         margin_v = int(height * 0.30)  # por encima del 25 % inferior reservado a la UI
@@ -69,6 +70,7 @@ def build_ass(
         for i, w in enumerate(chunk):
             start = w["start"]
             end = chunk[i + 1]["start"] if i + 1 < len(chunk) else max(w["end"], start + 0.05)
-            parts = [f"{{\\c{active}}}{t}{{\\c{base}}}" if j == i else t for j, t in enumerate(texts)]
+            on = (f"{{\\c{active}\\fscx122\\fscy122\\t(0,110,\\fscx100\\fscy100)}}" if pop else f"{{\\c{active}}}")
+            parts = [f"{on}{t}{{\\c{base}\\fscx100\\fscy100}}" if j == i else t for j, t in enumerate(texts)]
             events.append(f"Dialogue: 0,{_ass_time(start)},{_ass_time(end)},Cap,,0,0,0,,{' '.join(parts)}")
     return header + "\n".join(events) + "\n"

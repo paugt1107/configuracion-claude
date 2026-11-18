@@ -66,6 +66,24 @@ def _cmd_voces(a):
         print(p)
 
 
+def _cmd_producir(a):
+    from .short_job import produce
+    print(produce(a.guion, provider=a.proveedor))
+
+
+def _cmd_portadas(a):
+    import yaml
+    from .thumbs import make_covers
+    spec = yaml.safe_load(Path(a.guion).read_text(encoding="utf-8"))
+    for p in make_covers(spec["portada"], Path("entregas") / spec["id"]):
+        print(p)
+
+
+def _cmd_recortar(a):
+    from .recorte import cutout
+    print(cutout(a.imagen, a.salida))
+
+
 def _cmd_render(a):
     from .render import render
     print(render(a.job, a.registro, dry_run=a.dry_run))
@@ -105,6 +123,10 @@ def main(argv=None):
     s.add_argument("--proveedor", default="auto", help="auto|edge|openai|elevenlabs|tono"); s.set_defaults(f=_cmd_narrar)
     s = sub.add_parser("voces", help="muestras de voces gratuitas"); s.add_argument("--texto", default="¿Sabías que hay gente que juega GTA seis doce horas antes que tú?")
     s.add_argument("--salida", default="entregas/voces"); s.set_defaults(f=_cmd_voces)
+    s = sub.add_parser("producir", help="Short completo desde guion YAML (voz IA, vídeo, portadas, publicación)"); s.add_argument("guion")
+    s.add_argument("--proveedor", default="auto"); s.set_defaults(f=_cmd_producir)
+    s = sub.add_parser("portadas", help="3 portadas desde el guion YAML"); s.add_argument("guion"); s.set_defaults(f=_cmd_portadas)
+    s = sub.add_parser("recortar", help="quita el fondo de una imagen (rembg)"); s.add_argument("imagen"); s.add_argument("--salida", required=True); s.set_defaults(f=_cmd_recortar)
     s = sub.add_parser("render", help="renderiza un job YAML a 1080x1920"); s.add_argument("job"); s.add_argument("--dry-run", action="store_true"); s.set_defaults(f=_cmd_render)
     s = sub.add_parser("radar", help="radar de tendencias (YOUTUBE_API_KEY)"); s.add_argument("consulta")
     s.add_argument("--dias", type=int, default=7); s.add_argument("--region", default="ES"); s.add_argument("--idioma", default="es")

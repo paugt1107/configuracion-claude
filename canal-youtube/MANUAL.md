@@ -55,3 +55,9 @@ A las 72 h: exporta la retención (Studio → vídeo → Analítica → Interacc
 
 ## Radar cada 30 minutos (automático)
 GitHub Actions `radar-web` recoge noticias, vídeos de canales vigilados y posts de Reddit sobre GTA VI (solo títulos y enlaces) y actualiza `canal-youtube/data/radar/ultimo.md` (top 15 con más potencial) y el acumulado del día. Canales y búsquedas: `canal-youtube/fuentes/radar.yaml`.
+
+## Producir un Short sin tocar nada (lo normal a partir de ahora)
+1. Copia `canal-youtube/guiones/PLANTILLA.yaml` como `SXXX.yaml` (o lo escribe el trabajador 2 automáticamente).
+2. Push → en ~3 min aparecen en `entregas/SXXX/`: `SXXX-final.mp4`, `portada-1/2/3.png` y `publicacion.md` (títulos, descripción, TikTok, comentario fijado).
+3. Tú solo revisas y publicas.
+Personajes: sube imágenes oficiales a `media/oficial/` → workflow `recortes` → `media/recortes/` (sin fondo) → úsalos con `kind: personaje`.

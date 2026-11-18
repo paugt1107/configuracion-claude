@@ -159,6 +159,32 @@ def _paste_flag(img, code, cx, cy, w):
     img.paste(base.convert("RGB"))
 
 
+def _cover(path: str, w: int = W, h: int = H) -> Image.Image:
+    im = Image.open(path).convert("RGB")
+    k = max(w / im.width, h / im.height)
+    im = im.resize((int(im.width * k) + 1, int(im.height * k) + 1), Image.LANCZOS)
+    x, y = (im.width - w) // 2, (im.height - h) // 2
+    return im.crop((x, y, x + w, y + h))
+
+
+def _shade(img: Image.Image, top: float = 0.55, bottom: float = 0.75) -> Image.Image:
+    """Oscurece arriba y abajo para que el texto se lea sobre cualquier imagen."""
+    ov = Image.new("L", (W, H), 0)
+    d = ImageDraw.Draw(ov)
+    for y in range(H):
+        f = max(0.0, 1 - y / (H * 0.45)) * top + max(0.0, (y - H * 0.5) / (H * 0.5)) * bottom
+        d.line([(0, y), (W, y)], fill=int(255 * min(1.0, f)))
+    black = Image.new("RGB", (W, H), (0, 0, 0))
+    return Image.composite(black, img, ov)
+
+
+def _big(img, xy, text, color, size=230, maxw=960):
+    d = ImageDraw.Draw(img)
+    while size > 70 and d.textlength(text, font=_font(size)) > maxw:
+        size -= 6
+    _glow_text(img, xy, text, size, color)
+
+
 def card(spec: dict) -> Image.Image:
     """spec: {fondo, reloj, reloj_color, titulo, sub, extra:[(texto, color)], barra, kind}"""
     accent = COLORS.get(spec.get("color", "orange"), ORANGE)
@@ -207,6 +233,46 @@ def card(spec: dict) -> Image.Image:
         d.rounded_rectangle([150, 770, W - 150, 850], 32, fill=(70, 220, 130))
         _label(img, (W // 2, 810), "100%", 52, NAVY, box=False)
         _glow_text(img, (W // 2, 1050), "🔒" if False else "BLOQUEADO", 120, MAGENTA, spread=14)
+    elif kind == "dato":
+        _big(img, (W // 2, 820), spec["grande"], accent)
+        if spec.get("sub"):
+            _label(img, (W // 2, 1040), spec["sub"], 50, CYAN, box=False)
+    elif kind == "lista":
+        for i, item in enumerate(spec["items"][:4]):
+            y = 650 + i * 150
+            d.ellipse([110, y - 22, 154, y + 22], fill=accent)
+            _label(img, (190, y), item, 58, WHITE, anchor="lm", box=False, maxw=800)
+    elif kind == "imagen":
+        if spec.get("imagen") and Path(spec["imagen"]).exists():
+            img = _shade(_cover(spec["imagen"]))
+        if spec.get("sub"):
+            _label(img, (W // 2, 1120), spec["sub"], 52, accent)
+        if spec.get("credito"):
+            _label(img, (W // 2, 410), spec["credito"], 34, WHITE)
+    elif kind == "personaje":
+        rec = spec.get("recorte")
+        if rec and Path(rec).exists():
+            fig = Image.open(rec).convert("RGBA")
+            k = 1150 / fig.height
+            fig = fig.resize((int(fig.width * k), 1150), Image.LANCZOS)
+            if fig.width > 1000:
+                k2 = 1000 / fig.width
+                fig = fig.resize((1000, int(fig.height * k2)), Image.LANCZOS)
+            x, y = (W - fig.width) // 2, H - fig.height - 380
+            rim = Image.new("RGBA", fig.size, accent + (0,))
+            rim.putalpha(fig.split()[3])
+            rim = rim.filter(ImageFilter.GaussianBlur(28))
+            base = img.convert("RGBA")
+            for _ in range(2):
+                base.alpha_composite(rim, (x, y))
+            base.alpha_composite(fig, (x, y))
+            img = base.convert("RGB")
+        else:
+            _big(img, (W // 2, 860), spec.get("nombre", "?"), accent)
+        if spec.get("sub"):
+            _label(img, (W // 2, 1150), spec["sub"], 50, accent)
+        if spec.get("credito"):
+            _label(img, (W // 2, 410), spec["credito"], 34, WHITE)
     if spec.get("titulo"):
         _label(img, (W // 2, spec.get("ty", 500)), spec["titulo"], spec.get("tsize", 84), WHITE)
     if spec.get("pie"):
@@ -216,9 +282,10 @@ def card(spec: dict) -> Image.Image:
 
 def _clip(png: Path, dur: float, out: Path, i: int):
     n = max(1, int(dur * 30))
-    zoom = "zoompan=z='1+0.06*on/%d':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=%d:s=%dx%d:fps=30" % (n, n, W, H)
+    zoom = ("zoompan=z='if(lt(on,7),1.14-0.02*on,1+0.05*(on-7)/%d)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=%d:s=%dx%d:fps=30"
+            % (n, n, W, H))
     subprocess.run([media.require("ffmpeg"), "-y", "-loglevel", "error", "-loop", "1", "-i", str(png), "-vf",
-                    f"scale=2160:3840,{zoom},fade=t=in:st=0:d=0.12,format=yuv420p", "-t", f"{dur}", "-c:v", "libx264",
+                    f"scale=2160:3840,{zoom},noise=alls=5:allf=t,fade=t=in:st=0:d=0.14:color=white,format=yuv420p", "-t", f"{dur}", "-c:v", "libx264",
                     "-preset", "veryfast", "-crf", "19", str(out)], check=True)
 
 

@@ -6,18 +6,21 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: "Script en canal-youtube/jobs (vacío = según cambios)"
-        default: "s001_motion.py"
+        description: "Guion (p. ej. S001) — vacío = según cambios"
+        default: "S001"
       proveedor:
         description: "auto | edge | openai | elevenlabs"
         default: "auto"
   push:
     branches: [main]
     paths:
-      - "canal-youtube/audio/*-narracion.txt"
-      - "canal-youtube/jobs/*.py"
+      - "canal-youtube/guiones/S*.yaml"
       - "clipfactory/voice.py"
       - "clipfactory/sfx.py"
+      - "clipfactory/motion.py"
+      - "clipfactory/captions.py"
+      - "clipfactory/thumbs.py"
+      - "clipfactory/short_job.py"
 permissions:
   contents: write
 concurrency:
@@ -52,18 +55,17 @@ jobs:
             if [ ! -d entregas/voces ]; then python3 -m clipfactory voces --salida entregas/voces; fi
             JOBS=""
             if [ -n "${{ github.event.inputs.job }}" ]; then
-              JOBS="canal-youtube/jobs/${{ github.event.inputs.job }}"
+              JOBS="canal-youtube/guiones/${{ github.event.inputs.job }}.yaml"
             else
               for f in $(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" 2>/dev/null); do
                 case "$f" in
-                  canal-youtube/jobs/*.py) JOBS="$JOBS $f" ;;
-                  canal-youtube/audio/*-narracion.txt) id=$(basename "$f" -narracion.txt | tr 'A-Z' 'a-z'); JOBS="$JOBS canal-youtube/jobs/${id}_motion.py" ;;
-                  clipfactory/voice.py|clipfactory/sfx.py) JOBS="$JOBS canal-youtube/jobs/s001_motion.py" ;;
+                  canal-youtube/guiones/S*.yaml) JOBS="$JOBS $f" ;;
+                  clipfactory/*.py) JOBS="$JOBS canal-youtube/guiones/S001.yaml" ;;
                 esac
               done
             fi
             for j in $(echo $JOBS | tr ' ' '\n' | sort -u); do
-              [ -f "$j" ] && python3 "$j" --ia --proveedor "${{ github.event.inputs.proveedor || 'auto' }}"
+              [ -f "$j" ] && python3 -m clipfactory producir "$j" --proveedor "${{ github.event.inputs.proveedor || 'auto' }}"
             done
           } 2>&1 | tee entregas/_logs/produccion.log
       - name: Guardar entregas

@@ -1,0 +1,140 @@
+# Guion S001 (formato producible). Push → GitHub Actions genera voz IA, vídeo, portadas y publicación en entregas/S001/
+id: S001
+formato: sabias-que
+titulos:
+- 'GTA 6: ¿a qué hora juegas en tu país?'
+- GTA 6 sale 12 horas antes en Nueva Zelanda
+- 'GTA 6: la hora de desbloqueo, país por país'
+portada:
+  texto: 12 HORAS ANTES
+  kind: clock
+  reloj: 00:00
+  bandera: nz
+descripcion: ¿Sabías que en Nueva Zelanda juegan a GTA 6 doce horas antes que en España? Horario de desbloqueo por país, según varios medios. Comprueba siempre el contador de tu tienda PlayStation o Xbox.
+fuentes:
+- mp1st.com — GTA 6 unlock times (Nueva Zelanda 11:00 UTC)
+- godisageek.com — GTA 6 release times by region
+- Rockstar Newswire — lanzamiento 19-nov-2026
+comentario: ¿Desde qué país juegas y a qué hora lo desbloqueas? 👇
+hashtags:
+- '#vicecity'
+escenas:
+- texto: ¿Sabías que hay gente que juega GTA seis doce horas antes que tú?
+  tarjeta:
+    kind: clock
+    reloj: 00:00
+    color: orange
+    titulo: 12 HORAS ANTES QUE TÚ
+    ty: 520
+- texto: Según varios medios, se desbloquea a medianoche, hora local, en cada región.
+  tarjeta:
+    kind: clock
+    reloj: 19 NOV
+    color: cyan
+    titulo: CADA REGIÓN, SU 00:00
+    ty: 520
+    sub: según varios medios
+- texto: Y hay un país que juega primero.
+  tarjeta:
+    kind: clock
+    reloj: '?'
+    color: magenta
+    titulo: ¿QUIÉN JUEGA PRIMERO?
+    ty: 520
+- texto: Nueva Zelanda, antes que nadie.
+  tarjeta:
+    kind: clock
+    reloj: 00:00
+    color: magenta
+    titulo: NUEVA ZELANDA, PRIMERO
+    ty: 380
+    bandera: nz
+- texto: Allí son las doce de la noche cuando en España todavía es mediodía del dieciocho.
+  tarjeta:
+    kind: split
+    reloj: 00:00
+    sub: NUEVA ZELANDA · DÍA 19
+    reloj2: '12:00'
+    sub2: ESPAÑA · AÚN ES DÍA 18
+    bandera: nz
+    bandera2: es
+    color: orange
+    titulo: AÚN ES DÍA 18
+    ty: 330
+- texto: 'En España, a medianoche: las cero horas del diecinueve.'
+  tarjeta:
+    kind: clock
+    reloj: 00:00
+    color: cyan
+    titulo: ESPAÑA
+    ty: 380
+    sub: = 23:00 UTC (día 18)
+    bandera: es
+- texto: Eso son las once de la noche del dieciocho, en hora universal.
+  tarjeta:
+    kind: timeline
+    titulo: 23:00 UTC = 00:00 ESPAÑA
+    ty: 520
+- texto: 'México, centro: medianoche, de los últimos en jugar.'
+  tarjeta:
+    kind: clock
+    reloj: 00:00
+    color: gold
+    titulo: MÉXICO (CENTRO)
+    ty: 380
+    sub: = 06:00 UTC (día 19)
+    bandera: mx
+- texto: 'Argentina: medianoche, las tres de la madrugada en hora universal.'
+  tarjeta:
+    kind: clock
+    reloj: 00:00
+    color: cyan
+    titulo: ARGENTINA
+    ty: 380
+    sub: = 03:00 UTC
+    bandera: ar
+- texto: La misma hora en el reloj, no el mismo momento.
+  tarjeta:
+    kind: three
+    relojes:
+    - - 00:00
+      - ESPAÑA · 23:00 UTC
+      - es
+    - - 00:00
+      - MÉXICO · 06:00 UTC
+      - mx
+    - - 00:00
+      - ARGENTINA · 03:00 UTC
+      - ar
+    titulo: MISMA HORA ≠ MISMO MOMENTO
+    ty: 330
+    tsize: 70
+- texto: 'Y ojo: la precarga no lo desbloquea antes.'
+  tarjeta:
+    kind: bar
+    titulo: PRECARGA ≠ JUGAR ANTES
+    ty: 520
+- texto: Rockstar no ha dado una hora única, así que mira el contador de tu tienda PlayStation o Xbox.
+  tarjeta:
+    kind: clock
+    reloj: 00:00
+    color: orange
+    titulo: COMPRUEBA TU TIENDA
+    ty: 520
+    sub: PlayStation / Xbox
+- texto: Comenta desde qué país juegas tú.
+  tarjeta:
+    kind: clock
+    reloj: ↓
+    color: gold
+    titulo: ¿DESDE QUÉ PAÍS JUEGAS?
+    ty: 520
+    tsize: 70
+- texto: Y mientras tanto, en Nueva Zelanda, ya están jugando.
+  tarjeta:
+    kind: clock
+    reloj: 00:00
+    color: magenta
+    titulo: EN NUEVA ZELANDA YA JUEGAN
+    ty: 380
+    bandera: nz

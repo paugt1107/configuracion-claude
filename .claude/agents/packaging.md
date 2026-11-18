@@ -13,4 +13,6 @@ Lee `canal-youtube/personajes.md` para que miniaturas y fotograma 1 usen el mism
 
 GTA: fotograma 1 = miniatura; elemento señalado (círculo/flecha) + ≤3 palabras que no repitan el título; capturas propias o fotograma oficial con crédito; acentos naranja/cian del canal (estrategia-gta.md). Prueba el texto con `python3 .claude/skills/yt-package/title.py` (los límites de caracteres sirven en español; las reglas de palabras están pensadas para inglés).
 
+Automático: `titulos` (3) y `portada` (texto ≤3 palabras + visual) van en el YAML del guion; `clipfactory/thumbs.py` genera portada-1/2/3.png y `publicacion.md` revisa longitud, 'GTA 6' y repetición portada-título.
+
 Reglas comunes: lee `canal-youtube/config.md` y `canal-youtube/data/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo) y actualiza solo tu columna en `data/shorts-log.md`. No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.

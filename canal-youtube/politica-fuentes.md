@@ -12,6 +12,7 @@ Fuentes: vidiq.com (reused content), air.io, theprint.in (declaración de YouTub
 | `oficial` | Tráilers/material oficial de Rockstar | 15 s | Crédito visible + comentario propio ≥ 50 % del clip; sin spoilers filtrados |
 | `permiso` | Clip de otro creador | 45 s (o lo que diga el permiso) | Prueba del permiso guardada (`permiso:`) + crédito "Clip: @canal" + comentario ≥ 50 % |
 | `cc-by` | Licencia Creative Commons con atribución | 30 s | Licencia indicada + crédito |
+| `oficial` (imagen) | Arte/capturas oficiales de Rockstar (sección de descargas) | — | Crédito "Imagen oficial: Rockstar Games" + comentario propio; recortes solo para ilustrar |
 | PROHIBIDO | Filtraciones (p. ej. la de 2022), resubidas sin permiso, material pirata, contenido de pago, clips de directos sin permiso | — | El código lo rechaza |
 
 ## Cómo conseguir clips de otros creadores legalmente
@@ -34,3 +35,6 @@ Según informaciones de 2026 (Dexerto), YouTube permite anuncios con violencia g
 
 ## Si llega una reclamación
 1. No discutir en caliente. 2. Si es válida: retirar o recortar el tramo. 3. Anotar la lección en `data/aprendizajes.md`. 4. Disputar solo si la fuente es `propia` u `oficial` con comentario claro y la reclamación es errónea.
+
+## Directos y vídeos de otros creadores (DjMaRiiO, streamers…)
+Se pueden ver para investigar (el radar los vigila), pero sus imágenes, frames y clips NO se usan sin permiso escrito. Ni capturas de pantalla de sus directos.

@@ -1,0 +1,28 @@
+name: recortes
+# Descarga imágenes oficiales listadas en canal-youtube/fuentes/imagenes.yaml y/o recorta las de media/oficial/ (quita el fondo).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["media/oficial/**", "canal-youtube/fuentes/imagenes.yaml"]
+permissions:
+  contents: write
+jobs:
+  recortar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pyyaml pillow "rembg[cpu]"
+      - run: |
+          python3 -c "from clipfactory import recorte; print(recorte.fetch_official()); print(recorte.process_all())"
+      - name: Guardar
+        run: |
+          git config user.name "recortes-bot"
+          git config user.email "recortes-bot@users.noreply.github.com"
+          git add media/oficial media/recortes
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Recortes de personajes [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

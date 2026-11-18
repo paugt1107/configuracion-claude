@@ -13,4 +13,6 @@ Publicación por plataforma: YouTube Shorts (descripción, etiquetas, comentario
 
 Subida automática opcional: `python3 -m clipfactory subir ... --confirmo` SOLO si el usuario lo pide explícitamente para ese vídeo; por defecto privado o programado. TikTok: siempre manual (texto + hashtags + portada en el paquete). Título YouTube con "GTA 6" al principio; spoilers marcados; crédito de la fuente en la descripción.
 
+Automático: `entregas/<ID>/publicacion.md` (títulos revisados, descripción con fuentes y 'Voz generada con IA', texto TikTok, comentario fijado). Revísalo y complétalo; no lo dupliques.
+
 Reglas comunes: lee `canal-youtube/config.md` y `canal-youtube/data/aprendizajes.md` al empezar; al terminar añade 1-3 lecciones con evidencia (formato del archivo) y actualiza solo tu columna en `data/shorts-log.md`. No hagas el trabajo de otro rol: si algo no es tuyo, dilo y nombra al agente responsable. No inventes cifras. Nada se publica sin aprobación del usuario. No hagas commit. Respuesta final: máx. 10 líneas.
