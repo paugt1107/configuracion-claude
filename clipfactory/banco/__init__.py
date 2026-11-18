@@ -456,6 +456,33 @@ def personajes(ind: dict) -> list[str]:
     return hechos
 
 
+def dibujo_de(iid: str, v: dict, estilo: str = "gta") -> Path:
+    """Versión DIBUJO de una imagen del banco (se crea la primera vez): media/banco/dibujos/<estilo>/<id>.jpg."""
+    from .. import dibujo
+
+    dst = BANCO / "dibujos" / estilo / f"{iid}.jpg"
+    if not dst.exists():
+        dibujo.archivo(BANCO / v["archivo"], dst, estilo)
+    return dst
+
+
+def dibujar(ind: dict, estilo: str = "gta") -> int:
+    """Pasa todo el banco a dibujo (estilo ilustración GTA). Unos 0,5 s por imagen."""
+    hechos = 0
+    for iid, v in sorted(ind.items()):
+        if (BANCO / "dibujos" / estilo / f"{iid}.jpg").exists():
+            v["dibujo"] = f"dibujos/{estilo}/{iid}.jpg"
+            continue
+        try:
+            dibujo_de(iid, v, estilo)
+            v["dibujo"] = f"dibujos/{estilo}/{iid}.jpg"
+            hechos += 1
+        except Exception as e:
+            print(f"[banco] no se dibuja {iid}: {e}")
+    print(f"[banco] dibujos nuevos: {hechos}")
+    return hechos
+
+
 def animar(ind: dict, maximo: int, dur: float = 3.0, parte: int = 0, partes: int = 1) -> int:
     """Clip 3D de cada imagen (alterna estilos) en media/banco/animadas/. Con partes>1 cada máquina hace su trozo."""
     from .. import escena3d
@@ -474,7 +501,7 @@ def animar(ind: dict, maximo: int, dur: float = 3.0, parte: int = 0, partes: int
         out.parent.mkdir(parents=True, exist_ok=True)
         try:
             escena3d.clip(
-                {"tipo": "foto", "imagen": str(BANCO / v["archivo"]), "estilo": estilos[i % len(estilos)], "color": "gold"},
+                {"tipo": "foto", "imagen": str(dibujo_de(iid, v)), "estilo": estilos[i % len(estilos)], "color": "gold"},
                 dur,
                 out,
                 crf=26,
@@ -498,7 +525,10 @@ def _tabla(items: list, raiz: str = "") -> list[str]:
         clip = f" · [▶ 3D]({raiz}{v['animada']})" if v.get("animada") else ""
         et = ", ".join(v.get("etiquetas", [])[:4])
         src = "🎬 oficial" if v["fuente"] == "oficial" else "📷 libre"
-        row.append(f"[![{iid}]({raiz}miniaturas/{iid}.jpg)]({raiz}{v['archivo']})<br>`{iid}` {src}{clip}<br><sub>{et}</sub>")
+        foto = f" · [foto]({raiz}{v['archivo']})" if v.get("dibujo") else ""
+        row.append(
+            f"[![{iid}]({raiz}miniaturas/{iid}.jpg)]({raiz}{v.get('dibujo') or v['archivo']})<br>`{iid}` {src}{clip}{foto}<br><sub>{et}</sub>"
+        )
         if len(row) == 4:
             lines.append("| " + " | ".join(row) + " |")
             row = []
@@ -519,8 +549,11 @@ def galeria(ind: dict) -> Path:
         if clip.exists():
             v["animada"] = str(clip.relative_to(BANCO))
         m = mini / f"{iid}.jpg"
-        if not m.exists():
-            im = Image.open(BANCO / v["archivo"]).convert("RGB")
+        dib = BANCO / "dibujos" / "gta" / f"{iid}.jpg"
+        if dib.exists():
+            v["dibujo"] = str(dib.relative_to(BANCO))
+        if not m.exists() or (dib.exists() and m.stat().st_mtime < dib.stat().st_mtime):
+            im = Image.open(dib if dib.exists() else BANCO / v["archivo"]).convert("RGB")
             im.thumbnail((360, 360))
             im.save(m, "JPEG", quality=78)
         por_tema.setdefault(_tema(v), []).append((iid, v))
@@ -532,7 +565,7 @@ def galeria(ind: dict) -> Path:
         d = temas_dir / tema
         d.mkdir(parents=True, exist_ok=True)
         for iid, v in items:
-            shutil.copy2(BANCO / v["archivo"], d / f"{iid}.jpg")
+            shutil.copy2(BANCO / (v.get("dibujo") or v["archivo"]), d / f"{iid}.jpg")
             if v.get("animada"):
                 shutil.copy2(BANCO / v["animada"], d / f"{iid}.mp4")
         (d / "GALERIA.md").write_text(
@@ -545,7 +578,8 @@ def galeria(ind: dict) -> Path:
         "# Banco de imágenes de TOMMY",
         "",
         f"**{len(ind)} imágenes** · **{n_anim} animadas en 3D** · **{len(por_tema)} carpetas por tema**. "
-        "Cada carpeta (`media/banco/temas/<tema>/`) tiene las fotos (.jpg) y sus clips 3D (.mp4, 1080x1920, 3 s) listos para editar.",
+        "Cada carpeta (`media/banco/temas/<tema>/`) tiene los DIBUJOS estilo GTA (.jpg) y sus clips 3D (.mp4, 1080x1920, 3 s) listos para editar; "
+        "la foto original está en el enlace «foto». Para buscar algo concreto: Actions → «Tommy · Busca imágenes» → escribe la palabra.",
         "",
         "En un guion: `{kind: 3d, tipo: foto, banco: <tema>, estilo: lleno|inclinada|giro}` o `imagen: media/banco/temas/<tema>/<id>.jpg`.",
         "Créditos: 🎬 oficiales → «Rockstar Games»; 📷 libres → autor y licencia en `indice-libres-*.json` (van solos a publicacion.md).",
@@ -574,7 +608,7 @@ def buscar(etiqueta: str, fuente: str | None = None) -> list[Path]:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="clipfactory.banco")
-    ap.add_argument("paso", choices=["oficial", "libres", "trailers", "descargar", "etiquetar", "animar", "galeria", "todo"])
+    ap.add_argument("paso", choices=["oficial", "libres", "trailers", "descargar", "etiquetar", "dibujar", "animar", "galeria", "todo"])
     ap.add_argument("--max", type=int, default=1000)
     ap.add_argument("--cat", default="", help="categorías de libres separadas por comas (vacío = todas)")
     ap.add_argument("--parte", type=int, default=0)
@@ -596,6 +630,9 @@ def main(argv=None) -> int:
         etiquetar(ind)
         guardar(ind)
         personajes(ind)
+    if a.paso in ("dibujar", "etiquetar", "todo"):
+        dibujar(ind)
+        guardar(ind)
     if a.paso in ("animar", "todo"):
         animar(ind, a.max, parte=a.parte, partes=a.partes)
         if a.partes > 1:  # en paralelo no se toca el índice (lo rehace el paso final)

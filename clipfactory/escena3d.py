@@ -90,7 +90,12 @@ def clip(spec: dict, dur: float, out: Path, fps: int = 30, crf: int = 19) -> Pat
             alt = s.get("alt") or {"tipo": "versus", "texto": s.get("texto") or "GTA|VI"}
             s = {**{k: v for k, v in s.items() if k not in ("imagen", "alt")}, **alt}
         else:
-            s["imagen"], s["fondo"] = _data_urls(Path(s["imagen"]))
+            img = Path(s["imagen"])
+            if s.get("dibujo"):  # convierte la foto en dibujo antes de animarla (gta | comic | neon | boceto)
+                from . import dibujo
+
+                img = dibujo.archivo(img, Path(tempfile.mkdtemp()) / "dibujo.jpg", "gta" if s["dibujo"] is True else str(s["dibujo"]))
+            s["imagen"], s["fondo"] = _data_urls(img)
     if s.get("tipo") not in TIPOS:
         raise ValueError(f"Escena 3D desconocida: {s.get('tipo')} (usa {sorted(TIPOS)})")
     with tempfile.TemporaryDirectory(prefix="e3d-") as tmp:

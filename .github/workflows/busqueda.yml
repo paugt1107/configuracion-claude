@@ -1,0 +1,52 @@
+name: Tommy · Busca imágenes (palabra → dibujos animados)
+# Escribe una o varias palabras (ciudad perro coche…): Tommy busca en el banco, baja fotos libres nuevas si faltan,
+# las convierte en DIBUJO estilo GTA y hace un clip 3D de cada una. Resultado: media/banco/busquedas/<palabra>/GALERIA.md
+on:
+  workflow_dispatch:
+    inputs:
+      palabras:
+        description: "Palabras separadas por espacios (ej.: ciudad perro coche policia)"
+        required: true
+      estilo:
+        description: "gta | comic | neon | boceto"
+        default: "gta"
+      cuantas:
+        description: "Resultados por palabra"
+        default: "12"
+permissions:
+  contents: write
+concurrency:
+  group: busqueda
+  cancel-in-progress: false
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q -e .
+          npm install -g playwright@1.63.0
+          npx -y playwright@1.63.0 install --with-deps chromium
+          echo "NODE_PATH=$(npm root -g)" >> "$GITHUB_ENV"
+      - name: Buscar, dibujar y animar
+        run: |
+          python3 -m clipfactory.buscador ${{ github.event.inputs.palabras }} \
+            --estilo "${{ github.event.inputs.estilo }}" --cuantas "${{ github.event.inputs.cuantas }}" --pedir "${{ github.event.inputs.cuantas }}"
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "banco-bot"
+          git config user.email "banco-bot@users.noreply.github.com"
+          git add media/banco
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Búsqueda de imágenes: ${{ github.event.inputs.palabras }} [skip ci]"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done

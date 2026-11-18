@@ -111,6 +111,9 @@ jobs:
       - name: Etiquetar (CLIP) y sacar Lucía/Jason
         run: python3 -m clipfactory.banco etiquetar
         continue-on-error: true
+      - name: Pasar todo a DIBUJO (estilo GTA)
+        run: python3 -m clipfactory.banco dibujar
+        continue-on-error: true
       - name: Recortes de personajes
         run: python3 -c "from clipfactory import recorte; print(recorte.process_all())"
         continue-on-error: true
