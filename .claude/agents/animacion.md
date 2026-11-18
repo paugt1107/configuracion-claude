@@ -15,3 +15,5 @@ Regla de oro: NINGUNA escena puede repetirse, ni dentro del vídeo ni respecto a
 Generar imágenes o vídeo real requiere una herramienta o API con clave (Runway, Kling, Midjourney, etc.). Si no hay, entrega el guion visual y prompts y avisa. No gastes créditos sin confirmación.
 
 En Shorts: formato vertical 9:16 (nunca 16:9 con barras), texto dentro de zona segura (evita el 20% superior y el 25% inferior), cambio visual cada 2-4 s, primer fotograma con imagen potente y sin logo/intro, y último plano que enlace con el primero para el bucle. Sin marcas de agua de otras plataformas.
+
+Aprendizaje continuo: al empezar, lee `canal-youtube/data/aprendizajes.md` y aplica lo que corresponda. Al terminar, añade 1-3 lecciones nuevas con el formato del archivo (solo si hay evidencia; lo no probado, como hipótesis). No borres lecciones de otros agentes.

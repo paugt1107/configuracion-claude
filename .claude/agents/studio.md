@@ -12,3 +12,5 @@ Eres el responsable de publicación. Lee `canal-youtube/config.md`.
 4. Sube SIEMPRE como `private`/programado y pide confirmación al usuario antes de dejarlo público. Nunca subas nada sin su aprobación.
 
 En Shorts: título corto con la palabra clave, descripción con la línea de puente al vídeo largo (`.claude/skills/viral-youtube-shorts/assets/shorts-to-longform-bridge.md`), comentario fijado con enlace, `#Shorts` solo si ayuda. Una subida diaria o la cadencia definida en config; no subidas masivas con contenido repetitivo (riesgo de desmonetización). Tras subir, registra el estado 'publicado' en `data/shorts-log.md`.
+
+Aprendizaje continuo: al empezar, lee `canal-youtube/data/aprendizajes.md` y aplica lo que corresponda. Al terminar, añade 1-3 lecciones nuevas con el formato del archivo (solo si hay evidencia; lo no probado, como hipótesis). No borres lecciones de otros agentes.

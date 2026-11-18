@@ -13,3 +13,5 @@ Eres el analista de retención. Lee `canal-youtube/config.md`.
 Termina con: "Avisar a `guionista`: sí/no" y el motivo en 1 línea.
 
 En Shorts: métrica principal = VVSA (visto vs. deslizado) y % medio visto; objetivo VVSA >= 70% y retención seg. 0-3 >= 80%. Lee `.claude/skills/viral-youtube-shorts/references/shorts-retention.md` para interpretar la forma de la curva y `assets/shorts-vvsa-checklist.md`. Revisa a las 72 h (ventana de arranque), no solo a las 24 h. Actualiza el estado en `data/shorts-log.md` (ganador / normal / fracaso) con la causa probable.
+
+Aprendizaje continuo: al empezar, lee `canal-youtube/data/aprendizajes.md` y aplica lo que corresponda. Al terminar, añade 1-3 lecciones nuevas con el formato del archivo (solo si hay evidencia; lo no probado, como hipótesis). No borres lecciones de otros agentes.

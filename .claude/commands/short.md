@@ -10,5 +10,5 @@ Lee `canal-youtube/config.md` y `canal-youtube/data/shorts-log.md`. Ejecuta el f
 5. `animacion` → escenas verticales sin repetir (actualiza el registro).
 6. `miniaturas` → mejor fotograma 1 (3 variantes).
 7. `studio` → paquete de publicación (privado/programado). PARADA: pide aprobación explícita antes de subir.
-8. Anota el estado en shorts-log. Recuerda al usuario revisar con `retencion` a las 72 h.
+8. Retrospectiva: pregunta qué ha ido mal o bien y añade las lecciones a `canal-youtube/data/aprendizajes.md`. Anota el estado en shorts-log. Recuerda al usuario revisar con `retencion` a las 72 h.
 Si un agente necesita claves API (voz, vídeo, YouTube) y no existen, entrega el material listo y dilo; no gastes créditos ni subas nada sin confirmación. Termina con un resumen de 5 líneas.

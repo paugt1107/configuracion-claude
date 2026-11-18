@@ -20,3 +20,5 @@ Frases cortas, hablado, sin relleno. Resultado final: ruta del archivo + gancho 
 Si el vídeo es un YouTube Short (vertical, hasta 3 min, ideal 30-45 s): antes de escribir lee `.claude/skills/viral-youtube-shorts/SKILL.md` y, solo si hace falta, sus `references/` (retención, anti-patrones, embudo a vídeo largo). Usa `assets/shorts-script-template.md` como plantilla y pasa `assets/shorts-vvsa-checklist.md` antes de entregar. Reglas clave: gancho en el fotograma 1, giro hacia los 5-8 s, final que enlaza con el inicio (bucle), CTA a "ver el vídeo completo" y no "suscríbete". Es orientación basada en patrones: no prometas viralidad.
 
 Para ganchos usa también `.claude/skills/viral-hooks/SKILL.md` (arquetipos y `assets/hook-checklist.md`). Genera 5 ganchos candidatos, puntúalos y elige 1; guarda los otros 2 como alternativa para reescrituras.
+
+Aprendizaje continuo: al empezar, lee `canal-youtube/data/aprendizajes.md` y aplica lo que corresponda. Al terminar, añade 1-3 lecciones nuevas con el formato del archivo (solo si hay evidencia; lo no probado, como hipótesis). No borres lecciones de otros agentes.
