@@ -71,6 +71,20 @@
   "h": 535,
   "w": 1024
  },
+ "lb-36dddd4533": {
+  "archivo": "libres/objetos/sneakers-collection-ov5.jpg",
+  "categoria": "objetos",
+  "consulta": "Sneakers collection",
+  "credito": "Sneakers collection show — Tnisamante — CC BY-SA 2.0 — https://www.flickr.com/photos/95027552@N02/32252626534",
+  "etiquetas": [
+   "collection",
+   "objetos",
+   "sneakers"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-3f7ce2f00a": {
   "archivo": "libres/objetos/smartphone-social-media-ov1.jpg",
   "categoria": "objetos",
@@ -116,6 +130,20 @@
   "h": 1024,
   "w": 1024
  },
+ "lb-6367c91aca": {
+  "archivo": "libres/objetos/sneakers-collection-ov6.jpg",
+  "categoria": "objetos",
+  "consulta": "Sneakers collection",
+  "credito": "Sneakers collection show — Tnisamante — CC BY-SA 2.0 — https://www.flickr.com/photos/95027552@N02/32715763240",
+  "etiquetas": [
+   "collection",
+   "objetos",
+   "sneakers"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-7934581041": {
   "archivo": "libres/objetos/smartphone-social-media-4.jpg",
   "categoria": "objetos",
@@ -144,6 +172,62 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "w": 1024
+ },
+ "lb-87fc0fc2e2": {
+  "archivo": "libres/objetos/sneakers-collection-ov3.jpg",
+  "categoria": "objetos",
+  "consulta": "Sneakers collection",
+  "credito": "Oshima Yuko Festival: Sneaker Collection — Dick Thomas Johnson — CC BY 2.0 — https://www.flickr.com/photos/31029865@N06/20466203182",
+  "etiquetas": [
+   "collection",
+   "objetos",
+   "sneakers"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-8d9ba12ea1": {
+  "archivo": "libres/objetos/sneakers-collection-ov1.jpg",
+  "categoria": "objetos",
+  "consulta": "Sneakers collection",
+  "credito": "Oshima Yuko Festival: Sneaker Collection — Dick Thomas Johnson — CC BY 2.0 — https://www.flickr.com/photos/31029865@N06/20474938665",
+  "etiquetas": [
+   "collection",
+   "objetos",
+   "sneakers"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-90c8f5e627": {
+  "archivo": "libres/objetos/sneakers-collection-ov4.jpg",
+  "categoria": "objetos",
+  "consulta": "Sneakers collection",
+  "credito": "Sneakers collection show — Tnisamante — CC BY-SA 2.0 — https://www.flickr.com/photos/95027552@N02/32715763180",
+  "etiquetas": [
+   "collection",
+   "objetos",
+   "sneakers"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-95147595e8": {
+  "archivo": "libres/objetos/sneakers-collection-ov2.jpg",
+  "categoria": "objetos",
+  "consulta": "Sneakers collection",
+  "credito": "Oshima Yuko Festival: Sneaker Collection — Dick Thomas Johnson — CC BY 2.0 — https://www.flickr.com/photos/31029865@N06/20466202822",
+  "etiquetas": [
+   "collection",
+   "objetos",
+   "sneakers"
+  ],
+  "fuente": "libre",
+  "h": 768,
   "w": 1024
  },
  "lb-9b020275e4": {
