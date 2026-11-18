@@ -39,9 +39,22 @@ def _at(ranges, u, start=False):
     return ranges[-1][1]
 
 
+def auto_ranges(text: str, audio: str) -> list[tuple[float, float]]:
+    """Elige la sensibilidad cuyo nº de tramos se parece más al nº de frases/pausas del texto."""
+    phrases = max(1, len(re.findall(r"[.,;:?!…]+", text)))
+    best, best_diff = None, None
+    for noise in (-35, -32, -30, -28, -26):
+        for d in (0.22, 0.3):
+            r = speech_ranges(audio, noise, d)
+            diff = abs(len(r) - phrases * 0.75)
+            if best_diff is None or diff < best_diff:
+                best, best_diff = r, diff
+    return best
+
+
 def align_words(text: str, audio: str, **kw) -> list[dict]:
     words = text.split()
-    ranges = speech_ranges(audio, **kw)
+    ranges = speech_ranges(audio, **kw) if kw else auto_ranges(text, audio)
     speech = sum(b - a for a, b in ranges)
     weights = [len(w) + 1.5 for w in words]
     total_w = sum(weights)

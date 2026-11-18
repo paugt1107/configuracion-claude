@@ -35,10 +35,22 @@ if args:
         words = json.loads(Path(args[1]).read_text(encoding="utf-8"))["words"]
     else:
         words = align.align_words(TEXTO, audio)  # sincroniza el texto con tu voz sin red ni IA
-    k = (media.duration(audio) + 0.4) / total      # las escenas se estiran/encogen a la duración real de tu voz
-    for s in SCENES:
-        s["dur"] = round(s["dur"] * k, 3)
+    # cada escena = una línea del guion: cambia de escena cuando empiezas a decir su frase
+    lines = [l for l in Path("canal-youtube/audio/S001-narracion.txt").read_text(encoding="utf-8").splitlines() if l.strip()]
+    if len(lines) == len(SCENES):
+        idx, starts = 0, []
+        for l in lines:
+            starts.append(0.0 if not starts else words[idx]["start"] - 0.1)
+            idx += len(l.split())
+        end = media.duration(audio) + 0.4
+        for i, s in enumerate(SCENES):
+            s["dur"] = round((starts[i + 1] if i + 1 < len(starts) else end) - starts[i], 3)
+    else:  # si no cuadra, reparto proporcional
+        k = (media.duration(audio) + 0.4) / total
+        for s in SCENES:
+            s["dur"] = round(s["dur"] * k, 3)
     total = sum(s["dur"] for s in SCENES)
+    print("escenas (s):", [s["dur"] for s in SCENES])
 else:
     words = motion.estimate_words(TEXTO, total)
 out = motion.build(SCENES, words, "salida/S001-animatic.mp4" if not audio else "entregas/S001/S001-final.mp4", audio)

@@ -255,6 +255,8 @@ def build(scenes: list[dict], words: list[dict], out: str | Path, audio: str | N
         if audio:
             cmd += ["-i", audio]
         cmd += ["-vf", f"subtitles='{esc}'", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart"]
-        cmd += (["-c:a", "aac", "-b:a", "192k", "-shortest"] if audio else ["-an"]) + [str(out)]
+        # voz: quita graves de ambiente, reduce ruido de fondo y normaliza a -14 LUFS (estándar de Shorts/TikTok)
+        cmd += (["-af", "highpass=f=80,afftdn=nf=-25,loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k",
+                 "-ar", "48000", "-shortest"] if audio else ["-an"]) + [str(out)]
         subprocess.run(cmd, check=True)
     return out
