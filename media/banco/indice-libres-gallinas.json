@@ -44,6 +44,20 @@
   "h": 960,
   "w": 1280
  },
+ "lb-348113e8cf": {
+  "archivo": "libres/gallinas/brown-hen-ov2.jpg",
+  "categoria": "gallinas",
+  "consulta": "Brown hen",
+  "credito": "Brown hen — Dano — CC BY 2.0 — https://www.flickr.com/photos/36101697408@N01/275056787",
+  "etiquetas": [
+   "brown",
+   "gallinas",
+   "hen"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-4740763060": {
   "archivo": "libres/gallinas/white-leghorn-hen-ov1.jpg",
   "categoria": "gallinas",
@@ -72,6 +86,20 @@
   ],
   "fuente": "libre",
   "h": 765,
+  "w": 1024
+ },
+ "lb-62227f15be": {
+  "archivo": "libres/gallinas/brown-hen-ov1.jpg",
+  "categoria": "gallinas",
+  "consulta": "Brown hen",
+  "credito": "Brown Hens — Amy Guth — CC BY 2.0 — https://www.flickr.com/photos/92025495@N00/3020031654",
+  "etiquetas": [
+   "brown",
+   "gallinas",
+   "hen"
+  ],
+  "fuente": "libre",
+  "h": 768,
   "w": 1024
  },
  "lb-64ea7674fd": {
@@ -119,6 +147,20 @@
   "h": 683,
   "w": 1024
  },
+ "lb-9fb4cb1ddd": {
+  "archivo": "libres/gallinas/brown-hen-ov3.jpg",
+  "categoria": "gallinas",
+  "consulta": "Brown hen",
+  "credito": "brown hen and gold rooster.jpg — Jo Naylor — CC BY 2.0 — https://www.flickr.com/photos/11598937@N08/3379596025",
+  "etiquetas": [
+   "brown",
+   "gallinas",
+   "hen"
+  ],
+  "fuente": "libre",
+  "h": 1000,
+  "w": 1024
+ },
  "lb-abbf46bbc5": {
   "archivo": "libres/gallinas/white-leghorn-hen-ov2.jpg",
   "categoria": "gallinas",
@@ -163,6 +205,20 @@
   "fuente": "libre",
   "h": 753,
   "w": 1280
+ },
+ "lb-dd80ed48b3": {
+  "archivo": "libres/gallinas/brown-hen-ov4.jpg",
+  "categoria": "gallinas",
+  "consulta": "Brown hen",
+  "credito": "Close-up of a beautiful brown hen with dark background — Ivan Radic — CC BY 2.0 — https://www.flickr.com/photos/26344495@N05/50072202982",
+  "etiquetas": [
+   "brown",
+   "gallinas",
+   "hen"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
  },
  "lb-dfdfa8e946": {
   "archivo": "libres/gallinas/hen-chicken-farm-ov3.jpg",
