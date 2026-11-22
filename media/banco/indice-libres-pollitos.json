@@ -1,4 +1,119 @@
 {
+ "lb-037e0b1a44": {
+  "archivo": "libres/pollitos/chicks-hatching-ov4.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicks hatching",
+  "credito": "Peregrine Falcon Chick Hatched and Banded at MTA Bridges and Tunnels — MTAPhotos — CC BY 2.0 — https://www.flickr.com/photos/61135621@N03/52149628255",
+  "etiquetas": [
+   "chicks",
+   "hatching",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 777,
+  "w": 1024
+ },
+ "lb-080667440c": {
+  "archivo": "libres/pollitos/chick-in-hand-2.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chick in hand",
+  "credito": "Chick one.JPG — Bhaskaranaidu — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Chick_one.JPG",
+  "etiquetas": [
+   "chick",
+   "hand",
+   "in",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 960,
+  "w": 1280
+ },
+ "lb-167050b3fa": {
+  "archivo": "libres/pollitos/yellow-chick-1.jpg",
+  "categoria": "pollitos",
+  "consulta": "Yellow chick",
+  "credito": "2026-06-21 Yellow-legged gull chick on Berlenga Grande.jpg — Alexkom000 — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:2026-06-21_Yellow-legged_gull_chick_on_Berlenga_Grande.jpg",
+  "etiquetas": [
+   "chick",
+   "pollitos",
+   "yellow"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-2430675dd1": {
+  "archivo": "libres/pollitos/yellow-chick-4.jpg",
+  "categoria": "pollitos",
+  "consulta": "Yellow chick",
+  "credito": "2026-06-21 Adult yellow-legged gull with its chick on Berlenga Grande 2.jpg — Alexkom000 — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:2026-06-21_Adult_yellow-legged_gull_with_its_chick_on_Berlenga_Grande_2.jpg",
+  "etiquetas": [
+   "chick",
+   "pollitos",
+   "yellow"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-4b2f0ffc92": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-ov2.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "hatching — grendelkhan — CC BY-SA 2.0 — https://www.flickr.com/photos/98425334@N00/1739046816",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-5260349a34": {
+  "archivo": "libres/pollitos/chick-in-hand-1.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chick in hand",
+  "credito": "1 day old chick hatchling.jpg — Uberprutser — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:1_day_old_chick_hatchling.jpg",
+  "etiquetas": [
+   "chick",
+   "hand",
+   "in",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 960,
+  "w": 1280
+ },
+ "lb-537bacc3ad": {
+  "archivo": "libres/pollitos/chicks-hatching-ov2.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicks hatching",
+  "credito": "Peregrine Falcon Chick Hatched and Banded at MTA Bridges and Tunnels — MTAPhotos — CC BY 2.0 — https://www.flickr.com/photos/61135621@N03/52149628405",
+  "etiquetas": [
+   "chicks",
+   "hatching",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 765,
+  "w": 1024
+ },
+ "lb-53ffaa3a7e": {
+  "archivo": "libres/pollitos/chicks-hatching-ov3.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicks hatching",
+  "credito": "Peregrine Falcon Chick Hatched and Banded at MTA Bridges and Tunnels — MTAPhotos — CC BY 2.0 — https://www.flickr.com/photos/61135621@N03/52149377439",
+  "etiquetas": [
+   "chicks",
+   "hatching",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 765,
+  "w": 1024
+ },
  "lb-5b18e8c280": {
   "archivo": "libres/pollitos/baby-chick-ov4.jpg",
   "categoria": "pollitos",
@@ -12,6 +127,51 @@
   "fuente": "libre",
   "h": 683,
   "w": 1024
+ },
+ "lb-6aa5dd6433": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-1.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "Small Chicken Egg Incubator overhead.jpg — Alex Ford from Raleigh, NC, USA — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Small_Chicken_Egg_Incubator_overhead.jpg",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 960,
+  "w": 1280
+ },
+ "lb-72e8a5499c": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-ov4.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "Hoatzin — Carine06 — CC BY-SA 2.0 — https://www.flickr.com/photos/43555660@N00/5479759823",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 693,
+  "w": 1024
+ },
+ "lb-757b1f6f82": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-2.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "Small Chicken Egg Incubator.jpg — Alex Ford from Raleigh, NC, USA — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Small_Chicken_Egg_Incubator.jpg",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 960,
+  "w": 1280
  },
  "lb-76bdc0b2e3": {
   "archivo": "libres/pollitos/baby-chick-ov1.jpg",
@@ -27,6 +187,51 @@
   "h": 768,
   "w": 1024
  },
+ "lb-a07d632c94": {
+  "archivo": "libres/pollitos/chick-in-hand-3.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chick in hand",
+  "credito": "Nymphicus hollandicus - chick held in two hands.jpg — Steve Ryan from Groveland, CA, USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Nymphicus_hollandicus_-_chick_held_in_two_hands.jpg",
+  "etiquetas": [
+   "chick",
+   "hand",
+   "in",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-a476e8c91e": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-ov1.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "broody in her crate — Fun Monitor — CC BY 2.0 — https://www.flickr.com/photos/91719559@N00/2566366297",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-a7a77e10a0": {
+  "archivo": "libres/pollitos/chick-in-hand-4.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chick in hand",
+  "credito": "Lesser Nighthawk chick (49879035933).jpg — U.S. Department of Agriculture — Public domain — https://commons.wikimedia.org/wiki/File:Lesser_Nighthawk_chick_(49879035933).jpg",
+  "etiquetas": [
+   "chick",
+   "hand",
+   "in",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 960
+ },
  "lb-b9617ee684": {
   "archivo": "libres/pollitos/baby-chick-ov3.jpg",
   "categoria": "pollitos",
@@ -39,6 +244,34 @@
   ],
   "fuente": "libre",
   "h": 576,
+  "w": 1024
+ },
+ "lb-bbdca02bd3": {
+  "archivo": "libres/pollitos/yellow-chick-3.jpg",
+  "categoria": "pollitos",
+  "consulta": "Yellow chick",
+  "credito": "2026-06-21 Adult yellow-legged gull with its chick on Berlenga Grande.jpg — Alexkom000 — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:2026-06-21_Adult_yellow-legged_gull_with_its_chick_on_Berlenga_Grande.jpg",
+  "etiquetas": [
+   "chick",
+   "pollitos",
+   "yellow"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-c6a5e1a781": {
+  "archivo": "libres/pollitos/chicks-hatching-ov1.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicks hatching",
+  "credito": "Chick Hatch — Kevin Shorter — CC BY 2.0 — https://www.flickr.com/photos/28648582@N02/7407563200",
+  "etiquetas": [
+   "chicks",
+   "hatching",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 516,
   "w": 1024
  },
  "lb-d895a3aaa0": {
@@ -54,5 +287,64 @@
   "fuente": "libre",
   "h": 768,
   "w": 1024
+ },
+ "lb-de4dcbe52d": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-4.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "Unborn embryo in unviable egg shell from incubator.jpg — Bobjgalindo — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Unborn_embryo_in_unviable_egg_shell_from_incubator.jpg",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 960
+ },
+ "lb-ec538127af": {
+  "archivo": "libres/pollitos/yellow-chick-2.jpg",
+  "categoria": "pollitos",
+  "consulta": "Yellow chick",
+  "credito": "2026-07-02 Yellow-legged gull chick in Peniche.jpg — Alexkom000 — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:2026-07-02_Yellow-legged_gull_chick_in_Peniche.jpg",
+  "etiquetas": [
+   "chick",
+   "pollitos",
+   "yellow"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-f536e51f24": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-ov3.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "<cute> — CarbonNYC [in SF!] — CC BY 2.0 — https://www.flickr.com/photos/15923063@N00/6944662248",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 1024
+ },
+ "lb-f701dc3429": {
+  "archivo": "libres/pollitos/chicken-incubator-eggs-3.jpg",
+  "categoria": "pollitos",
+  "consulta": "Chicken incubator eggs",
+  "credito": "Incubator with freshly hatched chick.jpg — VauxhallCityFarm — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Incubator_with_freshly_hatched_chick.jpg",
+  "etiquetas": [
+   "chicken",
+   "eggs",
+   "incubator",
+   "pollitos"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 960
  }
 }
