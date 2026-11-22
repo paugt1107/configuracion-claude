@@ -30,6 +30,119 @@ oficial:
 
 libres:  # categoría → consultas en Openverse + Commons (n fotos por consulta y por buscador)
   n: 6
+  # ---------------- HUEVO O GALLINA (S007) y animales: pasan a DIBUJOS ANIMADOS (estilo cartoon) ----------------
+  huevos:
+    - Chicken eggs
+    - Brown eggs carton
+    - Bird eggs in nest
+    - Cracked egg
+    - Eggshell macro
+    - Quail eggs
+    - Ostrich egg
+    - Fried egg
+  gallinas:
+    - Hen chicken farm
+    - White Leghorn hen
+    - Brown hen
+    - Free range chickens
+    - Hen sitting on eggs
+    - Chicken portrait
+    - Silkie chicken
+    - Hen with chicks
+  gallos:
+    - Rooster crowing
+    - Rooster portrait
+    - Red junglefowl
+    - Gallus gallus spadiceus
+    - Junglefowl Thailand
+    - Rooster colorful feathers
+  pollitos:
+    - Baby chick
+    - Chicks hatching
+    - Yellow chick
+    - Chick in hand
+    - Chicken incubator eggs
+  dinosaurios:
+    - Dinosaur skeleton museum
+    - Tyrannosaurus rex skeleton
+    - Dinosaur sculpture park
+    - Sauropod skeleton
+    - Triceratops skeleton
+    - Dinosaur footprint
+    - Velociraptor model
+  fosiles:
+    - Dinosaur eggs fossil
+    - Fossil egg nest
+    - Ammonite fossil
+    - Trilobite fossil
+    - Fossil fern
+    - Amber insect fossil
+  prehistoria:
+    - Tree ferns forest
+    - Horsetail plants Equisetum
+    - Volcanic landscape
+    - Primeval forest
+    - Carboniferous forest reconstruction
+    - Lizard on rock
+  selva:
+    - Tropical rainforest
+    - Jungle Thailand
+    - Bamboo forest
+    - Rainforest canopy
+    - Jungle river
+    - Southeast Asia forest
+  granja:
+    - Farm barn
+    - Chicken coop
+    - Farmyard
+    - Hay bales field
+    - Wooden fence farm
+    - Rice field Thailand
+    - Village farm Asia
+    - Tractor field
+  laboratorio:
+    - Laboratory scientist
+    - Microscope
+    - Test tubes laboratory
+    - Petri dish
+    - Protein structure model
+    - Laboratory glassware
+    - Scientist microscope
+  aves:
+    - Parrot
+    - Eagle
+    - Owl
+    - Peacock
+    - Penguin
+    - Hummingbird
+    - Ostrich
+  reptiles:
+    - Lizard
+    - Crocodile
+    - Tortoise
+    - Chameleon
+    - Snake
+    - Komodo dragon
+  mamiferos:
+    - Lion
+    - Elephant
+    - Monkey
+    - Wolf
+    - Brown bear
+    - Giraffe
+    - Cow farm
+  insectos:
+    - Butterfly
+    - Bee on flower
+    - Ant macro
+    - Beetle
+    - Dragonfly
+  plantas:
+    - Sunflower field
+    - Flower meadow
+    - Cactus
+    - Mushroom forest
+    - Giant tree
   florida:
     - Miami skyline night
     - Ocean Drive Miami Beach Art Deco neon

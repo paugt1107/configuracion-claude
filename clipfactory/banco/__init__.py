@@ -276,17 +276,20 @@ def descargar_oficial(cfg: dict, ind: dict, maximo: int) -> int:
     return nuevas
 
 
-def descargar_libres(cfg: dict, ind: dict, maximo: int, categorias: list[str] | None = None, parte: int = 0, partes: int = 1) -> int:
+def descargar_libres(
+    cfg: dict, ind: dict, maximo: int, categorias: list[str] | None = None, parte: int = 0, partes: int = 1, n: int | None = None, lado: int = 1920
+) -> int:
     """Fotos libres por categoría. Guarda el índice tras CADA búsqueda (si la máquina se corta, no se pierde nada)."""
     from .. import libres
 
     lib = dict(cfg.get("libres") or {})
-    n = int(lib.pop("n", 3))
+    n = int(n or lib.pop("n", 3))
+    lib.pop("n", None)
     nuevas = 0
-    for k, (cat, consultas) in enumerate(sorted(lib.items())):
-        if categorias and cat not in categorias:
-            continue
-        if not categorias and k % partes != parte:  # reparto entre máquinas: cada una se queda sus categorías
+    cats = [c for c in sorted(lib) if not categorias or c in categorias]
+    for k, cat in enumerate(cats):
+        consultas = lib[cat]
+        if k % partes != parte:  # reparto entre máquinas: cada una se queda sus categorías
             continue
         for q in consultas or []:
             if nuevas >= maximo:
@@ -301,6 +304,12 @@ def descargar_libres(cfg: dict, ind: dict, maximo: int, categorias: list[str] | 
                 iid = "lb-" + hashlib.sha1(path.name.encode()).hexdigest()[:10]
                 if iid in ind:
                     continue
+                if max(w, h) > lado:  # el banco pesa en git: tamaño justo para un inserto vertical
+                    with Image.open(path) as im:
+                        im = im.convert("RGB")
+                        im.thumbnail((lado, lado), Image.LANCZOS)
+                        im.save(path, "JPEG", quality=86, optimize=True)
+                        w, h = im.size
                 ind[iid] = {
                     "archivo": str(path.relative_to(BANCO)),
                     "fuente": "libre",
@@ -490,10 +499,12 @@ def dibujo_de(iid: str, v: dict, estilo: str = "gta") -> Path:
     return dst
 
 
-def dibujar(ind: dict, estilo: str = "gta") -> int:
-    """Pasa todo el banco a dibujo (estilo ilustración GTA). Unos 0,5 s por imagen."""
+def dibujar(ind: dict, estilo: str = "gta", categorias: list[str] | None = None) -> int:
+    """Pasa el banco (o solo esas categorías) a dibujo: gta (ilustración GTA) o cartoon (dibujos animados), etc."""
     hechos = 0
     for iid, v in sorted(ind.items()):
+        if categorias and v.get("categoria") not in categorias:
+            continue
         if (BANCO / "dibujos" / estilo / f"{iid}.jpg").exists():
             v["dibujo"] = f"dibujos/{estilo}/{iid}.jpg"
             continue
@@ -573,7 +584,7 @@ def galeria(ind: dict) -> Path:
         if clip.exists():
             v["animada"] = str(clip.relative_to(BANCO))
         m = mini / f"{iid}.jpg"
-        dib = BANCO / "dibujos" / "gta" / f"{iid}.jpg"
+        dib = BANCO / v["dibujo"] if v.get("dibujo") and (BANCO / v["dibujo"]).exists() else BANCO / "dibujos" / "gta" / f"{iid}.jpg"
         if dib.exists():
             v["dibujo"] = str(dib.relative_to(BANCO))
         if not m.exists() or (dib.exists() and m.stat().st_mtime < dib.stat().st_mtime):
@@ -602,7 +613,7 @@ def galeria(ind: dict) -> Path:
         "# Banco de imágenes de TOMMY",
         "",
         f"**{len(ind)} imágenes** · **{n_anim} animadas en 3D** · **{len(por_tema)} carpetas por tema**. "
-        "Cada carpeta (`media/banco/temas/<tema>/`) tiene los DIBUJOS estilo GTA (.jpg) y sus clips 3D (.mp4, 1080x1920, 3 s) listos para editar; "
+        "Cada carpeta (`media/banco/temas/<tema>/`) tiene los DIBUJOS (estilo GTA o dibujos animados, .jpg) y, si los hay, sus clips 3D (.mp4, 1080x1920, 3 s); "
         "la foto original está en el enlace «foto». Para buscar algo concreto: Actions → «Tommy · Busca imágenes» → escribe la palabra.",
         "",
         "En un guion: `{kind: 3d, tipo: foto, banco: <tema>, estilo: lleno|inclinada|giro}` o `imagen: media/banco/temas/<tema>/<id>.jpg`.",
@@ -637,14 +648,18 @@ def main(argv=None) -> int:
     ap.add_argument("--cat", default="", help="categorías de libres separadas por comas (vacío = todas)")
     ap.add_argument("--parte", type=int, default=0)
     ap.add_argument("--partes", type=int, default=1)
+    ap.add_argument("--n", type=int, default=0, help="fotos por consulta y buscador (0 = la de banco.yaml)")
+    ap.add_argument("--lado", type=int, default=1920, help="lado máximo de las fotos libres nuevas")
+    ap.add_argument("--estilo", default="gta", help="estilo de dibujo (gta | cartoon | comic | neon | boceto)")
     a = ap.parse_args(argv)
+    cats = a.cat.split(",") if a.cat else None
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8")) or {}
     ind = cargar()
     if a.paso in ("oficial", "descargar", "todo"):
         descargar_oficial(cfg, ind, a.max)
         guardar(ind, ("oficial",))
     if a.paso in ("libres", "descargar", "todo"):
-        descargar_libres(cfg, ind, a.max, a.cat.split(",") if a.cat else None, a.parte, a.partes)
+        descargar_libres(cfg, ind, a.max, cats, a.parte, a.partes, a.n or None, a.lado)
     if a.paso in ("trailers", "todo"):
         trailers(cfg, ind, a.max)
         guardar(ind, ("trailers",))
@@ -655,7 +670,7 @@ def main(argv=None) -> int:
         guardar(ind)
         personajes(ind)
     if a.paso in ("dibujar", "etiquetar", "todo"):
-        dibujar(ind)
+        dibujar(ind, a.estilo, cats)
         guardar(ind)
     if a.paso in ("animar", "todo"):
         animar(ind, a.max, parte=a.parte, partes=a.partes)
