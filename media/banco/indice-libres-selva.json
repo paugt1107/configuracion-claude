@@ -1,0 +1,58 @@
+{
+ "lb-0bbcd9ced9": {
+  "archivo": "libres/selva/tropical-rainforest-4.jpg",
+  "categoria": "selva",
+  "consulta": "Tropical rainforest",
+  "credito": "Palawan Island, Tropical rainforest, Philippines.jpg — Vyacheslav Argenberg — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Palawan_Island,_Tropical_rainforest,_Philippines.jpg",
+  "etiquetas": [
+   "rainforest",
+   "selva",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-6f40c09005": {
+  "archivo": "libres/selva/tropical-rainforest-3.jpg",
+  "categoria": "selva",
+  "consulta": "Tropical rainforest",
+  "credito": "Tropical rainforest, Koh Chang, Thailand.jpg — Vyacheslav Argenberg — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_rainforest,_Koh_Chang,_Thailand.jpg",
+  "etiquetas": [
+   "rainforest",
+   "selva",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-85bd46f188": {
+  "archivo": "libres/selva/tropical-rainforest-2.jpg",
+  "categoria": "selva",
+  "consulta": "Tropical rainforest",
+  "credito": "Tropical rainforest in Sangha Trinational.jpg — JosepMGracia — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Tropical_rainforest_in_Sangha_Trinational.jpg",
+  "etiquetas": [
+   "rainforest",
+   "selva",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 850,
+  "w": 1280
+ },
+ "lb-ccf40ebb97": {
+  "archivo": "libres/selva/tropical-rainforest-1.jpg",
+  "categoria": "selva",
+  "consulta": "Tropical rainforest",
+  "credito": "Cheow Lan Lake, Rainforest, Khao Sok, Thailand.jpg — Vyacheslav Argenberg — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Rainforest,_Khao_Sok,_Thailand.jpg",
+  "etiquetas": [
+   "rainforest",
+   "selva",
+   "tropical"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ }
+}

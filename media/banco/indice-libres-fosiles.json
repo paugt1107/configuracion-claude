@@ -13,6 +13,21 @@
   "h": 684,
   "w": 1024
  },
+ "lb-128d1a3e39": {
+  "archivo": "libres/fosiles/amber-insect-fossil-ov1.jpg",
+  "categoria": "fosiles",
+  "consulta": "Amber insect fossil",
+  "credito": "Fly in amber (Amber Formation, Middle Eocene; Yantarnyi, Samland Peninsula along the Baltic Sea, far-western Russia) 1 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/15111926449",
+  "etiquetas": [
+   "amber",
+   "fosiles",
+   "fossil",
+   "insect"
+  ],
+  "fuente": "libre",
+  "h": 416,
+  "w": 1023
+ },
  "lb-177c6a5d76": {
   "archivo": "libres/fosiles/trilobite-fossil-1.jpg",
   "categoria": "fosiles",
@@ -97,6 +112,21 @@
   "h": 375,
   "w": 1023
  },
+ "lb-435ac781de": {
+  "archivo": "libres/fosiles/amber-insect-fossil-ov3.jpg",
+  "categoria": "fosiles",
+  "consulta": "Amber insect fossil",
+  "credito": "Amber (resinite) (Baltics) — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/15545782135",
+  "etiquetas": [
+   "amber",
+   "fosiles",
+   "fossil",
+   "insect"
+  ],
+  "fuente": "libre",
+  "h": 505,
+  "w": 1024
+ },
  "lb-52fb6991ce": {
   "archivo": "libres/fosiles/trilobite-fossil-2.jpg",
   "categoria": "fosiles",
@@ -139,6 +169,21 @@
   "fuente": "libre",
   "h": 853,
   "w": 1280
+ },
+ "lb-64b5d49663": {
+  "archivo": "libres/fosiles/amber-insect-fossil-ov4.jpg",
+  "categoria": "fosiles",
+  "consulta": "Amber insect fossil",
+  "credito": "Copal — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/14925618773",
+  "etiquetas": [
+   "amber",
+   "fosiles",
+   "fossil",
+   "insect"
+  ],
+  "fuente": "libre",
+  "h": 639,
+  "w": 1024
  },
  "lb-71359a3815": {
   "archivo": "libres/fosiles/dinosaur-eggs-fossil-ov3.jpg",
@@ -285,6 +330,21 @@
   "fuente": "libre",
   "h": 853,
   "w": 1280
+ },
+ "lb-b1dd29b966": {
+  "archivo": "libres/fosiles/amber-insect-fossil-ov2.jpg",
+  "categoria": "fosiles",
+  "consulta": "Amber insect fossil",
+  "credito": "Fly in amber (Amber Formation, Middle Eocene; Yantarnyi, Samland Peninsula along the Baltic Sea, far-western Russia) 3 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/15298329402",
+  "etiquetas": [
+   "amber",
+   "fosiles",
+   "fossil",
+   "insect"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 953
  },
  "lb-bc376b6ca4": {
   "archivo": "libres/fosiles/fossil-egg-nest-ov1.jpg",
