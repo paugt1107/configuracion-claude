@@ -1,4 +1,32 @@
 {
+ "lb-005e76f04b": {
+  "archivo": "libres/ciudades/dubai-skyline-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Dubai skyline",
+  "credito": "Dubai Skyline 2016.jpg — Tonenight — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dubai_Skyline_2016.jpg",
+  "etiquetas": [
+   "ciudades",
+   "dubai",
+   "skyline"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-06574ea3ee": {
+  "archivo": "libres/ciudades/dubai-skyline-ov1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Dubai skyline",
+  "credito": "Dubai Skyline — nelson ebelt — CC BY 2.0 — https://www.flickr.com/photos/26907363@N06/5407874346",
+  "etiquetas": [
+   "ciudades",
+   "dubai",
+   "skyline"
+  ],
+  "fuente": "libre",
+  "h": 899,
+  "w": 1023
+ },
  "lb-1ac646ee92": {
   "archivo": "libres/ciudades/new-york-skyline-1.jpg",
   "categoria": "ciudades",
@@ -119,6 +147,21 @@
   "h": 576,
   "w": 1024
  },
+ "lb-ae03f9f53e": {
+  "archivo": "libres/ciudades/madrid-gran-via-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Madrid Gran Via",
+  "credito": "Gran Vía - 01.jpg — Carlos Delgado — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Gran_V%C3%ADa_-_01.jpg",
+  "etiquetas": [
+   "ciudades",
+   "gran",
+   "madrid",
+   "via"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 853
+ },
  "lb-c030902093": {
   "archivo": "libres/ciudades/london-big-ben-2.jpg",
   "categoria": "ciudades",
@@ -132,6 +175,21 @@
   ],
   "fuente": "libre",
   "h": 1239,
+  "w": 1280
+ },
+ "lb-c4fd80bb17": {
+  "archivo": "libres/ciudades/madrid-gran-via-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Madrid Gran Via",
+  "credito": "Madrid - Edificio Grassy (Gran Vía 1) - north facade - relief over entrance.jpg — Tomascastelazo — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Madrid_-_Edificio_Grassy_(Gran_V%C3%ADa_1)_-_north_facade_-_relief_over_entrance.jpg",
+  "etiquetas": [
+   "ciudades",
+   "gran",
+   "madrid",
+   "via"
+  ],
+  "fuente": "libre",
+  "h": 630,
   "w": 1280
  },
  "lb-d56b973163": {
@@ -148,5 +206,33 @@
   "fuente": "libre",
   "h": 853,
   "w": 1280
+ },
+ "lb-f8b1a804ad": {
+  "archivo": "libres/ciudades/dubai-skyline-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Dubai skyline",
+  "credito": "Dubai skyline unsplash.jpg — Robert Bock — CC0 — https://commons.wikimedia.org/wiki/File:Dubai_skyline_unsplash.jpg",
+  "etiquetas": [
+   "ciudades",
+   "dubai",
+   "skyline"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-f9f357e7a4": {
+  "archivo": "libres/ciudades/dubai-skyline-ov2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Dubai skyline",
+  "credito": "Dubai Skyline — Jean & Nathalie — CC BY 2.0 — https://www.flickr.com/photos/60374292@N00/12728419864",
+  "etiquetas": [
+   "ciudades",
+   "dubai",
+   "skyline"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
  }
 }
