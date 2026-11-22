@@ -71,6 +71,56 @@ function consola() {
   return { g, led };
 }
 
+// ---------- figuritas (huevos, gallinas, pollitos, dinosaurios) ----------
+const bola = (r, c, sx = 1, sy = 1, sz = 1, extra) => { const m = new THREE.Mesh(new THREE.SphereGeometry(r, 12, 9), mat(c, extra)); m.scale.set(sx, sy, sz); return m; };
+const cono = (r, h, c) => new THREE.Mesh(new THREE.ConeGeometry(r, h, 8), mat(c));
+function huevo(c = 0xfff3dc, k = 1) { const m = bola(0.24 * k, c, 0.8, 1.12, 0.8); m.position.y = 0.27 * k; const g = new THREE.Group(); g.add(m); return g; }
+function ojos(g, x, y, z, r = 0.035) { for (const s of [-1, 1]) { const o = bola(r, 0x111111); o.position.set(x, y, z * s); g.add(o); } }
+function gallina(color = C.blanco) {
+  const g = new THREE.Group();
+  const cuerpo = bola(0.4, color, 1.15, 0.9, 0.85); cuerpo.position.y = 0.6; g.add(cuerpo);
+  const cola = caja(0.35, 0.34, 0.1, color); cola.position.set(-0.5, 0.82, 0); cola.rotation.z = 0.5; g.add(cola);
+  const cuello = new THREE.Group(); cuello.position.set(0.32, 0.8, 0); g.add(cuello);
+  const cab = bola(0.2, color); cab.position.set(0.08, 0.28, 0); cuello.add(cab);
+  const pico = cono(0.07, 0.2, C.naranja); pico.rotation.z = -Math.PI / 2; pico.position.set(0.3, 0.26, 0); cuello.add(pico);
+  const cresta = caja(0.1, 0.14, 0.05, C.rojo); cresta.position.set(0.08, 0.5, 0); cuello.add(cresta);
+  const barba = caja(0.05, 0.1, 0.05, C.rojo); barba.position.set(0.22, 0.12, 0); cuello.add(barba);
+  ojos(cuello, 0.2, 0.34, 0.14);
+  for (const s of [-1, 1]) {
+    const ala = bola(0.22, color, 0.9, 0.55, 0.3); ala.position.set(-0.02, 0.62, 0.34 * s); ala.rotation.z = -0.25; g.add(ala);
+    const pata = caja(0.045, 0.3, 0.045, C.naranja); pata.position.set(0.02, 0.15, 0.13 * s); g.add(pata);
+    const pie = caja(0.16, 0.03, 0.07, C.naranja); pie.position.set(0.07, 0.02, 0.13 * s); g.add(pie);
+  }
+  return { g, cuello };
+}
+function pollito() {
+  const g = new THREE.Group();
+  const c = bola(0.26, C.amarillo, 1, 0.95, 1); c.position.y = 0.3; g.add(c);
+  const cab = bola(0.17, C.amarillo); cab.position.set(0.1, 0.58, 0); g.add(cab);
+  const pico = cono(0.05, 0.12, C.naranja); pico.rotation.z = -Math.PI / 2; pico.position.set(0.28, 0.56, 0); g.add(pico);
+  ojos(g, 0.2, 0.63, 0.09, 0.03);
+  for (const s of [-1, 1]) { const p = caja(0.03, 0.12, 0.03, C.naranja); p.position.set(0, 0.06, 0.08 * s); g.add(p); }
+  return g;
+}
+function dino(color = C.hoja) {
+  const g = new THREE.Group();
+  const cuerpo = bola(0.5, color, 1.5, 0.85, 0.85); cuerpo.position.y = 0.85; g.add(cuerpo);
+  const cuello = caja(0.2, 0.7, 0.2, color); cuello.position.set(0.6, 1.2, 0); cuello.rotation.z = -0.35; g.add(cuello);
+  const cab = bola(0.22, color, 1.3, 0.9, 0.9); cab.position.set(0.82, 1.58, 0); g.add(cab);
+  ojos(g, 0.92, 1.64, 0.15, 0.035);
+  const cola = cono(0.25, 1.1, color); cola.rotation.z = Math.PI / 2 + 0.2; cola.position.set(-1.0, 0.8, 0); g.add(cola);
+  for (let i = 0; i < 5; i++) { const e = cono(0.08, 0.2, C.naranja); e.position.set(-0.5 + i * 0.28, 1.28 - Math.abs(i - 2) * 0.05, 0); g.add(e); }
+  const patas = [];
+  for (const [x, z] of [[0.4, 0.22], [0.4, -0.22], [-0.4, 0.22], [-0.4, -0.22]]) { const p = caja(0.16, 0.5, 0.16, color); p.position.set(x, 0.25, z); g.add(p); patas.push(p); }
+  return { g, patas, cab };
+}
+function confeti(root, cols, n = 26) {
+  const arr = [];
+  for (let i = 0; i < n; i++) { const c = caja(0.07, 0.07, 0.02, cols[i % cols.length], { emissive: cols[i % cols.length], emissiveIntensity: 0.4 }); root.add(c); arr.push(c); }
+  return (t) => arr.forEach((c, i) => { const f = (t * 0.55 + i / arr.length) % 1; c.position.set(Math.sin(i * 12.9) * 1.7, 3.0 - f * 3.0, Math.cos(i * 7.3) * 1.0); c.rotation.set(t * 3 + i, t * 2, t); });
+}
+function valla(root, x0, x1, z) { for (let x = x0; x <= x1; x += 0.3) { const p = caja(0.08, 0.5, 0.06, C.madera); p.position.set(x, 0.25, z); root.add(p); } const t = caja(x1 - x0 + 0.1, 0.07, 0.05, C.madera); t.position.set((x0 + x1) / 2, 0.38, z); root.add(t); }
+
 export function construir(nombre, S, root, scene, ACC) {
   const upd = [], anclas = {};
   const n = Number(S.n ?? 0);
@@ -157,6 +207,73 @@ export function construir(nombre, S, root, scene, ACC) {
       anclas.a = new THREE.Vector3(0.3, 1.2, 0);
     } else anclas.a = new THREE.Vector3(-0.45, 2.6, -0.75);
     anclas.b = new THREE.Vector3(1.05, 2.1, -0.75); anclas.c = new THREE.Vector3(-1.4, 0.9, 0.6);
+  } else if (nombre === "gallina") {
+    root.add(isla(3.2, 2.4)); valla(root, -1.4, 1.4, -1.0);
+    const { g: ga, cuello } = gallina(C.blanco); ga.position.set(-0.7, 0, 0); root.add(ga);
+    const h = huevo(0xfff3dc, 1.5); root.add(h);
+    const ph = palmera(0.8); ph.position.set(1.4, 0, -0.7); root.add(ph);
+    upd.push((t) => {
+      cuello.rotation.z = Math.sin(t * 6) * 0.18 - 0.1; ga.position.y = Math.abs(Math.sin(t * 3)) * 0.06;
+      const k = clamp((t - 0.35) / 0.55); h.visible = t > 0.35; h.position.set(0.7 - 0.35 * (1 - eo(k)) * 0, 0.0 + (1 - eob(k)) * 1.6, 0.25); h.rotation.y = t * 1.4; h.rotation.z = Math.sin(t * 2) * 0.1;
+    });
+    anclas.a = new THREE.Vector3(-0.7, 1.6, 0); anclas.b = new THREE.Vector3(0.7, 1.15, 0.25); anclas.c = new THREE.Vector3(0, 0.3, 1.0);
+  } else if (nombre === "huevos") {
+    root.add(isla(3.4, 2.6));
+    const total = Math.max(3, Math.min(48, n || 24)), cols = [0xfff3dc, 0xf3dfc0, 0xe8c9a0, 0xffffff];
+    const hs = [];
+    for (let i = 0; i < total; i++) { const e = huevo(cols[i % cols.length], 0.9); const cx = i % 8, cz = Math.floor(i / 8); e.position.set(-1.4 + cx * 0.4, 0, -0.8 + cz * 0.42); root.add(e); hs.push(e); }
+    const oro = huevo(0xffd25a, 2.2); oro.children[0].material.emissive = new THREE.Color(0xffb300); oro.children[0].material.emissiveIntensity = 0.5; oro.position.set(0, 0, 0.7); root.add(oro);
+    const lluvia = confeti(root, [C.amarillo, C.rosa, C.cian, C.naranja]);
+    upd.push((t) => {
+      const vis = eo(t / (S.dur * 0.65)) * total;
+      hs.forEach((e, i) => { const k = clamp(vis - i); e.visible = k > 0; e.scale.setScalar(Math.max(0.001, eob(k))); e.position.y = Math.abs(Math.sin(t * 4 + i * 0.7)) * 0.04 * k; });
+      const kk = clamp((t - S.dur * 0.35) / 0.5); oro.visible = kk > 0; oro.scale.setScalar(Math.max(0.001, eob(kk))); oro.rotation.y = t * 2; oro.position.y = 0.05 + Math.sin(t * 3) * 0.06;
+      lluvia(t);
+    });
+    anclas.a = new THREE.Vector3(-0.8, 1.0, -0.3); anclas.b = new THREE.Vector3(0.9, 1.2, 0); anclas.c = new THREE.Vector3(0, 1.5, 0.7);
+  } else if (nombre === "dino") {
+    root.add(isla(3.6, 2.6));
+    const { g: d, patas } = dino(); d.position.set(-0.9, 0, 0); d.scale.setScalar(0.85); root.add(d);
+    const nido = new THREE.Mesh(new THREE.CylinderGeometry(0.62, 0.7, 0.14, 14), mat(C.madera)); nido.position.set(1.15, 0.07, 0.2); root.add(nido);
+    const hs = [];
+    for (let i = 0; i < 6; i++) { const a = (i / 6) * Math.PI * 2, e = huevo(i % 2 ? 0xe8e0c8 : 0xfff3dc, 1.1); e.position.set(1.15 + Math.cos(a) * 0.3, 0.12, 0.2 + Math.sin(a) * 0.3); root.add(e); hs.push(e); }
+    const pl = palmera(1.1); pl.position.set(0.2, 0, -1.0); root.add(pl); const pl2 = palmera(0.8); pl2.position.set(1.7, 0, -0.9); root.add(pl2);
+    upd.push((t) => {
+      patas.forEach((p, i) => { p.position.y = 0.25 + Math.max(0, Math.sin(t * 5 + (i % 2) * Math.PI)) * 0.06; });
+      d.position.y = Math.abs(Math.sin(t * 5)) * 0.03; d.rotation.y = Math.sin(t * 0.8) * 0.15;
+      hs.forEach((e, i) => { const k = clamp((t - 0.2 - i * 0.12) / 0.4); e.visible = k > 0; e.scale.setScalar(Math.max(0.001, eob(k))); });
+    });
+    anclas.a = new THREE.Vector3(-0.8, 2.0, 0); anclas.b = new THREE.Vector3(1.15, 1.0, 0.2); anclas.c = new THREE.Vector3(0, 0.3, 1.0);
+  } else if (nombre === "nacer") {
+    root.add(isla(2.8, 2.4));
+    const R = 0.5, mitadAlta = new THREE.Mesh(new THREE.SphereGeometry(R, 14, 10, 0, Math.PI * 2, 0, Math.PI * 0.45), mat(0xfff3dc, { side: THREE.DoubleSide }));
+    const mitadBaja = new THREE.Mesh(new THREE.SphereGeometry(R, 14, 10, 0, Math.PI * 2, Math.PI * 0.45, Math.PI * 0.55), mat(0xfff3dc, { side: THREE.DoubleSide }));
+    const eg = new THREE.Group(); eg.add(mitadAlta, mitadBaja); eg.scale.set(0.85, 1.2, 0.85); eg.position.y = R * 1.2; root.add(eg);
+    const p = pollito(); p.scale.setScalar(0.9); root.add(p);
+    const lluvia = confeti(root, [C.amarillo, C.rosa, C.cian, C.naranja, C.blanco], 30);
+    upd.push((t) => {
+      const grieta = 0.9;
+      eg.rotation.z = t < grieta ? Math.sin(t * 22) * 0.12 * (t / grieta) : 0;
+      const k = clamp((t - grieta) / 0.5);
+      mitadAlta.position.set(0.05 * k, k * 1.2, 0); mitadAlta.rotation.set(0, 0, -k * 1.3); mitadAlta.visible = k < 1 || t < grieta + 1.2;
+      p.visible = t > grieta; p.position.y = -0.2 + eob(clamp((t - grieta - 0.1) / 0.5)) * 0.55 + (t > grieta + 0.8 ? Math.abs(Math.sin((t - grieta) * 6)) * 0.08 : 0);
+      lluvia.visible = t > grieta; if (t > grieta) lluvia(t - grieta);
+    });
+    anclas.a = new THREE.Vector3(0, 1.6, 0); anclas.b = new THREE.Vector3(-0.9, 0.7, 0.4); anclas.c = new THREE.Vector3(0.9, 0.7, 0.4);
+  } else if (nombre === "podio") {
+    root.add(isla(3.4, 2.4));
+    const alturas = [[0, 1.0, C.amarillo], [-0.95, 0.65, C.gris], [0.95, 0.4, 0xc58b4d]];
+    alturas.forEach(([x, h, c]) => { const b = caja(0.9, h, 0.9, c); b.position.set(x, h / 2, 0); root.add(b); });
+    const h = huevo(0xfff3dc, 1.6); root.add(h);
+    const corona = cono(0.28, 0.3, C.amarillo); corona.position.y = 1.0 + 0.95; root.add(corona);
+    const { g: ga, cuello } = gallina(C.blanco); ga.scale.setScalar(0.8); ga.position.set(-0.95, 0.65, 0); ga.rotation.y = 0.5; root.add(ga);
+    const lluvia = confeti(root, [C.amarillo, C.rosa, C.cian, C.naranja, C.morado], 34);
+    upd.push((t) => {
+      const k = clamp(t / 0.6); h.position.set(0, 1.0 + (1 - eob(k)) * 2 + Math.sin(t * 3) * 0.05, 0); h.rotation.y = t * 1.6;
+      corona.position.set(0, 1.0 + 0.82 + (1 - eob(k)) * 2 + Math.sin(t * 3) * 0.05, 0); corona.rotation.y = t * 1.6;
+      cuello.rotation.z = Math.sin(t * 5) * 0.15; lluvia(t);
+    });
+    anclas.a = new THREE.Vector3(0, 2.5, 0); anclas.b = new THREE.Vector3(-0.95, 1.9, 0); anclas.c = new THREE.Vector3(0.95, 1.0, 0);
   }
   return { upd, anclas };
 }
