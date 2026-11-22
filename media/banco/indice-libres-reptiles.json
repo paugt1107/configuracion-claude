@@ -1,4 +1,111 @@
 {
+ "lb-1234508511": {
+  "archivo": "libres/reptiles/snake-2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Snake",
+  "credito": "The Grass Snake - Natrix natrix.jpg — Darius Bauzys — CC BY 3.0 — https://commons.wikimedia.org/wiki/File:The_Grass_Snake_-_Natrix_natrix.jpg",
+  "etiquetas": [
+   "reptiles",
+   "snake"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-338272cc32": {
+  "archivo": "libres/reptiles/komodo-dragon-1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Komodo dragon",
+  "credito": "Komodo dragon (Varanus komodoensis).jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Komodo_dragon_(Varanus_komodoensis).jpg",
+  "etiquetas": [
+   "dragon",
+   "komodo",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 1010,
+  "w": 1280
+ },
+ "lb-3e126118e3": {
+  "archivo": "libres/reptiles/snake-ov2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Snake",
+  "credito": "Yellow-bellied Water Snake — Greg Schechter — CC BY 2.0 — https://www.flickr.com/photos/17004938@N00/10285946016",
+  "etiquetas": [
+   "reptiles",
+   "snake"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-5843e91452": {
+  "archivo": "libres/reptiles/snake-ov1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Snake",
+  "credito": "snake skin, head on_2012-09-05-17 — Sam Droege — Dominio público 1.0 — https://www.flickr.com/photos/54563451@N08/7959501728",
+  "etiquetas": [
+   "reptiles",
+   "snake"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
+ "lb-595c72a2a5": {
+  "archivo": "libres/reptiles/chameleon-1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Chameleon",
+  "credito": "Montagne d'Ambre leaf chameleon (Brookesia tuberculata) male 2.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Montagne_d%27Ambre_leaf_chameleon_(Brookesia_tuberculata)_male_2.jpg",
+  "etiquetas": [
+   "chameleon",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-5eab3a3a76": {
+  "archivo": "libres/reptiles/komodo-dragon-ov2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Komodo dragon",
+  "credito": "Walking My Komodo Dragon (Explored) — mdalmuld — CC BY 2.0 — https://www.flickr.com/photos/61063858@N02/49546254273",
+  "etiquetas": [
+   "dragon",
+   "komodo",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-7760de1a5c": {
+  "archivo": "libres/reptiles/komodo-dragon-2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Komodo dragon",
+  "credito": "Varanus komodoensis, Komodo Island, Indonesia, 20250822 1332 2808.jpg — Jakub Hałun — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Varanus_komodoensis,_Komodo_Island,_Indonesia,_20250822_1332_2808.jpg",
+  "etiquetas": [
+   "dragon",
+   "komodo",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 855,
+  "w": 1280
+ },
+ "lb-7d26b0e505": {
+  "archivo": "libres/reptiles/tortoise-ov1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Tortoise",
+  "credito": "Tortoise Monitoring and Research — Joshua Tree National Park — Dominio público 1.0 — https://www.flickr.com/photos/115357548@N08/37290683335",
+  "etiquetas": [
+   "reptiles",
+   "tortoise"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
  "lb-88b735810d": {
   "archivo": "libres/reptiles/lizard-2.jpg",
   "categoria": "reptiles",
@@ -24,6 +131,59 @@
   "fuente": "libre",
   "h": 629,
   "w": 1280
+ },
+ "lb-a7947a75ac": {
+  "archivo": "libres/reptiles/chameleon-2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Chameleon",
+  "credito": "Panther chameleon (Furcifer pardalis) male Nosy Be.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Nosy_Be.jpg",
+  "etiquetas": [
+   "chameleon",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-baa159f418": {
+  "archivo": "libres/reptiles/tortoise-ov2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Tortoise",
+  "credito": "tortoises getting busy — hodgers — CC BY-SA 2.0 — https://www.flickr.com/photos/35468147887@N01/3402275160",
+  "etiquetas": [
+   "reptiles",
+   "tortoise"
+  ],
+  "fuente": "libre",
+  "h": 769,
+  "w": 1024
+ },
+ "lb-c699926798": {
+  "archivo": "libres/reptiles/snake-1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Snake",
+  "credito": "Black-chested snake-eagle (Circaetus pectoralis).jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Black-chested_snake-eagle_(Circaetus_pectoralis).jpg",
+  "etiquetas": [
+   "reptiles",
+   "snake"
+  ],
+  "fuente": "libre",
+  "h": 1049,
+  "w": 1280
+ },
+ "lb-ca43c9693a": {
+  "archivo": "libres/reptiles/komodo-dragon-ov1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Komodo dragon",
+  "credito": "KOMODO DRAGON — NAPARAZZI — CC BY-SA 2.0 — https://www.flickr.com/photos/28990363@N05/6414220531",
+  "etiquetas": [
+   "dragon",
+   "komodo",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 678,
+  "w": 1024
  },
  "lb-f197a24247": {
   "archivo": "libres/reptiles/crocodile-2.jpg",
