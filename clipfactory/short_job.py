@@ -27,8 +27,8 @@ def _foto_libre(consulta: str, usadas: set):
                 break
     except Exception:
         r = None
-    if r and str(r[0]) not in usadas:
-        usadas.add(str(r[0]))
+    if r and r[1] not in usadas:  # misma foto con otro nombre de archivo = mismo crédito
+        usadas.add(r[1])
         return r
     return None
 
