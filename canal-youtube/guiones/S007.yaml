@@ -32,7 +32,7 @@ escenas:
   - texto: "La gallina doméstica tiene unos tres mil quinientos años."
     tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "trio", "cielo": "dia", "etiquetas": [{"titulo": "Gallina doméstica", "texto": "3.500 años", "icono": "🐔"}]}
   - texto: "Viene del gallo bankiva, un ave salvaje del sudeste asiático."
-    tarjeta: {"kind": "3d", "tipo": "foto", "libre": ["red junglefowl rooster", "Gallus gallus"], "foco": {"x": 0.62, "y": 0.4}, "zoom": 1.7, "notas": [{"texto": "Gallo bankiva", "x": 0.62, "y": 0.4, "t": 0.5}], "alt": {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "dia", "etiquetas": [{"titulo": "Origen", "texto": "Gallo bankiva", "icono": "🐓"}]}}
+    tarjeta: {"kind": "3d", "tipo": "foto", "libre": ["red junglefowl rooster", "Gallus gallus"], "foco": {"x": 0.55, "y": 0.35}, "zoom": 1.7, "notas": [{"texto": "Gallo bankiva", "x": 0.53, "y": 0.27, "t": 0.5}], "alt": {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "dia", "etiquetas": [{"titulo": "Origen", "texto": "Gallo bankiva", "icono": "🐓"}]}}
   - texto: "Pero ojo, que aquí viene el truco…"
     pausa: true
     tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "pila", "cielo": "noche", "etiquetas": [{"titulo": "Ojo", "texto": "Aquí viene el truco", "icono": "❓"}]}
