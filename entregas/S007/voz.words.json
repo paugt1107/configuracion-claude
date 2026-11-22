@@ -1,0 +1,689 @@
+{
+ "words": [
+  {
+   "text": "Sabías",
+   "start": 0.15,
+   "end": 0.632
+  },
+  {
+   "text": "que",
+   "start": 0.642,
+   "end": 0.728
+  },
+  {
+   "text": "el",
+   "start": 0.739,
+   "end": 0.814
+  },
+  {
+   "text": "huevo",
+   "start": 0.824,
+   "end": 1.017
+  },
+  {
+   "text": "existía",
+   "start": 1.028,
+   "end": 1.424
+  },
+  {
+   "text": "trescientos",
+   "start": 1.434,
+   "end": 1.916
+  },
+  {
+   "text": "millones",
+   "start": 1.927,
+   "end": 2.237
+  },
+  {
+   "text": "de",
+   "start": 2.248,
+   "end": 2.334
+  },
+  {
+   "text": "años",
+   "start": 2.344,
+   "end": 2.59
+  },
+  {
+   "text": "antes",
+   "start": 2.601,
+   "end": 2.847
+  },
+  {
+   "text": "que",
+   "start": 2.858,
+   "end": 2.933
+  },
+  {
+   "text": "la",
+   "start": 2.944,
+   "end": 3.008
+  },
+  {
+   "text": "gallina",
+   "start": 3.019,
+   "end": 3.468
+  },
+  {
+   "text": "Te",
+   "start": 4.198,
+   "end": 4.326
+  },
+  {
+   "text": "lo",
+   "start": 4.337,
+   "end": 4.423
+  },
+  {
+   "text": "demuestro",
+   "start": 4.433,
+   "end": 5.022
+  },
+  {
+   "text": "Los",
+   "start": 5.302,
+   "end": 5.58
+  },
+  {
+   "text": "primeros",
+   "start": 5.591,
+   "end": 5.948
+  },
+  {
+   "text": "animales",
+   "start": 5.959,
+   "end": 6.404
+  },
+  {
+   "text": "con",
+   "start": 6.415,
+   "end": 6.593
+  },
+  {
+   "text": "huevo",
+   "start": 6.604,
+   "end": 6.805
+  },
+  {
+   "text": "propio",
+   "start": 6.816,
+   "end": 7.138
+  },
+  {
+   "text": "surgieron",
+   "start": 7.15,
+   "end": 7.584
+  },
+  {
+   "text": "hace",
+   "start": 7.595,
+   "end": 7.751
+  },
+  {
+   "text": "más",
+   "start": 7.762,
+   "end": 7.917
+  },
+  {
+   "text": "de",
+   "start": 7.929,
+   "end": 8.007
+  },
+  {
+   "text": "trescientos",
+   "start": 8.018,
+   "end": 8.496
+  },
+  {
+   "text": "millones",
+   "start": 8.507,
+   "end": 8.83
+  },
+  {
+   "text": "de",
+   "start": 8.841,
+   "end": 8.93
+  },
+  {
+   "text": "años",
+   "start": 8.941,
+   "end": 9.398
+  },
+  {
+   "text": "Los",
+   "start": 9.538,
+   "end": 9.802
+  },
+  {
+   "text": "dinosaurios",
+   "start": 9.813,
+   "end": 10.351
+  },
+  {
+   "text": "ya",
+   "start": 10.362,
+   "end": 10.472
+  },
+  {
+   "text": "los",
+   "start": 10.483,
+   "end": 10.637
+  },
+  {
+   "text": "ponían",
+   "start": 10.648,
+   "end": 10.956
+  },
+  {
+   "text": "hace",
+   "start": 10.967,
+   "end": 11.154
+  },
+  {
+   "text": "unos",
+   "start": 11.165,
+   "end": 11.374
+  },
+  {
+   "text": "ciento",
+   "start": 11.385,
+   "end": 11.638
+  },
+  {
+   "text": "noventa",
+   "start": 11.649,
+   "end": 11.956
+  },
+  {
+   "text": "y",
+   "start": 11.967,
+   "end": 12.011
+  },
+  {
+   "text": "cinco",
+   "start": 12.022,
+   "end": 12.275
+  },
+  {
+   "text": "millones",
+   "start": 12.286,
+   "end": 12.88
+  },
+  {
+   "text": "Y",
+   "start": 13.02,
+   "end": 13.169
+  },
+  {
+   "text": "ni",
+   "start": 13.18,
+   "end": 13.297
+  },
+  {
+   "text": "rastro",
+   "start": 13.308,
+   "end": 13.606
+  },
+  {
+   "text": "de",
+   "start": 13.617,
+   "end": 13.681
+  },
+  {
+   "text": "ninguna",
+   "start": 13.692,
+   "end": 14.012
+  },
+  {
+   "text": "gallina",
+   "start": 14.022,
+   "end": 14.523
+  },
+  {
+   "text": "Su",
+   "start": 14.663,
+   "end": 14.898
+  },
+  {
+   "text": "antepasado",
+   "start": 14.909,
+   "end": 15.522
+  },
+  {
+   "text": "el",
+   "start": 15.779,
+   "end": 15.879
+  },
+  {
+   "text": "gallo",
+   "start": 15.891,
+   "end": 16.114
+  },
+  {
+   "text": "bankiva",
+   "start": 16.125,
+   "end": 16.582
+  },
+  {
+   "text": "ave",
+   "start": 16.839,
+   "end": 17.04
+  },
+  {
+   "text": "salvaje",
+   "start": 17.051,
+   "end": 17.452
+  },
+  {
+   "text": "del",
+   "start": 17.464,
+   "end": 17.609
+  },
+  {
+   "text": "sudeste",
+   "start": 17.62,
+   "end": 17.966
+  },
+  {
+   "text": "asiático",
+   "start": 17.977,
+   "end": 18.568
+  },
+  {
+   "text": "La",
+   "start": 18.708,
+   "end": 18.938
+  },
+  {
+   "text": "gallina",
+   "start": 18.949,
+   "end": 19.256
+  },
+  {
+   "text": "doméstica",
+   "start": 19.267,
+   "end": 19.771
+  },
+  {
+   "text": "solo",
+   "start": 19.782,
+   "end": 20.034
+  },
+  {
+   "text": "tiene",
+   "start": 20.045,
+   "end": 20.231
+  },
+  {
+   "text": "unos",
+   "start": 20.242,
+   "end": 20.45
+  },
+  {
+   "text": "tres",
+   "start": 20.461,
+   "end": 20.648
+  },
+  {
+   "text": "mil",
+   "start": 20.659,
+   "end": 20.801
+  },
+  {
+   "text": "quinientos",
+   "start": 20.812,
+   "end": 21.217
+  },
+  {
+   "text": "años",
+   "start": 21.228,
+   "end": 21.678
+  },
+  {
+   "text": "Pero",
+   "start": 21.818,
+   "end": 22.123
+  },
+  {
+   "text": "ojo",
+   "start": 22.135,
+   "end": 22.477
+  },
+  {
+   "text": "que",
+   "start": 22.746,
+   "end": 22.844
+  },
+  {
+   "text": "aquí",
+   "start": 22.856,
+   "end": 23.051
+  },
+  {
+   "text": "viene",
+   "start": 23.063,
+   "end": 23.283
+  },
+  {
+   "text": "el",
+   "start": 23.295,
+   "end": 23.381
+  },
+  {
+   "text": "truco",
+   "start": 23.393,
+   "end": 23.882
+  },
+  {
+   "text": "El",
+   "start": 24.732,
+   "end": 24.928
+  },
+  {
+   "text": "primer",
+   "start": 24.939,
+   "end": 25.19
+  },
+  {
+   "text": "huevo",
+   "start": 25.201,
+   "end": 25.387
+  },
+  {
+   "text": "de",
+   "start": 25.398,
+   "end": 25.474
+  },
+  {
+   "text": "gallina",
+   "start": 25.485,
+   "end": 25.857
+  },
+  {
+   "text": "lo",
+   "start": 25.868,
+   "end": 26.031
+  },
+  {
+   "text": "puso",
+   "start": 26.042,
+   "end": 26.294
+  },
+  {
+   "text": "un",
+   "start": 26.304,
+   "end": 26.392
+  },
+  {
+   "text": "ave",
+   "start": 26.403,
+   "end": 26.556
+  },
+  {
+   "text": "casi",
+   "start": 26.567,
+   "end": 26.796
+  },
+  {
+   "text": "gallina",
+   "start": 26.807,
+   "end": 27.353
+  },
+  {
+   "text": "Dentro",
+   "start": 27.493,
+   "end": 27.972
+  },
+  {
+   "text": "por",
+   "start": 28.184,
+   "end": 28.329
+  },
+  {
+   "text": "pequeñas",
+   "start": 28.34,
+   "end": 28.697
+  },
+  {
+   "text": "mutaciones",
+   "start": 28.708,
+   "end": 29.298
+  },
+  {
+   "text": "nació",
+   "start": 29.477,
+   "end": 29.766
+  },
+  {
+   "text": "la",
+   "start": 29.778,
+   "end": 29.867
+  },
+  {
+   "text": "primera",
+   "start": 29.878,
+   "end": 30.168
+  },
+  {
+   "text": "gallina",
+   "start": 30.179,
+   "end": 30.669
+  },
+  {
+   "text": "Así",
+   "start": 30.809,
+   "end": 31.103
+  },
+  {
+   "text": "que",
+   "start": 31.114,
+   "end": 31.208
+  },
+  {
+   "text": "el",
+   "start": 31.219,
+   "end": 31.292
+  },
+  {
+   "text": "huevo",
+   "start": 31.303,
+   "end": 31.513
+  },
+  {
+   "text": "fue",
+   "start": 31.523,
+   "end": 31.67
+  },
+  {
+   "text": "primero",
+   "start": 31.681,
+   "end": 32.164
+  },
+  {
+   "text": "En",
+   "start": 32.304,
+   "end": 32.494
+  },
+  {
+   "text": "dos",
+   "start": 32.505,
+   "end": 32.64
+  },
+  {
+   "text": "mil",
+   "start": 32.651,
+   "end": 32.785
+  },
+  {
+   "text": "diez",
+   "start": 32.796,
+   "end": 33.053
+  },
+  {
+   "text": "Sheffield",
+   "start": 33.232,
+   "end": 33.646
+  },
+  {
+   "text": "y",
+   "start": 33.657,
+   "end": 33.691
+  },
+  {
+   "text": "Warwick",
+   "start": 33.702,
+   "end": 34.116
+  },
+  {
+   "text": "hallaron",
+   "start": 34.127,
+   "end": 34.429
+  },
+  {
+   "text": "una",
+   "start": 34.44,
+   "end": 34.563
+  },
+  {
+   "text": "proteína",
+   "start": 34.574,
+   "end": 34.954
+  },
+  {
+   "text": "de",
+   "start": 34.965,
+   "end": 35.032
+  },
+  {
+   "text": "gallina",
+   "start": 35.044,
+   "end": 35.39
+  },
+  {
+   "text": "clave",
+   "start": 35.401,
+   "end": 35.681
+  },
+  {
+   "text": "para",
+   "start": 35.692,
+   "end": 35.849
+  },
+  {
+   "text": "la",
+   "start": 35.86,
+   "end": 35.938
+  },
+  {
+   "text": "cáscara",
+   "start": 35.949,
+   "end": 36.509
+  },
+  {
+   "text": "Dijeron",
+   "start": 36.648,
+   "end": 37.125
+  },
+  {
+   "text": "que",
+   "start": 37.136,
+   "end": 37.247
+  },
+  {
+   "text": "fue",
+   "start": 37.258,
+   "end": 37.402
+  },
+  {
+   "text": "antes",
+   "start": 37.413,
+   "end": 37.646
+  },
+  {
+   "text": "la",
+   "start": 37.657,
+   "end": 37.734
+  },
+  {
+   "text": "gallina",
+   "start": 37.745,
+   "end": 38.122
+  },
+  {
+   "text": "pero",
+   "start": 38.366,
+   "end": 38.543
+  },
+  {
+   "text": "otros",
+   "start": 38.554,
+   "end": 38.798
+  },
+  {
+   "text": "científicos",
+   "start": 38.809,
+   "end": 39.352
+  },
+  {
+   "text": "lo",
+   "start": 39.363,
+   "end": 39.429
+  },
+  {
+   "text": "matizaron",
+   "start": 39.44,
+   "end": 40.138
+  },
+  {
+   "text": "Tú",
+   "start": 40.278,
+   "end": 40.455
+  },
+  {
+   "text": "qué",
+   "start": 40.466,
+   "end": 40.572
+  },
+  {
+   "text": "dices",
+   "start": 40.584,
+   "end": 40.996
+  },
+  {
+   "text": "huevo",
+   "start": 41.278,
+   "end": 41.49
+  },
+  {
+   "text": "o",
+   "start": 41.501,
+   "end": 41.548
+  },
+  {
+   "text": "gallina",
+   "start": 41.56,
+   "end": 42.066
+  },
+  {
+   "text": "Te",
+   "start": 42.873,
+   "end": 43.003
+  },
+  {
+   "text": "leo",
+   "start": 43.015,
+   "end": 43.214
+  },
+  {
+   "text": "en",
+   "start": 43.226,
+   "end": 43.297
+  },
+  {
+   "text": "comentarios",
+   "start": 43.309,
+   "end": 44.096
+  }
+ ]
+}
