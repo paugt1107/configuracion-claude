@@ -1,0 +1,240 @@
+{
+ "lb-0b2cac722c": {
+  "archivo": "libres/mamiferos/monkey-1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Monkey",
+  "credito": "Macaque India 3.jpg — Thomas Schoch — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Macaque_India_3.jpg",
+  "etiquetas": [
+   "mamiferos",
+   "monkey"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1036
+ },
+ "lb-1152a5a07b": {
+  "archivo": "libres/mamiferos/elephant-2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Elephant",
+  "credito": "Elephant running.jpg — Byrdyak — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Elephant_running.jpg",
+  "etiquetas": [
+   "elephant",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 966,
+  "w": 1280
+ },
+ "lb-17530cc427": {
+  "archivo": "libres/mamiferos/wolf-1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Wolf",
+  "credito": "Front view of a resting Canis lupus ssp.jpg — Gary Kramer — Public domain — https://commons.wikimedia.org/wiki/File:Front_view_of_a_resting_Canis_lupus_ssp.jpg",
+  "etiquetas": [
+   "mamiferos",
+   "wolf"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1025
+ },
+ "lb-219d6b0fcf": {
+  "archivo": "libres/mamiferos/brown-bear-ov2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Brown bear",
+  "credito": "Brown Bear Sitting — Accretion Disc — CC BY 2.0 — https://www.flickr.com/photos/23642145@N00/14436384874",
+  "etiquetas": [
+   "bear",
+   "brown",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 575,
+  "w": 1023
+ },
+ "lb-31b0fd038f": {
+  "archivo": "libres/mamiferos/wolf-2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Wolf",
+  "credito": "MC Timberwolf.jpg — Christian Mehlführer, User:Chmehl — CC BY 2.5 — https://commons.wikimedia.org/wiki/File:MC_Timberwolf.jpg",
+  "etiquetas": [
+   "mamiferos",
+   "wolf"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1280
+ },
+ "lb-3e41038f0f": {
+  "archivo": "libres/mamiferos/monkey-ov2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Monkey",
+  "credito": "Monkey — MarkGrundland — CC BY 2.0 — https://www.flickr.com/photos/34519757@N00/5670658121",
+  "etiquetas": [
+   "mamiferos",
+   "monkey"
+  ],
+  "fuente": "libre",
+  "h": 750,
+  "w": 1000
+ },
+ "lb-59526ba321": {
+  "archivo": "libres/mamiferos/giraffe-1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Giraffe",
+  "credito": "Three giraffes 01.jpg — Byrdyak — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Three_giraffes_01.jpg",
+  "etiquetas": [
+   "giraffe",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 852,
+  "w": 1280
+ },
+ "lb-6b5dafc085": {
+  "archivo": "libres/mamiferos/elephant-1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Elephant",
+  "credito": "Elefantes africanos de sabana (Loxodonta africana), Elephant Sands, Botsuana, 2018-07-28, DD 114-117 PAN.jpg — Diego Delso — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Elefantes_africanos_de_sabana_(Loxodonta_africana),_Elephant_Sands,_Botsuana,_2018-07-28,_DD_114-117_PAN.jpg",
+  "etiquetas": [
+   "elephant",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 355,
+  "w": 1280
+ },
+ "lb-772c898805": {
+  "archivo": "libres/mamiferos/monkey-ov1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Monkey",
+  "credito": "Small Lego Monkey Brain Closeup — dluders — CC BY 2.0 — https://www.flickr.com/photos/42988571@N08/16102454201",
+  "etiquetas": [
+   "mamiferos",
+   "monkey"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-79f3bd5355": {
+  "archivo": "libres/mamiferos/brown-bear-2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Brown bear",
+  "credito": "Kamchatka Brown Bear near Dvuhyurtochnoe on 2015-07-23.jpg — Robert F. Tobler — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg",
+  "etiquetas": [
+   "bear",
+   "brown",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 960,
+  "w": 1280
+ },
+ "lb-8624c19c63": {
+  "archivo": "libres/mamiferos/giraffe-2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Giraffe",
+  "credito": "Two male giraffes are necking in San Francisco Zoo.jpg — Brocken Inaglory — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Two_male_giraffes_are_necking_in_San_Francisco_Zoo.jpg",
+  "etiquetas": [
+   "giraffe",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1158
+ },
+ "lb-a211319268": {
+  "archivo": "libres/mamiferos/lion-1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Lion",
+  "credito": "Lion (Panthera leo) male 6y.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lion_(Panthera_leo)_male_6y.jpg",
+  "etiquetas": [
+   "lion",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1067
+ },
+ "lb-aeb9441dbb": {
+  "archivo": "libres/mamiferos/monkey-2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Monkey",
+  "credito": "Golden monkey (Cercopithecus kandti) eating.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Golden_monkey_(Cercopithecus_kandti)_eating.jpg",
+  "etiquetas": [
+   "mamiferos",
+   "monkey"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-b2d1aa8b1b": {
+  "archivo": "libres/mamiferos/lion-ov1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Lion",
+  "credito": "lion — Mathias Appel — CC0 1.0 — https://www.flickr.com/photos/91501748@N07/26166653331",
+  "etiquetas": [
+   "lion",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 678,
+  "w": 1024
+ },
+ "lb-c9f071fbb1": {
+  "archivo": "libres/mamiferos/lion-2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Lion",
+  "credito": "Lion (Panthera leo) old male Chobe.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Lion_(Panthera_leo)_old_male_Chobe.jpg",
+  "etiquetas": [
+   "lion",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-e2de833ed2": {
+  "archivo": "libres/mamiferos/brown-bear-1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Brown bear",
+  "credito": "Brown bear (Ursus arctos arctos) running.jpg — Malene Thyssen — CC BY 2.5 — https://commons.wikimedia.org/wiki/File:Brown_bear_(Ursus_arctos_arctos)_running.jpg",
+  "etiquetas": [
+   "bear",
+   "brown",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 964,
+  "w": 1280
+ },
+ "lb-e9fcdbff61": {
+  "archivo": "libres/mamiferos/brown-bear-ov1.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Brown bear",
+  "credito": "Brown bear — Sheep purple — CC BY 2.0 — https://www.flickr.com/photos/27418987@N03/3820532379",
+  "etiquetas": [
+   "bear",
+   "brown",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-ebf2314b36": {
+  "archivo": "libres/mamiferos/lion-ov2.jpg",
+  "categoria": "mamiferos",
+  "consulta": "Lion",
+  "credito": "lion — Mathias Appel — CC0 1.0 — https://www.flickr.com/photos/91501748@N07/26229121115",
+  "etiquetas": [
+   "lion",
+   "mamiferos"
+  ],
+  "fuente": "libre",
+  "h": 678,
+  "w": 1024
+ }
+}
