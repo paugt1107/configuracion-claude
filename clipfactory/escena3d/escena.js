@@ -203,6 +203,40 @@ if (T === "numero" || T === "texto") {
   shine.rotation.z = 0.5; shine.position.z = 0.05;
   root.add(frameM, pic, shine);
   halo.material.color.set(0xffffff); giro = 0.2;
+  if (S.notas || S.foco) {
+    // técnicas de explicación sobre una foto: zoom a un detalle + anillos con etiquetas que van apareciendo
+    const capa = document.createElement("div"); capa.style.cssText = "position:absolute;inset:0;pointer-events:none"; document.body.appendChild(capa);
+    const foco = S.foco || { x: 0.5, y: 0.5 }, zmax = Math.max(1, Number(S.zoom || (S.foco ? 1.9 : 1))), zt0 = Number(S.zoom_t ?? 0.6);
+    const cols = ["#ffd25a", "#ff6b4a", "#4fd1ff", "#7dffa8"];
+    const notas = (S.notas || []).slice(0, 4).map((n, i) => {
+      const ring = document.createElement("div"), lin = document.createElement("div"), lab = document.createElement("div"), col = n.color || cols[i % cols.length];
+      ring.style.cssText = `position:absolute;width:110px;height:110px;margin:-55px 0 0 -55px;border-radius:50%;border:8px solid ${col};box-shadow:0 0 24px ${col},inset 0 0 18px ${col}55`;
+      lin.style.cssText = `position:absolute;height:6px;background:${col};transform-origin:0 50%;border-radius:3px;box-shadow:0 0 12px ${col}`;
+      lab.style.cssText = `position:absolute;background:#fff;border-left:14px solid ${col};border-radius:16px;padding:14px 24px;font:900 44px Inter,sans-serif;color:#14161f;box-shadow:0 10px 30px rgba(0,0,0,.45);white-space:nowrap`;
+      lab.textContent = n.texto || ""; capa.append(lin, ring, lab);
+      return { n, ring, lin, lab, t0: n.t ?? 0.7 + i * 1.0 };
+    });
+    const v = new THREE.Vector3();
+    upd.push((t) => {
+      const k = zmax > 1 ? easeOut((t - zt0) / 0.9) : 0, z = 1 + (zmax - 1) * k, h = 0.5 / z;
+      const cx = 0.5 + (Math.min(1 - h, Math.max(h, foco.x)) - 0.5) * k, cy = 0.5 + (Math.min(1 - h, Math.max(h, 1 - foco.y)) - 0.5) * k;
+      tx.repeat.set(1 / z, 1 / z); tx.offset.set(cx - h, cy - h);
+      root.updateMatrixWorld(true); cam.updateMatrixWorld();
+      for (const o of notas) {
+        const px = (o.n.x - (cx - h)) * z, py = ((1 - o.n.y) - (cy - h)) * z;
+        const dentro = px > 0.04 && px < 0.96 && py > 0.04 && py < 0.96;
+        v.set((px - 0.5) * w, (py - 0.5) * hh, 0.05); pic.localToWorld(v); v.project(cam);
+        const X = (v.x * 0.5 + 0.5) * 1080, Y = (-v.y * 0.5 + 0.5) * 1920, a = easeOutBack((t - o.t0) / 0.4), vis = dentro && t >= o.t0 ? 1 : 0;
+        const der = (o.n.lado || (px < 0.5 ? "der" : "izq")) === "der", LX = der ? X + 150 : X - 150, LY = Y + (o.n.dy ?? -130);
+        o.ring.style.left = `${X}px`; o.ring.style.top = `${Y}px`; o.ring.style.opacity = vis; o.ring.style.transform = `scale(${Math.max(0.001, a) * (1 + 0.06 * Math.sin(t * 8))})`;
+        const dx = LX - X, dy = LY - Y, L = Math.hypot(dx, dy) - 55;
+        o.lin.style.left = `${X}px`; o.lin.style.top = `${Y}px`; o.lin.style.opacity = vis; o.lin.style.width = `${Math.max(0, L) * Math.min(1, a)}px`; o.lin.style.transform = `rotate(${Math.atan2(dy, dx)}rad) translateX(55px)`;
+        o.lab.style.opacity = vis * clamp((t - o.t0 - 0.2) / 0.2); o.lab.style.top = `${LY - 40}px`;
+        o.lab.style.left = `${Math.max(30, Math.min(1080 - 30 - o.lab.offsetWidth, der ? LX : LX - o.lab.offsetWidth))}px`;
+        o.lab.style.transform = `scale(${Math.max(0.001, easeOutBack((t - o.t0 - 0.2) / 0.35))})`;
+      }
+    });
+  }
   if (S.estilo === "lleno") {
     // imagen a pantalla completa con zoom lento (Ken Burns) + destello; el marco 3D no se ve
     root.visible = false; halo.visible = false;

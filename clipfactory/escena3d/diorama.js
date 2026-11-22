@@ -72,14 +72,15 @@ function consola() {
 }
 
 // ---------- figuritas (huevos, gallinas, pollitos, dinosaurios) ----------
-const bola = (r, c, sx = 1, sy = 1, sz = 1, extra) => { const m = new THREE.Mesh(new THREE.SphereGeometry(r, 12, 9), mat(c, extra)); m.scale.set(sx, sy, sz); return m; };
+const bola = (r, c, sx = 1, sy = 1, sz = 1, extra) => { const m = new THREE.Mesh(new THREE.SphereGeometry(r, 24, 16), mat(c, { flatShading: false, roughness: 0.55, ...extra })); m.scale.set(sx, sy, sz); return m; };
 const cono = (r, h, c) => new THREE.Mesh(new THREE.ConeGeometry(r, h, 8), mat(c));
 function huevo(c = 0xfff3dc, k = 1) { const m = bola(0.24 * k, c, 0.8, 1.12, 0.8); m.position.y = 0.27 * k; const g = new THREE.Group(); g.add(m); return g; }
 function ojos(g, x, y, z, r = 0.035) { for (const s of [-1, 1]) { const o = bola(r, 0x111111); o.position.set(x, y, z * s); g.add(o); } }
 function gallina(color = C.blanco) {
   const g = new THREE.Group();
   const cuerpo = bola(0.4, color, 1.15, 0.9, 0.85); cuerpo.position.y = 0.6; g.add(cuerpo);
-  const cola = caja(0.35, 0.34, 0.1, color); cola.position.set(-0.5, 0.82, 0); cola.rotation.z = 0.5; g.add(cola);
+  for (let i = -2; i <= 2; i++) { const pl = bola(0.2, i % 2 ? 0xe9e2d0 : color, 0.35, 1.5, 0.12); pl.position.set(-0.52, 0.92, i * 0.07); pl.rotation.z = 0.55 + Math.abs(i) * 0.06; pl.rotation.x = i * 0.18; g.add(pl); }
+  for (let r = 0; r < 3; r++) for (let c2 = 0; c2 < 4; c2++) { const pl = bola(0.1, c2 % 2 ? 0xeee8d8 : color, 1.4, 0.55, 0.5); pl.position.set(0.18 - c2 * 0.16, 0.5 + r * 0.14 - c2 * 0.01, 0.31 - r * 0.02); pl.rotation.z = -0.3; g.add(pl); const p2 = pl.clone(); p2.position.z *= -1; g.add(p2); }
   const cuello = new THREE.Group(); cuello.position.set(0.32, 0.8, 0); g.add(cuello);
   const cab = bola(0.2, color); cab.position.set(0.08, 0.28, 0); cuello.add(cab);
   const pico = cono(0.07, 0.2, C.naranja); pico.rotation.z = -Math.PI / 2; pico.position.set(0.3, 0.26, 0); cuello.add(pico);

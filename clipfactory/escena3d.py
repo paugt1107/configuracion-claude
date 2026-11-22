@@ -4,6 +4,7 @@ Tarjeta del guion:  {kind: 3d, tipo: numero|texto|orbe|moneda|estrellas|billetes
                      titulo: "¿SABÍAS QUE…?", sub: "nota en Metacritic", color: gold|orange|cyan|magenta|white|green|red, n: 4}
   versus usa texto "GTA V|GTA VI". piedra = lápida romana con letras talladas que se encienden (texto "LUX").
   diorama = maqueta low-poly con etiquetas en secuencia: {tipo: diorama, preset: consola|discos|almacen|red|isla|mapa_pin|gallina|huevos|dino|nacer|podio,
+    foto con notas: {tipo: foto, imagen|libre, foco: {x, y}, zoom: 1.8, notas: [{texto, x, y (0-1 sobre la foto), t}]} = zoom al detalle + anillo con etiqueta,
     cielo: dia|noche, n, progreso, etiquetas: [{titulo: "NACE", texto: "En una central", icono: "⚡"}, …]}.
   bombilla = se enciende; corazon = late y suelta cruces de curación; foto = imagen: media/oficial/x.jpg flotando en 3D
   sobre la misma foto desenfocada (si falta el archivo, usa `alt`: otra escena 3D). Renderiza fotograma a fotograma (tiempo exacto), ~0,3 s por fotograma.
