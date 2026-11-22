@@ -99,7 +99,7 @@ def plan(spans: list[dict], words: list[dict], styles: list[str], total: float) 
     if words:
         golpes.append((words[0]["start"], GOLPE_GANCHO))
     # golpes suaves en datos y nombres propios, sin pisar las revelaciones ni amontonarse
-    ultimo = -99.0
+    ultimo = words[0]["start"] if words else -99.0  # el primer dato, lejos del golpe del gancho
     from . import captions, numeros
 
     cifras = numeros.a_cifras(words)  # "trescientos millones" → "300 millones": también cuentan como dato

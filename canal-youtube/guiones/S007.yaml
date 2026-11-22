@@ -41,12 +41,18 @@ mundo:
       x: 0.5
       y: 0.27
   galeria:
-  - imagen: media/libres/eggs-in-basket.jpg
+  - imagen: media/banco/libres/gallinas/hen-chicken-farm-ov1.jpg
+    pie: Gallinas
+  - imagen: media/banco/libres/gallos/rooster-crowing-ov2.jpg
+    pie: Gallo y gallina
+  - imagen: media/banco/libres/huevos/chicken-eggs-3.jpg
     pie: Huevos de granja
   - imagen: media/libres/chick-hatching.jpg
     pie: Pollitos al nacer
+  - imagen: media/banco/libres/pollitos/baby-chick-ov4.jpg
+    pie: Pollito
   - imagen: media/libres/chicken-egg.jpg
-    pie: Huevo de gallina
+    pie: Huevo sin cáscara
 escenas:
 - texto: ¿Sabías que el huevo existía trescientos millones de años antes que la gallina? Te lo demuestro.
   tarjeta:
@@ -81,7 +87,7 @@ escenas:
     foto:
       id: fosil
       nota: Huevos fósiles reales
-      desde: 0.5
+      desde: 0.35
 - texto: Y ni rastro de ninguna gallina.
   tarjeta:
     kind: 3d
@@ -105,7 +111,7 @@ escenas:
     foto:
       id: gallo
       nota: Gallo bankiva (foto real)
-      desde: 0.45
+      desde: 0.35
 - texto: La gallina doméstica solo tiene unos tres mil quinientos años.
   tarjeta:
     kind: 3d

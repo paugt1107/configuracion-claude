@@ -44,7 +44,7 @@ const ZONAS = {
   intro: { sitio: "intro", cielo: "dia", cam: { az: 14, dist: 8.2, alt: 1.7, look: [0, 1.15, 0], orbit: 2.5, push: 0.12 } },
   primeros: { sitio: "primeros", cielo: "prehistoria", cam: { az: -24, dist: 6.0, alt: 2.2, look: [0.3, 0.5, 0.4], orbit: 3, push: 0.1 } },
   dinos: { sitio: "dinos", cielo: "dia", cam: { az: 32, dist: 9.5, alt: 3.4, look: [0, 1.3, 0], orbit: 3, push: 0.1 } },
-  dinos_noche: { sitio: "dinos", cielo: "noche", cam: { az: 62, dist: 6.2, alt: 2.0, look: [2.0, 1.1, 1.8], orbit: -3, push: 0.08 } },
+  dinos_noche: { sitio: "dinos", cielo: "noche", cam: { az: 62, dist: 6.4, alt: 1.9, look: [1.8, 1.0, 0.5], orbit: -3, push: 0.08 } },
   selva: { sitio: "selva", cielo: "selva", cam: { az: -20, dist: 6.8, alt: 2.1, look: [0, 1.1, 0], orbit: 3, push: 0.1 } },
   granja: { sitio: "granja", cielo: "dia", cam: { az: 24, dist: 9.0, alt: 3.2, look: [0, 0.8, 0], orbit: 3, push: 0.1 } },
   truco: { sitio: "nido", cielo: "misterio", cam: { az: -16, dist: 7.5, alt: 2.6, look: [0, 0.8, 0], orbit: 2, push: 0.22 } },
@@ -227,7 +227,7 @@ export async function crear(S, ctx) {
     const sau = F.sauropodo({ escala: 1.15 }); scene.add(sau.g);
     for (let i = 0; i < 6; i++) if (despejado(x - 3 + i * 1.3, z - 3.2 - (i % 2) * 1.2)) colocar(F.palmera(1.8 + (i % 3) * 0.6, 0x4f9a3a), x - 3 + i * 1.3, z - 3.2 - (i % 2) * 1.2, i);
     colocar(F.roca(0.7, 0xa08a6a), x - 1.6, z + 1.6, 0.4); colocar(F.roca(0.45, 0x9a8466), x + 3.0, z + 0.2, 1.2);
-    const cartelNoche = F.cartel(["GALLINAS", "0"], { ancho: 1.2, acento: "#d8322f" }); colocar(cartelNoche, x + 2.7, z + 2.6, -0.9);
+    const cartelNoche = F.cartel(["GALLINAS", "0"], { ancho: 1.2, acento: "#d8322f" }); colocar(cartelNoche, x + 2.6, z - 0.2, 1.08);
     const luci = (() => { const n = 70, p = new Float32Array(n * 3); for (let i = 0; i < n; i++) p.set([x + (rnd() - 0.5) * 9, 0.4 + rnd() * 2.2, z + (rnd() - 0.5) * 7], i * 3); const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.BufferAttribute(p, 3)); const m = new THREE.Points(g, new THREE.PointsMaterial({ size: 0.12, map: ctx.GLOW, color: 0xfff27a, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false })); scene.add(m); return { m, p0: p.slice() }; })();
     hito("dinos", ["HACE 195", "MILLONES DE AÑOS"], -2.8, 2.6, 0.45);
     anim.push((t) => {
@@ -244,7 +244,7 @@ export async function crear(S, ctx) {
       for (let i = 0; i < a.count; i++) { a.array[i * 3 + 1] = luci.p0[i * 3 + 1] + Math.sin(t * 1.3 + i) * 0.25; a.array[i * 3] = luci.p0[i * 3] + Math.sin(t * 0.7 + i * 2) * 0.3; }
       a.needsUpdate = true;
     });
-    ancla("dinos_nido", x + 1.4, 1.0, z + 0.9); ancla("dinos_dino", x, 2.4, z + 0.5); ancla("dinos_cartel", x + 2.7, 1.9, z + 2.6);
+    ancla("dinos_nido", x + 1.4, 1.0, z + 0.9); ancla("dinos_dino", x, 2.4, z + 0.5); ancla("dinos_cartel", x + 2.6, 1.9, z - 0.2);
     vallas.dinos = { x: x - 3.3, z: z + 1.0, rot: 0.75, alto: 2.6 };
   }
   { // SELVA del sudeste asiático: gallo bankiva cantando sobre un tronco, su hembra picoteando, bambú, árboles y lianas
@@ -332,7 +332,7 @@ export async function crear(S, ctx) {
       brillo.position.set(x + 0.15, yN + 0.4, z + 0.2); brillo.scale.setScalar(1.6 + Math.sin(t * 5) * 0.1); brillo.material.opacity = po.dentro ? ve * 0.9 : na.dentro ? clamp(1 - na.tl / 1.5) * 0.9 : 0;
       // nace el pollito (la 1.ª gallina)
       const sale = clamp((na.tl - 0.95) / 0.45);
-      pol.g.visible = sale > 0; pol.g.position.set(x + 0.15, yN + 0.02 + eob(sale) * 0.25, z + 0.2); pol.g.rotation.y = 0.4;
+      pol.g.visible = sale > 0; pol.g.position.set(x + 0.15, yN + 0.02 + eob(sale) * 0.25, z + 0.2); pol.g.rotation.y = -1.25; // mirando a cámara (3/4)
       pol.anim(t, { pica: 0.2, aletea: clamp(1 - Math.abs(na.tl - 1.8) / 0.6), salta: sale >= 1 ? 1 : 0 });
       const kad = clamp((na.tl - 0.2) / 0.8) * clamp((na.d + 1.5 - na.tl) / 0.6);
       adn.visible = kad > 0; adn.scale.setScalar(Math.max(0.001, eob(kad)));
@@ -506,13 +506,13 @@ export async function crear(S, ctx) {
   function pose(i, tl) {
     const p = paradas[i], base = pose3d(i, tl);
     if (!p.foto || !fotoVallas[p.foto.id]) return base;
-    const d = finDe(i) - hitos[i], desde = (p.foto.desde ?? 0.42) * d, k = suave((tl - desde) / Math.min(1.1, d * 0.45));
+    const d = finDe(i) - hitos[i], desde = (p.foto.desde ?? 0.35) * d, k = suave((tl - desde) / Math.min(0.95, d * 0.3));
     if (k <= 0) return base;
     const pf = poseFoto(p.foto.id, Math.max(0, tl - desde), d - desde);
-    return vuelo(base, pf, k);
+    return vuelo(base, pf, k, false);
   }
-  function vuelo(a, b, k) {
-    const dist = a.pos.distanceTo(b.pos), arco = Math.sin(Math.PI * k) * Math.min(3.2, dist * 0.18);
+  function vuelo(a, b, k, alto = true) {
+    const dist = a.pos.distanceTo(b.pos), arco = alto ? Math.sin(Math.PI * k) * Math.min(3.2, dist * 0.18) : 0;
     // en pleno vuelo la mirada también sube y se adelanta un poco: se ve el paisaje y hacia dónde vamos, no solo el suelo
     const adelante = b.look.clone().sub(a.look).setY(0).multiplyScalar(0.25 * Math.sin(Math.PI * k));
     return { pos: a.pos.clone().lerp(b.pos, k).add(new THREE.Vector3(0, arco, 0)), look: a.look.clone().lerp(b.look, k).add(adelante).add(new THREE.Vector3(0, arco * 0.75, 0)) };
@@ -561,10 +561,10 @@ export async function crear(S, ctx) {
     lin.style.cssText = `position:absolute;height:7px;background:${c};transform-origin:0 50%;border-radius:4px;box-shadow:0 0 12px ${c}`;
     lab.style.cssText = `position:absolute;background:#fff;border-left:16px solid ${c};border-radius:18px;padding:14px 26px;font:900 46px Inter,sans-serif;color:#14161f;box-shadow:0 10px 30px rgba(0,0,0,.45);white-space:nowrap`;
     lab.textContent = p.foto.nota || fv.f.nota; capa.append(lin, ring, lab);
-    const d = finDe(i) - hitos[i], desde = (p.foto.desde ?? 0.42) * d;
+    const d = finDe(i) - hitos[i], desde = (p.foto.desde ?? 0.35) * d;
     const u = fv.f.x ?? 0.5, v = fv.f.y ?? 0.5;
     const punto = new THREE.Vector3((u - 0.5) * fv.ancho, (0.5 - v) * fv.alto, 0.02); fv.m.localToWorld(punto);
-    anillos.push({ ring, lin, lab, punto, t0: hitos[i] + desde + Math.min(1.1, d * 0.45) * 0.8, t1: finDe(i) + 0.05 });
+    anillos.push({ ring, lin, lab, punto, t0: hitos[i] + desde + Math.min(0.95, d * 0.3) * 0.75, t1: finDe(i) - 0.2 });
   });
   const proy = new THREE.Vector3();
   const aPantalla = (v) => { proy.copy(v).project(cam); return { x: (proy.x * 0.5 + 0.5) * 1080, y: (-proy.y * 0.5 + 0.5) * 1920, delante: proy.z < 1 }; };

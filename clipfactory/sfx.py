@@ -158,7 +158,7 @@ def mix(
             pad(dur, work / "pad.wav")
             inputs += ["-i", str(work / "pad.wav")]
         filters.append(
-            f"[0:a]asplit=2[vo][key];[{n + 1}:a]aformat=sample_rates={SR}:channel_layouts=mono,highpass=f=60,"
+            f"[0:a]apad=pad_dur={tail},asplit=2[vo][key];[{n + 1}:a]aformat=sample_rates={SR}:channel_layouts=mono,highpass=f=60,"
             f"volume='{_volumen_cama(silencios, 0.20 if pista else 0.22)}':eval=frame,"
             f"afade=t=in:d=0.8,afade=t=out:st={max(0.0, dur - 2.0):.2f}:d=1.9[bed];"
             "[bed][key]sidechaincompress=threshold=0.04:ratio=4:attack=40:release=450:knee=4[duck]"
