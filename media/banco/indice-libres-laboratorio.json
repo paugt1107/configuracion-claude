@@ -53,6 +53,48 @@
   "h": 683,
   "w": 1024
  },
+ "lb-168ebf992d": {
+  "archivo": "libres/laboratorio/laboratory-glassware-2.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Laboratory glassware",
+  "credito": "Equipment and glassware.jpg — Belikov Maxim — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Equipment_and_glassware.jpg",
+  "etiquetas": [
+   "glassware",
+   "laboratorio",
+   "laboratory"
+  ],
+  "fuente": "libre",
+  "h": 755,
+  "w": 1280
+ },
+ "lb-29b5d732f4": {
+  "archivo": "libres/laboratorio/laboratory-glassware-4.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Laboratory glassware",
+  "credito": "Laboratory-glas hg.jpg — Hannes Grobe — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Laboratory-glas_hg.jpg",
+  "etiquetas": [
+   "glassware",
+   "laboratorio",
+   "laboratory"
+  ],
+  "fuente": "libre",
+  "h": 1009,
+  "w": 1280
+ },
+ "lb-29f6ce7050": {
+  "archivo": "libres/laboratorio/laboratory-glassware-1.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Laboratory glassware",
+  "credito": "Graduated chemical glassware (Alessandri 1895.1).png — valeg96 — Public domain — https://commons.wikimedia.org/wiki/File:Graduated_chemical_glassware_(Alessandri_1895.1).png",
+  "etiquetas": [
+   "glassware",
+   "laboratorio",
+   "laboratory"
+  ],
+  "fuente": "libre",
+  "h": 1213,
+  "w": 1280
+ },
  "lb-2e6cee560c": {
   "archivo": "libres/laboratorio/petri-dish-ov1.jpg",
   "categoria": "laboratorio",
@@ -205,6 +247,20 @@
   ],
   "fuente": "libre",
   "h": 853,
+  "w": 1280
+ },
+ "lb-ae917a3896": {
+  "archivo": "libres/laboratorio/laboratory-glassware-3.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Laboratory glassware",
+  "credito": "Tissue glass Dounce homogenizer-03.jpg — Lilly_M — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Tissue_glass_Dounce_homogenizer-03.jpg",
+  "etiquetas": [
+   "glassware",
+   "laboratorio",
+   "laboratory"
+  ],
+  "fuente": "libre",
+  "h": 906,
   "w": 1280
  },
  "lb-c716b5adea": {
