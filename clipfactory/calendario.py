@@ -35,6 +35,8 @@ def pendientes() -> list[dict]:
             continue
         g = rutas.GUIONES / f"{d.name}.yaml"
         spec = yaml.safe_load(g.read_text(encoding="utf-8")) if g.exists() else {}
+        if spec.get("juego") == "ninguno":  # vídeos fuera del canal de GTA no entran en su calendario
+            continue
         out.append({"id": d.name, "titulo": (spec.get("titulos") or [d.name])[0], "dir": d})
     return out
 

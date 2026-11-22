@@ -15,13 +15,31 @@ from . import calidad, hookscore_es, misterio, motion, musica, rutas, sfx, thumb
 TAGS_BASE = ["#gta6", "#gtavi", "#gta6espanol", "#sabiasque", "#shorts"]
 
 
-def title_checks(title: str, cover_text: str) -> list[str]:
+def _foto_libre(consulta: str, usadas: set):
+    """Mejor foto libre para la consulta (Commons, y Openverse si falla). None si no hay ninguna nueva."""
+    from . import libres
+
+    try:
+        r = libres.buscar(consulta)
+        if not r:
+            for p, cred, *_ in libres.openverse(consulta, 3, libres.CARPETA):
+                r = (p, cred)
+                break
+    except Exception:
+        r = None
+    if r and str(r[0]) not in usadas:
+        usadas.add(str(r[0]))
+        return r
+    return None
+
+
+def title_checks(title: str, cover_text: str, gta: bool = True) -> list[str]:
     notes = []
     if len(title) > 60:
         notes.append(f"{len(title)} caracteres (>60, se corta)")
     if len(title) > 40:
         notes.append("en móvil se ven ~40 caracteres: lo importante al principio")
-    if not re.search(r"gta ?(6|vi)", title, re.I):
+    if gta and not re.search(r"gta ?(6|vi)", title, re.I):
         notes.append("falta 'GTA 6' (lo que busca la gente)")
     shared = {w for w in re.findall(r"\w{4,}", cover_text.lower())} & {w for w in re.findall(r"\w{4,}", title.lower())}
     if shared:
@@ -40,8 +58,11 @@ def publication(spec: dict, lines: list[str], provider: str) -> str:
         "## Títulos (elige uno)",
     ]
     for t in spec.get("titulos", []):
-        out.append(f"- **{t}** — {'; '.join(title_checks(t, cover))}")
-    tags = TAGS_BASE + spec.get("hashtags", [])
+        out.append(f"- **{t}** — {'; '.join(title_checks(t, cover, spec.get('juego') != 'ninguno'))}")
+    if spec.get("juego") == "ninguno":
+        tags = [*spec.get("hashtags", []), "#sabiasque", "#shorts"]
+    else:
+        tags = TAGS_BASE + spec.get("hashtags", [])
     fuentes = spec.get("fuentes", [])
     desc = spec.get("descripcion", "").strip()
     out += [
@@ -92,9 +113,16 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
     spans = v["lines"]
     starts = [0.0] + [s["start"] - 0.08 for s in spans[1:]]
     end = spans[-1]["end"] + 0.6
-    scenes = []
+    scenes, creditos_fotos, usadas = [], [], set()
     for i, e in enumerate(escenas):
         sc = dict(e.get("tarjeta") or {"kind": "dato", "grande": "?"})
+        if sc.get("libre"):  # foto libre de internet (Commons/Openverse), con crédito
+            for q in ([sc["libre"]] if isinstance(sc["libre"], str) else sc["libre"]):
+                r = _foto_libre(q, usadas)
+                if r:
+                    sc["imagen"] = str(r[0])
+                    creditos_fotos.append(r[1])
+                    break
         sc["dur"] = round((starts[i + 1] if i + 1 < len(starts) else end) - starts[i], 3)
         scenes.append(sc)
     cues = [(0.0, "impacto")] + [(s - 0.12, "whoosh") for s in starts[1:]] + [(starts[-1], "impacto")]
@@ -122,6 +150,7 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
         overlays=overlays,
         camara=misterio.filtro(cam) if cam else None,
     )
+    creditos_libres = [*creditos_libres, *creditos_fotos]
     if creditos_libres:
         spec = {**spec, "creditos": "\n".join(filter(None, [spec.get("creditos", ""), *("Imagen: " + c for c in creditos_libres)]))}
     if spec.get("portada"):
