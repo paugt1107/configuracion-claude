@@ -13,6 +13,20 @@
   "h": 768,
   "w": 1024
  },
+ "lb-168d97942c": {
+  "archivo": "libres/gallos/gallus-gallus-spadiceus-4.jpg",
+  "categoria": "gallos",
+  "consulta": "Gallus gallus spadiceus",
+  "credito": "Junglefowl on tree.jpg — Philip Pikart — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Junglefowl_on_tree.jpg",
+  "etiquetas": [
+   "gallos",
+   "gallus",
+   "spadiceus"
+  ],
+  "fuente": "libre",
+  "h": 971,
+  "w": 1280
+ },
  "lb-3a96ef5ea4": {
   "archivo": "libres/gallos/rooster-crowing-ov3.jpg",
   "categoria": "gallos",
@@ -41,6 +55,76 @@
   "h": 1024,
   "w": 1024
  },
+ "lb-56a49e9e77": {
+  "archivo": "libres/gallos/red-junglefowl-3.jpg",
+  "categoria": "gallos",
+  "consulta": "Red junglefowl",
+  "credito": "Gallus gallus, Khao Yai Lam Ta Khong, Thailand 477443293.jpg — dhfischer — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Gallus_gallus,_Khao_Yai_Lam_Ta_Khong,_Thailand_477443293.jpg",
+  "etiquetas": [
+   "gallos",
+   "junglefowl",
+   "red"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-5c64dc348e": {
+  "archivo": "libres/gallos/gallus-gallus-spadiceus-2.jpg",
+  "categoria": "gallos",
+  "consulta": "Gallus gallus spadiceus",
+  "credito": "Gallus gallus MHNT.ZOO.2010.11.5.11.jpg — Roger Culos — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Gallus_gallus_MHNT.ZOO.2010.11.5.11.jpg",
+  "etiquetas": [
+   "gallos",
+   "gallus",
+   "spadiceus"
+  ],
+  "fuente": "libre",
+  "h": 813,
+  "w": 1280
+ },
+ "lb-702d326731": {
+  "archivo": "libres/gallos/red-junglefowl-1.jpg",
+  "categoria": "gallos",
+  "consulta": "Red junglefowl",
+  "credito": "Gallus gallus domesticus - Vogelpark Steinen 03.jpg — H. Zell — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Gallus_gallus_domesticus_-_Vogelpark_Steinen_03.jpg",
+  "etiquetas": [
+   "gallos",
+   "junglefowl",
+   "red"
+  ],
+  "fuente": "libre",
+  "h": 1086,
+  "w": 1280
+ },
+ "lb-a4e31ec918": {
+  "archivo": "libres/gallos/gallus-gallus-spadiceus-3.jpg",
+  "categoria": "gallos",
+  "consulta": "Gallus gallus spadiceus",
+  "credito": "Gallus gallus, Khao Yai Lam Ta Khong, Thailand 477443293.jpg — dhfischer — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Gallus_gallus,_Khao_Yai_Lam_Ta_Khong,_Thailand_477443293.jpg",
+  "etiquetas": [
+   "gallos",
+   "gallus",
+   "spadiceus"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-bafc48a978": {
+  "archivo": "libres/gallos/red-junglefowl-ov2.jpg",
+  "categoria": "gallos",
+  "consulta": "Red junglefowl",
+  "credito": "Red Junglefowl hen - Gallus gallus - WILD CHICKEN!! — brian.gratwicke — CC BY 2.0 — https://www.flickr.com/photos/19731486@N07/3596836138",
+  "etiquetas": [
+   "gallos",
+   "junglefowl",
+   "red"
+  ],
+  "fuente": "libre",
+  "h": 635,
+  "w": 1024
+ },
  "lb-c9017a3382": {
   "archivo": "libres/gallos/rooster-crowing-ov1.jpg",
   "categoria": "gallos",
@@ -54,5 +138,61 @@
   "fuente": "libre",
   "h": 1024,
   "w": 1024
+ },
+ "lb-dfdb187c42": {
+  "archivo": "libres/gallos/red-junglefowl-2.jpg",
+  "categoria": "gallos",
+  "consulta": "Red junglefowl",
+  "credito": "Gallus gallus MHNT.ZOO.2010.11.5.11.jpg — Roger Culos — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Gallus_gallus_MHNT.ZOO.2010.11.5.11.jpg",
+  "etiquetas": [
+   "gallos",
+   "junglefowl",
+   "red"
+  ],
+  "fuente": "libre",
+  "h": 813,
+  "w": 1280
+ },
+ "lb-e02c29249c": {
+  "archivo": "libres/gallos/gallus-gallus-spadiceus-1.jpg",
+  "categoria": "gallos",
+  "consulta": "Gallus gallus spadiceus",
+  "credito": "Gallus gallus domesticus - Vogelpark Steinen 03.jpg — H. Zell — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Gallus_gallus_domesticus_-_Vogelpark_Steinen_03.jpg",
+  "etiquetas": [
+   "gallos",
+   "gallus",
+   "spadiceus"
+  ],
+  "fuente": "libre",
+  "h": 1086,
+  "w": 1280
+ },
+ "lb-ebfd5d1b11": {
+  "archivo": "libres/gallos/red-junglefowl-ov1.jpg",
+  "categoria": "gallos",
+  "consulta": "Red junglefowl",
+  "credito": "Gallus gallus, red junglefowl (non domestic) - Khao Yai National Park — Rushen! — CC BY-SA 2.0 — https://www.flickr.com/photos/87521289@N07/11882083433",
+  "etiquetas": [
+   "gallos",
+   "junglefowl",
+   "red"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1023
+ },
+ "lb-eeda43c39e": {
+  "archivo": "libres/gallos/red-junglefowl-4.jpg",
+  "categoria": "gallos",
+  "consulta": "Red junglefowl",
+  "credito": "Red junglefowl (Gallus gallus) Rarotonga.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Red_junglefowl_(Gallus_gallus)_Rarotonga.jpg",
+  "etiquetas": [
+   "gallos",
+   "junglefowl",
+   "red"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
  }
 }
