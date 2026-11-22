@@ -6,4 +6,4 @@
 [aviso] Bluesky 'GTA VI': HTTP Error 403: Forbidden
 [aviso] Bluesky 'gta6 secret': HTTP Error 403: Forbidden
 [aviso] Bluesky 'gta6 easter egg': HTTP Error 403: Forbidden
-1827 novedades
+1839 novedades
