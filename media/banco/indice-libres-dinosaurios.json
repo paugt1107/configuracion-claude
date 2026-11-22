@@ -29,6 +29,20 @@
   "h": 683,
   "w": 1024
  },
+ "lb-0f72a17e87": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-1.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Dinosaur footprints in Shirkent, Tajikistan 6.jpg — Adam Harangozó — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dinosaur_footprints_in_Shirkent,_Tajikistan_6.jpg",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
  "lb-115b55b7f6": {
   "archivo": "libres/dinosaurios/tyrannosaurus-rex-skeleton-1.jpg",
   "categoria": "dinosaurios",
@@ -72,6 +86,48 @@
   ],
   "fuente": "libre",
   "h": 719,
+  "w": 1280
+ },
+ "lb-219132f551": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-2.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Dinosaur footprints in Shirkent, Tajikistan 2.jpg — Adam Harangozó — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dinosaur_footprints_in_Shirkent,_Tajikistan_2.jpg",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-21ef7765e1": {
+  "archivo": "libres/dinosaurios/triceratops-skeleton-3.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Triceratops skeleton",
+  "credito": "A Triceratops skeleton.jpg — Vanadium Erbium — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:A_Triceratops_skeleton.jpg",
+  "etiquetas": [
+   "dinosaurios",
+   "skeleton",
+   "triceratops"
+  ],
+  "fuente": "libre",
+  "h": 591,
+  "w": 1280
+ },
+ "lb-2669f29156": {
+  "archivo": "libres/dinosaurios/triceratops-skeleton-4.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Triceratops skeleton",
+  "credito": "Mounted Triceratops Skeleton.jpg — Vanadium Erbium — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Mounted_Triceratops_Skeleton.jpg",
+  "etiquetas": [
+   "dinosaurios",
+   "skeleton",
+   "triceratops"
+  ],
+  "fuente": "libre",
+  "h": 591,
   "w": 1280
  },
  "lb-2cb74de827": {
@@ -133,6 +189,20 @@
   "h": 960,
   "w": 1280
  },
+ "lb-3c2dbbeb43": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-ov3.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Dinosaur footprints at Butler Wash — BLMUtah — Dominio público 1.0 — https://www.flickr.com/photos/76340031@N02/35262625255",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 682,
+  "w": 1023
+ },
  "lb-5ec30103e4": {
   "archivo": "libres/dinosaurios/tyrannosaurus-rex-skeleton-2.jpg",
   "categoria": "dinosaurios",
@@ -148,6 +218,20 @@
   "h": 853,
   "w": 1280
  },
+ "lb-816d4f500e": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-ov4.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Sauropod dinosaur footprint in lacustrine sandstone (Morrison Formation, Upper Jurassic, western side of Dinosaur Ridge, Colorado, USA) 8 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/22195571422",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 810,
+  "w": 1024
+ },
  "lb-911bc1cb6d": {
   "archivo": "libres/dinosaurios/tyrannosaurus-rex-skeleton-4.jpg",
   "categoria": "dinosaurios",
@@ -162,6 +246,76 @@
   "fuente": "libre",
   "h": 853,
   "w": 1280
+ },
+ "lb-93728d6826": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-ov1.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Juvenile Stegosaurus dinosaur footprints in sandstone (Morrison Formation, Upper Jurassic; Quarry 5, Dinosaur Ridge, west of Denver, north-central Colorado, USA) — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/15354397208",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 817,
+  "w": 1024
+ },
+ "lb-973db67a21": {
+  "archivo": "libres/dinosaurios/triceratops-skeleton-1.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Triceratops skeleton",
+  "credito": "Triceratops skeleton mount.jpg — Vanadium Erbium — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Triceratops_skeleton_mount.jpg",
+  "etiquetas": [
+   "dinosaurios",
+   "skeleton",
+   "triceratops"
+  ],
+  "fuente": "libre",
+  "h": 591,
+  "w": 1280
+ },
+ "lb-98b1ec1548": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-4.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Dinosaur footprints in Shirkent, Tajikistan.jpg — Adam Harangozó — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dinosaur_footprints_in_Shirkent,_Tajikistan.jpg",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-b4136138a9": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-3.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Dinosaur footprints in Shirkent, Tajikistan 3.jpg — Adam Harangozó — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Dinosaur_footprints_in_Shirkent,_Tajikistan_3.jpg",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-b53303ceaf": {
+  "archivo": "libres/dinosaurios/triceratops-skeleton-ov1.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Triceratops skeleton",
+  "credito": "Triceratops Skeleton - National Museum of Natural History — Gareth Milner — CC BY 2.0 — https://www.flickr.com/photos/66857806@N02/14611729991",
+  "etiquetas": [
+   "dinosaurios",
+   "skeleton",
+   "triceratops"
+  ],
+  "fuente": "libre",
+  "h": 681,
+  "w": 1024
  },
  "lb-b7f3dae9dc": {
   "archivo": "libres/dinosaurios/sauropod-skeleton-2.jpg",
@@ -191,6 +345,48 @@
   "fuente": "libre",
   "h": 768,
   "w": 1024
+ },
+ "lb-cb35366e07": {
+  "archivo": "libres/dinosaurios/triceratops-skeleton-ov2.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Triceratops skeleton",
+  "credito": "Triceratops Skeleton, Smithsonian Natural History Museum, Washington, D.C. — nikoretro — CC BY-SA 2.0 — https://www.flickr.com/photos/22768390@N00/105916034",
+  "etiquetas": [
+   "dinosaurios",
+   "skeleton",
+   "triceratops"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
+ "lb-cb353aea5c": {
+  "archivo": "libres/dinosaurios/dinosaur-footprint-ov2.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Dinosaur footprint",
+  "credito": "Grallator (dinosaur footprints) (Cow Branch Formation, Upper Triassic; Solite Quarry, Pittsylvania County-Rockingham County border, Virginia-North Carolina border, USA) 15 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/51382267237",
+  "etiquetas": [
+   "dinosaur",
+   "dinosaurios",
+   "footprint"
+  ],
+  "fuente": "libre",
+  "h": 672,
+  "w": 1023
+ },
+ "lb-dcaffbf7e1": {
+  "archivo": "libres/dinosaurios/triceratops-skeleton-2.jpg",
+  "categoria": "dinosaurios",
+  "consulta": "Triceratops skeleton",
+  "credito": "Triceratops skeleton with falling meteor.jpg — Vanadium Erbium — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Triceratops_skeleton_with_falling_meteor.jpg",
+  "etiquetas": [
+   "dinosaurios",
+   "skeleton",
+   "triceratops"
+  ],
+  "fuente": "libre",
+  "h": 591,
+  "w": 1280
  },
  "lb-dcc44b9273": {
   "archivo": "libres/dinosaurios/sauropod-skeleton-4.jpg",
