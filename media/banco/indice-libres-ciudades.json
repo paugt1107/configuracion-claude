@@ -57,6 +57,21 @@
   "h": 720,
   "w": 1280
  },
+ "lb-4a541566f3": {
+  "archivo": "libres/ciudades/barcelona-sagrada-familia-ov2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Barcelona Sagrada Familia",
+  "credito": "Spain (Barcelona-Sagrada Familia) Magnificient view of columns and pillars — ustung — CC BY 2.0 — https://www.flickr.com/photos/126397594@N03/28290254452",
+  "etiquetas": [
+   "barcelona",
+   "ciudades",
+   "familia",
+   "sagrada"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-5f3fa014c0": {
   "archivo": "libres/ciudades/tokyo-street-night-1.jpg",
   "categoria": "ciudades",
@@ -162,6 +177,21 @@
   "h": 1280,
   "w": 853
  },
+ "lb-bfbcef26c5": {
+  "archivo": "libres/ciudades/barcelona-sagrada-familia-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Barcelona Sagrada Familia",
+  "credito": "Sagrada Familia March 2015-10a.jpg — Alvesgaspar — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Sagrada_Familia_March_2015-10a.jpg",
+  "etiquetas": [
+   "barcelona",
+   "ciudades",
+   "familia",
+   "sagrada"
+  ],
+  "fuente": "libre",
+  "h": 962,
+  "w": 1280
+ },
  "lb-c030902093": {
   "archivo": "libres/ciudades/london-big-ben-2.jpg",
   "categoria": "ciudades",
@@ -176,6 +206,21 @@
   "fuente": "libre",
   "h": 1239,
   "w": 1280
+ },
+ "lb-c0fb73d291": {
+  "archivo": "libres/ciudades/barcelona-sagrada-familia-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Barcelona Sagrada Familia",
+  "credito": "Sagrada Familia March 2015-19bw.jpg — Alvesgaspar — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Sagrada_Familia_March_2015-19bw.jpg",
+  "etiquetas": [
+   "barcelona",
+   "ciudades",
+   "familia",
+   "sagrada"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 824
  },
  "lb-c4fd80bb17": {
   "archivo": "libres/ciudades/madrid-gran-via-1.jpg",
@@ -206,6 +251,21 @@
   "fuente": "libre",
   "h": 853,
   "w": 1280
+ },
+ "lb-d698510088": {
+  "archivo": "libres/ciudades/barcelona-sagrada-familia-ov1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Barcelona Sagrada Familia",
+  "credito": "Spain (Barcelona-Sagrada Familia) Extra ordinary beauty of main facade — ustung — CC BY 2.0 — https://www.flickr.com/photos/126397594@N03/28324821785",
+  "etiquetas": [
+   "barcelona",
+   "ciudades",
+   "familia",
+   "sagrada"
+  ],
+  "fuente": "libre",
+  "h": 705,
+  "w": 1024
  },
  "lb-f8b1a804ad": {
   "archivo": "libres/ciudades/dubai-skyline-1.jpg",
