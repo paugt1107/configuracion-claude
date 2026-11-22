@@ -1,4 +1,17 @@
 {
+ "lb-089d8a676e": {
+  "archivo": "libres/comida/chocolate-1.jpg",
+  "categoria": "comida",
+  "consulta": "Chocolate",
+  "credito": "Piece of chocolate cake on a white plate decorated with chocolate sauce.jpg — Daria YakovlevaMinor edits made by Subsidiary account — CC0 — https://commons.wikimedia.org/wiki/File:Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg",
+  "etiquetas": [
+   "chocolate",
+   "comida"
+  ],
+  "fuente": "libre",
+  "h": 871,
+  "w": 1280
+ },
  "lb-27be782439": {
   "archivo": "libres/comida/hamburger-1.jpg",
   "categoria": "comida",
@@ -52,6 +65,19 @@
   "h": 1004,
   "w": 1024
  },
+ "lb-3c71e0416a": {
+  "archivo": "libres/comida/chocolate-2.jpg",
+  "categoria": "comida",
+  "consulta": "Chocolate",
+  "credito": "Rocky Mountain chocolates.jpg — Wilfredor — CC0 — https://commons.wikimedia.org/wiki/File:Rocky_Mountain_chocolates.jpg",
+  "etiquetas": [
+   "chocolate",
+   "comida"
+  ],
+  "fuente": "libre",
+  "h": 1207,
+  "w": 1280
+ },
  "lb-4703cf5e04": {
   "archivo": "libres/comida/pizza-ov2.jpg",
   "categoria": "comida",
@@ -90,6 +116,20 @@
   ],
   "fuente": "libre",
   "h": 850,
+  "w": 1280
+ },
+ "lb-5b53d16c0a": {
+  "archivo": "libres/comida/street-food-1.jpg",
+  "categoria": "comida",
+  "consulta": "Street food",
+  "credito": "Street food in Wa 7.png — Isaac Gyamfi Assumeng — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Street_food_in_Wa_7.png",
+  "etiquetas": [
+   "comida",
+   "food",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 853,
   "w": 1280
  },
  "lb-5e14e8e259": {
@@ -173,6 +213,20 @@
   "h": 768,
   "w": 1024
  },
+ "lb-7ff7ec424e": {
+  "archivo": "libres/comida/street-food-2.jpg",
+  "categoria": "comida",
+  "consulta": "Street food",
+  "credito": "Street Food at Kamagayan Food Park, Cebu City 6.jpg — Bim24 — CC0 — https://commons.wikimedia.org/wiki/File:Street_Food_at_Kamagayan_Food_Park,_Cebu_City_6.jpg",
+  "etiquetas": [
+   "comida",
+   "food",
+   "street"
+  ],
+  "fuente": "libre",
+  "h": 960,
+  "w": 1280
+ },
  "lb-85fb75611a": {
   "archivo": "libres/comida/pizza-1.jpg",
   "categoria": "comida",
@@ -212,6 +266,20 @@
   "h": 960,
   "w": 1280
  },
+ "lb-9decafd67b": {
+  "archivo": "libres/comida/birthday-cake-2.jpg",
+  "categoria": "comida",
+  "consulta": "Birthday cake",
+  "credito": "Wikidata's 10th birthday cake, Kerala.jpg — Vis M — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Wikidata%27s_10th_birthday_cake,_Kerala.jpg",
+  "etiquetas": [
+   "birthday",
+   "cake",
+   "comida"
+  ],
+  "fuente": "libre",
+  "h": 958,
+  "w": 1280
+ },
  "lb-a9a3b690c8": {
   "archivo": "libres/comida/coffee-cup-1.jpg",
   "categoria": "comida",
@@ -239,6 +307,20 @@
   "fuente": "libre",
   "h": 853,
   "w": 1280
+ },
+ "lb-e0b08735ff": {
+  "archivo": "libres/comida/birthday-cake-1.jpg",
+  "categoria": "comida",
+  "consulta": "Birthday cake",
+  "credito": "My birthday cake! Oops there's only half left!.jpg — Anna.Massini — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:My_birthday_cake!_Oops_there%27s_only_half_left!.jpg",
+  "etiquetas": [
+   "birthday",
+   "cake",
+   "comida"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1104
  },
  "lb-ed29c685df": {
   "archivo": "libres/comida/hamburger-ov1.jpg",

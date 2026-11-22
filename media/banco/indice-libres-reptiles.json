@@ -1,0 +1,54 @@
+{
+ "lb-88b735810d": {
+  "archivo": "libres/reptiles/lizard-2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Lizard",
+  "credito": "Cat playing with a lizard.jpg — Basile Morin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Cat_playing_with_a_lizard.jpg",
+  "etiquetas": [
+   "lizard",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 720,
+  "w": 1280
+ },
+ "lb-88f321a0b2": {
+  "archivo": "libres/reptiles/lizard-1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Lizard",
+  "credito": "Bosc's fringe-toed lizard (Acanthodactylus boskianus asper) juvenile.jpg — Charles J. Sharp — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Bosc%27s_fringe-toed_lizard_(Acanthodactylus_boskianus_asper)_juvenile.jpg",
+  "etiquetas": [
+   "lizard",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 629,
+  "w": 1280
+ },
+ "lb-f197a24247": {
+  "archivo": "libres/reptiles/crocodile-2.jpg",
+  "categoria": "reptiles",
+  "consulta": "Crocodile",
+  "credito": "Nile crocodile head.jpg — Leigh Bedford — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Nile_crocodile_head.jpg",
+  "etiquetas": [
+   "crocodile",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-f503fba3de": {
+  "archivo": "libres/reptiles/crocodile-1.jpg",
+  "categoria": "reptiles",
+  "consulta": "Crocodile",
+  "credito": "Saltwater crocodile in Sundarbans National Park November 2024 by Tisha Mukherjee 03.jpg — Tisha Mukherjee — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Saltwater_crocodile_in_Sundarbans_National_Park_November_2024_by_Tisha_Mukherjee_03.jpg",
+  "etiquetas": [
+   "crocodile",
+   "reptiles"
+  ],
+  "fuente": "libre",
+  "h": 640,
+  "w": 1280
+ }
+}
