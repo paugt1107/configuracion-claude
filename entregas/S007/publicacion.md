@@ -20,8 +20,11 @@ Fuentes:
 Música: "The Complex" Kevin MacLeod (incompetech.com) · Licencia Creative Commons: By Attribution 4.0 · http://creativecommons.org/licenses/by/4.0/
 Imagen: Fossil Dinosaur Eggs - Troodontid Eggs.jpg — Gary Todd — CC0 — https://commons.wikimedia.org/wiki/File:Fossil_Dinosaur_Eggs_-_Troodontid_Eggs.jpg
 Imagen: Junglefowl on tree.jpg — Philip Pikart — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Junglefowl_on_tree.jpg
-Imagen: Eggs in basket 2020 G1.jpg — George Chernilevsky — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Eggs_in_basket_2020_G1.jpg
+Imagen: Inquisitive hens — petercooperuk — CC BY 2.0 — https://www.flickr.com/photos/54603144@N00/19794236
+Imagen: Buff Cochin Bantam Rooster Crowing with Ameraucana Hen — radellaf — CC BY 2.0 — https://www.flickr.com/photos/30029435@N00/14352938122
+Imagen: Egg cartons with chicken eggs 03.jpg — Krzysztof Golik — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Egg_cartons_with_chicken_eggs_03.jpg
 Imagen: Chicks hatching USDA95c1973.jpg — USDA — Public domain — https://commons.wikimedia.org/wiki/File:Chicks_hatching_USDA95c1973.jpg
+Imagen: Baby Chick — fireflythegreat — CC BY 2.0 — https://www.flickr.com/photos/21939501@N03/5972730684
 Imagen: Chicken Egg without Eggshell 5859.jpg — Biswarup Ganguly — CC BY 3.0 — https://commons.wikimedia.org/wiki/File:Chicken_Egg_without_Eggshell_5859.jpg
 Voz generada con IA.
 #curiosidades #ciencia #sabiasque #shorts
