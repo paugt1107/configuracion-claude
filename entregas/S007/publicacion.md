@@ -18,12 +18,11 @@ Fuentes:
 - Stein et al., Scientific Reports 2019 / Natural History Museum 2020 — huevos de dinosaurio más antiguos, c. 195-190 millones de años
 - Universidad de Warwick, 2010 — proteína ovocleidina-17 y la cáscara (titular mediático, matizado por los propios autores)
 Música: "The Complex" Kevin MacLeod (incompetech.com) · Licencia Creative Commons: By Attribution 4.0 · http://creativecommons.org/licenses/by/4.0/
-Imagen: Chicken Egg without Eggshell 5859.jpg — Biswarup Ganguly — CC BY 3.0 — https://commons.wikimedia.org/wiki/File:Chicken_Egg_without_Eggshell_5859.jpg
-Imagen: Dinosaur egg fossil sculpture.jpg — Fumikas Sagisavas — CC0 — https://commons.wikimedia.org/wiki/File:Dinosaur_egg_fossil_sculpture.jpg
+Imagen: Eggs in basket 2020 G1.jpg — George Chernilevsky — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Eggs_in_basket_2020_G1.jpg
+Imagen: Fossil Dinosaur Eggs - Troodontid Eggs.jpg — Gary Todd — CC0 — https://commons.wikimedia.org/wiki/File:Fossil_Dinosaur_Eggs_-_Troodontid_Eggs.jpg
 Imagen: Junglefowl on tree.jpg — Philip Pikart — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Junglefowl_on_tree.jpg
-Imagen: Chicken Egg without Eggshell 5859.jpg — Biswarup Ganguly — CC BY 3.0 — https://commons.wikimedia.org/wiki/File:Chicken_Egg_without_Eggshell_5859.jpg
+Imagen: Frans van Mieris (I) - The Broken Egg.jpg — Frans van Mieris the Elder — Public domain — https://commons.wikimedia.org/wiki/File:Frans_van_Mieris_(I)_-_The_Broken_Egg.jpg
 Imagen: Chicks hatching USDA95c1973.jpg — USDA — Public domain — https://commons.wikimedia.org/wiki/File:Chicks_hatching_USDA95c1973.jpg
-Imagen: Barbara McClintock (1902-1992) shown in her laboratory in 1947.jpg — Smithsonian Institution/Science Service; Restored by Adam Cuerden — Public domain — https://commons.wikimedia.org/wiki/File:Barbara_McClintock_(1902-1992)_shown_in_her_laboratory_in_1947.jpg
 Voz generada con IA.
 #curiosidades #ciencia #sabiasque #shorts
 ```

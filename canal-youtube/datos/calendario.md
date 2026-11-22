@@ -1,6 +1,6 @@
 # Calendario de publicación
 
-Generado 22-11 17:04 (hora de España). Vídeos APTO sin publicar: 6. Importa `calendario.ics` en el móvil para tener un aviso 30 min antes.
+Generado 22-11 17:36 (hora de España). Vídeos APTO sin publicar: 6. Importa `calendario.ics` en el móvil para tener un aviso 30 min antes.
 
 | Cuándo | Vídeo | Título | Dónde |
 |---|---|---|---|
