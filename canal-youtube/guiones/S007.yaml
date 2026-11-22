@@ -1,7 +1,7 @@
 id: S007
 formato: sabias-que
 juego: ninguno
-estilo: foto
+estilo: mundo
 titulos:
   - "¿Huevo o gallina? La ciencia ya tiene respuesta"
   - "Qué fue antes, el huevo o la gallina (de verdad)"
@@ -20,31 +20,190 @@ fuentes:
 comentario: "¿Huevo o gallina? Tú votas 👇"
 hashtags: ["#curiosidades", "#ciencia"]
 musica: true
+mundo:
+  fotos:
+    fosil:
+      imagen: media/libres/dinosaur-eggs-nest-fossil.jpg
+      libre:
+      - Fossil Dinosaur Eggs Troodontid
+      foco:
+        x: 0.5
+        y: 0.5
+      x: 0.55
+      y: 0.45
+    gallo:
+      imagen: media/libres/red-junglefowl-rooster.jpg
+      libre:
+      - red junglefowl rooster
+      foco:
+        x: 0.55
+        y: 0.4
+      x: 0.5
+      y: 0.27
+  galeria:
+  - imagen: media/libres/eggs-in-basket.jpg
+    pie: Huevos de granja
+  - imagen: media/libres/chick-hatching.jpg
+    pie: Pollitos al nacer
+  - imagen: media/libres/chicken-egg.jpg
+    pie: Huevo de gallina
 escenas:
-  - texto: "¿Sabías que el huevo existía trescientos millones de años antes que la gallina? Te lo demuestro."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "dia", "etiquetas": [{"titulo": "La gran duda", "texto": "¿Quién primero?", "icono": "🥚"}]}
-  - texto: "Los primeros animales con huevo propio aparecieron hace más de trescientos millones de años."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "huevos", "cielo": "dia", "etiquetas": [{"titulo": "Primeros huevos", "texto": "+300 M años", "icono": "🥚"}], "n": 36}
-  - texto: "Los dinosaurios ya los ponían hace unos ciento noventa y cinco millones."
-    tarjeta: {"kind": "3d", "tipo": "foto", "libre": ["dinosaur eggs nest fossil", "Hypselosaurus eggs"], "foco": {"x": 0.5, "y": 0.5}, "zoom": 1.6, "notas": [{"texto": "Huevos de dinosaurio · 195 M años", "x": 0.5, "y": 0.5, "t": 0.5}], "alt": {"kind": "3d", "tipo": "diorama", "preset": "dino", "cielo": "dia", "etiquetas": [{"titulo": "Hace", "texto": "195 M años", "icono": "⏳"}]}}
-  - texto: "Y ni rastro de ninguna gallina."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "dino", "cielo": "noche", "etiquetas": [{"titulo": "Gallinas", "texto": "Ni una", "icono": "🚫"}]}
-  - texto: "La gallina doméstica tiene unos tres mil quinientos años."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "trio", "cielo": "dia", "etiquetas": [{"titulo": "Gallina doméstica", "texto": "3.500 años", "icono": "🐔"}]}
-  - texto: "Viene del gallo bankiva, un ave salvaje del sudeste asiático."
-    tarjeta: {"kind": "3d", "tipo": "foto", "libre": ["red junglefowl rooster", "Gallus gallus"], "foco": {"x": 0.55, "y": 0.35}, "zoom": 1.7, "notas": [{"texto": "Gallo bankiva", "x": 0.53, "y": 0.27, "t": 0.5}], "alt": {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "dia", "etiquetas": [{"titulo": "Origen", "texto": "Gallo bankiva", "icono": "🐓"}]}}
-  - texto: "Pero ojo, que aquí viene el truco…"
-    pausa: true
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "pila", "cielo": "noche", "etiquetas": [{"titulo": "Ojo", "texto": "Aquí viene el truco", "icono": "❓"}]}
-  - texto: "El primer huevo de gallina lo puso un ave casi gallina."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "noche", "etiquetas": [{"titulo": "Ave casi gallina", "texto": "Pone el huevo", "icono": "🥚"}]}
-  - texto: "Dentro, por pequeñas mutaciones, nació la primera gallina de la historia."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "nacer", "cielo": "dia", "etiquetas": [{"titulo": "Mutación", "texto": "Pequeñas", "icono": "🧬"}, {"titulo": "Nace", "texto": "La 1.ª gallina", "icono": "🐣"}]}
-  - texto: "Así que el huevo fue primero."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "podio", "cielo": "dia", "etiquetas": [{"titulo": "Ganador", "texto": "El huevo", "icono": "🏆"}]}
-  - texto: "En dos mil diez, Sheffield y Warwick hallaron una proteína de gallina clave para la cáscara."
-    tarjeta: {"kind": "3d", "tipo": "bombilla", "texto": "PROTEÍNA"}
-  - texto: "Dijeron que fue antes la gallina, pero otros científicos lo matizaron."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "trio", "cielo": "noche", "etiquetas": [{"titulo": "Warwick, 2010", "texto": "Primero la gallina", "icono": "🐔"}, {"titulo": "Otros", "texto": "Lo matizan", "icono": "⚖"}]}
-  - texto: "¿Tú qué dices, huevo o gallina? Te leo en comentarios."
-    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "cesta", "cielo": "dia", "etiquetas": [{"titulo": "Tú decides", "texto": "¿Huevo o gallina?", "icono": "🗳"}]}
+- texto: ¿Sabías que el huevo existía trescientos millones de años antes que la gallina? Te lo demuestro.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: intro
+    etiquetas:
+    - titulo: La gran duda
+      texto: ¿Quién fue primero?
+      icono: 🥚
+      ancla: intro_huevo
+- texto: Los primeros animales con huevo propio surgieron hace más de trescientos millones de años.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: primeros
+    etiquetas:
+    - titulo: Primeros huevos
+      texto: +300 M años
+      icono: 🦎
+      ancla: primeros_huevos
+- texto: Los dinosaurios ya los ponían hace unos ciento noventa y cinco millones.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: dinos
+    etiquetas:
+    - titulo: Dinosaurios
+      texto: 195 M años
+      icono: 🦖
+      ancla: dinos_nido
+    foto:
+      id: fosil
+      nota: Huevos fósiles reales
+      desde: 0.5
+- texto: Y ni rastro de ninguna gallina.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: dinos_noche
+    etiquetas:
+    - titulo: Gallinas
+      texto: Ni una
+      icono: 🚫
+      ancla: dinos_cartel
+- texto: 'Su antepasado: el gallo bankiva, ave salvaje del sudeste asiático.'
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: selva
+    etiquetas:
+    - titulo: Antepasado
+      texto: Gallo bankiva
+      icono: 🐓
+      ancla: selva_gallo
+    foto:
+      id: gallo
+      nota: Gallo bankiva (foto real)
+      desde: 0.45
+- texto: La gallina doméstica solo tiene unos tres mil quinientos años.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: granja
+    etiquetas:
+    - titulo: Gallina doméstica
+      texto: 3.500 años
+      icono: 🐔
+      ancla: granja_gallinas
+    - titulo: Restos más antiguos
+      texto: Tailandia
+      icono: 📍
+      ancla: granja_granero
+- texto: Pero ojo, que aquí viene el truco…
+  pausa: true
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: truco
+    etiquetas:
+    - titulo: Ojo
+      texto: Aquí viene el truco
+      icono: ❓
+      ancla: nido_ave
+- texto: El primer huevo de gallina lo puso un ave casi gallina.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: pone
+    etiquetas:
+    - titulo: Ave casi gallina
+      texto: Pone el huevo
+      icono: 🥚
+      ancla: nido_huevo
+- texto: Dentro, por pequeñas mutaciones, nació la primera gallina.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: nace
+    etiquetas:
+    - titulo: Pequeñas
+      texto: Mutaciones
+      icono: 🧬
+      ancla: nido_adn
+    - titulo: Nace
+      texto: La 1.ª gallina
+      icono: 🐣
+      ancla: nido_pollito
+- texto: Así que el huevo fue primero.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: podio
+    etiquetas:
+    - titulo: Ganador
+      texto: El huevo
+      icono: 🏆
+      ancla: podio_huevo
+- texto: En dos mil diez, Sheffield y Warwick hallaron una proteína de gallina clave para la cáscara.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: lab
+    etiquetas:
+    - titulo: Sheffield y Warwick
+      texto: '2010'
+      icono: 🔬
+      ancla: lab_microscopio
+    - titulo: Proteína OC-17
+      texto: Clave para la cáscara
+      icono: 🧪
+      ancla: lab_proteina
+- texto: Dijeron que fue antes la gallina, pero otros científicos lo matizaron.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: matiz
+    etiquetas:
+    - titulo: Ellos
+      texto: Primero la gallina
+      icono: 🐔
+      ancla: matiz_gallina
+    - titulo: Otros científicos
+      texto: Lo matizan
+      icono: ⚖️
+      ancla: matiz_huevo
+- texto: ¿Tú qué dices, huevo o gallina? Te leo en comentarios.
+  tarjeta:
+    kind: 3d
+    tipo: mundo
+    zona: final
+    etiquetas:
+    - titulo: Tú decides
+      texto: ¿Huevo o gallina?
+      icono: 🗳️
+      ancla: final_huevo
+    - titulo: Comenta
+      texto: Te leo 👇
+      icono: 💬
+      ancla: final_gallina

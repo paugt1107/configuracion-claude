@@ -77,7 +77,11 @@ def a_cifras(words: list[dict]) -> list[dict]:
             valor, k = r
             delante = _limpio(words[i]["text"])[0]
             detras = _limpio(words[i + k - 1]["text"])[2]
-            txt = f"{valor:,}".replace(",", ".") if valor >= 10000 else str(valor)
+            if valor >= 1_000_000 and valor % 1_000_000 == 0:  # "300 millones" se lee mejor que "300.000.000"
+                m = valor // 1_000_000
+                txt = f"{m:,}".replace(",", ".") + (" millón" if m == 1 else " millones")
+            else:
+                txt = f"{valor:,}".replace(",", ".") if valor >= 10000 else str(valor)
             fin = i + k
             if fin + 1 < len(words) and norm[fin] == "por" and norm[fin + 1] == "ciento":  # 58 por ciento → 58 %
                 txt += " %"

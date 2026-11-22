@@ -40,3 +40,16 @@ def test_plan_y_filtro():
     assert p["silencios"] and p["empujes"] and any(k == "riser" for _, k in p["cues"])
     f = misterio.filtro(p)
     assert f.startswith("scale=") and "crop=1080:1920" in f and "eq=brightness" in f
+
+
+def test_zoom_sutil_y_pocos_golpes():
+    st = misterio.estilos(LINEAS)
+    spans, words, t = [], [], 0.2
+    for linea in LINEAS * 3:  # vídeo largo con muchas cifras y nombres propios
+        ws = (linea + " Rockstar 1990 2000").split()
+        spans.append({"text": linea, "start": t, "end": t + 0.3 * len(ws)})
+        words += [{"text": w, "start": t + 0.3 * k, "end": t + 0.3 * k + 0.25} for k, w in enumerate(ws)]
+        t += 0.3 * len(ws) + 0.6
+    p = misterio.plan(spans, words, st + ["narracion"] * 16, t)
+    assert len(p["golpes"]) <= misterio.MAX_GOLPES + 3  # gancho + revelaciones (máx. 3 pausas) + 1 dato como mucho
+    assert max(f for _, f in p["golpes"]) <= 0.04 and misterio.EMPUJE <= 0.04

@@ -23,7 +23,9 @@ from pathlib import Path
 from . import media
 
 DIR = Path(__file__).with_name("escena3d")
-TIPOS = {"numero", "texto", "orbe", "moneda", "estrellas", "billetes", "mapa", "versus", "piedra", "bombilla", "corazon", "foto", "diorama"}
+# zona del mundo → sitio (igual que ZONAS en escena3d/mundo.js): varias frases pueden pasar en el mismo sitio
+SITIO_DE_ZONA = {"dinos_noche": "dinos", "truco": "nido", "pone": "nido", "nace": "nido"}
+TIPOS = {"numero", "texto", "orbe", "moneda", "estrellas", "billetes", "mapa", "versus", "piedra", "bombilla", "corazon", "foto", "diorama", "mundo"}
 
 
 def disponible() -> bool:
@@ -78,8 +80,74 @@ def _data_urls(path: Path) -> tuple[str, str]:
     return out[0], out[1]
 
 
-def clip(spec: dict, dur: float, out: Path, fps: int = 30, crf: int = 19) -> Path:
+def _jpeg_url(im, calidad: int = 88) -> str:
+    import base64
+    import io
+
+    buf = io.BytesIO()
+    im.convert("RGB").save(buf, "JPEG", quality=calidad)
+    return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+def foto_vertical(path: str | Path, foco: dict | None = None, punto: tuple | None = None, estilo: str = "cartoon", alto: int = 1280):
+    """Recorte 9:16 de la foto alrededor del foco, pasado a dibujo. Devuelve (imagen PIL, (u, v) del punto en el recorte)."""
+    from PIL import Image
+
+    from . import dibujo
+
+    im = Image.open(path).convert("RGB")
+    W, H = im.size
+    fx, fy = (foco or {}).get("x", 0.5), (foco or {}).get("y", 0.5)
+    cw, ch = (H * 9 / 16, H) if W / H > 9 / 16 else (W, W * 16 / 9)
+    x0 = min(max(0.0, fx * W - cw / 2), W - cw)
+    y0 = min(max(0.0, fy * H - ch / 2), H - ch)
+    rec = im.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((alto * 9 // 16, alto), Image.LANCZOS)
+    if estilo:
+        rec = dibujo.dibujar(rec, estilo, lado=alto)
+    px, py = punto if punto and punto[0] is not None else (fx, fy)
+    return rec, (round((px * W - x0) / cw, 4), round((py * H - y0) / ch, 4))
+
+
+def preparar_mundo(s: dict) -> dict:
+    """Fotos del mundo → dibujos animados como data URL (vallas 9:16 para entrar a pantalla completa y polaroids)."""
+    from PIL import Image
+
+    from . import dibujo
+
+    fotos = {}
+    for fid, f in (s.get("fotos") or {}).items():
+        if not f.get("imagen") or not Path(f["imagen"]).exists():
+            continue
+        im, (u, v) = foto_vertical(f["imagen"], f.get("foco"), (f.get("x"), f.get("y")), f.get("estilo", "cartoon"))
+        fotos[fid] = {"src": _jpeg_url(im), "x": u, "y": v, "nota": f.get("nota", "")}
+    galeria = []
+    for g in s.get("galeria") or []:
+        if not g.get("imagen") or not Path(g["imagen"]).exists():
+            continue
+        im = Image.open(g["imagen"]).convert("RGB")
+        im.thumbnail((900, 900))
+        galeria.append({"src": _jpeg_url(dibujo.dibujar(im, g.get("estilo", "cartoon"), lado=900), 85), "pie": g.get("pie", "")})
+    return {**s, "fotos": fotos, "galeria": galeria}
+
+
+def _render(spec_json: Path, carpeta: Path, fps: int, n: int, trozos: int) -> None:
+    """Renderiza los n fotogramas con `trozos` navegadores a la vez (cada uno un tramo seguido)."""
+    trozos = max(1, min(trozos, n // 20 or 1))
+    cortes = [round(i * n / trozos) for i in range(trozos + 1)]
+    procs = [
+        subprocess.Popen(["node", str(DIR / "render.mjs"), str(spec_json), str(carpeta), str(fps), str(a), str(b)], env=_env())
+        for a, b in zip(cortes, cortes[1:])
+    ]
+    for p in procs:
+        if p.wait(timeout=3600) != 0:
+            for q in procs:
+                q.kill()
+            raise subprocess.CalledProcessError(p.returncode, "render.mjs")
+
+
+def clip(spec: dict, dur: float, out: Path, fps: int = 30, crf: int = 19, trozos: int | None = None) -> Path:
     """Renderiza la escena a un mp4 1080x1920 de `dur` segundos."""
+    fps = int(os.environ.get("ESCENA3D_FPS") or fps)  # pruebas rápidas: ESCENA3D_FPS=6
     s = {k: v for k, v in spec.items() if k != "kind"}
     s["dur"] = float(dur)
     if s.get("tipo") == "foto" and s.get("banco") and not s.get("imagen"):  # foto del banco por etiqueta
@@ -99,18 +167,19 @@ def clip(spec: dict, dur: float, out: Path, fps: int = 30, crf: int = 19) -> Pat
 
                 img = dibujo.archivo(img, Path(tempfile.mkdtemp()) / "dibujo.jpg", "gta" if s["dibujo"] is True else str(s["dibujo"]))
             s["imagen"], s["fondo"] = _data_urls(img)
+    if s.get("tipo") == "mundo":
+        s = preparar_mundo(s)
     if s.get("tipo") not in TIPOS:
         raise ValueError(f"Escena 3D desconocida: {s.get('tipo')} (usa {sorted(TIPOS)})")
     with tempfile.TemporaryDirectory(prefix="e3d-") as tmp:
         tmp = Path(tmp)
         (tmp / "spec.json").write_text(json.dumps(s, ensure_ascii=False), encoding="utf-8")
-        subprocess.run(
-            ["node", str(DIR / "render.mjs"), str(tmp / "spec.json"), str(tmp / "f"), str(fps)], check=True, env=_env(), timeout=1800
-        )
+        n = max(1, round(float(dur) * fps))
+        _render(tmp / "spec.json", tmp / "f", fps, n, trozos or (os.cpu_count() or 2))
         subprocess.run(
             [
                 media.require("ffmpeg"), "-y", "-loglevel", "error", "-framerate", str(fps), "-i", str(tmp / "f" / "f%05d.jpg"),
-                "-vf", "noise=alls=4:allf=t,fade=t=in:st=0:d=0.12:color=white,format=yuv420p",
+                "-vf", "noise=alls=4:allf=t," + ("" if s.get("tipo") == "mundo" else "fade=t=in:st=0:d=0.12:color=white,") + "format=yuv420p",
                 "-t", f"{dur}", "-c:v", "libx264", "-preset", "veryfast", "-crf", str(crf), "-r", str(fps), str(out),
             ],
             check=True,

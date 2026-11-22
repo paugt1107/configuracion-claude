@@ -1,5 +1,6 @@
-// Renderiza una escena 3D fotograma a fotograma: node render.mjs <spec.json> <carpeta-salida> [fps]
+// Renderiza una escena 3D fotograma a fotograma: node render.mjs <spec.json> <carpeta-salida> [fps] [desde] [hasta]
 // Escribe f00000.jpg, f00001.jpg… (1080x1920). El tiempo es exacto (no depende de la velocidad de la máquina).
+// [desde, hasta) = trozo de fotogramas (para renderizar en paralelo con varios navegadores).
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
@@ -9,7 +10,7 @@ import { fileURLToPath } from "node:url";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const DIR = path.dirname(fileURLToPath(import.meta.url));
-const [specPath, outDir, fpsArg] = process.argv.slice(2);
+const [specPath, outDir, fpsArg, desdeArg, hastaArg] = process.argv.slice(2);
 const spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
 const fps = Number(fpsArg || 30);
 fs.mkdirSync(outDir, { recursive: true });
@@ -34,11 +35,12 @@ try {
   await page.goto(`http://127.0.0.1:${port}/escena.html`);
   await page.waitForFunction(() => window.LISTO === true, null, { timeout: 60000 });
   const n = Math.max(1, Math.round(spec.dur * fps));
-  for (let i = 0; i < n; i++) {
+  const desde = Number(desdeArg || 0), hasta = Math.min(n, Number(hastaArg || n));
+  for (let i = desde; i < hasta; i++) {
     await page.evaluate((t) => window.frame(t), i / fps);
     await page.screenshot({ path: path.join(outDir, `f${String(i).padStart(5, "0")}.jpg`), type: "jpeg", quality: 90 });
   }
-  console.log(`[escena3d] ${n} fotogramas`);
+  console.log(`[escena3d] ${hasta - desde} fotogramas (${desde}-${hasta})`);
 } finally {
   await browser.close();
   server.close();

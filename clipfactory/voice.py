@@ -266,8 +266,10 @@ def _produce(lines: list[str], out_dir: str | Path, provider: str, lead: float, 
                     "-i",
                     str(raw),
                     "-af",
-                    "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                    f"apad=pad_dur={gap}",
+                    # recorta silencios (dejando 40 ms de aire) y funde 10/25 ms cada borde: sin clics entre frases
+                    "silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.04,areverse,"
+                    "silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.06,areverse,"
+                    f"afade=t=in:d=0.01,areverse,afade=t=in:d=0.025,areverse,apad=pad_dur={gap}",
                     "-ar",
                     "48000",
                     "-ac",

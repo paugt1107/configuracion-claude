@@ -17,7 +17,7 @@ def test_cifras_en_subtitulos():
     assert _txt("tiene un coche y una moto") == "tiene un coche y una moto"
     assert _txt("trescientos sesenta y cuatro gigas") == "364 gigas"
     assert _txt("ciento catorce reseñas") == "114 reseñas"
-    assert _txt("un millón de copias") == "1.000.000 de copias"
+    assert _txt("un millón de copias") == "1 millón de copias"
 
 
 def test_tiempos_unidos():
@@ -32,3 +32,8 @@ def test_palabras_clave_para_subtitulos():
     claves = [x["text"] for k, x in enumerate(w) if captions.es_clave(w, k)]
     assert "Sheffield" in claves and "300" in claves and "Nunca" in claves
     assert "Sabías" not in claves and "fue" not in claves
+
+
+def test_millones_redondos_se_leen_con_palabra():
+    ws = [{"text": t, "start": i, "end": i + 0.5} for i, t in enumerate(["hace", "trescientos", "millones", "de", "años"])]
+    assert [w["text"] for w in numeros.a_cifras(ws)] == ["hace", "300 millones", "de", "años"]

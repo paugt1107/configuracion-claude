@@ -6,9 +6,10 @@ Cómo funciona (todo automático; el guion puede forzarlo con `pausa: true` o de
    "nadie", "secreto", frases con "…", preguntas a mitad de vídeo). Como mucho 3 por vídeo y nunca dos seguidas.
    La voz las dice más lenta y grave (estilo "suspense" de voice.py) y deja una PAUSA de ~0,85 s detrás.
 2. plan()     → con los tiempos reales de la locución, coloca:
-     · EMPUJE: zoom lento hacia dentro (1,00 → 1,12) y oscurecimiento durante la frase de suspense y su pausa.
-     · GOLPE:  zoom rápido (punch-in) justo en la REVELACIÓN (la palabra que sigue a la pausa), en la 1.ª palabra del gancho
-               y, más suave, en números y nombres propios (máx. 1 cada 2,5 s).
+     · EMPUJE: acercamiento MUY lento (1,00 → 1,03) y oscurecimiento leve durante la frase de suspense y su pausa.
+     · GOLPE:  pequeño acento de cámara (≤ 4 %, subida suave y caída lenta, nada de tirones) en la REVELACIÓN, en la 1.ª
+               palabra del gancho y, como mucho, en UN dato más. Máximo MAX_GOLPES por vídeo: la cámara de verdad la
+               mueve el travelling 3D; estos golpes solo subrayan 2-3 momentos clave.
      · SILENCIO: la música cae casi a cero en la pausa (el silencio da más tensión que cualquier efecto).
      · SONIDO: dron grave bajo la frase de suspense, latido al empezar la pausa, riser que sube hasta la revelación
                y un impacto en la revelación.
@@ -32,10 +33,11 @@ CLAVE = re.compile(r"\b(nadie|secreto|escond|ocult|misterio|nunca|casi nadie|no 
 NUMERO = re.compile(r"^\d|^(un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cien|mil|mill[oó]n)", re.I)
 
 MAX_PAUSAS = 3
-GOLPE_REVELACION, GOLPE_GANCHO, GOLPE_DATO = 0.16, 0.10, 0.06
-EMPUJE = 0.12
-OSCURO = -0.09
-SEPARACION_GOLPES = 2.5
+GOLPE_REVELACION, GOLPE_GANCHO, GOLPE_DATO = 0.04, 0.03, 0.025
+EMPUJE = 0.03
+OSCURO = -0.05
+SEPARACION_GOLPES = 8.0
+MAX_GOLPES = 3
 
 
 def _es_suspense(texto: str) -> int:
@@ -106,24 +108,28 @@ def plan(spans: list[dict], words: list[dict], styles: list[str], total: float) 
             continue
         if any(abs(w["start"] - r) < 1.2 for r in revelaciones) or any(a <= w["start"] < b for a, b in empujes):
             continue
+        if len(golpes) >= MAX_GOLPES:
+            break
         golpes.append((w["start"], GOLPE_DATO))
         ultimo = w["start"]
-        if len(golpes) >= 14:
-            break
     return {"golpes": sorted(golpes), "empujes": empujes, "silencios": silencios, "cues": cues, "total": total}
 
 
 def _zoom_expr(p: dict) -> str:
-    """Z(t): 1 + golpes (subida instantánea y caída exponencial) + empujes (rampa lenta dentro del tramo)."""
-    partes = [f"{f:.3f}*gte(t,{t0:.3f})*exp(-(t-{t0:.3f})*6)" for t0, f in p["golpes"]]
-    partes += [f"{EMPUJE}*between(t,{a:.3f},{b:.3f})*(t-{a:.3f})/{max(b - a, 0.1):.3f}" for a, b in p["empujes"]]
+    """Z(t): 1 + golpes (subida suave de 0,18 s y caída lenta, sin tirones) + empujes (rampa lenta que vuelve suave)."""
+    partes = [
+        f"{f:.3f}*clip((t-{t0 - 0.06:.3f})/0.18,0,1)*exp(-max(t-{t0 + 0.12:.3f},0)*2.2)*gte(t,{t0 - 0.06:.3f})" for t0, f in p["golpes"]
+    ]
+    partes += [
+        f"{EMPUJE}*clip((t-{a:.3f})/{max(b - a, 0.1):.3f},0,1)*clip(({b + 0.6:.3f}-t)/0.6,0,1)*gte(t,{a:.3f})" for a, b in p["empujes"]
+    ]
     return "1+" + "+".join(partes) if partes else "1"
 
 
 def _brillo_expr(p: dict) -> str:
     if not p["empujes"]:
         return "0"
-    return f"{OSCURO}*min(1," + "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in p["empujes"]) + ")"
+    return f"{OSCURO}*min(1," + "+".join(f"clip((t-{a:.3f})/0.5,0,1)*clip(({b + 0.4:.3f}-t)/0.4,0,1)" for a, b in p["empujes"]) + ")"
 
 
 def filtro(p: dict) -> str | None:

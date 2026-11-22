@@ -86,7 +86,7 @@ const root = new THREE.Group(); scene.add(root);
 const halo = glow(9, ACC, 0.55); halo.position.z = -1.5; scene.add(halo);
 const parts = []; // [{obj, t0}] para entradas escalonadas
 const upd = []; // animaciones propias de cada tipo
-let flotar = 1, giro = 1;
+let flotar = 1, giro = 1, mundo = null;
 const T = S.tipo;
 
 if (T === "numero" || T === "texto") {
@@ -270,6 +270,15 @@ if (T === "numero" || T === "texto") {
     : "linear-gradient(180deg, #6fd3ff 0%, #a9e7ff 55%, #e8f9ff 100%)";
   document.getElementById("rays").style.display = "none";
   document.getElementById("vig").style.opacity = noche ? 1 : 0.35;
+} else if (T === "mundo") {
+  // un mundo continuo por el que viaja la cámara (ver mundo.js)
+  await document.fonts.load("900 64px Inter");
+  scene.remove(key, rim, halo, dust); scene.environment = null;
+  scene.children.filter((o) => o.isAmbientLight).forEach((o) => scene.remove(o));
+  const M = await import("./mundo.js");
+  mundo = await M.crear(S, { scene, cam, renderer, GLOW });
+  document.getElementById("bg").style.background = "#000"; document.getElementById("rays").style.display = "none";
+  document.getElementById("vig").style.background = "radial-gradient(ellipse at 50% 45%, transparent 60%, rgba(0,0,0,.35) 100%)";
 } else if (T === "versus" || T === "foto") {
   const [a, b] = String(S.texto || "A|B").split("|").concat([""]);
   const A = fit(text3d(a, 1.2), 3.2), B = fit(text3d(b, 1.2, new THREE.MeshPhysicalMaterial({ color: 0xf2f4ff, metalness: 1, roughness: 0.25, clearcoat: 1 })), 3.2), vs = text3d("VS", 0.6);
@@ -280,6 +289,7 @@ if (T === "numero" || T === "texto") {
 // ---------- animación: todo depende solo de t ----------
 window.frame = (t) => {
   const D = S.dur;
+  if (mundo) { mundo.frame(t + (S._desde || 0)); renderer.render(scene, cam); return D; }
   // cámara: entrada rápida + acercamiento lento + leve órbita
   const push = easeOut(t / 0.6);
   if (T === "diorama") {  // cámara alta tipo maqueta que gira despacio alrededor
