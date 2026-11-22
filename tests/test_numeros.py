@@ -28,7 +28,7 @@ def test_tiempos_unidos():
 def test_palabras_clave_para_subtitulos():
     from clipfactory import captions
 
-    w = [{"text": t, "start": i * 0.4, "end": i * 0.4 + 0.3} for i, t in enumerate("¿Sabías que Sheffield halló 300 millones? Nunca fue casual.".split())]
+    w = [{"text": t, "start": i * 0.4, "end": i * 0.4 + 0.3} for i, t in enumerate(["¿Sabías", "que", "Sheffield", "halló", "300", "millones?", "Nunca", "fue", "casual."])]
     claves = [x["text"] for k, x in enumerate(w) if captions.es_clave(w, k)]
     assert "Sheffield" in claves and "300" in claves and "Nunca" in claves
     assert "Sabías" not in claves and "fue" not in claves
