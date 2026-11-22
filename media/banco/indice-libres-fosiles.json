@@ -83,6 +83,20 @@
   "h": 846,
   "w": 1024
  },
+ "lb-3eaa615e06": {
+  "archivo": "libres/fosiles/fossil-fern-ov1.jpg",
+  "categoria": "fosiles",
+  "consulta": "Fossil fern",
+  "credito": "Pecopteris sp. (fossil fern) (Mazon Creek Lagerstätte, Francis Creek Shale, Middle Pennsylvanian; Mazon Creek area, Illinois, USA) 3 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/39375808944",
+  "etiquetas": [
+   "fern",
+   "fosiles",
+   "fossil"
+  ],
+  "fuente": "libre",
+  "h": 375,
+  "w": 1023
+ },
  "lb-52fb6991ce": {
   "archivo": "libres/fosiles/trilobite-fossil-2.jpg",
   "categoria": "fosiles",
