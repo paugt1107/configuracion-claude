@@ -1,0 +1,152 @@
+{
+ "lb-1ac646ee92": {
+  "archivo": "libres/ciudades/new-york-skyline-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "New York skyline",
+  "credito": "New York Midtown Skyline at night - Jan 2006 edit1.jpg — Diliff — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg",
+  "etiquetas": [
+   "ciudades",
+   "new",
+   "skyline",
+   "york"
+  ],
+  "fuente": "libre",
+  "h": 448,
+  "w": 1280
+ },
+ "lb-25f03ba530": {
+  "archivo": "libres/ciudades/tokyo-street-night-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Tokyo street night",
+  "credito": "Tokyo Tower, Minato City.jpg — David Kernan — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Tokyo_Tower,_Minato_City.jpg",
+  "etiquetas": [
+   "ciudades",
+   "night",
+   "street",
+   "tokyo"
+  ],
+  "fuente": "libre",
+  "h": 720,
+  "w": 1280
+ },
+ "lb-5f3fa014c0": {
+  "archivo": "libres/ciudades/tokyo-street-night-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Tokyo street night",
+  "credito": "Kabukicho red gate and colorful neon street signs at night, Shinjuku, Tokyo, Japan.jpg — Basile Morin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Kabukicho_red_gate_and_colorful_neon_street_signs_at_night,_Shinjuku,_Tokyo,_Japan.jpg",
+  "etiquetas": [
+   "ciudades",
+   "night",
+   "street",
+   "tokyo"
+  ],
+  "fuente": "libre",
+  "h": 1141,
+  "w": 1280
+ },
+ "lb-7058dccd89": {
+  "archivo": "libres/ciudades/paris-eiffel-tower-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Paris Eiffel Tower",
+  "credito": "Tour Eiffel Wikimedia Commons.jpg — Benh LIEU SONG — Public domain — https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+  "etiquetas": [
+   "ciudades",
+   "eiffel",
+   "paris",
+   "tower"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 692
+ },
+ "lb-73bbf852e7": {
+  "archivo": "libres/ciudades/tokyo-street-night-ov2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Tokyo street night",
+  "credito": "Hat — romainguy — CC0 1.0 — https://www.flickr.com/photos/24046097@N00/10372464436",
+  "etiquetas": [
+   "ciudades",
+   "night",
+   "street",
+   "tokyo"
+  ],
+  "fuente": "libre",
+  "h": 576,
+  "w": 1024
+ },
+ "lb-79cdc7585d": {
+  "archivo": "libres/ciudades/london-big-ben-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "London Big Ben",
+  "credito": "Big Ben at sunset - 2014-10-27 17-30.jpg — Colin — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg",
+  "etiquetas": [
+   "ben",
+   "big",
+   "ciudades",
+   "london"
+  ],
+  "fuente": "libre",
+  "h": 867,
+  "w": 1280
+ },
+ "lb-804f3501b9": {
+  "archivo": "libres/ciudades/new-york-skyline-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "New York skyline",
+  "credito": "Long Island City New York May 2015 panorama 3.jpg — King of Hearts — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_May_2015_panorama_3.jpg",
+  "etiquetas": [
+   "ciudades",
+   "new",
+   "skyline",
+   "york"
+  ],
+  "fuente": "libre",
+  "h": 640,
+  "w": 1280
+ },
+ "lb-8e30a3c488": {
+  "archivo": "libres/ciudades/tokyo-street-night-ov1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Tokyo street night",
+  "credito": "Girls Night Out — romainguy — CC0 1.0 — https://www.flickr.com/photos/24046097@N00/10260627553",
+  "etiquetas": [
+   "ciudades",
+   "night",
+   "street",
+   "tokyo"
+  ],
+  "fuente": "libre",
+  "h": 576,
+  "w": 1024
+ },
+ "lb-c030902093": {
+  "archivo": "libres/ciudades/london-big-ben-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "London Big Ben",
+  "credito": "London Big Ben Inner Clock Face 1070925-PSD.jpg — Ermell — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:London_Big_Ben_Inner_Clock_Face_1070925-PSD.jpg",
+  "etiquetas": [
+   "ben",
+   "big",
+   "ciudades",
+   "london"
+  ],
+  "fuente": "libre",
+  "h": 1239,
+  "w": 1280
+ },
+ "lb-d56b973163": {
+  "archivo": "libres/ciudades/paris-eiffel-tower-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Paris Eiffel Tower",
+  "credito": "Paris - The Eiffel Tower in spring - 2307.jpg — Jorge Royan — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg",
+  "etiquetas": [
+   "ciudades",
+   "eiffel",
+   "paris",
+   "tower"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ }
+}
