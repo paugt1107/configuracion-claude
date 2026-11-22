@@ -196,11 +196,13 @@ if (T === "numero" || T === "texto") {
   // Foto real (oficial o propia) flotando en 3D sobre la misma foto desenfocada a pantalla completa.
   const ld = new THREE.TextureLoader(), tx = await ld.loadAsync(S.imagen); tx.colorSpace = THREE.SRGBColorSpace;
   if (S.fondo) { const bg = await ld.loadAsync(S.fondo); bg.colorSpace = THREE.SRGBColorSpace; document.getElementById("bg").style.background = `url(${S.fondo}) center/cover`; }
-  const ar = tx.image.width / tx.image.height, w = 3.5, hh = Math.min(5.6, w / ar);
+  const ar = tx.image.width / tx.image.height, vert = !!(S.notas || S.foco) && S.vertical !== false, w = 3.5, hh = vert ? 6.2 : Math.min(5.6, w / ar);
+  const wu = vert ? Math.min(1, (w / hh) / ar) : 1, hu = vert && (w / hh) / ar > 1 ? ar * hh / w : 1; // trozo de la foto que se ve (en uv)
   const frameM = new THREE.Mesh(new THREE.BoxGeometry(w + 0.12, hh + 0.12, 0.06), new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.4 }));
   const pic = new THREE.Mesh(new THREE.PlaneGeometry(w, hh), new THREE.MeshBasicMaterial({ map: tx })); pic.position.z = 0.035;
   const shine = new THREE.Mesh(new THREE.PlaneGeometry(0.8, hh * 1.6), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.18, blending: THREE.AdditiveBlending, depthWrite: false }));
   shine.rotation.z = 0.5; shine.position.z = 0.05;
+  if (vert) { frameM.visible = false; shine.visible = false; halo.visible = false; }
   root.add(frameM, pic, shine);
   halo.material.color.set(0xffffff); giro = 0.2;
   if (S.notas || S.foco) {
@@ -218,12 +220,14 @@ if (T === "numero" || T === "texto") {
     });
     const v = new THREE.Vector3();
     upd.push((t) => {
-      const k = zmax > 1 ? easeOut((t - zt0) / 0.9) : 0, z = 1 + (zmax - 1) * k, h = 0.5 / z;
-      const cx = 0.5 + (Math.min(1 - h, Math.max(h, foco.x)) - 0.5) * k, cy = 0.5 + (Math.min(1 - h, Math.max(h, 1 - foco.y)) - 0.5) * k;
-      tx.repeat.set(1 / z, 1 / z); tx.offset.set(cx - h, cy - h);
+      const k = zmax > 1 ? easeOut((t - zt0) / 0.9) : 0, z = 1 + (zmax - 1) * k, hx = wu / (2 * z), hy = hu / (2 * z);
+      const deriva = vert ? Math.sin(t * 0.6) * 0.03 * wu : 0; // deriva lenta de cámara para que nunca esté quieto
+      const fx = Math.min(1 - hx, Math.max(hx, foco.x + deriva)), fy = Math.min(1 - hy, Math.max(hy, 1 - foco.y));
+      const cx = (vert && !S.foco ? 0.5 : 0.5 + (fx - 0.5) * (vert ? 1 : k)) * (1) , cy = 0.5 + (fy - 0.5) * (vert ? 1 : k);
+      tx.repeat.set(wu / z, hu / z); tx.offset.set(cx - hx, cy - hy);
       root.updateMatrixWorld(true); cam.updateMatrixWorld();
       for (const o of notas) {
-        const px = (o.n.x - (cx - h)) * z, py = ((1 - o.n.y) - (cy - h)) * z;
+        const px = (o.n.x - (cx - hx)) * z / wu, py = ((1 - o.n.y) - (cy - hy)) * z / hu;
         const dentro = px > 0.04 && px < 0.96 && py > 0.04 && py < 0.96;
         v.set((px - 0.5) * w, (py - 0.5) * hh, 0.05); pic.localToWorld(v); v.project(cam);
         const X = (v.x * 0.5 + 0.5) * 1080, Y = (-v.y * 0.5 + 0.5) * 1920, a = easeOutBack((t - o.t0) / 0.4), vis = dentro && t >= o.t0 ? 1 : 0;

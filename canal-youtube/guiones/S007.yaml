@@ -22,27 +22,29 @@ hashtags: ["#curiosidades", "#ciencia"]
 musica: true
 escenas:
   - texto: "¿Sabías que el huevo existía trescientos millones de años antes que la gallina? Te lo demuestro."
-    tarjeta: {"cielo": "dia", "etiquetas": [{"icono": "🥚", "texto": "¿Quién primero?", "titulo": "La gran duda"}], "kind": "3d", "preset": "gallina", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "dia", "etiquetas": [{"titulo": "La gran duda", "texto": "¿Quién primero?", "icono": "🥚"}]}
   - texto: "Los primeros animales con huevo propio aparecieron hace más de trescientos millones de años."
-    tarjeta: {"cielo": "dia", "etiquetas": [{"icono": "🥚", "texto": "+300 M años", "titulo": "Primeros huevos"}], "kind": "3d", "n": 36, "preset": "huevos", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "huevos", "cielo": "dia", "etiquetas": [{"titulo": "Primeros huevos", "texto": "+300 M años", "icono": "🥚"}], "n": 36}
   - texto: "Los dinosaurios ya los ponían hace unos ciento noventa y cinco millones."
-    tarjeta: {"kind": "3d", "tipo": "foto", "estilo": "inclinada", "libre": ["dinosaur eggs nest fossil", "Hypselosaurus eggs"], "foco": {"x": 0.5, "y": 0.5}, "zoom": 1.7, "notas": [{"texto": "Huevos de dinosaurio · 195 M años", "x": 0.5, "y": 0.5, "t": 0.6}], "alt": {"cielo": "dia", "etiquetas": [{"icono": "🦖", "texto": "Ya ponían huevos", "titulo": "Dinosaurios"}, {"icono": "⏳", "texto": "195 M años", "titulo": "Hace"}], "preset": "dino", "tipo": "diorama"}}
-  - texto: "¿Y la gallina doméstica? Sus restos más antiguos tienen unos tres mil quinientos años."
-    tarjeta: {"cielo": "noche", "etiquetas": [{"icono": "🐔", "texto": "3.500 años", "titulo": "Gallina doméstica"}], "kind": "3d", "preset": "gallina", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "foto", "libre": ["dinosaur eggs nest fossil", "Hypselosaurus eggs"], "foco": {"x": 0.5, "y": 0.5}, "zoom": 1.6, "notas": [{"texto": "Huevos de dinosaurio · 195 M años", "x": 0.5, "y": 0.5, "t": 0.5}], "alt": {"kind": "3d", "tipo": "diorama", "preset": "dino", "cielo": "dia", "etiquetas": [{"titulo": "Hace", "texto": "195 M años", "icono": "⏳"}]}}
+  - texto: "Y ni rastro de ninguna gallina."
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "dino", "cielo": "noche", "etiquetas": [{"titulo": "Gallinas", "texto": "Ni una", "icono": "🚫"}]}
+  - texto: "La gallina doméstica tiene unos tres mil quinientos años."
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "trio", "cielo": "dia", "etiquetas": [{"titulo": "Gallina doméstica", "texto": "3.500 años", "icono": "🐔"}]}
   - texto: "Viene del gallo bankiva, un ave salvaje del sudeste asiático."
-    tarjeta: {"alt": {"color": "orange", "texto": "GALLO BANKIVA", "tipo": "texto"}, "estilo": "giro", "kind": "3d", "libre": ["red junglefowl rooster", "Gallus gallus"], "tipo": "foto", "foco": {"x": 0.62, "y": 0.4}, "zoom": 1.7, "notas": [{"texto": "Gallo bankiva", "x": 0.62, "y": 0.4, "t": 0.5}]}
+    tarjeta: {"kind": "3d", "tipo": "foto", "libre": ["red junglefowl rooster", "Gallus gallus"], "foco": {"x": 0.62, "y": 0.4}, "zoom": 1.7, "notas": [{"texto": "Gallo bankiva", "x": 0.62, "y": 0.4, "t": 0.5}], "alt": {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "dia", "etiquetas": [{"titulo": "Origen", "texto": "Gallo bankiva", "icono": "🐓"}]}}
   - texto: "Pero ojo, que aquí viene el truco…"
     pausa: true
-    tarjeta: {"cielo": "noche", "etiquetas": [{"icono": "❓", "texto": "Aquí viene el truco", "titulo": "Ojo"}], "kind": "3d", "n": 10, "preset": "huevos", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "pila", "cielo": "noche", "etiquetas": [{"titulo": "Ojo", "texto": "Aquí viene el truco", "icono": "❓"}]}
   - texto: "El primer huevo de gallina lo puso un ave casi gallina."
-    tarjeta: {"cielo": "noche", "etiquetas": [{"icono": "🥚", "texto": "Pone el huevo", "titulo": "Ave casi gallina"}], "kind": "3d", "preset": "gallina", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "gallina", "cielo": "noche", "etiquetas": [{"titulo": "Ave casi gallina", "texto": "Pone el huevo", "icono": "🥚"}]}
   - texto: "Dentro, por pequeñas mutaciones, nació la primera gallina de la historia."
-    tarjeta: {"cielo": "dia", "etiquetas": [{"icono": "🧬", "texto": "Pequeñas", "titulo": "Mutación"}, {"icono": "🐣", "texto": "La 1.ª gallina", "titulo": "Nace"}], "kind": "3d", "preset": "nacer", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "nacer", "cielo": "dia", "etiquetas": [{"titulo": "Mutación", "texto": "Pequeñas", "icono": "🧬"}, {"titulo": "Nace", "texto": "La 1.ª gallina", "icono": "🐣"}]}
   - texto: "Así que el huevo fue primero."
-    tarjeta: {"cielo": "dia", "etiquetas": [{"icono": "🏆", "texto": "El huevo", "titulo": "Ganador"}], "kind": "3d", "preset": "podio", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "podio", "cielo": "dia", "etiquetas": [{"titulo": "Ganador", "texto": "El huevo", "icono": "🏆"}]}
   - texto: "En dos mil diez, Sheffield y Warwick hallaron una proteína de gallina clave para la cáscara."
-    tarjeta: {"alt": {"texto": "PROTEÍNA", "tipo": "bombilla"}, "kind": "3d", "texto": "PROTEÍNA", "tipo": "bombilla"}
+    tarjeta: {"kind": "3d", "tipo": "bombilla", "texto": "PROTEÍNA"}
   - texto: "Dijeron que fue antes la gallina, pero otros científicos lo matizaron."
-    tarjeta: {"cielo": "noche", "etiquetas": [{"icono": "🐔", "texto": "Primero la gallina", "titulo": "Warwick, 2010"}, {"icono": "⚖", "texto": "Lo matizan", "titulo": "Otros"}], "kind": "3d", "preset": "gallina", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "trio", "cielo": "noche", "etiquetas": [{"titulo": "Warwick, 2010", "texto": "Primero la gallina", "icono": "🐔"}, {"titulo": "Otros", "texto": "Lo matizan", "icono": "⚖"}]}
   - texto: "¿Tú qué dices, huevo o gallina? Te leo en comentarios."
-    tarjeta: {"cielo": "dia", "etiquetas": [{"icono": "🗳", "texto": "¿Huevo o gallina?", "titulo": "Tú decides"}], "kind": "3d", "n": 20, "preset": "huevos", "tipo": "diorama"}
+    tarjeta: {"kind": "3d", "tipo": "diorama", "preset": "cesta", "cielo": "dia", "etiquetas": [{"titulo": "Tú decides", "texto": "¿Huevo o gallina?", "icono": "🗳"}]}

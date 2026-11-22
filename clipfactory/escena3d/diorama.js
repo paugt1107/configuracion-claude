@@ -245,6 +245,44 @@ export function construir(nombre, S, root, scene, ACC) {
       hs.forEach((e, i) => { const k = clamp((t - 0.2 - i * 0.12) / 0.4); e.visible = k > 0; e.scale.setScalar(Math.max(0.001, eob(k))); });
     });
     anclas.a = new THREE.Vector3(-0.8, 2.0, 0); anclas.b = new THREE.Vector3(1.15, 1.0, 0.2); anclas.c = new THREE.Vector3(0, 0.3, 1.0);
+  } else if (nombre === "pila") {
+    root.add(isla(3.0, 2.4));
+    const hs = []; let idx = 0;
+    for (let fila = 0; fila < 4; fila++) for (let c = 0; c < 4 - fila; c++) { const e = huevo(idx % 2 ? 0xf3dfc0 : 0xfff3dc, 1.15); e.position.set((c - (3 - fila) / 2) * 0.5, 0.08 + fila * 0.42, 0); root.add(e); hs.push({ e, i: idx++ }); }
+    const oro = huevo(0xffd25a, 1.5); oro.children[0].material.emissive = new THREE.Color(0xffb300); oro.children[0].material.emissiveIntensity = 0.6; root.add(oro);
+    const lluvia = confeti(root, [C.amarillo, C.morado, C.cian], 18);
+    upd.push((t) => {
+      hs.forEach(({ e, i }) => { const k = clamp((t - i * 0.12) / 0.4); e.visible = k > 0; e.scale.setScalar(Math.max(0.001, eob(k))); e.rotation.z = Math.sin(t * 3 + i) * 0.05; });
+      const kk = clamp((t - 1.4) / 0.5); oro.visible = kk > 0; oro.position.set(0, 1.45 + (1 - eob(kk)) * 1.5 + Math.sin(t * 3) * 0.05, 0); oro.rotation.y = t * 2.2; oro.scale.setScalar(Math.max(0.001, eob(kk)));
+      lluvia(t);
+    });
+    anclas.a = new THREE.Vector3(0, 2.4, 0); anclas.b = new THREE.Vector3(-0.9, 1.0, 0.3); anclas.c = new THREE.Vector3(0.9, 0.6, 0.3);
+  } else if (nombre === "trio") {
+    root.add(isla(3.4, 2.4)); valla(root, -1.5, 1.5, -1.0);
+    const cols = [C.blanco, 0xd9a066, 0x6b4a36], bichos = [];
+    cols.forEach((c, i) => { const { g, cuello } = gallina(c); g.position.set(-1.0 + i * 1.0, 0, 0.15 + (i % 2) * 0.25); g.scale.setScalar(0.62); g.rotation.y = 0.35 - i * 0.3; root.add(g); bichos.push({ g, cuello, y0: g.position.y }); });
+    const pols = [0, 1].map((i) => { const p = pollito(); p.scale.setScalar(0.5); p.position.set(-0.5 + i * 1.1, 0, 0.85); root.add(p); return p; });
+    const pl = palmera(0.9); pl.position.set(1.55, 0, -0.75); root.add(pl);
+    upd.push((t) => {
+      bichos.forEach((b, i) => { b.cuello.rotation.z = Math.sin(t * 6 + i * 2) * 0.2 - 0.1; b.g.position.y = Math.abs(Math.sin(t * 3 + i * 1.7)) * 0.08; });
+      pols.forEach((p, i) => { p.position.y = Math.abs(Math.sin(t * 7 + i * 2)) * 0.12; p.position.x += Math.sin(t * 2 + i) * 0.002; });
+    });
+    anclas.a = new THREE.Vector3(-1.0, 1.4, 0.3); anclas.b = new THREE.Vector3(0.9, 1.4, 0.4); anclas.c = new THREE.Vector3(0, 0.3, 1.0);
+  } else if (nombre === "cesta") {
+    root.add(isla(3.0, 2.4));
+    const cj = caja(1.5, 0.45, 1.0, C.madera); cj.position.set(0, 0.23, 0); root.add(cj);
+    const interior = caja(1.3, 0.05, 0.8, C.tierra2); interior.position.set(0, 0.46, 0); root.add(interior);
+    const gs = [], total = 14;
+    for (let i = 0; i < total; i++) { const e = huevo(i % 3 ? 0xfff3dc : 0xe8c9a0, 0.8); root.add(e); gs.push(e); }
+    const lluvia = confeti(root, [C.amarillo, C.rosa, C.cian, C.naranja], 26);
+    upd.push((t) => {
+      gs.forEach((e, i) => {
+        const t0 = 0.2 + i * 0.16, k = clamp((t - t0) / 0.5), fx = ((i % 5) - 2) * 0.24, fz = (Math.floor(i / 5) - 1) * 0.25;
+        e.visible = t > t0; e.position.set(fx, 0.46 + (1 - eo(k)) * 2.6 + Math.floor(i / 5) * 0.06, fz); e.rotation.z = (1 - k) * 2;
+      });
+      lluvia(t);
+    });
+    anclas.a = new THREE.Vector3(0, 1.4, 0); anclas.b = new THREE.Vector3(-0.8, 0.9, 0.5); anclas.c = new THREE.Vector3(0.8, 0.9, 0.5);
   } else if (nombre === "nacer") {
     root.add(isla(2.8, 2.4));
     const R = 0.5, mitadAlta = new THREE.Mesh(new THREE.SphereGeometry(R, 14, 10, 0, Math.PI * 2, 0, Math.PI * 0.45), mat(0xfff3dc, { side: THREE.DoubleSide }));
