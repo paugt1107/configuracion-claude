@@ -25,6 +25,20 @@
   "h": 678,
   "w": 1024
  },
+ "lb-0e042c9517": {
+  "archivo": "libres/laboratorio/petri-dish-ov4.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Petri dish",
+  "credito": "leverage the synergies petri dish — interestedbystandr — CC BY 2.0 — https://www.flickr.com/photos/100739735@N06/9582411878",
+  "etiquetas": [
+   "dish",
+   "laboratorio",
+   "petri"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 993
+ },
  "lb-0e5d62495f": {
   "archivo": "libres/laboratorio/laboratory-scientist-ov4.jpg",
   "categoria": "laboratorio",
@@ -37,6 +51,20 @@
   ],
   "fuente": "libre",
   "h": 683,
+  "w": 1024
+ },
+ "lb-2e6cee560c": {
+  "archivo": "libres/laboratorio/petri-dish-ov1.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Petri dish",
+  "credito": "Oyster mushroom (Pleurotus ostreatus) mycelium in petri dish on coffee grounds — Tobi Kellner — CC BY-SA 3.0 — https://commons.wikimedia.org/w/index.php?curid=18340817",
+  "etiquetas": [
+   "dish",
+   "laboratorio",
+   "petri"
+  ],
+  "fuente": "libre",
+  "h": 768,
   "w": 1024
  },
  "lb-505f032d07": {
@@ -92,6 +120,20 @@
   "fuente": "libre",
   "h": 853,
   "w": 1280
+ },
+ "lb-6247188e6f": {
+  "archivo": "libres/laboratorio/petri-dish-ov3.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Petri dish",
+  "credito": "Petri Dishes and Agar Oh my! — GoodNCrazy — CC BY 2.0 — https://www.flickr.com/photos/40215657@N03/5408659214",
+  "etiquetas": [
+   "dish",
+   "laboratorio",
+   "petri"
+  ],
+  "fuente": "libre",
+  "h": 640,
+  "w": 1023
  },
  "lb-6be07c304b": {
   "archivo": "libres/laboratorio/laboratory-scientist-ov3.jpg",
@@ -274,5 +316,19 @@
   "fuente": "libre",
   "h": 863,
   "w": 1280
+ },
+ "lb-ff46ea9e42": {
+  "archivo": "libres/laboratorio/petri-dish-ov2.jpg",
+  "categoria": "laboratorio",
+  "consulta": "Petri dish",
+  "credito": "Petri dish windows — Ruth and Dave — CC BY 2.0 — https://www.flickr.com/photos/95142644@N00/554281880",
+  "etiquetas": [
+   "dish",
+   "laboratorio",
+   "petri"
+  ],
+  "fuente": "libre",
+  "h": 425,
+  "w": 1024
  }
 }
