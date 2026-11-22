@@ -1,4 +1,18 @@
 {
+ "lb-0a0706bcf7": {
+  "archivo": "libres/espacio/saturn-rings-ov1.jpg",
+  "categoria": "espacio",
+  "consulta": "Saturn rings",
+  "credito": "A Long Night Falls Over Saturn's Rings — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/4046388535",
+  "etiquetas": [
+   "espacio",
+   "rings",
+   "saturn"
+  ],
+  "fuente": "libre",
+  "h": 545,
+  "w": 1024
+ },
  "lb-167366e3fd": {
   "archivo": "libres/espacio/nebula-ov2.jpg",
   "categoria": "espacio",
@@ -11,6 +25,20 @@
   "fuente": "libre",
   "h": 1024,
   "w": 1003
+ },
+ "lb-1d11e76315": {
+  "archivo": "libres/espacio/solar-eclipse-ov2.jpg",
+  "categoria": "espacio",
+  "consulta": "Solar eclipse",
+  "credito": "annular solar eclipse — kubotake — CC BY 2.0 — https://www.flickr.com/photos/40802894@N02/7237434096",
+  "etiquetas": [
+   "eclipse",
+   "espacio",
+   "solar"
+  ],
+  "fuente": "libre",
+  "h": 678,
+  "w": 1024
  },
  "lb-27ba886e1e": {
   "archivo": "libres/espacio/galaxy-hubble-2.jpg",
@@ -25,6 +53,48 @@
   "fuente": "libre",
   "h": 663,
   "w": 1280
+ },
+ "lb-28d069697c": {
+  "archivo": "libres/espacio/solar-eclipse-1.jpg",
+  "categoria": "espacio",
+  "consulta": "Solar eclipse",
+  "credito": "Solar eclipse 1999 4.jpg — Luc Viatour — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Solar_eclipse_1999_4.jpg",
+  "etiquetas": [
+   "eclipse",
+   "espacio",
+   "solar"
+  ],
+  "fuente": "libre",
+  "h": 1261,
+  "w": 1280
+ },
+ "lb-3700e60e7a": {
+  "archivo": "libres/espacio/solar-eclipse-2.jpg",
+  "categoria": "espacio",
+  "consulta": "Solar eclipse",
+  "credito": "Solar eclips 1999 5.jpg — Luc Viatour — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Solar_eclips_1999_5.jpg",
+  "etiquetas": [
+   "eclipse",
+   "espacio",
+   "solar"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1280
+ },
+ "lb-457f960fa0": {
+  "archivo": "libres/espacio/saturn-rings-ov2.jpg",
+  "categoria": "espacio",
+  "consulta": "Saturn rings",
+  "credito": "Saturn's Rings, Mimas, Epimetheus - November 06 2007 — Kevin M. Gill — CC BY 2.0 — https://www.flickr.com/photos/53460575@N03/50320373246",
+  "etiquetas": [
+   "espacio",
+   "rings",
+   "saturn"
+  ],
+  "fuente": "libre",
+  "h": 1008,
+  "w": 1006
  },
  "lb-45a1543bb2": {
   "archivo": "libres/espacio/rocket-launch-ov1.jpg",
@@ -54,6 +124,20 @@
   "h": 685,
   "w": 1023
  },
+ "lb-4c6aa29d3a": {
+  "archivo": "libres/espacio/solar-eclipse-ov1.jpg",
+  "categoria": "espacio",
+  "consulta": "Solar eclipse",
+  "credito": "solar-eclipse-20.03.2015(1) — uk_heritage — CC BY 2.0 — https://www.flickr.com/photos/129925844@N07/16685163029",
+  "etiquetas": [
+   "eclipse",
+   "espacio",
+   "solar"
+  ],
+  "fuente": "libre",
+  "h": 683,
+  "w": 1024
+ },
  "lb-5f1f080382": {
   "archivo": "libres/espacio/astronaut-spacewalk-1.jpg",
   "categoria": "espacio",
@@ -66,6 +150,20 @@
   ],
   "fuente": "libre",
   "h": 844,
+  "w": 1280
+ },
+ "lb-6218a6c767": {
+  "archivo": "libres/espacio/saturn-rings-2.jpg",
+  "categoria": "espacio",
+  "consulta": "Saturn rings",
+  "credito": "Saturn's rings in visible light and radio.jpg — NASA / JPL / Space Science Institute — Public domain — https://commons.wikimedia.org/wiki/File:Saturn%27s_rings_in_visible_light_and_radio.jpg",
+  "etiquetas": [
+   "espacio",
+   "rings",
+   "saturn"
+  ],
+  "fuente": "libre",
+  "h": 191,
   "w": 1280
  },
  "lb-7e7c5c6d24": {
@@ -123,6 +221,21 @@
   "fuente": "libre",
   "h": 1280,
   "w": 1052
+ },
+ "lb-a808ba1efa": {
+  "archivo": "libres/espacio/international-space-station-2.jpg",
+  "categoria": "espacio",
+  "consulta": "International Space Station",
+  "credito": "STS-134 International Space Station after undocking.jpg — NASA — Public domain — https://commons.wikimedia.org/wiki/File:STS-134_International_Space_Station_after_undocking.jpg",
+  "etiquetas": [
+   "espacio",
+   "international",
+   "space",
+   "station"
+  ],
+  "fuente": "libre",
+  "h": 850,
+  "w": 1280
  },
  "lb-aac7ec6b55": {
   "archivo": "libres/espacio/galaxy-hubble-1.jpg",
@@ -248,6 +361,20 @@
   "h": 720,
   "w": 1280
  },
+ "lb-e42845ca81": {
+  "archivo": "libres/espacio/saturn-rings-1.jpg",
+  "categoria": "espacio",
+  "consulta": "Saturn rings",
+  "credito": "Top view of the rings of Saturn by Cassini - October 10, 2013.jpg — NASA/JPL-Caltech/SSI/Cornell — Public domain — https://commons.wikimedia.org/wiki/File:Top_view_of_the_rings_of_Saturn_by_Cassini_-_October_10,_2013.jpg",
+  "etiquetas": [
+   "espacio",
+   "rings",
+   "saturn"
+  ],
+  "fuente": "libre",
+  "h": 960,
+  "w": 1280
+ },
  "lb-e7da33adf5": {
   "archivo": "libres/espacio/earth-from-space-1.jpg",
   "categoria": "espacio",
@@ -276,5 +403,20 @@
   "fuente": "libre",
   "h": 1024,
   "w": 920
+ },
+ "lb-f135a6b37a": {
+  "archivo": "libres/espacio/international-space-station-1.jpg",
+  "categoria": "espacio",
+  "consulta": "International Space Station",
+  "credito": "Dramatic Views of Hurricane Florence from the International Space Station From 9 12 (42828603210) (cropped).jpg — NASA/Goddard Space Flight Center — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Dramatic_Views_of_Hurricane_Florence_from_the_International_Space_Station_From_9_12_(42828603210)_(cropped).jpg",
+  "etiquetas": [
+   "espacio",
+   "international",
+   "space",
+   "station"
+  ],
+  "fuente": "libre",
+  "h": 876,
+  "w": 1280
  }
 }
