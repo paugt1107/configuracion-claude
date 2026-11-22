@@ -55,11 +55,14 @@ jobs:
         timeout-minutes: 130
         continue-on-error: true
         run: |
+          # guarda en git cada 5 min (si la máquina se corta, lo bajado no se pierde)
+          ( while true; do sleep 300; /tmp/guardar.sh "temas ${{ matrix.parte }} (parcial)" || true; done ) &
           python3 -m clipfactory.banco libres --cat "${{ github.event.inputs.temas }}" --n "${{ github.event.inputs.n }}" \
             --lado 1280 --parte ${{ matrix.parte }} --partes 8 --max 400
           /tmp/guardar.sh "temas ${{ matrix.parte }}" || true
           [ -n "${{ github.event.inputs.extra }}" ] && python3 -m clipfactory.banco libres --cat "${{ github.event.inputs.extra }}" \
             --n "${{ github.event.inputs.n_extra }}" --lado 1280 --parte ${{ matrix.parte }} --partes 8 --max 300 || true
+          kill %1 2>/dev/null || true
       - run: /tmp/guardar.sh "libres ${{ matrix.parte }}"
         if: always()
 
