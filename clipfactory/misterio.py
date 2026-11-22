@@ -98,18 +98,17 @@ def plan(spans: list[dict], words: list[dict], styles: list[str], total: float) 
         golpes.append((words[0]["start"], GOLPE_GANCHO))
     # golpes suaves en datos y nombres propios, sin pisar las revelaciones ni amontonarse
     ultimo = -99.0
-    for w in words[1:]:
-        txt = re.sub(r"[^\wáéíóúñÁÉÍÓÚÑ]", "", w["text"])
-        if not txt:
-            continue
-        es_dato = bool(NUMERO.match(txt)) or (txt[0].isupper() and len(txt) > 3)
-        if not es_dato or w["start"] - ultimo < SEPARACION_GOLPES:
+    from . import captions, numeros
+
+    cifras = numeros.a_cifras(words)  # "trescientos millones" → "300 millones": también cuentan como dato
+    for k, w in enumerate(cifras):
+        if k == 0 or not captions.es_clave(cifras, k) or w["start"] - ultimo < SEPARACION_GOLPES:
             continue
         if any(abs(w["start"] - r) < 1.2 for r in revelaciones) or any(a <= w["start"] < b for a, b in empujes):
             continue
         golpes.append((w["start"], GOLPE_DATO))
         ultimo = w["start"]
-        if len(golpes) >= 10:
+        if len(golpes) >= 14:
             break
     return {"golpes": sorted(golpes), "empujes": empujes, "silencios": silencios, "cues": cues, "total": total}
 

@@ -342,7 +342,7 @@ export function etiquetas(lista, anclas, cam, S) {
       const x = (v.x * 0.5 + 0.5) * 1080, y = (-v.y * 0.5 + 0.5) * 1920;
       const k = eob((t - e.t0) / 0.35);
       e.d.style.left = `${Math.min(1080 - 40 - e.d.offsetWidth, Math.max(40, x - 40))}px`;
-      e.d.style.top = `${Math.max(420, y - e.d.offsetHeight - 30)}px`;
+      e.d.style.top = `${Math.min(1000, Math.max(420, y - e.d.offsetHeight - 30))}px`; // zona segura: lejos de subtítulos y botones
       e.d.style.opacity = clamp((t - e.t0) / 0.15);
       e.d.style.transform = `scale(${Math.max(0.001, k)})`;
     }

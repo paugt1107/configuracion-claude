@@ -5,6 +5,8 @@ Zona segura: se evita el 20 % superior y el 25 % inferior (UI de Shorts/TikTok).
 
 from __future__ import annotations
 
+import re
+
 PUNCT_END = (".", "?", "!", "…", ":", ";")
 
 
@@ -40,6 +42,22 @@ def chunk_words(words: list[dict], max_words: int = 3, max_gap: float = 0.6) -> 
     return chunks
 
 
+def es_clave(words: list[dict], i: int) -> bool:
+    """Palabra que merece golpe de escala y de zoom: cifras, nombres propios (no al empezar frase) y palabras con peso."""
+    txt = re.sub(r"[^\wáéíóúñÁÉÍÓÚÑ%]", "", words[i]["text"])
+    if not txt:
+        return False
+    if re.search(r"\d", txt):
+        return True
+    inicio = i == 0 or re.search(r"[.?!…¿¡]\W*$", words[i - 1]["text"]) is not None or words[i - 1]["text"].lstrip().startswith(("¿", "¡"))
+    if txt[0].isupper() and len(txt) > 3 and not inicio:
+        return True
+    return txt.lower() in PESO
+
+
+PESO = {"nunca", "siempre", "gratis", "secreto", "secretos", "primero", "primera", "mentira", "verdad", "cuidado", "ojo", "mil", "millones", "imposible", "único", "única", "nadie", "todo", "todos"}
+
+
 def build_ass(
     words: list[dict],
     width: int = 1080,
@@ -65,13 +83,18 @@ def build_ass(
         f"Style: Cap,{font},{size},{base},{active},&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,7,2,2,90,90,{margin_v},1\n\n"
         "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n"
     )
+    words = [{**w, "clave": es_clave(words, k)} for k, w in enumerate(words)]
     events = []
     for chunk in chunk_words(words, max_words=max_words):
         texts = [_escape(w["text"].upper() if uppercase else w["text"]) for w in chunk]
         for i, w in enumerate(chunk):
+            clave = pop and w.get("clave")
             start = w["start"]
             end = chunk[i + 1]["start"] if i + 1 < len(chunk) else max(w["end"], start + 0.05)
-            on = f"{{\\c{active}\\fscx122\\fscy122\\t(0,110,\\fscx100\\fscy100)}}" if pop else f"{{\\c{active}}}"
+            if clave:  # palabra clave: golpe grande con rebote, en dorado
+                on = "{\\c&H4BC2FF&\\fscx165\\fscy165\\t(0,90,\\fscx92\\fscy92)\\t(90,200,\\fscx100\\fscy100)}"
+            else:
+                on = f"{{\\c{active}\\fscx122\\fscy122\\t(0,110,\\fscx100\\fscy100)}}" if pop else f"{{\\c{active}}}"
             parts = [f"{on}{t}{{\\c{base}\\fscx100\\fscy100}}" if j == i else t for j, t in enumerate(texts)]
             events.append(f"Dialogue: 0,{_ass_time(start)},{_ass_time(end)},Cap,,0,0,0,,{' '.join(parts)}")
     return header + "\n".join(events) + "\n"

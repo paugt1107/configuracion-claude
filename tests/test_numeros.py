@@ -23,3 +23,12 @@ def test_cifras_en_subtitulos():
 def test_tiempos_unidos():
     w = numeros.a_cifras(_w("son cuarenta y cinco DVD"))
     assert w[1]["text"] == "45" and w[1]["start"] == 1 and w[1]["end"] == 3.5
+
+
+def test_palabras_clave_para_subtitulos():
+    from clipfactory import captions
+
+    w = [{"text": t, "start": i * 0.4, "end": i * 0.4 + 0.3} for i, t in enumerate("¿Sabías que Sheffield halló 300 millones? Nunca fue casual.".split())]
+    claves = [x["text"] for k, x in enumerate(w) if captions.es_clave(w, k)]
+    assert "Sheffield" in claves and "300" in claves and "Nunca" in claves
+    assert "Sabías" not in claves and "fue" not in claves

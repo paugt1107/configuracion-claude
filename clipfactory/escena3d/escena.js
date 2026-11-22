@@ -231,7 +231,7 @@ if (T === "numero" || T === "texto") {
         const dentro = px > 0.04 && px < 0.96 && py > 0.04 && py < 0.96;
         v.set((px - 0.5) * w, (py - 0.5) * hh, 0.05); pic.localToWorld(v); v.project(cam);
         const X = (v.x * 0.5 + 0.5) * 1080, Y = (-v.y * 0.5 + 0.5) * 1920, a = easeOutBack((t - o.t0) / 0.4), vis = dentro && t >= o.t0 ? 1 : 0;
-        const der = (o.n.lado || (px < 0.5 ? "der" : "izq")) === "der", LX = der ? X + 150 : X - 150, LY = Y + (o.n.dy ?? -130);
+        const der = (o.n.lado || (px < 0.5 ? "der" : "izq")) === "der", LX = der ? X + 150 : X - 150, LY = Math.min(1000, Y + (o.n.dy ?? -130));
         o.ring.style.left = `${X}px`; o.ring.style.top = `${Y}px`; o.ring.style.opacity = vis; o.ring.style.transform = `scale(${Math.max(0.001, a) * (1 + 0.06 * Math.sin(t * 8))})`;
         const dx = LX - X, dy = LY - Y, L = Math.hypot(dx, dy) - 55;
         o.lin.style.left = `${X}px`; o.lin.style.top = `${Y}px`; o.lin.style.opacity = vis; o.lin.style.width = `${Math.max(0, L) * Math.min(1, a)}px`; o.lin.style.transform = `rotate(${Math.atan2(dy, dx)}rad) translateX(55px)`;
