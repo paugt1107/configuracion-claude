@@ -1,0 +1,48 @@
+id: S007
+formato: sabias-que
+juego: ninguno
+estilo: foto
+titulos:
+  - "¿Huevo o gallina? La ciencia ya tiene respuesta"
+  - "Qué fue antes, el huevo o la gallina (de verdad)"
+  - "El huevo existía 300 millones de años antes que la gallina"
+portada:
+  texto: "¿HUEVO O GALLINA?"
+  kind: dato
+  grande: "?"
+descripcion: "Los huevos existen desde hace más de 300 millones de años; los restos de gallina doméstica más antiguos conocidos tienen unos 3.500 años. Y el primer huevo de gallina lo puso un ave casi gallina (razonamiento evolutivo habitual, no un estudio concreto)."
+fuentes:
+  - "Peters et al., PNAS 2022 — restos de gallina doméstica en Ban Non Wat (Tailandia), c. 1650-1250 a. C."
+  - "Wang et al., Cell Research 2020 — la gallina doméstica procede del gallo bankiva (Gallus gallus spadiceus)"
+  - "Smithsonian, 2019 — primeros amniotas (huevo amniótico) hace c. 315 millones de años (Joggins, Nova Scotia)"
+  - "Stein et al., Scientific Reports 2019 / Natural History Museum 2020 — huevos de dinosaurio más antiguos, c. 195-190 millones de años"
+  - "Universidad de Warwick, 2010 — proteína ovocleidina-17 y la cáscara (titular mediático, matizado por los propios autores)"
+comentario: "¿Huevo o gallina? Tú votas 👇"
+hashtags: ["#curiosidades", "#ciencia"]
+musica: true
+escenas:
+  - texto: "¿Sabías que el huevo existía trescientos millones de años antes que la gallina? Te lo demuestro."
+    tarjeta: {kind: 3d, tipo: foto, estilo: lleno, libre: ["chicken egg", "hen with egg"], texto: "huevo", alt: {tipo: texto, texto: "¿HUEVO O GALLINA?", color: gold}}
+  - texto: "Los primeros animales con huevo propio aparecieron hace más de trescientos millones de años."
+    tarjeta: {kind: 3d, tipo: numero, texto: "+300 M", titulo: "AÑOS DE HUEVOS", color: gold}
+  - texto: "Los dinosaurios ya los ponían hace unos ciento noventa y cinco millones."
+    tarjeta: {kind: 3d, tipo: foto, estilo: inclinada, libre: ["dinosaur egg fossil", "Massospondylus egg"], dibujo: comic, alt: {tipo: numero, texto: "195 M", color: orange}}
+  - texto: "¿Y la gallina doméstica? Sus restos más antiguos tienen unos tres mil quinientos años."
+    tarjeta: {kind: 3d, tipo: numero, texto: "3.500", titulo: "AÑOS DE GALLINA", color: cyan}
+  - texto: "Viene del gallo bankiva, un ave salvaje del sudeste asiático."
+    tarjeta: {kind: 3d, tipo: foto, estilo: giro, libre: ["red junglefowl rooster", "Gallus gallus"], alt: {tipo: texto, texto: "GALLO BANKIVA", color: orange}}
+  - texto: "Pero ojo, que aquí viene el truco…"
+    pausa: true
+    tarjeta: {kind: 3d, tipo: orbe, titulo: "¿EL TRUCO?", color: magenta}
+  - texto: "El primer huevo de gallina lo puso un ave casi gallina."
+    tarjeta: {kind: 3d, tipo: foto, estilo: lleno, libre: ["eggshell", "egg cracked"], dibujo: neon, alt: {tipo: bombilla, texto: "CASI GALLINA"}}
+  - texto: "Dentro, por pequeñas mutaciones, nació la primera gallina de la historia."
+    tarjeta: {kind: 3d, tipo: foto, estilo: inclinada, libre: ["chick hatching", "newborn chick"], alt: {tipo: corazon, texto: "LA PRIMERA"}}
+  - texto: "Así que el huevo fue primero."
+    tarjeta: {kind: 3d, tipo: texto, texto: "EL HUEVO", titulo: "RESPUESTA", color: gold}
+  - texto: "En dos mil diez, Sheffield y Warwick hallaron una proteína de gallina clave para la cáscara."
+    tarjeta: {kind: 3d, tipo: foto, estilo: giro, libre: ["University of Sheffield", "laboratory microscope"], alt: {tipo: bombilla, texto: "PROTEÍNA"}}
+  - texto: "Dijeron que fue antes la gallina, pero otros científicos lo matizaron."
+    tarjeta: {kind: 3d, tipo: versus, texto: "HUEVO|GALLINA", color: magenta}
+  - texto: "¿Tú qué dices, huevo o gallina? Te leo en comentarios."
+    tarjeta: {kind: 3d, tipo: texto, texto: "¿HUEVO O GALLINA?", titulo: "VOTA", color: orange}
