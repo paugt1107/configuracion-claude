@@ -18,6 +18,7 @@ Fuentes:
 - Stein et al., Scientific Reports 2019 / Natural History Museum 2020 — huevos de dinosaurio más antiguos, c. 195-190 millones de años
 - Universidad de Warwick, 2010 — proteína ovocleidina-17 y la cáscara (titular mediático, matizado por los propios autores)
 Música: "The Complex" Kevin MacLeod (incompetech.com) · Licencia Creative Commons: By Attribution 4.0 · http://creativecommons.org/licenses/by/4.0/
+Imagen: Fossil Dinosaur Eggs - Troodontid Eggs.jpg — Gary Todd — CC0 — https://commons.wikimedia.org/wiki/File:Fossil_Dinosaur_Eggs_-_Troodontid_Eggs.jpg
 Imagen: Junglefowl on tree.jpg — Philip Pikart — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Junglefowl_on_tree.jpg
 Voz generada con IA.
 #curiosidades #ciencia #sabiasque #shorts
