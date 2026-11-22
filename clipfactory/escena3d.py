@@ -6,6 +6,11 @@ Tarjeta del guion:  {kind: 3d, tipo: numero|texto|orbe|moneda|estrellas|billetes
   diorama = maqueta low-poly con etiquetas en secuencia: {tipo: diorama, preset: consola|discos|almacen|red|isla|mapa_pin|gallina|huevos|dino|nacer|podio|pila|trio|cesta,
     foto con notas (a pantalla completa en vertical): {tipo: foto, imagen|libre, foco: {x, y}, zoom: 1.8, notas: [{texto, x, y (0-1 sobre la foto), t}]} = zoom al detalle + anillo con etiqueta,
     cielo: dia|noche, n, progreso, etiquetas: [{titulo: "NACE", texto: "En una central", icono: "⚡"}, …]}.
+  mundo = UN mundo continuo para todo el vídeo (escena3d/mundo.js): cada escena del guion es una parada
+    {kind: 3d, tipo: mundo, zona: intro|primeros|dinos|dinos_noche|selva|granja|truco|pone|nace|podio|lab|matiz|final,
+     etiquetas: [{titulo, texto, icono, ancla}], foto: {id, nota, desde}, camara: {az, dist, alt, look, orbit, push}}
+    y el guion lleva `mundo: {fotos: {id: {imagen|libre, foco, x, y}}, galeria: [{imagen, pie}]}` (fotos → dibujo cartoon).
+    short_job funde las paradas seguidas en un solo clip y la cámara viaja de una a otra sin cortes (ver S007).
   bombilla = se enciende; corazon = late y suelta cruces de curación; foto = imagen: media/oficial/x.jpg flotando en 3D
   sobre la misma foto desenfocada (si falta el archivo, usa `alt`: otra escena 3D). Renderiza fotograma a fotograma (tiempo exacto), ~0,3 s por fotograma.
 Necesita node + playwright (en Actions se instalan solos). Si falta, la escena cae a una tarjeta plana equivalente.

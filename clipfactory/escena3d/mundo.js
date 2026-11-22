@@ -275,7 +275,7 @@ export async function crear(S, ctx) {
     colocar(F.gallinero(), x + 2.0, z - 1.4, -0.4);
     for (const [dx, dz, r] of [[-3.0, 1.5, Math.PI / 2], [0, 3.3, 0], [3.2, 1.5, Math.PI / 2]]) colocar(F.valla(3.4), x + dx, z + dz, r);
     for (let i = 0; i < 4; i++) colocar(F.pacaHeno(), x - 3.6 + (i % 2) * 0.7, z - 0.6 + Math.floor(i / 2) * 0.75, 0.2 * i);
-    const colores = [F.COL.blanco, 0xc0743a, 0x8a4a28, F.COL.blanco, 0xd9a066, 0x2a2a30, F.COL.blanco];
+    const colores = [F.COL.blanco, 0xc0743a, 0x8a4a28, F.COL.blanco, 0xd9a066, 0x2a2a30];
     const gs = colores.map((c, i) => { const a = F.gallina(c, 0.82 + (i % 3) * 0.06); scene.add(a.g); return a; });
     const pols = Array.from({ length: 5 }, () => { const p = F.pollito(0.7); scene.add(p.g); return p; });
     const cesta = new THREE.Group(); const cj = F.cil(0.32, 0.26, 0.26, 0xa8703a, 16); cj.position.y = 0.13; cesta.add(cj);
@@ -284,7 +284,7 @@ export async function crear(S, ctx) {
     hito("granja", ["HACE 3.500", "AÑOS"], -2.6, 2.6, 0.5);
     anim.push((t) => {
       gs.forEach((a, i) => {
-        const r = 0.8 + (i % 3) * 0.55, v = 0.16 + (i % 2) * 0.05, u = t * v * (i % 2 ? 1 : -1) + i * 0.9;
+        const r = 0.55 + i * 0.42, v = 0.2 / (1 + i * 0.25), u = t * v * (i % 2 ? 1 : -1) + i * 0.9; // un anillo por gallina: no se atraviesan
         const px = x + 0.2 + Math.cos(u) * r * 1.3, pz = z + 0.6 + Math.sin(u) * r * 0.8;
         a.g.position.set(px, altura(px, pz), pz); a.g.rotation.y = -u + (i % 2 ? -Math.PI / 2 : Math.PI / 2);
         const anda = Math.sin(t * 0.7 + i) > -0.2; a.anim(t, { anda: anda ? 0.55 : 0, pica: anda ? 0.2 : 1, fase: i * 1.3 });
@@ -323,8 +323,8 @@ export async function crear(S, ctx) {
       const sentada = clamp(kPone / 0.25) * (1 - clamp((kPone - 0.6) / 0.25));
       const aparta = clamp((kPone - 0.6) / 0.4);
       const ax = x + 0.15 - 0.15 + lerp(0, -1.0, eo(aparta)) + lerp(-1.2, 0, eo(clamp(tr.tl / tr.d))), az = z + 0.2 + lerp(0, 0.2, aparta);
-      ave.g.position.set(ax, yN - 0.18 * sentada + (sentada > 0.5 ? 0.12 : 0), az); ave.g.rotation.y = lerp(0.3, 1.0, aparta);
-      ave.anim(t, { anda: tr.dentro && tr.k < 0.95 ? 0.5 : aparta > 0 && aparta < 1 ? 0.6 : 0, pica: 0.1, mira: aparta >= 1 ? 0.8 : 0.2 * Math.sin(t), aletea: clamp(1 - Math.abs(po.k - 0.62) / 0.12), canta: clamp(1 - Math.abs(na.tl - 1.3) / 0.5) });
+      ave.g.position.set(ax, yN + 0.12 * sentada, az); ave.g.rotation.y = lerp(0.3, 1.0, aparta);
+      ave.anim(t, { sentada: eo(sentada), anda: tr.dentro && tr.k < 0.95 ? 0.5 : aparta > 0 && aparta < 1 ? 0.6 : 0, pica: 0.1, mira: aparta >= 1 ? 0.8 : 0.2 * Math.sin(t), aletea: clamp(1 - Math.abs(po.k - 0.62) / 0.12), canta: clamp(1 - Math.abs(na.tl - 1.3) / 0.5) });
       // el huevo aparece al levantarse el ave
       const ve = clamp((po.k - 0.55) / 0.1);
       hv.g.visible = ve > 0; hv.g.position.set(x + 0.15, yN + 0.02, z + 0.2); hv.g.scale.setScalar(Math.max(0.001, eob(ve)));
@@ -455,6 +455,32 @@ export async function crear(S, ctx) {
     }
   }
 
+  // ---------- bandada de pájaros a lo lejos y mariposas: siempre pasa algo en el aire
+  const bandada = Array.from({ length: 9 }, (_, i) => {
+    const g = new THREE.Group(), m = F.mat(0x2a2a35);
+    const alas = [-1, 1].map((s) => { const a = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.015, 0.1), m); a.geometry.translate(0.17 * s, 0, 0); g.add(a); return { a, s }; });
+    g.add(new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.05, 0.2), m)); scene.add(g);
+    return { g, alas, i };
+  });
+  const mariposas = Array.from({ length: 10 }, (_, i) => {
+    const g = new THREE.Group(), c = [0xffd23a, 0xff6fa5, 0x7ad8ff, 0xffffff][i % 4];
+    const alas = [-1, 1].map((s) => { const a = new THREE.Mesh(new THREE.CircleGeometry(0.07, 8), F.mat(c, { side: THREE.DoubleSide, emissive: c, emissiveIntensity: 0.2 })); a.geometry.translate(0.07 * s, 0, 0); a.rotation.x = -Math.PI / 2; const p = new THREE.Group(); p.add(a); g.add(p); return { p, s }; });
+    scene.add(g); return { g, alas, i, sitio: ["granja", "intro", "selva", "matiz", "final"][i % 5] };
+  });
+  anim.push((t) => {
+    const c = cam.position;
+    bandada.forEach(({ g, alas, i }) => {
+      const u = ((t * 0.035 + 0.13) % 1);
+      g.position.set(c.x - 14 + u * 28 + (i % 3) * 0.6, 7.5 + Math.sin(i * 1.7) * 0.6 + (i % 3) * 0.3 + Math.sin(t + i) * 0.15, c.z - 16 - Math.floor(i / 3) * 0.7 - (i % 3) * 0.5);
+      g.rotation.y = -Math.PI / 2; alas.forEach(({ a, s }) => { a.rotation.z = s * Math.sin(t * 9 + i) * 0.6; });
+    });
+    mariposas.forEach(({ g, alas, i, sitio: n }) => {
+      const [sx, sz] = SITIOS[n], a = t * 0.6 + i * 2.1, px = sx + Math.cos(a) * (1.6 + (i % 3) * 0.5), pz = sz + 1.2 + Math.sin(a * 1.3) * 1.2;
+      g.position.set(px, altura(px, pz) + 0.7 + Math.sin(t * 2.3 + i) * 0.25, pz); g.rotation.y = -a;
+      alas.forEach(({ p, s }) => { p.rotation.z = s * (0.3 + Math.abs(Math.sin(t * 14 + i)) * 1.0); });
+    });
+  });
+
   // ---------- polen/polvo en el aire (da profundidad)
   const polvo = (() => { const n = 260, p = new Float32Array(n * 3); for (let i = 0; i < n; i++) p.set([(rnd() - 0.5) * 16, rnd() * 5, (rnd() - 0.5) * 16], i * 3); const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.BufferAttribute(p, 3)); const m = new THREE.Points(g, new THREE.PointsMaterial({ size: 0.035, map: ctx.GLOW, color: 0xffffff, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending, depthWrite: false })); scene.add(m); return { m, p0: p.slice() }; })();
 
@@ -487,14 +513,16 @@ export async function crear(S, ctx) {
   }
   function vuelo(a, b, k) {
     const dist = a.pos.distanceTo(b.pos), arco = Math.sin(Math.PI * k) * Math.min(3.2, dist * 0.18);
-    return { pos: a.pos.clone().lerp(b.pos, k).add(new THREE.Vector3(0, arco, 0)), look: a.look.clone().lerp(b.look, k) };
+    // en pleno vuelo la mirada también sube y se adelanta un poco: se ve el paisaje y hacia dónde vamos, no solo el suelo
+    const adelante = b.look.clone().sub(a.look).setY(0).multiplyScalar(0.25 * Math.sin(Math.PI * k));
+    return { pos: a.pos.clone().lerp(b.pos, k).add(new THREE.Vector3(0, arco, 0)), look: a.look.clone().lerp(b.look, k).add(adelante).add(new THREE.Vector3(0, arco * 0.75, 0)) };
   }
   // duración de cada transición según la distancia (más lejos = vuelo más largo), sin comerse las frases cortas
   const trans = paradas.map((_, i) => {
     if (i === 0) return { a: 0, b: 0 };
     const dPrev = hitos[i] - hitos[i - 1], dAct = finDe(i) - hitos[i];
-    const L = clamp(0.9 + pose(i - 1, dPrev).pos.distanceTo(pose(i, 0).pos) * 0.07, 1.0, 2.1);
-    return { a: Math.min(L * 0.5, dPrev * 0.45), b: Math.min(L * 0.5, dAct * 0.5) };
+    const L = clamp(0.8 + pose(i - 1, dPrev).pos.distanceTo(pose(i, 0).pos) * 0.05, 0.9, 1.7);
+    return { a: Math.min(L * 0.45, dPrev * 0.3), b: Math.min(L * 0.55, dAct * 0.35) }; // cada frase conserva su plano quieto
   });
   function camara(t) {
     let i = 0; while (i + 1 < N && t >= hitos[i + 1]) i++;

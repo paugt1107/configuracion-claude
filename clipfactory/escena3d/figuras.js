@@ -130,8 +130,9 @@ export function ave(op = {}) {
   // estado: {anda: velocidad de paso (0 = quieto), pica: 0-1, fase, mira: giro de cabeza, aletea: 0-1, canta: 0-1}
   const anim = (t, e = {}) => {
     const f = e.fase || 0, paso = e.anda ? t * 7 * e.anda + f : 0;
-    patas.forEach((p, i) => { p.rotation.z = e.anda ? Math.sin(paso + i * Math.PI) * 0.55 : 0; });
-    cuerpo.position.y = e.anda ? Math.abs(Math.sin(paso)) * 0.03 : Math.sin(t * 2.2 + f) * 0.008;
+    const sen = e.sentada || 0; // echada sobre el nido: patas recogidas y cuerpo abajo
+    patas.forEach((p, i) => { p.rotation.z = e.anda ? Math.sin(paso + i * Math.PI) * 0.55 : 0; p.scale.y = 1 - 0.8 * sen; p.position.y = 0.42 - 0.3 * sen; });
+    cuerpo.position.y = (e.anda ? Math.abs(Math.sin(paso)) * 0.03 : Math.sin(t * 2.2 + f) * 0.008) - 0.3 * sen;
     // picoteo: bajadas rápidas cada ~1,6 s
     const ciclo = ((t * 0.62 + f * 0.13) % 1), pic = (e.pica || 0) * (ciclo < 0.32 ? Math.sin((ciclo / 0.32) * Math.PI) : 0);
     const canto = e.canta || 0;

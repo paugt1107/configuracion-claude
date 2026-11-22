@@ -190,6 +190,11 @@ def produce(spec_path: str | Path, provider: str = "auto", out_root: str | Path 
     estilos = misterio.estilos(lines, escenas) if con_misterio else None
     v = voice.produce(lines, work, provider=provider, styles=estilos)
     spans = v["lines"]
+    import shutil
+
+    for nombre in ("voz.lines.json", "voz.words.json"):  # tiempos reales de la voz (para revisar y ensayar en local)
+        if (work / nombre).exists():
+            shutil.copy2(work / nombre, out_dir / nombre)
     starts = [0.0] + [s["start"] - 0.08 for s in spans[1:]]
     end = spans[-1]["end"] + 0.6
     scenes, creditos_fotos, usadas = [], [], set()

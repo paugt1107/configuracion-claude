@@ -37,3 +37,8 @@ def test_palabras_clave_para_subtitulos():
 def test_millones_redondos_se_leen_con_palabra():
     ws = [{"text": t, "start": i, "end": i + 0.5} for i, t in enumerate(["hace", "trescientos", "millones", "de", "años"])]
     assert [w["text"] for w in numeros.a_cifras(ws)] == ["hace", "300 millones", "de", "años"]
+
+
+def test_miles_con_punto_pero_anios_sin_punto():
+    assert _txt("unos tres mil quinientos años") == "unos 3.500 años"
+    assert _txt("en dos mil diez") == "en 2010"

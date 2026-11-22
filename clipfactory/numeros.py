@@ -81,7 +81,8 @@ def a_cifras(words: list[dict]) -> list[dict]:
                 m = valor // 1_000_000
                 txt = f"{m:,}".replace(",", ".") + (" millón" if m == 1 else " millones")
             else:
-                txt = f"{valor:,}".replace(",", ".") if valor >= 10000 else str(valor)
+                anio = 1900 <= valor <= 2100 or (i > 0 and norm[i - 1] in ("en", "ano", "del", "desde", "hasta"))
+                txt = f"{valor:,}".replace(",", ".") if valor >= 10000 or (valor >= 1000 and not anio) else str(valor)
             fin = i + k
             if fin + 1 < len(words) and norm[fin] == "por" and norm[fin + 1] == "ciento":  # 58 por ciento → 58 %
                 txt += " %"
