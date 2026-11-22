@@ -42,6 +42,36 @@
   "h": 448,
   "w": 1280
  },
+ "lb-1c0103cfe7": {
+  "archivo": "libres/ciudades/mexico-city-zocalo-1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Mexico City Zocalo",
+  "credito": "Monumental Flag, Zocalo, Mexico 20250907 p1.jpg — Cvmontuy — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Monumental_Flag,_Zocalo,_Mexico_20250907_p1.jpg",
+  "etiquetas": [
+   "city",
+   "ciudades",
+   "mexico",
+   "zocalo"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 768
+ },
+ "lb-21583208e1": {
+  "archivo": "libres/ciudades/mexico-city-zocalo-ov1.jpg",
+  "categoria": "ciudades",
+  "consulta": "Mexico City Zocalo",
+  "credito": "Mexico City Zocalo, 1900 — -Chupacabras- — CC BY-SA 2.0 — https://www.flickr.com/photos/25222005@N08/2663326668",
+  "etiquetas": [
+   "city",
+   "ciudades",
+   "mexico",
+   "zocalo"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-25f03ba530": {
   "archivo": "libres/ciudades/tokyo-street-night-2.jpg",
   "categoria": "ciudades",
@@ -147,6 +177,21 @@
   "h": 640,
   "w": 1280
  },
+ "lb-814eb89a6c": {
+  "archivo": "libres/ciudades/mexico-city-zocalo-2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Mexico City Zocalo",
+  "credito": "Plaza de la Constitución - Zócalo de la Ciudad de México - 6.jpg — ProtoplasmaKid — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_6.jpg",
+  "etiquetas": [
+   "city",
+   "ciudades",
+   "mexico",
+   "zocalo"
+  ],
+  "fuente": "libre",
+  "h": 720,
+  "w": 1280
+ },
  "lb-8e30a3c488": {
   "archivo": "libres/ciudades/tokyo-street-night-ov1.jpg",
   "categoria": "ciudades",
@@ -176,6 +221,21 @@
   "fuente": "libre",
   "h": 1280,
   "w": 853
+ },
+ "lb-b7fa1fe1c1": {
+  "archivo": "libres/ciudades/mexico-city-zocalo-ov2.jpg",
+  "categoria": "ciudades",
+  "consulta": "Mexico City Zocalo",
+  "credito": "Mexico City Zocalo, 1821 — -Chupacabras- — CC BY-SA 2.0 — https://www.flickr.com/photos/25222005@N08/2662489775",
+  "etiquetas": [
+   "city",
+   "ciudades",
+   "mexico",
+   "zocalo"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
  },
  "lb-bfbcef26c5": {
   "archivo": "libres/ciudades/barcelona-sagrada-familia-2.jpg",
