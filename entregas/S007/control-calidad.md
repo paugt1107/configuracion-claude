@@ -3,7 +3,7 @@
 - ✅ Formato vertical 1080x1920 (1080x1920)
 - ✅ Duración 15-60 s (43.5 s)
 - ✅ Tiene audio
-- ✅ Volumen ≈ -14 LUFS (-14.9)
+- ✅ Volumen ≈ -14 LUFS (-14.8)
 - ✅ Sin pantallas negras (0)
 - ✅ Sin silencios largos (0)
 - ✅ Gancho ≥ 55 (57 VALE)
