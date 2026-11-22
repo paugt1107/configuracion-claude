@@ -1,4 +1,116 @@
 {
+ "lb-0539eea0fc": {
+  "archivo": "libres/fosiles/trilobite-fossil-ov2.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Trilobite Fossil — Mustang Joe — CC0 1.0 — https://www.flickr.com/photos/63234672@N04/20416871346",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 684,
+  "w": 1024
+ },
+ "lb-177c6a5d76": {
+  "archivo": "libres/fosiles/trilobite-fossil-1.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Trilobite fossil, Desert Museum.jpg — Juan Carlos Fonseca Mata — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Trilobite_fossil,_Desert_Museum.jpg",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 960
+ },
+ "lb-1ded2e2148": {
+  "archivo": "libres/fosiles/ammonite-fossil-ov1.jpg",
+  "categoria": "fosiles",
+  "consulta": "Ammonite fossil",
+  "credito": "Ammonite fossil with in-situ aptychi (Solnhofen Limestone, Upper Jurassic; Bavaria, Germany) 2 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/36831896411",
+  "etiquetas": [
+   "ammonite",
+   "fosiles",
+   "fossil"
+  ],
+  "fuente": "libre",
+  "h": 857,
+  "w": 1024
+ },
+ "lb-27b9324e2f": {
+  "archivo": "libres/fosiles/trilobite-fossil-3.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Fossil Trilobite (with cast).jpg — Gary Todd — CC0 — https://commons.wikimedia.org/wiki/File:Fossil_Trilobite_(with_cast).jpg",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-2b765aae78": {
+  "archivo": "libres/fosiles/trilobite-fossil-ov1.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Trilobite fossil — Joanna Bourne — CC BY 2.0 — https://www.flickr.com/photos/66992990@N00/116512454",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 771,
+  "w": 1024
+ },
+ "lb-361067064f": {
+  "archivo": "libres/fosiles/ammonite-fossil-ov3.jpg",
+  "categoria": "fosiles",
+  "consulta": "Ammonite fossil",
+  "credito": "Ammonite fossil with in-situ aptychi (Solnhofen Limestone, Upper Jurassic; Bavaria, Germany) 1 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/36800705542",
+  "etiquetas": [
+   "ammonite",
+   "fosiles",
+   "fossil"
+  ],
+  "fuente": "libre",
+  "h": 846,
+  "w": 1024
+ },
+ "lb-52fb6991ce": {
+  "archivo": "libres/fosiles/trilobite-fossil-2.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Trilobites (Austerops speculator), Jebel Oufatene, Marruecos, 2021-01-18, DD 137-195 FS.jpg — Diego Delso — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Trilobites_(Austerops_speculator),_Jebel_Oufatene,_Marruecos,_2021-01-18,_DD_137-195_FS.jpg",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 1179,
+  "w": 1280
+ },
+ "lb-554e8efbed": {
+  "archivo": "libres/fosiles/ammonite-fossil-ov2.jpg",
+  "categoria": "fosiles",
+  "consulta": "Ammonite fossil",
+  "credito": "Ammonite fossil with in-situ aptychi (Solnhofen Limestone, Upper Jurassic; Bavaria, Germany) 3 — James St. John — CC BY 2.0 — https://www.flickr.com/photos/47445767@N05/36163048393",
+  "etiquetas": [
+   "ammonite",
+   "fosiles",
+   "fossil"
+  ],
+  "fuente": "libre",
+  "h": 662,
+  "w": 1023
+ },
  "lb-59ad923b9a": {
   "archivo": "libres/fosiles/fossil-egg-nest-1.jpg",
   "categoria": "fosiles",
@@ -29,6 +141,34 @@
   "h": 757,
   "w": 1023
  },
+ "lb-7d3427997c": {
+  "archivo": "libres/fosiles/trilobite-fossil-4.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Fossil Trilobite Cast.jpg — Gary Todd — CC0 — https://commons.wikimedia.org/wiki/File:Fossil_Trilobite_Cast.jpg",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 853,
+  "w": 1280
+ },
+ "lb-8452fac08c": {
+  "archivo": "libres/fosiles/ammonite-fossil-ov4.jpg",
+  "categoria": "fosiles",
+  "consulta": "Ammonite fossil",
+  "credito": "Ammonite fossil in hand — gurdonark — CC BY 2.0 — https://www.flickr.com/photos/46183897@N00/4736763862",
+  "etiquetas": [
+   "ammonite",
+   "fosiles",
+   "fossil"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-85f78aac7c": {
   "archivo": "libres/fosiles/dinosaur-eggs-fossil-1.jpg",
   "categoria": "fosiles",
@@ -44,6 +184,20 @@
   "h": 853,
   "w": 1280
  },
+ "lb-8704b1d1b4": {
+  "archivo": "libres/fosiles/trilobite-fossil-ov4.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Trilobite fossil — cowbite — CC BY-SA 2.0 — https://www.flickr.com/photos/24886284@N00/3291034449",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 768,
+  "w": 1024
+ },
  "lb-99ec820a43": {
   "archivo": "libres/fosiles/fossil-egg-nest-ov4.jpg",
   "categoria": "fosiles",
@@ -58,6 +212,20 @@
   "fuente": "libre",
   "h": 769,
   "w": 1023
+ },
+ "lb-a1154582ef": {
+  "archivo": "libres/fosiles/trilobite-fossil-ov3.jpg",
+  "categoria": "fosiles",
+  "consulta": "Trilobite fossil",
+  "credito": "Trilobite Fossil — eggrole — CC BY 2.0 — https://www.flickr.com/photos/35387910@N04/4707812056",
+  "etiquetas": [
+   "fosiles",
+   "fossil",
+   "trilobite"
+  ],
+  "fuente": "libre",
+  "h": 1023,
+  "w": 902
  },
  "lb-a2a5f7b5f0": {
   "archivo": "libres/fosiles/dinosaur-eggs-fossil-ov2.jpg",
