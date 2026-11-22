@@ -39,6 +39,45 @@
   "h": 960,
   "w": 1280
  },
+ "lb-3a822e38dc": {
+  "archivo": "libres/insectos/dragonfly-1.jpg",
+  "categoria": "insectos",
+  "consulta": "Dragonfly",
+  "credito": "Sympetrum flaveolum - side (aka).jpg — André Karwath aka Aka — CC BY-SA 2.5 — https://commons.wikimedia.org/wiki/File:Sympetrum_flaveolum_-_side_(aka).jpg",
+  "etiquetas": [
+   "dragonfly",
+   "insectos"
+  ],
+  "fuente": "libre",
+  "h": 785,
+  "w": 1280
+ },
+ "lb-43c2ba3930": {
+  "archivo": "libres/insectos/dragonfly-ov1.jpg",
+  "categoria": "insectos",
+  "consulta": "Dragonfly",
+  "credito": "dragonfly — Dawn Huczek — CC BY 2.0 — https://www.flickr.com/photos/31064702@N05/3610667304",
+  "etiquetas": [
+   "dragonfly",
+   "insectos"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 1024
+ },
+ "lb-47373ecfa0": {
+  "archivo": "libres/insectos/dragonfly-ov2.jpg",
+  "categoria": "insectos",
+  "consulta": "Dragonfly",
+  "credito": "Dragonfly Macro — treyevan — CC BY 2.0 — https://www.flickr.com/photos/77584778@N00/791676349",
+  "etiquetas": [
+   "dragonfly",
+   "insectos"
+  ],
+  "fuente": "libre",
+  "h": 681,
+  "w": 1024
+ },
  "lb-57ddc911c0": {
   "archivo": "libres/insectos/bee-on-flower-2.jpg",
   "categoria": "insectos",
@@ -107,6 +146,19 @@
   ],
   "fuente": "libre",
   "h": 836,
+  "w": 1280
+ },
+ "lb-ea5b9edb85": {
+  "archivo": "libres/insectos/dragonfly-2.jpg",
+  "categoria": "insectos",
+  "consulta": "Dragonfly",
+  "credito": "Skimmer (Dragonfly) mating in air.jpg — Prasan Shrestha — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Skimmer_(Dragonfly)_mating_in_air.jpg",
+  "etiquetas": [
+   "dragonfly",
+   "insectos"
+  ],
+  "fuente": "libre",
+  "h": 853,
   "w": 1280
  }
 }
