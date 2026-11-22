@@ -1,4 +1,4 @@
-📅 Publicar: Viernes 20-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
+📅 Publicar: Viernes 27-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
 
 # Publicación S003
 

@@ -1,4 +1,4 @@
-📅 Publicar: Sabado 21-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
+📅 Publicar: Sabado 28-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
 
 # Publicación S005
 

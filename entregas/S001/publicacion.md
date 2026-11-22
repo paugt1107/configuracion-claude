@@ -1,4 +1,4 @@
-📅 Publicar: Jueves 19-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
+📅 Publicar: Jueves 26-11 14:00 (hora de España) en YouTube Shorts, TikTok y Reels
 
 # Publicación S001
 
