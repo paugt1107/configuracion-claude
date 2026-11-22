@@ -26,6 +26,20 @@
   "h": 663,
   "w": 1280
  },
+ "lb-45a1543bb2": {
+  "archivo": "libres/espacio/rocket-launch-ov1.jpg",
+  "categoria": "espacio",
+  "consulta": "Rocket launch",
+  "credito": "Daytime Dynamo Rocket Launch — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/9218456164",
+  "etiquetas": [
+   "espacio",
+   "launch",
+   "rocket"
+  ],
+  "fuente": "libre",
+  "h": 640,
+  "w": 960
+ },
  "lb-483656f247": {
   "archivo": "libres/espacio/moon-surface-ov2.jpg",
   "categoria": "espacio",
@@ -39,6 +53,34 @@
   "fuente": "libre",
   "h": 685,
   "w": 1023
+ },
+ "lb-5f1f080382": {
+  "archivo": "libres/espacio/astronaut-spacewalk-1.jpg",
+  "categoria": "espacio",
+  "consulta": "Astronaut spacewalk",
+  "credito": "STS-116 spacewalk 1.jpg — NASA — Public domain — https://commons.wikimedia.org/wiki/File:STS-116_spacewalk_1.jpg",
+  "etiquetas": [
+   "astronaut",
+   "espacio",
+   "spacewalk"
+  ],
+  "fuente": "libre",
+  "h": 844,
+  "w": 1280
+ },
+ "lb-7e7c5c6d24": {
+  "archivo": "libres/espacio/astronaut-spacewalk-2.jpg",
+  "categoria": "espacio",
+  "consulta": "Astronaut spacewalk",
+  "credito": "NASA Apollo 17 Lunar Roving Vehicle.jpg — NASA / Harrison H. Schmitt — Public domain — https://commons.wikimedia.org/wiki/File:NASA_Apollo_17_Lunar_Roving_Vehicle.jpg",
+  "etiquetas": [
+   "astronaut",
+   "espacio",
+   "spacewalk"
+  ],
+  "fuente": "libre",
+  "h": 1280,
+  "w": 1280
  },
  "lb-7f13e97c5c": {
   "archivo": "libres/espacio/moon-surface-ov1.jpg",
@@ -95,6 +137,34 @@
   "fuente": "libre",
   "h": 1280,
   "w": 1280
+ },
+ "lb-accb8c6b2d": {
+  "archivo": "libres/espacio/astronaut-spacewalk-ov2.jpg",
+  "categoria": "espacio",
+  "consulta": "Astronaut spacewalk",
+  "credito": "Helmet View from Astronaut Mike Fossum — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/5940408282",
+  "etiquetas": [
+   "astronaut",
+   "espacio",
+   "spacewalk"
+  ],
+  "fuente": "libre",
+  "h": 680,
+  "w": 1024
+ },
+ "lb-b2873921e0": {
+  "archivo": "libres/espacio/astronaut-spacewalk-ov1.jpg",
+  "categoria": "espacio",
+  "consulta": "Astronaut spacewalk",
+  "credito": "Shuttle STS-61 Onboard View of the Hubble Space Telescope — NASA Hubble — CC BY 2.0 — https://www.flickr.com/photos/144614754@N02/28248597841",
+  "etiquetas": [
+   "astronaut",
+   "espacio",
+   "spacewalk"
+  ],
+  "fuente": "libre",
+  "h": 678,
+  "w": 1024
  },
  "lb-b83d9c9366": {
   "archivo": "libres/espacio/moon-surface-1.jpg",
@@ -192,5 +262,19 @@
   "fuente": "libre",
   "h": 1280,
   "w": 1280
+ },
+ "lb-efe1d9d600": {
+  "archivo": "libres/espacio/rocket-launch-ov2.jpg",
+  "categoria": "espacio",
+  "consulta": "Rocket launch",
+  "credito": "Orbital ATK Antares Rocket Launch — NASA Goddard Photo and Video — CC BY 2.0 — https://www.flickr.com/photos/24662369@N07/30360040886",
+  "etiquetas": [
+   "espacio",
+   "launch",
+   "rocket"
+  ],
+  "fuente": "libre",
+  "h": 1024,
+  "w": 920
  }
 }
