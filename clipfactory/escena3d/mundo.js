@@ -143,7 +143,13 @@ export async function crear(S, ctx) {
 
   // pasillos despejados delante de las vallas de fotos (la cámara entra en ellas sin que un árbol tape)
   const VALLAS = { dinos: [5 - 3.3, -26 + 1.0, 0.75], selva: [-5 + 3.3, -39 + 1.1, -0.7], lab: [-4 - 2.9, -91 - 1.0, 0.55] };
-  const despejado = (x, z) => Object.values(VALLAS).every(([vx, vz, r]) => { const nx = Math.sin(r), nz = Math.cos(r), px = x - vx, pz = z - vz, a = px * nx + pz * nz, b = Math.abs(px * nz - pz * nx); return a < -0.8 || a > 7 || b > 1.8; });
+  // y por donde vuela la cámara entre sitios (va unos 7 m al sur de cada maqueta, a media altura)
+  const VUELOS = ORDEN.slice(1).map((n, i) => [SITIOS[ORDEN[i]][0], SITIOS[ORDEN[i]][1] + 7, SITIOS[n][0], SITIOS[n][1] + 7]);
+  const lejosDeVuelos = (x, z) => VUELOS.every(([ax, az, bx, bz]) => { const dx = bx - ax, dz = bz - az, L = dx * dx + dz * dz, u = clamp(((x - ax) * dx + (z - az) * dz) / L); return Math.hypot(x - ax - u * dx, z - az - u * dz) > 3.2; });
+  // nada delante de las cámaras de cada zona: ni junto a la cámara ni en su línea de visión hasta la maqueta
+  const MIRADAS = Object.values(ZONAS).map(({ sitio: n, cam: c }) => { const [sx, sz] = SITIOS[n], lx = sx + c.look[0], lz = sz + c.look[2]; return [lx + Math.sin(rad(c.az)) * c.dist * 1.15, lz + Math.cos(rad(c.az)) * c.dist * 1.15, lx, lz]; });
+  const libreDeMiradas = (x, z) => MIRADAS.every(([ax, az, bx, bz]) => { const dx = bx - ax, dz = bz - az, L = dx * dx + dz * dz, u = clamp(((x - ax) * dx + (z - az) * dz) / L); return Math.hypot(x - ax - u * dx, z - az - u * dz) > 2.6; });
+  const despejado = (x, z) => lejosDeVuelos(x, z) && libreDeMiradas(x, z) && Object.values(VALLAS).every(([vx, vz]) => Math.hypot(x - vx, z - vz) > 6.5 || z < vz - 1.5) && Object.values(VALLAS).every(([vx, vz, r]) => { const nx = Math.sin(r), nz = Math.cos(r), px = x - vx, pz = z - vz, a = px * nx + pz * nz, b = Math.abs(px * nz - pz * nx); return a < -0.8 || a > 7 || b > 1.8; });
   const colocar = (obj, x, z, rotY = 0, esc = 1) => { obj.position.set(x, altura(x, z), z); obj.rotation.y = rotY; obj.scale.multiplyScalar(esc); scene.add(obj); return obj; };
   const sitio = (n) => SITIOS[n];
   const anim = []; // fn(t)
@@ -512,10 +518,11 @@ export async function crear(S, ctx) {
     return vuelo(base, pf, k, false);
   }
   function vuelo(a, b, k, alto = true) {
-    const dist = a.pos.distanceTo(b.pos), arco = alto ? Math.sin(Math.PI * k) * Math.min(3.2, dist * 0.18) : 0;
+    const dist = a.pos.distanceTo(b.pos), arco = alto ? Math.sin(Math.PI * k) * Math.max(2.4, Math.min(3.4, dist * 0.2)) : 0;
     // en pleno vuelo la mirada también sube y se adelanta un poco: se ve el paisaje y hacia dónde vamos, no solo el suelo
     const adelante = b.look.clone().sub(a.look).setY(0).multiplyScalar(0.25 * Math.sin(Math.PI * k));
-    return { pos: a.pos.clone().lerp(b.pos, k).add(new THREE.Vector3(0, arco, 0)), look: a.look.clone().lerp(b.look, k).add(adelante).add(new THREE.Vector3(0, arco * 0.75, 0)) };
+    const sube = alto === true ? 0.6 : 0.2;
+    return { pos: a.pos.clone().lerp(b.pos, k).add(new THREE.Vector3(0, arco, 0)), look: a.look.clone().lerp(b.look, k).add(adelante).add(new THREE.Vector3(0, arco * sube, 0)) };
   }
   // duración de cada transición según la distancia (más lejos = vuelo más largo), sin comerse las frases cortas
   const trans = paradas.map((_, i) => {
@@ -527,9 +534,10 @@ export async function crear(S, ctx) {
   function camara(t) {
     let i = 0; while (i + 1 < N && t >= hitos[i + 1]) i++;
     const sig = i + 1 < N ? trans[i + 1] : null;
-    if (sig && t >= hitos[i + 1] - sig.a) { const k = suave((t - (hitos[i + 1] - sig.a)) / (sig.a + sig.b)); return { ...vuelo(pose(i, t - hitos[i]), pose(i + 1, t - hitos[i + 1]), k), i, j: i + 1, k }; }
+    const modo = (j) => (paradas[j].foto && fotoVallas[paradas[j].foto.id] ? "bajo" : true); // al salir de una foto: sin subir la mirada
+    if (sig && t >= hitos[i + 1] - sig.a) { const k = suave((t - (hitos[i + 1] - sig.a)) / (sig.a + sig.b)); return { ...vuelo(pose(i, t - hitos[i]), pose(i + 1, t - hitos[i + 1]), k, modo(i)), i, j: i + 1, k }; }
     const act = trans[i];
-    if (i > 0 && t < hitos[i] + act.b) { const k = suave((t - (hitos[i] - act.a)) / (act.a + act.b)); return { ...vuelo(pose(i - 1, t - hitos[i - 1]), pose(i, t - hitos[i]), k), i: i - 1, j: i, k }; }
+    if (i > 0 && t < hitos[i] + act.b) { const k = suave((t - (hitos[i] - act.a)) / (act.a + act.b)); return { ...vuelo(pose(i - 1, t - hitos[i - 1]), pose(i, t - hitos[i]), k, modo(i - 1)), i: i - 1, j: i, k }; }
     return { ...pose(i, t - hitos[i]), i, j: i, k: 0 };
   }
   const cieloDe = (i) => CIELOS[paradas[i].cielo || paradas[i].z.cielo] || CIELOS.dia;
