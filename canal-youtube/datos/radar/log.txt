@@ -1,3 +1,7 @@
+[aviso] Google News es-ES 'GTA 6 secreto': HTTP Error 429: Too Many Requests
+[aviso] Google News es-ES 'GTA 6 final': HTTP Error 429: Too Many Requests
+[aviso] Google News es-ES 'GTA 6 arma secreta': HTTP Error 429: Too Many Requests
+[aviso] Google News es-ES 'GTA 6 mods': HTTP Error 429: Too Many Requests
 [aviso] reddit GTA6: HTTP Error 404: Not Found
 [aviso] reddit GTA: HTTP Error 429: Too Many Requests
 [aviso] reddit gtaonline: HTTP Error 429: Too Many Requests
@@ -6,4 +10,4 @@
 [aviso] Bluesky 'GTA VI': HTTP Error 403: Forbidden
 [aviso] Bluesky 'gta6 secret': HTTP Error 403: Forbidden
 [aviso] Bluesky 'gta6 easter egg': HTTP Error 403: Forbidden
-2503 novedades
+2237 novedades
